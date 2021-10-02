@@ -1,0 +1,364 @@
+
+// Airbus-A320neo
+
+// Template: 
+#define Airbus_A320neo_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 23, -22, -10, ANIM]                                           \
+  [ 50, 0, 40, 21, -24, -9 , ANIM]                                           \
+  [100, 0, 48, 23, -26, -12, ANIM]                                           \
+  [160, 0, 39, 30, -25, -20, ANIM]                                           \
+  [210, 0, 45, 33, -22, -21, ANIM]                                           \
+  [260, 0, 39, 30, -14, -20, ANIM]                                           \
+  [310, 0, 48, 23, -22, -11, ANIM]                                           \
+  [370, 0, 40, 21, -16, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 35, 45, 23, -22, -10, ANIM]                                          \
+  [ 50, 35, 40, 21, -24, -9 , ANIM]                                          \
+  [100, 35, 48, 23, -26, -12, ANIM]                                          \
+  [160, 35, 39, 30, -25, -20, ANIM]                                          \
+  [210, 35, 45, 33, -22, -21, ANIM]                                          \
+  [260, 35, 39, 30, -14, -20, ANIM]                                          \
+  [310, 35, 48, 23, -22, -11, ANIM]                                          \
+  [370, 35, 40, 21, -16, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 70, 44, 36, -22, -18, ANIM]                                          \
+  [ 50, 70, 39, 31, -20, -16, ANIM]                                          \
+  [100, 70, 50, 22, -25, -11, ANIM]                                          \
+  [160, 70, 37, 21, -19, -11, ANIM]                                          \
+  [210, 70, 42, 15, -21, -8 , ANIM]                                          \
+  [260, 70, 37, 21, -19, -11, ANIM]                                          \
+  [310, 70, 50, 22, -25, -11, ANIM]                                          \
+  [370, 70, 39, 31, -40, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 120, 44, 23, -22, -12, ANIM]                                         \
+  [ 50, 120, 40, 21, -20, -11, ANIM]                                         \
+  [100, 120, 48, 22, -24, -11, ANIM]                                         \
+  [160, 120, 39, 30, -20, -15, ANIM]                                         \
+  [210, 120, 44, 28, -11, -14, ANIM]                                         \
+  [260, 120, 39, 30, -20, -15, ANIM]                                         \
+  [310, 120, 48, 22, -24, -11, ANIM]                                         \
+  [370, 120, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 160, 44, 29, -22, -15, ANIM]                                         \
+  [ 50, 160, 40, 25, -20, -13, ANIM]                                         \
+  [100, 160, 49, 22, -25, -11, ANIM]                                         \
+  [160, 160, 38, 26, -19, -13, ANIM]                                         \
+  [210, 160, 42, 22, -21, -11, ANIM]                                         \
+  [260, 160, 38, 26, -19, -13, ANIM]                                         \
+  [310, 160, 49, 22, -25, -11, ANIM]                                         \
+  [370, 160, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/(0)Greyscale.png"
+purchase_sprite(Airbus_A320neo, 310, 0, 48, 23, -24, -12)
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AirMalta.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_AirMalta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/BritishAirways.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Easyjet.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Easyjet) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Iberia.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Lufthansa.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Pegasus.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Pegasus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/S7.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_S7) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/SAS.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Swiss.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/TAP.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_TAP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Ural.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Ural) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Vueling.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Vueling) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Wizz.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Wizz) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Greyscale, flight_state())
+{
+  15: Airbus_A320neo_Greyscale_Climbing;
+  18: Airbus_A320neo_Greyscale_Flight;
+  21: Airbus_A320neo_Greyscale_Landing;
+  22: Airbus_A320neo_Greyscale_Touchdown;
+      Airbus_A320neo_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_AirMalta, flight_state())
+{
+  15: Airbus_A320neo_AirMalta_Climbing;
+  18: Airbus_A320neo_AirMalta_Flight;
+  21: Airbus_A320neo_AirMalta_Landing;
+  22: Airbus_A320neo_AirMalta_Touchdown;
+      Airbus_A320neo_AirMalta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_BritishAirways, flight_state())
+{
+  15: Airbus_A320neo_BritishAirways_Climbing;
+  18: Airbus_A320neo_BritishAirways_Flight;
+  21: Airbus_A320neo_BritishAirways_Landing;
+  22: Airbus_A320neo_BritishAirways_Touchdown;
+      Airbus_A320neo_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Easyjet, flight_state())
+{
+  15: Airbus_A320neo_Easyjet_Climbing;
+  18: Airbus_A320neo_Easyjet_Flight;
+  21: Airbus_A320neo_Easyjet_Landing;
+  22: Airbus_A320neo_Easyjet_Touchdown;
+      Airbus_A320neo_Easyjet_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Iberia, flight_state())
+{
+  15: Airbus_A320neo_Iberia_Climbing;
+  18: Airbus_A320neo_Iberia_Flight;
+  21: Airbus_A320neo_Iberia_Landing;
+  22: Airbus_A320neo_Iberia_Touchdown;
+      Airbus_A320neo_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Lufthansa, flight_state())
+{
+  15: Airbus_A320neo_Lufthansa_Climbing;
+  18: Airbus_A320neo_Lufthansa_Flight;
+  21: Airbus_A320neo_Lufthansa_Landing;
+  22: Airbus_A320neo_Lufthansa_Touchdown;
+      Airbus_A320neo_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Pegasus, flight_state())
+{
+  15: Airbus_A320neo_Pegasus_Climbing;
+  18: Airbus_A320neo_Pegasus_Flight;
+  21: Airbus_A320neo_Pegasus_Landing;
+  22: Airbus_A320neo_Pegasus_Touchdown;
+      Airbus_A320neo_Pegasus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_S7, flight_state())
+{
+  15: Airbus_A320neo_S7_Climbing;
+  18: Airbus_A320neo_S7_Flight;
+  21: Airbus_A320neo_S7_Landing;
+  22: Airbus_A320neo_S7_Touchdown;
+      Airbus_A320neo_S7_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_SAS, flight_state())
+{
+  15: Airbus_A320neo_SAS_Climbing;
+  18: Airbus_A320neo_SAS_Flight;
+  21: Airbus_A320neo_SAS_Landing;
+  22: Airbus_A320neo_SAS_Touchdown;
+      Airbus_A320neo_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Swiss, flight_state())
+{
+  15: Airbus_A320neo_Swiss_Climbing;
+  18: Airbus_A320neo_Swiss_Flight;
+  21: Airbus_A320neo_Swiss_Landing;
+  22: Airbus_A320neo_Swiss_Touchdown;
+      Airbus_A320neo_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_TAP, flight_state())
+{
+  15: Airbus_A320neo_TAP_Climbing;
+  18: Airbus_A320neo_TAP_Flight;
+  21: Airbus_A320neo_TAP_Landing;
+  22: Airbus_A320neo_TAP_Touchdown;
+      Airbus_A320neo_TAP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Ural, flight_state())
+{
+  15: Airbus_A320neo_Ural_Climbing;
+  18: Airbus_A320neo_Ural_Flight;
+  21: Airbus_A320neo_Ural_Landing;
+  22: Airbus_A320neo_Ural_Touchdown;
+      Airbus_A320neo_Ural_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Vueling, flight_state())
+{
+  15: Airbus_A320neo_Vueling_Climbing;
+  18: Airbus_A320neo_Vueling_Flight;
+  21: Airbus_A320neo_Vueling_Landing;
+  22: Airbus_A320neo_Vueling_Touchdown;
+      Airbus_A320neo_Vueling_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Wizz, flight_state())
+{
+  15: Airbus_A320neo_Wizz_Climbing;
+  18: Airbus_A320neo_Wizz_Flight;
+  21: Airbus_A320neo_Wizz_Landing;
+  22: Airbus_A320neo_Wizz_Touchdown;
+      Airbus_A320neo_Wizz_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_sprites, cargo_subtype)
+{
+  
+ 1: Airbus_A320neo_AirMalta;
+ 2: Airbus_A320neo_BritishAirways;
+ 3: Airbus_A320neo_Easyjet;
+ 4: Airbus_A320neo_Iberia;
+ 5: Airbus_A320neo_Lufthansa;
+ 6: Airbus_A320neo_Pegasus;
+ 7: Airbus_A320neo_S7;
+ 8: Airbus_A320neo_SAS;
+ 9: Airbus_A320neo_Swiss;
+10: Airbus_A320neo_TAP;
+11: Airbus_A320neo_Ural;
+12: Airbus_A320neo_Vueling;
+13: Airbus_A320neo_Wizz;
+     Airbus_A320neo_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_running_cost_factor, flight_state())
+{
+  plane_RC(73)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(833); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(244); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_MALTA);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  3: string(STR_VLIV_EASYJET);
+  4: string(STR_VLIV_IBERIA);
+  5: string(STR_VLIV_LUFTHANSA);
+  6: string(STR_VLIV_PEGASUS);
+  7: string(STR_VLIV_S7_AIRLINES);
+  8: string(STR_VLIV_SAS);
+  9: string(STR_VLIV_SWISS_AIR);
+ 10: string(STR_VLIV_TAP);
+ 11: string(STR_VLIV_URAL_AIRLINES);
+ 12: string(STR_VLIV_VUELING_AIRLINES);
+ 13: string(STR_VLIV_WIZZ_AIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 180; // Air Malta
+  2: return 180; // British
+  3: return 186; // Easyjet
+  4: return 180; // Iberia
+  5: return 180; // Lufthansa
+  6: return 186; // Pegasus
+  7: return 164; // S7
+  8: return 174; // SAS
+  9: return 180; // Swiss
+ 10: return 174; // TAP
+ 12: return 186; // Vueling
+ 13: return 186; // Wizz
+     return 165;
+}
+
+item (FEAT_AIRCRAFT , Airbus_A320neo)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A320NEO);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2016), 1, 25);
+    vehicle_life: 26;
+    model_life: get_model_life(2016,2050);
+    retire_early: get_retire_early(2016,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 165;
+    mail_capacity: 17;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1165;
+  }
+  graphics {
+    default: Airbus_A320neo_sprites;
+    purchase: Airbus_A320neo_purchase_sprite;
+
+    cargo_subtype_text: Airbus_A320neo_cargo_subtype_text;
+	passenger_capacity: Airbus_A320neo_cargo_subtype_capacity;
+    speed: Airbus_A320neo_speed;
+    running_cost_factor: Airbus_A320neo_running_cost_factor;
+
+    cost_factor: 101; 
+    purchase_running_cost_factor: 71;
+    purchase_speed: plane_speed_kmh(833); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320neo)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320neo)
+  {
+    property
+    { range: 1165; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320neo)
+  {
+    property
+    { range: 1750; }
+  }
+}

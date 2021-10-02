@@ -1,0 +1,57 @@
+ /// sort_vehicles
+
+sort (FEAT_AIRCRAFT,
+[
+  // Planes
+	//Airbus
+	Airbus_A300_600F, Airbus_A300_600R, Airbus_A310_200, Airbus_A310_300,
+	Airbus_A318, Airbus_A319, Airbus_A320_100, Airbus_A320_200, Airbus_A320neo, Airbus_A321_100, Airbus_A321_200,
+	Airbus_A330_200, Airbus_A330_200F, Airbus_A330_300, Airbus_A340_300, Airbus_A340_500, Airbus_A340_600,
+	Airbus_A350_900,
+	Airbus_A380_800,
+	//Antonov
+	Antonov_124, Antonov_225,
+	//ATR
+	ATR_42_300, ATR_42_300F, ATR_42_500,
+	ATR_72_200, ATR_72_200F, ATR_72_500,
+	//BAC
+	BAC_1_11_200, BAC_1_11_300, BAC_1_11_400, BAC_1_11_500,
+	BAC_CONCORDE,
+	//BAe
+	BAe_146_100, BAe_146_200, BAe_146_300, BAe_146_300QT,
+	//Boeing
+	Boeing_707_320, Boeing_707_420,
+	Boeing_717_200,
+	Boeing_727_100, Boeing_727_200, 
+	Boeing_737_100, Boeing_737_200, Boeing_737_200C, Boeing_737_300, Boeing_737_300F, Boeing_737_400, Boeing_737_500, Boeing_737_600, Boeing_737_700, Boeing_737_800, Boeing_737_900, Boeing_737_900ER, Boeing_737_MAX8,
+	Boeing_747_100, Boeing_747_200, Boeing_747_200M, Boeing_747_300, Boeing_747_300M, Boeing_747_400, Boeing_747_400D, Boeing_747_400ER, Boeing_747_400BCF, Boeing_747_400ERF, Boeing_747_400SCD, Boeing_747_400M, Boeing_747_8I, Boeing_747_8F,  
+	Boeing_757_200, Boeing_757_200F,
+	Boeing_767_200, Boeing_767_200ER, Boeing_767_300, Boeing_767_300ER, Boeing_767_300F, Boeing_767_400ER,
+	Boeing_777_200, Boeing_777_200ER, Boeing_777_200LR, Boeing_777_200F, Boeing_777_300, Boeing_777_300ER,
+	Boeing_787_8, Boeing_787_9,
+	//Bombardier
+	Bombardier_CRJ100ER, Bombardier_CRJ100LR, Bombardier_CRJ200ER, Bombardier_CRJ200LR, Bombardier_CRJ700, Bombardier_CRJ700ER, Bombardier_CRJ900, Bombardier_CRJ900ER, Bombardier_CRJ900LR, Bombardier_CRJ1000,
+	Bombardier_Dash_8_100, Bombardier_Dash_8_200, Bombardier_Dash_8_200Q, Bombardier_Dash_8_300, Bombardier_Dash_8_300Q, Bombardier_Dash_8_400Q,
+	//Douglas
+	Douglas_DC8_10, Douglas_DC8_20, Douglas_DC8_30, Douglas_DC8_40, Douglas_DC8_50,
+	Douglas_DC9_10, Douglas_DC9_20, Douglas_DC9_30, Douglas_DC9_40, Douglas_DC9_50,
+	Douglas_DC10_10, Douglas_DC10_30, Douglas_DC10_40,
+	//Embraer
+	Embraer_E170LR, Embraer_E175STD, Embraer_E190STD, Embraer_E190AR, Embraer_E190LR, Embraer_E195STD, Embraer_E195LR, Embraer_E195AR,
+	//Fokker
+	Fokker_F70, Fokker_F100,
+	//Lockheed
+	Lockheed_L049_Constellation,
+	//Ilyusin
+	Ilyushin_62, Ilyushin_76,
+	//McDonnell_Douglas
+	McDonnell_Douglas_MD11, McDonnell_Douglas_MD11F,
+	McDonnell_Douglas_MD81, McDonnell_Douglas_MD82, McDonnell_Douglas_MD83, McDonnell_Douglas_MD87, McDonnell_Douglas_MD88, McDonnell_Douglas_MD90,
+	//SUD
+	SUD_CARAVELLE_III, 
+	//Tupolev
+	Tupolev_Tu134, Tupolev_Tu154B, Tupolev_Tu154M,
+	
+  // Helicopters
+
+]);

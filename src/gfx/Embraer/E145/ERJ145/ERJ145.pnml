@@ -1,0 +1,202 @@
+
+// Embraer-ERJ145
+
+// Template: 
+#define Embraer_ERJ145_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 30, 17, -15, -9 , ANIM]                                           \
+  [ 35, 1, 33, 16, -17, -8 , ANIM]                                           \
+  [ 75, 1, 43, 16, -22, -8 , ANIM]                                           \
+  [125, 1, 34, 23, -17, -12, ANIM]                                           \
+  [165, 1, 30, 28, -15, -14, ANIM]                                           \
+  [200, 1, 34, 23, -17, -12, ANIM]                                           \
+  [240, 1, 43, 16, -22, -8 , ANIM]                                           \
+  [290, 1, 33, 16, -17, -8 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 30, 30, 17, -15, -9 , ANIM]                                          \
+  [ 35, 30, 33, 16, -17, -8 , ANIM]                                          \
+  [ 75, 30, 43, 16, -22, -8 , ANIM]                                          \
+  [125, 30, 34, 23, -17, -12, ANIM]                                          \
+  [165, 30, 30, 28, -15, -14, ANIM]                                          \
+  [200, 30, 34, 23, -17, -12, ANIM]                                          \
+  [240, 30, 43, 16, -22, -8 , ANIM]                                          \
+  [290, 30, 33, 16, -17, -8 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 60, 30, 28, -15, -14, ANIM]                                          \
+  [ 35, 60, 33, 23, -17, -12, ANIM]                                          \
+  [ 75, 60, 43, 16, -22, -8 , ANIM]                                          \
+  [125, 60, 33, 14, -17, -7 , ANIM]                                          \
+  [165, 60, 26, 10, -13, -5 , ANIM]                                          \
+  [200, 60, 33, 14, -17, -7 , ANIM]                                          \
+  [240, 60, 43, 16, -22, -8 , ANIM]                                          \
+  [290, 60, 33, 23, -17, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 90, 30, 17, -15, -9 , ANIM]                                          \
+  [ 35, 90, 33, 16, -17, -8 , ANIM]                                          \
+  [ 75, 90, 43, 16, -22, -8 , ANIM]                                          \
+  [125, 90, 34, 23, -17, -12, ANIM]                                          \
+  [165, 90, 30, 28, -15, -14, ANIM]                                          \
+  [200, 90, 34, 23, -17, -12, ANIM]                                          \
+  [240, 90, 43, 16, -22, -8 , ANIM]                                          \
+  [290, 90, 33, 16, -17, -8 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 120, 30, 23, -15, -12, ANIM]                                         \
+  [ 35, 120, 35, 20, -18, -10, ANIM]                                         \
+  [ 75, 120, 43, 16, -22, -8 , ANIM]                                         \
+  [125, 120, 34, 17, -17, -9 , ANIM]                                         \
+  [165, 120, 30, 21, -15, -11, ANIM]                                         \
+  [200, 120, 34, 17, -17, -9 , ANIM]                                         \
+  [240, 120, 43, 16, -22, -8 , ANIM]                                         \
+  [290, 120, 35, 20, -18, -10, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E145/ERJ145/(0)Greyscale.png"
+purchase_sprite(Embraer_ERJ145, 240, 1, 43, 16, -22, -8)
+Embraer_ERJ145_sprite_layout_template(Embraer_ERJ145_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E145/ERJ145/HOP.png"
+Embraer_ERJ145_sprite_layout_template(Embraer_ERJ145_HOP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E145/ERJ145/Lagunair.png"
+Embraer_ERJ145_sprite_layout_template(Embraer_ERJ145_Lagunair) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_Greyscale, flight_state())
+{
+  15: Embraer_ERJ145_Greyscale_Climbing;
+  18: Embraer_ERJ145_Greyscale_Flight;
+  21: Embraer_ERJ145_Greyscale_Landing;
+  22: Embraer_ERJ145_Greyscale_Touchdown;
+      Embraer_ERJ145_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_HOP, flight_state())
+{
+  15: Embraer_ERJ145_HOP_Climbing;
+  18: Embraer_ERJ145_HOP_Flight;
+  21: Embraer_ERJ145_HOP_Landing;
+  22: Embraer_ERJ145_HOP_Touchdown;
+      Embraer_ERJ145_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_Lagunair, flight_state())
+{
+  15: Embraer_ERJ145_Lagunair_Climbing;
+  18: Embraer_ERJ145_Lagunair_Flight;
+  21: Embraer_ERJ145_Lagunair_Landing;
+  22: Embraer_ERJ145_Lagunair_Touchdown;
+      Embraer_ERJ145_Lagunair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_sprites, cargo_subtype)
+{
+  1: Embraer_ERJ145_HOP;
+  2: Embraer_ERJ145_Lagunair;
+  	 Embraer_ERJ145_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_running_cost_factor, flight_state())
+{
+  plane_RC(74)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(389); // airplane climbing after take-off
+      18: return plane_speed_kmh(829); // heading for tower contact point
+  16..20: return plane_speed_kmh(378); // in flight
+  21..22: return plane_speed_kmh(235); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_HOP);
+  2: string(STR_VLIV_LAGUNAIR);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_ERJ145_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 50; // HOP
+  2: return 50; // Lagunair
+     return 50;
+}
+
+item (FEAT_AIRCRAFT, Embraer_ERJ145)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_195STD);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1996), 1, 1);
+    vehicle_life: 18;
+    model_life: get_model_life(1996,2020);
+    retire_early: get_retire_early(1996,2020);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 17;
+    passenger_capacity: 50;
+    mail_capacity: 5;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 515;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_ERJ145_sprites;
+    purchase: Embraer_ERJ145_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_ERJ145_cargo_subtype_text;
+	passenger_capacity: Embraer_ERJ145_cargo_subtype_capacity;
+    speed: Embraer_ERJ145_speed;
+    running_cost_factor: Embraer_ERJ145_running_cost_factor;
+
+    cost_factor: 14; 
+    purchase_running_cost_factor: 28;
+    purchase_speed: plane_speed_kmh(829); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_ERJ145)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_ERJ145)
+  {
+    property
+    { range: 515; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_ERJ145)
+  {
+    property
+    { range: 775; }
+  }
+}
+

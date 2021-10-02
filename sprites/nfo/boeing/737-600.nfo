@@ -1,0 +1,324 @@
+START_SECTION(Planes-Boeing-737-600)
+// Action 0
+    A0_PLANES(AIRV_BOEING_737_600, 1, 18)
+        00 \w1999-01-01  //Introduction Date
+			  03 1E  //Vehicle Life In Years
+				04 FF  //Model Life in Years
+				06 0F  //Climate Availability
+				07 \b18 // Loading Speed
+				08 FF  // New gfx
+				09 02  //Helicopter?
+				0A 00  //Large?  
+				0C 4A  //Speed in mph/8 
+				0D 02  // Accleration
+				0F \w132  //Passenger Capacity   
+				11 \b13  //Mail Capacity 
+				12 07  //Sound Effect (Jet)
+				13 00 00 00 00 //Cargo Types For Refitting
+				14 20    
+				16 00  //Retire Vehicle Early 
+				18 \wx0001
+				19 \wx03FE //Subtract 4 for Tourists
+			
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_737_600, 1, 1)
+                     1F \w1015
+        
+  -1 * 0   10 F1      
+      	
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/(0)Greyscale.pcx 
+    spr() 1 1 09 19 43 -22 -10
+    spr() 50 1 09 18 36 -18 -9
+    spr() 90 1 09 25 40 -20 -13
+    spr() 135 1 09 30 36 -18 -15
+    spr() 180 1 09 29 43 -22 -15
+    spr() 230 1 09 30 36 -18 -15
+    spr() 270 1 09 25 40 -20 -13
+    spr() 315 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/SAS.pcx 
+    spr() 1 1 09 19 43 -22 -10
+    spr() 50 1 09 18 36 -18 -9
+    spr() 90 1 09 25 40 -20 -13
+    spr() 135 1 09 30 36 -18 -15
+    spr() 180 1 09 29 43 -22 -15
+    spr() 230 1 09 30 36 -18 -15
+    spr() 270 1 09 25 40 -20 -13
+    spr() 315 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION    
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/Malev.pcx 
+    spr() 1 1 09 19 43 -22 -10
+    spr() 50 1 09 18 36 -18 -9
+    spr() 90 1 09 25 40 -20 -13
+    spr() 135 1 09 30 36 -18 -15
+    spr() 180 1 09 29 43 -22 -15
+    spr() 230 1 09 30 36 -18 -15
+    spr() 270 1 09 25 40 -20 -13
+    spr() 315 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION    
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F0 81 F2 00 FF 03 // In Flight
+                               00 00 00 00   // Greyscale
+                               01 00 02 02   // SAS
+                               02 00 01 01   // Malev			     
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/(0)Greyscale.pcx
+    spr() 1 35 09 19 43 -22 -10
+    spr() 50 35 09 18 37 -19 -9
+    spr() 90 35 09 25 40 -20 -13
+    spr() 135 35 09 30 36 -18 -15
+    spr() 180 35 09 29 43 -22 -15
+    spr() 230 35 09 30 36 -18 -15
+    spr() 270 35 09 25 40 -20 -13
+    spr() 315 35 09 18 37 -19 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/SAS.pcx
+    spr() 1 35 09 19 43 -22 -10
+    spr() 50 35 09 18 37 -19 -9
+    spr() 90 35 09 25 40 -20 -13
+    spr() 135 35 09 30 36 -18 -15
+    spr() 180 35 09 29 43 -22 -15
+    spr() 230 35 09 30 36 -18 -15
+    spr() 270 35 09 25 40 -20 -13
+    spr() 315 35 09 18 37 -19 -9
+    #undef SPRITE_LOCATION    
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/Malev.pcx
+    spr() 1 35 09 19 43 -22 -10
+    spr() 50 35 09 18 37 -19 -9
+    spr() 90 35 09 25 40 -20 -13
+    spr() 135 35 09 30 36 -18 -15
+    spr() 180 35 09 29 43 -22 -15
+    spr() 230 35 09 30 36 -18 -15
+    spr() 270 35 09 25 40 -20 -13
+    spr() 315 35 09 18 37 -19 -9
+    #undef SPRITE_LOCATION    
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  143 * 22	 02 03 F1 81 F2 00 FF 03 // Taxing or Initiating Approach         
+                               00 00 00 00   // Greyscale
+                               01 00 02 02   // SAS
+                               02 00 01 01   // Malev			     
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/(0)Greyscale.pcx
+    spr() 1 70 09 27 42 -21 -14
+    spr() 50 70 09 28 35 -18 -14
+    spr() 90 70 09 24 42 -21 -12
+    spr() 135 70 09 21 33 -17 -11
+    spr() 180 70 09 14 41 -21 -7
+    spr() 230 70 09 21 33 -17 -11
+    spr() 270 70 09 24 42 -21 -12
+    spr() 315 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/SAS.pcx
+    spr() 1 70 09 27 42 -21 -14
+    spr() 50 70 09 28 35 -18 -14
+    spr() 90 70 09 24 42 -21 -12
+    spr() 135 70 09 21 33 -17 -11
+    spr() 180 70 09 14 41 -21 -7
+    spr() 230 70 09 21 33 -17 -11
+    spr() 270 70 09 24 42 -21 -12
+    spr() 315 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+        
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/Malev.pcx
+    spr() 1 70 09 27 42 -21 -14
+    spr() 50 70 09 28 35 -18 -14
+    spr() 90 70 09 24 42 -21 -12
+    spr() 135 70 09 21 33 -17 -11
+    spr() 180 70 09 14 41 -21 -7
+    spr() 230 70 09 21 33 -17 -11
+    spr() 270 70 09 24 42 -21 -12
+    spr() 315 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  144 * 22	 02 03 F2 81 F2 00 FF 03 // Take Off 
+                               00 00 00 00   // Greyscale
+                               01 00 02 02   // SAS
+                               02 00 01 01   // Malev			     
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/(0)Greyscale.pcx
+    spr() 1 100 09 19 42 -21 -10
+    spr() 50 100 09 18 37 -19 -9
+    spr() 90 100 09 25 40 -20 -13
+    spr() 135 100 09 30 36 -18 -15
+    spr() 180 100 09 24 42 -21 -12
+    spr() 230 100 09 30 36 -18 -15
+    spr() 270 100 09 25 40 -20 -13
+    spr() 315 100 09 18 37 -19 -9
+    #undef SPRITE_LOCATION
+        
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/SAS.pcx
+    spr() 1 100 09 19 42 -21 -10
+    spr() 50 100 09 18 37 -19 -9
+    spr() 90 100 09 25 40 -20 -13
+    spr() 135 100 09 30 36 -18 -15
+    spr() 180 100 09 24 42 -21 -12
+    spr() 230 100 09 30 36 -18 -15
+    spr() 270 100 09 25 40 -20 -13
+    spr() 315 100 09 18 37 -19 -9
+    #undef SPRITE_LOCATION
+        
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/Malev.pcx
+    spr() 1 100 09 19 42 -21 -10
+    spr() 50 100 09 18 37 -19 -9
+    spr() 90 100 09 25 40 -20 -13
+    spr() 135 100 09 30 36 -18 -15
+    spr() 180 100 09 24 42 -21 -12
+    spr() 230 100 09 30 36 -18 -15
+    spr() 270 100 09 25 40 -20 -13
+    spr() 315 100 09 18 37 -19 -9
+    #undef SPRITE_LOCATION
+    
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  145 * 22	 02 03 F3 81 F2 00 FF 03 // Landed On Runway     
+                               00 00 00 00   // Greyscale
+                               01 00 02 02   // SAS
+                               02 00 01 01   // Malev			     
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/(0)Greyscale.pcx
+    spr() 1 135 09 23 42 -21 -12
+    spr() 50 135 09 22 36 -18 -11
+    spr() 90 135 09 24 44 -22 -12
+    spr() 135 135 09 26 37 -19 -13
+    spr() 180 135 09 18 42 -21 -9
+    spr() 230 135 09 26 37 -19 -13
+    spr() 270 135 09 24 44 -22 -12
+    spr() 315 135 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+        
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/SAS.pcx
+    spr() 1 135 09 23 42 -21 -12
+    spr() 50 135 09 22 36 -18 -11
+    spr() 90 135 09 24 44 -22 -12
+    spr() 135 135 09 26 37 -19 -13
+    spr() 180 135 09 18 42 -21 -9
+    spr() 230 135 09 26 37 -19 -13
+    spr() 270 135 09 24 44 -22 -12
+    spr() 315 135 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+        
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-600/Malev.pcx
+    spr() 1 135 09 23 42 -21 -12
+    spr() 50 135 09 22 36 -18 -11
+    spr() 90 135 09 24 44 -22 -12
+    spr() 135 135 09 26 37 -19 -13
+    spr() 180 135 09 18 42 -21 -9
+    spr() 230 135 09 26 37 -19 -13
+    spr() 270 135 09 24 44 -22 -12
+    spr() 315 135 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  146 * 22	 02 03 F4 81 F2 00 FF 03         // Final Approach       
+                               00 00 00 00   // Greyscale
+                               01 00 02 02   // SAS
+                               02 00 01 01   // Malev			     
+                               FF FF         // End livery graphical selection
+                               
+  A1_PLANES(1,1)
+
+    -1 sprites/pcx/boeing/b737-600/(0)Greyscale.pcx 270 4 09 21 40 -20 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 03         // 3 Liveries
+                               00 80 00 00   // Greyscale
+                               88 80 01 01   // Malev		
+                               46 80 02 02   // SAS
+                               FF FF         // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             20 80 0F 0F   // Climbing
+                             4A 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             12 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32845 0D 0F // Take Off
+                             \w32838 12 12 // Flight
+                             \w32839 10 14 // Approach
+                             \w32842 15 16 // Landing
+                             \w32813 08 0C // Grounded	
+                             \w32805       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32821 0B 0B // Purchase Cost Purchase List
+				                     \w32838 0E 0E // Running Cost Purchase List
+                             00 00 	
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0    02 03 08 81 0C 00 FF 01         // Text Callback's (Purchase List)   
+                               05 00 36 36 
+                               4C 00                                   
+
+  150 * 7	   03 03 01 AIRV_BOEING_737_600 01
+                               FF 08 00
+                               07 00
+END_SECTION(Planes-Boeing-737-600)

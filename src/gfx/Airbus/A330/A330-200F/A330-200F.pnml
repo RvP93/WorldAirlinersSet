@@ -1,0 +1,194 @@
+
+// Airbus-A330_200F
+
+// Template: 
+#define Airbus_A330_200F_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 66, 30, -33, -15, ANIM]                                           \
+  [ 75, 1, 57, 29, -29, -15, ANIM]                                           \
+  [140, 1, 65, 34, -33, -17, ANIM]                                           \
+  [215, 1, 57, 38, -29, -19, ANIM]                                           \
+  [280, 1, 66, 42, -33, -21, ANIM]                                           \
+  [350, 1, 57, 38, -29, -19, ANIM]                                           \
+  [415, 1, 65, 34, -33, -17, ANIM]                                           \
+  [485, 1, 57, 29, -29, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 66, 30, -33, -15, ANIM]                                          \
+  [ 75, 50, 57, 29, -29, -15, ANIM]                                          \
+  [140, 50, 65, 34, -33, -17, ANIM]                                          \
+  [215, 50, 57, 40, -29, -20, ANIM]                                          \
+  [280, 50, 66, 43, -33, -22, ANIM]                                          \
+  [350, 50, 57, 40, -29, -20, ANIM]                                          \
+  [415, 50, 65, 34, -33, -17, ANIM]                                          \
+  [485, 50, 57, 29, -29, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 66, 45, -33, -23, ANIM]                                         \
+  [ 75, 100, 55, 43, -28, -22, ANIM]                                         \
+  [140, 100, 62, 34, -31, -17, ANIM]                                         \
+  [215, 100, 55, 29, -28, -15, ANIM]                                         \
+  [280, 100, 64, 18, -32, -9 , ANIM]                                         \
+  [350, 100, 55, 29, -28, -15, ANIM]                                         \
+  [415, 100, 62, 34, -31, -17, ANIM]                                         \
+  [485, 100, 55, 43, -28, -22, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 150, 66, 30, -33, -15, ANIM]                                         \
+  [ 75, 150, 57, 29, -28, -15, ANIM]                                         \
+  [140, 150, 65, 34, -33, -17, ANIM]                                         \
+  [215, 150, 57, 40, -28, -20, ANIM]                                         \
+  [280, 150, 66, 39, -33, -20, ANIM]                                         \
+  [350, 150, 57, 40, -28, -20, ANIM]                                         \
+  [415, 150, 65, 34, -33, -17, ANIM]                                         \
+  [485, 150, 57, 29, -28, -15, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 200, 66, 37, -33, -19, ANIM]                                         \
+  [ 75, 200, 56, 35, -28, -18, ANIM]                                         \
+  [140, 200, 66, 34, -33, -17, ANIM]                                         \
+  [215, 200, 57, 35, -28, -18, ANIM]                                         \
+  [280, 200, 66, 29, -33, -15, ANIM]                                         \
+  [350, 200, 57, 35, -28, -18, ANIM]                                         \
+  [415, 200, 66, 34, -33, -17, ANIM]                                         \
+  [485, 200, 56, 35, -28, -18, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-200F/(0)Greyscale.png"
+purchase_sprite(Airbus_A330_200F, 415, 1, 65, 34, -33, -17)
+Airbus_A330_200F_sprite_layout_template(Airbus_A330_200F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-200F/QatarCargo.png"
+Airbus_A330_200F_sprite_layout_template(Airbus_A330_200F_QatarCargo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-200F/TurkishCargo.png"
+Airbus_A330_200F_sprite_layout_template(Airbus_A330_200F_TurkishCargo) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_Greyscale, flight_state())
+{
+  15: Airbus_A330_200F_Greyscale_Climbing;
+  18: Airbus_A330_200F_Greyscale_Flight;
+  21: Airbus_A330_200F_Greyscale_Landing;
+  22: Airbus_A330_200F_Greyscale_Touchdown;
+      Airbus_A330_200F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_QatarCargo, flight_state())
+{
+  15: Airbus_A330_200F_QatarCargo_Climbing;
+  18: Airbus_A330_200F_QatarCargo_Flight;
+  21: Airbus_A330_200F_QatarCargo_Landing;
+  22: Airbus_A330_200F_QatarCargo_Touchdown;
+      Airbus_A330_200F_QatarCargo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_TurkishCargo, flight_state())
+{
+  15: Airbus_A330_200F_TurkishCargo_Climbing;
+  18: Airbus_A330_200F_TurkishCargo_Flight;
+  21: Airbus_A330_200F_TurkishCargo_Landing;
+  22: Airbus_A330_200F_TurkishCargo_Touchdown;
+      Airbus_A330_200F_TurkishCargo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_sprites, cargo_subtype)
+{
+  1: Airbus_A330_200F_QatarCargo;
+  2: Airbus_A330_200F_TurkishCargo;
+     Airbus_A330_200F_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_running_cost_factor, flight_state())
+{
+  plane_RC(175)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(483); // airplane climbing after take-off
+      18: return plane_speed_kmh(878); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_QATAR_AIRWAYS_CARGO);
+  2: string(STR_VLIV_TURKISH_AIRLINES_CARGO);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A330_200F)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A330_200F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2010), 7, 1);
+    vehicle_life: 28;
+    model_life: get_model_life(2010,2050);
+    retire_early: get_retire_early(2010,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 20;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1335;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A330_200F_sprites;
+    purchase: Airbus_A330_200F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A330_200F_cargo_subtype_text;
+    speed: Airbus_A330_200F_speed;
+    running_cost_factor: Airbus_A330_200F_running_cost_factor;
+	mail_capacity: return 396;
+
+    cost_factor: 171; 
+    purchase_running_cost_factor: 175;
+    purchase_speed: plane_speed_kmh(878); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_200F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_200F)
+  {
+    property
+    { range: 1335; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_200F)
+  {
+    property
+    { range: 2000; }
+  }
+}

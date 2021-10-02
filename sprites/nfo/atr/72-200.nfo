@@ -1,0 +1,383 @@
+START_SECTION(Planes-ATR-72-200)
+
+    A0_PLANES(AIRV_ATR_72_200, 1, 18)
+        00 \w1988-01-01  //Introduction Date
+        03 0B  //Vehicle Life In Years
+        04 21  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b16 // Loading speed in pax/"tick"
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()  
+        0C 28  //Speed in mph*8 
+        0D 01  //Acceleration   
+        0F \w74  //Passenger Capacity   
+        11 \b7  //Mail Capacity 
+        12 06  //Sound Effect (Propeller)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        18 \wx0001 
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_ATR_72_200, 1, 1)
+                     1F \w290
+        
+  -1 * 0   10 F1
+				
+    A1_PLANES(4,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/(0)Greyscale.pcx
+    spr() 1 1 09 23 46 -23 -12
+    spr() 50 1 09 20 40 -20 -10
+    spr() 93 1 09 23 50 -25 -12
+    spr() 146 1 09 29 41 -21 -15
+    spr() 190 1 09 34 46 -23 -17
+    spr() 240 1 09 29 41 -21 -15
+    spr() 283 1 09 23 50 -25 -12
+    spr() 336 1 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AerArranOrginal.pcx
+    spr() 1 1 09 23 46 -23 -12
+    spr() 50 1 09 20 40 -20 -10
+    spr() 93 1 09 23 50 -25 -12
+    spr() 146 1 09 29 41 -21 -15
+    spr() 190 1 09 34 46 -23 -17
+    spr() 240 1 09 29 41 -21 -15
+    spr() 283 1 09 23 50 -25 -12
+    spr() 336 1 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AurignyAirServices.pcx
+    spr() 1 1 09 23 46 -23 -12
+    spr() 50 1 09 20 40 -20 -10
+    spr() 93 1 09 23 50 -25 -12
+    spr() 146 1 09 29 41 -21 -15
+    spr() 190 1 09 34 46 -23 -17
+    spr() 240 1 09 29 41 -21 -15
+    spr() 283 1 09 23 50 -25 -12
+    spr() 336 1 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/Finnair.pcx
+    spr() 1 1 09 23 46 -23 -12
+    spr() 50 1 09 20 40 -20 -10
+    spr() 93 1 09 23 50 -25 -12
+    spr() 146 1 09 29 41 -21 -15
+    spr() 190 1 09 34 46 -23 -17
+    spr() 240 1 09 29 41 -21 -15
+    spr() 283 1 09 23 50 -25 -12
+    spr() 336 1 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+  
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2      
+   -1 * 9  02 03 03 01 01 \w3 \w3      
+   
+  142 * 22	 02 03 0F 81 F2 00 FF 04 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // AerArranOrginal
+                             02 00 02 02 // Aurigny Air Services
+                             03 00 03 03 // Finnair		     
+                             FF FF       // End livary graphical selection   
+
+    A1_PLANES(4,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/(0)Greyscale.pcx
+    spr() 1 39 09 23 46 -23 -12
+    spr() 50 39 09 20 40 -20 -10
+    spr() 93 39 09 23 50 -25 -12
+    spr() 146 39 09 31 41 -21 -16
+    spr() 190 39 09 35 46 -23 -18
+    spr() 240 39 09 31 41 -21 -16
+    spr() 283 39 09 23 50 -25 -12
+    spr() 336 39 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AerArranOrginal.pcx
+    spr() 1 39 09 23 46 -23 -12
+    spr() 50 39 09 20 40 -20 -10
+    spr() 93 39 09 23 50 -25 -12
+    spr() 146 39 09 31 41 -21 -16
+    spr() 190 39 09 35 46 -23 -18
+    spr() 240 39 09 31 41 -21 -16
+    spr() 283 39 09 23 50 -25 -12
+    spr() 336 39 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AurignyAirServices.pcx
+    spr() 1 39 09 23 46 -23 -12
+    spr() 50 39 09 20 40 -20 -10
+    spr() 93 39 09 23 50 -25 -12
+    spr() 146 39 09 31 41 -21 -16
+    spr() 190 39 09 35 46 -23 -18
+    spr() 240 39 09 31 41 -21 -16
+    spr() 283 39 09 23 50 -25 -12
+    spr() 336 39 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/Finnair.pcx
+    spr() 1 39 09 23 46 -23 -12
+    spr() 50 39 09 20 40 -20 -10
+    spr() 93 39 09 23 50 -25 -12
+    spr() 146 39 09 31 41 -21 -16
+    spr() 190 39 09 35 46 -23 -18
+    spr() 240 39 09 31 41 -21 -16
+    spr() 283 39 09 23 50 -25 -12
+    spr() 336 39 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2      
+   -1 * 9  02 03 03 01 01 \w3 \w3 
+   
+  143 * 22	 02 03 1F 81 F2 00 FF 04 // Taxing or Initiating Approach         
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // AerArranOrginal
+                             02 00 02 02 // Aurigny Air Services
+                             03 00 03 03 // Finnair		     
+                             FF FF       // End livary graphical selection   
+
+    A1_PLANES(4,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/(0)Greyscale.pcx
+    spr() 1 78 09 35 36 -18 -18
+    spr() 50 78 09 29 40 -20 -15
+    spr() 93 78 09 24 51 -26 -12
+    spr() 146 78 09 17 39 -20 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 240 78 09 17 39 -20 -9
+    spr() 283 78 09 24 51 -26 -12
+    spr() 336 78 09 29 40 -20 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AerArranOrginal.pcx
+    spr() 1 78 09 35 36 -18 -18
+    spr() 50 78 09 29 40 -20 -15
+    spr() 93 78 09 24 51 -26 -12
+    spr() 146 78 09 17 39 -20 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 240 78 09 17 39 -20 -9
+    spr() 283 78 09 24 51 -26 -12
+    spr() 336 78 09 29 40 -20 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AurignyAirServices.pcx
+    spr() 1 78 09 35 36 -18 -18
+    spr() 50 78 09 29 40 -20 -15
+    spr() 93 78 09 24 51 -26 -12
+    spr() 146 78 09 17 39 -20 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 240 78 09 17 39 -20 -9
+    spr() 283 78 09 24 51 -26 -12
+    spr() 336 78 09 29 40 -20 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/Finnair.pcx
+    spr() 1 78 09 35 36 -18 -18
+    spr() 50 78 09 29 40 -20 -15
+    spr() 93 78 09 24 51 -26 -12
+    spr() 146 78 09 17 39 -20 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 240 78 09 17 39 -20 -9
+    spr() 283 78 09 24 51 -26 -12
+    spr() 336 78 09 29 40 -20 -15
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2      
+   -1 * 9  02 03 03 01 01 \w3 \w3 
+
+  144 * 22	 02 03 2F 81 F2 00 FF 04 // Take Off 
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // AerArranOrginal
+                             02 00 02 02 // Aurigny Air Services
+                             03 00 03 03 // Finnair		     
+                             FF FF       // End livary graphical selection  
+
+    A1_PLANES(4,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/(0)Greyscale.pcx
+    spr() 1 116 09 23 46 -23 -12
+    spr() 50 116 09 20 40 -20 -10
+    spr() 93 116 09 23 50 -25 -12
+    spr() 146 116 09 31 41 -21 -16
+    spr() 190 116 09 35 46 -23 -18
+    spr() 240 116 09 31 41 -21 -16
+    spr() 283 116 09 23 50 -25 -12
+    spr() 336 116 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AerArranOrginal.pcx
+    spr() 1 116 09 23 46 -23 -12
+    spr() 50 116 09 20 40 -20 -10
+    spr() 93 116 09 23 50 -25 -12
+    spr() 146 116 09 31 41 -21 -16
+    spr() 190 116 09 35 46 -23 -18
+    spr() 240 116 09 31 41 -21 -16
+    spr() 283 116 09 23 50 -25 -12
+    spr() 336 116 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AurignyAirServices.pcx
+    spr() 1 116 09 23 46 -23 -12
+    spr() 50 116 09 20 40 -20 -10
+    spr() 93 116 09 23 50 -25 -12
+    spr() 146 116 09 31 41 -21 -16
+    spr() 190 116 09 35 46 -23 -18
+    spr() 240 116 09 31 41 -21 -16
+    spr() 283 116 09 23 50 -25 -12
+    spr() 336 116 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/Finnair.pcx
+    spr() 1 116 09 23 46 -23 -12
+    spr() 50 116 09 20 40 -20 -10
+    spr() 93 116 09 23 50 -25 -12
+    spr() 146 116 09 31 41 -21 -16
+    spr() 190 116 09 35 46 -23 -18
+    spr() 240 116 09 31 41 -21 -16
+    spr() 283 116 09 23 50 -25 -12
+    spr() 336 116 09 20 40 -20 -10
+    #undef SPRITE_LOCATION
+    
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2      
+   -1 * 9  02 03 03 01 01 \w3 \w3  
+  
+  145 * 22	 02 03 3F 81 F2 00 FF 04 // Landed On Runway     
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // AerArranOrginal
+                             02 00 02 02 // Aurigny Air Services
+                             03 00 03 03 // Finnair		     
+                             FF FF       // End livary graphical selection   
+  
+    A1_PLANES(4,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/(0)Greyscale.pcx
+    spr() 1 160 09 28 46 -23 -14
+    spr() 50 160 09 23 40 -20 -12
+    spr() 93 160 09 23 50 -25 -12
+    spr() 146 160 09 25 39 -20 -13
+    spr() 190 160 09 27 46 -23 -14
+    spr() 240 160 09 25 39 -20 -13
+    spr() 283 160 09 23 50 -25 -12
+    spr() 336 160 09 23 40 -20 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AerArranOrginal.pcx
+    spr() 1 160 09 28 46 -23 -14
+    spr() 50 160 09 23 40 -20 -12
+    spr() 93 160 09 23 50 -25 -12
+    spr() 146 160 09 25 39 -20 -13
+    spr() 190 160 09 27 46 -23 -14
+    spr() 240 160 09 25 39 -20 -13
+    spr() 283 160 09 23 50 -25 -12
+    spr() 336 160 09 23 40 -20 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/AurignyAirServices.pcx
+    spr() 1 160 09 28 46 -23 -14
+    spr() 50 160 09 23 40 -20 -12
+    spr() 93 160 09 23 50 -25 -12
+    spr() 146 160 09 25 39 -20 -13
+    spr() 190 160 09 27 46 -23 -14
+    spr() 240 160 09 25 39 -20 -13
+    spr() 283 160 09 23 50 -25 -12
+    spr() 336 160 09 23 40 -20 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/72-200/Finnair.pcx
+    spr() 1 160 09 28 46 -23 -14
+    spr() 50 160 09 23 40 -20 -12
+    spr() 93 160 09 23 50 -25 -12
+    spr() 146 160 09 25 39 -20 -13
+    spr() 190 160 09 27 46 -23 -14
+    spr() 240 160 09 25 39 -20 -13
+    spr() 283 160 09 23 50 -25 -12
+    spr() 336 160 09 23 40 -20 -12
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2      
+   -1 * 9  02 03 03 01 01 \w3 \w3 
+  
+  146 * 22	 02 03 4F 81 F2 00 FF 04 // Final Approach       
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // AerArranOrginal
+                             02 00 02 02 // Aurigny Air Services
+                             03 00 03 03 // Finnair		     
+                             FF FF       // End livary graphical selection      
+
+// ----------------------------
+// ---- Different liveries ----
+// ----------------------------
+
+  147 * 30	 02 03 5F 81 E2 00 FF 05   
+                                  1F 00 08 09   // Grounded
+                                  2F 00 0F 0F   // Climbing
+                                  0F 00 12 12   // Flight
+                                  4F 00 15 15   // Landing
+                                  3F 00 16 16   // Touchdown
+                                  1F 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 04          // 4 Liveries
+                               00 80 00 00 // first livery textline
+                               09 80 01 01 // AerArranOrginal
+                               07 80 02 02 // Aurigny Air Services
+                               2E 80 03 03 // Finnair			     
+                               FF FF       // End livery text selection
+
+  -1 * 26	 02 03 02 81 E2 00 FF 05       //Speed during flight
+				14 80 0D 0D // Take Off 
+				1B 80 0F 0F // Climbing
+				28 80 12 12 // Flight
+				1C 80 10 14 // Approach
+				11 80 15 16 // Landing
+				00 80
+
+   -1 * 10	 02 03 03 81 E2 00 FF 05      //Cost during flight
+                             \w32812 0D 0F // Take Off
+                             \w32807 12 12 // Flight
+                             \w32808 10 14 // Approach
+                             \w32810 15 16 // Landing
+                             \w32789 08 0C // Grounded	
+                             \w32784       // Parked/Other	
+
+   -1 * 10	 02 03 04 81 10 00 FF 02
+				02 00 0C 0C //Different Speeds
+				03 00 0E 0E //Different Costs
+				00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32784 0B 0B //Purchase Cost Purchase List
+				                     \w32807 0E 0E //Running Cost Purchase List
+                             00 00				
+
+   -1 * 10   02 03 06 81 10 00 FF 02
+                snd_av_turbogo   80 01 01 // play takeoff sound
+                snd_av_landturbo 80 05 05 // play touchdown sound
+                00 00
+
+  149 * 14	 02 03 07 81 0C 00 FF 03          // Only 3 callbacks
+                                  01 00 19 19 // Livery text callback
+                                  06 00 33 33 // Play sounds
+                                  04 00 36 36 // Changes Speed/Cost Callback				  
+                                  5F 00       // Apply graphics
+                                  
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                                05 00 36 36 // 
+                                00 00                                   
+
+  150 * 7	 03 03 01 AIRV_ATR_72_200 01
+                            FF 08 00
+                            07 00
+END_SECTION(Planes-ATR-72-200)

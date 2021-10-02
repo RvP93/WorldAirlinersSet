@@ -1,0 +1,343 @@
+
+// Airbus-A380_800
+
+// Template: 
+#define Airbus_A380_800_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [   0,   0,  74,  32,  -37,  -16, ANIM]                                    \
+  [  80,   0,  64,  31,  -32,  -16, ANIM]                                    \
+  [ 160,   0,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 240,   0,  64,  43,  -32,  -22, ANIM]                                    \
+  [ 320,   0,  74,  52,  -37,  -26, ANIM]                                    \
+  [ 410,   0,  64,  43,  -32,  -22, ANIM]                                    \
+  [ 490,   0,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 570,   0,  64,  31,  -32,  -16, ANIM]                                    \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [   0,  70,  74,  32,  -37,  -16, ANIM]                                    \
+  [  80,  70,  64,  31,  -32,  -16, ANIM]                                    \
+  [ 160,  70,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 240,  70,  64,  45,  -32,  -23, ANIM]                                    \
+  [ 320,  70,  74,  54,  -37,  -27, ANIM]                                    \
+  [ 410,  70,  64,  45,  -32,  -23, ANIM]                                    \
+  [ 490,  70,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 570,  70,  64,  31,  -32,  -16, ANIM]                                    \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [   0, 140,  74,  50,  -37,  -25, ANIM]                                    \
+  [  80, 140,  63,  46,  -32,  -23, ANIM]                                    \
+  [ 160, 140,  71,  37,  -36,  -19, ANIM]                                    \
+  [ 240, 140,  63,  31,  -32,  -16, ANIM]                                    \
+  [ 320, 140,  73,  34,  -37,  -17, ANIM]                                    \
+  [ 410, 140,  63,  31,  -32,  -16, ANIM]                                    \
+  [ 490, 140,  71,  37,  -36,  -19, ANIM]                                    \
+  [ 570, 140,  63,  46,  -32,  -23, ANIM]                                    \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [   0, 210,  74,  32,  -37,  -16, ANIM]                                    \
+  [  80, 210,  64,  31,  -32,  -16, ANIM]                                    \
+  [ 160, 210,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 240, 210,  64,  45,  -32,  -23, ANIM]                                    \
+  [ 320, 210,  74,  54,  -37,  -27, ANIM]                                    \
+  [ 410, 210,  64,  45,  -32,  -23, ANIM]                                    \
+  [ 490, 210,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 570, 210,  64,  31,  -32,  -16, ANIM]                                    \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [   0, 280,  74,  42,  -37,  -21, ANIM]                                    \
+  [  80, 280,  63,  39,  -32,  -20, ANIM]                                    \
+  [ 160, 280,  72,  39,  -36,  -20, ANIM]                                    \
+  [ 240, 280,  64,  37,  -32,  -19, ANIM]                                    \
+  [ 320, 280,  72,  45,  -36,  -23, ANIM]                                    \
+  [ 410, 280,  64,  37,  -32,  -19, ANIM]                                    \
+  [ 490, 280,  69,  39,  -35,  -20, ANIM]                                    \
+  [ 570, 280,  63,  39,  -32,  -20, ANIM]                                    \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/(0)Greyscale.png"
+purchase_sprite(Airbus_A380_800, 490,   0,  69,  39,  -35,  -20)
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/AirFrance.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/BA.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_BA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/ChinaSouthern.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_ChinaSouthern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/Emirates.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/Korean.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/Lufthansa.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/MalaysiaAirlines.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_MalaysiaAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/Qantas.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/SingaporeAirlines.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_SingaporeAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/Thai.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_Thai) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A380/A380-800/WAS.png"
+Airbus_A380_800_sprite_layout_template(Airbus_A380_800_WAS) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Greyscale, flight_state())
+{
+  15: Airbus_A380_800_Greyscale_Climbing;
+  18: Airbus_A380_800_Greyscale_Flight;
+  21: Airbus_A380_800_Greyscale_Landing;
+  22: Airbus_A380_800_Greyscale_Touchdown;
+      Airbus_A380_800_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_AirFrance, flight_state())
+{
+  15: Airbus_A380_800_AirFrance_Climbing;
+  18: Airbus_A380_800_AirFrance_Flight;
+  21: Airbus_A380_800_AirFrance_Landing;
+  22: Airbus_A380_800_AirFrance_Touchdown;
+      Airbus_A380_800_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_BA, flight_state())
+{
+  15: Airbus_A380_800_BA_Climbing;
+  18: Airbus_A380_800_BA_Flight;
+  21: Airbus_A380_800_BA_Landing;
+  22: Airbus_A380_800_BA_Touchdown;
+      Airbus_A380_800_BA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_ChinaSouthern, flight_state())
+{
+  15: Airbus_A380_800_ChinaSouthern_Climbing;
+  18: Airbus_A380_800_ChinaSouthern_Flight;
+  21: Airbus_A380_800_ChinaSouthern_Landing;
+  22: Airbus_A380_800_ChinaSouthern_Touchdown;
+      Airbus_A380_800_ChinaSouthern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Emirates, flight_state())
+{
+  15: Airbus_A380_800_Emirates_Climbing;
+  18: Airbus_A380_800_Emirates_Flight;
+  21: Airbus_A380_800_Emirates_Landing;
+  22: Airbus_A380_800_Emirates_Touchdown;
+      Airbus_A380_800_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Korean, flight_state())
+{
+  15: Airbus_A380_800_Korean_Climbing;
+  18: Airbus_A380_800_Korean_Flight;
+  21: Airbus_A380_800_Korean_Landing;
+  22: Airbus_A380_800_Korean_Touchdown;
+      Airbus_A380_800_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Lufthansa, flight_state())
+{
+  15: Airbus_A380_800_Lufthansa_Climbing;
+  18: Airbus_A380_800_Lufthansa_Flight;
+  21: Airbus_A380_800_Lufthansa_Landing;
+  22: Airbus_A380_800_Lufthansa_Touchdown;
+      Airbus_A380_800_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_MalaysiaAirlines, flight_state())
+{
+  15: Airbus_A380_800_MalaysiaAirlines_Climbing;
+  18: Airbus_A380_800_MalaysiaAirlines_Flight;
+  21: Airbus_A380_800_MalaysiaAirlines_Landing;
+  22: Airbus_A380_800_MalaysiaAirlines_Touchdown;
+      Airbus_A380_800_MalaysiaAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Qantas, flight_state())
+{
+  15: Airbus_A380_800_Qantas_Climbing;
+  18: Airbus_A380_800_Qantas_Flight;
+  21: Airbus_A380_800_Qantas_Landing;
+  22: Airbus_A380_800_Qantas_Touchdown;
+      Airbus_A380_800_Qantas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_SingaporeAirlines, flight_state())
+{
+  15: Airbus_A380_800_SingaporeAirlines_Climbing;
+  18: Airbus_A380_800_SingaporeAirlines_Flight;
+  21: Airbus_A380_800_SingaporeAirlines_Landing;
+  22: Airbus_A380_800_SingaporeAirlines_Touchdown;
+      Airbus_A380_800_SingaporeAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_Thai, flight_state())
+{
+  15: Airbus_A380_800_Thai_Climbing;
+  18: Airbus_A380_800_Thai_Flight;
+  21: Airbus_A380_800_Thai_Landing;
+  22: Airbus_A380_800_Thai_Touchdown;
+      Airbus_A380_800_Thai_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_WAS, flight_state())
+{
+  15: Airbus_A380_800_WAS_Climbing;
+  18: Airbus_A380_800_WAS_Flight;
+  21: Airbus_A380_800_WAS_Landing;
+  22: Airbus_A380_800_WAS_Touchdown;
+      Airbus_A380_800_WAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_sprites, cargo_subtype)
+{
+  1: Airbus_A380_800_AirFrance;
+  2: Airbus_A380_800_BA;
+  3: Airbus_A380_800_ChinaSouthern;
+  4: Airbus_A380_800_Emirates;
+  5: Airbus_A380_800_Korean;
+  6: Airbus_A380_800_Lufthansa;
+  7: Airbus_A380_800_MalaysiaAirlines;
+  8: Airbus_A380_800_Qantas;
+  9: Airbus_A380_800_SingaporeAirlines;
+ 10: Airbus_A380_800_Thai;
+ 11: Airbus_A380_800_WAS;
+     Airbus_A380_800_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_running_cost_factor, flight_state())
+{
+  plane_RC(115)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(402); // airplane climbing after take-off
+      18: return plane_speed_kmh(1023); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  3: string(STR_VLIV_CHINA_SOUTHERN);
+  4: string(STR_VLIV_EMIRATES);
+  5: string(STR_VLIV_KOREAN_AIR);
+  6: string(STR_VLIV_LUFTHANSA);
+  7: string(STR_VLIV_MALAYSIA_AIRLINES);
+  8: string(STR_VLIV_QANTAS);
+  9: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 10: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 11: string(STR_VLIV_WAS);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A380_800_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 516;
+   2: return 469;
+   3: return 506;
+   4: return 517;
+   5: return 407;
+   6: return 509;
+   7: return 494;
+   8: return 484;
+   9: return 471;
+  10: return 507; 
+  return 652;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A380_800)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A380_800);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2007), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2007,2050);
+    retire_early: get_retire_early(2007,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 71;
+    passenger_capacity: 652;
+    mail_capacity: 69;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2735;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A380_800_sprites;
+    purchase: Airbus_A380_800_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A380_800_cargo_subtype_text;
+	passenger_capacity: Airbus_A380_800_cargo_subtype_capacity;
+    speed: Airbus_A380_800_speed;
+    running_cost_factor: Airbus_A380_800_running_cost_factor;
+    sound_effect: Airbus_A380_800_sound_effect;
+
+    cost_factor: 347; 
+    purchase_running_cost_factor: 115;
+    purchase_speed: plane_speed_kmh(1023); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A380_800)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A380_800)
+  {
+    property
+    { range: 2735; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A380_800)
+  {
+    property
+    { range: 4100; }
+  }
+}

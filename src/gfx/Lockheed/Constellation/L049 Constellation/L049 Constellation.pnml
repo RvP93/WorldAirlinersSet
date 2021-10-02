@@ -1,0 +1,249 @@
+
+// Lockheed-L049 Constellation
+
+// Template: 
+#define Lockheed_L049_Constellation_sprite_layout_template(name)             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 50, 21, -25, -11, ANIM]                                           \
+  [ 60, 1, 41, 20, -21, -10, ANIM]                                           \
+  [110, 1, 46, 25, -23, -13, ANIM]                                           \
+  [165, 1, 41, 26, -21, -13, ANIM]                                           \
+  [215, 1, 50, 29, -25, -15, ANIM]                                           \
+  [270, 1, 41, 26, -21, -13, ANIM]                                           \
+  [320, 1, 46, 25, -23, -13, ANIM]                                           \
+  [375, 1, 41, 20, -21, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 50, 21, -25, -11, ANIM]                                          \
+  [ 60, 35, 41, 20, -21, -10, ANIM]                                          \
+  [110, 35, 46, 25, -23, -13, ANIM]                                          \
+  [165, 35, 41, 29, -21, -12, ANIM]                                          \
+  [215, 35, 50, 31, -25, -16, ANIM]                                          \
+  [270, 35, 41, 29, -21, -15, ANIM]                                          \
+  [320, 35, 46, 25, -23, -13, ANIM]                                          \
+  [375, 35, 41, 20, -21, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 50, 33, -25, -17, ANIM]                                          \
+  [ 60, 70, 41, 30, -21, -15, ANIM]                                          \
+  [110, 70, 44, 25, -22, -13, ANIM]                                          \
+  [165, 70, 41, 18, -22, -9 , ANIM]                                          \
+  [215, 70, 46, 11, -23, -6 , ANIM]                                          \
+  [270, 70, 41, 18, -22, -9 , ANIM]                                          \
+  [320, 70, 44, 25, -22, -13, ANIM]                                         \
+  [375, 70, 41, 30, -21, -15, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 110, 50, 21, -25, -11, ANIM]                                         \
+  [ 60, 110, 41, 20, -21, -10, ANIM]                                         \
+  [110, 110, 46, 25, -23, -13, ANIM]                                         \
+  [165, 110, 41, 29, -21, -15, ANIM]                                         \
+  [215, 110, 50, 31, -25, -16, ANIM]                                         \
+  [270, 110, 41, 29, -21, -15, ANIM]                                         \
+  [320, 110, 46, 25, -23, -13, ANIM]                                         \
+  [375, 110, 41, 20, -21, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 145, 50, 27, -25, -14, ANIM]                                         \
+  [ 60, 145, 41, 24, -21, -12, ANIM]                                         \
+  [110, 145, 45, 25, -23, -13, ANIM]                                         \
+  [165, 145, 41, 23, -21, -12, ANIM]                                         \
+  [215, 145, 48, 22, -24, -11, ANIM]                                         \
+  [270, 145, 41, 23, -21, -12, ANIM]                                         \
+  [320, 145, 45, 25, -23, -13, ANIM]                                         \
+  [375, 145, 41, 24, -21, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/(0)Greyscale.png" 
+purchase_sprite(Lockheed_L049_Constellation, 320, 1, 46, 25, -23, -13)
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/AirFrance.png"
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/BOAC.png"
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_BOAC) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/Braniff.png"
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_Braniff) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/KLM.png"
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Lockheed/Constellation/L049 Constellation/TWA.png"
+Lockheed_L049_Constellation_sprite_layout_template(Lockheed_L049_Constellation_TWA) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_Greyscale, flight_state())
+{
+  15: Lockheed_L049_Constellation_Greyscale_Climbing;
+  18: Lockheed_L049_Constellation_Greyscale_Flight;
+  21: Lockheed_L049_Constellation_Greyscale_Landing;
+  22: Lockheed_L049_Constellation_Greyscale_Touchdown;
+      Lockheed_L049_Constellation_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_AirFrance, flight_state())
+{
+  15: Lockheed_L049_Constellation_AirFrance_Climbing;
+  18: Lockheed_L049_Constellation_AirFrance_Flight;
+  21: Lockheed_L049_Constellation_AirFrance_Landing;
+  22: Lockheed_L049_Constellation_AirFrance_Touchdown;
+      Lockheed_L049_Constellation_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_BOAC, flight_state())
+{
+  15: Lockheed_L049_Constellation_BOAC_Climbing;
+  18: Lockheed_L049_Constellation_BOAC_Flight;
+  21: Lockheed_L049_Constellation_BOAC_Landing;
+  22: Lockheed_L049_Constellation_BOAC_Touchdown;
+      Lockheed_L049_Constellation_BOAC_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_Braniff, flight_state())
+{
+  15: Lockheed_L049_Constellation_Braniff_Climbing;
+  18: Lockheed_L049_Constellation_Braniff_Flight;
+  21: Lockheed_L049_Constellation_Braniff_Landing;
+  22: Lockheed_L049_Constellation_Braniff_Touchdown;
+      Lockheed_L049_Constellation_Braniff_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_KLM, flight_state())
+{
+  15: Lockheed_L049_Constellation_KLM_Climbing;
+  18: Lockheed_L049_Constellation_KLM_Flight;
+  21: Lockheed_L049_Constellation_KLM_Landing;
+  22: Lockheed_L049_Constellation_KLM_Touchdown;
+      Lockheed_L049_Constellation_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_TWA, flight_state())
+{
+  15: Lockheed_L049_Constellation_TWA_Climbing;
+  18: Lockheed_L049_Constellation_TWA_Flight;
+  21: Lockheed_L049_Constellation_TWA_Landing;
+  22: Lockheed_L049_Constellation_TWA_Touchdown;
+      Lockheed_L049_Constellation_TWA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_sprites, cargo_subtype)
+{
+  1: Lockheed_L049_Constellation_AirFrance;
+  2: Lockheed_L049_Constellation_BOAC;
+  3: Lockheed_L049_Constellation_Braniff;
+  4: Lockheed_L049_Constellation_KLM;
+  5: Lockheed_L049_Constellation_TWA;
+     Lockheed_L049_Constellation_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_running_cost_factor, flight_state())
+{
+  plane_RC(139)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(370); // airplane climbing after take-off
+      18: return plane_speed_kmh(504); // heading for tower contact point
+  16..20: return plane_speed_kmh(418); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_LOCKHEED);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_BOAC);
+  3: string(STR_VLIV_BRANIFF);
+  4: string(STR_VLIV_KLM);
+  5: string(STR_VLIV_TWA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Lockheed_L049_Constellation_cargo_subtype_capacity, cargo_subtype)
+{
+     return 81;
+}
+
+item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
+{
+  property
+  {
+    name: string(STR_AIRV_LOCKHEED_L049_CONSTELLATION);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1945), 1, 1);
+    vehicle_life: 15;
+    model_life: get_model_life(1945,1979);
+    retire_early: get_retire_early(1945,1979);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 81;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1330;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Lockheed_L049_Constellation_sprites;
+    purchase: Lockheed_L049_Constellation_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Lockheed_L049_Constellation_cargo_subtype_text;
+	passenger_capacity: Lockheed_L049_Constellation_cargo_subtype_capacity;
+    speed: Lockheed_L049_Constellation_speed;
+    running_cost_factor: Lockheed_L049_Constellation_running_cost_factor;
+    sound_effect: Lockheed_L049_Constellation_sound_effect;
+
+    cost_factor: 35; 
+    purchase_running_cost_factor: 7;
+    purchase_speed: plane_speed_kmh(504); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
+  {
+    property
+    { range: 1330; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
+  {
+    property
+    { range: 2000; }
+  }
+}

@@ -1,0 +1,231 @@
+
+// Boeing-747-400M
+
+// Template: 
+#define Boeing_747_400M_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 66, 32, -33, -16, ANIM]                                           \
+  [ 75, 2, 60, 32, -30, -16, ANIM]                                           \
+  [140, 2, 69, 34, -35, -17, ANIM]                                           \
+  [215, 2, 58, 42, -29, -21, ANIM]                                           \
+  [280, 2, 64, 43, -32, -22, ANIM]                                           \
+  [350, 2, 58, 42, -29, -17, ANIM]                                           \
+  [415, 2, 69, 34, -35, -17, ANIM]                                           \
+  [490, 2, 60, 32, -30, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 50, 66, 32, -33, -16, ANIM]                                          \
+  [ 75, 50, 60, 32, -30, -16, ANIM]                                          \
+  [140, 50, 69, 34, -35, -17, ANIM]                                          \
+  [215, 50, 58, 43, -29, -22, ANIM]                                          \
+  [280, 50, 64, 45, -32, -23, ANIM]                                          \
+  [350, 50, 58, 43, -29, -22, ANIM]                                          \
+  [415, 50, 69, 34, -35, -17, ANIM]                                          \
+  [490, 50, 60, 32, -30, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 100, 64, 49, -32, -25, ANIM]                                         \
+  [ 75, 100, 59, 44, -30, -22, ANIM]                                         \
+  [140, 100, 70, 33, -35, -17, ANIM]                                         \
+  [215, 100, 58, 29, -29, -15, ANIM]                                         \
+  [280, 100, 64, 26, -33, -13, ANIM]                                         \
+  [350, 100, 58, 29, -29, -17, ANIM]                                         \
+  [415, 100, 70, 33, -35, -17, ANIM]                                         \
+  [490, 100, 58, 44, -29, -22, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 155, 66, 32, -33, -16, ANIM]                                         \
+  [ 75, 155, 60, 32, -30, -16, ANIM]                                         \
+  [140, 155, 69, 34, -35, -17, ANIM]                                         \
+  [215, 155, 58, 43, -29, -22, ANIM]                                         \
+  [280, 155, 64, 45, -32, -23, ANIM]                                         \
+  [350, 155, 58, 43, -29, -22, ANIM]                                         \
+  [415, 155, 69, 34, -35, -17, ANIM]                                         \
+  [490, 155, 59, 31, -30, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 210, 64, 41, -32, -21, ANIM]                                         \
+  [ 75, 210, 59, 38, -30, -19, ANIM]                                         \
+  [140, 210, 71, 34, -36, -17, ANIM]                                         \
+  [215, 210, 58, 35, -29, -18, ANIM]                                         \
+  [280, 210, 64, 38, -32, -19, ANIM]                                         \
+  [350, 210, 58, 35, -29, -18, ANIM]                                         \
+  [415, 210, 71, 34, -36, -17, ANIM]                                         \
+  [490, 210, 58, 37, -29, -19, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/(0)Greyscale.png"
+purchase_sprite(Boeing_747_400M, 415, 10, 69, 21, -35, -11)
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/AirFrance.png"
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/EVA.png"
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_EVA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/KLM.png"
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/Lufthansa.png"
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_Lufthansa) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_Greyscale, flight_state())
+{
+  15: Boeing_747_400M_Greyscale_Climbing;
+  18: Boeing_747_400M_Greyscale_Flight;
+  21: Boeing_747_400M_Greyscale_Landing;
+  22: Boeing_747_400M_Greyscale_Touchdown;
+      Boeing_747_400M_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_AirFrance, flight_state())
+{
+  15: Boeing_747_400M_AirFrance_Climbing;
+  18: Boeing_747_400M_AirFrance_Flight;
+  21: Boeing_747_400M_AirFrance_Landing;
+  22: Boeing_747_400M_AirFrance_Touchdown;
+      Boeing_747_400M_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_EVA, flight_state())
+{
+  15: Boeing_747_400M_EVA_Climbing;
+  18: Boeing_747_400M_EVA_Flight;
+  21: Boeing_747_400M_EVA_Landing;
+  22: Boeing_747_400M_EVA_Touchdown;
+      Boeing_747_400M_EVA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_KLM, flight_state())
+{
+  15: Boeing_747_400M_KLM_Climbing;
+  18: Boeing_747_400M_KLM_Flight;
+  21: Boeing_747_400M_KLM_Landing;
+  22: Boeing_747_400M_KLM_Touchdown;
+      Boeing_747_400M_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_Lufthansa, flight_state())
+{
+  15: Boeing_747_400M_Lufthansa_Climbing;
+  18: Boeing_747_400M_Lufthansa_Flight;
+  21: Boeing_747_400M_Lufthansa_Landing;
+  22: Boeing_747_400M_Lufthansa_Touchdown;
+      Boeing_747_400M_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_sprites, cargo_subtype)
+{
+  1: Boeing_747_400M_AirFrance;
+  2: Boeing_747_400M_EVA;
+  3: Boeing_747_400M_KLM;
+  4: Boeing_747_400M_Lufthansa;
+     Boeing_747_400M_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_running_cost_factor, flight_state())
+{
+  plane_RC(251)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(298); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(991); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(289); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_EVA_AIR);
+  3: string(STR_VLIV_KLM);
+  4: string(STR_VLIV_LUFTHANSA);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Boeing_747_400M)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_747_400M);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1989), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1989,2002);
+    retire_early: get_retire_early(1989,2002);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 40;
+    passenger_capacity: 266;
+    mail_capacity: 255;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2400;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_747_400M_sprites;
+    purchase: Boeing_747_400M_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_747_400M_cargo_subtype_text;
+    speed: Boeing_747_400M_speed;
+    running_cost_factor: Boeing_747_400M_running_cost_factor;
+    sound_effect: Boeing_747_400M_sound_effect;
+
+    cost_factor: 293; 
+    purchase_running_cost_factor: 251;
+    purchase_speed: plane_speed_kmh(991);
+	mail_capacity: return 640;
+    purchase_mail_capacity: return 640;
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400M)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400M)
+  {
+    property
+    { range: 2400; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400M)
+  {
+    property
+    { range: 3600; }
+  }
+}

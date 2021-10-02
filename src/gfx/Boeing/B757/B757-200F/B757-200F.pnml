@@ -1,0 +1,188 @@
+
+// Boeing-757-200F
+
+// Template: 
+#define Boeing_757_200F_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 43, 27, -22, -14, ANIM]                                           \
+  [ 50, 1, 41, 20, -21, -10, ANIM]                                           \
+  [100, 1, 50, 24, -25, -12, ANIM]                                           \
+  [160, 1, 41, 32, -21, -16, ANIM]                                           \
+  [205, 1, 43, 37, -22, -19, ANIM]                                           \
+  [250, 1, 41, 32, -21, -16, ANIM]                                           \
+  [295, 1, 50, 24, -25, -12, ANIM]                                           \
+  [350, 1, 41, 20, -21, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 43, 27, -21, -14, ANIM]                                          \
+  [ 50, 40, 41, 20, -22, -11, ANIM]                                          \
+  [100, 40, 50, 24, -25, -12, ANIM]                                          \
+  [160, 40, 41, 32, -21, -16, ANIM]                                          \
+  [205, 40, 43, 37, -21, -18, ANIM]                                          \
+  [250, 40, 41, 32, -21, -16, ANIM]                                          \
+  [295, 40, 50, 24, -25, -12, ANIM]                                          \
+  [350, 40, 41, 20, -19, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 42, 35, -21, -18, ANIM]                                          \
+  [ 50, 80, 41, 34, -21, -17, ANIM]                                          \
+  [100, 80, 54, 24, -27, -12, ANIM]                                          \
+  [160, 80, 38, 21, -19, -11, ANIM]                                          \
+  [205, 80, 41, 16, -21, -8 , ANIM]                                          \
+  [250, 80, 38, 21, -19, -11, ANIM]                                          \
+  [295, 80, 54, 24, -27, -12, ANIM]                                          \
+  [350, 80, 41, 34, -21, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 120, 43, 27, -21, -14, ANIM]                                         \
+  [ 50, 120, 41, 20, -21, -10, ANIM]                                         \
+  [100, 120, 50, 23, -25, -12, ANIM]                                         \
+  [160, 120, 41, 32, -21, -16, ANIM]                                         \
+  [205, 120, 43, 37, -22, -19, ANIM]                                         \
+  [250, 120, 41, 32, -21, -16, ANIM]                                         \
+  [295, 120, 50, 24, -25, -12, ANIM]                                         \
+  [350, 120, 41, 20, -21, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 42, 27, -21, -14, ANIM]                                         \
+  [ 50, 160, 44, 26, -22, -13, ANIM]                                         \
+  [100, 160, 50, 24, -25, -12, ANIM]                                         \
+  [160, 160, 42, 27, -21, -14, ANIM]                                         \
+  [205, 160, 42, 22, -21, -11, ANIM]                                         \
+  [250, 160, 42, 27, -21, -14, ANIM]                                         \
+  [295, 160, 50, 24, -25, -12, ANIM]                                         \
+  [350, 160, 44, 26, -22, -13, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200F/(0)Greyscale.png"
+purchase_sprite(Boeing_757_200F, 295, 40, 50, 24, -25, -12)
+Boeing_757_200F_sprite_layout_template(Boeing_757_200F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200F/Cygnus.png"
+Boeing_757_200F_sprite_layout_template(Boeing_757_200F_Cygnus) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_Greyscale, flight_state())
+{
+  15: Boeing_757_200F_Greyscale_Climbing;
+  18: Boeing_757_200F_Greyscale_Flight;
+  21: Boeing_757_200F_Greyscale_Landing;
+  22: Boeing_757_200F_Greyscale_Touchdown;
+      Boeing_757_200F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_Cygnus, flight_state())
+{
+  15: Boeing_757_200F_Cygnus_Climbing;
+  18: Boeing_757_200F_Cygnus_Flight;
+  21: Boeing_757_200F_Cygnus_Landing;
+  22: Boeing_757_200F_Cygnus_Touchdown;
+      Boeing_757_200F_Cygnus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_running_cost_factor, flight_state())
+{
+  plane_RC(103)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(233); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(402); // airplane climbing after take-off
+      18: return plane_speed_kmh(934); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_sprites, cargo_subtype)
+{
+  1: Boeing_757_200F_Cygnus;
+     Boeing_757_200F_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_CYGNUS);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Boeing_757_200F)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_757_200F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1987), 1, 1);
+    vehicle_life: 40;
+    model_life: get_model_life(1987,1999);
+    retire_early: get_retire_early(1987,1999);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 5;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1050;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_757_200F_sprites;
+    purchase: Boeing_757_200F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_757_200F_cargo_subtype_text;
+    speed: Boeing_757_200F_speed;
+    running_cost_factor: Boeing_757_200F_running_cost_factor;
+    sound_effect: Boeing_757_200F_sound_effect;
+    mail_capacity: return 312;
+
+    cost_factor: 82;
+    purchase_running_cost_factor: 103;
+    purchase_speed: plane_speed_kmh(934); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_757_200F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_757_200F)
+  {
+    property
+    { range: 1050; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_757_200F)
+  {
+    property
+    { range: 1575; }
+  }
+}

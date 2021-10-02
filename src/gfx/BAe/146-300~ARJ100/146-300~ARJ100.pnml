@@ -1,0 +1,351 @@
+
+// BAe-146-300
+
+// Template: 
+#define BAe_146_300_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 40, 18, -20, -9 , ANIM]                                           \
+  [ 50, 2, 36, 15, -18, -7 , ANIM]                                           \
+  [ 90, 2, 42, 22, -21, -11, ANIM]                                           \
+  [140, 2, 36, 29, -18, -15, ANIM]                                           \
+  [180, 2, 40, 32, -20, -17, ANIM]                                           \
+  [225, 2, 36, 29, -18, -15, ANIM]                                           \
+  [270, 2, 42, 22, -21, -11, ANIM]                                           \
+  [320, 2, 36, 15, -18, -7 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 40, 40, 18, -20, -9 , ANIM]                                          \
+  [ 50, 40, 36, 15, -18, -7 , ANIM]                                          \
+  [ 90, 40, 42, 22, -21, -11, ANIM]                                          \
+  [140, 40, 36, 29, -18, -15, ANIM]                                          \
+  [180, 40, 40, 32, -20, -16, ANIM]                                          \
+  [225, 40, 36, 29, -18, -15, ANIM]                                          \
+  [270, 40, 42, 22, -21, -11, ANIM]                                          \
+  [320, 40, 36, 15, -18, -7 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 80, 40, 27, -20, -13, ANIM]                                          \
+  [ 50, 80, 37, 23, -19, -8 , ANIM]                                          \
+  [ 90, 80, 44, 21, -22, -11, ANIM]                                          \
+  [140, 80, 36, 18, -18, -9 , ANIM]                                          \
+  [180, 80, 40, 21, -20, -11, ANIM]                                          \
+  [225, 80, 36, 18, -18, -9 , ANIM]                                          \
+  [270, 80, 44, 21, -22, -11, ANIM]                                          \
+  [320, 80, 37, 23, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 110, 40, 18, -20, -9 , ANIM]                                         \
+  [ 50, 110, 36, 15, -18, -7 , ANIM]                                         \
+  [ 90, 110, 42, 22, -21, -11, ANIM]                                         \
+  [140, 110, 36, 29, -18, -15, ANIM]                                         \
+  [180, 110, 40, 32, -20, -16, ANIM]                                         \
+  [225, 110, 36, 29, -15, -15, ANIM]                                         \
+  [270, 110, 42, 22, -21, -11, ANIM]                                         \
+  [320, 110, 36, 15, -18, -7 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 150, 40, 23, -20, -11, ANIM]                                         \
+  [ 50, 150, 37, 18, -18, -9 , ANIM]                                         \
+  [ 90, 150, 44, 20, -22, -10, ANIM]                                         \
+  [140, 150, 37, 25, -18, -13, ANIM]                                         \
+  [180, 150, 40, 29, -20, -15, ANIM]                                         \
+  [225, 150, 37, 25, -18, -13, ANIM]                                         \
+  [270, 150, 44, 20, -22, -10, ANIM]                                         \
+  [320, 150, 37, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/(0)Greyscale.png"
+purchase_sprite(BAe_146_300, 270, 2, 42, 22, -21, -11)
+BAe_146_300_sprite_layout_template(BAe_146_300_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/AerLingus.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_AerLingus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/AirDolomiti.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_AirDolomiti) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/AstraAirways.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_AstraAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Blue1.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Blue1) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Brussels.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Brussels) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Buzz.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Buzz) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Flybe.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Flybe) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Malmo.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Malmo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Malmofoot.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Malmofoot) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/SAS.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Swiss.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300~ARJ100/Turkish.png"
+BAe_146_300_sprite_layout_template(BAe_146_300_Turkish) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Greyscale, flight_state())
+{
+  15: BAe_146_300_Greyscale_Climbing;
+  18: BAe_146_300_Greyscale_Flight;
+  21: BAe_146_300_Greyscale_Landing;
+  22: BAe_146_300_Greyscale_Touchdown;
+      BAe_146_300_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_AerLingus, flight_state())
+{
+  15: BAe_146_300_AerLingus_Climbing;
+  18: BAe_146_300_AerLingus_Flight;
+  21: BAe_146_300_AerLingus_Landing;
+  22: BAe_146_300_AerLingus_Touchdown;
+      BAe_146_300_AerLingus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_AirDolomiti, flight_state())
+{
+  15: BAe_146_300_AirDolomiti_Climbing;
+  18: BAe_146_300_AirDolomiti_Flight;
+  21: BAe_146_300_AirDolomiti_Landing;
+  22: BAe_146_300_AirDolomiti_Touchdown;
+      BAe_146_300_AirDolomiti_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_AstraAirways, flight_state())
+{
+  15: BAe_146_300_AstraAirways_Climbing;
+  18: BAe_146_300_AstraAirways_Flight;
+  21: BAe_146_300_AstraAirways_Landing;
+  22: BAe_146_300_AstraAirways_Touchdown;
+      BAe_146_300_AstraAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Blue1, flight_state())
+{
+  15: BAe_146_300_Blue1_Climbing;
+  18: BAe_146_300_Blue1_Flight;
+  21: BAe_146_300_Blue1_Landing;
+  22: BAe_146_300_Blue1_Touchdown;
+      BAe_146_300_Blue1_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Brussels, flight_state())
+{
+  15: BAe_146_300_Brussels_Climbing;
+  18: BAe_146_300_Brussels_Flight;
+  21: BAe_146_300_Brussels_Landing;
+  22: BAe_146_300_Brussels_Touchdown;
+      BAe_146_300_Brussels_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Buzz, flight_state())
+{
+  15: BAe_146_300_Buzz_Climbing;
+  18: BAe_146_300_Buzz_Flight;
+  21: BAe_146_300_Buzz_Landing;
+  22: BAe_146_300_Buzz_Touchdown;
+      BAe_146_300_Buzz_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Flybe, flight_state())
+{
+  15: BAe_146_300_Flybe_Climbing;
+  18: BAe_146_300_Flybe_Flight;
+  21: BAe_146_300_Flybe_Landing;
+  22: BAe_146_300_Flybe_Touchdown;
+      BAe_146_300_Flybe_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Malmo, flight_state())
+{
+  15: BAe_146_300_Malmo_Climbing;
+  18: BAe_146_300_Malmo_Flight;
+  21: BAe_146_300_Malmo_Landing;
+  22: BAe_146_300_Malmo_Touchdown;
+      BAe_146_300_Malmo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Malmofoot, flight_state())
+{
+  15: BAe_146_300_Malmofoot_Climbing;
+  18: BAe_146_300_Malmofoot_Flight;
+  21: BAe_146_300_Malmofoot_Landing;
+  22: BAe_146_300_Malmofoot_Touchdown;
+      BAe_146_300_Malmofoot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_SAS, flight_state())
+{
+  15: BAe_146_300_SAS_Climbing;
+  18: BAe_146_300_SAS_Flight;
+  21: BAe_146_300_SAS_Landing;
+  22: BAe_146_300_SAS_Touchdown;
+      BAe_146_300_SAS_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Swiss, flight_state())
+{
+  15: BAe_146_300_Swiss_Climbing;
+  18: BAe_146_300_Swiss_Flight;
+  21: BAe_146_300_Swiss_Landing;
+  22: BAe_146_300_Swiss_Touchdown;
+      BAe_146_300_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_Turkish, flight_state())
+{
+  15: BAe_146_300_Turkish_Climbing;
+  18: BAe_146_300_Turkish_Flight;
+  21: BAe_146_300_Turkish_Landing;
+  22: BAe_146_300_Turkish_Touchdown;
+      BAe_146_300_Turkish_Grounded;
+}
+             
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_sprites, cargo_subtype)
+{
+  1: BAe_146_300_AerLingus;
+  2: BAe_146_300_AirDolomiti;
+  3: BAe_146_300_AstraAirways;
+  4: BAe_146_300_Blue1;
+  5: BAe_146_300_Brussels;
+  6: BAe_146_300_Buzz;
+  7: BAe_146_300_Flybe;
+  8: BAe_146_300_Malmo;
+  9: BAe_146_300_Malmofoot;
+ 10: BAe_146_300_SAS;
+ 11: BAe_146_300_Swiss;
+ 12: BAe_146_300_Turkish;
+     BAe_146_300_Greyscale;
+}
+                
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_running_cost_factor, flight_state())
+{
+  plane_RC(66)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(781); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAE);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_AIR_DOLOMITI);
+  3: string(STR_VLIV_ASTRA_AIRWAYS);
+  4: string(STR_VLIV_BLUE1);
+  5: string(STR_VLIV_BRUSSELS_AIRLINES);
+  6: string(STR_VLIV_BUZZ);
+  7: string(STR_VLIV_FLYBE);
+  8: string(STR_VLIV_MALMO_AVIATION);
+  9: string(STR_VLIV_MALMO_AVIATION_SVENSK_FOOTBALL);
+ 10: string(STR_VLIV_SAS);
+ 11: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 12: string(STR_VLIV_TURKISH_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300_cargo_subtype_capacity, cargo_subtype)
+{
+  2: return 99;
+  3: return 112;
+  5: return 97;
+  7: return 112;
+ 11: return 97;
+     return 128;
+}
+
+item (FEAT_AIRCRAFT, BAe_146_300)
+{
+  property
+  {
+    name: string(STR_AIRV_BAE_146_300);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 1, 1);
+    vehicle_life: 14;
+    model_life: get_model_life(1988,2002);
+    retire_early: get_retire_early(1988,2002);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 128;
+    mail_capacity: 13;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 495;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAe_146_300_sprites;
+    purchase: BAe_146_300_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAe_146_300_cargo_subtype_text;
+	passenger_capacity: BAe_146_300_cargo_subtype_capacity;
+    speed: BAe_146_300_speed;
+    running_cost_factor: BAe_146_300_running_cost_factor;
+    sound_effect: BAe_146_300_sound_effect;
+
+    cost_factor: 24; 
+    purchase_running_cost_factor: 66;
+    purchase_speed: plane_speed_kmh(781); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300)
+  {
+    property
+    { range: 495; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300)
+  {
+    property
+    { range: 745; }
+  }
+}

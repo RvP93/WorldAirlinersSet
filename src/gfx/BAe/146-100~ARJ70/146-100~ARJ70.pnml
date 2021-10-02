@@ -1,0 +1,235 @@
+
+// BAe-146-100
+
+// Template: 
+#define BAe_146_100_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 40, 17, -20, -9 , ANIM]                                           \
+  [ 50, 2, 36, 15, -18, -7 , ANIM]                                           \
+  [ 90, 2, 38, 22, -19, -11, ANIM]                                           \
+  [140, 2, 36, 29, -18, -15, ANIM]                                           \
+  [180, 2, 39, 30, -20, -15, ANIM]                                           \
+  [225, 2, 36, 29, -18, -15, ANIM]                                           \
+  [270, 2, 38, 22, -19, -11, ANIM]                                           \
+  [320, 2, 36, 15, -18, -7 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 40, 40, 17, -20, -9 , ANIM]                                          \
+  [ 50, 40, 36, 15, -18, -7 , ANIM]                                          \
+  [ 90, 40, 38, 22, -19, -11, ANIM]                                          \
+  [140, 40, 36, 31, -18, -15, ANIM]                                          \
+  [180, 40, 40, 31, -20, -16, ANIM]                                          \
+  [225, 40, 36, 31, -18, -15, ANIM]                                          \
+  [270, 40, 38, 22, -19, -11, ANIM]                                          \
+  [320, 40, 36, 15, -18, -7 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 75, 40, 26, -20, -13, ANIM]                                          \
+  [ 50, 75, 37, 23, -19, -8 , ANIM]                                          \
+  [ 90, 75, 40, 21, -22, -11, ANIM]                                          \
+  [140, 75, 35, 18, -18, -9 , ANIM]                                          \
+  [180, 75, 40, 21, -20, -11, ANIM]                                          \
+  [225, 75, 35, 18, -18, -9 , ANIM]                                          \
+  [270, 75, 44, 21, -22, -11, ANIM]                                          \
+  [320, 75, 36, 23, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 105, 40, 17, -20, -9 , ANIM]                                         \
+  [ 50, 105, 36, 15, -18, -7 , ANIM]                                         \
+  [ 90, 105, 39, 22, -20, -11, ANIM]                                         \
+  [140, 105, 36, 31, -18, -15, ANIM]                                         \
+  [180, 105, 40, 31, -20, -16, ANIM]                                         \
+  [225, 105, 36, 31, -15, -15, ANIM]                                         \
+  [270, 105, 39, 22, -20, -11, ANIM]                                         \
+  [320, 105, 36, 15, -18, -7 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 140, 40, 22, -20, -11, ANIM]                                         \
+  [ 50, 140, 37, 18, -18, -9 , ANIM]                                         \
+  [ 90, 140, 41, 20, -22, -10, ANIM]                                         \
+  [140, 140, 37, 25, -18, -13, ANIM]                                         \
+  [180, 140, 39, 28, -20, -15, ANIM]                                         \
+  [225, 140, 36, 25, -18, -13, ANIM]                                         \
+  [270, 140, 41, 20, -22, -10, ANIM]                                         \
+  [320, 140, 37, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/BAe/146-100~ARJ70/(0)Greyscale.png"
+purchase_sprite(BAe_146_100, 270, 2, 38, 22, -19, -11)
+BAe_146_100_sprite_layout_template(BAe_146_100_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-100~ARJ70/AirOne.png"
+BAe_146_100_sprite_layout_template(BAe_146_100_AirOne) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-100~ARJ70/Flybe.png"
+BAe_146_100_sprite_layout_template(BAe_146_100_Flybe) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-100~ARJ70/SAS.png"
+BAe_146_100_sprite_layout_template(BAe_146_100_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-100~ARJ70/Turkish.png"
+BAe_146_100_sprite_layout_template(BAe_146_100_Turkish) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_Greyscale, flight_state())
+{
+  15: BAe_146_100_Greyscale_Climbing;
+  18: BAe_146_100_Greyscale_Flight;
+  21: BAe_146_100_Greyscale_Landing;
+  22: BAe_146_100_Greyscale_Touchdown;
+      BAe_146_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_AirOne, flight_state())
+{
+  15: BAe_146_100_AirOne_Climbing;
+  18: BAe_146_100_AirOne_Flight;
+  21: BAe_146_100_AirOne_Landing;
+  22: BAe_146_100_AirOne_Touchdown;
+      BAe_146_100_AirOne_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_Flybe, flight_state())
+{
+  15: BAe_146_100_Flybe_Climbing;
+  18: BAe_146_100_Flybe_Flight;
+  21: BAe_146_100_Flybe_Landing;
+  22: BAe_146_100_Flybe_Touchdown;
+      BAe_146_100_Flybe_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_SAS, flight_state())
+{
+  15: BAe_146_100_SAS_Climbing;
+  18: BAe_146_100_SAS_Flight;
+  21: BAe_146_100_SAS_Landing;
+  22: BAe_146_100_SAS_Touchdown;
+      BAe_146_100_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_Turkish, flight_state())
+{
+  15: BAe_146_100_Turkish_Climbing;
+  18: BAe_146_100_Turkish_Flight;
+  21: BAe_146_100_Turkish_Landing;
+  22: BAe_146_100_Turkish_Touchdown;
+      BAe_146_100_Turkish_Grounded;
+}
+             
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_sprites, cargo_subtype)
+{
+  1: BAe_146_100_AirOne;
+  2: BAe_146_100_Flybe;
+  3: BAe_146_100_SAS;
+  4: BAe_146_100_Turkish;
+     BAe_146_100_Greyscale;
+}
+                
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_running_cost_factor, flight_state())
+{
+  plane_RC(49)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(781); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAE);
+  1: string(STR_VLIV_AIR_ONE);
+  2: string(STR_VLIV_FLYBE);
+  3: string(STR_VLIV_SAS);
+  4: string(STR_VLIV_TURKISH_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_100_cargo_subtype_capacity, cargo_subtype)
+{
+     return 92;
+}
+
+item (FEAT_AIRCRAFT, BAe_146_100)
+{
+  property
+  {
+    name: string(STR_AIRV_BAE_146_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1983), 1, 1);
+    vehicle_life: 13;
+    model_life: get_model_life(1983,1996);
+    retire_early: get_retire_early(1983,1996);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 28;
+    passenger_capacity: 92;
+    mail_capacity: 9;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 555;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAe_146_100_sprites;
+    purchase: BAe_146_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAe_146_100_cargo_subtype_text;
+	passenger_capacity: BAe_146_100_cargo_subtype_capacity;
+    speed: BAe_146_100_speed;
+    running_cost_factor: BAe_146_100_running_cost_factor;
+    sound_effect: BAe_146_100_sound_effect;
+
+    cost_factor: 20; 
+    purchase_running_cost_factor: 49;
+    purchase_speed: plane_speed_kmh(781); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAe_146_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAe_146_100)
+  {
+    property
+    { range: 555; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BAe_146_100)
+  {
+    property
+    { range: 830; }
+  }
+}

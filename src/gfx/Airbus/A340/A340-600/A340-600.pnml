@@ -1,0 +1,345 @@
+
+// Airbus-A340_600
+
+// Template: 
+#define Airbus_A340_600_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 68, 36, -34, -18, ANIM]                                           \
+  [ 75, 1, 60, 31, -30, -16, ANIM]                                           \
+  [140, 1, 76, 36, -38, -18, ANIM]                                           \
+  [220, 1, 59, 42, -30, -21, ANIM]                                           \
+  [285, 1, 66, 44, -33, -22, ANIM]                                           \
+  [355, 1, 59, 42, -30, -21, ANIM]                                           \
+  [420, 1, 76, 36, -39, -19, ANIM]                                           \
+  [500, 1, 60, 31, -30, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 68, 36, -34, -18, ANIM]                                          \
+  [ 75, 50, 60, 31, -30, -16, ANIM]                                          \
+  [140, 50, 76, 36, -38, -18, ANIM]                                          \
+  [220, 50, 59, 44, -30, -22, ANIM]                                          \
+  [285, 50, 66, 45, -33, -23, ANIM]                                          \
+  [355, 50, 59, 44, -30, -22, ANIM]                                          \
+  [420, 50, 76, 36, -38, -18, ANIM]                                          \
+  [500, 50, 60, 31, -30, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 66, 53, -33, -27, ANIM]                                         \
+  [ 75, 100, 59, 49, -30, -25, ANIM]                                         \
+  [140, 100, 72, 35, -36, -18, ANIM]                                         \
+  [220, 100, 59, 29, -30, -15, ANIM]                                         \
+  [285, 100, 64, 19, -32, -10, ANIM]                                         \
+  [355, 100, 59, 29, -30, -15, ANIM]                                         \
+  [420, 100, 72, 35, -36, -18, ANIM]                                         \
+  [500, 100, 59, 49, -30, -25, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 155, 68, 32, -34, -16, ANIM]                                         \
+  [ 75, 155, 60, 31, -30, -16, ANIM]                                         \
+  [140, 155, 76, 36, -38, -18, ANIM]                                         \
+  [220, 155, 60, 44, -30, -22, ANIM]                                         \
+  [285, 155, 66, 41, -33, -21, ANIM]                                         \
+  [355, 155, 60, 44, -30, -22, ANIM]                                         \
+  [420, 155, 76, 36, -38, -18, ANIM]                                         \
+  [500, 155, 61, 31, -31, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 205, 68, 45, -34, -23, ANIM]                                         \
+  [ 75, 205, 60, 39, -30, -20, ANIM]                                         \
+  [140, 205, 73, 35, -37, -18, ANIM]                                         \
+  [220, 205, 59, 37, -30, -19, ANIM]                                         \
+  [285, 205, 68, 35, -34, -18, ANIM]                                         \
+  [355, 205, 59, 37, -30, -19, ANIM]                                         \
+  [420, 205, 73, 35, -37, -18, ANIM]                                         \
+  [500, 205, 60, 39, -30, -20, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/(0)Greyscale.png"
+purchase_sprite(Airbus_A340_600, 420, 1, 76, 36, -39, -19)
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/ChinaEastern.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Etihad.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Etihad) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/EtihadF1.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_EtihadF1) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Hainan.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Hainan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Iberia.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/IberiaNew.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_IberiaNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Lufthansa.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Qatar.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Qatar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/SouthAfrican.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_SouthAfrican) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Thai.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Thai) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Virgin.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Virgin) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Greyscale, flight_state())
+{
+  15: Airbus_A340_600_Greyscale_Climbing;
+  18: Airbus_A340_600_Greyscale_Flight;
+  21: Airbus_A340_600_Greyscale_Landing;
+  22: Airbus_A340_600_Greyscale_Touchdown;
+      Airbus_A340_600_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_ChinaEastern, flight_state())
+{
+  15: Airbus_A340_600_ChinaEastern_Climbing;
+  18: Airbus_A340_600_ChinaEastern_Flight;
+  21: Airbus_A340_600_ChinaEastern_Landing;
+  22: Airbus_A340_600_ChinaEastern_Touchdown;
+      Airbus_A340_600_ChinaEastern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Etihad, flight_state())
+{
+  15: Airbus_A340_600_Etihad_Climbing;
+  18: Airbus_A340_600_Etihad_Flight;
+  21: Airbus_A340_600_Etihad_Landing;
+  22: Airbus_A340_600_Etihad_Touchdown;
+      Airbus_A340_600_Etihad_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_EtihadF1, flight_state())
+{
+  15: Airbus_A340_600_EtihadF1_Climbing;
+  18: Airbus_A340_600_EtihadF1_Flight;
+  21: Airbus_A340_600_EtihadF1_Landing;
+  22: Airbus_A340_600_EtihadF1_Touchdown;
+      Airbus_A340_600_EtihadF1_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Hainan, flight_state())
+{
+  15: Airbus_A340_600_Hainan_Climbing;
+  18: Airbus_A340_600_Hainan_Flight;
+  21: Airbus_A340_600_Hainan_Landing;
+  22: Airbus_A340_600_Hainan_Touchdown;
+      Airbus_A340_600_Hainan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Iberia, flight_state())
+{
+  15: Airbus_A340_600_Iberia_Climbing;
+  18: Airbus_A340_600_Iberia_Flight;
+  21: Airbus_A340_600_Iberia_Landing;
+  22: Airbus_A340_600_Iberia_Touchdown;
+      Airbus_A340_600_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_IberiaNew, flight_state())
+{
+  15: Airbus_A340_600_IberiaNew_Climbing;
+  18: Airbus_A340_600_IberiaNew_Flight;
+  21: Airbus_A340_600_IberiaNew_Landing;
+  22: Airbus_A340_600_IberiaNew_Touchdown;
+      Airbus_A340_600_IberiaNew_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Lufthansa, flight_state())
+{
+  15: Airbus_A340_600_Lufthansa_Climbing;
+  18: Airbus_A340_600_Lufthansa_Flight;
+  21: Airbus_A340_600_Lufthansa_Landing;
+  22: Airbus_A340_600_Lufthansa_Touchdown;
+      Airbus_A340_600_Lufthansa_Grounded;
+}	  
+	  
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Qatar, flight_state())
+{
+  15: Airbus_A340_600_Qatar_Climbing;
+  18: Airbus_A340_600_Qatar_Flight;
+  21: Airbus_A340_600_Qatar_Landing;
+  22: Airbus_A340_600_Qatar_Touchdown;
+      Airbus_A340_600_Qatar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_SouthAfrican, flight_state())
+{
+  15: Airbus_A340_600_SouthAfrican_Climbing;
+  18: Airbus_A340_600_SouthAfrican_Flight;
+  21: Airbus_A340_600_SouthAfrican_Landing;
+  22: Airbus_A340_600_SouthAfrican_Touchdown;
+      Airbus_A340_600_SouthAfrican_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Thai, flight_state())
+{
+  15: Airbus_A340_600_Thai_Climbing;
+  18: Airbus_A340_600_Thai_Flight;
+  21: Airbus_A340_600_Thai_Landing;
+  22: Airbus_A340_600_Thai_Touchdown;
+      Airbus_A340_600_Thai_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Virgin, flight_state())
+{
+  15: Airbus_A340_600_Virgin_Climbing;
+  18: Airbus_A340_600_Virgin_Flight;
+  21: Airbus_A340_600_Virgin_Landing;
+  22: Airbus_A340_600_Virgin_Touchdown;
+      Airbus_A340_600_Virgin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_sprites, cargo_subtype)
+{
+  1: Airbus_A340_600_ChinaEastern;
+  2: Airbus_A340_600_Etihad;
+  3: Airbus_A340_600_EtihadF1;
+  4: Airbus_A340_600_Hainan;
+  5: Airbus_A340_600_Iberia;
+  6: Airbus_A340_600_IberiaNew;
+  7: Airbus_A340_600_Lufthansa;
+  8: Airbus_A340_600_Qatar;
+  9: Airbus_A340_600_SouthAfrican;
+ 10: Airbus_A340_600_Thai;
+ 11: Airbus_A340_600_Virgin;
+ Airbus_A340_600_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_running_cost_factor, flight_state())
+{
+  plane_RC(259)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(483); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(483); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_CHINA_EASTERN);
+  2: string(STR_VLIV_ETIHAD_AIRWAYS);
+  3: string(STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1);
+  4: string(STR_VLIV_HAINAN_AIRLINES);
+  5: string(STR_VLIV_IBERIA_OLD);
+  6: string(STR_VLIV_IBERIA);
+  7: string(STR_VLIV_LUFTHANSA);
+  8: string(STR_VLIV_QATAR_AIRWAYS);
+  9: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 10: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 11: string(STR_VLIV_VIRGIN_ATLANTIC);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 320;
+   2: return 292;
+   3: return 292;
+   4: return 288;
+   5: return 342;
+   6: return 342;
+   7: return 306;
+   8: return 305;
+   9: return 346;
+  10: return 267;
+  11: return 316; 
+  return 380;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A340_600)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A340_600);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2002), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(2002,2050);
+    retire_early: get_retire_early(2002,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 47;
+    passenger_capacity: 380;
+    mail_capacity: 44;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2635;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A340_600_sprites;
+    purchase: Airbus_A340_600_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A340_600_cargo_subtype_text;
+	passenger_capacity: Airbus_A340_600_cargo_subtype_capacity;
+    speed: Airbus_A340_600_speed;
+    running_cost_factor: Airbus_A340_600_running_cost_factor;
+    sound_effect: Airbus_A340_600_sound_effect;
+
+    cost_factor: 231; 
+    purchase_running_cost_factor: 259;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A340_600)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A340_600)
+  {
+    property
+    { range: 2635; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A340_600)
+  {
+    property
+    { range: 3950; }
+  }
+}

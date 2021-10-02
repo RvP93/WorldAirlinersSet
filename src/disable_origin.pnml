@@ -1,0 +1,9 @@
+ /// disable_origin
+
+// debug: disable all original planes
+
+if (!enable_standard_planes)
+{
+  disable_item(FEAT_AIRCRAFT, 0, 39);
+}
+

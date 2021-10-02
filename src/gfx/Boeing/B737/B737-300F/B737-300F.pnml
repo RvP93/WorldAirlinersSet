@@ -1,0 +1,272 @@
+
+// Boeing-737-300F
+
+// Template: 
+#define Boeing_737_300F_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 2, 41, 21, -21, -11, ANIM]                                           \
+  [ 49, 2, 35, 18, -18, -9 , ANIM]                                           \
+  [ 88, 2, 42, 23, -21, -12, ANIM]                                           \
+  [136, 2, 34, 30, -17, -15, ANIM]                                           \
+  [178, 2, 41, 30, -21, -15, ANIM]                                           \
+  [226, 2, 34, 30, -17, -15, ANIM]                                           \
+  [267, 2, 42, 23, -21, -12, ANIM]                                           \
+  [315, 2, 35, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 41, 21, -21, -11, ANIM]                                          \
+  [ 49, 35, 35, 18, -18, -9 , ANIM]                                          \
+  [ 88, 35, 42, 23, -21, -12, ANIM]                                          \
+  [136, 35, 34, 30, -17, -15, ANIM]                                          \
+  [178, 35, 41, 30, -21, -15, ANIM]                                          \
+  [226, 35, 34, 30, -17, -15, ANIM]                                          \
+  [267, 35, 42, 23, -21, -12, ANIM]                                          \
+  [315, 35, 35, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 69, 40, 30, -20, -15, ANIM]                                          \
+  [ 49, 69, 34, 27, -17, -14, ANIM]                                          \
+  [ 88, 69, 42, 23, -21, -12, ANIM]                                          \
+  [136, 69, 33, 21, -17, -11, ANIM]                                          \
+  [178, 69, 36, 14, -18, -7 , ANIM]                                          \
+  [226, 69, 33, 21, -17, -11, ANIM]                                          \
+  [267, 69, 42, 23, -21, -12, ANIM]                                          \
+  [315, 69, 34, 27, -17, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 104, 40, 20, -20, -10, ANIM]                                         \
+  [ 49, 104, 35, 18, -18, -9 , ANIM]                                         \
+  [ 88, 104, 42, 23, -21, -12, ANIM]                                         \
+  [136, 104, 34, 30, -17, -15, ANIM]                                         \
+  [178, 104, 40, 25, -20, -13, ANIM]                                         \
+  [226, 104, 34, 30, -17, -15, ANIM]                                         \
+  [267, 104, 42, 23, -21, -12, ANIM]                                         \
+  [315, 104, 35, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 138, 40, 25, -20, -12, ANIM]                                         \
+  [ 49, 138, 36, 22, -18, -11, ANIM]                                         \
+  [ 88, 138, 42, 23, -21, -12, ANIM]                                         \
+  [136, 138, 34, 26, -17, -13, ANIM]                                         \
+  [178, 138, 40, 19, -20, -10, ANIM]                                         \
+  [226, 138, 34, 26, -17, -13, ANIM]                                         \
+  [267, 138, 42, 23, -21, -12, ANIM]                                         \
+  [315, 138, 36, 22, -18, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/(0)Greyscale.png"
+purchase_sprite(Boeing_737_300F, 267, 2, 42, 23, -21, -12)
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/ChannelExpress.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_ChannelExpress) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/Peruvian.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_Peruvian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/QantasFreight.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_QantasFreight) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/RoyalMail.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_RoyalMail) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/SouthAfricanCargo.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_SouthAfricanCargo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/Swiftair.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_Swiftair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-300F/TNT.png"
+Boeing_737_300F_sprite_layout_template(Boeing_737_300F_TNT) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_Greyscale, flight_state())
+{
+  15: Boeing_737_300F_Greyscale_Climbing;
+  18: Boeing_737_300F_Greyscale_Flight;
+  21: Boeing_737_300F_Greyscale_Climbing;
+  22: Boeing_737_300F_Greyscale_Touchdown;
+      Boeing_737_300F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_ChannelExpress, flight_state())
+{
+  15: Boeing_737_300F_ChannelExpress_Climbing;
+  18: Boeing_737_300F_ChannelExpress_Flight;
+  21: Boeing_737_300F_ChannelExpress_Climbing;
+  22: Boeing_737_300F_ChannelExpress_Touchdown;
+      Boeing_737_300F_ChannelExpress_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_Peruvian, flight_state())
+{
+  15: Boeing_737_300F_Peruvian_Climbing;
+  18: Boeing_737_300F_Peruvian_Flight;
+  21: Boeing_737_300F_Peruvian_Climbing;
+  22: Boeing_737_300F_Peruvian_Touchdown;
+      Boeing_737_300F_Peruvian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_QantasFreight, flight_state())
+{
+  15: Boeing_737_300F_QantasFreight_Climbing;
+  18: Boeing_737_300F_QantasFreight_Flight;
+  21: Boeing_737_300F_QantasFreight_Climbing;
+  22: Boeing_737_300F_QantasFreight_Touchdown;
+      Boeing_737_300F_QantasFreight_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_RoyalMail, flight_state())
+{
+  15: Boeing_737_300F_RoyalMail_Climbing;
+  18: Boeing_737_300F_RoyalMail_Flight;
+  21: Boeing_737_300F_RoyalMail_Climbing;
+  22: Boeing_737_300F_RoyalMail_Touchdown;
+      Boeing_737_300F_RoyalMail_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_SouthAfricanCargo, flight_state())
+{
+  15: Boeing_737_300F_SouthAfricanCargo_Climbing;
+  18: Boeing_737_300F_SouthAfricanCargo_Flight;
+  21: Boeing_737_300F_SouthAfricanCargo_Climbing;
+  22: Boeing_737_300F_SouthAfricanCargo_Touchdown;
+      Boeing_737_300F_SouthAfricanCargo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_Swiftair, flight_state())
+{
+  15: Boeing_737_300F_Swiftair_Climbing;
+  18: Boeing_737_300F_Swiftair_Flight;
+  21: Boeing_737_300F_Swiftair_Climbing;
+  22: Boeing_737_300F_Swiftair_Touchdown;
+      Boeing_737_300F_Swiftair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_TNT, flight_state())
+{
+  15: Boeing_737_300F_TNT_Climbing;
+  18: Boeing_737_300F_TNT_Flight;
+  21: Boeing_737_300F_TNT_Climbing;
+  22: Boeing_737_300F_TNT_Touchdown;
+      Boeing_737_300F_TNT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_running_cost_factor, flight_state())
+{
+  plane_RC(57)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(910); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_sprites, cargo_subtype)
+{
+  1: Boeing_737_300F_ChannelExpress;
+  2: Boeing_737_300F_Peruvian;
+  3: Boeing_737_300F_QantasFreight;
+  4: Boeing_737_300F_RoyalMail;
+  5: Boeing_737_300F_SouthAfricanCargo;
+  6: Boeing_737_300F_Swiftair;
+  7: Boeing_737_300F_TNT;
+     Boeing_737_300F_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_300F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_CHANNEL_EXPRESS);
+  2: string(STR_VLIV_PERUVIAN);
+  3: string(STR_VLIV_QANTAS_FREIGHT);
+  4: string(STR_VLIV_ROYAL_MAIL);
+  5: string(STR_VLIV_SOUTH_AFRICAN_CARGO);
+  6: string(STR_VLIV_SWIFTAIR);
+  7: string(STR_VLIV_TNT);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Boeing_737_300F)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_737_300F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1984), 1, 1);
+    vehicle_life: 45;
+    model_life: get_model_life(1984,1994);
+    retire_early: get_retire_early(1984,1994);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 5;
+    passenger_capacity: 0;
+    mail_capacity: 144;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 845;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_737_300F_sprites;
+    purchase: Boeing_737_300F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_737_300F_cargo_subtype_text;
+    speed: Boeing_737_300F_speed;
+    running_cost_factor: Boeing_737_300F_running_cost_factor;
+    sound_effect: Boeing_737_300F_sound_effect;
+
+    cost_factor: 45;
+    purchase_running_cost_factor: 57;
+    purchase_speed: plane_speed_kmh(910); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_300F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_300F)
+  {
+    property
+    { range: 845; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_300F)
+  {
+    property
+    { range: 1270; }
+  }
+}

@@ -1,0 +1,391 @@
+
+// Tupolev-Tu134
+
+// Template: 
+#define Tupolev_Tu134_sprite_layout_template(name)                           \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 34, 21, -17, -10, ANIM]                                           \
+  [ 40, 1, 40, 16, -20, -8 , ANIM]                                           \
+  [ 85, 1, 45, 19, -22, -9 , ANIM]                                           \
+  [135, 1, 38, 28, -19, -15, ANIM]                                           \
+  [180, 1, 34, 34, -17, -17, ANIM]                                           \
+  [220, 1, 38, 28, -19, -14, ANIM]                                           \
+  [265, 1, 45, 19, -22, -9 , ANIM]                                           \
+  [315, 1, 40, 16, -20, -8 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 34, 21, -17, -10, ANIM]                                          \
+  [ 40, 40, 40, 16, -20, -8 , ANIM]                                          \
+  [ 85, 40, 45, 19, -22, -9 , ANIM]                                          \
+  [135, 40, 38, 28, -19, -14, ANIM]                                          \
+  [180, 40, 34, 34, -17, -17, ANIM]                                          \
+  [220, 40, 38, 28, -19, -14, ANIM]                                          \
+  [265, 40, 45, 19, -22, -9 , ANIM]                                          \
+  [315, 40, 40, 16, -20, -8 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 34, 30, -17, -15, ANIM]                                          \
+  [ 40, 80, 37, 25, -18, -12, ANIM]                                          \
+  [ 85, 80, 44, 18, -22, -9 , ANIM]                                          \
+  [135, 80, 39, 18, -19, -9 , ANIM]                                          \
+  [180, 80, 28, 21, -14, -10, ANIM]                                          \
+  [220, 80, 39, 18, -19, -9 , ANIM]                                          \
+  [265, 80, 44, 19, -22, -9 , ANIM]                                          \
+  [315, 80, 37, 25, -18, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 120, 34, 21, -17, -10, ANIM]                                         \
+  [ 40, 120, 40, 16, -20, -8 , ANIM]                                         \
+  [ 85, 120, 45, 19, -22, -9 , ANIM]                                         \
+  [135, 120, 38, 28, -19, -14, ANIM]                                         \
+  [180, 120, 34, 34, -17, -17, ANIM]                                         \
+  [220, 120, 38, 28, -18, -14, ANIM]                                         \
+  [265, 120, 45, 19, -22, -9 , ANIM]                                         \
+  [315, 120, 40, 16, -20, -8 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 34, 24, -17, -12, ANIM]                                         \
+  [ 40, 160, 39, 22, -20, -11, ANIM]                                         \
+  [ 85, 160, 44, 16, -22, -8 , ANIM]                                         \
+  [135, 160, 36, 22, -17, -11, ANIM]                                         \
+  [180, 160, 32, 29, -16, -14, ANIM]                                         \
+  [220, 160, 36, 22, -17, -11, ANIM]                                         \
+  [265, 160, 44, 16, -22, -8 , ANIM]                                         \
+  [315, 160, 39, 22, -20, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/(0)Greyscale.png"
+purchase_sprite(Tupolev_Tu134, 265, 1, 45, 19, -22, -9 )
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Aeroflot.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Aeroflot) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Aeroflot(old).png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_AeroflotOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/AirUkraine.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_AirUkraine) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Alrosa.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Alrosa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Aviogenex.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Aviogenex) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/BAL.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_BAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Balkan.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Balkan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Belavia.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Belavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/CSA.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_CSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Interflug.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Interflug) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/KMV.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_KMV) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/LOT.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Malev.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Malev) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/Rossiya.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_Rossiya) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu134/UTAir.png"
+Tupolev_Tu134_sprite_layout_template(Tupolev_Tu134_UTAir) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Greyscale, flight_state())
+{
+  15: Tupolev_Tu134_Greyscale_Climbing;
+  18: Tupolev_Tu134_Greyscale_Flight;
+  21: Tupolev_Tu134_Greyscale_Landing;
+  22: Tupolev_Tu134_Greyscale_Touchdown;
+      Tupolev_Tu134_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Aeroflot, flight_state())
+{
+  15: Tupolev_Tu134_Aeroflot_Climbing;
+  18: Tupolev_Tu134_Aeroflot_Flight;
+  21: Tupolev_Tu134_Aeroflot_Landing;
+  22: Tupolev_Tu134_Aeroflot_Touchdown;
+      Tupolev_Tu134_Aeroflot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_AeroflotOld, flight_state())
+{
+  15: Tupolev_Tu134_AeroflotOld_Climbing;
+  18: Tupolev_Tu134_AeroflotOld_Flight;
+  21: Tupolev_Tu134_AeroflotOld_Landing;
+  22: Tupolev_Tu134_AeroflotOld_Touchdown;
+      Tupolev_Tu134_AeroflotOld_Grounded;
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_AirUkraine, flight_state())
+{
+  15: Tupolev_Tu134_AirUkraine_Climbing;
+  18: Tupolev_Tu134_AirUkraine_Flight;
+  21: Tupolev_Tu134_AirUkraine_Landing;
+  22: Tupolev_Tu134_AirUkraine_Touchdown;
+      Tupolev_Tu134_AirUkraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Alrosa, flight_state())
+{
+  15: Tupolev_Tu134_Alrosa_Climbing;
+  18: Tupolev_Tu134_Alrosa_Flight;
+  21: Tupolev_Tu134_Alrosa_Landing;
+  22: Tupolev_Tu134_Alrosa_Touchdown;
+      Tupolev_Tu134_Alrosa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Aviogenex, flight_state())
+{
+  15: Tupolev_Tu134_Aviogenex_Climbing;
+  18: Tupolev_Tu134_Aviogenex_Flight;
+  21: Tupolev_Tu134_Aviogenex_Landing;
+  22: Tupolev_Tu134_Aviogenex_Touchdown;
+      Tupolev_Tu134_Aviogenex_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_BAL, flight_state())
+{
+  15: Tupolev_Tu134_BAL_Climbing;
+  18: Tupolev_Tu134_BAL_Flight;
+  21: Tupolev_Tu134_BAL_Landing;
+  22: Tupolev_Tu134_BAL_Touchdown;
+      Tupolev_Tu134_BAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Balkan, flight_state())
+{
+  15: Tupolev_Tu134_Balkan_Climbing;
+  18: Tupolev_Tu134_Balkan_Flight;
+  21: Tupolev_Tu134_Balkan_Landing;
+  22: Tupolev_Tu134_Balkan_Touchdown;
+      Tupolev_Tu134_Balkan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Belavia, flight_state())
+{
+  15: Tupolev_Tu134_Belavia_Climbing;
+  18: Tupolev_Tu134_Belavia_Flight;
+  21: Tupolev_Tu134_Belavia_Landing;
+  22: Tupolev_Tu134_Belavia_Touchdown;
+      Tupolev_Tu134_Belavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_CSA, flight_state())
+{
+  15: Tupolev_Tu134_CSA_Climbing;
+  18: Tupolev_Tu134_CSA_Flight;
+  21: Tupolev_Tu134_CSA_Landing;
+  22: Tupolev_Tu134_CSA_Touchdown;
+      Tupolev_Tu134_CSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Interflug, flight_state())
+{
+  15: Tupolev_Tu134_Interflug_Climbing;
+  18: Tupolev_Tu134_Interflug_Flight;
+  21: Tupolev_Tu134_Interflug_Landing;
+  22: Tupolev_Tu134_Interflug_Touchdown;
+      Tupolev_Tu134_Interflug_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_KMV, flight_state())
+{
+  15: Tupolev_Tu134_KMV_Climbing;
+  18: Tupolev_Tu134_KMV_Flight;
+  21: Tupolev_Tu134_KMV_Landing;
+  22: Tupolev_Tu134_KMV_Touchdown;
+      Tupolev_Tu134_KMV_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_LOT, flight_state())
+{
+  15: Tupolev_Tu134_LOT_Climbing;
+  18: Tupolev_Tu134_LOT_Flight;
+  21: Tupolev_Tu134_LOT_Landing;
+  22: Tupolev_Tu134_LOT_Touchdown;
+      Tupolev_Tu134_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Malev, flight_state())
+{
+  15: Tupolev_Tu134_Malev_Climbing;
+  18: Tupolev_Tu134_Malev_Flight;
+  21: Tupolev_Tu134_Malev_Landing;
+  22: Tupolev_Tu134_Malev_Touchdown;
+      Tupolev_Tu134_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_Rossiya, flight_state())
+{
+  15: Tupolev_Tu134_Rossiya_Climbing;
+  18: Tupolev_Tu134_Rossiya_Flight;
+  21: Tupolev_Tu134_Rossiya_Landing;
+  22: Tupolev_Tu134_Rossiya_Touchdown;
+      Tupolev_Tu134_Rossiya_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_UTAir, flight_state())
+{
+  15: Tupolev_Tu134_UTAir_Climbing;
+  18: Tupolev_Tu134_UTAir_Flight;
+  21: Tupolev_Tu134_UTAir_Landing;
+  22: Tupolev_Tu134_UTAir_Touchdown;
+      Tupolev_Tu134_UTAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_sprites, cargo_subtype)
+{
+  1: Tupolev_Tu134_Aeroflot;
+  2: Tupolev_Tu134_AeroflotOld;
+  3: Tupolev_Tu134_AirUkraine;
+  4: Tupolev_Tu134_Alrosa;
+  5: Tupolev_Tu134_Aviogenex;
+  6: Tupolev_Tu134_BAL;
+  7: Tupolev_Tu134_Balkan;
+  8: Tupolev_Tu134_Belavia;
+  9: Tupolev_Tu134_CSA;
+ 10: Tupolev_Tu134_Interflug;
+ 11: Tupolev_Tu134_KMV;
+ 12: Tupolev_Tu134_LOT;
+ 13: Tupolev_Tu134_Malev;
+ 14: Tupolev_Tu134_Rossiya;
+ 15: Tupolev_Tu134_UTAir;
+     Tupolev_Tu134_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_running_cost_factor, flight_state())
+{
+  plane_RC(90)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(200); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(300); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(450); // in flight
+  21..22: return plane_speed_kmh(200); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_TUPOLEV);
+  1: string(STR_VLIV_AEROFLOT);
+  2: string(STR_VLIV_AEROFLOT_OLD);
+  3: string(STR_VLIV_AIR_UKRAINE);
+  4: string(STR_VLIV_ALROSA);
+  5: string(STR_VLIV_AVIOGENEX);
+  6: string(STR_VLIV_BAL_BASHKIRIAN);
+  7: string(STR_VLIV_BALKAN_BULGARIAN);
+  8: string(STR_VLIV_BELAVIA);
+  9: string(STR_VLIV_CZECH_AIRLINES);
+ 10: string(STR_VLIV_INTERFLUG);
+ 11: string(STR_VLIV_KMV);
+ 12: string(STR_VLIV_LOT);
+ 13: string(STR_VLIV_MALEV);
+ 14: string(STR_VLIV_ROSSIYA_AIRLINES);
+ 15: string(STR_VLIV_UTAIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu134_cargo_subtype_capacity, cargo_subtype)
+{ 
+  12: return 120; //Lot
+   return 107;
+}
+
+item (FEAT_AIRCRAFT, Tupolev_Tu134)
+{
+  property
+  {
+    name: string(STR_AIRV_TUPOLEV_TU134);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1966), 9, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1966,1984);
+    retire_early: get_retire_early(1966,1984);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 80;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 340;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Tupolev_Tu134_sprites;
+    purchase: Tupolev_Tu134_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Tupolev_Tu134_cargo_subtype_text;
+	passenger_capacity: Tupolev_Tu134_cargo_subtype_capacity;
+    speed: Tupolev_Tu134_speed;
+    running_cost_factor: Tupolev_Tu134_running_cost_factor;
+    sound_effect: Tupolev_Tu134_sound_effect;
+
+    cost_factor: 32; 
+    purchase_running_cost_factor: 83;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu134)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu134)
+  {
+    property
+    { range: 340; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu134)
+  {
+    property
+    { range: 515; }
+  }
+}

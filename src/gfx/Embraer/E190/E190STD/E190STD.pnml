@@ -1,0 +1,261 @@
+
+// Embraer-E190STD
+
+// Template: 
+#define Embraer_E190STD_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 37, 22, -19, -11, ANIM]                                           \
+  [ 47, 1, 35, 18, -18, -9 , ANIM]                                           \
+  [ 87, 1, 45, 21, -23, -11, ANIM]                                           \
+  [137, 2, 34, 23, -17, -12, ANIM]                                           \
+  [175, 2, 33, 29, -17, -15, ANIM]                                           \
+  [215, 2, 34, 23, -17, -12, ANIM]                                           \
+  [255, 1, 45, 21, -23, -11, ANIM]                                           \
+  [305, 1, 35, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 37, 22, -19, -11, ANIM]                                          \
+  [ 47, 35, 35, 18, -18, -9 , ANIM]                                          \
+  [ 87, 35, 45, 21, -23, -11, ANIM]                                          \
+  [137, 36, 34, 24, -17, -12, ANIM]                                          \
+  [175, 36, 33, 29, -17, -15, ANIM]                                          \
+  [215, 36, 34, 24, -17, -12, ANIM]                                          \
+  [255, 35, 45, 21, -23, -11, ANIM]                                          \
+  [305, 35, 35, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 39, 30, -20, -15, ANIM]                                          \
+  [ 48, 70, 34, 26, -17, -13, ANIM]                                          \
+  [ 87, 70, 45, 20, -23, -10, ANIM]                                          \
+  [136, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [175, 71, 35, 14, -18, -7 , ANIM]                                          \
+  [215, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [255, 70, 45, 20, -23, -10, ANIM]                                          \
+  [305, 70, 34, 26, -17, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 37, 22, -19, -11, ANIM]                                         \
+  [ 47, 105, 35, 18, -18, -9 , ANIM]                                         \
+  [ 87, 105, 45, 21, -23, -11, ANIM]                                         \
+  [137, 106, 34, 24, -16, -12, ANIM]                                         \
+  [175, 106, 33, 29, -16, -15, ANIM]                                         \
+  [215, 106, 34, 24, -16, -12, ANIM]                                         \
+  [255, 105, 45, 21, -23, -11, ANIM]                                         \
+  [305, 105, 35, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 39, 24, -20, -12, ANIM]                                         \
+  [ 48, 140, 34, 21, -17, -11, ANIM]                                         \
+  [ 87, 140, 43, 23, -22, -12, ANIM]                                         \
+  [136, 140, 35, 21, -18, -11, ANIM]                                         \
+  [175, 141, 33, 21, -16, -11, ANIM]                                         \
+  [215, 140, 35, 21, -18, -11, ANIM]                                         \
+  [255, 140, 43, 23, -22, -12, ANIM]                                         \
+  [305, 140, 34, 21, -17, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/(0)Greyscale.png"
+purchase_sprite(Embraer_E190STD, 255, 1, 45, 21, -23, -11)
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/Alitalia.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/BACityflyer.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_BACityflyer) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/BulgariaAir.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_BulgariaAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/HOP.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_HOP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/KLMCityhopper.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_KLMCityhopper) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190STD/TUI.png"
+Embraer_E190STD_sprite_layout_template(Embraer_E190STD_TUI) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_Greyscale, flight_state())
+{
+  15: Embraer_E190STD_Greyscale_Climbing;
+  18: Embraer_E190STD_Greyscale_Flight;
+  21: Embraer_E190STD_Greyscale_Landing;
+  22: Embraer_E190STD_Greyscale_Touchdown;
+      Embraer_E190STD_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_Alitalia, flight_state())
+{
+  15: Embraer_E190STD_Alitalia_Climbing;
+  18: Embraer_E190STD_Alitalia_Flight;
+  21: Embraer_E190STD_Alitalia_Landing;
+  22: Embraer_E190STD_Alitalia_Touchdown;
+      Embraer_E190STD_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_BACityflyer, flight_state())
+{
+  15: Embraer_E190STD_BACityflyer_Climbing;
+  18: Embraer_E190STD_BACityflyer_Flight;
+  21: Embraer_E190STD_BACityflyer_Landing;
+  22: Embraer_E190STD_BACityflyer_Touchdown;
+      Embraer_E190STD_BACityflyer_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_BulgariaAir, flight_state())
+{
+  15: Embraer_E190STD_BulgariaAir_Climbing;
+  18: Embraer_E190STD_BulgariaAir_Flight;
+  21: Embraer_E190STD_BulgariaAir_Landing;
+  22: Embraer_E190STD_BulgariaAir_Touchdown;
+      Embraer_E190STD_BulgariaAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_HOP, flight_state())
+{
+  15: Embraer_E190STD_HOP_Climbing;
+  18: Embraer_E190STD_HOP_Flight;
+  21: Embraer_E190STD_HOP_Landing;
+  22: Embraer_E190STD_HOP_Touchdown;
+      Embraer_E190STD_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_KLMCityhopper, flight_state())
+{
+  15: Embraer_E190STD_KLMCityhopper_Climbing;
+  18: Embraer_E190STD_KLMCityhopper_Flight;
+  21: Embraer_E190STD_KLMCityhopper_Landing;
+  22: Embraer_E190STD_KLMCityhopper_Touchdown;
+      Embraer_E190STD_KLMCityhopper_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_TUI, flight_state())
+{
+  15: Embraer_E190STD_TUI_Climbing;
+  18: Embraer_E190STD_TUI_Flight;
+  21: Embraer_E190STD_TUI_Landing;
+  22: Embraer_E190STD_TUI_Touchdown;
+      Embraer_E190STD_TUI_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_sprites, cargo_subtype)
+{
+  1: Embraer_E190STD_Alitalia;
+  2: Embraer_E190STD_BACityflyer;
+  3: Embraer_E190STD_BulgariaAir;
+  4: Embraer_E190STD_HOP;
+  5: Embraer_E190STD_KLMCityhopper;
+  6: Embraer_E190STD_TUI;
+  	 Embraer_E190STD_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_running_cost_factor, flight_state())
+{
+  plane_RC(29)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(886); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_ALITALIA);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  3: string(STR_VLIV_BULGARIA_AIR);
+  4: string(STR_VLIV_HOP);
+  5: string(STR_VLIV_KLM_CITYHOPPER);
+  6: string(STR_VLIV_TUI);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190STD_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 100; // Alitalia
+  2: return 98; // British
+  3: return 108; // Bulgaria
+  4: return 100; // HOP
+  5: return 100; // KLM
+  6: return 112; // TUI
+     return 106;
+}
+
+item (FEAT_AIRCRAFT, Embraer_E190STD)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_190STD);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2004), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2004,2259);
+    retire_early: get_retire_early(2004,2259);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 19;
+    passenger_capacity: 106;
+    mail_capacity: 11;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 600;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_E190STD_sprites;
+    purchase: Embraer_E190STD_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_E190STD_cargo_subtype_text;
+	passenger_capacity: Embraer_E190STD_cargo_subtype_capacity;
+    speed: Embraer_E190STD_speed;
+    running_cost_factor: Embraer_E190STD_running_cost_factor;
+
+    cost_factor: 65; 
+    purchase_running_cost_factor: 29;
+    purchase_speed: plane_speed_kmh(886); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190STD)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190STD)
+  {
+    property
+    { range: 600; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190STD)
+  {
+    property
+    { range: 900; }
+  }
+}

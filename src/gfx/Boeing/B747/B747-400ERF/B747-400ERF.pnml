@@ -1,0 +1,258 @@
+
+// Boeing-747-400ERF
+
+// Template: 
+#define Boeing_747_400ERF_sprite_layout_template(name)                       \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 66, 32, -33, -16, ANIM]                                           \
+  [ 80, 1, 60, 32, -30, -16, ANIM]                                           \
+  [150, 1, 69, 34, -35, -17, ANIM]                                           \
+  [230, 1, 58, 42, -29, -21, ANIM]                                           \
+  [300, 1, 64, 43, -32, -22, ANIM]                                           \
+  [370, 1, 58, 42, -29, -21, ANIM]                                           \
+  [440, 1, 69, 34, -32, -22, ANIM]                                           \
+  [520, 1, 60, 32, -30, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded_Transit, IMAGEFILE)                               \
+{                                                                            \
+  [  1, 50, 66, 32, -33, -16, ANIM]                                          \
+  [ 80, 50, 60, 32, -30, -16, ANIM]                                          \
+  [150, 50, 68, 34, -34, -17, ANIM]                                          \
+  [230, 50, 58, 43, -29, -22, ANIM]                                          \
+  [300, 50, 64, 45, -32, -23, ANIM]                                          \
+  [370, 50, 58, 43, -29, -22, ANIM]                                          \
+  [440, 50, 69, 34, -35, -17, ANIM]                                          \
+  [520, 50, 60, 32, -30, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 60, 49, -30, -25, ANIM]                                         \
+  [ 80, 100, 56, 44, -29, -22, ANIM]                                         \
+  [150, 100, 70, 33, -35, -17, ANIM]                                         \
+  [230, 100, 58, 29, -29, -15, ANIM]                                         \
+  [300, 100, 59, 26, -30, -13, ANIM]                                         \
+  [370, 100, 58, 29, -29, -15, ANIM]                                         \
+  [440, 100, 70, 33, -35, -17, ANIM]                                         \
+  [520, 100, 56, 44, -28, -22, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 160, 60, 32, -30, -16, ANIM]                                         \
+  [ 80, 160, 60, 32, -30, -16, ANIM]                                         \
+  [150, 160, 69, 34, -35, -17, ANIM]                                         \
+  [230, 160, 58, 43, -29, -22, ANIM]                                         \
+  [300, 160, 60, 45, -30, -23, ANIM]                                         \
+  [370, 160, 58, 43, -29, -22, ANIM]                                         \
+  [440, 160, 69, 34, -35, -17, ANIM]                                         \
+  [520, 160, 60, 32, -30, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 210, 60, 41, -30, -21, ANIM]                                         \
+  [ 80, 210, 57, 37, -28, -19, ANIM]                                         \
+  [150, 210, 71, 31, -36, -16, ANIM]                                         \
+  [230, 210, 58, 35, -29, -18, ANIM]                                         \
+  [300, 210, 60, 38, -30, -19, ANIM]                                         \
+  [370, 210, 58, 35, -29, -18, ANIM]                                         \
+  [440, 210, 71, 31, -36, -17, ANIM]                                         \
+  [520, 210, 57, 37, -29, -19, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 260, 66, 37, -33, -19, ANIM]                                         \
+  [ 80, 260, 61, 36, -31, -18, ANIM]                                         \
+  [150, 260, 70, 34, -35, -17, ANIM]                                         \
+  [230, 260, 59, 43, -30, -22, ANIM]                                         \
+  [300, 260, 64, 44, -32, -22, ANIM]                                         \
+  [370, 260, 59, 43, -30, -22, ANIM]                                         \
+  [440, 260, 70, 34, -35, -17, ANIM]                                         \
+  [520, 260, 61, 36, -31, -18, ANIM]                                         \
+}                                                                            \
+spritegroup name##_Grounded                                                  \
+{ loading: [name##_Loading];                                                 \
+  loaded: [name##_Grounded_Transit]; }                                       \
+
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/(0)Greyscale.png"
+purchase_sprite(Boeing_747_400ERF, 440, 8, 69, 21, -35, -11)
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/AirBridge.png"
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_AirBridge) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/Cargolux.png"
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_Cargolux) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/Emirates.png"
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/Kalitta.png"
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_Kalitta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400ERF/KLM.png"
+Boeing_747_400ERF_sprite_layout_template(Boeing_747_400ERF_KLM) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_Greyscale, flight_state())
+{
+  15: Boeing_747_400ERF_Greyscale_Climbing;
+  18: Boeing_747_400ERF_Greyscale_Flight;
+  21: Boeing_747_400ERF_Greyscale_Climbing;
+  22: Boeing_747_400ERF_Greyscale_Touchdown;
+      Boeing_747_400ERF_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_AirBridge, flight_state())
+{
+  15: Boeing_747_400ERF_AirBridge_Climbing;
+  18: Boeing_747_400ERF_AirBridge_Flight;
+  21: Boeing_747_400ERF_AirBridge_Climbing;
+  22: Boeing_747_400ERF_AirBridge_Touchdown;
+      Boeing_747_400ERF_AirBridge_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_Cargolux, flight_state())
+{
+  15: Boeing_747_400ERF_Cargolux_Climbing;
+  18: Boeing_747_400ERF_Cargolux_Flight;
+  21: Boeing_747_400ERF_Cargolux_Climbing;
+  22: Boeing_747_400ERF_Cargolux_Touchdown;
+      Boeing_747_400ERF_Cargolux_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_Emirates, flight_state())
+{
+  15: Boeing_747_400ERF_Emirates_Climbing;
+  18: Boeing_747_400ERF_Emirates_Flight;
+  21: Boeing_747_400ERF_Emirates_Climbing;
+  22: Boeing_747_400ERF_Emirates_Touchdown;
+      Boeing_747_400ERF_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_Kalitta, flight_state())
+{
+  15: Boeing_747_400ERF_Kalitta_Climbing;
+  18: Boeing_747_400ERF_Kalitta_Flight;
+  21: Boeing_747_400ERF_Kalitta_Climbing;
+  22: Boeing_747_400ERF_Kalitta_Touchdown;
+      Boeing_747_400ERF_Kalitta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_KLM, flight_state())
+{
+  15: Boeing_747_400ERF_KLM_Climbing;
+  18: Boeing_747_400ERF_KLM_Flight;
+  21: Boeing_747_400ERF_KLM_Climbing;
+  22: Boeing_747_400ERF_KLM_Touchdown;
+      Boeing_747_400ERF_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_sprites, cargo_subtype)
+{
+  1: Boeing_747_400ERF_AirBridge;
+  2: Boeing_747_400ERF_Cargolux;
+  3: Boeing_747_400ERF_Emirates;
+  4: Boeing_747_400ERF_Kalitta;
+  5: Boeing_747_400ERF_KLM;
+     Boeing_747_400ERF_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_running_cost_factor, flight_state())
+{
+  plane_RC(330)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(306); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(991); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(289); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400ERF_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIRBRIDGE);
+  2: string(STR_VLIV_CARGOLUX);
+  3: string(STR_VLIV_EMIRATES_SKYCARGO);
+  4: string(STR_VLIV_KALITTA_AIR);
+  5: string(STR_VLIV_KLM_CARGO);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Boeing_747_400ERF)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_747_400ERF);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2001), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2001,2009);
+    retire_early: get_retire_early(2001,2009);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 15;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1655;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_747_400ERF_sprites;
+    purchase: Boeing_747_400ERF_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_747_400ERF_cargo_subtype_text;
+    speed: Boeing_747_400ERF_speed;
+    running_cost_factor: Boeing_747_400ERF_running_cost_factor;
+    sound_effect: Boeing_747_400ERF_sound_effect;
+    mail_capacity: return 1040;
+
+    cost_factor: 311; 
+    purchase_running_cost_factor: 330;
+    purchase_speed: plane_speed_kmh(991); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400ERF)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400ERF)
+  {
+    property
+    { range: 1655; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400ERF)
+  {
+    property
+    { range: 2485; }
+  }
+}

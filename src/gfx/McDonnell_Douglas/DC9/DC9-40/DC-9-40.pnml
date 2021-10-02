@@ -1,0 +1,210 @@
+
+// Douglas_DC9-40
+
+// Template: 
+#define Douglas_DC9_40_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 34, 20, -17, -10, ANIM]                                           \
+  [ 40, 1, 40, 17, -20, -9 , ANIM]                                           \
+  [ 85, 1, 48, 20, -24, -10, ANIM]                                           \
+  [135, 1, 39, 29, -20, -15, ANIM]                                           \
+  [180, 1, 34, 33, -17, -17, ANIM]                                           \
+  [220, 1, 39, 29, -20, -15, ANIM]                                           \
+  [265, 1, 48, 20, -24, -10, ANIM]                                           \
+  [320, 1, 40, 17, -20, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 34, 20, -17, -10, ANIM]                                          \
+  [ 40, 35, 40, 17, -20, -9 , ANIM]                                          \
+  [ 85, 35, 48, 20, -24, -10, ANIM]                                          \
+  [135, 35, 39, 29, -20, -15, ANIM]                                          \
+  [180, 35, 34, 33, -17, -17, ANIM]                                          \
+  [220, 35, 39, 29, -20, -15, ANIM]                                          \
+  [265, 35, 48, 20, -24, -10, ANIM]                                          \
+  [320, 35, 40, 17, -20, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 34, 30, -17, -15, ANIM]                                          \
+  [ 40, 70, 39, 27, -20, -14, ANIM]                                          \
+  [ 85, 70, 47, 19, -24, -10, ANIM]                                          \
+  [135, 70, 39, 18, -20, -9 , ANIM]                                          \
+  [180, 70, 28, 19, -14, -10, ANIM]                                          \
+  [220, 70, 39, 18, -20, -9 , ANIM]                                          \
+  [265, 70, 47, 19, -24, -10, ANIM]                                          \
+  [320, 70, 39, 26, -20, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 34, 20, -17, -10, ANIM]                                         \
+  [ 40, 105, 40, 17, -20, -9 , ANIM]                                         \
+  [ 85, 105, 48, 20, -24, -10, ANIM]                                         \
+  [135, 105, 39, 29, -20, -15, ANIM]                                         \
+  [180, 105, 34, 33, -17, -17, ANIM]                                         \
+  [220, 105, 39, 29, -20, -15, ANIM]                                         \
+  [265, 105, 48, 20, -24, -10, ANIM]                                         \
+  [320, 105, 39, 17, -20, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 34, 24, -17, -12, ANIM]                                         \
+  [ 40, 140, 40, 21, -20, -11, ANIM]                                         \
+  [ 85, 140, 48, 17, -24, -9 , ANIM]                                         \
+  [135, 140, 38, 23, -19, -12, ANIM]                                         \
+  [180, 140, 32, 27, -16, -14, ANIM]                                         \
+  [220, 140, 38, 23, -19, -12, ANIM]                                         \
+  [265, 140, 48, 17, -24, -9 , ANIM]                                         \
+  [320, 140, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC9/DC9-40/(0)Greyscale.png"
+purchase_sprite(Douglas_DC9_40, 265, 1, 48, 20, -24, -10)
+Douglas_DC9_40_sprite_layout_template(Douglas_DC9_40_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC9/DC9-40/Aviaco.png"
+Douglas_DC9_40_sprite_layout_template(Douglas_DC9_40_Aviaco) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC9/DC9-40/SAS.png"
+Douglas_DC9_40_sprite_layout_template(Douglas_DC9_40_SAS) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_Greyscale, flight_state())
+{
+  15: Douglas_DC9_40_Greyscale_Climbing;
+  18: Douglas_DC9_40_Greyscale_Flight;
+  21: Douglas_DC9_40_Greyscale_Landing;
+  22: Douglas_DC9_40_Greyscale_Touchdown;
+      Douglas_DC9_40_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_Aviaco, flight_state())
+{
+  15: Douglas_DC9_40_Aviaco_Climbing;
+  18: Douglas_DC9_40_Aviaco_Flight;
+  21: Douglas_DC9_40_Aviaco_Landing;
+  22: Douglas_DC9_40_Aviaco_Touchdown;
+      Douglas_DC9_40_Aviaco_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_SAS, flight_state())
+{
+  15: Douglas_DC9_40_SAS_Climbing;
+  18: Douglas_DC9_40_SAS_Flight;
+  21: Douglas_DC9_40_SAS_Landing;
+  22: Douglas_DC9_40_SAS_Touchdown;
+      Douglas_DC9_40_SAS_Grounded;
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_sprites, cargo_subtype)
+{ 
+  1: Douglas_DC9_40_Aviaco;
+  2: Douglas_DC9_40_SAS;
+	 Douglas_DC9_40_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_running_cost_factor, flight_state())
+{
+  plane_RC(67)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(402); // airplane climbing after take-off
+      18: return plane_speed_kmh(894); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_DOUGLAS);
+  1: string(STR_VLIV_AVIACO);
+  2: string(STR_VLIV_SAS);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC9_40_cargo_subtype_capacity, cargo_subtype)
+{
+   2: return 110;
+      return 125;
+}
+
+item (FEAT_AIRCRAFT, Douglas_DC9_40)
+{
+  property
+  {
+    name: string(STR_AIRV_DOUGLAS_DC_9_40);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1968), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1968,1980);
+    retire_early: get_retire_early(1968,1980);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 125;
+    mail_capacity: 13;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 520;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Douglas_DC9_40_sprites;
+    purchase: Douglas_DC9_40_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Douglas_DC9_40_cargo_subtype_text;
+	passenger_capacity: Douglas_DC9_40_cargo_subtype_capacity;
+    speed: Douglas_DC9_40_speed;
+    running_cost_factor: Douglas_DC9_40_running_cost_factor;
+    sound_effect: Douglas_DC9_40_sound_effect;
+
+    cost_factor: 43; 
+    purchase_running_cost_factor: 67;
+    purchase_speed: plane_speed_kmh(894); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC9_40)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC9_40)
+  {
+    property
+    { range: 520; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC9_40)
+  {
+    property
+    { range: 780; }
+  }
+}

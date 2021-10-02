@@ -1,0 +1,859 @@
+
+// Airbus-A319
+
+// Template: 
+#define Airbus_A319_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 21, -23, -11, ANIM]                                           \
+  [ 50, 0, 40, 21, -20, -11, ANIM]                                           \
+  [100, 0, 46, 23, -23, -12, ANIM]                                           \
+  [150, 0, 39, 30, -20, -15, ANIM]                                           \
+  [200, 0, 45, 31, -23, -16, ANIM]                                           \
+  [250, 0, 39, 30, -20, -15, ANIM]                                           \
+  [300, 0, 46, 23, -23, -12, ANIM]                                           \
+  [360, 0, 40, 21, -20, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 35, 45, 21, -23, -11, ANIM]                                          \
+  [ 50, 35, 40, 21, -20, -11, ANIM]                                          \
+  [100, 35, 45, 23, -23, -12, ANIM]                                          \
+  [150, 35, 39, 30, -20, -15, ANIM]                                          \
+  [200, 35, 45, 31, -23, -16, ANIM]                                          \
+  [250, 35, 39, 30, -20, -15, ANIM]                                          \
+  [300, 35, 46, 23, -23, -12, ANIM]                                          \
+  [360, 35, 40, 21, -20, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 70, 44, 33, -22, -17, ANIM]                                          \
+  [ 50, 70, 39, 31, -20, -16, ANIM]                                          \
+  [100, 70, 48, 22, -24, -11, ANIM]                                          \
+  [150, 70, 36, 21, -18, -11, ANIM]                                          \
+  [200, 70, 42, 14, -21, -7 , ANIM]                                          \
+  [250, 70, 36, 21, -18, -11, ANIM]                                          \
+  [300, 70, 48, 22, -24, -11, ANIM]                                          \
+  [360, 70, 39, 31, -20, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 110, 44, 21, -22, -10, ANIM]                                         \
+  [ 50, 110, 40, 21, -20, -11, ANIM]                                         \
+  [100, 110, 46, 22, -23, -11, ANIM]                                         \
+  [150, 110, 39, 30, -20, -15, ANIM]                                         \
+  [200, 110, 44, 26, -22, -13, ANIM]                                         \
+  [250, 110, 39, 30, -20, -15, ANIM]                                         \
+  [300, 110, 46, 22, -23, -11, ANIM]                                         \
+  [360, 110, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 145, 44, 26, -22, -13, ANIM]                                         \
+  [ 50, 145, 40, 25, -20, -13, ANIM]                                         \
+  [100, 145, 47, 22, -24, -11, ANIM]                                         \
+  [150, 145, 38, 26, -19, -13, ANIM]                                         \
+  [200, 145, 42, 20, -21, -10, ANIM]                                         \
+  [250, 145, 38, 26, -19, -13, ANIM]                                         \
+  [300, 145, 47, 22, -24, -11, ANIM]                                         \
+  [360, 145, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/(0)Greyscale.png"
+purchase_sprite(Airbus_A319, 300, 0, 46, 23, -23, -12)
+Airbus_A319_sprite_layout_template(Airbus_A319_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AerLingus.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AerLingus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirBerlin1.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirBerlin1) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirBerlin2.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirBerlin2) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirCanadaNew.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirCanadaNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirCanadaOld.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirCanadaOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirFrance.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirMacau.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirMacau) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirMalta.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirMalta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/AirSerbia.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_AirSerbia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Alitalia.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/American.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Austrian.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Avianca.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Avianca) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/BA.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_BA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Brussels.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Brussels) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/ChinaEastern.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/ChinaW.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_ChinaW) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Croatia.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Croatia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/CSA.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_CSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Delta.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Easyjet.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Easyjet) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/EasyjetOld.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_EasyjetOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Eurowings.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Eurowings) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Finnair.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/FinnairNew.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_FinnairNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Germania.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Germania) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Germanwings.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Germanwings) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Iberia.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/IberiaNew.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_IberiaNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/LAN.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_LAN) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Lufthansa.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Lufthansa)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Northwest.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Northwest)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Olympic.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Olympic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Rossiya.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Rossiya) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/RossiyaOld.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_RossiyaOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/RoyalBrunei.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_RoyalBrunei) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/RoyalJordanian.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_RoyalJordanian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/S7.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_S7) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/SAS.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/SouthAfrican.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_SouthAfrican) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Swiss.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/TAM.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_TAM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/TAP.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_TAP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Tunisair.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Tunisair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Turkish.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/USAirways.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_USAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/VIMAirlines.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_VIMAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Volotea.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Volotea) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A319/Vueling.png"
+Airbus_A319_sprite_layout_template(Airbus_A319_Vueling) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Greyscale, flight_state())
+{
+  15: Airbus_A319_Greyscale_Climbing;
+  18: Airbus_A319_Greyscale_Flight;
+  21: Airbus_A319_Greyscale_Landing;
+  22: Airbus_A319_Greyscale_Touchdown;
+      Airbus_A319_Greyscale_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AerLingus, flight_state())
+{
+  15: Airbus_A319_AerLingus_Climbing;
+  18: Airbus_A319_AerLingus_Flight;
+  21: Airbus_A319_AerLingus_Landing;
+  22: Airbus_A319_AerLingus_Touchdown;
+      Airbus_A319_AerLingus_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirBerlin1, flight_state())
+{
+  15: Airbus_A319_AirBerlin1_Climbing;
+  18: Airbus_A319_AirBerlin1_Flight;
+  21: Airbus_A319_AirBerlin1_Landing;
+  22: Airbus_A319_AirBerlin1_Touchdown;
+      Airbus_A319_AirBerlin1_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirBerlin2, flight_state())
+{
+  15: Airbus_A319_AirBerlin2_Climbing;
+  18: Airbus_A319_AirBerlin2_Flight;
+  21: Airbus_A319_AirBerlin2_Landing;
+  22: Airbus_A319_AirBerlin2_Touchdown;
+      Airbus_A319_AirBerlin2_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirCanadaNew, flight_state())
+{
+  15: Airbus_A319_AirCanadaNew_Climbing;
+  18: Airbus_A319_AirCanadaNew_Flight;
+  21: Airbus_A319_AirCanadaNew_Landing;
+  22: Airbus_A319_AirCanadaNew_Touchdown;
+      Airbus_A319_AirCanadaNew_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirCanadaOld, flight_state())
+{
+  15: Airbus_A319_AirCanadaOld_Climbing;
+  18: Airbus_A319_AirCanadaOld_Flight;
+  21: Airbus_A319_AirCanadaOld_Landing;
+  22: Airbus_A319_AirCanadaOld_Touchdown;
+      Airbus_A319_AirCanadaOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirFrance, flight_state())
+{
+  15: Airbus_A319_AirFrance_Climbing;
+  18: Airbus_A319_AirFrance_Flight;
+  21: Airbus_A319_AirFrance_Landing;
+  22: Airbus_A319_AirFrance_Touchdown;
+      Airbus_A319_AirFrance_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirMacau, flight_state())
+{
+  15: Airbus_A319_AirMacau_Climbing;
+  18: Airbus_A319_AirMacau_Flight;
+  21: Airbus_A319_AirMacau_Landing;
+  22: Airbus_A319_AirMacau_Touchdown;
+      Airbus_A319_AirMacau_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirMalta, flight_state())
+{
+  15: Airbus_A319_AirMalta_Climbing;
+  18: Airbus_A319_AirMalta_Flight;
+  21: Airbus_A319_AirMalta_Landing;
+  22: Airbus_A319_AirMalta_Touchdown;
+      Airbus_A319_AirMalta_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_AirSerbia, flight_state())
+{
+  15: Airbus_A319_AirSerbia_Climbing;
+  18: Airbus_A319_AirSerbia_Flight;
+  21: Airbus_A319_AirSerbia_Landing;
+  22: Airbus_A319_AirSerbia_Touchdown;
+      Airbus_A319_AirSerbia_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Alitalia, flight_state())
+{
+  15: Airbus_A319_Alitalia_Climbing;
+  18: Airbus_A319_Alitalia_Flight;
+  21: Airbus_A319_Alitalia_Landing;
+  22: Airbus_A319_Alitalia_Touchdown;
+      Airbus_A319_Alitalia_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_American, flight_state())
+{
+  15: Airbus_A319_American_Climbing;
+  18: Airbus_A319_American_Flight;
+  21: Airbus_A319_American_Landing;
+  22: Airbus_A319_American_Touchdown;
+      Airbus_A319_American_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Austrian, flight_state())
+{
+  15: Airbus_A319_Austrian_Climbing;
+  18: Airbus_A319_Austrian_Flight;
+  21: Airbus_A319_Austrian_Landing;
+  22: Airbus_A319_Austrian_Touchdown;
+      Airbus_A319_Austrian_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Avianca, flight_state())
+{
+  15: Airbus_A319_Avianca_Climbing;
+  18: Airbus_A319_Avianca_Flight;
+  21: Airbus_A319_Avianca_Landing;
+  22: Airbus_A319_Avianca_Touchdown;
+      Airbus_A319_Avianca_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_BA, flight_state())
+{
+  15: Airbus_A319_BA_Climbing;
+  18: Airbus_A319_BA_Flight;
+  21: Airbus_A319_BA_Landing;
+  22: Airbus_A319_BA_Touchdown;
+      Airbus_A319_BA_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Brussels, flight_state())
+{
+  15: Airbus_A319_Brussels_Climbing;
+  18: Airbus_A319_Brussels_Flight;
+  21: Airbus_A319_Brussels_Landing;
+  22: Airbus_A319_Brussels_Touchdown;
+      Airbus_A319_Brussels_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_ChinaEastern, flight_state())
+{
+  15: Airbus_A319_ChinaEastern_Climbing;
+  18: Airbus_A319_ChinaEastern_Flight;
+  21: Airbus_A319_ChinaEastern_Landing;
+  22: Airbus_A319_ChinaEastern_Touchdown;
+      Airbus_A319_ChinaEastern_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_ChinaW, flight_state())
+{
+  15: Airbus_A319_ChinaW_Climbing;
+  18: Airbus_A319_ChinaW_Flight;
+  21: Airbus_A319_ChinaW_Landing;
+  22: Airbus_A319_ChinaW_Touchdown;
+      Airbus_A319_ChinaW_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Croatia, flight_state())
+{
+  15: Airbus_A319_Croatia_Climbing;
+  18: Airbus_A319_Croatia_Flight;
+  21: Airbus_A319_Croatia_Landing;
+  22: Airbus_A319_Croatia_Touchdown;
+      Airbus_A319_Croatia_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_CSA, flight_state())
+{
+  15: Airbus_A319_CSA_Climbing;
+  18: Airbus_A319_CSA_Flight;
+  21: Airbus_A319_CSA_Landing;
+  22: Airbus_A319_CSA_Touchdown;
+      Airbus_A319_CSA_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Delta, flight_state())
+{
+  15: Airbus_A319_Delta_Climbing;
+  18: Airbus_A319_Delta_Flight;
+  21: Airbus_A319_Delta_Landing;
+  22: Airbus_A319_Delta_Touchdown;
+      Airbus_A319_Delta_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Easyjet, flight_state())
+{
+  15: Airbus_A319_Easyjet_Climbing;
+  18: Airbus_A319_Easyjet_Flight;
+  21: Airbus_A319_Easyjet_Landing;
+  22: Airbus_A319_Easyjet_Touchdown;
+      Airbus_A319_Easyjet_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_EasyjetOld, flight_state())
+{
+  15: Airbus_A319_EasyjetOld_Climbing;
+  18: Airbus_A319_EasyjetOld_Flight;
+  21: Airbus_A319_EasyjetOld_Landing;
+  22: Airbus_A319_EasyjetOld_Touchdown;
+      Airbus_A319_EasyjetOld_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Eurowings, flight_state())
+{
+  15: Airbus_A319_Eurowings_Climbing;
+  18: Airbus_A319_Eurowings_Flight;
+  21: Airbus_A319_Eurowings_Landing;
+  22: Airbus_A319_Eurowings_Touchdown;
+      Airbus_A319_Eurowings_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Finnair, flight_state())
+{
+  15: Airbus_A319_Finnair_Climbing;
+  18: Airbus_A319_Finnair_Flight;
+  21: Airbus_A319_Finnair_Landing;
+  22: Airbus_A319_Finnair_Touchdown;
+      Airbus_A319_Finnair_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_FinnairNew, flight_state())
+{
+  15: Airbus_A319_FinnairNew_Climbing;
+  18: Airbus_A319_FinnairNew_Flight;
+  21: Airbus_A319_FinnairNew_Landing;
+  22: Airbus_A319_FinnairNew_Touchdown;
+      Airbus_A319_FinnairNew_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Germania, flight_state())
+{
+  15: Airbus_A319_Germania_Climbing;
+  18: Airbus_A319_Germania_Flight;
+  21: Airbus_A319_Germania_Landing;
+  22: Airbus_A319_Germania_Touchdown;
+      Airbus_A319_Germania_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Germanwings, flight_state())
+{
+  15: Airbus_A319_Germanwings_Climbing;
+  18: Airbus_A319_Germanwings_Flight;
+  21: Airbus_A319_Germanwings_Landing;
+  22: Airbus_A319_Germanwings_Touchdown;
+      Airbus_A319_Germanwings_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Iberia, flight_state())
+{
+  15: Airbus_A319_Iberia_Climbing;
+  18: Airbus_A319_Iberia_Flight;
+  21: Airbus_A319_Iberia_Landing;
+  22: Airbus_A319_Iberia_Touchdown;
+      Airbus_A319_Iberia_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_IberiaNew, flight_state())
+{
+  15: Airbus_A319_IberiaNew_Climbing;
+  18: Airbus_A319_IberiaNew_Flight;
+  21: Airbus_A319_IberiaNew_Landing;
+  22: Airbus_A319_IberiaNew_Touchdown;
+      Airbus_A319_IberiaNew_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_LAN, flight_state())
+{
+  15: Airbus_A319_LAN_Climbing;
+  18: Airbus_A319_LAN_Flight;
+  21: Airbus_A319_LAN_Landing;
+  22: Airbus_A319_LAN_Touchdown;
+      Airbus_A319_LAN_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Lufthansa, flight_state())
+{
+  15: Airbus_A319_Lufthansa_Climbing;
+  18: Airbus_A319_Lufthansa_Flight;
+  21: Airbus_A319_Lufthansa_Landing;
+  22: Airbus_A319_Lufthansa_Touchdown;
+      Airbus_A319_Lufthansa_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Northwest, flight_state())
+{
+  15: Airbus_A319_Northwest_Climbing;
+  18: Airbus_A319_Northwest_Flight;
+  21: Airbus_A319_Northwest_Landing;
+  22: Airbus_A319_Northwest_Touchdown;
+      Airbus_A319_Northwest_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Olympic, flight_state())
+{
+  15: Airbus_A319_Olympic_Climbing;
+  18: Airbus_A319_Olympic_Flight;
+  21: Airbus_A319_Olympic_Landing;
+  22: Airbus_A319_Olympic_Touchdown;
+      Airbus_A319_Olympic_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Rossiya, flight_state())
+{
+  15: Airbus_A319_Rossiya_Climbing;
+  18: Airbus_A319_Rossiya_Flight;
+  21: Airbus_A319_Rossiya_Landing;
+  22: Airbus_A319_Rossiya_Touchdown;
+      Airbus_A319_Rossiya_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_RossiyaOld, flight_state())
+{
+  15: Airbus_A319_RossiyaOld_Climbing;
+  18: Airbus_A319_RossiyaOld_Flight;
+  21: Airbus_A319_RossiyaOld_Landing;
+  22: Airbus_A319_RossiyaOld_Touchdown;
+      Airbus_A319_RossiyaOld_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_RoyalBrunei, flight_state())
+{
+  15: Airbus_A319_RoyalBrunei_Climbing;
+  18: Airbus_A319_RoyalBrunei_Flight;
+  21: Airbus_A319_RoyalBrunei_Landing;
+  22: Airbus_A319_RoyalBrunei_Touchdown;
+      Airbus_A319_RoyalBrunei_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_RoyalJordanian, flight_state())
+{
+  15: Airbus_A319_RoyalJordanian_Climbing;
+  18: Airbus_A319_RoyalJordanian_Flight;
+  21: Airbus_A319_RoyalJordanian_Landing;
+  22: Airbus_A319_RoyalJordanian_Touchdown;
+      Airbus_A319_RoyalJordanian_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_S7, flight_state())
+{
+  15: Airbus_A319_S7_Climbing;
+  18: Airbus_A319_S7_Flight;
+  21: Airbus_A319_S7_Landing;
+  22: Airbus_A319_S7_Touchdown;
+      Airbus_A319_S7_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_SAS, flight_state())
+{
+  15: Airbus_A319_SAS_Climbing;
+  18: Airbus_A319_SAS_Flight;
+  21: Airbus_A319_SAS_Landing;
+  22: Airbus_A319_SAS_Touchdown;
+      Airbus_A319_SAS_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_SouthAfrican, flight_state())
+{
+  15: Airbus_A319_SouthAfrican_Climbing;
+  18: Airbus_A319_SouthAfrican_Flight;
+  21: Airbus_A319_SouthAfrican_Landing;
+  22: Airbus_A319_SouthAfrican_Touchdown;
+      Airbus_A319_SouthAfrican_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Swiss, flight_state())
+{
+  15: Airbus_A319_Swiss_Climbing;
+  18: Airbus_A319_Swiss_Flight;
+  21: Airbus_A319_Swiss_Landing;
+  22: Airbus_A319_Swiss_Touchdown;
+      Airbus_A319_Swiss_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_TAM, flight_state())
+{
+  15: Airbus_A319_TAM_Climbing;
+  18: Airbus_A319_TAM_Flight;
+  21: Airbus_A319_TAM_Landing;
+  22: Airbus_A319_TAM_Touchdown;
+      Airbus_A319_TAM_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_TAP, flight_state())
+{
+  15: Airbus_A319_TAP_Climbing;
+  18: Airbus_A319_TAP_Flight;
+  21: Airbus_A319_TAP_Landing;
+  22: Airbus_A319_TAP_Touchdown;
+      Airbus_A319_TAP_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Tunisair, flight_state())
+{
+  15: Airbus_A319_Tunisair_Climbing;
+  18: Airbus_A319_Tunisair_Flight;
+  21: Airbus_A319_Tunisair_Landing;
+  22: Airbus_A319_Tunisair_Touchdown;
+      Airbus_A319_Tunisair_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Turkish, flight_state())
+{
+  15: Airbus_A319_Turkish_Climbing;
+  18: Airbus_A319_Turkish_Flight;
+  21: Airbus_A319_Turkish_Landing;
+  22: Airbus_A319_Turkish_Touchdown;
+      Airbus_A319_Turkish_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_USAirways, flight_state())
+{
+  15: Airbus_A319_USAirways_Climbing;
+  18: Airbus_A319_USAirways_Flight;
+  21: Airbus_A319_USAirways_Landing;
+  22: Airbus_A319_USAirways_Touchdown;
+      Airbus_A319_USAirways_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_VIMAirlines, flight_state())
+{
+  15: Airbus_A319_VIMAirlines_Climbing;
+  18: Airbus_A319_VIMAirlines_Flight;
+  21: Airbus_A319_VIMAirlines_Landing;
+  22: Airbus_A319_VIMAirlines_Touchdown;
+      Airbus_A319_VIMAirlines_Grounded;
+}
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Volotea, flight_state())
+{
+  15: Airbus_A319_Volotea_Climbing;
+  18: Airbus_A319_Volotea_Flight;
+  21: Airbus_A319_Volotea_Landing;
+  22: Airbus_A319_Volotea_Touchdown;
+      Airbus_A319_Volotea_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_Vueling, flight_state())
+{
+  15: Airbus_A319_Vueling_Climbing;
+  18: Airbus_A319_Vueling_Flight;
+  21: Airbus_A319_Vueling_Landing;
+  22: Airbus_A319_Vueling_Touchdown;
+      Airbus_A319_Vueling_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_sprites, cargo_subtype)
+{
+  1: Airbus_A319_AerLingus;
+  2: Airbus_A319_AirBerlin1;
+  3: Airbus_A319_AirBerlin2;
+  4: Airbus_A319_AirCanadaNew;
+  5: Airbus_A319_AirCanadaOld;
+  6: Airbus_A319_AirFrance;
+  7: Airbus_A319_AirMacau;
+  8: Airbus_A319_AirMalta;
+  9: Airbus_A319_AirSerbia;
+ 10: Airbus_A319_Alitalia;
+ 11: Airbus_A319_American;
+ 12: Airbus_A319_Austrian;
+ 13: Airbus_A319_Avianca;
+ 14: Airbus_A319_BA;
+ 16: Airbus_A319_Brussels;
+ 17: Airbus_A319_ChinaEastern;
+ 18: Airbus_A319_ChinaW;
+ 19: Airbus_A319_Croatia;
+ 20: Airbus_A319_CSA;
+ 21: Airbus_A319_Delta;
+ 22: Airbus_A319_Easyjet;
+ 23: Airbus_A319_EasyjetOld;
+ 24: Airbus_A319_Eurowings;
+ 25: Airbus_A319_Finnair;
+ 26: Airbus_A319_FinnairNew;
+ 27: Airbus_A319_Germania;
+ 28: Airbus_A319_Germanwings;
+ 29: Airbus_A319_Iberia;
+ 30: Airbus_A319_IberiaNew;
+ 31: Airbus_A319_LAN;
+ 32: Airbus_A319_Lufthansa;
+ 33: Airbus_A319_Northwest;
+ 34: Airbus_A319_Olympic;
+ 35: Airbus_A319_Rossiya;
+ 36: Airbus_A319_RossiyaOld;
+ 15: Airbus_A319_RoyalBrunei;
+ 37: Airbus_A319_RoyalJordanian;
+ 38: Airbus_A319_S7;
+ 39: Airbus_A319_SAS;
+ 40: Airbus_A319_SouthAfrican;
+ 41: Airbus_A319_Swiss;
+ 42: Airbus_A319_TAM;
+ 43: Airbus_A319_TAP;
+ 44: Airbus_A319_Tunisair;
+ 45: Airbus_A319_Turkish;
+ 46: Airbus_A319_USAirways;
+ 47: Airbus_A319_VIMAirlines;
+ 48: Airbus_A319_Volotea;
+ 49: Airbus_A319_Vueling;
+     Airbus_A319_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_running_cost_factor, flight_state())
+{
+  plane_RC(90)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(245); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(349); // airplane climbing after take-off
+      18: return plane_speed_kmh(869); // heading for tower contact point
+  16..20: return plane_speed_kmh(425); // in flight
+  21..22: return plane_speed_kmh(219); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_AIR_BERLIN_INTERIM);
+  3: string(STR_VLIV_AIR_BERLIN_NEW);
+  4: string(STR_VLIV_AIR_CANADA_NEW);
+  5: string(STR_VLIV_AIR_CANADA);
+  6: string(STR_VLIV_AIR_FRANCE);
+  7: string(STR_VLIV_AIR_MACAU);
+  8: string(STR_VLIV_AIR_MALTA);
+  9: string(STR_VLIV_AIR_SERBIA);
+ 10: string(STR_VLIV_ALITALIA);
+ 11: string(STR_VLIV_AMERICAN_AIRLINES);
+ 12: string(STR_VLIV_AUSTRIAN_AIRLINES);
+ 13: string(STR_VLIV_AVIANCA);
+ 14: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+ 16: string(STR_VLIV_BRUSSELS_AIRLINES);
+ 17: string(STR_VLIV_CHINA_EASTERN);
+ 18: string(STR_VLIV_CHINA_WEST_AIR);
+ 19: string(STR_VLIV_CROATIA_AIRLINES);
+ 20: string(STR_VLIV_CZECH_AIRLINES);
+ 21: string(STR_VLIV_DELTA_AIR_LINES);
+ 22: string(STR_VLIV_EASYJET);
+ 23: string(STR_VLIV_EASYJET_OLD);
+ 24: string(STR_VLIV_EUROWINGS);
+ 25: string(STR_VLIV_FINNAIR_OLD);
+ 26: string(STR_VLIV_FINNAIR);
+ 27: string(STR_VLIV_GERMANIA);
+ 28: string(STR_VLIV_GERMANWINGS);
+ 29: string(STR_VLIV_IBERIA_OLD);
+ 30: string(STR_VLIV_IBERIA);
+ 31: string(STR_VLIV_LAN_AIRLINES);
+ 32: string(STR_VLIV_LUFTHANSA);
+ 33: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 34: string(STR_VLIV_OLYMPIC_AIR);
+ 35: string(STR_VLIV_ROSSIYA_AIRLINES);
+ 36: string(STR_VLIV_ROSSIYA_AIRLINES_OLD);
+ 15: string(STR_VLIV_ROYAL_BRUNEI_AIRLINES);
+ 37: string(STR_VLIV_ROYAL_JORDANIAN);
+ 38: string(STR_VLIV_S7_AIRLINES);
+ 39: string(STR_VLIV_SAS);
+ 40: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 41: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 42: string(STR_VLIV_TAM_AIRLINES);
+ 43: string(STR_VLIV_TAP);
+ 44: string(STR_VLIV_TUNISAIR);
+ 45: string(STR_VLIV_TURKISH_AIRLINES);
+ 46: string(STR_VLIV_US_AIRWAYS);
+ 47: string(STR_VLIV_VIM_AIRLINES);
+ 48: string(STR_VLIV_VOLOTEA);
+ 49: string(STR_VLIV_VUELING_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A319_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 144; // Aer Lingus
+   2: return 150; // Air Berlin Interim
+   3: return 150; // Air Berlin New
+   4: return 120; // Air Canada New
+   5: return 120; // Air Canada Old
+   6: return 125; // Air France
+   7: return 119; // Air Macau
+   8: return 141; // Air Malta
+   9: return 144; // Air Serbia
+  10: return 122; // Alitaia
+  11: return 124; // American Airlines
+  12: return 138; // Austrian
+  13: return 120; // Avianda
+  14: return 126; // British Airlines
+  16: return 141; // Brussels Airlines
+  17: return 122; // China Eastern
+  18: return 144; // China West Air
+  19: return 144; // Croatia
+  20: return 130; // CSA
+  21: return 126; // Delta
+  22: return 156; // Easyjet
+  23: return 156; // EasyJet Old
+  24: return 150; // Eurowings
+  25: return 123; // Finnair Old
+  26: return 123; // Finnair
+  27: return 150; // Germania
+  28: return 150; // Germanwings
+  29: return 126; // Iberia Old
+  30: return 126; // Iberia
+  31: return 138; // LAN
+  32: return 122; // Lufthansa
+  33: return 124; // Northwest
+  34: return 138; // Olympic
+  35: return 136; // Rossiya
+  36: return 136; // RossiyaOld
+  15: return 122; // Royal Brunei
+  37: return 120; // RoyalJordania
+  38: return 144; // S7
+  39: return 132; // SAS
+  40: return 120; // South African
+  41: return 108; // Swiss
+  42: return 144; // TAM
+  43: return 126; // TAP
+  44: return 106; // Tunisair
+  45: return 126; // Turkish
+  46: return 124; // US Airways
+  47: return 150; // VIM
+  48: return 150; // Volotea
+  49: return 144; 
+  return 124;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A319)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A319);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1996), 4, 25);
+    vehicle_life: 25;
+    model_life: get_model_life(1996,2050);
+    retire_early: get_retire_early(1996,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 23;
+    passenger_capacity: 124;
+    mail_capacity: 16;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1230;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A319_sprites;
+    purchase: Airbus_A319_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A319_cargo_subtype_text;
+	passenger_capacity: Airbus_A319_cargo_subtype_capacity;
+    speed: Airbus_A319_speed;
+    running_cost_factor: Airbus_A319_running_cost_factor;
+
+    cost_factor: 57; 
+    purchase_running_cost_factor: 90;
+    purchase_speed: plane_speed_kmh(869); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A319)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A319)
+  {
+    property
+    { range: 1230; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A319)
+  {
+    property
+    { range: 1850; }
+  }
+}

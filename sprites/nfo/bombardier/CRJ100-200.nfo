@@ -1,0 +1,714 @@
+START_SECTION(Planes-CRJ100_200)
+
+	A0_PLANES(AIRV_BOMBARDIER_CRJ100_200, 1, 18)
+        00 \w1992-01-01  //Introduction Date
+        03 19  //Vehicle Life In Years
+        04 12  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b17 // Loading speed in pax/"tick"
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()
+        0C 3E  //Speed in mph/8  
+        0D 02  //Acceleration  
+        0F \w50  //Passenger Capacity   
+        11 \b5  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        18 \wx0001 
+        19 \wx03FE //Subtract 4 for Tourists
+	
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOMBARDIER_CRJ100_200, 1, 1)
+                     1F \w665
+        
+  -1 * 0   10 F1  
+  	
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/(0)Greyscale.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/SAS.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Delta.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/BritAir.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Adria.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/United.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/UTAir.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Rwanda.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/JAir.pcx
+    spr() 1 1 09 19 28 -14 -10
+    spr() 35 1 09 16 33 -17 -08
+    spr() 70 1 09 20 37 -19 -10
+    spr() 115 1 09 23 30 -15 -12
+    spr() 155 1 09 27 30 -14 -15
+    spr() 190 1 09 23 30 -15 -12
+    spr() 225 1 09 20 37 -19 -10
+    spr() 270 1 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   28 * 9	 02 03 04 01 01 \w4 \w4
+   28 * 9	 02 03 05 01 01 \w5 \w5
+   28 * 9	 02 03 06 01 01 \w6 \w6
+   28 * 9	 02 03 07 01 01 \w7 \w7
+   28 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F0 81 F2 00 FF 09 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // SAS
+                             02 00 03 03 // Delta
+                             03 00 02 02 // Brit Air
+                             04 00 01 01 // Adria
+                             05 00 07 07 // United
+                             06 00 08 08 // UTAir
+                             07 00 05 05 // Rwanda
+                             08 00 04 04 // JAir
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/(0)Greyscale.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/SAS.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Delta.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/BritAir.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Adria.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/United.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/UTAir.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Rwanda.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/JAir.pcx
+    spr() 1 30 09 19 28 -14 -10
+    spr() 35 30 09 16 33 -17 -08
+    spr() 70 30 09 20 37 -19 -10
+    spr() 115 30 09 24 30 -15 -12
+    spr() 155 30 09 28 30 -15 -14
+    spr() 190 30 09 24 30 -15 -12
+    spr() 225 30 09 20 37 -19 -10
+    spr() 270 30 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   28 * 9	 02 03 04 01 01 \w4 \w4
+   28 * 9	 02 03 05 01 01 \w5 \w5
+   28 * 9	 02 03 06 01 01 \w6 \w6
+   28 * 9	 02 03 07 01 01 \w7 \w7
+   28 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F1 81 F2 00 FF 09 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // SAS
+                             02 00 03 03 // Delta
+                             03 00 02 02 // Brit Air
+                             04 00 01 01 // Adria
+                             05 00 07 07 // United
+                             06 00 08 08 // UTAir
+                             07 00 05 05 // Rwanda
+                             08 00 04 04 // JAir
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/(0)Greyscale.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/SAS.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Delta.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/BritAir.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Adria.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/United.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/UTAir.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Rwanda.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/JAir.pcx
+    spr() 1 70 09 24 28 -14 -12
+    spr() 35 70 09 22 34 -17 -11
+    spr() 70 70 09 19 38 -19 -10
+    spr() 115 70 09 17 34 -17 -09
+    spr() 155 70 09 20 30 -15 -10
+    spr() 190 70 09 17 34 -17 -09
+    spr() 225 70 09 19 38 -19 -10
+    spr() 270 70 09 22 34 -17 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   28 * 9	 02 03 04 01 01 \w4 \w4
+   28 * 9	 02 03 05 01 01 \w5 \w5
+   28 * 9	 02 03 06 01 01 \w6 \w6
+   28 * 9	 02 03 07 01 01 \w7 \w7
+   28 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F2 81 F2 00 FF 09 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // SAS
+                             02 00 03 03 // Delta
+                             03 00 02 02 // Brit Air
+                             04 00 01 01 // Adria
+                             05 00 07 07 // United
+                             06 00 08 08 // UTAir
+                             07 00 05 05 // Rwanda
+                             08 00 04 04 // JAir
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/(0)Greyscale.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/SAS.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Delta.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/BritAir.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Adria.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/United.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/UTAir.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Rwanda.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/JAir.pcx
+    spr() 1 100 09 19 28 -14 -10
+    spr() 35 100 09 16 33 -17 -08
+    spr() 70 100 09 20 37 -19 -10
+    spr() 115 100 09 24 30 -15 -12
+    spr() 155 100 09 28 30 -14 -15
+    spr() 190 100 09 24 30 -15 -12
+    spr() 225 100 09 20 37 -19 -10
+    spr() 270 100 09 16 33 -17 -08
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   28 * 9	 02 03 04 01 01 \w4 \w4
+   28 * 9	 02 03 05 01 01 \w5 \w5
+   28 * 9	 02 03 06 01 01 \w6 \w6
+   28 * 9	 02 03 07 01 01 \w7 \w7
+   28 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F3 81 F2 00 FF 09 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // SAS
+                             02 00 03 03 // Delta
+                             03 00 02 02 // Brit Air
+                             04 00 01 01 // Adria
+                             05 00 07 07 // United
+                             06 00 08 08 // UTAir
+                             07 00 05 05 // Rwanda
+                             08 00 04 04 // JAir
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/(0)Greyscale.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/SAS.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Delta.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/BritAir.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Adria.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/United.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/UTAir.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/Rwanda.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/bombardier/crj100-200/JAir.pcx
+    spr() 1 130 09 22 28 -14 -11
+    spr() 35 130 09 19 33 -17 -10
+    spr() 70 130 09 18 40 -20 -09
+    spr() 115 130 09 19 30 -15 -10
+    spr() 155 130 09 25 30 -15 -13
+    spr() 190 130 09 19 30 -15 -10
+    spr() 225 130 09 18 40 -20 -09
+    spr() 270 130 09 19 33 -17 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   28 * 9	 02 03 04 01 01 \w4 \w4
+   28 * 9	 02 03 05 01 01 \w5 \w5
+   28 * 9	 02 03 06 01 01 \w6 \w6
+   28 * 9	 02 03 07 01 01 \w7 \w7
+   28 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F4 81 F2 00 FF 09 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // SAS
+                             02 00 03 03 // Delta
+                             03 00 02 02 // Brit Air
+                             04 00 01 01 // Adria
+                             05 00 07 07 // United
+                             06 00 08 08 // UTAir
+                             07 00 05 05 // Rwanda
+                             08 00 04 04 // JAir
+                             FF FF       // End livary graphical selection
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 09     // 9 liveries
+                             00 80 00 00 // GreyScale
+                             7C 80 01 01 // Adria
+                             13 80 02 02 // Brit Air
+                             0E 80 03 03 // Delta
+                             56 80 04 04 // JAir
+                             7D 80 05 05 // RWanda
+                             46 80 06 06 // SAS     			     
+                             85 80 07 07 // United
+                             21 80 08 08 // UTair
+                             FF FF       // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             1E 80 0F 0F   // Climbing
+                             3E 80 12 12   // Flight
+                             19 80 10 14   // Approach
+                             11 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32803 0D 0F // Take Off
+                             \w32799 12 12 // Flight
+                             \w32800 10 14 // Approach
+                             \w32801 15 16 // Landing
+                             \w32788 08 0C // Grounded	
+                             \w32784       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32793 0B 0B //Purchase Cost Purchase List
+				                     \w32799 0E 0E //Running Cost Purchase List
+                             00 00 				
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                                05 00 36 36 // 
+                                5F 00                                     
+
+  150 * 7	 03 03 01 AIRV_BOMBARDIER_CRJ100_200 01
+                             FF 08 00      // P-List
+                             07 00         // Default   
+
+END_SECTION(Planes-CRJ100_200)  

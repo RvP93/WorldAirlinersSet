@@ -1,0 +1,10 @@
+ /// check
+
+// version check
+// only for OpenTTD >= r23744
+if (ttd_platform != PLATFORM_OPENTTD || 
+  openttd_version < version_openttd(1, 2, 0, 23744))
+{
+  error(ERROR, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
+}
+

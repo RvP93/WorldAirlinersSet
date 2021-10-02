@@ -1,0 +1,271 @@
+
+// BAC-1-11-500
+
+// Template: 
+#define BAC_1_11_500_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 40, 19, -20, -9 , ANIM]                                           \
+  [ 45, 1, 36, 19, -18, -9 , ANIM]                                           \
+  [ 85, 1, 44, 20, -22, -10, ANIM]                                           \
+  [135, 1, 35, 26, -18, -13, ANIM]                                           \
+  [175, 1, 40, 30, -20, -15, ANIM]                                           \
+  [220, 1, 35, 26, -18, -13, ANIM]                                           \
+  [260, 1, 44, 20, -22, -10, ANIM]                                           \
+  [310, 1, 36, 19, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 40, 19, -20, -9 , ANIM]                                          \
+  [ 45, 35, 36, 19, -18, -9 , ANIM]                                          \
+  [ 85, 35, 44, 20, -22, -10, ANIM]                                          \
+  [135, 35, 35, 26, -18, -13, ANIM]                                          \
+  [175, 35, 40, 30, -20, -15, ANIM]                                          \
+  [220, 35, 35, 26, -18, -13, ANIM]                                          \
+  [260, 35, 44, 20, -22, -10, ANIM]                                          \
+  [310, 35, 36, 19, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 40, 29, -20, -14, ANIM]                                          \
+  [ 45, 70, 36, 25, -18, -12, ANIM]                                          \
+  [ 85, 70, 46, 20, -23, -10, ANIM]                                          \
+  [135, 70, 35, 17, -18, -9 , ANIM]                                          \
+  [175, 70, 36, 17, -18, -9 , ANIM]                                          \
+  [220, 70, 35, 17, -18, -9 , ANIM]                                          \
+  [260, 70, 46, 20, -23, -10, ANIM]                                          \
+  [310, 70, 36, 25, -18, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 40, 19, -20, -9 , ANIM]                                         \
+  [ 45, 100, 36, 19, -18, -9 , ANIM]                                         \
+  [ 85, 100, 44, 20, -22, -10, ANIM]                                         \
+  [135, 100, 35, 26, -18, -13, ANIM]                                         \
+  [175, 100, 40, 30, -20, -15, ANIM]                                         \
+  [220, 100, 35, 26, -18, -13, ANIM]                                         \
+  [260, 100, 44, 20, -22, -10, ANIM]                                         \
+  [310, 100, 36, 19, -18, -9 , ANIM]          								 \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 40, 24, -20, -12, ANIM]                                         \
+  [ 45, 135, 36, 23, -18, -12, ANIM]                                         \
+  [ 85, 135, 48, 20, -24, -10, ANIM]                                         \
+  [135, 135, 37, 21, -19, -11, ANIM]                                         \
+  [175, 135, 40, 24, -20, -12, ANIM]                                         \
+  [220, 135, 37, 21, -16, -10, ANIM]                                         \
+  [260, 135, 45, 20, -23, -10, ANIM]                                         \
+  [310, 135, 36, 22, -18, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/(0)Greyscale.png"
+purchase_sprite(BAC_1_11_500, 260, 1, 44, 20, -22, -10)
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Adria.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Adria) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishAirways.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishCaledonian.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_BritishCaledonian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/EuropeanAirCharter.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_EuropeanAirCharter) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Monarch.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Monarch) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Ryanair.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Ryanair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Ryanair1.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Ryanair1) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Greyscale, flight_state())
+{
+  15: BAC_1_11_500_Greyscale_Climbing;
+  18: BAC_1_11_500_Greyscale_Flight;
+  21: BAC_1_11_500_Greyscale_Landing;
+  22: BAC_1_11_500_Greyscale_Touchdown;
+      BAC_1_11_500_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Adria, flight_state())
+{
+  15: BAC_1_11_500_Adria_Climbing;
+  18: BAC_1_11_500_Adria_Flight;
+  21: BAC_1_11_500_Adria_Landing;
+  22: BAC_1_11_500_Adria_Touchdown;
+      BAC_1_11_500_Adria_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_BritishAirways, flight_state())
+{
+  15: BAC_1_11_500_BritishAirways_Climbing;
+  18: BAC_1_11_500_BritishAirways_Flight;
+  21: BAC_1_11_500_BritishAirways_Landing;
+  22: BAC_1_11_500_BritishAirways_Touchdown;
+      BAC_1_11_500_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_BritishCaledonian, flight_state())
+{
+  15: BAC_1_11_500_BritishCaledonian_Climbing;
+  18: BAC_1_11_500_BritishCaledonian_Flight;
+  21: BAC_1_11_500_BritishCaledonian_Landing;
+  22: BAC_1_11_500_BritishCaledonian_Touchdown;
+      BAC_1_11_500_BritishCaledonian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_EuropeanAirCharter, flight_state())
+{
+  15: BAC_1_11_500_EuropeanAirCharter_Climbing;
+  18: BAC_1_11_500_EuropeanAirCharter_Flight;
+  21: BAC_1_11_500_EuropeanAirCharter_Landing;
+  22: BAC_1_11_500_EuropeanAirCharter_Touchdown;
+      BAC_1_11_500_EuropeanAirCharter_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Monarch, flight_state())
+{
+  15: BAC_1_11_500_Monarch_Climbing;
+  18: BAC_1_11_500_Monarch_Flight;
+  21: BAC_1_11_500_Monarch_Landing;
+  22: BAC_1_11_500_Monarch_Touchdown;
+      BAC_1_11_500_Monarch_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Ryanair, flight_state())
+{
+  15: BAC_1_11_500_Ryanair_Climbing;
+  18: BAC_1_11_500_Ryanair_Flight;
+  21: BAC_1_11_500_Ryanair_Landing;
+  22: BAC_1_11_500_Ryanair_Touchdown;
+      BAC_1_11_500_Ryanair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Ryanair1, flight_state())
+{
+  15: BAC_1_11_500_Ryanair1_Climbing;
+  18: BAC_1_11_500_Ryanair1_Flight;
+  21: BAC_1_11_500_Ryanair1_Landing;
+  22: BAC_1_11_500_Ryanair1_Touchdown;
+      BAC_1_11_500_Ryanair1_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_sprites, cargo_subtype)
+{
+  1: BAC_1_11_500_Adria;
+  2: BAC_1_11_500_BritishAirways;
+  3: BAC_1_11_500_BritishCaledonian;
+  4: BAC_1_11_500_EuropeanAirCharter;
+  5: BAC_1_11_500_Monarch;
+  6: BAC_1_11_500_Ryanair;
+  7: BAC_1_11_500_Ryanair1;
+     BAC_1_11_500_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_running_cost_factor, flight_state())
+{
+  plane_RC(53)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(346); // airplane climbing after take-off
+      18: return plane_speed_kmh(870); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(225); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAC);
+  1: string(STR_VLIV_ADRIA_AIRWAYS);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  3: string(STR_VLIV_BRITISH_CALEDONIAN);
+  4: string(STR_VLIV_EUROPEAN_AIRCHARTER);
+  5: string(STR_VLIV_MONARCH_AIRLINES);
+  6: string(STR_VLIV_RYANAIR);
+  7: string(STR_VLIV_RYANAIR_OLD);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, BAC_1_11_500)
+{
+  property
+  {
+    name: string(STR_AIRV_BAC_1_11_500);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1964), 1, 1);
+    vehicle_life: 12;
+    model_life: get_model_life(1964,1989);
+    retire_early: get_retire_early(1964,1989);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 115;
+    mail_capacity: 9;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 635;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAC_1_11_500_sprites;
+    purchase: BAC_1_11_500_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAC_1_11_500_cargo_subtype_text;
+    speed: BAC_1_11_500_speed;
+    running_cost_factor: BAC_1_11_500_running_cost_factor;
+    sound_effect: BAC_1_11_500_sound_effect;
+
+    cost_factor: 37; 
+    purchase_running_cost_factor: 53;
+    purchase_speed: plane_speed_kmh(870); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAC_1_11_500)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAC_1_11_500)
+  {
+    property
+    { range: 570; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BAC_1_11_500)
+  {
+    property
+    { range: 855; }
+  }
+}

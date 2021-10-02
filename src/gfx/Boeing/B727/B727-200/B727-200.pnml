@@ -1,0 +1,575 @@
+
+// Boeing-727-200
+
+// Template: 
+#define Boeing_727_200_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  3, 3, 38, 25, -19, -13, ANIM]                                           \
+  [ 50, 3, 43, 23, -22, -12, ANIM]                                           \
+  [100, 3, 55, 21, -28, -11, ANIM]                                           \
+  [160, 3, 43, 29, -22, -15, ANIM]                                           \
+  [210, 3, 38, 35, -19, -18, ANIM]                                           \
+  [250, 3, 43, 29, -22, -15, ANIM]                                           \
+  [300, 3, 55, 21, -28, -11, ANIM]                                           \
+  [360, 3, 43, 23, -22, -12, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  3, 40, 38, 25, -19, -13, ANIM]                                          \
+  [ 50, 40, 43, 23, -22, -12, ANIM]                                          \
+  [100, 40, 55, 21, -28, -11, ANIM]                                          \
+  [160, 40, 43, 29, -22, -15, ANIM]                                          \
+  [210, 40, 38, 34, -19, -17, ANIM]                                          \
+  [250, 40, 43, 29, -22, -15, ANIM]                                          \
+  [300, 40, 55, 21, -28, -11, ANIM]                                          \
+  [360, 40, 43, 23, -22, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  3, 80, 38, 34, -19, -17, ANIM]                                          \
+  [ 50, 80, 43, 31, -22, -16, ANIM]                                          \
+  [100, 80, 54, 23, -27, -12, ANIM]                                          \
+  [160, 80, 43, 19, -22, -10, ANIM]                                          \
+  [210, 80, 38, 19, -19, -10, ANIM]                                          \
+  [250, 80, 43, 19, -22, -10, ANIM]                                          \
+  [300, 80, 54, 23, -27, -12, ANIM]                                          \
+  [360, 80, 43, 31, -22, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  3, 120, 38, 25, -19, -13, ANIM]                                         \
+  [ 50, 120, 43, 23, -22, -12, ANIM]                                         \
+  [100, 120, 55, 21, -28, -11, ANIM]                                         \
+  [160, 120, 43, 29, -22, -15, ANIM]                                         \
+  [210, 120, 38, 35, -19, -18, ANIM]                                         \
+  [250, 120, 43, 29, -22, -15, ANIM]                                         \
+  [300, 120, 55, 21, -28, -11, ANIM]                                         \
+  [360, 120, 43, 23, -22, -12, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  3, 160, 38, 31, -19, -16, ANIM]                                         \
+  [ 50, 160, 44, 27, -22, -14, ANIM]                                         \
+  [100, 160, 55, 20, -28, -10, ANIM]                                         \
+  [160, 160, 42, 23, -21, -12, ANIM]                                         \
+  [210, 160, 38, 27, -19, -14, ANIM]                                         \
+  [250, 160, 42, 24, -20, -12, ANIM]                                         \
+  [300, 160, 55, 20, -28, -10, ANIM]                                         \
+  [360, 160, 44, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  3, 200, 38, 27, -19, -14, ANIM]                                         \
+  [ 50, 200, 43, 23, -22, -12, ANIM]                                         \
+  [100, 200, 55, 21, -28, -11, ANIM]                                         \
+  [160, 200, 43, 30, -22, -15, ANIM]                                         \
+  [210, 200, 38, 35, -19, -18, ANIM]                                         \
+  [250, 200, 43, 30, -22, -15, ANIM]                                         \
+  [300, 200, 55, 21, -28, -11, ANIM]                                         \
+  [360, 200, 43, 23, -22, -12, ANIM]                                         \
+}                                                                            \
+ 
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/(0)Greyscale.png"
+purchase_sprite(Boeing_727_200, 300, 3, 55, 21, -28, -11)
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Aerolineas.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Aerolineas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirAlgerie.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirAlgerie) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirCanada.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirCanada) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirFlorida.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirFlorida) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirFrance.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirHolland.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirHolland) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Alitalia.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/American.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Aviogenex.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Aviogenex) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Comair.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Comair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Condor.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Condor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Continental.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/DanAirLondon.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_DanAirLondon) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Delta.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Iberia.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Icelandair.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Icelandair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/JAT.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_JAT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Kuwait.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Kuwait) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Libyan.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Libyan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Lufthansa.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Northwest.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Northwest) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Olympic.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Olympic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/PanAm.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_PanAm) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/RAM.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_RAM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/SouthAfrican.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_SouthAfrican) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/TAPOld.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_TAPOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/United.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_United) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Greyscale, flight_state())
+{
+  15: Boeing_727_200_Greyscale_Climbing;
+  18: Boeing_727_200_Greyscale_Flight;
+  21: Boeing_727_200_Greyscale_Landing;
+  22: Boeing_727_200_Greyscale_Touchdown;
+      Boeing_727_200_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Aerolineas, flight_state())
+{
+  15: Boeing_727_200_Aerolineas_Climbing;
+  18: Boeing_727_200_Aerolineas_Flight;
+  21: Boeing_727_200_Aerolineas_Landing;
+  22: Boeing_727_200_Aerolineas_Touchdown;
+      Boeing_727_200_Aerolineas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirAlgerie, flight_state())
+{
+  15: Boeing_727_200_AirAlgerie_Climbing;
+  18: Boeing_727_200_AirAlgerie_Flight;
+  21: Boeing_727_200_AirAlgerie_Landing;
+  22: Boeing_727_200_AirAlgerie_Touchdown;
+      Boeing_727_200_AirAlgerie_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirCanada, flight_state())
+{
+  15: Boeing_727_200_AirCanada_Climbing;
+  18: Boeing_727_200_AirCanada_Flight;
+  21: Boeing_727_200_AirCanada_Landing;
+  22: Boeing_727_200_AirCanada_Touchdown;
+      Boeing_727_200_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirFlorida, flight_state())
+{
+  15: Boeing_727_200_AirFlorida_Climbing;
+  18: Boeing_727_200_AirFlorida_Flight;
+  21: Boeing_727_200_AirFlorida_Landing;
+  22: Boeing_727_200_AirFlorida_Touchdown;
+      Boeing_727_200_AirFlorida_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirFrance, flight_state())
+{
+  15: Boeing_727_200_AirFrance_Climbing;
+  18: Boeing_727_200_AirFrance_Flight;
+  21: Boeing_727_200_AirFrance_Landing;
+  22: Boeing_727_200_AirFrance_Touchdown;
+      Boeing_727_200_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirHolland, flight_state())
+{
+  15: Boeing_727_200_AirHolland_Climbing;
+  18: Boeing_727_200_AirHolland_Flight;
+  21: Boeing_727_200_AirHolland_Landing;
+  22: Boeing_727_200_AirHolland_Touchdown;
+      Boeing_727_200_AirHolland_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Alitalia, flight_state())
+{
+  15: Boeing_727_200_Alitalia_Climbing;
+  18: Boeing_727_200_Alitalia_Flight;
+  21: Boeing_727_200_Alitalia_Landing;
+  22: Boeing_727_200_Alitalia_Touchdown;
+      Boeing_727_200_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_American, flight_state())
+{
+  15: Boeing_727_200_American_Climbing;
+  18: Boeing_727_200_American_Flight;
+  21: Boeing_727_200_American_Landing;
+  22: Boeing_727_200_American_Touchdown;
+      Boeing_727_200_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Aviogenex, flight_state())
+{
+  15: Boeing_727_200_Aviogenex_Climbing;
+  18: Boeing_727_200_Aviogenex_Flight;
+  21: Boeing_727_200_Aviogenex_Landing;
+  22: Boeing_727_200_Aviogenex_Touchdown;
+      Boeing_727_200_Aviogenex_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Comair, flight_state())
+{
+  15: Boeing_727_200_Comair_Climbing;
+  18: Boeing_727_200_Comair_Flight;
+  21: Boeing_727_200_Comair_Landing;
+  22: Boeing_727_200_Comair_Touchdown;
+      Boeing_727_200_Comair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Condor, flight_state())
+{
+  15: Boeing_727_200_Condor_Climbing;
+  18: Boeing_727_200_Condor_Flight;
+  21: Boeing_727_200_Condor_Landing;
+  22: Boeing_727_200_Condor_Touchdown;
+      Boeing_727_200_Condor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Continental, flight_state())
+{
+  15: Boeing_727_200_Continental_Climbing;
+  18: Boeing_727_200_Continental_Flight;
+  21: Boeing_727_200_Continental_Landing;
+  22: Boeing_727_200_Continental_Touchdown;
+      Boeing_727_200_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_DanAirLondon, flight_state())
+{
+  15: Boeing_727_200_DanAirLondon_Climbing;
+  18: Boeing_727_200_DanAirLondon_Flight;
+  21: Boeing_727_200_DanAirLondon_Landing;
+  22: Boeing_727_200_DanAirLondon_Touchdown;
+      Boeing_727_200_DanAirLondon_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Delta, flight_state())
+{
+  15: Boeing_727_200_Delta_Climbing;
+  18: Boeing_727_200_Delta_Flight;
+  21: Boeing_727_200_Delta_Landing;
+  22: Boeing_727_200_Delta_Touchdown;
+      Boeing_727_200_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Iberia, flight_state())
+{
+  15: Boeing_727_200_Iberia_Climbing;
+  18: Boeing_727_200_Iberia_Flight;
+  21: Boeing_727_200_Iberia_Landing;
+  22: Boeing_727_200_Iberia_Touchdown;
+      Boeing_727_200_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Icelandair, flight_state())
+{
+  15: Boeing_727_200_Icelandair_Climbing;
+  18: Boeing_727_200_Icelandair_Flight;
+  21: Boeing_727_200_Icelandair_Landing;
+  22: Boeing_727_200_Icelandair_Touchdown;
+      Boeing_727_200_Icelandair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_JAT, flight_state())
+{
+  15: Boeing_727_200_JAT_Climbing;
+  18: Boeing_727_200_JAT_Flight;
+  21: Boeing_727_200_JAT_Landing;
+  22: Boeing_727_200_JAT_Touchdown;
+      Boeing_727_200_JAT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Kuwait, flight_state())
+{
+  15: Boeing_727_200_Kuwait_Climbing;
+  18: Boeing_727_200_Kuwait_Flight;
+  21: Boeing_727_200_Kuwait_Landing;
+  22: Boeing_727_200_Kuwait_Touchdown;
+      Boeing_727_200_Kuwait_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Libyan, flight_state())
+{
+  15: Boeing_727_200_Libyan_Climbing;
+  18: Boeing_727_200_Libyan_Flight;
+  21: Boeing_727_200_Libyan_Landing;
+  22: Boeing_727_200_Libyan_Touchdown;
+      Boeing_727_200_Libyan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Lufthansa, flight_state())
+{
+  15: Boeing_727_200_Lufthansa_Climbing;
+  18: Boeing_727_200_Lufthansa_Flight;
+  21: Boeing_727_200_Lufthansa_Landing;
+  22: Boeing_727_200_Lufthansa_Touchdown;
+      Boeing_727_200_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Northwest, flight_state())
+{
+  15: Boeing_727_200_Northwest_Climbing;
+  18: Boeing_727_200_Northwest_Flight;
+  21: Boeing_727_200_Northwest_Landing;
+  22: Boeing_727_200_Northwest_Touchdown;
+      Boeing_727_200_Northwest_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Olympic, flight_state())
+{
+  15: Boeing_727_200_Olympic_Climbing;
+  18: Boeing_727_200_Olympic_Flight;
+  21: Boeing_727_200_Olympic_Landing;
+  22: Boeing_727_200_Olympic_Touchdown;
+      Boeing_727_200_Olympic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_PanAm, flight_state())
+{
+  15: Boeing_727_200_PanAm_Climbing;
+  18: Boeing_727_200_PanAm_Flight;
+  21: Boeing_727_200_PanAm_Landing;
+  22: Boeing_727_200_PanAm_Touchdown;
+      Boeing_727_200_PanAm_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_RAM, flight_state())
+{
+  15: Boeing_727_200_RAM_Climbing;
+  18: Boeing_727_200_RAM_Flight;
+  21: Boeing_727_200_RAM_Landing;
+  22: Boeing_727_200_RAM_Touchdown;
+      Boeing_727_200_RAM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_SouthAfrican, flight_state())
+{
+  15: Boeing_727_200_SouthAfrican_Climbing;
+  18: Boeing_727_200_SouthAfrican_Flight;
+  21: Boeing_727_200_SouthAfrican_Landing;
+  22: Boeing_727_200_SouthAfrican_Touchdown;
+      Boeing_727_200_SouthAfrican_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_TAPOld, flight_state())
+{
+  15: Boeing_727_200_TAPOld_Climbing;
+  18: Boeing_727_200_TAPOld_Flight;
+  21: Boeing_727_200_TAPOld_Landing;
+  22: Boeing_727_200_TAPOld_Touchdown;
+      Boeing_727_200_TAPOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_United, flight_state())
+{
+  15: Boeing_727_200_United_Climbing;
+  18: Boeing_727_200_United_Flight;
+  21: Boeing_727_200_United_Landing;
+  22: Boeing_727_200_United_Touchdown;
+      Boeing_727_200_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_sprites, cargo_subtype)
+{
+  1: Boeing_727_200_Aerolineas;
+  2: Boeing_727_200_AirAlgerie;
+  3: Boeing_727_200_AirCanada;
+  4: Boeing_727_200_AirFlorida;
+  5: Boeing_727_200_AirFrance;
+  6: Boeing_727_200_AirHolland;
+  7: Boeing_727_200_Alitalia;
+  8: Boeing_727_200_American;
+  9: Boeing_727_200_Aviogenex;
+ 10: Boeing_727_200_Comair;
+ 11: Boeing_727_200_Condor;
+ 12: Boeing_727_200_Continental;
+ 13: Boeing_727_200_DanAirLondon; 
+ 14: Boeing_727_200_Delta;
+ 15: Boeing_727_200_Iberia;
+ 16: Boeing_727_200_Icelandair;
+ 17: Boeing_727_200_JAT;
+ 18: Boeing_727_200_Kuwait;
+ 19: Boeing_727_200_Libyan;
+ 20: Boeing_727_200_Lufthansa;
+ 21: Boeing_727_200_Northwest;
+ 22: Boeing_727_200_Olympic;
+ 23: Boeing_727_200_PanAm;
+ 24: Boeing_727_200_RAM;
+ 25: Boeing_727_200_SouthAfrican;
+ 26: Boeing_727_200_TAPOld;
+ 27: Boeing_727_200_United;
+     Boeing_727_200_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_running_cost_factor, flight_state())
+{
+  plane_RC(97)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(289); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(515); // airplane climbing after take-off
+      18: return plane_speed_kmh(999); // heading for tower contact point
+  16..20: return plane_speed_kmh(459); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AEROLINEAS_ARGENTINAS);
+  2: string(STR_VLIV_AIR_ALGERIE);
+  3: string(STR_VLIV_AIR_CANADA);
+  4: string(STR_VLIV_AIR_FLORIDA);
+  5: string(STR_VLIV_AIR_FRANCE);
+  6: string(STR_VLIV_AIR_HOLLAND);
+  7: string(STR_VLIV_ALITALIA);
+  8: string(STR_VLIV_AMERICAN_AIRLINES_OLD);
+  9: string(STR_VLIV_AVIOGENEX);
+ 10: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR);
+ 11: string(STR_VLIV_CONDOR);
+ 12: string(STR_VLIV_CONTINENTAL_OLD);
+ 13: string(STR_VLIV_DAN_AIR_LONDON); 
+ 14: string(STR_VLIV_DELTA_AIR_LINES);
+ 15: string(STR_VLIV_IBERIA);
+ 16: string(STR_VLIV_ICELANDAIR);
+ 17: string(STR_VLIV_JAT_AIRWAYS);
+ 18: string(STR_VLIV_KUWAIT_AIRWAYS);
+ 19: string(STR_VLIV_LIBYAN_AIRLINES);
+ 20: string(STR_VLIV_LUFTHANSA);
+ 21: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 22: string(STR_VLIV_OLYMPIC_AIR);
+ 23: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+ 24: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 25: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 26: string(STR_VLIV_TAP_OLD);
+ 27: string(STR_VLIV_UNITED_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_cargo_subtype_capacity, cargo_subtype)
+{
+  5: return 156; //Air France
+  8: return 144; //American Airlines
+ 12: return 149; //Continental
+ 14: return 131; //Delta
+ 15: return 146; //Iberia
+ 16: return 164; //Icelandair
+ 23: return 141; //PAN AM
+  return 147;
+}
+
+item (FEAT_AIRCRAFT, Boeing_727_200)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_727_200);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1967), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1967,1984);
+    retire_early: get_retire_early(1967,1984);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 147;
+    mail_capacity: 19;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1155;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_727_200_sprites;
+    purchase: Boeing_727_200_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_727_200_cargo_subtype_text;
+	passenger_capacity: Boeing_727_200_cargo_subtype_capacity;
+    speed: Boeing_727_200_speed;
+    running_cost_factor: Boeing_727_200_running_cost_factor;
+    sound_effect: Boeing_727_200_sound_effect;
+
+    cost_factor: 37; 
+    purchase_running_cost_factor: 97;
+    purchase_speed: plane_speed_kmh(999); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_200)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_200)
+  {
+    property
+    { range: 1155; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_200)
+  {
+    property
+    { range: 1730; }
+  }
+}

@@ -1,0 +1,18 @@
+START_SECTION(Strings)
+#define LANG_ID TUPLE(concat(LANG_ID_, LANG), 2, 0)
+#define LANG_GENERIC_ID TUPLE(concat(LANG_ID_, LANG), 2, 1)
+#define DEFINE_L_NAME(feature, lang, id, name) act(04) 03 lang 01 id name 00
+#define DEF_AIRV_NAME(id, name) DEFINE_L_NAME(A0_FEATURE_PLANES, LANG_ID, id, name)
+#define DEF_AIRG_NAME(id, name) DEFINE_L_NAME(A0_FEATURE_PLANES, LANG_GENERIC_ID, id, name)
+#define UDEF_AIRV_NAME(vid, vname) ; untranslated aircraft name with id vid and name vname
+#define UDEF_AIRG_NAME(gid, gname) ; untranslated generic aircraft name with id gid and name gname
+#include "7F_english.nfo"
+#include "1F_dutch.nfo"
+#undef LANG_ID
+#undef LANG_GENERIC_ID
+#undef DEFINE_L_NAME
+#undef DEF_AIRV_NAME
+#undef DEF_AIRG_NAME
+#undef UDEF_AIRV_NAME
+#undef UDEF_AIRG_NAME
+END_SECTION(Strings)

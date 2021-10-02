@@ -1,0 +1,355 @@
+
+// SUD-Caravelle III
+
+// Template: 
+#define SUD_CARAVELLE_III_sprite_layout_template(name)                       \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 46, 21, -23, -11, ANIM]                                           \
+  [ 55, 1, 36, 21, -18, -11, ANIM]                                           \
+  [100, 1, 43, 23, -22, -12, ANIM]                                           \
+  [150, 1, 37, 25, -19, -13, ANIM]                                           \
+  [195, 1, 46, 29, -18, -19, ANIM]                                           \
+  [250, 1, 38, 25, -19, -13, ANIM]                                           \
+  [300, 1, 43, 23, -22, -12, ANIM]                                           \
+  [350, 1, 36, 21, -18, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 46, 21, -23, -11, ANIM]                                          \
+  [ 55, 35, 36, 21, -18, -11, ANIM]                                          \
+  [100, 35, 43, 23, -22, -12, ANIM]                                          \
+  [150, 35, 38, 25, -19, -13, ANIM]                                          \
+  [195, 35, 46, 29, -23, -15, ANIM]                                          \
+  [250, 35, 38, 25, -19, -13, ANIM]                                          \
+  [300, 35, 43, 23, -22, -12, ANIM]                                          \
+  [350, 35, 36, 21, -18, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 46, 32, -23, -16, ANIM]                                          \
+  [ 55, 70, 36, 28, -18, -14, ANIM]                                          \
+  [100, 70, 43, 24, -22, -12, ANIM]                                          \
+  [150, 70, 36, 19, -18, -10, ANIM]                                          \
+  [195, 70, 46, 14, -23, -7 , ANIM]                                          \
+  [250, 70, 36, 19, -18, -10, ANIM]                                          \
+  [300, 70, 43, 23, -22, -12, ANIM]                                          \
+  [350, 70, 36, 28, -19, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 110, 46, 21, -23, -11, ANIM]                                         \
+  [ 55, 110, 36, 22, -19, -11, ANIM]                                         \
+  [100, 110, 43, 23, -22, -12, ANIM]                                         \
+  [150, 110, 38, 25, -19, -13, ANIM]                                         \
+  [195, 110, 46, 27, -23, -14, ANIM]                                         \
+  [250, 110, 38, 25, -19, -13, ANIM]                                         \
+  [300, 110, 43, 23, -22, -12, ANIM]                                         \
+  [350, 110, 37, 21, -19, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 36, 27, -18, -21, ANIM]                                         \
+  [ 55, 140, 37, 25, -19, -13, ANIM]                                         \
+  [100, 140, 44, 24, -22, -12, ANIM]                                         \
+  [150, 140, 35, 21, -19, -11, ANIM]                                         \
+  [195, 140, 46, 21, -23, -11, ANIM]                                         \
+  [250, 140, 36, 21, -19, -11, ANIM]                                         \
+  [300, 140, 43, 23, -22, -12, ANIM]                                         \
+  [350, 140, 37, 25, -19, -18, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/(0)Greyscale.png"
+purchase_sprite(SUD_CARAVELLE_III, 300, 1, 43, 23, -22, -12)
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/AirAlgerie.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_AirAlgerie) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/AirFrance.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/AirInter.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_AirInter) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Alitalia.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Austrian.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Aviaco.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Aviaco) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Finnair.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Hispania.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Hispania) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Iberia.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/MiddleEast.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_MiddleEast) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Swissair.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Swissair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Transavia.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Transavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/United.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_United) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Greyscale, flight_state())
+{
+  15: SUD_CARAVELLE_III_Greyscale_Climbing;
+  18: SUD_CARAVELLE_III_Greyscale_Flight;
+  21: SUD_CARAVELLE_III_Greyscale_Landing;
+  22: SUD_CARAVELLE_III_Greyscale_Touchdown;
+      SUD_CARAVELLE_III_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_AirAlgerie, flight_state())
+{
+  15: SUD_CARAVELLE_III_AirAlgerie_Climbing;
+  18: SUD_CARAVELLE_III_AirAlgerie_Flight;
+  21: SUD_CARAVELLE_III_AirAlgerie_Landing;
+  22: SUD_CARAVELLE_III_AirAlgerie_Touchdown;
+      SUD_CARAVELLE_III_AirAlgerie_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_AirFrance, flight_state())
+{
+  15: SUD_CARAVELLE_III_AirFrance_Climbing;
+  18: SUD_CARAVELLE_III_AirFrance_Flight;
+  21: SUD_CARAVELLE_III_AirFrance_Landing;
+  22: SUD_CARAVELLE_III_AirFrance_Touchdown;
+      SUD_CARAVELLE_III_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_AirInter, flight_state())
+{
+  15: SUD_CARAVELLE_III_AirInter_Climbing;
+  18: SUD_CARAVELLE_III_AirInter_Flight;
+  21: SUD_CARAVELLE_III_AirInter_Landing;
+  22: SUD_CARAVELLE_III_AirInter_Touchdown;
+      SUD_CARAVELLE_III_AirInter_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Alitalia, flight_state())
+{
+  15: SUD_CARAVELLE_III_Alitalia_Climbing;
+  18: SUD_CARAVELLE_III_Alitalia_Flight;
+  21: SUD_CARAVELLE_III_Alitalia_Landing;
+  22: SUD_CARAVELLE_III_Alitalia_Touchdown;
+      SUD_CARAVELLE_III_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Austrian, flight_state())
+{
+  15: SUD_CARAVELLE_III_Austrian_Climbing;
+  18: SUD_CARAVELLE_III_Austrian_Flight;
+  21: SUD_CARAVELLE_III_Austrian_Landing;
+  22: SUD_CARAVELLE_III_Austrian_Touchdown;
+      SUD_CARAVELLE_III_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Aviaco, flight_state())
+{
+  15: SUD_CARAVELLE_III_Aviaco_Climbing;
+  18: SUD_CARAVELLE_III_Aviaco_Flight;
+  21: SUD_CARAVELLE_III_Aviaco_Landing;
+  22: SUD_CARAVELLE_III_Aviaco_Touchdown;
+      SUD_CARAVELLE_III_Aviaco_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Finnair, flight_state())
+{
+  15: SUD_CARAVELLE_III_Finnair_Climbing;
+  18: SUD_CARAVELLE_III_Finnair_Flight;
+  21: SUD_CARAVELLE_III_Finnair_Landing;
+  22: SUD_CARAVELLE_III_Finnair_Touchdown;
+      SUD_CARAVELLE_III_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Hispania, flight_state())
+{
+  15: SUD_CARAVELLE_III_Hispania_Climbing;
+  18: SUD_CARAVELLE_III_Hispania_Flight;
+  21: SUD_CARAVELLE_III_Hispania_Landing;
+  22: SUD_CARAVELLE_III_Hispania_Touchdown;
+      SUD_CARAVELLE_III_Hispania_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Iberia, flight_state())
+{
+  15: SUD_CARAVELLE_III_Iberia_Climbing;
+  18: SUD_CARAVELLE_III_Iberia_Flight;
+  21: SUD_CARAVELLE_III_Iberia_Landing;
+  22: SUD_CARAVELLE_III_Iberia_Touchdown;
+      SUD_CARAVELLE_III_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_MiddleEast, flight_state())
+{
+  15: SUD_CARAVELLE_III_MiddleEast_Climbing;
+  18: SUD_CARAVELLE_III_MiddleEast_Flight;
+  21: SUD_CARAVELLE_III_MiddleEast_Landing;
+  22: SUD_CARAVELLE_III_MiddleEast_Touchdown;
+      SUD_CARAVELLE_III_MiddleEast_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Swissair, flight_state())
+{
+  15: SUD_CARAVELLE_III_Swissair_Climbing;
+  18: SUD_CARAVELLE_III_Swissair_Flight;
+  21: SUD_CARAVELLE_III_Swissair_Landing;
+  22: SUD_CARAVELLE_III_Swissair_Touchdown;
+      SUD_CARAVELLE_III_Swissair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Transavia, flight_state())
+{
+  15: SUD_CARAVELLE_III_Transavia_Climbing;
+  18: SUD_CARAVELLE_III_Transavia_Flight;
+  21: SUD_CARAVELLE_III_Transavia_Landing;
+  22: SUD_CARAVELLE_III_Transavia_Touchdown;
+      SUD_CARAVELLE_III_Transavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_United, flight_state())
+{
+  15: SUD_CARAVELLE_III_United_Climbing;
+  18: SUD_CARAVELLE_III_United_Flight;
+  21: SUD_CARAVELLE_III_United_Landing;
+  22: SUD_CARAVELLE_III_United_Touchdown;
+      SUD_CARAVELLE_III_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_sprites, cargo_subtype)
+{
+  1: SUD_CARAVELLE_III_AirAlgerie;
+  2: SUD_CARAVELLE_III_AirFrance;
+  3: SUD_CARAVELLE_III_AirInter;
+  4: SUD_CARAVELLE_III_Alitalia;
+  5: SUD_CARAVELLE_III_Austrian;
+  6: SUD_CARAVELLE_III_Aviaco;
+  7: SUD_CARAVELLE_III_Finnair;
+  8: SUD_CARAVELLE_III_Hispania;
+  9: SUD_CARAVELLE_III_Iberia;
+ 10: SUD_CARAVELLE_III_MiddleEast;
+ 11: SUD_CARAVELLE_III_Swissair;
+ 12: SUD_CARAVELLE_III_Transavia;
+ 13: SUD_CARAVELLE_III_United; 
+     SUD_CARAVELLE_III_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_running_cost_factor, flight_state())
+{
+  plane_RC(55)
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(201); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(402); // airplane climbing after take-off
+      18: return plane_speed_kmh(805); // heading for tower contact point
+  16..20: return plane_speed_kmh(354); // in flight
+  21..22: return plane_speed_kmh(201); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_SUD);
+  1: string(STR_VLIV_AIR_ALGERIE); 
+  2: string(STR_VLIV_AIR_FRANCE); 
+  3: string(STR_VLIV_AIR_INTER);
+  4: string(STR_VLIV_ALITALIA);
+  5: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  6: string(STR_VLIV_AVIACO);
+  7: string(STR_VLIV_FINNAIR); 
+  8: string(STR_VLIV_HISPANIA);
+  9: string(STR_VLIV_IBERIA);
+ 10: string(STR_VLIV_MIDDLE_EAST_AIRLINES); 
+ 11: string(STR_VLIV_SWISS_AIR); 
+ 12: string(STR_VLIV_TRANSAVIA);
+ 13: string(STR_VLIV_UNITED_AIRLINES); 
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, SUD_CARAVELLE_III)
+{
+  property
+  {
+    name: string(STR_AIRV_SUD_CARAVELLE_III);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1958), 1, 1);
+    vehicle_life: 20;
+    model_life: get_model_life(1958,1972);
+    retire_early: get_retire_early(1958,1972);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 80;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 655;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: SUD_CARAVELLE_III_sprites;
+    purchase: SUD_CARAVELLE_III_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: SUD_CARAVELLE_III_cargo_subtype_text;
+    speed: SUD_CARAVELLE_III_speed;
+    running_cost_factor: SUD_CARAVELLE_III_running_cost_factor;
+    sound_effect: SUD_CARAVELLE_III_sound_effect;
+
+    cost_factor: 27; 
+    purchase_running_cost_factor: 55;
+    purchase_speed: plane_speed_kmh(805); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, SUD_CARAVELLE_III)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, SUD_CARAVELLE_III)
+  {
+    property
+    { range: 655; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, SUD_CARAVELLE_III)
+  {
+    property
+    { range: 985; }
+  }
+}

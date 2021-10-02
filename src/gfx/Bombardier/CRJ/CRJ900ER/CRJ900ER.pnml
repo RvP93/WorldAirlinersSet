@@ -1,0 +1,239 @@
+
+// Bombardier-CRJ900ER
+
+// Template: 
+#define Bombardier_CRJ900ER_sprite_layout_template(name)                     \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 28, 23, -14, -12, ANIM]                                           \
+  [ 30, 1, 38, 19, -19, -10, ANIM]                                           \
+  [ 70, 1, 44, 20, -22, -10, ANIM]                                           \
+  [120, 1, 34, 26, -17, -13, ANIM]                                           \
+  [165, 1, 30, 32, -15, -16, ANIM]                                           \
+  [200, 1, 34, 26, -17, -13, ANIM]                                           \
+  [245, 1, 44, 20, -22, -10, ANIM]                                           \
+  [295, 1, 38, 19, -19, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 28, 23, -14, -12, ANIM]                                          \
+  [ 30, 35, 38, 19, -19, -10, ANIM]                                          \
+  [ 70, 35, 44, 20, -22, -10, ANIM]                                          \
+  [120, 35, 34, 26, -17, -13, ANIM]                                          \
+  [165, 35, 30, 33, -15, -17, ANIM]                                          \
+  [200, 35, 34, 26, -15, -13, ANIM]                                          \
+  [245, 35, 44, 20, -22, -10, ANIM]                                          \
+  [295, 35, 38, 19, -19, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 28, 28, -14, -14, ANIM]                                          \
+  [ 30, 70, 40, 25, -20, -13, ANIM]                                          \
+  [ 71, 70, 45, 20, -23, -10, ANIM]                                          \
+  [120, 70, 42, 16, -21, -8 , ANIM]                                          \
+  [165, 70, 30, 25, -15, -13, ANIM]                                          \
+  [200, 70, 42, 16, -21, -8 , ANIM]                                          \
+  [245, 70, 45, 20, -23, -10, ANIM]                                          \
+  [295, 70, 40, 25, -20, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 28, 23, -14, -12, ANIM]                                         \
+  [ 30, 100, 38, 19, -19, -10, ANIM]                                         \
+  [ 71, 100, 44, 20, -22, -10, ANIM]                                         \
+  [120, 100, 34, 26, -17, -13, ANIM]                                         \
+  [165, 100, 30, 33, -15, -17, ANIM]                                         \
+  [200, 100, 34, 26, -17, -13, ANIM]                                         \
+  [245, 100, 44, 20, -22, -10, ANIM]                                         \
+  [295, 100, 38, 19, -19, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 28, 28, -14, -14, ANIM]                                         \
+  [ 30, 135, 37, 23, -19, -12, ANIM]                                         \
+  [ 71, 135, 45, 18, -23, -9 , ANIM]                                         \
+  [120, 135, 37, 23, -19, -12, ANIM]                                         \
+  [165, 135, 30, 31, -15, -16, ANIM]                                         \
+  [200, 135, 37, 23, -19, -12, ANIM]                                         \
+  [245, 135, 45, 18, -23, -9 , ANIM]                                         \
+  [295, 135, 37, 23, -19, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ900ER/(0)Greyscale.png"
+purchase_sprite(Bombardier_CRJ900ER, 245, 1, 44, 20, -22, -10)
+Bombardier_CRJ900ER_sprite_layout_template(Bombardier_CRJ900ER_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ900ER/AirNostrum.png"
+Bombardier_CRJ900ER_sprite_layout_template(Bombardier_CRJ900ER_AirNostrum) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ900ER/AmericanEagle.png"
+Bombardier_CRJ900ER_sprite_layout_template(Bombardier_CRJ900ER_AmericanEagle) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ900ER/Britair.png"
+Bombardier_CRJ900ER_sprite_layout_template(Bombardier_CRJ900ER_Britair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ900ER/MAT.png"
+Bombardier_CRJ900ER_sprite_layout_template(Bombardier_CRJ900ER_MAT) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_Greyscale, flight_state())
+{
+  15: Bombardier_CRJ900ER_Greyscale_Climbing;
+  18: Bombardier_CRJ900ER_Greyscale_Flight;
+  21: Bombardier_CRJ900ER_Greyscale_Landing;
+  22: Bombardier_CRJ900ER_Greyscale_Touchdown;
+      Bombardier_CRJ900ER_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_AirNostrum, flight_state())
+{
+  15: Bombardier_CRJ900ER_AirNostrum_Climbing;
+  18: Bombardier_CRJ900ER_AirNostrum_Flight;
+  21: Bombardier_CRJ900ER_AirNostrum_Landing;
+  22: Bombardier_CRJ900ER_AirNostrum_Touchdown;
+      Bombardier_CRJ900ER_AirNostrum_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_AmericanEagle, flight_state())
+{
+  15: Bombardier_CRJ900ER_AmericanEagle_Climbing;
+  18: Bombardier_CRJ900ER_AmericanEagle_Flight;
+  21: Bombardier_CRJ900ER_AmericanEagle_Landing;
+  22: Bombardier_CRJ900ER_AmericanEagle_Touchdown;
+      Bombardier_CRJ900ER_AmericanEagle_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_Britair, flight_state())
+{
+  15: Bombardier_CRJ900ER_Britair_Climbing;
+  18: Bombardier_CRJ900ER_Britair_Flight;
+  21: Bombardier_CRJ900ER_Britair_Landing;
+  22: Bombardier_CRJ900ER_Britair_Touchdown;
+      Bombardier_CRJ900ER_Britair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_MAT, flight_state())
+{
+  15: Bombardier_CRJ900ER_MAT_Climbing;
+  18: Bombardier_CRJ900ER_MAT_Flight;
+  21: Bombardier_CRJ900ER_MAT_Landing;
+  22: Bombardier_CRJ900ER_MAT_Touchdown;
+      Bombardier_CRJ900ER_MAT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_sprites, cargo_subtype)
+{
+  1: Bombardier_CRJ900ER_AirNostrum;
+  2: Bombardier_CRJ900ER_AmericanEagle;
+  3: Bombardier_CRJ900ER_Britair;
+  4: Bombardier_CRJ900ER_MAT;
+     Bombardier_CRJ900ER_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_running_cost_factor, flight_state())
+{
+  plane_RC(45)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(386); // airplane climbing after take-off
+      18: return plane_speed_kmh(846); // heading for tower contact point
+  16..20: return plane_speed_kmh(322); // in flight
+  21..22: return plane_speed_kmh(265); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOMBARDIER);
+  1: string(STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL);
+  2: string(STR_VLIV_AMERICAN_EAGLE);
+  3: string(STR_VLIV_BRITAIR);
+  4: string(STR_VLIV_MAT_MACEDONIAN);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ900ER_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 90; //Air Nostrum
+  2: return 76; //American Eagle
+  3: return 90; //Brtiair
+     return 88;
+}
+
+item (FEAT_AIRCRAFT, Bombardier_CRJ900ER)
+{
+  property
+  {
+    name: string(STR_AIRV_BOMBARDIER_CRJ900ER);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2007), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(2007,2050);
+    retire_early: get_retire_early(2007,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 88;
+    mail_capacity: 9;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 430;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Bombardier_CRJ900ER_sprites;
+    purchase: Bombardier_CRJ900ER_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Bombardier_CRJ900ER_cargo_subtype_text;
+	passenger_capacity: Bombardier_CRJ900ER_cargo_subtype_capacity;
+    speed: Bombardier_CRJ900ER_speed;
+    running_cost_factor: Bombardier_CRJ900ER_running_cost_factor;
+    sound_effect: Bombardier_CRJ900ER_sound_effect;
+
+    cost_factor: 28; 
+    purchase_running_cost_factor: 45;
+    purchase_speed: plane_speed_kmh(846); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ900ER)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ900ER)
+  {
+    property
+    { range: 430; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ900ER)
+  {
+    property
+    { range: 640; }
+  }
+}
+

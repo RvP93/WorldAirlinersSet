@@ -1,0 +1,34 @@
+START_SECTION(Planes-Boeing)
+#include "717-200.nfo"
+
+#include "727-200.nfo"
+
+#include "737-100.nfo"
+#include "737-200.nfo"
+#include "737-300.nfo"
+#include "737-300F.nfo"
+#include "737-400.nfo"
+#include "737-500.nfo"
+#include "737-600.nfo"
+#include "737-700.nfo"
+#include "737-800.nfo"
+#include "737-900.nfo"
+#include "737-900ER.nfo"
+
+#include "747-200.nfo"
+#include "747-400.nfo"
+#include "747-400D.nfo"
+#include "747-400BCF.nfo"
+#include "747-400SCD.nfo"
+#include "747-400ERF.nfo"
+
+#include "757-200.nfo"
+
+#include "767-300.nfo"
+#include "767-300ER.nfo"
+
+#include "777-200.nfo"
+#include "777-200ER.nfo"
+#include "777-200LR.nfo"
+#include "777-300.nfo"
+END_SECTION(Planes-Boeing)

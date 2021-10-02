@@ -1,0 +1,455 @@
+START_SECTION(Planes-Ilyushin-62)
+
+    A0_PLANES(AIRV_ILYUSHIN_62, 1, 18)
+       00 \w1967-01-01 // introduction date
+       03 0F  //Vehicle Life In Years 
+       04 1C  // model life in years 
+       06 0F // climate availability
+       07 \b22 // loading speed ( to be set )
+       A0_SET_AIR_PROP_USE_NEW_SPRITE()
+       A0_SET_AIR_PROP_NOT_HELICOPTER()
+       A0_SET_AIR_PROP_LARGE() 
+       0C 3F // speed in mph / 8 ( to be set)
+       0D 02 // acceleration
+       0F \w186 // pax capacity
+       11 \b19 // mail cap
+       12 07 // sound effect (jet)
+       13 00 00 00 00 //Cargo Types For Refitting
+       14 20    
+       16 0A  //Retire Vehicle Early 
+       18 \wx0001
+       19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_ILYUSHIN_62, 1, 1)
+                     1F \w1800
+        
+  -1 * 0   10 F1 
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/(0)Greyscale.pcx
+    spr() 1 1 09 29 54 -27 -15
+    spr() 60 1 09 27 51 -26 -14
+    spr() 120 1 09 28 61 -31 -14
+    spr() 190 1 09 37 51 -26 -19
+    spr() 250 1 09 42 54 -27 -21
+    spr() 310 1 09 37 51 -26 -19
+    spr() 370 1 09 28 61 -31 -14
+    spr() 440 1 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Aeroflot(Old).pcx
+    spr() 1 1 09 29 54 -27 -15
+    spr() 60 1 09 27 51 -26 -14
+    spr() 120 1 09 28 61 -31 -14
+    spr() 190 1 09 37 51 -26 -19
+    spr() 250 1 09 42 54 -27 -21
+    spr() 310 1 09 37 51 -26 -19
+    spr() 370 1 09 28 61 -31 -14
+    spr() 440 1 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/LOT.pcx
+    spr() 1 1 09 29 54 -27 -15
+    spr() 60 1 09 27 51 -26 -14
+    spr() 120 1 09 28 61 -31 -14
+    spr() 190 1 09 37 51 -26 -19
+    spr() 250 1 09 42 54 -27 -21
+    spr() 310 1 09 37 51 -26 -19
+    spr() 370 1 09 28 61 -31 -14
+    spr() 440 1 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Tarom.pcx
+    spr() 1 1 09 29 54 -27 -15
+    spr() 60 1 09 27 51 -26 -14
+    spr() 120 1 09 28 61 -31 -14
+    spr() 190 1 09 37 51 -26 -19
+    spr() 250 1 09 42 54 -27 -21
+    spr() 310 1 09 37 51 -26 -19
+    spr() 370 1 09 28 61 -31 -14
+    spr() 440 1 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Ukraine.pcx
+    spr() 1 1 09 29 54 -27 -15
+    spr() 60 1 09 27 51 -26 -14
+    spr() 120 1 09 28 61 -31 -14
+    spr() 190 1 09 37 51 -26 -19
+    spr() 250 1 09 42 54 -27 -21
+    spr() 310 1 09 37 51 -26 -19
+    spr() 370 1 09 28 61 -31 -14
+    spr() 440 1 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9  02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2
+   -1 * 9  02 03 03 01 01 \w3 \w3
+   -1 * 9  02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F0 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // LOT
+                             03 00 03 03 // Tarom
+                             04 00 04 04 // Ukraine			     
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/(0)Greyscale.pcx
+    spr() 1 50 09 29 54 -27 -15
+    spr() 60 50 09 27 51 -26 -14
+    spr() 120 50 09 28 61 -31 -14
+    spr() 190 50 09 37 51 -26 -19
+    spr() 250 50 09 42 54 -27 -21
+    spr() 310 50 09 37 51 -26 -19
+    spr() 370 50 09 28 61 -31 -14
+    spr() 440 50 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Aeroflot(Old).pcx
+    spr() 1 50 09 29 54 -27 -15
+    spr() 60 50 09 27 51 -26 -14
+    spr() 120 50 09 28 61 -31 -14
+    spr() 190 50 09 37 51 -26 -19
+    spr() 250 50 09 42 54 -27 -21
+    spr() 310 50 09 37 51 -26 -19
+    spr() 370 50 09 28 61 -31 -14
+    spr() 440 50 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/LOT.pcx
+    spr() 1 50 09 29 54 -27 -15
+    spr() 60 50 09 27 51 -26 -14
+    spr() 120 50 09 28 61 -31 -14
+    spr() 190 50 09 37 51 -26 -19
+    spr() 250 50 09 42 54 -27 -21
+    spr() 310 50 09 37 51 -26 -19
+    spr() 370 50 09 28 61 -31 -14
+    spr() 440 50 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Tarom.pcx
+    spr() 1 50 09 29 54 -27 -15
+    spr() 60 50 09 27 51 -26 -14
+    spr() 120 50 09 28 61 -31 -14
+    spr() 190 50 09 37 51 -26 -19
+    spr() 250 50 09 42 54 -27 -21
+    spr() 310 50 09 37 51 -26 -19
+    spr() 370 50 09 28 61 -31 -14
+    spr() 440 50 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Ukraine.pcx
+    spr() 1 50 09 29 54 -27 -15
+    spr() 60 50 09 27 51 -26 -14
+    spr() 120 50 09 28 61 -31 -14
+    spr() 190 50 09 37 51 -26 -19
+    spr() 250 50 09 42 54 -27 -21
+    spr() 310 50 09 37 51 -26 -19
+    spr() 370 50 09 28 61 -31 -14
+    spr() 440 50 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9  02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2
+   -1 * 9  02 03 03 01 01 \w3 \w3
+   -1 * 9  02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F1 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // LOT
+                             03 00 03 03 // Tarom
+                             04 00 04 04 // Ukraine			     
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/(0)Greyscale.pcx
+    spr() 1 100 09 44 54 -27 -22
+    spr() 60 100 09 41 49 -25 -21
+    spr() 120 100 09 28 61 -31 -14
+    spr() 190 100 09 25 46 -23 -23
+    spr() 250 100 09 23 52 -26 -12
+    spr() 310 100 09 25 46 -23 -13
+    spr() 370 100 09 28 61 -31 -14
+    spr() 440 100 09 41 49 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Aeroflot(Old).pcx
+    spr() 1 100 09 44 54 -27 -22
+    spr() 60 100 09 41 49 -25 -21
+    spr() 120 100 09 28 61 -31 -14
+    spr() 190 100 09 25 46 -23 -23
+    spr() 250 100 09 23 52 -26 -12
+    spr() 310 100 09 25 46 -23 -13
+    spr() 370 100 09 28 61 -31 -14
+    spr() 440 100 09 41 49 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/LOT.pcx
+    spr() 1 100 09 44 54 -27 -22
+    spr() 60 100 09 41 49 -25 -21
+    spr() 120 100 09 28 61 -31 -14
+    spr() 190 100 09 25 46 -23 -23
+    spr() 250 100 09 23 52 -26 -12
+    spr() 310 100 09 25 46 -23 -13
+    spr() 370 100 09 28 61 -31 -14
+    spr() 440 100 09 41 49 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Tarom.pcx
+    spr() 1 100 09 44 54 -27 -22
+    spr() 60 100 09 41 49 -25 -21
+    spr() 120 100 09 28 61 -31 -14
+    spr() 190 100 09 25 46 -23 -23
+    spr() 250 100 09 23 52 -26 -12
+    spr() 310 100 09 25 46 -23 -13
+    spr() 370 100 09 28 61 -31 -14
+    spr() 440 100 09 41 49 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Ukraine.pcx
+    spr() 1 100 09 44 54 -27 -22
+    spr() 60 100 09 41 49 -25 -21
+    spr() 120 100 09 28 61 -31 -14
+    spr() 190 100 09 25 46 -23 -23
+    spr() 250 100 09 23 52 -26 -12
+    spr() 310 100 09 25 46 -23 -13
+    spr() 370 100 09 28 61 -31 -14
+    spr() 440 100 09 41 49 -25 -21
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9  02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2
+   -1 * 9  02 03 03 01 01 \w3 \w3
+   -1 * 9  02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F2 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // LOT
+                             03 00 03 03 // Tarom
+                             04 00 04 04 // Ukraine			     
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/(0)Greyscale.pcx
+    spr() 1 150 09 29 54 -27 -15
+    spr() 60 150 09 27 51 -26 -14
+    spr() 120 150 09 28 61 -31 -14
+    spr() 190 150 09 37 51 -26 -19
+    spr() 250 150 09 42 54 -27 -21
+    spr() 310 150 09 37 51 -26 -19
+    spr() 370 150 09 28 61 -31 -14
+    spr() 440 150 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Aeroflot(Old).pcx
+    spr() 1 150 09 29 54 -27 -15
+    spr() 60 150 09 27 51 -26 -14
+    spr() 120 150 09 28 61 -31 -14
+    spr() 190 150 09 37 51 -26 -19
+    spr() 250 150 09 42 54 -27 -21
+    spr() 310 150 09 37 51 -26 -19
+    spr() 370 150 09 28 61 -31 -14
+    spr() 440 150 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/LOT.pcx
+    spr() 1 150 09 29 54 -27 -15
+    spr() 60 150 09 27 51 -26 -14
+    spr() 120 150 09 28 61 -31 -14
+    spr() 190 150 09 37 51 -26 -19
+    spr() 250 150 09 42 54 -27 -21
+    spr() 310 150 09 37 51 -26 -19
+    spr() 370 150 09 28 61 -31 -14
+    spr() 440 150 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Tarom.pcx
+    spr() 1 150 09 29 54 -27 -15
+    spr() 60 150 09 27 51 -26 -14
+    spr() 120 150 09 28 61 -31 -14
+    spr() 190 150 09 37 51 -26 -19
+    spr() 250 150 09 42 54 -27 -21
+    spr() 310 150 09 37 51 -26 -19
+    spr() 370 150 09 28 61 -31 -14
+    spr() 440 150 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Ukraine.pcx
+    spr() 1 150 09 29 54 -27 -15
+    spr() 60 150 09 27 51 -26 -14
+    spr() 120 150 09 28 61 -31 -14
+    spr() 190 150 09 37 51 -26 -19
+    spr() 250 150 09 42 54 -27 -21
+    spr() 310 150 09 37 51 -26 -19
+    spr() 370 150 09 28 61 -31 -14
+    spr() 440 150 09 27 51 -26 -14
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9  02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2
+   -1 * 9  02 03 03 01 01 \w3 \w3
+   -1 * 9  02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F3 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // LOT
+                             03 00 03 03 // Tarom
+                             04 00 04 04 // Ukraine			     
+                             FF FF // default
+                             
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/(0)Greyscale.pcx
+    spr() 1 200 09 38 54 -27 -19
+    spr() 60 200 09 34 52 -26 -17
+    spr() 120 200 09 28 61 -31 -14
+    spr() 190 200 09 31 52 -26 -16
+    spr() 250 200 09 31 54 -27 -16
+    spr() 310 200 09 31 52 -26 -16
+    spr() 370 200 09 28 61 -31 -14
+    spr() 440 200 09 34 52 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Aeroflot(Old).pcx
+    spr() 1 200 09 38 54 -27 -19
+    spr() 60 200 09 34 52 -26 -17
+    spr() 120 200 09 28 61 -31 -14
+    spr() 190 200 09 31 52 -26 -16
+    spr() 250 200 09 31 54 -27 -16
+    spr() 310 200 09 31 52 -26 -16
+    spr() 370 200 09 28 61 -31 -14
+    spr() 440 200 09 34 52 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/LOT.pcx
+    spr() 1 200 09 38 54 -27 -19
+    spr() 60 200 09 34 52 -26 -17
+    spr() 120 200 09 28 61 -31 -14
+    spr() 190 200 09 31 52 -26 -16
+    spr() 250 200 09 31 54 -27 -16
+    spr() 310 200 09 31 52 -26 -16
+    spr() 370 200 09 28 61 -31 -14
+    spr() 440 200 09 34 52 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Tarom.pcx
+    spr() 1 200 09 38 54 -27 -19
+    spr() 60 200 09 34 52 -26 -17
+    spr() 120 200 09 28 61 -31 -14
+    spr() 190 200 09 31 52 -26 -16
+    spr() 250 200 09 31 54 -27 -16
+    spr() 310 200 09 31 52 -26 -16
+    spr() 370 200 09 28 61 -31 -14
+    spr() 440 200 09 34 52 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/ilyushin/il62/Ukraine.pcx
+    spr() 1 200 09 38 54 -27 -19
+    spr() 60 200 09 34 52 -26 -17
+    spr() 120 200 09 28 61 -31 -14
+    spr() 190 200 09 31 52 -26 -16
+    spr() 250 200 09 31 54 -27 -16
+    spr() 310 200 09 31 52 -26 -16
+    spr() 370 200 09 28 61 -31 -14
+    spr() 440 200 09 34 52 -26 -17
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9  02 03 01 01 01 \w1 \w1
+   -1 * 9  02 03 02 01 01 \w2 \w2
+   -1 * 9  02 03 03 01 01 \w3 \w3
+   -1 * 9  02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F4 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // LOT
+                             03 00 03 03 // Tarom
+                             04 00 04 04 // Ukraine			     
+                             FF FF // default
+    
+    A1_PLANES(1,1)
+
+    -1 sprites/pcx/ilyushin/il62/(0)Greyscale.pcx 500 100 09 21 59 -28 -11
+
+  139 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 05 // 5 liveries
+                               00 80 00 00 // Greyscale
+                               71 80 01 01 // Aeroflot (Old)
+                               93 80 02 02 // Lot
+                               14 80 03 03 // Tarom
+                               92 80 04 04 // Ukraine
+                               FF FF // end subtype selection  		    
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             15 80 0D 0D   // Take Off 
+                             1E 80 0F 0F   // Climbing
+                             3F 80 12 12   // Flight
+                             1D 80 10 14   // Approach
+                             12 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32953 0D 0F // Take Off
+                             \w32937 12 12 // Flight
+                             \w32940 10 14 // Approach
+                             \w32946 15 16 // Landing
+                             \w32880 08 0C // Grounded	
+                             \w32856       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32810 0B 0B //Purchase Cost Purchase List
+				                     \w32937 0E 0E //Running Cost Purchase List
+                             00 00				
+ 
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             4C 00 				
+        
+   -1 * 0     03 03 01 AIRV_ILYUSHIN_62 01  
+                             FF 08 00   // P-List
+                             07 00      // Default
+END_SECTION(Planes-Ilushin-62)

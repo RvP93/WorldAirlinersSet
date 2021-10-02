@@ -1,0 +1,532 @@
+
+// Boeing-707-320
+
+// Template: 
+#define Boeing_707_320_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 53, 27, -27, -14, ANIM]                                           \
+  [ 65, 1, 49, 25, -25, -13, ANIM]                                           \
+  [130, 1, 57, 27, -29, -18, ANIM]                                           \
+  [195, 1, 48, 31, -24, -15, ANIM]                                           \
+  [260, 1, 53, 36, -27, -18, ANIM]                                           \
+  [325, 1, 48, 31, -24, -16, ANIM]                                           \
+  [390, 1, 57, 27, -29, -14, ANIM]                                           \
+  [455, 1, 49, 25, -25, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 53, 27, -26, -18, ANIM]                                          \
+  [ 65, 50, 49, 25, -25, -13, ANIM]                                          \
+  [130, 50, 57, 27, -29, -18, ANIM]                                          \
+  [195, 50, 48, 32, -24, -16, ANIM]                                          \
+  [260, 50, 53, 36, -26, -18, ANIM]                                          \
+  [325, 50, 48, 32, -24, -16, ANIM]                                          \
+  [390, 50, 57, 27, -29, -14, ANIM]                                          \
+  [455, 50, 49, 25, -25, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 52, 42, -26, -21, ANIM]                                         \
+  [ 65, 100, 47, 38, -24, -18, ANIM]                                         \
+  [130, 100, 55, 27, -28, -14, ANIM]                                         \
+  [195, 100, 46, 24, -23, -12, ANIM]                                         \
+  [260, 100, 52, 14, -26, -7 , ANIM]                                         \
+  [325, 100, 46, 24, -23, -12, ANIM]                                         \
+  [390, 100, 57, 27, -29, -14, ANIM]                                         \
+  [455, 100, 47, 38, -24, -18, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 170, 52, 27, -26, -14, ANIM]                                         \
+  [ 65, 170, 49, 25, -25, -13, ANIM]                                         \
+  [130, 170, 57, 27, -29, -18, ANIM]                                         \
+  [195, 170, 48, 32, -24, -16, ANIM]                                         \
+  [260, 170, 52, 32, -26, -16, ANIM]                                         \
+  [325, 170, 48, 32, -24, -16, ANIM]                                         \
+  [390, 170, 57, 27, -29, -14, ANIM]                                         \
+  [455, 170, 49, 25, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 215, 52, 35, -26, -18, ANIM]                                         \
+  [ 65, 215, 48, 30, -24, -15, ANIM]                                         \
+  [130, 215, 57, 26, -29, -14, ANIM]                                         \
+  [195, 215, 47, 28, -24, -14, ANIM]                                         \
+  [260, 215, 52, 23, -26, -12, ANIM]                                         \
+  [325, 215, 47, 28, -24, -14, ANIM]                                         \
+  [390, 215, 57, 27, -29, -14, ANIM]                                         \
+  [455, 215, 48, 30, -24, -15, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/(0)Greyscale.png"
+purchase_sprite(Boeing_707_320, 390, 1, 57, 27, -29, -14)
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/AerLingus.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_AerLingus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/AirAlgerie.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_AirAlgerie) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/AirFrance.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/AmericanAirlines.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_AmericanAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Austrian.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/BOAC.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_BOAC) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/BritishAirways.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/BritishCaledonian.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_BritishCaledonian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/CathayPacific.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_CathayPacific) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Condor.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Condor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Continental.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/ElAl.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_ElAl) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Kuwait.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Kuwait) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Lufthansa.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Luxair.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Luxair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/MiddleEast.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_MiddleEast) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Northwest.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Northwest) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Olympic.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Olympic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/PanAm.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_PanAm) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Qantas.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/SouthAfrican.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_SouthAfrican) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/TAP.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_TAP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/Transavia.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_Transavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/TWA.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_TWA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-320/VARIG.png"
+Boeing_707_320_sprite_layout_template(Boeing_707_320_VARIG) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Greyscale, flight_state())
+{
+  15: Boeing_707_320_Greyscale_Climbing;
+  18: Boeing_707_320_Greyscale_Flight;
+  21: Boeing_707_320_Greyscale_Landing;
+  22: Boeing_707_320_Greyscale_Touchdown;
+      Boeing_707_320_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_AerLingus, flight_state())
+{
+  15: Boeing_707_320_AerLingus_Climbing;
+  18: Boeing_707_320_AerLingus_Flight;
+  21: Boeing_707_320_AerLingus_Landing;
+  22: Boeing_707_320_AerLingus_Touchdown;
+      Boeing_707_320_AerLingus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_AirAlgerie, flight_state())
+{
+  15: Boeing_707_320_AirAlgerie_Climbing;
+  18: Boeing_707_320_AirAlgerie_Flight;
+  21: Boeing_707_320_AirAlgerie_Landing;
+  22: Boeing_707_320_AirAlgerie_Touchdown;
+      Boeing_707_320_AirAlgerie_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_AirFrance, flight_state())
+{
+  15: Boeing_707_320_AirFrance_Climbing;
+  18: Boeing_707_320_AirFrance_Flight;
+  21: Boeing_707_320_AirFrance_Landing;
+  22: Boeing_707_320_AirFrance_Touchdown;
+      Boeing_707_320_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_AmericanAirlines, flight_state())
+{
+  15: Boeing_707_320_AmericanAirlines_Climbing;
+  18: Boeing_707_320_AmericanAirlines_Flight;
+  21: Boeing_707_320_AmericanAirlines_Landing;
+  22: Boeing_707_320_AmericanAirlines_Touchdown;
+      Boeing_707_320_AmericanAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Austrian, flight_state())
+{
+  15: Boeing_707_320_Austrian_Climbing;
+  18: Boeing_707_320_Austrian_Flight;
+  21: Boeing_707_320_Austrian_Landing;
+  22: Boeing_707_320_Austrian_Touchdown;
+      Boeing_707_320_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_BOAC, flight_state())
+{
+  15: Boeing_707_320_BOAC_Climbing;
+  18: Boeing_707_320_BOAC_Flight;
+  21: Boeing_707_320_BOAC_Landing;
+  22: Boeing_707_320_BOAC_Touchdown;
+      Boeing_707_320_BOAC_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_BritishAirways, flight_state())
+{
+  15: Boeing_707_320_BritishAirways_Climbing;
+  18: Boeing_707_320_BritishAirways_Flight;
+  21: Boeing_707_320_BritishAirways_Landing;
+  22: Boeing_707_320_BritishAirways_Touchdown;
+      Boeing_707_320_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_BritishCaledonian, flight_state())
+{
+  15: Boeing_707_320_BritishCaledonian_Climbing;
+  18: Boeing_707_320_BritishCaledonian_Flight;
+  21: Boeing_707_320_BritishCaledonian_Landing;
+  22: Boeing_707_320_BritishCaledonian_Touchdown;
+      Boeing_707_320_BritishCaledonian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_CathayPacific, flight_state())
+{
+  15: Boeing_707_320_CathayPacific_Climbing;
+  18: Boeing_707_320_CathayPacific_Flight;
+  21: Boeing_707_320_CathayPacific_Landing;
+  22: Boeing_707_320_CathayPacific_Touchdown;
+      Boeing_707_320_CathayPacific_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Condor, flight_state())
+{
+  15: Boeing_707_320_Condor_Climbing;
+  18: Boeing_707_320_Condor_Flight;
+  21: Boeing_707_320_Condor_Landing;
+  22: Boeing_707_320_Condor_Touchdown;
+      Boeing_707_320_Condor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Continental, flight_state())
+{
+  15: Boeing_707_320_Continental_Climbing;
+  18: Boeing_707_320_Continental_Flight;
+  21: Boeing_707_320_Continental_Landing;
+  22: Boeing_707_320_Continental_Touchdown;
+      Boeing_707_320_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_ElAl, flight_state())
+{
+  15: Boeing_707_320_ElAl_Climbing;
+  18: Boeing_707_320_ElAl_Flight;
+  21: Boeing_707_320_ElAl_Landing;
+  22: Boeing_707_320_ElAl_Touchdown;
+      Boeing_707_320_ElAl_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Kuwait, flight_state())
+{
+  15: Boeing_707_320_Kuwait_Climbing;
+  18: Boeing_707_320_Kuwait_Flight;
+  21: Boeing_707_320_Kuwait_Landing;
+  22: Boeing_707_320_Kuwait_Touchdown;
+      Boeing_707_320_Kuwait_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Lufthansa, flight_state())
+{
+  15: Boeing_707_320_Lufthansa_Climbing;
+  18: Boeing_707_320_Lufthansa_Flight;
+  21: Boeing_707_320_Lufthansa_Landing;
+  22: Boeing_707_320_Lufthansa_Touchdown;
+      Boeing_707_320_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Luxair, flight_state())
+{
+  15: Boeing_707_320_Luxair_Climbing;
+  18: Boeing_707_320_Luxair_Flight;
+  21: Boeing_707_320_Luxair_Landing;
+  22: Boeing_707_320_Luxair_Touchdown;
+      Boeing_707_320_Luxair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_MiddleEast, flight_state())
+{
+  15: Boeing_707_320_MiddleEast_Climbing;
+  18: Boeing_707_320_MiddleEast_Flight;
+  21: Boeing_707_320_MiddleEast_Landing;
+  22: Boeing_707_320_MiddleEast_Touchdown;
+      Boeing_707_320_MiddleEast_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Northwest, flight_state())
+{
+  15: Boeing_707_320_Northwest_Climbing;
+  18: Boeing_707_320_Northwest_Flight;
+  21: Boeing_707_320_Northwest_Landing;
+  22: Boeing_707_320_Northwest_Touchdown;
+      Boeing_707_320_Northwest_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Olympic, flight_state())
+{
+  15: Boeing_707_320_Olympic_Climbing;
+  18: Boeing_707_320_Olympic_Flight;
+  21: Boeing_707_320_Olympic_Landing;
+  22: Boeing_707_320_Olympic_Touchdown;
+      Boeing_707_320_Olympic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_PanAm, flight_state())
+{
+  15: Boeing_707_320_PanAm_Climbing;
+  18: Boeing_707_320_PanAm_Flight;
+  21: Boeing_707_320_PanAm_Landing;
+  22: Boeing_707_320_PanAm_Touchdown;
+      Boeing_707_320_PanAm_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Qantas, flight_state())
+{
+  15: Boeing_707_320_Qantas_Climbing;
+  18: Boeing_707_320_Qantas_Flight;
+  21: Boeing_707_320_Qantas_Landing;
+  22: Boeing_707_320_Qantas_Touchdown;
+      Boeing_707_320_Qantas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_SouthAfrican, flight_state())
+{
+  15: Boeing_707_320_SouthAfrican_Climbing;
+  18: Boeing_707_320_SouthAfrican_Flight;
+  21: Boeing_707_320_SouthAfrican_Landing;
+  22: Boeing_707_320_SouthAfrican_Touchdown;
+      Boeing_707_320_SouthAfrican_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_TAP, flight_state())
+{
+  15: Boeing_707_320_TAP_Climbing;
+  18: Boeing_707_320_TAP_Flight;
+  21: Boeing_707_320_TAP_Landing;
+  22: Boeing_707_320_TAP_Touchdown;
+      Boeing_707_320_TAP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_Transavia, flight_state())
+{
+  15: Boeing_707_320_Transavia_Climbing;
+  18: Boeing_707_320_Transavia_Flight;
+  21: Boeing_707_320_Transavia_Landing;
+  22: Boeing_707_320_Transavia_Touchdown;
+      Boeing_707_320_Transavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_TWA, flight_state())
+{
+  15: Boeing_707_320_TWA_Climbing;
+  18: Boeing_707_320_TWA_Flight;
+  21: Boeing_707_320_TWA_Landing;
+  22: Boeing_707_320_TWA_Touchdown;
+      Boeing_707_320_TWA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_VARIG, flight_state())
+{
+  15: Boeing_707_320_VARIG_Climbing;
+  18: Boeing_707_320_VARIG_Flight;
+  21: Boeing_707_320_VARIG_Landing;
+  22: Boeing_707_320_VARIG_Touchdown;
+      Boeing_707_320_VARIG_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_sprites, cargo_subtype)
+{
+  1: Boeing_707_320_AerLingus;
+  2: Boeing_707_320_AirAlgerie;
+  3: Boeing_707_320_AirFrance;
+  4: Boeing_707_320_AmericanAirlines;
+  5: Boeing_707_320_Austrian;
+  6: Boeing_707_320_BOAC;
+  7: Boeing_707_320_BritishAirways;
+  8: Boeing_707_320_BritishCaledonian;
+  9: Boeing_707_320_CathayPacific;
+ 10: Boeing_707_320_Condor;
+ 11: Boeing_707_320_Continental;
+ 12: Boeing_707_320_ElAl;
+ 13: Boeing_707_320_Kuwait;
+ 14: Boeing_707_320_Lufthansa;
+ 15: Boeing_707_320_Luxair;
+ 16: Boeing_707_320_MiddleEast;
+ 17: Boeing_707_320_Northwest;
+ 18: Boeing_707_320_Olympic;
+ 19: Boeing_707_320_PanAm;
+ 20: Boeing_707_320_Qantas;
+ 21: Boeing_707_320_SouthAfrican;
+ 22: Boeing_707_320_TAP;
+ 23: Boeing_707_320_Transavia;
+ 24: Boeing_707_320_TWA;
+ 25: Boeing_707_320_VARIG;
+     Boeing_707_320_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_running_cost_factor, flight_state())
+{
+  plane_RC(139)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(233); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(999); // heading for tower contact point
+  16..20: return plane_speed_kmh(402); // in flight
+  21..22: return plane_speed_kmh(193); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_AIR_ALGERIE);
+  3: string(STR_VLIV_AIR_FRANCE);
+  4: string(STR_VLIV_AMERICAN_AIRLINES);
+  5: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  6: string(STR_VLIV_BOAC);
+  7: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  8: string(STR_VLIV_BRITISH_CALEDONIAN);
+  9: string(STR_VLIV_CATHAY_PACIFIC);
+ 10: string(STR_VLIV_CONDOR);
+ 11: string(STR_VLIV_CONTINENTAL_OLD);
+ 12: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+ 13: string(STR_VLIV_KUWAIT_AIRWAYS);
+ 14: string(STR_VLIV_LUFTHANSA);
+ 15: string(STR_VLIV_LUXAIR);
+ 16: string(STR_VLIV_MIDDLE_EAST_AIRLINES);
+ 17: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 18: string(STR_VLIV_OLYMPIC_AIR);
+ 19: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+ 20: string(STR_VLIV_QANTAS_VJET);
+ 21: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 22: string(STR_VLIV_TAP);
+ 23: string(STR_VLIV_TRANSAVIA);
+ 24: string(STR_VLIV_TWA);
+ 25: string(STR_VLIV_VARIG);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_320_cargo_subtype_capacity, cargo_subtype)
+{
+  4: return 135; // American Airlines
+ 24: return 125; // TWA
+     return 189;
+}
+
+item (FEAT_AIRCRAFT, Boeing_707_320)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_707_320);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1953), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1953,1983);
+    retire_early: get_retire_early(1953,1983);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 14;
+    passenger_capacity: 189;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2050;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_707_320_sprites;
+    purchase: Boeing_707_320_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_707_320_cargo_subtype_text;
+	passenger_capacity: Boeing_707_320_cargo_subtype_capacity;
+    speed: Boeing_707_320_speed;
+    running_cost_factor: Boeing_707_320_running_cost_factor;
+    sound_effect: Boeing_707_320_sound_effect;
+
+    cost_factor: 38; 
+    purchase_running_cost_factor: 139;
+    purchase_speed: plane_speed_kmh(999); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_320)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_320)
+  {
+    property
+    { range: 2050; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_320)
+  {
+    property
+    { range: 3075; }
+  }
+}

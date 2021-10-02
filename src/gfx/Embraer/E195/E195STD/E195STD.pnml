@@ -1,0 +1,195 @@
+
+// Embraer-E195STD
+
+// Template: 
+#define Embraer_E195STD_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 37, 23, -19, -12, ANIM]                                           \
+  [ 45, 1, 37, 18, -19, -9 , ANIM]                                           \
+  [ 85, 1, 47, 21, -24, -11, ANIM]                                           \
+  [135, 1, 36, 24, -18, -12, ANIM]                                           \
+  [175, 1, 33, 30, -17, -15, ANIM]                                           \
+  [215, 1, 36, 24, -18, -12, ANIM]                                           \
+  [255, 1, 47, 21, -24, -11, ANIM]                                           \
+  [305, 1, 37, 18, -19, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 37, 23, -19, -12, ANIM]                                          \
+  [ 45, 35, 37, 18, -19, -9 , ANIM]                                          \
+  [ 85, 35, 47, 21, -24, -11, ANIM]                                          \
+  [135, 35, 36, 25, -18, -13, ANIM]                                          \
+  [175, 35, 33, 30, -17, -15, ANIM]                                          \
+  [215, 35, 36, 25, -18, -13, ANIM]                                          \
+  [255, 35, 47, 21, -24, -11, ANIM]                                          \
+  [305, 35, 37, 18, -19, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 39, 31, -20, -16, ANIM]                                          \
+  [ 45, 70, 36, 28, -18, -14, ANIM]                                          \
+  [ 85, 70, 47, 20, -24, -10, ANIM]                                          \
+  [135, 70, 37, 18, -19, -9 , ANIM]                                          \
+  [175, 70, 35, 15, -18, -8 , ANIM]                                          \
+  [215, 70, 37, 18, -19, -9 , ANIM]                                          \
+  [255, 70, 47, 20, -24, -10, ANIM]                                          \
+  [305, 70, 36, 28, -18, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 37, 23, -19, -12, ANIM]                                         \
+  [ 45, 105, 37, 18, -19, -9 , ANIM]                                         \
+  [ 85, 105, 47, 21, -24, -11, ANIM]                                         \
+  [135, 105, 36, 25, -18, -13, ANIM]                                         \
+  [175, 105, 33, 30, -16, -15, ANIM]                                         \
+  [215, 105, 36, 25, -18, -13, ANIM]                                         \
+  [255, 105, 47, 21, -24, -11, ANIM]                                         \
+  [305, 105, 37, 18, -19, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 39, 25, -20, -13, ANIM]                                         \
+  [ 45, 140, 37, 23, -19, -12, ANIM]                                         \
+  [ 85, 140, 45, 23, -22, -12, ANIM]                                         \
+  [135, 140, 37, 21, -18, -11, ANIM]                                         \
+  [175, 140, 33, 22, -16, -11, ANIM]                                         \
+  [215, 140, 37, 21, -19, -11, ANIM]                                         \
+  [255, 140, 45, 23, -23, -12, ANIM]                                         \
+  [305, 140, 37, 23, -19, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195STD/(0)Greyscale.png"
+purchase_sprite(Embraer_E195STD, 255, 1, 47, 21, -24, -11)
+Embraer_E195STD_sprite_layout_template(Embraer_E195STD_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195STD/Aurigny.png"
+Embraer_E195STD_sprite_layout_template(Embraer_E195STD_Aurigny) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_Greyscale, flight_state())
+{
+  15: Embraer_E195STD_Greyscale_Climbing;
+  18: Embraer_E195STD_Greyscale_Flight;
+  21: Embraer_E195STD_Greyscale_Landing;
+  22: Embraer_E195STD_Greyscale_Touchdown;
+      Embraer_E195STD_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_LOT, flight_state())
+{
+  15: Embraer_E195STD_Aurigny_Climbing;
+  18: Embraer_E195STD_Aurigny_Flight;
+  21: Embraer_E195STD_Aurigny_Landing;
+  22: Embraer_E195STD_Aurigny_Touchdown;
+      Embraer_E195STD_Aurigny_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_sprites, cargo_subtype)
+{
+  1: Embraer_E195STD_LOT;
+  	 Embraer_E195STD_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_running_cost_factor, flight_state())
+{
+  plane_RC(74)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(886); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_AURIGNY_AIR_SERVICES);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195STD_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 122;
+     return 118;
+}
+
+item (FEAT_AIRCRAFT, Embraer_E195STD)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_195STD);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2005), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2005,2259);
+    retire_early: get_retire_early(2005,2259);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 118;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 465;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_E195STD_sprites;
+    purchase: Embraer_E195STD_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_E195STD_cargo_subtype_text;
+	passenger_capacity: Embraer_E195STD_cargo_subtype_capacity;
+    speed: Embraer_E195STD_speed;
+    running_cost_factor: Embraer_E195STD_running_cost_factor;
+    sound_effect: Embraer_E195STD_sound_effect;
+
+    cost_factor: 37; 
+    purchase_running_cost_factor: 74;
+    purchase_speed: plane_speed_kmh(886); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195STD)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195STD)
+  {
+    property
+    { range: 465; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195STD)
+  {
+    property
+    { range: 700; }
+  }
+}
+

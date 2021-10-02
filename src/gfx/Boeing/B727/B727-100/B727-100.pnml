@@ -1,0 +1,302 @@
+
+// Boeing-727-100
+
+// Template: 
+#define Boeing_727_100_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 38, 23, -19, -12, ANIM]                                           \
+  [ 49, 2, 43, 23, -22, -12, ANIM]                                           \
+  [100, 2, 53, 21, -27, -11, ANIM]                                           \
+  [160, 2, 43, 29, -22, -15, ANIM]                                           \
+  [210, 2, 38, 33, -19, -17, ANIM]                                           \
+  [250, 2, 43, 29, -22, -15, ANIM]                                           \
+  [300, 2, 53, 21, -27, -11, ANIM]                                           \
+  [360, 2, 43, 23, -22, -12, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded_Transit, IMAGEFILE)                               \
+{                                                                            \
+  [  2, 40, 38, 23, -19, -12, ANIM]                                          \
+  [ 49, 40, 43, 23, -22, -12, ANIM]                                          \
+  [100, 40, 53, 21, -27, -11, ANIM]                                          \
+  [160, 40, 43, 30, -22, -15, ANIM]                                          \
+  [210, 40, 38, 32, -19, -16, ANIM]                                          \
+  [250, 40, 43, 30, -22, -15, ANIM]                                          \
+  [300, 40, 53, 21, -27, -11, ANIM]                                          \
+  [360, 40, 43, 23, -22, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 80, 38, 32, -19, -17, ANIM]                                          \
+  [ 50, 80, 43, 31, -22, -16, ANIM]                                          \
+  [100, 80, 51, 22, -26, -11, ANIM]                                          \
+  [160, 80, 41, 19, -21, -10, ANIM]                                          \
+  [210, 80, 38, 18, -19, -9 , ANIM]                                          \
+  [250, 80, 41, 19, -21, -10, ANIM]                                          \
+  [300, 80, 51, 22, -26, -11, ANIM]                                          \
+  [360, 80, 43, 31, -22, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 120, 38, 21, -19, -11, ANIM]                                         \
+  [ 50, 120, 43, 23, -22, -12, ANIM]                                         \
+  [100, 120, 53, 21, -27, -11, ANIM]                                         \
+  [160, 120, 43, 30, -22, -15, ANIM]                                         \
+  [210, 120, 38, 33, -19, -18, ANIM]                                         \
+  [250, 120, 43, 30, -22, -15, ANIM]                                         \
+  [300, 120, 53, 21, -27, -11, ANIM]                                         \
+  [360, 120, 43, 23, -22, -12, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 160, 38, 29, -19, -15, ANIM]                                         \
+  [ 50, 160, 44, 27, -22, -14, ANIM]                                         \
+  [100, 160, 53, 20, -27, -10, ANIM]                                         \
+  [160, 160, 42, 23, -21, -12, ANIM]                                         \
+  [210, 160, 38, 26, -19, -14, ANIM]                                         \
+  [250, 160, 42, 23, -20, -12, ANIM]                                         \
+  [300, 160, 53, 20, -27, -10, ANIM]                                         \
+  [360, 160, 43, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  3, 190, 38, 25, -19, -13, ANIM]                                         \
+  [ 50, 190, 43, 23, -22, -12, ANIM]                                         \
+  [100, 190, 53, 21, -27, -11, ANIM]                                         \
+  [160, 190, 43, 30, -22, -15, ANIM]                                         \
+  [210, 190, 38, 33, -19, -17, ANIM]                                         \
+  [250, 190, 43, 30, -22, -15, ANIM]                                         \
+  [300, 190, 53, 21, -27, -11, ANIM]                                         \
+  [360, 190, 42, 23, -21, -12, ANIM]                                         \
+}                                                                            \
+spritegroup name##_Grounded                                                  \
+{ loading: [name##_Loading];                                                 \
+  loaded: [name##_Grounded_Transit]; }                                       \
+  
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/(0)Greyscale.png"
+purchase_sprite(Boeing_727_100, 300, 2, 53, 21, -27, -11)
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Continental.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Germania.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Germania) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Lufthansa.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/PanAm.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_PanAm) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/PSA.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_PSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Sabena.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Sabena) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/TWA.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_TWA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/United.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_United) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Greyscale, flight_state())
+{
+  15: Boeing_727_100_Greyscale_Climbing;
+  18: Boeing_727_100_Greyscale_Flight;
+  21: Boeing_727_100_Greyscale_Landing;
+  22: Boeing_727_100_Greyscale_Touchdown;
+      Boeing_727_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Continental, flight_state())
+{
+  15: Boeing_727_100_Continental_Climbing;
+  18: Boeing_727_100_Continental_Flight;
+  21: Boeing_727_100_Continental_Landing;
+  22: Boeing_727_100_Continental_Touchdown;
+      Boeing_727_100_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Germania, flight_state())
+{
+  15: Boeing_727_100_Germania_Climbing;
+  18: Boeing_727_100_Germania_Flight;
+  21: Boeing_727_100_Germania_Landing;
+  22: Boeing_727_100_Germania_Touchdown;
+      Boeing_727_100_Germania_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Lufthansa, flight_state())
+{
+  15: Boeing_727_100_Lufthansa_Climbing;
+  18: Boeing_727_100_Lufthansa_Flight;
+  21: Boeing_727_100_Lufthansa_Landing;
+  22: Boeing_727_100_Lufthansa_Touchdown;
+      Boeing_727_100_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_PanAm, flight_state())
+{
+  15: Boeing_727_100_PanAm_Climbing;
+  18: Boeing_727_100_PanAm_Flight;
+  21: Boeing_727_100_PanAm_Landing;
+  22: Boeing_727_100_PanAm_Touchdown;
+      Boeing_727_100_PanAm_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_PSA, flight_state())
+{
+  15: Boeing_727_100_PSA_Climbing;
+  18: Boeing_727_100_PSA_Flight;
+  21: Boeing_727_100_PSA_Landing;
+  22: Boeing_727_100_PSA_Touchdown;
+      Boeing_727_100_PSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Sabena, flight_state())
+{
+  15: Boeing_727_100_Sabena_Climbing;
+  18: Boeing_727_100_Sabena_Flight;
+  21: Boeing_727_100_Sabena_Landing;
+  22: Boeing_727_100_Sabena_Touchdown;
+      Boeing_727_100_Sabena_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_TWA, flight_state())
+{
+  15: Boeing_727_100_TWA_Climbing;
+  18: Boeing_727_100_TWA_Flight;
+  21: Boeing_727_100_TWA_Landing;
+  22: Boeing_727_100_TWA_Touchdown;
+      Boeing_727_100_TWA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_United, flight_state())
+{
+  15: Boeing_727_100_United_Climbing;
+  18: Boeing_727_100_United_Flight;
+  21: Boeing_727_100_United_Landing;
+  22: Boeing_727_100_United_Touchdown;
+      Boeing_727_100_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_sprites, cargo_subtype)
+{
+  1: Boeing_727_100_Continental;
+  2: Boeing_727_100_Germania;
+  3: Boeing_727_100_Lufthansa;
+  4: Boeing_727_100_PanAm;
+  5: Boeing_727_100_PSA;
+  6: Boeing_727_100_Sabena;
+  7: Boeing_727_100_TWA;
+  8: Boeing_727_100_United;
+     Boeing_727_100_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_running_cost_factor, flight_state())
+{
+  plane_RC(95)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(515); // airplane climbing after take-off
+      18: return plane_speed_kmh(999); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(225); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_CONTINENTAL);
+  2: string(STR_VLIV_GERMANIA);  
+  3: string(STR_VLIV_LUFTHANSA);  
+  4: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+  5: string(STR_VLIV_PSA);
+  6: string(STR_VLIV_SABENA);
+  7: string(STR_VLIV_TWA);
+  8: string(STR_VLIV_UNITED_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 119; // Continental
+  3: return 131; // Lufthansa
+  4: return 131; // PanAm
+  7: return 101; // TWA
+  8: return 108; // United
+  return 131;
+}
+
+item (FEAT_AIRCRAFT, Boeing_727_100)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_727_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1963), 1, 1);
+    vehicle_life: 20;
+    model_life: get_model_life(1963,1984);
+    retire_early: get_retire_early(1963,1984);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 131;
+    mail_capacity: 15;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 950;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_727_100_sprites;
+    purchase: Boeing_727_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_727_100_cargo_subtype_text;
+	passenger_capacity: Boeing_727_100_cargo_subtype_capacity;
+    speed: Boeing_727_100_speed;
+    running_cost_factor: Boeing_727_100_running_cost_factor;
+
+    cost_factor: 35; 
+    purchase_running_cost_factor: 95;
+    purchase_speed: plane_speed_kmh(999); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_100)
+  {
+    property
+    { range: 950; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_727_100)
+  {
+    property
+    { range: 1425; }
+  }
+}

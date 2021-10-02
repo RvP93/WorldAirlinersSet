@@ -1,0 +1,201 @@
+
+// Embraer-E170STD
+
+// Template: 
+#define Embraer_E170STD_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 35, 19, -18, -10, ANIM]                                           \
+  [ 40, 1, 30, 17, -15, -9 , ANIM]                                           \
+  [ 75, 1, 40, 19, -20, -10, ANIM]                                           \
+  [120, 1, 30, 23, -15, -12, ANIM]                                           \
+  [155, 1, 31, 26, -16, -13, ANIM]                                           \
+  [190, 1, 30, 23, -15, -12, ANIM]                                           \
+  [225, 1, 40, 19, -20, -10, ANIM]                                           \
+  [270, 1, 30, 17, -15, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 30, 35, 19, -18, -10, ANIM]                                          \
+  [ 40, 30, 30, 17, -15, -9 , ANIM]                                          \
+  [ 75, 30, 40, 19, -20, -10, ANIM]                                          \
+  [120, 30, 30, 23, -15, -12, ANIM]                                          \
+  [155, 30, 31, 26, -16, -13, ANIM]                                          \
+  [190, 30, 30, 23, -15, -12, ANIM]                                          \
+  [225, 30, 40, 19, -20, -10, ANIM]                                          \
+  [270, 30, 30, 17, -15, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 60, 37, 27, -19, -14, ANIM]                                          \
+  [ 40, 60, 30, 23, -15, -12, ANIM]                                          \
+  [ 75, 60, 40, 18, -20, -9 , ANIM]                                          \
+  [120, 60, 30, 17, -15, -9 , ANIM]                                          \
+  [155, 60, 33, 13, -17, -7 , ANIM]                                          \
+  [190, 60, 30, 17, -15, -9 , ANIM]                                          \
+  [225, 60, 40, 18, -20, -9 , ANIM]                                          \
+  [270, 60, 30, 23, -15, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 90, 37, 21, -19, -11, ANIM]                                          \
+  [ 40, 90, 30, 17, -15, -9 , ANIM]                                          \
+  [ 75, 90, 40, 19, -20, -10, ANIM]                                          \
+  [120, 90, 30, 22, -15, -11, ANIM]                                          \
+  [155, 90, 31, 26, -16, -13, ANIM]                                          \
+  [190, 90, 30, 22, -15, -11, ANIM]                                          \
+  [225, 90, 40, 19, -20, -10, ANIM]                                          \
+  [270, 90, 30, 17, -15, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 120, 37, 21, -19, -11, ANIM]                                         \
+  [ 40, 120, 30, 19, -15, -10, ANIM]                                         \
+  [ 75, 120, 38, 21, -19, -11, ANIM]                                         \
+  [120, 120, 31, 20, -16, -10, ANIM]                                         \
+  [155, 120, 31, 20, -16, -10, ANIM]                                         \
+  [190, 120, 31, 20, -16, -11, ANIM]                                         \
+  [225, 120, 38, 21, -19, -11, ANIM]                                         \
+  [270, 120, 30, 19, -15, -10, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E170/E170STD/(0)Greyscale.png"
+purchase_sprite(Embraer_E170STD, 225, 1, 40, 19, -20, -10)
+Embraer_E170STD_sprite_layout_template(Embraer_E170STD_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E170/E170STD/HOP.png"
+Embraer_E170STD_sprite_layout_template(Embraer_E170STD_HOP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E170/E170STD/S7.png"
+Embraer_E170STD_sprite_layout_template(Embraer_E170STD_S7) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_Greyscale, flight_state())
+{
+  15: Embraer_E170STD_Greyscale_Climbing;
+  18: Embraer_E170STD_Greyscale_Flight;
+  21: Embraer_E170STD_Greyscale_Landing;
+  22: Embraer_E170STD_Greyscale_Touchdown;
+      Embraer_E170STD_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_HOP, flight_state())
+{
+  15: Embraer_E170STD_HOP_Climbing;
+  18: Embraer_E170STD_HOP_Flight;
+  21: Embraer_E170STD_HOP_Landing;
+  22: Embraer_E170STD_HOP_Touchdown;
+      Embraer_E170STD_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_S7, flight_state())
+{
+  15: Embraer_E170STD_S7_Climbing;
+  18: Embraer_E170STD_S7_Flight;
+  21: Embraer_E170STD_S7_Landing;
+  22: Embraer_E170STD_S7_Touchdown;
+      Embraer_E170STD_S7_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_sprites, cargo_subtype)
+{
+  1: Embraer_E170STD_HOP;
+  2: Embraer_E170STD_S7;
+  	 Embraer_E170STD_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_running_cost_factor, flight_state())
+{
+  plane_RC(41)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(886); // heading for tower contact point
+  16..20: return plane_speed_kmh(418); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_HOP);
+  2: string(STR_VLIV_S7_AIRLINES);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E170STD_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 76; // HOP
+  2: return 78; // S7
+     return 78;
+}
+
+item (FEAT_AIRCRAFT, Embraer_E170STD)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_170STD);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2004), 3, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(2004,2256);
+    retire_early: get_retire_early(2004,2256);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 29;
+    passenger_capacity: 78;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 600;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_E170STD_sprites;
+    purchase: Embraer_E170STD_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_E170STD_cargo_subtype_text;
+	passenger_capacity: Embraer_E170STD_cargo_subtype_capacity;
+    speed: Embraer_E170STD_speed;
+    running_cost_factor: Embraer_E170STD_running_cost_factor;
+
+    cost_factor: 24; 
+    purchase_running_cost_factor: 43;
+    purchase_speed: plane_speed_kmh(886); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_E170STD)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_E170STD)
+  {
+    property
+    { range: 600; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_E170STD)
+  {
+    property
+    { range: 900; }
+  }
+}

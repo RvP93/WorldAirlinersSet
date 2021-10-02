@@ -1,0 +1,1118 @@
+START_SECTION(Planes-Boeing-737-700)
+// Action 0
+    A0_PLANES(AIRV_BOEING_737_700, 1, 19)
+        00 \w1998-01-01  //Introduction Date
+			  03 1E  //Vehicle Life In Years
+				04 FF  //Model Life in Years
+				06 0F  //Climate Availability
+				07 \b23 // Loading Speed
+				08 FF  // New gfx
+				09 02  //Helicopter?
+				0A 00  //Large?  
+				0C 4B  //Speed in mph/8 
+				0D 02  // Accleration
+				0F \w149  //Passenger Capacity   
+				11 \b15  //Mail Capacity 
+				12 07  //Sound Effect (Jet)
+				13 00 00 00 00 //Cargo Types For Refitting
+				14 20    
+				16 00  //Retire Vehicle Early
+				17 02  //2CC                                
+				18 \wx0001
+				19 \wx03FE //Subtract 4 for Tourists
+	
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_737_700, 1, 1)
+                     1F \w1120
+        
+  -1 * 0   10 F1  
+  		
+    A1_PLANES(15,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/(0)Greyscale.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Astraeus.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/EasyJet.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Argentinas.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Aeromexico.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/KLM.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Delta.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/SAS.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Alaskan.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Austrian.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/AirBerlin.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANA.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANAGold.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/OmanAir.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/United.pcx
+    spr() 1 1 09 21 43 -22 -11
+    spr() 50 1 09 18 36 -18 -9
+    spr() 100 1 09 25 42 -21 -13
+    spr() 150 1 09 30 36 -18 -15
+    spr() 190 1 09 30 43 -22 -15
+    spr() 240 1 09 30 36 -18 -15
+    spr() 280 1 09 25 42 -21 -13
+    spr() 330 1 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+
+  142 * 22	 02 03 F0 81 F2 00 FF 0F // In Flight
+                               00 00 00 00   // Greyscale
+                               01 00 07 07   // Astraeus
+                               02 00 0A 0A   // EasyJet			     
+                               03 00 06 06   // Argentinas
+                               04 00 01 01   // Aeromexico
+                               05 00 0B 0B   // KLM
+                               06 00 09 09   // Delta
+                               07 00 0D 0D   // SAS
+                               08 00 03 03   // Alaskan
+                               09 00 08 08   // Austrian
+                               0A 00 02 02   // Air Berlin
+                               0B 00 04 04   // ANA
+                               0C 00 05 05   // ANA Gold
+                               0D 00 0C 0C   // Oman Air
+                               0E 00 0E 0E   // United
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(15,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/(0)Greyscale.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Astraeus.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/EasyJet.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Argentinas.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Aeromexico.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/KLM.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Delta.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/SAS.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Alaskan.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Austrian.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/AirBerlin.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANA.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANAGold.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/OmanAir.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/United.pcx
+    spr()  1 35 09 21 43 -22 -11
+    spr()  50 35 09 18 36 -18 -9
+    spr()  100 35 09 25 42 -21 -13
+    spr()  150 35 09 30 36 -18 -15
+    spr()  190 35 09 30 43 -22 -15
+    spr()  240 35 09 30 36 -19 -15
+    spr()  280 35 09 25 42 -21 -13
+    spr()  330 35 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+   
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+
+  143 * 22	 02 03 F1 81 F2 00 FF 0F // Taxing or Initiating Approach         
+                               00 00 00 00   // Greyscale
+                               01 00 07 07   // Astraeus
+                               02 00 0A 0A   // EasyJet			     
+                               03 00 06 06   // Argentinas
+                               04 00 01 01   // Aeromexico
+                               05 00 0B 0B   // KLM
+                               06 00 09 09   // Delta
+                               07 00 0D 0D   // SAS
+                               08 00 03 03   // Alaskan
+                               09 00 08 08   // Austrian
+                               0A 00 02 02   // Air Berlin
+                               0B 00 04 04   // ANA
+                               0C 00 05 05   // ANA Gold
+                               0D 00 0C 0C   // Oman Air
+                               0E 00 0E 0E   // United
+                               FF FF         // End livery graphical selection
+
+    A1_PLANES(15,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/(0)Greyscale.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Astraeus.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/EasyJet.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Argentinas.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Aeromexico.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/KLM.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Delta.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/SAS.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Alaskan.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Austrian.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/AirBerlin.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANA.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANAGold.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/OmanAir.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/United.pcx
+    spr() 1 70 09 30 42 -21 -15
+    spr() 50 70 09 28 35 -18 -14
+    spr() 100 70 09 24 44 -22 -12
+    spr() 150 70 09 21 35 -18 -11
+    spr() 190 70 09 14 41 -21 -7
+    spr() 240 70 09 21 35 -18 -11
+    spr() 280 70 09 24 44 -22 -12
+    spr() 330 70 09 28 35 -18 -14
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+
+  144 * 22	 02 03 F2 81 F2 00 FF 0F // Take Off 
+                               00 00 00 00   // Greyscale
+                               01 00 07 07   // Astraeus
+                               02 00 0A 0A   // EasyJet			     
+                               03 00 06 06   // Argentinas
+                               04 00 01 01   // Aeromexico
+                               05 00 0B 0B   // KLM
+                               06 00 09 09   // Delta
+                               07 00 0D 0D   // SAS
+                               08 00 03 03   // Alaskan
+                               09 00 08 08   // Austrian
+                               0A 00 02 02   // Air Berlin
+                               0B 00 04 04   // ANA
+                               0C 00 05 05   // ANA Gold
+                               0D 00 0C 0C   // Oman Air
+                               0E 00 0E 0E   // United
+                               FF FF       // End livery graphical selection
+
+    A1_PLANES(15,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/(0)Greyscale.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Astraeus.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/EasyJet.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Argentinas.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Aeromexico.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/KLM.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Delta.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/SAS.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Alaskan.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION 
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Austrian.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/AirBerlin.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANA.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANAGold.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/OmanAir.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/United.pcx
+    spr() 1 110 09 20 42 -21 -10
+    spr() 50 110 09 18 36 -18 -9
+    spr() 100 110 09 25 42 -21 -13
+    spr() 150 110 09 30 36 -18 -15
+    spr() 190 110 09 25 42 -21 -13
+    spr() 240 110 09 30 36 -18 -15
+    spr() 280 110 09 25 42 -21 -13
+    spr() 330 110 09 18 36 -18 -9
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+
+  145 * 22	 02 03 F3 81 F2 00 FF 0F // Landed On Runway     
+                               00 00 00 00   // Greyscale
+                               01 00 07 07   // Astraeus
+                               02 00 0A 0A   // EasyJet			     
+                               03 00 06 06   // Argentinas
+                               04 00 01 01   // Aeromexico
+                               05 00 0B 0B   // KLM
+                               06 00 09 09   // Delta
+                               07 00 0D 0D   // SAS
+                               08 00 03 03   // Alaskan
+                               09 00 08 08   // Austrian
+                               0A 00 02 02   // Air Berlin
+                               0B 00 04 04   // ANA
+                               0C 00 05 05   // ANA Gold
+                               0D 00 0C 0C   // Oman Air
+                               0E 00 0E 0E   // United
+                               FF FF       // End livery graphical selection
+
+    A1_PLANES(15,8)
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/(0)Greyscale.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Astraeus.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/EasyJet.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Argentinas.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Aeromexico.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/KLM.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Delta.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/SAS.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Alaskan.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/Austrian.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/AirBerlin.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANA.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/ANAGold.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/OmanAir.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-700/United.pcx
+    spr() 1 145 09 25 42 -21 -13
+    spr() 50 145 09 22 36 -18 -11
+    spr() 100 145 09 24 44 -22 -12
+    spr() 150 145 09 26 37 -19 -13
+    spr() 190 145 09 19 42 -21 -10
+    spr() 240 145 09 26 37 -19 -13
+    spr() 280 145 09 24 44 -22 -12
+    spr() 330 145 09 22 36 -18 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+
+  146 * 22	 02 03 F4 81 F2 00 FF 0F         // Final Approach       
+                               00 00 00 00   // Greyscale
+                               01 00 07 07   // Astraeus
+                               02 00 0A 0A   // EasyJet			     
+                               03 00 06 06   // Argentinas
+                               04 00 01 01   // Aeromexico
+                               05 00 0B 0B   // KLM
+                               06 00 09 09   // Delta
+                               07 00 0D 0D   // SAS
+                               08 00 03 03   // Alaskan
+                               09 00 08 08   // Austrian
+                               0A 00 02 02   // Air Berlin
+                               0B 00 04 04   // ANA
+                               0C 00 05 05   // ANA Gold
+                               0D 00 0C 0C   // Oman Air
+                               0E 00 0E 0E   // United
+                               FF FF         // End livery graphical selection
+                               
+  A1_PLANES(1,1)
+
+    -1 sprites/pcx/boeing/b737-700/(0)Greyscale.pcx 280 4 09 21 42 -21 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+ 
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 0F         // 15 Liveries
+                               00 80 00 00   // Greyscale
+                               1A 80 01 01   // Aeromexico
+                               63 80 02 02   // Air Berlin
+                               4E 80 03 03   // Alaskan                                                                       
+                               28 80 04 04   // ANA
+                               BB 80 05 05   // ANA Gold
+                               99 80 06 06   // Argentinas                              
+                               47 80 07 07   // Astraeus
+                               3F 80 08 08   // Austrian 
+                               0E 80 09 09   // Delta                              
+                               33 80 0A 0A   // Easy Jet
+                               73 80 0B 0B   // KLM
+                               BC 80 0C 0C   // Oman Air
+                               46 80 0D 0D   // SAS
+                               85 80 0E 0E   // United
+                               FF FF         // End livery text selection
+                             
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             20 80 0F 0F   // Climbing
+                             4B 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             13 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32843 0D 0F // Take Off
+                             \w32837 12 12 // Flight
+                             \w32838 10 14 // Approach
+                             \w32840 15 16 // Landing
+                             \w32814 08 0C // Grounded	
+                             \w32806       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32832 0B 0B // Purchase Cost Purchase List
+				                     \w32837 0E 0E // Running Cost Purchase List
+                             00 00 	
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0    02 03 08 81 0C 00 FF 01         // Text Callback's (Purchase List)   
+                               05 00 36 36
+                               4C 00                                   
+
+  150 * 7	   03 03 01 AIRV_BOEING_737_700 01
+                               FF 08 00
+                               07 00
+                                 
+END_SECTION(Planes-Boeing-737-700)

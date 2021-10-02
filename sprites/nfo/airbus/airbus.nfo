@@ -1,0 +1,15 @@
+START_SECTION(Planes-Airbus)
+#include "A300-600R.nfo"
+#include "A318.nfo"
+#include "A319.nfo"
+#include "A320-200.nfo"
+#include "A321.nfo"
+#include "A330-200.nfo"
+#include "A330-300.nfo"
+#include "A340-300.nfo"
+#include "A340-500.nfo"
+#include "A340-600.nfo"
+#include "A380-800.nfo"
+#include "A380-800F.nfo"
+#include "A380-900.nfo"
+END_SECTION(Planes-Airbus)

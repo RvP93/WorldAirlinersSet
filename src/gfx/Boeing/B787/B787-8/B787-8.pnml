@@ -1,0 +1,449 @@
+
+// Boeing-787-8
+
+// Template: 
+#define Boeing_787_8_sprite_layout_template(name)                            \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 58, 26, -29, -13, ANIM]                                           \
+  [ 65, 1, 51, 26, -26, -13, ANIM]                                           \
+  [125, 1, 56, 33, -28, -17, ANIM]                                           \
+  [190, 1, 48, 34, -24, -17, ANIM]                                           \
+  [245, 1, 58, 35, -29, -18, ANIM]                                           \
+  [310, 1, 48, 34, -24, -17, ANIM]                                           \
+  [365, 1, 56, 33, -28, -17, ANIM]                                           \
+  [425, 1, 52, 26, -26, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 58, 26, -29, -13, ANIM]                                          \
+  [ 65, 40, 51, 26, -26, -13, ANIM]                                          \
+  [125, 40, 56, 33, -28, -17, ANIM]                                          \
+  [190, 40, 48, 35, -24, -18, ANIM]                                          \
+  [245, 40, 58, 37, -29, -19, ANIM]                                          \
+  [310, 40, 48, 35, -24, -18, ANIM]                                          \
+  [365, 40, 56, 33, -28, -17, ANIM]                                          \
+  [425, 40, 52, 26, -26, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 58, 41, -29, -21, ANIM]                                          \
+  [ 65, 80, 52, 37, -26, -19, ANIM]                                          \
+  [125, 80, 57, 32, -29, -16, ANIM]                                          \
+  [190, 80, 48, 25, -24, -14, ANIM]                                          \
+  [245, 80, 58, 15, -29, -8 , ANIM]                                          \
+  [310, 80, 48, 25, -24, -13, ANIM]                                          \
+  [365, 80, 57, 32, -29, -16, ANIM]                                          \
+  [425, 80, 52, 37, -26, -19, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 125, 58, 26, -29, -13, ANIM]                                         \
+  [ 65, 125, 51, 26, -26, -13, ANIM]                                         \
+  [125, 125, 56, 33, -28, -15, ANIM]                                         \
+  [190, 125, 48, 35, -24, -18, ANIM]                                         \
+  [246, 125, 58, 37, -29, -19, ANIM]                                         \
+  [310, 125, 48, 35, -24, -18, ANIM]                                         \
+  [365, 125, 56, 33, -28, -15, ANIM]                                         \
+  [425, 125, 51, 26, -26, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 165, 58, 33, -29, -17, ANIM]                                         \
+  [ 65, 165, 52, 30, -26, -15, ANIM]                                         \
+  [125, 165, 57, 33, -29, -17, ANIM]                                         \
+  [190, 165, 49, 30, -25, -15, ANIM]                                         \
+  [246, 165, 58, 26, -29, -13, ANIM]                                         \
+  [310, 165, 49, 30, -25, -15, ANIM]                                         \
+  [365, 165, 57, 33, -29, -17, ANIM]                                         \
+  [425, 165, 53, 30, -27, -15, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/(0)Greyscale.png"
+purchase_sprite(Boeing_787_8, 365, 4, 56, 30, -28, -15)
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/AirEuropa.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_AirEuropa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/American.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/ANA.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_ANA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Azerbaijan.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Azerbaijan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/BritishAirways.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/ElAl.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_ElAl) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Ethiopian.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Ethiopian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/JAL.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_JAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Kenya.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Kenya) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/LAN.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_LAN) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/LOT.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Norwegian.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Norwegian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Qatar.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Qatar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/RoyalAirMaroc.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_RoyalAirMaroc) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/RoyalBrunei.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_RoyalBrunei) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/TUI.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_TUI) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/United.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_United) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-8/Uzbekistan.png"
+Boeing_787_8_sprite_layout_template(Boeing_787_8_Uzbekistan) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Greyscale, flight_state())
+{
+  15: Boeing_787_8_Greyscale_Climbing;
+  18: Boeing_787_8_Greyscale_Flight;
+  21: Boeing_787_8_Greyscale_Landing;
+  22: Boeing_787_8_Greyscale_Touchdown;
+      Boeing_787_8_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_AirEuropa, flight_state())
+{
+  15: Boeing_787_8_AirEuropa_Climbing;
+  18: Boeing_787_8_AirEuropa_Flight;
+  21: Boeing_787_8_AirEuropa_Landing;
+  22: Boeing_787_8_AirEuropa_Touchdown;
+      Boeing_787_8_AirEuropa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_American, flight_state())
+{
+  15: Boeing_787_8_American_Climbing;
+  18: Boeing_787_8_American_Flight;
+  21: Boeing_787_8_American_Landing;
+  22: Boeing_787_8_American_Touchdown;
+      Boeing_787_8_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_ANA, flight_state())
+{
+  15: Boeing_787_8_ANA_Climbing;
+  18: Boeing_787_8_ANA_Flight;
+  21: Boeing_787_8_ANA_Landing;
+  22: Boeing_787_8_ANA_Touchdown;
+      Boeing_787_8_ANA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Azerbaijan, flight_state())
+{
+  15: Boeing_787_8_Azerbaijan_Climbing;
+  18: Boeing_787_8_Azerbaijan_Flight;
+  21: Boeing_787_8_Azerbaijan_Landing;
+  22: Boeing_787_8_Azerbaijan_Touchdown;
+      Boeing_787_8_Azerbaijan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_BritishAirways, flight_state())
+{
+  15: Boeing_787_8_BritishAirways_Climbing;
+  18: Boeing_787_8_BritishAirways_Flight;
+  21: Boeing_787_8_BritishAirways_Landing;
+  22: Boeing_787_8_BritishAirways_Touchdown;
+      Boeing_787_8_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_ElAl, flight_state())
+{
+  15: Boeing_787_8_ElAl_Climbing;
+  18: Boeing_787_8_ElAl_Flight;
+  21: Boeing_787_8_ElAl_Landing;
+  22: Boeing_787_8_ElAl_Touchdown;
+      Boeing_787_8_ElAl_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Ethiopian, flight_state())
+{
+  15: Boeing_787_8_Ethiopian_Climbing;
+  18: Boeing_787_8_Ethiopian_Flight;
+  21: Boeing_787_8_Ethiopian_Landing;
+  22: Boeing_787_8_Ethiopian_Touchdown;
+      Boeing_787_8_Ethiopian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_JAL, flight_state())
+{
+  15: Boeing_787_8_JAL_Climbing;
+  18: Boeing_787_8_JAL_Flight;
+  21: Boeing_787_8_JAL_Landing;
+  22: Boeing_787_8_JAL_Touchdown;
+      Boeing_787_8_JAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Kenya, flight_state())
+{
+  15: Boeing_787_8_Kenya_Climbing;
+  18: Boeing_787_8_Kenya_Flight;
+  21: Boeing_787_8_Kenya_Landing;
+  22: Boeing_787_8_Kenya_Touchdown;
+      Boeing_787_8_Kenya_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_LAN, flight_state())
+{
+  15: Boeing_787_8_LAN_Climbing;
+  18: Boeing_787_8_LAN_Flight;
+  21: Boeing_787_8_LAN_Landing;
+  22: Boeing_787_8_LAN_Touchdown;
+      Boeing_787_8_LAN_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_LOT, flight_state())
+{
+  15: Boeing_787_8_LOT_Climbing;
+  18: Boeing_787_8_LOT_Flight;
+  21: Boeing_787_8_LOT_Landing;
+  22: Boeing_787_8_LOT_Touchdown;
+      Boeing_787_8_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Norwegian, flight_state())
+{
+  15: Boeing_787_8_Norwegian_Climbing;
+  18: Boeing_787_8_Norwegian_Flight;
+  21: Boeing_787_8_Norwegian_Landing;
+  22: Boeing_787_8_Norwegian_Touchdown;
+      Boeing_787_8_Norwegian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Qatar, flight_state())
+{
+  15: Boeing_787_8_Qatar_Climbing;
+  18: Boeing_787_8_Qatar_Flight;
+  21: Boeing_787_8_Qatar_Landing;
+  22: Boeing_787_8_Qatar_Touchdown;
+      Boeing_787_8_Qatar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_RoyalAirMaroc, flight_state())
+{
+  15: Boeing_787_8_RoyalAirMaroc_Climbing;
+  18: Boeing_787_8_RoyalAirMaroc_Flight;
+  21: Boeing_787_8_RoyalAirMaroc_Landing;
+  22: Boeing_787_8_RoyalAirMaroc_Touchdown;
+      Boeing_787_8_RoyalAirMaroc_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_RoyalBrunei, flight_state())
+{
+  15: Boeing_787_8_RoyalBrunei_Climbing;
+  18: Boeing_787_8_RoyalBrunei_Flight;
+  21: Boeing_787_8_RoyalBrunei_Landing;
+  22: Boeing_787_8_RoyalBrunei_Touchdown;
+      Boeing_787_8_RoyalBrunei_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_TUI, flight_state())
+{
+  15: Boeing_787_8_TUI_Climbing;
+  18: Boeing_787_8_TUI_Flight;
+  21: Boeing_787_8_TUI_Landing;
+  22: Boeing_787_8_TUI_Touchdown;
+      Boeing_787_8_TUI_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_United, flight_state())
+{
+  15: Boeing_787_8_United_Climbing;
+  18: Boeing_787_8_United_Flight;
+  21: Boeing_787_8_United_Landing;
+  22: Boeing_787_8_United_Touchdown;
+      Boeing_787_8_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_Uzbekistan, flight_state())
+{
+  15: Boeing_787_8_Uzbekistan_Climbing;
+  18: Boeing_787_8_Uzbekistan_Flight;
+  21: Boeing_787_8_Uzbekistan_Landing;
+  22: Boeing_787_8_Uzbekistan_Touchdown;
+      Boeing_787_8_Uzbekistan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_sprites, cargo_subtype)
+{
+  1: Boeing_787_8_AirEuropa;
+  2: Boeing_787_8_American;
+  3: Boeing_787_8_ANA;
+  4: Boeing_787_8_Azerbaijan;
+  5: Boeing_787_8_BritishAirways;
+  6: Boeing_787_8_ElAl;
+  7: Boeing_787_8_Ethiopian;
+  8: Boeing_787_8_JAL;
+  9: Boeing_787_8_Kenya;
+ 19: Boeing_787_8_LAN;
+ 11: Boeing_787_8_LOT;
+ 12: Boeing_787_8_Norwegian;
+ 13: Boeing_787_8_Qatar;
+ 14: Boeing_787_8_RoyalAirMaroc;
+ 15: Boeing_787_8_RoyalBrunei;
+ 16: Boeing_787_8_TUI;
+ 17: Boeing_787_8_United;
+ 18: Boeing_787_8_Uzbekistan;
+     Boeing_787_8_Greyscale;
+}
+              
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_running_cost_factor, flight_state())
+{
+  plane_RC(160)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(418); // airplane climbing after take-off
+      18: return plane_speed_kmh(943); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_EUROPA);
+  2: string(STR_VLIV_AMERICAN_AIRLINES);
+  3: string(STR_VLIV_ANA);
+  4: string(STR_VLIV_AZERBAIJAN_AIRLINES);
+  5: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  6: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+  7: string(STR_VLIV_ETHIOPIAN_AIRLINES);
+  8: string(STR_VLIV_JAL);
+  9: string(STR_VLIV_KENYA_AIRWAYS);
+ 10: string(STR_VLIV_LAN_AIRLINES);
+ 11: string(STR_VLIV_LOT);
+ 12: string(STR_VLIV_NORWEGIAN_LONG_HAUL);
+ 13: string(STR_VLIV_QATAR_AIRWAYS);
+ 14: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 15: string(STR_VLIV_ROYAL_BRUNEI_AIRLINES);
+ 16: string(STR_VLIV_TUI);
+ 17: string(STR_VLIV_UNITED_AIRLINES);
+ 18: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_8_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 298; // Air Europa
+  2: return 234; // American
+  3: return 222; // ANA
+  4: return 210; // Azerbaijan
+  5: return 214; // British Airways
+  6: return 238; // El Al
+  7: return 270; // Ethiopian
+  8: return 186; // JAL
+  9: return 234; // Kenya Airways
+ 10: return 247; // LAN
+ 11: return 252; // LOT
+ 12: return 291; // Norwegian
+ 13: return 254; // Qatar 
+ 14: return 274; // RoyalAirMaroc
+ 15: return 254; // Royal Brunei
+ 16: return 300; // TUI
+ 17: return 219; // United
+ 18: return 246; // Uzbekistan
+     return 242;
+}
+
+item (FEAT_AIRCRAFT, Boeing_787_8)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_787_8);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2011), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2011,2050);
+    retire_early: get_retire_early(2011,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 42;
+    passenger_capacity: 242;
+    mail_capacity: 31;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2735;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_787_8_sprites;
+    purchase: Boeing_787_8_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_787_8_cargo_subtype_text;
+	passenger_capacity: Boeing_787_8_cargo_subtype_capacity;
+    speed: Boeing_787_8_speed;
+    running_cost_factor: Boeing_787_8_running_cost_factor;
+    sound_effect: Boeing_787_8_sound_effect;
+
+    cost_factor: 189; 
+    purchase_running_cost_factor: 160;
+    purchase_speed: plane_speed_kmh(943); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_787_8)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_787_8)
+  {
+    property
+    { range: 2735; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_787_8)
+  {
+    property
+    { range: 4100; }
+  }
+}

@@ -1,0 +1,4 @@
+START_SECTION(Planes-Fokker)
+#include "F70.nfo"
+#include "F100.nfo"
+END_SECTION(Planes-Fokker)

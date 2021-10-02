@@ -1,0 +1,549 @@
+##grflangid 0x3a
+##plural 11
+##gender m f
+STR_GRF_NAME                                                    :WAS {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}세계 항공 세트 (WAS){}{SILVER}이 NewGRF 세트는 OpenTTD에 과거에 존재했거나 현재 존재하는 항공사의 항공기를 추가해줍니다.{}{BLACK}프로그래밍: {SILVER}Beardie, DJNekkid, Faddypainter, Frank, George, Rens, yorick{}{BLACK}그래픽: {SILVER}Beardie, Dimme, EXTSpotter, Faddypainter, Frank, Firzafp, Getuouk, Giles, RvP93, Simozzz, Huub, Trainboy2004, Vlad{}대부분의 그래픽은 AV6 세트를 제작하신 PikkaBirds 님 것이므로, 사용시 저작권 표시를 해주시기 바랍니다. 자세한 참여자 명단은 README 파일을 읽어보세요.
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/worldairlinersset
+STR_MIN_OPENTTD_VERSION                                         :1.2.0.23744
+#
+# DO NOT USE TABS IN LNG FILE!
+#
+# -------- PARAMS AND PARAMS MENU --------
+STR_PARAM_NAME_ENABLE_STANDARD_PLANES                           :표준 항공기 사용
+STR_PARAM_DESC_ENABLE_STANDARD_PLANES                           :모든 표준 항공기를 사용함
+STR_PARAM_NAME_ENABLE_RANGES                                    :항속거리 사용
+STR_PARAM_DESC_ENABLE_RANGES                                    :가능한 항속거리 (최대 거리)
+STR_PARAM_NAME_RANGES                                           :항속거리
+STR_PARAM_DESC_RANGES                                           :보통/긴 항속거리를 사용하거나 항속거리를 사용하지 않습니다.
+STR_PARAM_VALUE_RANGES_OFF                                      :항속거리 사용 안 함
+STR_PARAM_VALUE_RANGES_NORMAL                                   :보통 항속거리
+STR_PARAM_VALUE_RANGES_LONG                                     :긴 항속거리
+STR_PARAM_BCOSTS_NAME                                           :기본 구입 가격 계수
+STR_PARAM_BCOSTS_DESC                                           :구입 가격을 변경합니다 (0은 1/16배, 4는 기본값, 8은 x16배를 의미합니다)
+STR_PARAM_RCOSTS_NAME                                           :기본 유지비 계수
+STR_PARAM_RCOSTS_DESC                                           :유지비를 변경합니다 (0은 1/16배, 4는 기본값, 8은 x16배를 의미합니다)
+#
+# -------- Aeroplanes --------
+STR_AIRV_AIRBUS_A300_600R                                       :에어버스 A300-600R
+STR_AIRV_AIRBUS_A300_600F                                       :에어버스 A300-600F
+STR_AIRV_AIRBUS_A310_200                                        :에어버스 A310-200
+STR_AIRV_AIRBUS_A310_300                                        :에어버스 A310-300
+STR_AIRV_AIRBUS_A310_300F                                       :에어버스 A310-300F
+STR_AIRV_AIRBUS_A318                                            :에어버스 A318
+STR_AIRV_AIRBUS_A319                                            :에어버스 A319
+STR_AIRV_AIRBUS_A320_100                                        :에어버스 A320-100
+STR_AIRV_AIRBUS_A320_200                                        :에어버스 A320-200
+STR_AIRV_AIRBUS_A320NEO                                         :에어버스 A320네오
+STR_AIRV_AIRBUS_A321_100                                        :에어버스 A321-100
+STR_AIRV_AIRBUS_A321_200                                        :에어버스 A321-200
+STR_AIRV_AIRBUS_A330_200                                        :에어버스 A330-200
+STR_AIRV_AIRBUS_A330_200F                                       :에어버스 A330-200F
+STR_AIRV_AIRBUS_A330_300                                        :에어버스 A330-300
+STR_AIRV_AIRBUS_A340_300                                        :에어버스 A340-300
+STR_AIRV_AIRBUS_A340_500                                        :에어버스 A340-500
+STR_AIRV_AIRBUS_A340_600                                        :에어버스 A340-600
+STR_AIRV_AIRBUS_A380_800                                        :에어버스 A380-800
+STR_AIRV_ANTONOV_124                                            :안토노프 An-124
+STR_AIRV_ANTONOV_225                                            :안토노프 An-225
+STR_AIRV_ATR_42_300                                             :ATR 42-300
+STR_AIRV_ATR_42_300F                                            :ATR 42-300F
+STR_AIRV_ATR_42_500                                             :ATR 42-500
+STR_AIRV_ATR_72_200                                             :ATR 72-200
+STR_AIRV_ATR_72_200F                                            :ATR 72-200F
+STR_AIRV_ATR_72_500                                             :ATR 72-500
+STR_AIRV_BAC_1_11_200                                           :BAC 1-11-200
+STR_AIRV_BAC_1_11_300                                           :BAC 1-11-300
+STR_AIRV_BAC_1_11_400                                           :BAC 1-11-400
+STR_AIRV_BAC_1_11_500                                           :BAC 1-11-500
+STR_AIRV_BAC_CONCORDE                                           :아에로스파시알/BAC 콩코드
+STR_AIRV_BAE_146_100                                            :브리티시 에어로스페이스 146-100
+STR_AIRV_BAE_146_200                                            :브리티시 에어로스페이스 146-200
+STR_AIRV_BAE_146_300                                            :브리티시 에어로스페이스 146-300
+STR_AIRV_BAE_146_300QT                                          :브리티시 에어로스페이스 146-300QT
+STR_AIRV_BOEING_707_320                                         :보잉 707-320
+STR_AIRV_BOEING_707_420                                         :보잉 707-420
+STR_AIRV_BOEING_717_200                                         :보잉 717-200
+STR_AIRV_BOEING_727_100                                         :보잉 727-100
+STR_AIRV_BOEING_727_200                                         :보잉 727-200
+STR_AIRV_BOEING_737_100                                         :보잉 737-100
+STR_AIRV_BOEING_737_200                                         :보잉 737-200
+STR_AIRV_BOEING_737_200C                                        :보잉 737-200C
+STR_AIRV_BOEING_737_300                                         :보잉 737-300
+STR_AIRV_BOEING_737_300F                                        :보잉 737-300F
+STR_AIRV_BOEING_737_400                                         :보잉 737-400
+STR_AIRV_BOEING_737_500                                         :보잉 737-500
+STR_AIRV_BOEING_737_600                                         :보잉 737-600
+STR_AIRV_BOEING_737_700                                         :보잉 737-700
+STR_AIRV_BOEING_737_800                                         :보잉 737-800
+STR_AIRV_BOEING_737_900                                         :보잉 737-900
+STR_AIRV_BOEING_737_900ER                                       :보잉 737-900ER
+STR_AIRV_BOEING_737_MAX8                                        :보잉 737 MAX 8
+STR_AIRV_BOEING_747_100                                         :보잉 747-100
+STR_AIRV_BOEING_747_200                                         :보잉 747-200
+STR_AIRV_BOEING_747_200M                                        :보잉 747-200M
+STR_AIRV_BOEING_747_300                                         :보잉 747-300
+STR_AIRV_BOEING_747_300M                                        :보잉 747-300M
+STR_AIRV_BOEING_747_400                                         :보잉 747-400
+STR_AIRV_BOEING_747_400D                                        :보잉 747-400D
+STR_AIRV_BOEING_747_400ER                                       :보잉 747-400ER
+STR_AIRV_BOEING_747_400BCF                                      :보잉 747-400F BCF
+STR_AIRV_BOEING_747_400SCD                                      :보잉 747-400F SCD
+STR_AIRV_BOEING_747_400ERF                                      :보잉 747-400F ERF
+STR_AIRV_BOEING_747_400M                                        :보잉 747-400M
+STR_AIRV_BOEING_747_8I                                          :보잉 747-8I
+STR_AIRV_BOEING_747_8F                                          :보잉 747-8F
+STR_AIRV_BOEING_757_200                                         :보잉 757-200
+STR_AIRV_BOEING_757_200F                                        :보잉 757-200F
+STR_AIRV_BOEING_767_200                                         :보잉 767-200
+STR_AIRV_BOEING_767_200ER                                       :보잉 767-200ER
+STR_AIRV_BOEING_767_300                                         :보잉 767-300
+STR_AIRV_BOEING_767_300ER                                       :보잉 767-300ER
+STR_AIRV_BOEING_767_400ER                                       :보잉 767-400ER
+STR_AIRV_BOEING_767_300F                                        :보잉 767-300F
+STR_AIRV_BOEING_777_200                                         :보잉 777-200
+STR_AIRV_BOEING_777_200ER                                       :보잉 777-200ER
+STR_AIRV_BOEING_777_200LR                                       :보잉 777-200LR
+STR_AIRV_BOEING_777_200F                                        :보잉 777-200F
+STR_AIRV_BOEING_777_300                                         :보잉 777-300
+STR_AIRV_BOEING_777_300ER                                       :보잉 777-300ER
+STR_AIRV_BOEING_787_8                                           :보잉 787-8
+STR_AIRV_BOEING_787_9                                           :보잉 787-9
+STR_AIRV_BOMBARDIER_CRJ100ER                                    :봄바디어 CRJ-100ER
+STR_AIRV_BOMBARDIER_CRJ100LR                                    :봄바디어 CRJ-100LR
+STR_AIRV_BOMBARDIER_CRJ200ER                                    :봄바디어 CRJ-200ER
+STR_AIRV_BOMBARDIER_CRJ200LR                                    :봄바디어 CRJ-200LR
+STR_AIRV_BOMBARDIER_CRJ700                                      :봄바디어 CRJ-700
+STR_AIRV_BOMBARDIER_CRJ700ER                                    :봄바디어 CRJ-700ER
+STR_AIRV_BOMBARDIER_CRJ900                                      :봄바디어 CRJ-900
+STR_AIRV_BOMBARDIER_CRJ900ER                                    :봄바디어 CRJ-900ER
+STR_AIRV_BOMBARDIER_CRJ900LR                                    :봄바디어 CRJ-900LR
+STR_AIRV_BOMBARDIER_CRJ1000                                     :봄바디어 CRJ-1000
+STR_AIRV_BOMBARDIER_DASH_8_100                                  :봄바디어 대시 8-100
+STR_AIRV_BOMBARDIER_DASH_8_200                                  :봄바디어 대시 8-200
+STR_AIRV_BOMBARDIER_DASH_8_200Q                                 :봄바디어 대시 8-200Q
+STR_AIRV_BOMBARDIER_DASH_8_300                                  :봄바디어 대시 8-300
+STR_AIRV_BOMBARDIER_DASH_8_300Q                                 :봄바디어 대시 8-300Q
+STR_AIRV_BOMBARDIER_DASH_8_400Q                                 :봄바디어 대시 8 Q400
+STR_AIRV_EMBRAER_ERJ_170LR                                      :엠브라에르 170 LR
+STR_AIRV_EMBRAER_ERJ_175STD                                     :엠브라에르 175 STD
+STR_AIRV_EMBRAER_ERJ_190STD                                     :엠브라에르 190 STD
+STR_AIRV_EMBRAER_ERJ_190LR                                      :엠브라에르 190 LR
+STR_AIRV_EMBRAER_ERJ_190AR                                      :엠브라에르 190 AR
+STR_AIRV_EMBRAER_ERJ_195STD                                     :엠브라에르 195 STD
+STR_AIRV_EMBRAER_ERJ_195LR                                      :엠브라에르 195 LR
+STR_AIRV_EMBRAER_ERJ_195AR                                      :엠브라에르 195 AR
+STR_AIRV_FOKKER_70                                              :포커 70
+STR_AIRV_FOKKER_100                                             :포커 100
+STR_AIRV_LOCKHEED_L049_CONSTELLATION                            :록헤드 L-049 콘스텔레이션
+STR_AIRV_ILYUSHIN_62                                            :일류신 Il-62
+STR_AIRV_DOUGLAS_DC_8_10                                        :더글러스 DC-8-10
+STR_AIRV_DOUGLAS_DC_8_20                                        :더글러스 DC-8-20
+STR_AIRV_DOUGLAS_DC_8_30                                        :더글러스 DC-8-30
+STR_AIRV_DOUGLAS_DC_8_40                                        :더글러스 DC-8-40
+STR_AIRV_DOUGLAS_DC_8_50                                        :더글러스 DC-8-50
+STR_AIRV_DOUGLAS_DC_9_10                                        :더글러스 DC-9-10
+STR_AIRV_DOUGLAS_DC_9_20                                        :더글러스 DC-9-20
+STR_AIRV_DOUGLAS_DC_9_30                                        :더글러스 DC-9-30
+STR_AIRV_DOUGLAS_DC_9_40                                        :더글러스 DC-9-40
+STR_AIRV_DOUGLAS_DC_9_50                                        :더글러스 DC-9-50
+STR_AIRV_DOUGLAS_DC_10_10                                       :더글러스 DC-10-10
+STR_AIRV_DOUGLAS_DC_10_30                                       :더글러스 DC-10-30
+STR_AIRV_DOUGLAS_DC_10_40                                       :더글러스 DC-10-40
+STR_AIRV_MCDONNELL_DOUGLAS_MD_81                                :맥도널 더글러스 MD-81
+STR_AIRV_MCDONNELL_DOUGLAS_MD_82                                :맥도널 더글러스 MD-82
+STR_AIRV_MCDONNELL_DOUGLAS_MD_83                                :맥도널 더글러스 MD-83
+STR_AIRV_MCDONNELL_DOUGLAS_MD_87                                :맥도널 더글러스 MD-87
+STR_AIRV_MCDONNELL_DOUGLAS_MD_88                                :맥도널 더글러스 MD-88
+STR_AIRV_MCDONNELL_DOUGLAS_MD_90                                :맥도널 더글러스 MD-90
+STR_AIRV_MCDONNELL_DOUGLAS_DC_10_30                             :맥도널 더글러스 DC 10-30
+STR_AIRV_MCDONNELL_DOUGLAS_MD_11                                :맥도널 더글러스 MD-11
+STR_AIRV_MCDONNELL_DOUGLAS_MD_11F                               :맥도널 더글러스 MD-11F
+STR_AIRV_SUD_CARAVELLE_III                                      :SUD Caravelle III
+STR_AIRV_TUPOLEV_TU134                                          :투폴레프 Tu-134
+STR_AIRV_TUPOLEV_TU154B                                         :투폴레프 Tu-154B
+STR_AIRV_TUPOLEV_TU154M                                         :투폴레프 Tu-154M
+STR_AIRV_BOEING_TEST                                            :테스트
+#
+# -------- Helicopters --------
+STR_AIRV_SKYLIFT_150                                            :스카이리프트 150
+#
+# ------- Livery Names -------
+STR_VLIV_MANUFACTURERS                                          :매뉴팩처러
+STR_VLIV_AIRBUS                                                 :에어버스 도색
+STR_VLIV_ANTONOV                                                :안토노프 디자인 부서 도색
+STR_VLIV_ATR                                                    : ATR 도색
+STR_VLIV_BAC                                                    : BAC 도색
+STR_VLIV_BAE                                                    :브리티시 에어로스페이스 도색
+STR_VLIV_BOEING                                                 :보잉 도색
+STR_VLIV_BOMBARDIER                                             :봄바디어 도색
+STR_VLIV_EMBRAER                                                :엠브라에르 도색
+STR_VLIV_DOUGLAS                                                :더글러스 도색
+STR_VLIV_FOKKER                                                 :포커 도색
+STR_VLIV_LOCKHEED                                               :록헤드 도색
+STR_VLIV_ILYUSHIN                                               :일류신 도색
+STR_VLIV_MCDONNEL_DOUGLAS                                       :맥도널 더글러스 도색
+STR_VLIV_SUD                                                    : SUD 도색
+STR_VLIV_TUPOLEV                                                :투폴레프 도색
+STR_VLIV_WAS                                                    : WAS 7주년 기념 도색
+#
+# Cargo
+STR_VLIV_AEROLOGIC                                              :에어로로직
+STR_VLIV_AIRBRIDGE                                              :에어브리지 카고 항공
+STR_VLIV_AIR_CHINA_CARGO                                        :중국 국제 항공 화물
+STR_VLIV_AIR_FRANCE_CARGO                                       :에어 프랑스 화물
+STR_VLIV_AIR_UKRAINE                                            :우크라이나 안토노프 디자인국
+STR_VLIV_AIR_USSR                                               :소련 안토노프 디자인국
+STR_VLIV_BA_WORLD_CARGO                                         :영국 항공 국제 화물 도색
+STR_VLIV_CATHAY_PACIFIC_CARGO                                   :케세이 퍼시픽 화물
+STR_VLIV_CARGOLUX                                               :카고룩스
+STR_VLIV_CHANNEL_EXPRESS                                        :채널 익스프레스
+STR_VLIV_CHINA_AIRLINES_CARGO                                   :중국 화물 항공
+STR_VLIV_CYGNUS                                                 :시그너스 항공
+STR_VLIV_DHL                                                    : DHL
+STR_VLIV_EMIRATES_SKYCARGO                                      :에미레이트 스카이카고
+STR_VLIV_EVA_AIR_CARGO                                          : EVA 에어 카고
+STR_VLIV_FEDEX                                                  : FedEx
+STR_VLIV_ICELANDAIR_CARGO                                       :아이슬란드 항공 화물
+STR_VLIV_KALITTA_AIR                                            :칼리타 에어
+STR_VLIV_KLM_CARGO                                              :KLM 화물
+STR_VLIV_KOREAN_AIR_CARGO                                       :대한항공 화물
+STR_VLIV_LAN_CARGO                                              : LAN 화물
+STR_VLIV_MARTINAIR_CARGO                                        :마르틴 에어 화물
+STR_VLIV_NIPPON_CARGO_AIRLINES                                  :일본 화물 항공
+STR_VLIV_NIPPON_CARGO_AIRLINES_GREEN_FREIGHTER                  :일본 화물 항공 (녹색 화물기)
+STR_VLIV_QANTAS_FREIGHT                                         :콴타스 화물
+STR_VLIV_QATAR_AIRWAYS_CARGO                                    :카타르 화물 항공
+STR_VLIV_REGIONAL_CARGO                                         :국내선 화물
+STR_VLIV_ROYAL_MAIL                                             :로열 메일
+STR_VLIV_SOUTH_AFRICAN_CARGO                                    :남아프리카 화물
+STR_VLIV_TNT                                                    :TNT 항공
+STR_VLIV_TURKISH_AIRLINES_CARGO                                 :터키 화물 항공
+STR_VLIV_UPS                                                    : UPS
+STR_VLIV_VOLGA_DNEPR                                            :볼가 드네포르
+#
+# Low Cost
+STR_VLIV_AB_AIRLINES                                            :AB 항공
+STR_VLIV_AIR_ARABIA                                             :아라비아 항공
+STR_VLIV_AIR_ASIA                                               :에어 아시아
+STR_VLIV_AIR_BALTIC                                             :발트 항공
+STR_VLIV_AIR_DECCAN                                             :에어 데칸
+STR_VLIV_ALASKA_AIRLINES                                        :알래스카 항공
+STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL                         :알래스카 항공 (디즈니 특별)
+STR_VLIV_AMSTERDAM_AIRLINES                                     :암스테르담 항공
+STR_VLIV_ARKE_FLY                                               :아크 플라이
+STR_VLIV_BUZZ                                                   :버즈
+STR_VLIV_CONDOR_BERLIN                                          :콘도르 베를린
+STR_VLIV_CONDOR                                                 :콘도르
+STR_VLIV_DBA                                                    : DBA
+STR_VLIV_EASYJET                                                :이지젯
+STR_VLIV_EASYJET_OLD                                            :이지젯 (구)
+STR_VLIV_FLYBE                                                  :플라이비(Flybe)
+STR_VLIV_FLYDUBAI                                               :플라이두바이
+STR_VLIV_FLYEGYPT                                               :플라이 이집트
+STR_VLIV_FLYNORDIC                                              :플라이노르딕
+STR_VLIV_FRONTIER_AIRLINES_RACOON_FOX                           :프론티어 항공 (라쿤 + 여우)
+STR_VLIV_FRONTIER_AIRLINES                                      :프론티어 항공
+STR_VLIV_GOL                                                    :골 항공
+STR_VLIV_JETAIRFLY                                              :제트에어플라이
+STR_VLIV_KUBAN_AIRLINES                                         :쿠반 항공
+STR_VLIV_KULULA                                                 :쿨룰라
+STR_VLIV_LEVEL                                                                                                  :레벨 항공
+STR_VLIV_LION_AIR                                               :라이온 에어
+STR_VLIV_NORWEGIAN_AIR                                          :노르웨이 항공
+STR_VLIV_NORWEGIAN_LONG_HAUL                                    :노르웨이 롱홀
+STR_VLIV_ONUR_AIR                                               :오누르 항공
+STR_VLIV_PEOPLEXPRESS                                           :피플 익스프레스(PEOPLExpress)
+STR_VLIV_RYANAIR                                                :라이언에어
+STR_VLIV_RYANAIR_OLD                                            :라이언에어 (구)
+STR_VLIV_SKYWEST                                                :스카이웨스트
+STR_VLIV_SMALL_PLANET                                           :스몰 플래닛 항공
+STR_VLIV_SOUTHWEST_AIRLINES                                     :사우스웨스트 항공
+STR_VLIV_SOUTH_WEST_GOLD                                        :사우스 웨스트 (금색)
+STR_VLIV_TRANSAVIA                                              :트랜스아비아
+STR_VLIV_VIRGIN_BLUE                                            :버진 블루
+STR_VLIV_WAMOS                                                                                                  :와모스 항공
+STR_VLIV_WIZZ_AIR                                               :위즈 에어
+STR_VLIV_WOW_AIR                                                :와우 에어
+STR_VLIV_XL_AIRWAYS                                             : XL 에어웨이즈
+#
+# One World
+STR_VLIV_AIR_BERLIN                                             :에어 베를린
+STR_VLIV_AIR_BERLIN_INTERIM                                     :에어 베를린 (임시)
+STR_VLIV_AIR_BERLIN_NEW                                         :에어 베를린 (신)
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            :노스트룸 항공 (이베리아 국내선)
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        :노스트룸 항공 (구) (이베리아 국내선)
+STR_VLIV_AMERICAN_AIRLINES                                      :아메리카 항공
+STR_VLIV_AMERICAN_AIRLINES_OLD                                  :아메리카 항공 (구)
+STR_VLIV_AMERICAN_EAGLE                                         :아메리칸 이글
+STR_VLIV_BRITISH_AIRWAYS_LANDOR                                 :영국 항공 (랜더)
+STR_VLIV_BRITISH_AIRWAYS_LANDOR_RED                             :영국 항공 (랜더 레드)
+STR_VLIV_BRITISH_AIRWAYS_NEGUS                                  :영국 항공 (네구스)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG                             :영국 항공 (유니언 잭)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR                      :영국 항공 유니언 잭 (컴에어)
+STR_VLIV_BRITISH_AIRWAYS_CITYFLYER                              :영국 항공 시티플라이어
+STR_VLIV_CATHAY_PACIFIC                                         :케세이 퍼시픽
+STR_VLIV_DRAGONAIR                                              :홍콩 드래건 항공
+STR_VLIV_FINNAIR                                                :핀에어
+STR_VLIV_FINNAIR_MOOMIN_STICKERS                                :핀에어 -특별 무민 스티커 도색
+STR_VLIV_FINNAIR_OLD                                            :핀에어 (초기)
+STR_VLIV_IBERIA                                                 :이베리아
+STR_VLIV_IBERIA_OLD                                             :이베리아 (구)
+STR_VLIV_JAL                                                    :일본 항공
+STR_VLIV_JAL_GREEN                                              : JAL 녹색
+STR_VLIV_JAPAN_AIR_SYSTEM                                       :재팬 에어 시스템
+STR_VLIV_JETSTAR_AIRWAYS                                        :제트스타 항공
+STR_VLIV_LAN_AIRLINES                                           :LAN 항공
+STR_VLIV_MALAYSIA_AIRLINES                                      :말레이시아 항공
+STR_VLIV_MALEV                                                  :말레브
+STR_VLIV_MEXICANA                                               :메히카나
+STR_VLIV_QANTAS                                                 :콴타스
+STR_VLIV_QANTAS_ONEWORLD                                        :콴타스 -원 월드 도색
+STR_VLIV_QANTAS_VJET                                            :콴타스 V-제트
+STR_VLIV_QANTASLINK                                             :콴타스링크
+STR_VLIV_QANTASLINK_PINK_RIBBON                                 :콴타스링크 (분홍 리본)
+STR_VLIV_QATAR_AIRWAYS                                          :카타르 항공
+STR_VLIV_ROYAL_JORDANIAN                                        :로열 요르단
+STR_VLIV_S7_AIRLINES                                            : S7 항공
+STR_VLIV_SRILANKAN_AIRLINES                                     :스리랑카 항공
+STR_VLIV_TAM_AIRLINES                                           :TAM 항공
+STR_VLIV_US_AIRWAYS                                             :US 항공
+STR_VLIV_US_AIRWAYS_OLD                                         : US 항공 (초기)
+#
+# Star Alliance
+STR_VLIV_AEGAN_AIRLINES                                         :에게 항공
+STR_VLIV_AIR_CANADA                                             :에어 캐나다
+STR_VLIV_AIR_CANADA_97_06                                       :에어 캐나다 97-06
+STR_VLIV_AIR_CANADA_NEW                                         :에어 캐나다 (신)
+STR_VLIV_AIR_CANADA_ROUGE                                       :에어 캐나다 루즈
+STR_VLIV_AIR_CHINA                                              :중국 국제 항공
+STR_VLIV_AIR_DOLOMITI                                           :에어 돌로미티
+STR_VLIV_AIR_INDIA                                              :인도 항공
+STR_VLIV_AIR_INDIA_OLD                                          :인도 항공 (구)
+STR_VLIV_AIR_INDIA_REGIONAL                                     :인도 항공 국내선
+STR_VLIV_AIR_NEW_ZEALAND                                        :에어 뉴질랜드
+STR_VLIV_AIR_NELSON                                             :에어 넬슨 (에어 뉴질랜드 연계)
+STR_VLIV_ANA                                                    : ANA - 전일본공수
+STR_VLIV_ANA_WAVES                                              : ANA 웨이브 - 초기 777-300
+STR_VLIV_ANA_GOLD                                               :ANA 골드 도색
+STR_VLIV_ANA_PIKACHU_LIVERY_2005                                : ANA 피카츄 도색 (2005)
+STR_VLIV_ANA_POKEMON_LIVERY_1999                                : ANA 포켓몬 도색 (1999)
+STR_VLIV_ANSETT_NEW_ZEALAND                                     :안세트 뉴질랜드
+STR_VLIV_ASIANA_AIRLINES                                        :아시아나 항공
+STR_VLIV_AUSTRIAN_AIRLINES                                      :오스트리아 항공
+STR_VLIV_AUSTRIAN_AIRLINES_RETRO                                :오스트리아 항공 레트로
+STR_VLIV_AUSTRIAN_ARROWS                                        :오스트리안 애로우
+STR_VLIV_AVIANCA                                                :아비앙카
+STR_VLIV_BLUE1                                                  :블루1
+STR_VLIV_BMI_OLD                                                :BMI (구)
+STR_VLIV_BMI_BABY                                               : BMI 베이비
+STR_VLIV_BRUSSELS_AIRLINES                                      :브뤼셀 항공
+STR_VLIV_CONTINENTAL                                            :콘티넨털 항공
+STR_VLIV_CONTINENTAL_OLD                                        :콘티넨털 항공 (구)
+STR_VLIV_COPA_AIRLINES                                          :코파 항공
+STR_VLIV_CROATIA_AIRLINES                                       :크로아티아 항공
+STR_VLIV_EGYPT_AIR                                              :이집트 항공
+STR_VLIV_EVA_AIR                                                : EVA 에어
+STR_VLIV_ETHIOPIAN_AIRLINES                                     :에티오피아 항공
+STR_VLIV_GERMANWINGS_OLD                                        :저먼윙스 (구)
+STR_VLIV_GERMANWINGS                                            :저먼윙스
+STR_VLIV_INDIAN_AIRLINES                                        :인도 항공
+STR_VLIC_JAZZ                                                   :재즈 항공
+STR_VLIV_LOT                                                    : LOT 폴란드 항공
+STR_VLIV_LUFTHANSA                                              :루프트한자
+STR_VLIV_LUFTHANSA_PREVIOUS                                     :루프트한자 (구)
+STR_VLIV_LUFTHANSA_RETRO                                        :루프트한자 (복고)
+STR_VLIV_LUFTHANSA_REGIONAL                                     :루프트한자 국내선
+STR_VLIV_OLYMPIC_AIR                                            :올림픽 에어
+STR_VLIV_SAS                                                    : SAS
+STR_VLIV_SHENZHEN_AIRLINES                                      :선전 항공
+STR_VLIV_SINGAPORE_AIRLINES                                     :싱가포르 항공
+STR_VLIV_SOUTH_AFRICAN_AIRWAYS                                  :남아프리카 항공
+STR_VLIV_SPANAIR                                                :스팬에어
+STR_VLIV_SWISS_AIR                                              :스위스 항공
+STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           :스위스 국제 항공
+STR_VLIV_TAP                                                    : TAP 포르투갈
+STR_VLIV_PORTUGALIA                                             :포르투갈리아
+STR_VLIV_THAI_AIRWAYS_INTERNATIONAL                             :타이 국제 항공
+STR_VLIV_TURKISH_AIRLINES                                       :터키 항공
+STR_VLIV_UNITED_AIRLINES                                        :유나이티드 항공
+STR_VLIV_UNITED_EXPRESS                                         :유나이티드 익스프레스
+#
+# Sky Team
+STR_VLIV_AEROFLOT                                               :아에로플로트
+STR_VLIV_AEROFLOT_OLD                                           :아에로플로트 (구)
+STR_VLIV_AEROLINEAS_ARGENTINAS                                  :아르헨티나 항공
+STR_VLIV_AEROMEXICO                                             :아에로멕시코
+STR_VLIV_AIR_EUROPA                                             :에어 유로파
+STR_VLIV_AIR_FRANCE                                             :에어 프랑스
+STR_VLIV_AIRLINAIR_AIR_FRANCE                                   :에어린에어 (에어 프랑스)
+STR_VLIV_ALITALIA                                               :알리탈리아
+STR_VLIV_ALITALIA_OLD                                           :알리탈리아 (구)
+STR_VLIV_ALITALIA_CITY                                          :알리탈리아 국내선
+STR_VLIV_BRITAIR                                                :브릿에어 (에어 프랑스)
+STR_VLIV_CHINA_AIRLINES                                         :중화 항공
+STR_VLIV_CHINA_EASTERN                                          :중국 동방 항공
+STR_VLIV_CHINA_SOUTHERN                                         :중국 남방 항공
+STR_VLIV_CZECH_AIRLINES                                         :체코 항공
+STR_VLIV_DELTA_AIR_LINES                                        :델타 항공
+STR_VLIV_DELTA_CONNECTION                                       :델타 커넥션
+STR_VLIV_GARUDA_INDONESIA                                       :가루다 인도네시아
+STR_VLIV_HOP                                                                                                    : HOP!
+STR_VLIV_KENYA_AIRWAYS                                          :케냐 항공
+STR_VLIV_KLM                                                    : KLM
+STR_VLIV_KLM_RETRO_LIVERY                                       : KLM 구 도색
+STR_VLIV_KLM_CITYHOPPER                                         :KLM 시티호퍼
+STR_VLIV_KOREAN_AIR                                             :대한항공
+STR_VLIV_MIDDLE_EAST_AIRLINES                                   :중동 항공
+STR_VLIV_NORTHWEST_AIRLINES                                     :노스웨스트 항공
+STR_VLIV_NORTHWEST_AIRLINK                                      :노스웨스트 항공
+STR_VLIV_SAUDI_ARABIAN_AIRLINES                                 :사우디아
+STR_VLIV_TAROM                                                  : TAROM (TAROM 루마니아 항공)
+STR_VLIV_VIETNAM_AIRLINES                                       :베트남 항공
+STR_VLIV_XIAMEN_AIR                                             :샤먼 항공
+#
+# Unaffiliated
+STR_VLIV_AER_ARRAN_ORIGINAL                                     :에어 아란 (오리지널)
+STR_VLIV_AER_ARRAN_RINGED_DESIGN                                :에어 아란 (반지 디자인)
+STR_VLIV_AER_LINGUS                                             :에어 링구스
+STR_VLIV_AER_LINGUS_REGIONAL                                    :에어 링구스 국내선
+STR_VLIV_AIR_ASTANA                                             :아스타나 항공
+STR_VLIV_AIR_AUSTRAL                                            :에어 오스트랄
+STR_VLIV_AIR_CONTRACTORS                                        :에어 콘트랙터스
+STR_VLIV_AIR_COMET                                              :에어 코메트
+STR_VLIV_AIR_DO                                                 :에어 도
+STR_VLIV_AIR_FLORIDA                                            :에어 플로리다
+STR_VLIV_AIR_GREENLAND                                          :에어 그린란드
+STR_VLIV_AIR_ITALY                                              :에어 이탈리아
+STR_VLIV_AIR_KORYO                                              :고려항공
+STR_VLIV_AIR_MACAU                                              :마카오 항공
+STR_VLIV_AIR_MALTA                                              :에어 몰타
+STR_VLIV_AIR_NAMIBIA                                            :나미비아 항공
+STR_VLIV_AIR_NIUGINI                                            :뉴기니 항공
+STR_VLIV_AIR_PLUS_COMET                                         :에어 플러스 코메트
+STR_VLIV_AIR_SEYCHELLES                                         :세이셸 항공
+STR_VLIV_AIR_SOUTHWEST                                          :에어 사우스웨스트
+STR_VLIV_AIR_TRANSAT                                            :에어 트랜젯
+STR_VLIV_AMASZONAS_PARAGUAY                                     :아마조나스 파라과이
+STR_VLIV_ASTRA_AIRWAYS                                                                                  :아스트라 항공
+STR_VLIV_ASTRAEUS                                               :아스트라이오스 항공
+STR_VLIV_AURIGNY_AIR_SERVICES                                   :오리그니 항공
+STR_VLIV_AZERBAIJAN_AIRLINES                                    :아제르바이잔 항공
+STR_VLIV_BIMAN_BANGLADESH_AIRLINES                              :비만 방글라데시 항공
+STR_VLIV_BRITISH_AIRTOURS                                       :브리티시 에어투어
+STR_VLIV_BRITISH_CALEDONIAN                                     :브리티시 칼레도니안
+STR_VLIV_BULGARIA_AIR                                           :불가리아 항공
+STR_VLIV_CHINA_WEST_AIR                                         :중국 서방 항공
+STR_VLIV_CYPRUS_AIRWAYS                                         :키프로스 항공
+STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  :엘 알 이스라엘 항공
+STR_VLIV_EMIRATES                                               :에미레이트
+STR_VLIV_EUROPEAN_AIRCHARTER                                    :유로피언 에어차터
+STR_VLIV_ETIHAD_AIRWAYS                                         :에티하드 항공
+STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1                     :에티하드 항공 (아부다비 포뮬러 1)
+STR_VLIV_GULF_AIR                                               :걸프 에어
+STR_VLIV_HAINAN_AIRLINES                                        :하이난 항공
+STR_VLIV_HAWAIIAN_AIRLINES                                      :하와이안 항공
+STR_VLIV_HELLENIC_IMPERIAL_AIRWAYS                              :헬레닉 임페리얼 항공
+STR_VLIV_HELVETIC_AIRWAYS_OLD                                   :헬베틱 항공 (구)
+STR_VLIV_HIGHLAND_EXPRESS                                       :하일랜드 익스프레스
+STR_VLIV_ICELANDAIR                                             :아이슬란드 항공
+STR_VLIV_IRAN_AIR                                               :이란 항공
+STR_VLIV_JAT_AIRWAYS                                            :야트 에어웨이즈
+STR_VLIV_JETBLUE                                                :제트블루
+STR_VLIV_KMV                                                    :KMV 항공
+STR_VLIV_LIBYAN_AIRLINES                                        :리비아 항공
+STR_VLIV_MALMO_AVIATION                                         :말뫼 항공
+STR_VLIV_MALMO_AVIATION_SVENSK_FOOTBALL                         :말뫼 항공 (스벤크스 축구)
+STR_VLIV_MARTINAIR                                              :마르틴 에어
+STR_VLIV_MAT_MACEDONIAN                                         :MAT 마케도니아 항공
+STR_VLIV_MONARCH_AIRLINES                                       :모나크 항공
+STR_VLIV_MONTENEGRO_AIRLINES                                    :몬테네그로 항공
+STR_VLIV_OMNI_AIR_INTERNATIONAL                                 :옴니 에어 인터네셔널
+STR_VLIV_PALMAIR                                                :팜에어
+STR_VLIV_PERUVIAN                                               :페루비아 항공
+STR_VLIV_PIA                                                    :파키스탄 국제 항공
+STR_VLIV_PRECISION_AIR_SERVICES                                 :프리시즌 에어
+STR_VLIV_ROSSIYA_AIRLINES                                       :로시야 항공
+STR_VLIV_ROYAL_BRUNEI_AIRLINES                                  :로열 브루나이 항공
+STR_VLIV_SAMOA_AIRWAYS                                          :사모아 항공
+STR_VLIV_SATA                                                   : SATA - 에어 아소르스
+STR_VLIV_SATENA                                                 :SATENA
+STR_VLIV_SKYMARK_AIRLINES                                       :스카이마크 항공
+STR_VLIV_SLOKAIR                                                :슬로크 에어 인터네셔널
+STR_VLIV_TRANSAERO                                              :트랜스아에로
+STR_VLIV_TUNISAIR                                               :튀니지 항공
+STR_VLIV_TURKMENISTAN_AIRLINES                                  :투르크메니스탄 항공
+STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES                         :우크라이나 국제 항공
+STR_VLIV_UZBEKISTAN_AIRWAYS                                     :우즈베키스탄 항공
+STR_VLIV_UTAIR                                                  :유테이르
+STR_VLIV_VARIG                                                  :바리그
+STR_VLIV_VIRGIN_ATLANTIC                                        :버진 애틀랜틱
+STR_VLIV_WIDEROE                                                :위데뢰에
+STR_VLIV_YEMENIA                                                :예멘 항공
+#
+# Others
+STR_VLIV_ADRIA_AIRWAYS                                          :아드리아 항공
+STR_VLIV_AIR_ONE                                                :에어 원
+STR_VLIV_AIR_NAURU                                              :나우루 항공
+STR_VLIV_AIR_SERBIA                                             :에어 세르비아
+STR_VLIV_AIR_SLOVAKIA                                           :슬로바키아 항공
+STR_VLIV_AIR_TAHITI_NUI                                                                                 :에어 타히티 누이
+STR_VLIV_ALLEGIANT_AIR                                          :얼리전트 항공
+STR_VLIV_ARKAS                                                  :아르카스
+STR_VLIV_AUSTRAL_LINEAS_AEREAS                                  :아우스트랄 항공
+STR_VLIV_BIRGENAIR                                              :비르겐 항공
+STR_VLIV_CLAN_MEGA                                              :클랜 메가
+STR_VLIV_DUTCH_ANTILLES_EXPRESS                                 :더치 앤틸리스 익스프레스
+STR_VLIV_FARNAIR_EUROPE                                         :파네어 유럽
+STR_VLIV_INDIGO                                                 :인디고
+STR_VLIV_INSEL_AIR                                              :인젤 에어
+STR_VLIV_MAHAN_AIR                                              :마한 항공
+STR_VLIV_OMAN_AIR                                               :오만 항공
+STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS                             :팬 아메리칸 항공
+STR_VLIV_PHILIPPINES_AIRLINES                                   :필리핀 항공
+STR_VLIV_RWANDAIR                                               :르완다 항공
+STR_VLIV_SLOK_AIR                                               :슬로크 에어
+STR_VLIV_SURINAM_AIRWAYS                                        :수리남 항공
+STR_VLIV_TAAG_ANGOLA_AIRLINES                                   :TAAG 앙골라 항공
+STR_VLIV_V_AUSTRALIA                                            :V 오스트레일리아
+STR_VLIV_VUELING_AIRLINES                                       :부엘링 항공
+STR_VLIV_FLYGLOBESPAN                                           :Flyglobespan (영국 저가 항공)
+STR_VLIV_SUNEXPRESS                                             :선익스프레스
+STR_VLIV_THOMSON_AIRWAYS                                        :톰슨 항공
+STR_VLIV_TWA                                                    :TWA - 트랜스월드 항공
+STR_VLIV_PSA                                                    : PSA - 퍼시픽 사우스웨스트 항공
+STR_VLIV_SPANTAX                                                : Spantax
+STR_VLIV_LAKER_AIRWAYS                                          :레이커 항공
+STR_VLIV_FIJI_AIRWAYS                                           :피지 항공
+STR_VLIV_AVIACO                                                 :Aviaco
+STR_VLIV_ARIANA_AFGHAN_AIRLINES                                 :아리아나 아프간 항공
+STR_VLIV_ESTONIAN                                               :에스토니아 항공
+STR_VLIV_HAPAG_LLOYD                                            :하파크로이트
+STR_VLIV_ROYAL_AIR_MAROC                                        :로열 에어 모로코
+STR_VLIV_SWIFTAIR                                               :스위프트에어
+STR_VLIV_BALAIR                                                 :발에어
+STR_VLIV_CLICKAIR                                               :클릭에어
+STR_VLIV_AIR_ALGERIE                                            :알제리 항공
+STR_VLIV_VOLOTEA                                            : Volotea
+STR_VLIV_AIR_PACIFIC                                            :에어 퍼시픽
+STR_VLIV_PEGASUS                                                :페가수스 항공
+STR_VLIV_EASTERN_AIR_LINES                                      :이스턴 항공
+STR_VLIV_GIRJET                                                 : Girjet
+STR_VLIV_WESTJET                                                :웨스트제트
+STR_VLIV_BELAVIA                                                :벨라비아
+STR_VLIV_TRAVEL_SERVICE                                         :트래블 서비스
+STR_VLIV_ALLIANCE_AIRLINES                                      :얼라이언스 항공
+STR_VLIV_BOAC                                                   : BOAC
+STR_VLIV_CUBANA_DE_AVIACION                                     :쿠바 항공
+STR_VLIV_VIASA                                                  : VIASA
+STR_VLIV_ALBASTAR                                               :알바스타
+STR_VLIV_PRIVILEGE_STYLE                                        :대통령 전용기 도색
+STR_VLIV_BINTER_CANARIAS                                        :빈터 카나리아
+STR_VLIV_FUTURA                                                 : Futura
+STR_VLIV_AEROPOSTAL                                             :에어로포스탈
+STR_VLIV_JET_TIME                                               :제트 타임
+STR_VLIV_EUROLOT                                                : Eurolot
+STR_VLIV_KUWAIT_AIRWAYS                                         :쿠웨이트 항공
+STR_VLIV_AIR_AFRIQUE                                            :에르 아프리크
+STR_VLIV_VIM_AIRLINES                                           :VIM 항공
+STR_VLIV_VIM_AIRLINES_OLD                                       :VIM 항공 (초기)
+STR_VLIV_DAN_AIR_LONDON                                         :댄 항공 런던

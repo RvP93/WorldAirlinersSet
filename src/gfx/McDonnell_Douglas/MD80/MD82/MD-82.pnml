@@ -1,0 +1,385 @@
+
+// McDonnell_Douglas_MD-82
+
+// Template: 
+#define McDonnell_Douglas_MD82_sprite_layout_template(name)                  \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 34, 22, -17, -11, ANIM]                                           \
+  [ 40, 1, 44, 19, -22, -10, ANIM]                                           \
+  [ 90, 1, 52, 20, -26, -10, ANIM]                                           \
+  [150, 1, 43, 31, -22, -16, ANIM]                                           \
+  [200, 1, 34, 35, -17, -18, ANIM]                                           \
+  [240, 1, 43, 31, -22, -16, ANIM]                                           \
+  [290, 1, 52, 20, -26, -10, ANIM]                                           \
+  [350, 1, 44, 19, -22, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 34, 22, -17, -11, ANIM]                                          \
+  [ 40, 40, 44, 19, -22, -10, ANIM]                                          \
+  [ 90, 40, 52, 20, -26, -10, ANIM]                                          \
+  [150, 40, 43, 31, -22, -16, ANIM]                                          \
+  [200, 40, 34, 35, -17, -18, ANIM]                                          \
+  [240, 40, 43, 31, -22, -16, ANIM]                                          \
+  [290, 40, 52, 20, -26, -10, ANIM]                                          \
+  [350, 40, 44, 19, -22, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 34, 32, -17, -16, ANIM]                                          \
+  [ 40, 80, 41, 29, -21, -15, ANIM]                                          \
+  [ 90, 80, 50, 19, -25, -10, ANIM]                                          \
+  [150, 80, 41, 18, -21, -9 , ANIM]                                          \
+  [200, 80, 28, 21, -14, -11, ANIM]                                          \
+  [240, 80, 41, 18, -21, -9 , ANIM]                                          \
+  [290, 80, 50, 19, -25, -10, ANIM]                                          \
+  [350, 80, 41, 29, -21, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 120, 33, 31, -17, -16, ANIM]                                         \
+  [ 40, 120, 43, 18, -22, -9 , ANIM]                                         \
+  [ 90, 120, 51, 19, -26, -10, ANIM]                                         \
+  [150, 120, 41, 29, -21, -15, ANIM]                                         \
+  [200, 120, 33, 34, -17, -17, ANIM]                                         \
+  [240, 120, 41, 29, -21, -15, ANIM]                                         \
+  [290, 120, 51, 19, -26, -10, ANIM]                                         \
+  [350, 120, 43, 18, -22, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 33, 25, -17, -13, ANIM]                                         \
+  [ 40, 160, 41, 22, -21, -11, ANIM]                                         \
+  [ 90, 160, 49, 26, -25, -13, ANIM]                                         \
+  [150, 160, 39, 22, -20, -11, ANIM]                                         \
+  [200, 160, 31, 28, -16, -14, ANIM]                                         \
+  [240, 160, 39, 22, -20, -11, ANIM]                                         \
+  [290, 160, 49, 26, -25, -13, ANIM]                                         \
+  [350, 160, 41, 22, -21, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/(0)Greyscale.png"
+purchase_sprite(McDonnell_Douglas_MD82, 290, 1, 52, 20, -26, -10)
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Alitalia.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Allegiant.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Allegiant) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/AmericanAirlines.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_AmericanAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Continental.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Finnair.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/FlyNordic.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_FlyNordic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/InselAir.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_InselAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Northwest.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Northwest) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/NorwegianAir.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_NorwegianAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/PSA.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_PSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/SAS.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Spanair.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Spanair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/SwissAir.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Swissair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/TWA.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_TWA) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Greyscale, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Greyscale_Climbing;
+  18: McDonnell_Douglas_MD82_Greyscale_Flight;
+  21: McDonnell_Douglas_MD82_Greyscale_Landing;
+  22: McDonnell_Douglas_MD82_Greyscale_Touchdown;
+      McDonnell_Douglas_MD82_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Alitalia, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Alitalia_Climbing;
+  18: McDonnell_Douglas_MD82_Alitalia_Flight;
+  21: McDonnell_Douglas_MD82_Alitalia_Landing;
+  22: McDonnell_Douglas_MD82_Alitalia_Touchdown;
+      McDonnell_Douglas_MD82_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Allegiant, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Allegiant_Climbing;
+  18: McDonnell_Douglas_MD82_Allegiant_Flight;
+  21: McDonnell_Douglas_MD82_Allegiant_Landing;
+  22: McDonnell_Douglas_MD82_Allegiant_Touchdown;
+      McDonnell_Douglas_MD82_Allegiant_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_AmericanAirlines, flight_state())
+{
+  15: McDonnell_Douglas_MD82_AmericanAirlines_Climbing;
+  18: McDonnell_Douglas_MD82_AmericanAirlines_Flight;
+  21: McDonnell_Douglas_MD82_AmericanAirlines_Landing;
+  22: McDonnell_Douglas_MD82_AmericanAirlines_Touchdown;
+      McDonnell_Douglas_MD82_AmericanAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Continental, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Continental_Climbing;
+  18: McDonnell_Douglas_MD82_Continental_Flight;
+  21: McDonnell_Douglas_MD82_Continental_Landing;
+  22: McDonnell_Douglas_MD82_Continental_Touchdown;
+      McDonnell_Douglas_MD82_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Finnair, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Finnair_Climbing;
+  18: McDonnell_Douglas_MD82_Finnair_Flight;
+  21: McDonnell_Douglas_MD82_Finnair_Landing;
+  22: McDonnell_Douglas_MD82_Finnair_Touchdown;
+      McDonnell_Douglas_MD82_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_FlyNordic, flight_state())
+{
+  15: McDonnell_Douglas_MD82_FlyNordic_Climbing;
+  18: McDonnell_Douglas_MD82_FlyNordic_Flight;
+  21: McDonnell_Douglas_MD82_FlyNordic_Landing;
+  22: McDonnell_Douglas_MD82_FlyNordic_Touchdown;
+      McDonnell_Douglas_MD82_FlyNordic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_InselAir, flight_state())
+{
+  15: McDonnell_Douglas_MD82_InselAir_Climbing;
+  18: McDonnell_Douglas_MD82_InselAir_Flight;
+  21: McDonnell_Douglas_MD82_InselAir_Landing;
+  22: McDonnell_Douglas_MD82_InselAir_Touchdown;
+      McDonnell_Douglas_MD82_InselAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Northwest, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Northwest_Climbing;
+  18: McDonnell_Douglas_MD82_Northwest_Flight;
+  21: McDonnell_Douglas_MD82_Northwest_Landing;
+  22: McDonnell_Douglas_MD82_Northwest_Touchdown;
+      McDonnell_Douglas_MD82_Northwest_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_NorwegianAir, flight_state())
+{
+  15: McDonnell_Douglas_MD82_NorwegianAir_Climbing;
+  18: McDonnell_Douglas_MD82_NorwegianAir_Flight;
+  21: McDonnell_Douglas_MD82_NorwegianAir_Landing;
+  22: McDonnell_Douglas_MD82_NorwegianAir_Touchdown;
+      McDonnell_Douglas_MD82_NorwegianAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_PSA, flight_state())
+{
+  15: McDonnell_Douglas_MD82_PSA_Climbing;
+  18: McDonnell_Douglas_MD82_PSA_Flight;
+  21: McDonnell_Douglas_MD82_PSA_Landing;
+  22: McDonnell_Douglas_MD82_PSA_Touchdown;
+      McDonnell_Douglas_MD82_PSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_SAS, flight_state())
+{
+  15: McDonnell_Douglas_MD82_SAS_Climbing;
+  18: McDonnell_Douglas_MD82_SAS_Flight;
+  21: McDonnell_Douglas_MD82_SAS_Landing;
+  22: McDonnell_Douglas_MD82_SAS_Touchdown;
+      McDonnell_Douglas_MD82_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Spanair, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Spanair_Climbing;
+  18: McDonnell_Douglas_MD82_Spanair_Flight;
+  21: McDonnell_Douglas_MD82_Spanair_Landing;
+  22: McDonnell_Douglas_MD82_Spanair_Touchdown;
+      McDonnell_Douglas_MD82_Spanair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Swissair, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Swissair_Climbing;
+  18: McDonnell_Douglas_MD82_Swissair_Flight;
+  21: McDonnell_Douglas_MD82_Swissair_Landing;
+  22: McDonnell_Douglas_MD82_Swissair_Touchdown;
+      McDonnell_Douglas_MD82_Swissair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_TWA, flight_state())
+{
+  15: McDonnell_Douglas_MD82_TWA_Climbing;
+  18: McDonnell_Douglas_MD82_TWA_Flight;
+  21: McDonnell_Douglas_MD82_TWA_Landing;
+  22: McDonnell_Douglas_MD82_TWA_Touchdown;
+      McDonnell_Douglas_MD82_TWA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_sprites, cargo_subtype)
+{
+  1: McDonnell_Douglas_MD82_Alitalia;
+  2: McDonnell_Douglas_MD82_Allegiant;
+  3: McDonnell_Douglas_MD82_AmericanAirlines;
+  4: McDonnell_Douglas_MD82_Continental;
+  5: McDonnell_Douglas_MD82_Finnair;
+  6: McDonnell_Douglas_MD82_FlyNordic;
+  7: McDonnell_Douglas_MD82_InselAir;
+  8: McDonnell_Douglas_MD82_Northwest;
+  9: McDonnell_Douglas_MD82_NorwegianAir;
+ 10: McDonnell_Douglas_MD82_PSA;
+ 11: McDonnell_Douglas_MD82_SAS;
+ 12: McDonnell_Douglas_MD82_Spanair;
+ 13: McDonnell_Douglas_MD82_Swissair;
+ 14: McDonnell_Douglas_MD82_TWA;
+	 McDonnell_Douglas_MD82_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_running_cost_factor, flight_state())
+{
+  plane_RC(78)
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(402); // airplane climbing after take-off
+      18: return plane_speed_kmh(814); // heading for tower contact point
+  16..20: return plane_speed_kmh(362); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_MCDONNEL_DOUGLAS);
+  1: string(STR_VLIV_ALITALIA);
+  2: string(STR_VLIV_ALLEGIANT_AIR);
+  3: string(STR_VLIV_AMERICAN_AIRLINES);
+  4: string(STR_VLIV_CONTINENTAL);
+  5: string(STR_VLIV_FINNAIR);
+  6: string(STR_VLIV_FLYNORDIC);
+  7: string(STR_VLIV_INSEL_AIR);
+  8: string(STR_VLIV_NORTHWEST_AIRLINES);
+  9: string(STR_VLIV_NORWEGIAN_AIR);
+ 10: string(STR_VLIV_PSA);
+ 11: string(STR_VLIV_SAS);
+ 12: string(STR_VLIV_SPANAIR);
+ 13: string(STR_VLIV_SWISS_AIR);
+ 14: string(STR_VLIV_TWA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 141;
+  2: return 166;
+  3: return 140;
+  4: return 144;
+  5: return 141;
+  9: return 162;
+ 10: return 150;
+ 11: return 153;
+ 12: return 150;
+ 14: return 144;
+     return 155;
+}
+
+item (FEAT_AIRCRAFT, McDonnell_Douglas_MD82)
+{
+  property
+  {
+    name: string(STR_AIRV_MCDONNELL_DOUGLAS_MD_82);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1981), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1981, 1997);
+    retire_early: get_retire_early(1981,1997);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 17;
+    passenger_capacity: 155;
+    mail_capacity: 32;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 685;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: McDonnell_Douglas_MD82_sprites;
+    purchase: McDonnell_Douglas_MD82_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: McDonnell_Douglas_MD82_cargo_subtype_text;
+	passenger_capacity: McDonnell_Douglas_MD82_cargo_subtype_capacity;
+    speed: McDonnell_Douglas_MD82_speed;
+    running_cost_factor: McDonnell_Douglas_MD82_running_cost_factor;
+    sound_effect: McDonnell_Douglas_MD82_sound_effect;
+
+    cost_factor: 51; 
+    purchase_running_cost_factor: 78;
+    purchase_speed: plane_speed_kmh(814); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, McDonnell_Douglas_MD82)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, McDonnell_Douglas_MD82)
+  {
+    property
+    { range: 685; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, McDonnell_Douglas_MD82)
+  {
+    property
+    { range: 1025; }
+  }
+}

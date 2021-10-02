@@ -1,0 +1,513 @@
+START_SECTION(Planes-ATR-42-300) 
+ 
+	A0_PLANES(AIRV_ATR_42_300, 1, 20)
+        00 \w1984-01-01  //Introduction Date
+        02 00  //Decay Speed
+        03 0B  //Vehicle Life In Years
+        04 21  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b17 // Loading speed in pax/"tick"
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()  
+        0C 26  //Speed in mph/8  
+        0D 01  //Acceleration 
+        0F \w48  //Passenger Capacity   
+        11 \b5  //Mail Capacity 
+        12 06  //Sound Effect (Propeller)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0D  //Retire Vehicle Early
+        17 10 
+        18 \wx0001 
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 6	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_ATR_42_300, 1, 1)
+                     1F \w165
+        
+  -1 * 4   10 F1        
+          		
+    A1_PLANES(6,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/(0)Greyscale.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AirSouthwest.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AurignyAirServices.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/HighlandExpress.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/UTair.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/Finnair.pcx
+    spr() 1 1 09 22 46 -23 -11
+    spr() 52 1 09 19 38 -19 -10
+    spr() 95 1 09 23 46 -23 -12
+    spr() 146 1 09 28 39 -20 -14
+    spr() 190 1 09 33 46 -23 -17
+    spr() 241 1 09 28 39 -20 -14
+    spr() 285 1 09 23 46 -23 -12
+    spr() 336 1 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-1F
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   29 * 9	 02 03 04 01 01 \w4 \w4
+   29 * 9	 02 03 05 01 01 \w5 \w5
+
+  142 * 22	 02 03 1A 81 F2 00 FF 06       // In Flight
+                               00 00 00 00 // Greyscale
+                               01 00 01 01 // Air Southwest
+                               02 00 02 02 // Aurigny Air Services
+                               05 00 03 03 // Finnair
+                               03 00 04 04 // Highland Express
+                               04 00 05 05 // UTair			     
+                               FF FF       // End livary graphical selection
+
+    A1_PLANES(6,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/(0)Greyscale.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AirSouthwest.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AurignyAirServices.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/HighlandExpress.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/UTair.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/Finnair.pcx
+    spr() 1 39 09 22 46 -23 -11
+    spr() 52 39 09 19 38 -19 -10
+    spr() 95 39 09 23 46 -23 -12
+    spr() 146 39 09 30 39 -20 -15
+    spr() 190 39 09 34 46 -23 -17
+    spr() 241 39 09 30 39 -20 -15
+    spr() 285 39 09 23 46 -23 -12
+    spr() 336 39 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-1F
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   29 * 9	 02 03 04 01 01 \w4 \w4
+   29 * 9	 02 03 05 01 01 \w5 \w5
+
+  142 * 22	 02 03 2B 81 F2 00 FF 06       // Taxing or Initiating Approach 
+                               00 00 00 00 // Greyscale
+                               01 00 01 01 // Air Southwest
+                               02 00 02 02 // Aurigny Air Services
+                               05 00 03 03 // Finnair
+                               03 00 04 04 // Highland Express
+                               04 00 05 05 // UTair			     
+                               FF FF       // End livary graphical selection
+
+    A1_PLANES(6,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/(0)Greyscale.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AirSouthwest.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AurignyAirServices.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/HighlandExpress.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/UTair.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/Finnair.pcx
+    spr() 1 78 09 33 46 -23 -17
+    spr() 52 78 09 27 38 -19 -14
+    spr() 95 78 09 23 48 -24 -12
+    spr() 147 78 09 17 38 -19 -9
+    spr() 190 78 09 20 44 -22 -10
+    spr() 239 78 09 17 38 -19 -9
+    spr() 283 78 09 23 48 -24 -12
+    spr() 336 78 09 27 38 -19 -14
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-1F
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   29 * 9	 02 03 04 01 01 \w4 \w4
+   29 * 9	 02 03 05 01 01 \w5 \w5
+
+  142 * 22	 02 03 3C 81 F2 00 FF 06       // Take Off 
+                               00 00 00 00 // Greyscale
+                               01 00 01 01 // Air Southwest
+                               02 00 02 02 // Aurigny Air Services
+                               05 00 03 03 // Finnair
+                               03 00 04 04 // Highland Express
+                               04 00 05 05 // UTair			     
+                               FF FF       // End livary graphical selection
+
+    A1_PLANES(6,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/(0)Greyscale.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AirSouthwest.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AurignyAirServices.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/HighlandExpress.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/UTair.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/Finnair.pcx
+    spr() 1 116 09 22 46 -23 -11
+    spr() 52 116 09 19 38 -19 -10
+    spr() 95 116 09 23 46 -23 -12
+    spr() 145 116 09 30 39 -20 -15
+    spr() 189 117 09 34 46 -23 -17
+    spr() 241 117 09 30 39 -20 -15
+    spr() 285 117 09 23 46 -23 -12
+    spr() 336 117 09 19 38 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-1F
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   29 * 9	 02 03 04 01 01 \w4 \w4
+   29 * 9	 02 03 05 01 01 \w5 \w5
+
+  142 * 22	 02 03 4D 81 F2 00 FF 06       // Landed On Runway   
+                               00 00 00 00 // Greyscale
+                               01 00 01 01 // Air Southwest
+                               02 00 02 02 // Aurigny Air Services
+                               05 00 03 03 // Finnair
+                               03 00 04 04 // Highland Express
+                               04 00 05 05 // UTair			     
+                               FF FF       // End livary graphical selection
+
+    A1_PLANES(6,8)
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/(0)Greyscale.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AirSouthwest.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/AurignyAirServices.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/HighlandExpress.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/UTair.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/atr/42-300/Finnair.pcx
+    spr() 1 160 09 26 44 -22 -13 
+    spr() 50 160 09 22 38 -19 -11
+    spr() 94 160 09 23 46 -23 -12
+    spr() 145 160 09 24 39 -20 -12
+    spr() 189 160 09 27 46 -23 -14
+    spr() 241 160 09 24 39 -20 -12
+    spr() 285 160 09 23 46 -23 -12
+    spr() 336 160 09 22 38 -19 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-1F
+   28 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   28 * 9	 02 03 03 01 01 \w3 \w3
+   29 * 9	 02 03 04 01 01 \w4 \w4
+   29 * 9	 02 03 05 01 01 \w5 \w5
+
+  142 * 22	 02 03 5E 81 F2 00 FF 06        // Final Approach   
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // Air Southwest
+                               02 00 02 02  // Aurigny Air Services
+                               05 00 03 03  // Finnair
+                               03 00 04 04  // Highland Express
+                               04 00 05 05  // UTair			     
+                               FF FF        // End livary graphical selection
+
+  147 * 30	 02 03 5F 81 E2 00 FF 05   
+                               2B 00 08 09  // Leaving Runway/Going to the in Way
+                               3C 00 0F 0F  // Airplane climbing after take-off
+                               1A 00 12 12  // Tower contact Point (Initiating Approach)	
+                               5E 00 15 15  // Airplane landing (Descent)
+                               4D 00 16 16  // Airplane braking after touchdown
+                               2B 00        // When flying normally
+
+  148 * 22	 02 03 01 81 F2 00 FF 06        // 6 Liveries
+                               00 80 00 00  // GreyScale
+                               11 80 01 01  // Air Southwest
+                               07 80 02 02  // Aurigny Air
+                               2E 80 03 03  // Finnair
+                               12 80 04 04  // Highland Express
+                               21 80 05 05  // UTair    			        
+                               FF FF        // End livery text selection
+
+   -1 * 0	   02 03 02 81 E2 00 FF 05        // Speed during flight
+				                       13 80 0D 0D  // Leaving Runway/Going to the in Way 
+				                       1B 80 0F 0F  // Airplane climbing after take-off 
+				                       26 80 12 12  // Tower contact Point (Initiating Approach) 
+				                       1A 80 10 14  // Final Approach (Land/Another Pass) 
+				                       10 80 15 16  // Airplane Landing (Descent) 
+				                       00 80
+
+   -1 * 0	   02 03 03 81 E2 00 FF 05         // Cost during flight
+                               \w32828 0D 0F // Take Off
+                               \w32819 12 12 // Flight
+                               \w32821 10 14 // Approach
+                               \w32824 15 16 // Landing
+                               \w32790 08 0C // Grounded	
+                               \w32781       // Parked/Other				
+
+   -1 * 0	   02 03 04 81 10 00 FF 02
+				                       02 00 0C 0C  // Different Speeds
+				                       03 00 0E 0E  // Different Costs
+				                       00 00
+
+   -1 * 0    02 03 05 81 10 00 FF 02
+				                       \w32779 0B 0B // Purchase Cost Purchase List
+				                       \w32819 0E 0E // Running Cost Purchase List
+                               00 00 				
+
+   -1 * 0    02 03 06 81 10 00 FF 02
+                               snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                               snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                               00 00
+
+   -1 * 14	 02 03 07 81 0C 00 FF 03        // Only 3 Callbacks
+                               01 00 19 19  // Livery Text
+                               06 00 33 33  // Play Sound
+                               04 00 36 36  // Change Speed/Cost			
+                               5F 00        // Apply Graphics
+                                  
+   -1 * 0    02 03 08 81 0C 00 FF 01        // Text Callback's (Purchase List)   
+                               05 00 36 36
+                               00 00                                  
+
+  150 * 7	   03 03 01 AIRV_ATR_42_300 01
+                               FF 08 00     // P-List
+                               07 00        // Default  
+END_SECTION(Planes-ATR-42-300)  

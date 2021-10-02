@@ -1,0 +1,261 @@
+
+// Airbus-A350_900
+
+// Template: 
+#define Airbus_A350_900_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 68, 34, -34, -17, ANIM]                                           \
+  [ 75, 1, 60, 30, -30, -15, ANIM]                                           \
+  [140, 1, 70, 35, -35, -18, ANIM]                                           \
+  [215, 1, 57, 41, -29, -21, ANIM]                                           \
+  [280, 1, 66, 42, -33, -21, ANIM]                                           \
+  [353, 1, 57, 41, -29, -21, ANIM]                                           \
+  [415, 1, 70, 35, -35, -18, ANIM]                                           \
+  [490, 1, 60, 30, -30, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 68, 34, -34, -17, ANIM]                                          \
+  [ 75, 50, 60, 30, -30, -15, ANIM]                                          \
+  [140, 50, 70, 35, -35, -18, ANIM]                                          \
+  [215, 50, 57, 41, -29, -21, ANIM]                                          \
+  [280, 50, 66, 42, -33, -21, ANIM]                                          \
+  [353, 50, 57, 41, -29, -21, ANIM]                                          \
+  [415, 50, 70, 35, -35, -18, ANIM]                                          \
+  [490, 50, 60, 30, -30, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 95, 68, 51, -34, -26, ANIM]                                          \
+  [ 75, 95, 57, 44, -29, -22, ANIM]                                          \
+  [140, 95, 70, 36, -35, -18, ANIM]                                          \
+  [215, 95, 58, 28, -29, -14, ANIM]                                          \
+  [280, 95, 66, 19, -33, -10, ANIM]                                          \
+  [353, 95, 58, 28, -29, -14, ANIM]                                          \
+  [415, 95, 70, 36, -35, -18, ANIM]                                          \
+  [490, 95, 57, 44, -29, -22, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 152, 68, 34, -34, -17, ANIM]                                         \
+  [ 75, 152, 60, 30, -30, -15, ANIM]                                         \
+  [140, 152, 70, 35, -35, -18, ANIM]                                         \
+  [215, 152, 57, 41, -29, -21, ANIM]                                         \
+  [280, 152, 66, 42, -33, -21, ANIM]                                         \
+  [353, 152, 57, 41, -29, -21, ANIM]                                         \
+  [415, 152, 70, 35, -35, -18, ANIM]                                         \
+  [490, 152, 60, 30, -30, -15, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 195, 68, 43, -34, -22, ANIM]                                         \
+  [ 75, 195, 59, 36, -30, -18, ANIM]                                         \
+  [140, 195, 68, 36, -34, -18, ANIM]                                         \
+  [215, 195, 58, 36, -29, -18, ANIM]                                         \
+  [280, 195, 66, 36, -33, -18, ANIM]                                         \
+  [353, 195, 58, 36, -29, -18, ANIM]                                         \
+  [415, 195, 68, 36, -34, -18, ANIM]                                         \
+  [490, 195, 59, 36, -30, -18, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/(0)Greyscale.png"
+purchase_sprite(Airbus_A350_900, 415, 1, 70, 35, -35, -18)
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/AirChina.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_AirChina) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/Evelop.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Evelop) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/Fiji.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Fiji) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/Finnair.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/Iberia.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A350/A350-900/Singapore.png"
+Airbus_A350_900_sprite_layout_template(Airbus_A350_900_Singapore) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Greyscale, flight_state())
+{
+  15: Airbus_A350_900_Greyscale_Climbing;
+  18: Airbus_A350_900_Greyscale_Flight;
+  21: Airbus_A350_900_Greyscale_Landing;
+  22: Airbus_A350_900_Greyscale_Touchdown;
+      Airbus_A350_900_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_AirChina, flight_state())
+{
+  15: Airbus_A350_900_AirChina_Climbing;
+  18: Airbus_A350_900_AirChina_Flight;
+  21: Airbus_A350_900_AirChina_Landing;
+  22: Airbus_A350_900_AirChina_Touchdown;
+      Airbus_A350_900_AirChina_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Evelop, flight_state())
+{
+  15: Airbus_A350_900_Evelop_Climbing;
+  18: Airbus_A350_900_Evelop_Flight;
+  21: Airbus_A350_900_Evelop_Landing;
+  22: Airbus_A350_900_Evelop_Touchdown;
+      Airbus_A350_900_Evelop_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Fiji, flight_state())
+{
+  15: Airbus_A350_900_Fiji_Climbing;
+  18: Airbus_A350_900_Fiji_Flight;
+  21: Airbus_A350_900_Fiji_Landing;
+  22: Airbus_A350_900_Fiji_Touchdown;
+      Airbus_A350_900_Fiji_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Finnair, flight_state())
+{
+  15: Airbus_A350_900_Finnair_Climbing;
+  18: Airbus_A350_900_Finnair_Flight;
+  21: Airbus_A350_900_Finnair_Landing;
+  22: Airbus_A350_900_Finnair_Touchdown;
+      Airbus_A350_900_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Iberia, flight_state())
+{
+  15: Airbus_A350_900_Iberia_Climbing;
+  18: Airbus_A350_900_Iberia_Flight;
+  21: Airbus_A350_900_Iberia_Landing;
+  22: Airbus_A350_900_Iberia_Touchdown;
+      Airbus_A350_900_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_Singapore, flight_state())
+{
+  15: Airbus_A350_900_Singapore_Climbing;
+  18: Airbus_A350_900_Singapore_Flight;
+  21: Airbus_A350_900_Singapore_Landing;
+  22: Airbus_A350_900_Singapore_Touchdown;
+      Airbus_A350_900_Singapore_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_sprites, cargo_subtype)
+{
+  1: Airbus_A350_900_AirChina;
+  2: Airbus_A350_900_Evelop;
+  3: Airbus_A350_900_Fiji;
+  4: Airbus_A350_900_Finnair;
+  5: Airbus_A350_900_Iberia;
+  6: Airbus_A350_900_Singapore;
+ Airbus_A350_900_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_running_cost_factor, flight_state())
+{
+  plane_RC(259)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(274); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(443); // airplane climbing after take-off
+      18: return plane_speed_kmh(945); // heading for tower contact point
+  16..20: return plane_speed_kmh(426); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_CHINA);
+  2: string(STR_VLIV_EVELOP);
+  3: string(STR_VLIV_FIJI_AIRWAYS);
+  4: string(STR_VLIV_FINNAIR);
+  5: string(STR_VLIV_IBERIA);
+  6: string(STR_VLIV_SINGAPORE_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A350_900_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 312; // Air China
+   2: return 432; // Evelop
+   3: return 334; // Fiji
+   4: return 297; // Finnair
+   5: return 348; // Iberia
+   6: return 303; // Singapore
+   return 315;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A350_900)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A350_900);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2015), 1, 15);
+    vehicle_life: 30;
+    model_life: get_model_life(2015,2050);
+    retire_early: get_retire_early(2015,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 43;
+    passenger_capacity: 315;
+    mail_capacity: 32;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2700;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A350_900_sprites;
+    purchase: Airbus_A350_900_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A350_900_cargo_subtype_text;
+	passenger_capacity: Airbus_A350_900_cargo_subtype_capacity;
+    speed: Airbus_A350_900_speed;
+    running_cost_factor: Airbus_A350_900_running_cost_factor;
+
+    cost_factor: 220; 
+    purchase_running_cost_factor: 191;
+    purchase_speed: plane_speed_kmh(945); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A350_900)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A350_900)
+  {
+    property
+    { range: 2700; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A350_900)
+  {
+    property
+    { range: 4050; }
+  }
+}

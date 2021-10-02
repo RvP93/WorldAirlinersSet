@@ -1,0 +1,188 @@
+
+// BAe-146-300QT
+
+// Template: 
+#define BAe_146_300QT_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 40, 18, -20, -9 , ANIM]                                           \
+  [ 50, 2, 36, 15, -18, -7 , ANIM]                                           \
+  [ 90, 2, 42, 22, -21, -11, ANIM]                                           \
+  [140, 2, 36, 29, -18, -15, ANIM]                                           \
+  [180, 2, 40, 32, -20, -17, ANIM]                                           \
+  [225, 2, 36, 29, -18, -15, ANIM]                                           \
+  [270, 2, 42, 22, -21, -11, ANIM]                                           \
+  [320, 2, 36, 15, -18, -7 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 40, 40, 18, -20, -9 , ANIM]                                          \
+  [ 50, 40, 36, 15, -18, -7 , ANIM]                                          \
+  [ 90, 40, 42, 22, -21, -11, ANIM]                                          \
+  [140, 40, 36, 29, -18, -15, ANIM]                                          \
+  [180, 40, 40, 32, -20, -16, ANIM]                                          \
+  [225, 40, 36, 29, -18, -15, ANIM]                                          \
+  [270, 40, 42, 22, -21, -11, ANIM]                                          \
+  [320, 40, 36, 15, -18, -7 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 80, 40, 27, -20, -13, ANIM]                                          \
+  [ 50, 80, 37, 23, -19, -8 , ANIM]                                          \
+  [ 90, 80, 44, 21, -22, -11, ANIM]                                          \
+  [140, 80, 36, 18, -18, -9 , ANIM]                                          \
+  [180, 80, 40, 21, -20, -11, ANIM]                                          \
+  [225, 80, 36, 18, -18, -9 , ANIM]                                          \
+  [270, 80, 44, 21, -22, -11, ANIM]                                          \
+  [320, 80, 37, 23, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 110, 40, 18, -20, -9 , ANIM]                                         \
+  [ 50, 110, 36, 15, -18, -7 , ANIM]                                         \
+  [ 90, 110, 42, 22, -21, -11, ANIM]                                         \
+  [140, 110, 36, 29, -18, -15, ANIM]                                         \
+  [180, 110, 40, 32, -20, -16, ANIM]                                         \
+  [225, 110, 36, 29, -15, -15, ANIM]                                         \
+  [270, 110, 42, 22, -21, -11, ANIM]                                         \
+  [320, 110, 36, 15, -18, -7 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 150, 40, 23, -20, -11, ANIM]                                         \
+  [ 50, 150, 37, 18, -18, -9 , ANIM]                                         \
+  [ 90, 150, 44, 20, -22, -10, ANIM]                                         \
+  [140, 150, 37, 25, -18, -13, ANIM]                                         \
+  [180, 150, 40, 29, -20, -15, ANIM]                                         \
+  [225, 150, 37, 25, -18, -13, ANIM]                                         \
+  [270, 150, 44, 20, -22, -10, ANIM]                                         \
+  [320, 150, 37, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/BAe/146-300QT/(0)Greyscale.png"
+purchase_sprite(BAe_146_300QT, 270, 2, 42, 22, -21, -11)
+BAe_146_300QT_sprite_layout_template(BAe_146_300QT_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAe/146-300QT/TNT.png"
+BAe_146_300QT_sprite_layout_template(BAe_146_300QT_TNT) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_Greyscale, flight_state())
+{
+  15: BAe_146_300QT_Greyscale_Climbing;
+  18: BAe_146_300QT_Greyscale_Flight;
+  21: BAe_146_300QT_Greyscale_Landing;
+  22: BAe_146_300QT_Greyscale_Touchdown;
+      BAe_146_300QT_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_TNT, flight_state())
+{
+  15: BAe_146_300QT_TNT_Climbing;
+  18: BAe_146_300QT_TNT_Flight;
+  21: BAe_146_300QT_TNT_Landing;
+  22: BAe_146_300QT_TNT_Touchdown;
+      BAe_146_300QT_TNT_Grounded;
+}
+             
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_sprites, cargo_subtype)
+{
+  1: BAe_146_300QT_TNT;
+     BAe_146_300QT_Greyscale;
+}
+                
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_running_cost_factor, flight_state())
+{
+  plane_RC(66)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(781); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAe_146_300QT_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAE);
+  1: string(STR_VLIV_TNT);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, BAe_146_300QT)
+{
+  property
+  {
+    name: string(STR_AIRV_BAE_146_300QT);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 1, 1);
+    vehicle_life: 14;
+    model_life: get_model_life(1988,2002);
+    retire_early: get_retire_early(1988,2002);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 5;
+    passenger_capacity: 0;
+    mail_capacity: 100;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 495;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAe_146_300QT_sprites;
+    purchase: BAe_146_300QT_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAe_146_300QT_cargo_subtype_text;
+    speed: BAe_146_300QT_speed;
+    running_cost_factor: BAe_146_300QT_running_cost_factor;
+    sound_effect: BAe_146_300QT_sound_effect;
+
+    cost_factor: 24; 
+    purchase_running_cost_factor: 56;
+    purchase_speed: plane_speed_kmh(781); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300QT)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300QT)
+  {
+    property
+    { range: 495; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BAe_146_300QT)
+  {
+    property
+    { range: 745; }
+  }
+}

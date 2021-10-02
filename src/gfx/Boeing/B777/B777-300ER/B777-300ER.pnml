@@ -1,0 +1,524 @@
+
+// Boeing-777-300ER
+
+// Template: 
+#define Boeing_777_300ER_sprite_layout_template(name)                        \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 58, 33, -29, -17, ANIM]                                           \
+  [ 60, 1, 58, 29, -29, -15, ANIM]                                           \
+  [120, 1, 70, 31, -35, -16, ANIM]                                           \
+  [195, 1, 59, 43, -30, -22, ANIM]                                           \
+  [260, 1, 58, 47, -29, -24, ANIM]                                           \
+  [325, 1, 59, 43, -30, -24, ANIM]                                           \
+  [390, 1, 70, 31, -35, -16, ANIM]                                           \
+  [465, 1, 58, 29, -29, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 58, 33, -29, -17, ANIM]                                          \
+  [ 60, 50, 58, 29, -29, -13, ANIM]                                          \
+  [120, 50, 70, 31, -35, -16, ANIM]                                          \
+  [195, 50, 59, 43, -30, -24, ANIM]                                          \
+  [260, 50, 58, 48, -29, -22, ANIM]                                          \
+  [325, 50, 59, 43, -30, -24, ANIM]                                          \
+  [390, 50, 70, 31, -35, -16, ANIM]                                          \
+  [465, 50, 58, 29, -29, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 58, 49, -29, -25, ANIM]                                         \
+  [ 60, 100, 56, 47, -28, -21, ANIM]                                         \
+  [120, 100, 69, 32, -35, -16, ANIM]                                         \
+  [195, 100, 55, 27, -28, -14, ANIM]                                         \
+  [260, 100, 58, 21, -29, -11, ANIM]                                         \
+  [325, 100, 56, 27, -28, -14, ANIM]                                         \
+  [390, 100, 69, 32, -35, -16, ANIM]                                         \
+  [465, 100, 56, 47, -28, -24, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 150, 58, 33, -29, -17, ANIM]                                         \
+  [ 60, 150, 58, 29, -29, -15, ANIM]                                         \
+  [120, 150, 70, 31, -35, -16, ANIM]                                         \
+  [195, 150, 59, 43, -30, -22, ANIM]                                         \
+  [260, 150, 58, 39, -29, -20, ANIM]                                         \
+  [325, 150, 59, 43, -30, -22, ANIM]                                         \
+  [390, 150, 70, 31, -35, -16, ANIM]                                         \
+  [465, 150, 58, 29, -29, -15, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 200, 58, 41, -29, -21, ANIM]                                         \
+  [ 60, 200, 59, 39, -30, -20, ANIM]                                         \
+  [120, 200, 70, 29, -35, -15, ANIM]                                         \
+  [195, 200, 58, 34, -29, -17, ANIM]                                         \
+  [260, 200, 58, 30, -29, -15, ANIM]                                         \
+  [325, 200, 58, 34, -29, -17, ANIM]                                         \
+  [390, 200, 70, 29, -30, -15, ANIM]                                         \
+  [465, 200, 59, 39, -30, -20, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/(0)Greyscale.png"
+purchase_sprite(Boeing_777_300ER, 390, 5, 70, 24, -30, -12)
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Aeroflot.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Aeroflot) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AirCanada.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AirCanada) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AirChina.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AirChina) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AirFrance.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AirIndia.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AirIndia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AirNewZealand.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AirNewZealand) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/AmericanAirlines.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_AmericanAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/ANA.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_ANA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/BritishAirways.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/CathayPacific.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_CathayPacific) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/ChinaEastern.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/EgyptAir.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_EgyptAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Emirates.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Garuda.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Garuda) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/JAL.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_JAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/JALGreen.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_JALGreen) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/KLM.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Korean.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/PIA.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_PIA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Singapore.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Singapore) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Swiss.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/TAAG.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_TAAG) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/VAustralia.png"
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_VAustralia) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Greyscale, flight_state())
+{
+  15: Boeing_777_300ER_Greyscale_Climbing;
+  18: Boeing_777_300ER_Greyscale_Flight;
+  21: Boeing_777_300ER_Greyscale_Landing;
+  22: Boeing_777_300ER_Greyscale_Touchdown;
+      Boeing_777_300ER_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Aeroflot, flight_state())
+{
+  15: Boeing_777_300ER_Aeroflot_Climbing;
+  18: Boeing_777_300ER_Aeroflot_Flight;
+  21: Boeing_777_300ER_Aeroflot_Landing;
+  22: Boeing_777_300ER_Aeroflot_Touchdown;
+      Boeing_777_300ER_Aeroflot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AirCanada, flight_state())
+{
+  15: Boeing_777_300ER_AirCanada_Climbing;
+  18: Boeing_777_300ER_AirCanada_Flight;
+  21: Boeing_777_300ER_AirCanada_Landing;
+  22: Boeing_777_300ER_AirCanada_Touchdown;
+      Boeing_777_300ER_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AirChina, flight_state())
+{
+  15: Boeing_777_300ER_AirChina_Climbing;
+  18: Boeing_777_300ER_AirChina_Flight;
+  21: Boeing_777_300ER_AirChina_Landing;
+  22: Boeing_777_300ER_AirChina_Touchdown;
+      Boeing_777_300ER_AirChina_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AirFrance, flight_state())
+{
+  15: Boeing_777_300ER_AirFrance_Climbing;
+  18: Boeing_777_300ER_AirFrance_Flight;
+  21: Boeing_777_300ER_AirFrance_Landing;
+  22: Boeing_777_300ER_AirFrance_Touchdown;
+      Boeing_777_300ER_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AirIndia, flight_state())
+{
+  15: Boeing_777_300ER_AirIndia_Climbing;
+  18: Boeing_777_300ER_AirIndia_Flight;
+  21: Boeing_777_300ER_AirIndia_Landing;
+  22: Boeing_777_300ER_AirIndia_Touchdown;
+      Boeing_777_300ER_AirIndia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AirNewZealand, flight_state())
+{
+  15: Boeing_777_300ER_AirNewZealand_Climbing;
+  18: Boeing_777_300ER_AirNewZealand_Flight;
+  21: Boeing_777_300ER_AirNewZealand_Landing;
+  22: Boeing_777_300ER_AirNewZealand_Touchdown;
+      Boeing_777_300ER_AirNewZealand_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_AmericanAirlines, flight_state())
+{
+  15: Boeing_777_300ER_AmericanAirlines_Climbing;
+  18: Boeing_777_300ER_AmericanAirlines_Flight;
+  21: Boeing_777_300ER_AmericanAirlines_Landing;
+  22: Boeing_777_300ER_AmericanAirlines_Touchdown;
+      Boeing_777_300ER_AmericanAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_ANA, flight_state())
+{
+  15: Boeing_777_300ER_ANA_Climbing;
+  18: Boeing_777_300ER_ANA_Flight;
+  21: Boeing_777_300ER_ANA_Landing;
+  22: Boeing_777_300ER_ANA_Touchdown;
+      Boeing_777_300ER_ANA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_BritishAirways, flight_state())
+{
+  15: Boeing_777_300ER_BritishAirways_Climbing;
+  18: Boeing_777_300ER_BritishAirways_Flight;
+  21: Boeing_777_300ER_BritishAirways_Landing;
+  22: Boeing_777_300ER_BritishAirways_Touchdown;
+      Boeing_777_300ER_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_CathayPacific, flight_state())
+{
+  15: Boeing_777_300ER_CathayPacific_Climbing;
+  18: Boeing_777_300ER_CathayPacific_Flight;
+  21: Boeing_777_300ER_CathayPacific_Landing;
+  22: Boeing_777_300ER_CathayPacific_Touchdown;
+      Boeing_777_300ER_CathayPacific_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_ChinaEastern, flight_state())
+{
+  15: Boeing_777_300ER_ChinaEastern_Climbing;
+  18: Boeing_777_300ER_ChinaEastern_Flight;
+  21: Boeing_777_300ER_ChinaEastern_Landing;
+  22: Boeing_777_300ER_ChinaEastern_Touchdown;
+      Boeing_777_300ER_ChinaEastern_Grounded;
+}
+	  
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_EgyptAir, flight_state())
+{
+  15: Boeing_777_300ER_EgyptAir_Climbing;
+  18: Boeing_777_300ER_EgyptAir_Flight;
+  21: Boeing_777_300ER_EgyptAir_Landing;
+  22: Boeing_777_300ER_EgyptAir_Touchdown;
+      Boeing_777_300ER_EgyptAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Emirates, flight_state())
+{
+  15: Boeing_777_300ER_Emirates_Climbing;
+  18: Boeing_777_300ER_Emirates_Flight;
+  21: Boeing_777_300ER_Emirates_Landing;
+  22: Boeing_777_300ER_Emirates_Touchdown;
+      Boeing_777_300ER_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Garuda, flight_state())
+{
+  15: Boeing_777_300ER_Garuda_Climbing;
+  18: Boeing_777_300ER_Garuda_Flight;
+  21: Boeing_777_300ER_Garuda_Landing;
+  22: Boeing_777_300ER_Garuda_Touchdown;
+      Boeing_777_300ER_Garuda_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_JAL, flight_state())
+{
+  15: Boeing_777_300ER_JAL_Climbing;
+  18: Boeing_777_300ER_JAL_Flight;
+  21: Boeing_777_300ER_JAL_Landing;
+  22: Boeing_777_300ER_JAL_Touchdown;
+      Boeing_777_300ER_JAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_JALGreen, flight_state())
+{
+  15: Boeing_777_300ER_JALGreen_Climbing;
+  18: Boeing_777_300ER_JALGreen_Flight;
+  21: Boeing_777_300ER_JALGreen_Landing;
+  22: Boeing_777_300ER_JALGreen_Touchdown;
+      Boeing_777_300ER_JALGreen_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_KLM, flight_state())
+{
+  15: Boeing_777_300ER_KLM_Climbing;
+  18: Boeing_777_300ER_KLM_Flight;
+  21: Boeing_777_300ER_KLM_Landing;
+  22: Boeing_777_300ER_KLM_Touchdown;
+      Boeing_777_300ER_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Korean, flight_state())
+{
+  15: Boeing_777_300ER_Korean_Climbing;
+  18: Boeing_777_300ER_Korean_Flight;
+  21: Boeing_777_300ER_Korean_Landing;
+  22: Boeing_777_300ER_Korean_Touchdown;
+      Boeing_777_300ER_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_PIA, flight_state())
+{
+  15: Boeing_777_300ER_PIA_Climbing;
+  18: Boeing_777_300ER_PIA_Flight;
+  21: Boeing_777_300ER_PIA_Landing;
+  22: Boeing_777_300ER_PIA_Touchdown;
+      Boeing_777_300ER_PIA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Singapore, flight_state())
+{
+  15: Boeing_777_300ER_Singapore_Climbing;
+  18: Boeing_777_300ER_Singapore_Flight;
+  21: Boeing_777_300ER_Singapore_Landing;
+  22: Boeing_777_300ER_Singapore_Touchdown;
+      Boeing_777_300ER_Singapore_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_Swiss, flight_state())
+{
+  15: Boeing_777_300ER_Swiss_Climbing;
+  18: Boeing_777_300ER_Swiss_Flight;
+  21: Boeing_777_300ER_Swiss_Landing;
+  22: Boeing_777_300ER_Swiss_Touchdown;
+      Boeing_777_300ER_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_TAAG, flight_state())
+{
+  15: Boeing_777_300ER_TAAG_Climbing;
+  18: Boeing_777_300ER_TAAG_Flight;
+  21: Boeing_777_300ER_TAAG_Landing;
+  22: Boeing_777_300ER_TAAG_Touchdown;
+      Boeing_777_300ER_TAAG_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_VAustralia, flight_state())
+{
+  15: Boeing_777_300ER_VAustralia_Climbing;
+  18: Boeing_777_300ER_VAustralia_Flight;
+  21: Boeing_777_300ER_VAustralia_Landing;
+  22: Boeing_777_300ER_VAustralia_Touchdown;
+      Boeing_777_300ER_VAustralia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_sprites, cargo_subtype)
+{
+   1: Boeing_777_300ER_Aeroflot;
+   2: Boeing_777_300ER_AirCanada;
+   3: Boeing_777_300ER_AirChina;
+   4: Boeing_777_300ER_AirFrance;
+   5: Boeing_777_300ER_AirIndia;
+   6: Boeing_777_300ER_AirNewZealand;
+   7: Boeing_777_300ER_AmericanAirlines;
+   8: Boeing_777_300ER_ANA;
+   9: Boeing_777_300ER_BritishAirways;
+  10: Boeing_777_300ER_CathayPacific;
+  11: Boeing_777_300ER_ChinaEastern; 
+  12: Boeing_777_300ER_EgyptAir;
+  13: Boeing_777_300ER_Emirates;
+  14: Boeing_777_300ER_Garuda;
+  15: Boeing_777_300ER_JAL;
+  16: Boeing_777_300ER_JALGreen;
+  17: Boeing_777_300ER_KLM;
+  18: Boeing_777_300ER_Korean;
+  19: Boeing_777_300ER_PIA;
+  20: Boeing_777_300ER_Singapore;
+  21: Boeing_777_300ER_Swiss;
+  22: Boeing_777_300ER_TAAG;
+  23: Boeing_777_300ER_VAustralia;
+     Boeing_777_300ER_Greyscale;
+}
+	  
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_running_cost_factor, flight_state())
+{
+  plane_RC(225)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(451); // airplane climbing after take-off
+      18: return plane_speed_kmh(951); // heading for tower contact point
+  16..20: return plane_speed_kmh(459); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_cargo_subtype_text, cargo_subtype)
+{
+   0: string(STR_VLIV_BOEING);
+   1: string(STR_VLIV_AEROFLOT);
+   2: string(STR_VLIV_AIR_CANADA);
+   3: string(STR_VLIV_AIR_CHINA);
+   4: string(STR_VLIV_AIR_FRANCE);
+   5: string(STR_VLIV_AIR_INDIA);
+   6: string(STR_VLIV_AIR_NEW_ZEALAND);
+   7: string(STR_VLIV_AMERICAN_AIRLINES);
+   8: string(STR_VLIV_ANA);
+   9: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  10: string(STR_VLIV_CATHAY_PACIFIC);
+  11: string(STR_VLIV_CHINA_EASTERN); 
+  12: string(STR_VLIV_EGYPT_AIR);
+  13: string(STR_VLIV_EMIRATES);
+  14: string(STR_VLIV_GARUDA_INDONESIA);
+  15: string(STR_VLIV_JAL);
+  16: string(STR_VLIV_JAL_GREEN);
+  17: string(STR_VLIV_KLM);
+  18: string(STR_VLIV_KOREAN_AIR);
+  19: string(STR_VLIV_PIA);
+  20: string(STR_VLIV_SINGAPORE_AIRLINES);
+  21: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+  22: string(STR_VLIV_TAAG_ANGOLA_AIRLINES);
+  23: string(STR_VLIV_V_AUSTRALIA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_300ER_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 402;
+  2: return 349;
+  3: return 313;
+  4: return 383;
+  5: return 341;
+  6: return 332;
+  7: return 310;
+  8: return 250;
+  9: return 299;
+ 10: return 340;
+ 11: return 316; 
+ 12: return 346; 
+ 13: return 354;
+ 14: return 318;
+ 15: return 272;
+ 16: return 246;
+ 17: return 408;
+ 18: return 291;
+ 19: return 393;
+ 20: return 278;
+ 21: return 340;
+ 22: return 293;
+ 23: return 361;
+     return 386;
+}
+
+item (FEAT_AIRCRAFT, Boeing_777_300ER)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_777_300ER);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2004), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2004,2050);
+    retire_early: get_retire_early(2004,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 26;
+    passenger_capacity: 386;
+    mail_capacity: 45;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2645;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_777_300ER_sprites;
+    purchase: Boeing_777_300ER_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_777_300ER_cargo_subtype_text;
+	passenger_capacity: Boeing_777_300ER_cargo_subtype_capacity;
+    speed: Boeing_777_300ER_speed;
+    running_cost_factor: Boeing_777_300ER_running_cost_factor;
+    sound_effect: Boeing_777_300ER_sound_effect;
+
+    cost_factor: 288; 
+    purchase_running_cost_factor: 225;
+    purchase_speed: plane_speed_kmh(951); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_300ER)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_300ER)
+  {
+    property
+    { range: 2645; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_300ER)
+  {
+    property
+    { range: 3965; }
+  }
+}

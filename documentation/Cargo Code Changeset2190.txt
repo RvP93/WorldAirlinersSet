@@ -1,0 +1,18 @@
+-switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_cargo_capacity, cargo_type_in_veh)
+-{
+-  GOOD: return 122;
+-  MAIL: return 120;
+-  GOLD: return 118;
+-
+-  WOOL: return 146;
+-  GLAS: return 184;
+-  ENSP: return 59;
+-  FMSP: return 54;
+-  MNSP: return 117;
+-  SGCN: return 33;
+-  FICR: return 61;
+-  RCYC: return 61;
+-  WDPR: return 61;
+-        return 69;
+-}
+-

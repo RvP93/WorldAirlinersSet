@@ -1,0 +1,405 @@
+
+// Boeing-737-500
+
+// Template: 
+#define Boeing_737_500_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 41, 20, -21, -10, ANIM]                                           \
+  [ 50, 1, 33, 17, -17, -9 , ANIM]                                           \
+  [ 90, 1, 40, 23, -20, -12, ANIM]                                           \
+  [135, 1, 34, 29, -17, -15, ANIM]                                           \
+  [175, 1, 41, 29, -21, -15, ANIM]                                           \
+  [220, 1, 34, 29, -17, -15, ANIM]                                           \
+  [260, 1, 40, 23, -20, -12, ANIM]                                           \
+  [310, 1, 33, 17, -17, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 41, 20, -21, -10, ANIM]                                          \
+  [ 50, 35, 33, 17, -17, -9 , ANIM]                                          \
+  [ 90, 35, 40, 23, -20, -12, ANIM]                                          \
+  [135, 35, 34, 29, -17, -15, ANIM]                                          \
+  [175, 35, 41, 29, -21, -15, ANIM]                                          \
+  [220, 35, 34, 29, -17, -15, ANIM]                                          \
+  [260, 35, 40, 23, -20, -12, ANIM]                                          \
+  [310, 35, 33, 17, -17, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 40, 28, -20, -14, ANIM]                                          \
+  [ 50, 70, 33, 25, -17, -13, ANIM]                                          \
+  [ 90, 70, 40, 23, -20, -12, ANIM]                                          \
+  [135, 70, 33, 21, -17, -11, ANIM]                                          \
+  [175, 70, 36, 13, -18, -7 , ANIM]                                          \
+  [220, 70, 33, 21, -17, -11, ANIM]                                          \
+  [260, 70, 40, 23, -20, -12, ANIM]                                          \
+  [310, 70, 33, 25, -17, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 40, 19, -20, -10, ANIM]                                         \
+  [ 50, 100, 33, 17, -17, -9 , ANIM]                                         \
+  [ 90, 100, 40, 23, -20, -12, ANIM]                                         \
+  [135, 100, 34, 29, -17, -15, ANIM]                                         \
+  [175, 100, 40, 24, -20, -12, ANIM]                                         \
+  [220, 100, 34, 29, -17, -15, ANIM]                                         \
+  [260, 100, 40, 23, -20, -12, ANIM]                                         \
+  [310, 100, 33, 17, -17, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 40, 23, -20, -12, ANIM]                                         \
+  [ 50, 135, 35, 20, -18, -10, ANIM]                                         \
+  [ 90, 135, 40, 23, -20, -12, ANIM]                                         \
+  [135, 135, 34, 25, -17, -13, ANIM]                                         \
+  [175, 135, 40, 18, -20, -9 , ANIM]                                         \
+  [220, 135, 34, 25, -17, -13, ANIM]                                         \
+  [260, 135, 40, 23, -20, -12, ANIM]                                         \
+  [310, 135, 35, 20, -18, -10, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/(0)Greyscale.png"
+purchase_sprite(Boeing_737_500, 260, 1, 40, 23, -20, -12)
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/AirBaltic.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_AirBaltic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/AirBerlin.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_AirBerlin) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/AirDo.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_AirDo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/AirFrance.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Albawings.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Albawings) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/ANA.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_ANA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Belavia.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Belavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/BritishAirwaysLandor.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_BritishAirwaysLandor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Continental.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/LOT.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Lufthansa.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/SAS.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Tunisair.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Tunisair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/United.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_United) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/UTAir.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_UTAir) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Greyscale, flight_state())
+{
+  15: Boeing_737_500_Greyscale_Climbing;
+  18: Boeing_737_500_Greyscale_Flight;
+  21: Boeing_737_500_Greyscale_Landing;
+  22: Boeing_737_500_Greyscale_Touchdown;
+      Boeing_737_500_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_AirBaltic, flight_state())
+{
+  15: Boeing_737_500_AirBaltic_Climbing;
+  18: Boeing_737_500_AirBaltic_Flight;
+  21: Boeing_737_500_AirBaltic_Landing;
+  22: Boeing_737_500_AirBaltic_Touchdown;
+      Boeing_737_500_AirBaltic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_AirBerlin, flight_state())
+{
+  15: Boeing_737_500_AirBerlin_Climbing;
+  18: Boeing_737_500_AirBerlin_Flight;
+  21: Boeing_737_500_AirBerlin_Landing;
+  22: Boeing_737_500_AirBerlin_Touchdown;
+      Boeing_737_500_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_AirDo, flight_state())
+{
+  15: Boeing_737_500_AirDo_Climbing;
+  18: Boeing_737_500_AirDo_Flight;
+  21: Boeing_737_500_AirDo_Landing;
+  22: Boeing_737_500_AirDo_Touchdown;
+      Boeing_737_500_AirDo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_AirFrance, flight_state())
+{
+  15: Boeing_737_500_AirFrance_Climbing;
+  18: Boeing_737_500_AirFrance_Flight;
+  21: Boeing_737_500_AirFrance_Landing;
+  22: Boeing_737_500_AirFrance_Touchdown;
+      Boeing_737_500_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Albawings, flight_state())
+{
+  15: Boeing_737_500_Albawings_Climbing;
+  18: Boeing_737_500_Albawings_Flight;
+  21: Boeing_737_500_Albawings_Landing;
+  22: Boeing_737_500_Albawings_Touchdown;
+      Boeing_737_500_Albawings_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_ANA, flight_state())
+{
+  15: Boeing_737_500_ANA_Climbing;
+  18: Boeing_737_500_ANA_Flight;
+  21: Boeing_737_500_ANA_Landing;
+  22: Boeing_737_500_ANA_Touchdown;
+      Boeing_737_500_ANA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Belavia, flight_state())
+{
+  15: Boeing_737_500_Belavia_Climbing;
+  18: Boeing_737_500_Belavia_Flight;
+  21: Boeing_737_500_Belavia_Landing;
+  22: Boeing_737_500_Belavia_Touchdown;
+      Boeing_737_500_Belavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_BritishAirwaysLandor, flight_state())
+{
+  15: Boeing_737_500_BritishAirwaysLandor_Climbing;
+  18: Boeing_737_500_BritishAirwaysLandor_Flight;
+  21: Boeing_737_500_BritishAirwaysLandor_Landing;
+  22: Boeing_737_500_BritishAirwaysLandor_Touchdown;
+      Boeing_737_500_BritishAirwaysLandor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Continental, flight_state())
+{
+  15: Boeing_737_500_Continental_Climbing;
+  18: Boeing_737_500_Continental_Flight;
+  21: Boeing_737_500_Continental_Landing;
+  22: Boeing_737_500_Continental_Touchdown;
+      Boeing_737_500_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_LOT, flight_state())
+{
+  15: Boeing_737_500_LOT_Climbing;
+  18: Boeing_737_500_LOT_Flight;
+  21: Boeing_737_500_LOT_Landing;
+  22: Boeing_737_500_LOT_Touchdown;
+      Boeing_737_500_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Lufthansa, flight_state())
+{
+  15: Boeing_737_500_Lufthansa_Climbing;
+  18: Boeing_737_500_Lufthansa_Flight;
+  21: Boeing_737_500_Lufthansa_Landing;
+  22: Boeing_737_500_Lufthansa_Touchdown;
+      Boeing_737_500_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_SAS, flight_state())
+{
+  15: Boeing_737_500_SAS_Climbing;
+  18: Boeing_737_500_SAS_Flight;
+  21: Boeing_737_500_SAS_Landing;
+  22: Boeing_737_500_SAS_Touchdown;
+      Boeing_737_500_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Tunisair, flight_state())
+{
+  15: Boeing_737_500_Tunisair_Climbing;
+  18: Boeing_737_500_Tunisair_Flight;
+  21: Boeing_737_500_Tunisair_Landing;
+  22: Boeing_737_500_Tunisair_Touchdown;
+      Boeing_737_500_Tunisair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_United, flight_state())
+{
+  15: Boeing_737_500_United_Climbing;
+  18: Boeing_737_500_United_Flight;
+  21: Boeing_737_500_United_Landing;
+  22: Boeing_737_500_United_Touchdown;
+      Boeing_737_500_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_UTAir, flight_state())
+{
+  15: Boeing_737_500_UTAir_Climbing;
+  18: Boeing_737_500_UTAir_Flight;
+  21: Boeing_737_500_UTAir_Landing;
+  22: Boeing_737_500_UTAir_Touchdown;
+      Boeing_737_500_UTAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_sprites, cargo_subtype)
+{
+  1: Boeing_737_500_AirBaltic;
+  2: Boeing_737_500_AirBerlin;
+  3: Boeing_737_500_AirDo;
+  4: Boeing_737_500_AirFrance;
+  5: Boeing_737_500_Albawings;
+  6: Boeing_737_500_ANA;
+  7: Boeing_737_500_Belavia;
+  8: Boeing_737_500_BritishAirwaysLandor;
+  9: Boeing_737_500_Continental;
+ 10: Boeing_737_500_LOT;
+ 11: Boeing_737_500_Lufthansa;
+ 12: Boeing_737_500_SAS;
+ 13: Boeing_737_500_Tunisair;
+ 14: Boeing_737_500_United;
+ 15: Boeing_737_500_UTAir;
+	 Boeing_737_500_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_running_cost_factor, flight_state())
+{
+  plane_RC(75)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(959); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_BALTIC);
+  2: string(STR_VLIV_AIR_BERLIN);
+  3: string(STR_VLIV_AIR_DO);
+  4: string(STR_VLIV_AIR_FRANCE);
+  5: string(STR_VLIV_ALBAWINGS);
+  6: string(STR_VLIV_ANA);
+  7: string(STR_VLIV_BELAVIA);
+  8: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+  9: string(STR_VLIV_CONTINENTAL);
+ 10: string(STR_VLIV_LOT);
+ 11: string(STR_VLIV_LUFTHANSA);
+ 12: string(STR_VLIV_SAS);
+ 13: string(STR_VLIV_TUNISAIR);
+ 14: string(STR_VLIV_UNITED_AIRLINES);
+ 15: string(STR_VLIV_UTAIR);  
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 120; // Air Baltic
+  2: return 104; // Air Berlin
+  3: return 126; // Air Do
+  4: return 112; // Air France
+  5: return 132; // Albawings
+  6: return 126; // ANA
+  7: return 123; // Belavia
+  8: return 110; // British Airways
+  9: return 114; // Continental
+ 10: return 108; // LOT
+ 11: return 120; // Lufthansa
+ 12: return 120; // SAS
+ 13: return 114; // Tunisair
+ 14: return 114; // United
+ 15: return 126; // Utair
+     return 108;
+}
+
+item (FEAT_AIRCRAFT, Boeing_737_500)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_737_500);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1990), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1990,2000);
+    retire_early: get_retire_early(1990,2000);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 108;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 800;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_737_500_sprites;
+    purchase: Boeing_737_500_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_737_500_cargo_subtype_text;
+	passenger_capacity: Boeing_737_500_cargo_subtype_capacity;
+    speed: Boeing_737_500_speed;
+    running_cost_factor: Boeing_737_500_running_cost_factor;
+    sound_effect: Boeing_737_500_sound_effect;
+
+    cost_factor: 53; 
+    purchase_running_cost_factor: 75;
+    purchase_speed: plane_speed_kmh(910); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_500)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_500)
+  {
+    property
+    { range: 800; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_500)
+  {
+    property
+    { range: 1200; }
+  }
+}

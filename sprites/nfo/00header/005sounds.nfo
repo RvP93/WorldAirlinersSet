@@ -1,0 +1,11 @@
+START_SECTION(Sounds)
+    act(11) \w2 // define 2 sounds using action 11
+
+    -1 ** sprites/pcx/atr/sound/av_landturbo.wav
+    -1 ** sprites/pcx/atr/sound/av_turbogo.wav
+
+    # // define ids
+    # define snd_av_landturbo 49
+    # define snd_av_turbogo   4A
+
+END_SECTION(Sounds)

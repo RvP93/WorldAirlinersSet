@@ -1,0 +1,11 @@
+//CargoDest Costs
+-1 * 6   00 08 01 01 11 08 09 // Purchase Price
+-1 * 6   00 08 01 01 2D 08 0A // Running Costs
+-1 * 6	 09 00 01 02 01 F0  // (skip to F0)
+
+//Default Costs
+-1 * 6   00 08 01 01 11 08 0A // Purchase Price
+-1 * 6   00 08 01 01 2D 08 0C // Running Costs
+
+// Target of the skip for chosing next parameter
+-1 * 2	 10 F0

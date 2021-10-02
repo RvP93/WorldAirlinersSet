@@ -1,0 +1,239 @@
+
+// Bombardier-CRJ200LR
+
+// Template: 
+#define Bombardier_CRJ200LR_sprite_layout_template(name)                     \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 28, 19, -14, -10, ANIM]                                           \
+  [ 35, 1, 33, 16, -17, -8 , ANIM]                                           \
+  [ 70, 1, 37, 20, -19, -10, ANIM]                                           \
+  [115, 1, 30, 23, -15, -7 , ANIM]                                           \
+  [155, 1, 30, 27, -15, -14, ANIM]                                           \
+  [190, 1, 30, 23, -15, -7 , ANIM]                                           \
+  [225, 1, 37, 20, -19, -10, ANIM]                                           \
+  [270, 1, 33, 16, -17, -8 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 30, 28, 19, -14, -10, ANIM]                                          \
+  [ 35, 30, 33, 16, -17, -8 , ANIM]                                          \
+  [ 70, 30, 37, 20, -19, -10, ANIM]                                          \
+  [115, 30, 30, 24, -15, -12, ANIM]                                          \
+  [155, 30, 30, 28, -15, -14, ANIM]                                          \
+  [190, 30, 30, 24, -15, -12, ANIM]                                          \
+  [225, 30, 37, 20, -19, -10, ANIM]                                          \
+  [270, 30, 33, 16, -17, -8 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 28, 24, -14, -12, ANIM]                                          \
+  [ 35, 70, 34, 22, -17, -11, ANIM]                                          \
+  [ 70, 70, 38, 19, -19, -10, ANIM]                                          \
+  [115, 70, 34, 17, -17, -9 , ANIM]                                          \
+  [155, 70, 30, 20, -15, -10, ANIM]                                          \
+  [190, 70, 34, 17, -17, -9 , ANIM]                                          \
+  [225, 70, 38, 19, -19, -10, ANIM]                                          \
+  [270, 70, 34, 22, -17, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 28, 19, -14, -10, ANIM]                                         \
+  [ 35, 100, 33, 16, -17, -8 , ANIM]                                         \
+  [ 70, 100, 37, 20, -19, -10, ANIM]                                         \
+  [115, 100, 30, 24, -15, -12, ANIM]                                         \
+  [155, 100, 30, 28, -15, -14, ANIM]                                         \
+  [190, 100, 30, 24, -15, -12, ANIM]                                         \
+  [255, 100, 37, 20, -19, -10, ANIM]                                         \
+  [270, 100, 33, 16, -17, -8 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 130, 28, 22, -14, -11, ANIM]                                         \
+  [ 35, 130, 33, 19, -17, -10, ANIM]                                         \
+  [ 70, 130, 40, 18, -20, -9 , ANIM]                                         \
+  [115, 130, 30, 19, -15, -10, ANIM]                                         \
+  [155, 130, 30, 25, -15, -13, ANIM]                                         \
+  [190, 130, 30, 19, -15, -10, ANIM]                                         \
+  [225, 130, 40, 18, -20, -9 , ANIM]                                         \
+  [270, 130, 33, 19, -17, -10, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/(0)Greyscale.png"
+purchase_sprite(Bombardier_CRJ200LR, 225, 1, 37, 20, -19, -10)
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/Adria.png"
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Adria) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/AmaszonasParaguay.png"
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_AmaszonasParaguay) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/Rwanda.png"
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Rwanda) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/UTAir.png"
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_UTAir) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_Greyscale, flight_state())
+{
+  15: Bombardier_CRJ200LR_Greyscale_Climbing;
+  18: Bombardier_CRJ200LR_Greyscale_Flight;
+  21: Bombardier_CRJ200LR_Greyscale_Landing;
+  22: Bombardier_CRJ200LR_Greyscale_Touchdown;
+      Bombardier_CRJ200LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_Adria, flight_state())
+{
+  15: Bombardier_CRJ200LR_Adria_Climbing;
+  18: Bombardier_CRJ200LR_Adria_Flight;
+  21: Bombardier_CRJ200LR_Adria_Landing;
+  22: Bombardier_CRJ200LR_Adria_Touchdown;
+      Bombardier_CRJ200LR_Adria_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_AmaszonasParaguay, flight_state())
+{
+  15: Bombardier_CRJ200LR_AmaszonasParaguay_Climbing;
+  18: Bombardier_CRJ200LR_AmaszonasParaguay_Flight;
+  21: Bombardier_CRJ200LR_AmaszonasParaguay_Landing;
+  22: Bombardier_CRJ200LR_AmaszonasParaguay_Touchdown;
+      Bombardier_CRJ200LR_AmaszonasParaguay_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_Rwanda, flight_state())
+{
+  15: Bombardier_CRJ200LR_Rwanda_Climbing;
+  18: Bombardier_CRJ200LR_Rwanda_Flight;
+  21: Bombardier_CRJ200LR_Rwanda_Landing;
+  22: Bombardier_CRJ200LR_Rwanda_Touchdown;
+      Bombardier_CRJ200LR_Rwanda_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_UTAir, flight_state())
+{
+  15: Bombardier_CRJ200LR_UTAir_Climbing;
+  18: Bombardier_CRJ200LR_UTAir_Flight;
+  21: Bombardier_CRJ200LR_UTAir_Landing;
+  22: Bombardier_CRJ200LR_UTAir_Touchdown;
+      Bombardier_CRJ200LR_UTAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_sprites, cargo_subtype)
+{
+  1: Bombardier_CRJ200LR_Adria;
+  2: Bombardier_CRJ200LR_AmaszonasParaguay;
+  3: Bombardier_CRJ200LR_Rwanda;
+  4: Bombardier_CRJ200LR_UTAir;
+     Bombardier_CRJ200LR_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_running_cost_factor, flight_state())
+{
+  plane_RC(31)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(386); // airplane climbing after take-off
+      18: return plane_speed_kmh(814); // heading for tower contact point
+  16..20: return plane_speed_kmh(322); // in flight
+  21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOMBARDIER);
+  1: string(STR_VLIV_ADRIA_AIRWAYS);
+  2: string(STR_VLIV_AMASZONAS_PARAGUAY);
+  3: string(STR_VLIV_RWANDAIR);
+  4: string(STR_VLIV_UTAIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 48;
+  2: return 50;
+  3: return 50;
+  4: return 50;
+     return 50;
+}
+
+item (FEAT_AIRCRAFT, Bombardier_CRJ200LR)
+{
+  property
+  {
+    name: string(STR_AIRV_BOMBARDIER_CRJ200LR);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1996), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1996,2010);
+    retire_early: get_retire_early(1996,2010);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 17;
+    passenger_capacity: 50;
+    mail_capacity: 5;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 670;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Bombardier_CRJ200LR_sprites;
+    purchase: Bombardier_CRJ200LR_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Bombardier_CRJ200LR_cargo_subtype_text;
+	passenger_capacity: Bombardier_CRJ200LR_cargo_subtype_capacity;
+    speed: Bombardier_CRJ200LR_speed;
+    running_cost_factor: Bombardier_CRJ200LR_running_cost_factor;
+    sound_effect: Bombardier_CRJ200LR_sound_effect;
+
+    cost_factor: 28; 
+    purchase_running_cost_factor: 31;
+    purchase_speed: plane_speed_kmh(814); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ200LR)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ200LR)
+  {
+    property
+    { range: 670; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ200LR)
+  {
+    property
+    { range: 1000; }
+  }
+}

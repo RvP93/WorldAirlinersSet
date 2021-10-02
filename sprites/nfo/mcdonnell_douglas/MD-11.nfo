@@ -1,0 +1,324 @@
+START_SECTION(Planes-MCDONNELL-DOUGLAS-MD-11)
+
+    A0_PLANES(AIRV_MCDONNELL_DOUGLAS_MD_11, 1, 18)
+        00 \w1988-01-01  //Introduction Date
+        03 1E  //Vehicle Life In Years
+        04 0C  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b10 // Loading Speed
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_LARGE()
+        0C 49  //Speed in mph/8 
+        0D 02  // Accleration
+        0F \w410  //Passenger Capacity   
+        11 \b41  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_MCDONNELL_DOUGLAS_MD_11, 1, 1)
+                     1F \w2280
+        
+  -1 * 0   10 F1
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx
+    spr() 01 01 09 29 56 -28 -15
+    spr() 65 01 09 27 54 -27 -14
+    spr() 130 01 09 30 61 -31 -15
+    spr() 210 01 09 37 54 -27 -19
+    spr() 275 01 09 42 56 -28 -21
+    spr() 340 01 09 37 54 -27 -19
+    spr() 405 01 09 30 61 -31 -15
+    spr() 485 01 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/Finnair.pcx
+    spr() 01 01 09 29 56 -28 -15
+    spr() 65 01 09 27 54 -27 -14
+    spr() 130 01 09 30 61 -31 -15
+    spr() 210 01 09 37 54 -27 -19
+    spr() 275 01 09 42 56 -28 -21
+    spr() 340 01 09 37 54 -27 -19
+    spr() 405 01 09 30 61 -31 -15
+    spr() 485 01 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/KLM.pcx
+    spr() 01 01 09 29 56 -28 -15
+    spr() 65 01 09 27 54 -27 -14
+    spr() 130 01 09 30 61 -31 -15
+    spr() 210 01 09 37 54 -27 -19
+    spr() 275 01 09 42 56 -28 -21
+    spr() 340 01 09 37 54 -27 -19
+    spr() 405 01 09 30 61 -31 -15
+    spr() 485 01 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F0 81 F2 00 FF 03 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Finnair
+                             02 00 02 02 // KLM				     
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx
+    spr() 01 50 09 29 56 -28 -15
+    spr() 65 50 09 27 54 -27 -14
+    spr() 130 50 09 30 61 -31 -15
+    spr() 210 50 09 38 54 -27 -19
+    spr() 275 50 09 42 56 -28 -21
+    spr() 340 50 09 38 54 -27 -19
+    spr() 405 50 09 30 61 -31 -15
+    spr() 485 50 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/Finnair.pcx
+    spr() 01 50 09 29 56 -28 -15
+    spr() 65 50 09 27 54 -27 -14
+    spr() 130 50 09 30 61 -31 -15
+    spr() 210 50 09 38 54 -27 -19
+    spr() 275 50 09 42 56 -28 -21
+    spr() 340 50 09 38 54 -27 -19
+    spr() 405 50 09 30 61 -31 -15
+    spr() 485 50 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/KLM.pcx
+    spr() 01 50 09 29 56 -28 -15
+    spr() 65 50 09 27 54 -27 -14
+    spr() 130 50 09 30 61 -31 -15
+    spr() 210 50 09 38 54 -27 -19
+    spr() 275 50 09 42 56 -28 -21
+    spr() 340 50 09 38 54 -27 -19
+    spr() 405 50 09 30 61 -31 -15
+    spr() 485 50 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  143 * 22	 02 03 F1 81 F2 00 FF 03 // Taxing or Initiating Approach   
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Finnair
+                             02 00 02 02 // KLM			     
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx
+    spr() 01 100 09 42 56 -28 -21
+    spr() 65 100 09 39 53 -27 -20
+    spr() 130 100 09 29 61 -31 -15
+    spr() 210 100 09 25 52 -26 -13
+    spr() 275 100 09 23 54 -27 -12
+    spr() 340 100 09 25 52 -26 -13
+    spr() 405 100 09 29 61 -31 -15
+    spr() 485 100 09 39 53 -27 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/Finnair.pcx
+    spr() 01 100 09 42 56 -28 -21
+    spr() 65 100 09 39 53 -27 -20
+    spr() 130 100 09 29 61 -31 -15
+    spr() 210 100 09 25 52 -26 -13
+    spr() 275 100 09 23 54 -27 -12
+    spr() 340 100 09 25 52 -26 -13
+    spr() 405 100 09 29 61 -31 -15
+    spr() 485 100 09 39 53 -27 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/KLM.pcx
+    spr() 01 100 09 42 56 -28 -21
+    spr() 65 100 09 39 53 -27 -20
+    spr() 130 100 09 29 61 -31 -15
+    spr() 210 100 09 25 52 -26 -13
+    spr() 275 100 09 23 54 -27 -12
+    spr() 340 100 09 25 52 -26 -13
+    spr() 405 100 09 29 61 -31 -15
+    spr() 485 100 09 39 53 -27 -20
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  144 * 22	 02 03 F2 81 F2 00 FF 03 // Take Off 
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Finnair
+                             02 00 02 02 // KLM			     
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx
+    spr() 01 155 09 29 56 -28 15
+    spr() 65 155 09 27 54 -27 -14
+    spr() 130 155 09 30 61 -31 -15
+    spr() 210 155 09 38 54 -27 -19
+    spr() 275 155 09 38 56 -28 -19
+    spr() 340 155 09 38 54 -27 -19
+    spr() 405 155 09 30 61 -31 -15
+    spr() 485 155 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/Finnair.pcx
+    spr() 01 155 09 29 56 -28 15
+    spr() 65 155 09 27 54 -27 -14
+    spr() 130 155 09 30 61 -31 -15
+    spr() 210 155 09 38 54 -27 -19
+    spr() 275 155 09 38 56 -28 -19
+    spr() 340 155 09 38 54 -27 -19
+    spr() 405 155 09 30 61 -31 -15
+    spr() 485 155 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/KLM.pcx
+    spr() 01 155 09 29 56 -28 15
+    spr() 65 155 09 27 54 -27 -14
+    spr() 130 155 09 30 61 -31 -15
+    spr() 210 155 09 38 54 -27 -19
+    spr() 275 155 09 38 56 -28 -19
+    spr() 340 155 09 38 54 -27 -19
+    spr() 405 155 09 30 61 -31 -15
+    spr() 485 155 09 27 54 -27 -14
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  145 * 22	 02 03 F3 81 F2 00 FF 03 // Landed On Runway 
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Finnair
+                             02 00 02 02 // KLM			     
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx
+    spr() 01 215 09 37 56 -28 -19
+    spr() 65 215 09 34 54 -27 -17
+    spr() 130 215 09 30 62 -31 -15
+    spr() 210 215 09 31 53 -27 -16
+    spr() 275 215 09 31 56 -28 -16
+    spr() 340 215 09 31 53 -27 -16
+    spr() 405 215 09 30 61 -31 -15
+    spr() 485 215 09 34 54 -27 -17
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/Finnair.pcx
+    spr() 01 215 09 37 56 -28 -19
+    spr() 65 215 09 34 54 -27 -17
+    spr() 130 215 09 30 62 -31 -15
+    spr() 210 215 09 31 53 -27 -16
+    spr() 275 215 09 31 56 -28 -16
+    spr() 340 215 09 31 53 -27 -16
+    spr() 405 215 09 30 61 -31 -15
+    spr() 485 215 09 34 54 -27 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md11/KLM.pcx
+    spr() 01 215 09 37 56 -28 -19
+    spr() 65 215 09 34 54 -27 -17
+    spr() 130 215 09 30 62 -31 -15
+    spr() 210 215 09 31 53 -27 -16
+    spr() 275 215 09 31 56 -28 -16
+    spr() 340 215 09 31 53 -27 -16
+    spr() 405 215 09 30 61 -31 -15
+    spr() 485 215 09 34 54 -27 -17
+    #undef SPRITE_LOCATION
+   
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  146 * 22	 02 03 F4 81 F2 00 FF 03 // Final Approach 
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Finnair
+                             02 00 02 02 // KLM		     
+                             FF FF       // End livary graphical selection
+
+   A1_PLANES(1,1)
+
+    -1 sprites/pcx/mcdonnell_douglas/md11/(0)Greyscale.pcx 405 07 09 21 61 -31 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 03          // 2 liveries
+                             00 80 00 00 // Greyscale
+                             2E 80 01 01 // Finnair
+                             73 80 02 02 // KLM 
+                             FF FF       // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             18 80 0D 0D   // Take Off 
+                             26 80 0F 0F   // Climbing
+                             49 80 12 12   // Flight
+                             25 80 10 14   // Approach
+                             16 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32984 0D 0F // Take Off
+                             \w32967 12 12 // Flight
+                             \w32970 10 14 // Approach
+                             \w32977 15 16 // Landing
+                             \w32898 08 0C // Grounded	
+                             \w32868       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32905 0B 0B //Purchase Cost Purchase List
+				                     \w32967 0E 0E //Running Cost Purchase List
+                             00 00 				
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             4C 00 
+
+  150 * 7	 03 03 01 AIRV_MCDONNELL_DOUGLAS_MD_11 01
+                             FF 08 00   // P-List
+                             07 00      // Default    
+
+END_SECTION(Planes-MCDONNELL-DOUGLAS-MD-11)

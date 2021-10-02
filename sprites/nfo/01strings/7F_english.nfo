@@ -1,0 +1,297 @@
+START_SECTION(Language-English)
+// Language: English
+
+// put all livery names here, and/or purchase text window info and/or error messages
+#define LANG ANY
+// -----------------------------
+// ------- Vehicle Names -------
+// -----------------------------
+
+// -------- Aeroplanes --------
+
+DEF_AIRV_NAME(AIRV_AIRBUS_A300_600R           , "Airbus A300-600R")
+DEF_AIRV_NAME(AIRV_AIRBUS_A318                , "Airbus A318")
+DEF_AIRV_NAME(AIRV_AIRBUS_A319                , "Airbus A319")
+DEF_AIRV_NAME(AIRV_AIRBUS_A320_200            , "Airbus A320-200")
+DEF_AIRV_NAME(AIRV_AIRBUS_A321                , "Airbus A321")
+DEF_AIRV_NAME(AIRV_AIRBUS_A330_200            , "     Airbus A330-200")
+DEF_AIRV_NAME(AIRV_AIRBUS_A330_300            , "     Airbus A330-300")
+DEF_AIRV_NAME(AIRV_AIRBUS_A340_300            , "     Airbus A340-300")
+DEF_AIRV_NAME(AIRV_AIRBUS_A340_500            , "     Airbus A340-500")
+DEF_AIRV_NAME(AIRV_AIRBUS_A340_600            , "     Airbus A340-600")
+DEF_AIRV_NAME(AIRV_AIRBUS_A380_800            , "     Airbus A380-800")
+DEF_AIRV_NAME(AIRV_AIRBUS_A380_800F           , "     Airbus A380-800F")
+DEF_AIRV_NAME(AIRV_AIRBUS_A380_900            , "     Airbus A380-900")
+DEF_AIRV_NAME(AIRV_ATR_42_300                 , "ATR 42-300")
+DEF_AIRV_NAME(AIRV_ATR_42_300F                , "ATR 42-300F")
+DEF_AIRV_NAME(AIRV_ATR_42_500                 , "ATR 42-500")
+DEF_AIRV_NAME(AIRV_ATR_72_200                 , "ATR 72-200")
+DEF_AIRV_NAME(AIRV_ATR_72_200F                , "ATR 72-200F")
+DEF_AIRV_NAME(AIRV_ATR_72_500                 , "ATR 72-500")
+DEF_AIRV_NAME(AIRV_BAC_1_11_200               , "BAC 1-11-200")
+DEF_AIRV_NAME(AIRV_BAC_1_11_300               , "BAC 1-11-300")
+DEF_AIRV_NAME(AIRV_BAC_CONCORDE               , "        Aerospatiale/BAC Concorde")
+DEF_AIRV_NAME(AIRV_BAE_146_300                , "British Aerospace 146-300")
+DEF_AIRV_NAME(AIRV_BOEING_717_200             , "Boeing 717-200")
+DEF_AIRV_NAME(AIRV_BOEING_727_200             , "Boeing 727-200")
+DEF_AIRV_NAME(AIRV_BOEING_737_100             , "Boeing 737-100")
+DEF_AIRV_NAME(AIRV_BOEING_737_200             , "Boeing 737-200")
+DEF_AIRV_NAME(AIRV_BOEING_737_300             , "Boeing 737-300")
+DEF_AIRV_NAME(AIRV_BOEING_737_300F            , "Boeing 737-300F")
+DEF_AIRV_NAME(AIRV_BOEING_737_400             , "Boeing 737-400")
+DEF_AIRV_NAME(AIRV_BOEING_737_500             , "Boeing 737-500")
+DEF_AIRV_NAME(AIRV_BOEING_737_600             , "Boeing 737-600")
+DEF_AIRV_NAME(AIRV_BOEING_737_700             , "Boeing 737-700")
+DEF_AIRV_NAME(AIRV_BOEING_737_800             , "Boeing 737-800")
+DEF_AIRV_NAME(AIRV_BOEING_737_900             , "Boeing 737-900")
+DEF_AIRV_NAME(AIRV_BOEING_737_900ER           , "Boeing 737-900ER")
+DEF_AIRV_NAME(AIRV_BOEING_747_200             , "     Boeing 747-200")
+DEF_AIRV_NAME(AIRV_BOEING_747_400             , "     Boeing 747-400")
+DEF_AIRV_NAME(AIRV_BOEING_747_400D            , "     Boeing 747-400D")
+DEF_AIRV_NAME(AIRV_BOEING_747_400BCF          , "     Boeing 747-400 BCF")
+DEF_AIRV_NAME(AIRV_BOEING_747_400SCD          , "     Boeing 747-400F SCD")
+DEF_AIRV_NAME(AIRV_BOEING_747_400ERF          , "     Boeing 747-400ERF SCD")
+DEF_AIRV_NAME(AIRV_BOEING_757_200             , "     Boeing 757-200")
+DEF_AIRV_NAME(AIRV_BOEING_767_300             , "     Boeing 767-300")
+DEF_AIRV_NAME(AIRV_BOEING_767_300ER           , "     Boeing 767-300ER")
+DEF_AIRV_NAME(AIRV_BOEING_777_200             , "     Boeing 777-200")
+DEF_AIRV_NAME(AIRV_BOEING_777_200ER           , "     Boeing 777-200ER")
+DEF_AIRV_NAME(AIRV_BOEING_777_200LR           , "     Boeing 777-200LR")
+DEF_AIRV_NAME(AIRV_BOEING_777_300             , "     Boeing 777-300")
+DEF_AIRV_NAME(AIRV_BOMBARDIER_DASH_8_400Q     , "  Bombardier Dash 8 Q400")
+DEF_AIRV_NAME(AIRV_BOMBARDIER_CRJ100_200      , "  Bombardier CRJ-100/200")
+DEF_AIRV_NAME(AIRV_EMBRAER_ERJ_190            , "  Embraer 190")
+DEF_AIRV_NAME(AIRV_FOKKER_70                  , "  Fokker 70")
+DEF_AIRV_NAME(AIRV_FOKKER_100                 , "  Fokker 100")
+DEF_AIRV_NAME(AIRV_ILYUSHIN_62                , "  Ilyushin 62")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_81    , "  McDonnell Douglas MD-81")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_82    , "  McDonnell Douglas MD-82")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_83    , "  McDonnell Douglas MD-83")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_88    , "  McDonnell Douglas MD-88")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_90    , "  McDonnell Douglas MD-90")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_DC_10_30 , "  McDonnell Douglas DC 10-30")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_11    , "  McDonnell Douglas MD-11")
+DEF_AIRV_NAME(AIRV_MCDONNELL_DOUGLAS_MD_11F   , "  McDonnell Douglas MD-11F")
+DEF_AIRV_NAME(AIRV_TUPOLEV_154M               , "  Tupolev Tu-154M")
+
+// -------- Helicopters --------
+
+DEF_AIRV_NAME(AIRV_SKYLIFT_150                , "        SkyLift 150")
+
+// ----------------------------
+// ------- Livery Names -------
+// ----------------------------
+// ua - Unaffiliated, lc - Low Cost, sa - Star Alliance, ow - One World, st - Sky Team, m - Made up                                            
+DEF_AIRG_NAME(\wxd000, " Manufacturers")
+DEF_AIRG_NAME(\wxd001, " Aer Arran (Ringed Design)")            //  ua
+DEF_AIRG_NAME(\wxd002, " Air Deccan")                           //  lc
+DEF_AIRG_NAME(\wxd003, " Air Dolomiti")                         //  sa
+DEF_AIRG_NAME(\wxd004, " Airlinair (Air France)")               //  st
+DEF_AIRG_NAME(\wxd005, " Air Nostrum (Iberia Regional)")        //  ow
+DEF_AIRG_NAME(\wxd006, " American Eagle")                       //  ow
+DEF_AIRG_NAME(\wxd007, " Aurigny Air Services")                 //  ua
+DEF_AIRG_NAME(\wxd008, " Precision Air Services" )              //  ua
+DEF_AIRG_NAME(\wxd009, " Aer Arran (Original)")                 //  ua
+DEF_AIRG_NAME(\wxd00A, " TAP")                                  //  sa
+DEF_AIRG_NAME(\wxd00B, " Malmo Aviation")                       //  ua
+DEF_AIRG_NAME(\wxd00C, " Malmo Aviation (Svensk Football)")     //  ua
+DEF_AIRG_NAME(\wxd00D, " Air Canada")                           //  sa
+DEF_AIRG_NAME(\wxd00E, " Delta Air Lines")                      //  st
+DEF_AIRG_NAME(\wxd00F, " Qantas")                               //  ow
+DEF_AIRG_NAME(\wxd010, " Air Contractors")                      //  ua
+DEF_AIRG_NAME(\wxd011, " Air Southwest")                        //  ua
+DEF_AIRG_NAME(\wxd012, " Highland Express")                     //  ua
+DEF_AIRG_NAME(\wxd013, " Air France")                           //  st
+DEF_AIRG_NAME(\wxd014, " TAROM")                                //  st
+DEF_AIRG_NAME(\wxd015, " Iberia")                               //  ow
+DEF_AIRG_NAME(\wxd016, " Spanair")                              //  sa
+DEF_AIRG_NAME(\wxd017, " Wizz Air")                             //  lc
+DEF_AIRG_NAME(\wxd018, " Emirates")                             //  ua
+DEF_AIRG_NAME(\wxd019, " Singapore Airlines")                   //  sa
+DEF_AIRG_NAME(\wxd01A, " Aeromexico")                           //  st
+DEF_AIRG_NAME(\wxd01B, " Continental")                          //  sa
+DEF_AIRG_NAME(\wxd01C, " Indian Airlines")                      //  sa
+DEF_AIRG_NAME(\wxd01D, " Mexicana")                             //  ow
+DEF_AIRG_NAME(\wxd01E, " South African Airways")                //  sa
+DEF_AIRG_NAME(\wxd01F, " Air Asia")                             //  lc
+DEF_AIRG_NAME(\wxd020, " Alitalia")                             //  st
+DEF_AIRG_NAME(\wxd021, " UTair")                                //  ua
+DEF_AIRG_NAME(\wxd022, " Air Florida")                          //  ua
+DEF_AIRG_NAME(\wxd023, " Ansett New Zealand")                   //  sa
+DEF_AIRG_NAME(\wxd024, " Continental (Red Meatball)")           //  sa
+DEF_AIRG_NAME(\wxd025, " Lufthansa (Previous)")                 //  sa
+DEF_AIRG_NAME(\wxd026, " PEOPLExpress")                         //  lc
+DEF_AIRG_NAME(\wxd027, " Aer Lingus")                           //  ua
+DEF_AIRG_NAME(\wxd028, " ANA")                                  //  ua
+DEF_AIRG_NAME(\wxd029, " British Airways (Landor)")             //  ow
+DEF_AIRG_NAME(\wxd02A, " Air China")                            //  sa
+DEF_AIRG_NAME(\wxd02B, " Air Austral")                          //  ua
+DEF_AIRG_NAME(\wxd02C, " Air Macau")                            //  ua
+DEF_AIRG_NAME(\wxd02D, " Turkmenistan Airlines")                //  ua
+DEF_AIRG_NAME(\wxd02E, " Finnair")                              //  ow
+DEF_AIRG_NAME(\wxd02F, " Ethiopian Airlines")                   //  sa
+DEF_AIRG_NAME(\wxd030, " British Airways (Negus)")              //  ow
+DEF_AIRG_NAME(\wxd031, " British Airtours")                     //  ua
+DEF_AIRG_NAME(\wxd032, " DragonAir")                            //  ow
+DEF_AIRG_NAME(\wxd033, " EasyJet")                              //  lc
+DEF_AIRG_NAME(\wxd034, " European AirCharter")                  //  ua
+DEF_AIRG_NAME(\wxd035, " Frontier Airlines (Racoon + Fox)")     //  lc
+DEF_AIRG_NAME(\wxd036, " Iran Air")                             //  ua
+DEF_AIRG_NAME(\wxd037, " Palmair")                              //  ua
+DEF_AIRG_NAME(\wxd038, " Channel Express")                      //  ua
+DEF_AIRG_NAME(\wxd039, " Royal Mail")                           //  ua
+DEF_AIRG_NAME(\wxd03A, " Transavia")                            //  lc
+DEF_AIRG_NAME(\wxd03B, " Amsterdam Airlines")                   //  ua
+DEF_AIRG_NAME(\wxd03C, " Air New Zealand")                      //  sa
+DEF_AIRG_NAME(\wxd03D, " KLM Retro Livery")                     //  st
+DEF_AIRG_NAME(\wxd03E, " Vietnam Airlines")                     //  st
+DEF_AIRG_NAME(\wxd03F, " Austrian Airlines")                    //  sa
+DEF_AIRG_NAME(\wxd040, " TNT")                                  //  ua
+DEF_AIRG_NAME(\wxd041, " AB Airlines")                          //  lc
+DEF_AIRG_NAME(\wxd042, " Buzz")                                 //  lc
+DEF_AIRG_NAME(\wxd043, " Flybe")                                //  lc
+DEF_AIRG_NAME(\wxd044, " South West (Gold)")                    //  lc
+DEF_AIRG_NAME(\wxd045, " US Airways")                           //  sa
+DEF_AIRG_NAME(\wxd046, " SAS")                                  //  sa
+DEF_AIRG_NAME(\wxd047, " Astraeus")                             //  sa 
+DEF_AIRG_NAME(\wxd048, " Ryanair")                              //  ua
+DEF_AIRG_NAME(\wxd049, " TUI Belgium")                          //  ua
+DEF_AIRG_NAME(\wxd04A, " Swiss International Airlines")         //  sa
+DEF_AIRG_NAME(\wxd04B, " Air Baltic")                           //  lc
+DEF_AIRG_NAME(\wxd04C, " El Al Israel Airlines")                //  ua
+DEF_AIRG_NAME(\wxd04D, " Royal Brunei Airlines")                //  ua
+DEF_AIRG_NAME(\wxd04E, " Alaska Airlines")                      //  lc
+DEF_AIRG_NAME(\wxd04F, " Alaska Airlines (Disney Special)")     //  lc
+DEF_AIRG_NAME(\wxd050, " Turkish Airlines")                     //  sa
+DEF_AIRG_NAME(\wxd051, " XL Airways")                           //  ua
+DEF_AIRG_NAME(\wxd052, " Hainan Airlines")                      //  m
+DEF_AIRG_NAME(\wxd053, " Aeroflot")                             //  st
+DEF_AIRG_NAME(\wxd054, " British Airways (Union Flag)")         //  ow
+DEF_AIRG_NAME(\wxd055, " Northwest Airlines")                   //  sa
+DEF_AIRG_NAME(\wxd056, " JAL")                                  //  ow
+DEF_AIRG_NAME(\wxd057, " Virgin Atlantic")                      //  ua
+DEF_AIRG_NAME(\wxd058, " ANA Pokemon Livery (1999)")            //  sa
+DEF_AIRG_NAME(\wxd059, " JAT Airways")                          //  ua
+DEF_AIRG_NAME(\wxd05A, " Air Namibia")                          //  ua
+DEF_AIRG_NAME(\wxd05B, " Gulf Air")                             //  ua
+DEF_AIRG_NAME(\wxd05C, " Garuda Indonesia")                     //  ua
+DEF_AIRG_NAME(\wxd05D, " Kuban Airlines")                       //  lc
+DEF_AIRG_NAME(\wxd05E, " BMI Baby")                             //  lc
+DEF_AIRG_NAME(\wxd05F, " TAM Airlines")                         //  sa
+DEF_AIRG_NAME(\wxd060, " Norwegian Air")                        //  lc
+DEF_AIRG_NAME(\wxd061, " Hellenic Imperial Airways")            //  ua
+DEF_AIRG_NAME(\wxd062, " S7 Airways")                           //  ow
+DEF_AIRG_NAME(\wxd063, " Air Berlin (New)")                     //  lc
+DEF_AIRG_NAME(\wxd064, " Air Berlin (Interim)")                 //  lc
+DEF_AIRG_NAME(\wxd065, " Condor Berlin")                        //  ua
+DEF_AIRG_NAME(\wxd066, " Germanwings")                          //  lc
+DEF_AIRG_NAME(\wxd067, " China Eastern")                        //  ua
+DEF_AIRG_NAME(\wxd068, " Cathay Pacific")                       //  ow
+DEF_AIRG_NAME(\wxd069, " Lufthansa")                            //  sa
+DEF_AIRG_NAME(\wxd06A, " Avianca")                              //  sa
+DEF_AIRG_NAME(\wxd06B, " Olympic Air")                          //  sa
+DEF_AIRG_NAME(\wxd06C, " Skymark Airlines")                     //  ua
+DEF_AIRG_NAME(\wxd06D, " Air Do")                               //  ua
+DEF_AIRG_NAME(\wxd06E, " Martinair")                            //  ua
+DEF_AIRG_NAME(\wxd06F, " UPS")                                  //  ua
+DEF_AIRG_NAME(\wxd070, " Thai Airways International")           //  sa
+DEF_AIRG_NAME(\wxd071, " Aeroflot (Old)")                       //  st
+DEF_AIRG_NAME(\wxd072, " American Airlines")                    //  ow
+DEF_AIRG_NAME(\wxd073, " KLM")                                  //  st
+DEF_AIRG_NAME(\wxd074, " Lion Air")                             //  lc
+DEF_AIRG_NAME(\wxd075, " British Airways Union Flag (Comair)")  //  ow
+DEF_AIRG_NAME(\wxd076, " FlyNordic")                            //  lc
+DEF_AIRG_NAME(\wxd077, " Swiss Air")                            //  sa
+DEF_AIRG_NAME(\wxd078, " Japan Air System")                     //  ua
+DEF_AIRG_NAME(\wxd079, " Blue1")                                //  sa
+DEF_AIRG_NAME(\wxd07A, " Nippon Cargo Airlines")                //  Cargo
+DEF_AIRG_NAME(\wxd07B, " Nippon Cargo Airlines (Green Freighter)") //Cargo   
+DEF_AIRG_NAME(\wxd07C, " Adria Airways")
+DEF_AIRG_NAME(\wxd07D, " RwandAir")
+DEF_AIRG_NAME(\wxd07E, " Etihad Airways (Abu Dhabi Formula 1)") 
+DEF_AIRG_NAME(\wxd07F, " Vueling Airlines")          
+DEF_AIRG_NAME(\wxd080, " EVA Air")                              //  ua
+DEF_AIRG_NAME(\wxd081, " Transaero")                            //  ua
+DEF_AIRG_NAME(\wxd082, " Icelandair")                           //  ua
+DEF_AIRG_NAME(\wxd083, " Air Greenland")                        //  ua
+DEF_AIRG_NAME(\wxd084, " Widerøe")                              //  ua
+DEF_AIRG_NAME(\wxd085, " United Airlines")                      //  sa
+DEF_AIRG_NAME(\wxd086, " Helvectic Air")                        //  ua
+DEF_AIRG_NAME(\wxd087, " Fedex")                                //  ua
+DEF_AIRG_NAME(\wxd088, " Malev")                                //  ow
+DEF_AIRG_NAME(\wxd089, " Korean Air")                           //  st
+DEF_AIRG_NAME(\wxd08A, " LAN Airlines")                         //  ow
+DEF_AIRG_NAME(\wxd08B, " Jetstar Airways")                      //  ow
+DEF_AIRG_NAME(\wxd08C, " ANA Pikachu Livery (2005)")            //  st
+DEF_AIRG_NAME(\wxd08D, " Kalitta Air")                          //  Cargo
+DEF_AIRG_NAME(\wxd08E, " Lufthansa (Retro)")                    //  st
+DEF_AIRG_NAME(\wxd08F, " Etihad Airways")                       //  st
+DEF_AIRG_NAME(\wxd090, " CargoLux")                             //  ua
+DEF_AIRG_NAME(\wxd091, " Emirates SkyCargo")                    //  ua
+DEF_AIRG_NAME(\wxd092, " Ukraine International Airlines")       //  ua
+DEF_AIRG_NAME(\wxd093, " LOT")                                  //  sa
+DEF_AIRG_NAME(\wxd094, " Biman Bangladesh Airlines")            //  ua
+DEF_AIRG_NAME(\wxd095, " Monarch Airlines")                     //  ua
+DEF_AIRG_NAME(\wxd096, " Omni Air International")               //  ua
+DEF_AIRG_NAME(\wxd097, " Qantaslink")                           //  ow
+DEF_AIRG_NAME(\wxd098, " Qantaslink (Pink Ribbon)")             //  ow
+DEF_AIRG_NAME(\wxd099, " Aerolineas Argentinas")                //  ua
+DEF_AIRG_NAME(\wxd09A, " Qatar Airways")                        //  st
+DEF_AIRG_NAME(\wxd09B, " Cyprus Airways")                       //  st 
+DEF_AIRG_NAME(\wxd09C, " Asiana Airlines")                      //  st 
+DEF_AIRG_NAME(\wxd09D, " Air Canada (New)")                     //  st 
+DEF_AIRG_NAME(\wxd09E, " Air Astana")                           //  st
+DEF_AIRG_NAME(\wxd09F, " Austrian Airlines Retro")              //  st
+DEF_AIRG_NAME(\wxd0A0, " China Southern Airlines")              //  st
+DEF_AIRG_NAME(\wxd0A1, " Czech Airlines")                       //  st
+DEF_AIRG_NAME(\wxd0A2, " Pakistan International Airlines")      //  st
+DEF_AIRG_NAME(\wxd0A3, " Croatia Airlines")                     //  st
+DEF_AIRG_NAME(\wxd0A4, " Tunisair")                             //  st
+DEF_AIRG_NAME(\wxd0A5, " China West Air")                       //  st
+DEF_AIRG_NAME(\wxd0A6, " China Airlines")                       //  st
+DEF_AIRG_NAME(\wxd0A7, " JetBlue")                              //  st
+DEF_AIRG_NAME(\wxd0A8, " Virgin Blue")                          //  st 
+DEF_AIRG_NAME(\wxd0A9, " Hawaiian Airlines")                    //  st
+DEF_AIRG_NAME(\wxd0AA, " Malaysia Airlines")                    //  st 
+DEF_AIRG_NAME(\wxd0AB, " Air Seychelles")       	              //  st
+DEF_AIRG_NAME(\wxd0AC, " Air Niugini")                          //  st
+DEF_AIRG_NAME(\wxd0AD, " Air Canada 97-06")                     //  sa
+DEF_AIRG_NAME(\wxd0AE, " Brussels Airlines")                    //  sa
+DEF_AIRG_NAME(\wxd0AF, " Rossiya Airlines")                     //  sa
+DEF_AIRG_NAME(\wxd0B0, " Middle East Airlines")                 //  sa
+DEF_AIRG_NAME(\wxd0B1, " Saudi Arabian Airlines")               //  sa
+DEF_AIRG_NAME(\wxd0B2, " Mahan Air")                            
+DEF_AIRG_NAME(\wxd0B3, " Arkas")
+DEF_AIRG_NAME(\wxd0B4, " DHL")
+DEF_AIRG_NAME(\wxd0B5, " Skywest")
+DEF_AIRG_NAME(\wxd0B6, " Pan American World Airways")
+DEF_AIRG_NAME(\wxd0B7, " Regional Cargo")
+DEF_AIRG_NAME(\wxd0B8, " Slok Air")
+DEF_AIRG_NAME(\wxd0B9, " Air Nauru")
+DEF_AIRG_NAME(\wxd0BA, " South African Cargo")                  //  sa
+DEF_AIRG_NAME(\wxd0BB, " ANA Gold")
+DEF_AIRG_NAME(\wxd0BC, " Oman Air")
+DEF_AIRG_NAME(\wxd0BD, " Arke Fly")
+DEF_AIRG_NAME(\wxd0BE, " Air Slovakia")
+DEF_AIRG_NAME(\wxd0BF, " Birgenair")
+DEF_AIRG_NAME(\wxd0C0, " Air India")
+DEF_AIRG_NAME(\wxd0C1, " ANA Waves")
+DEF_AIRG_NAME(\wxd0C2, " Egypt Air")
+DEF_AIRG_NAME(\wxd0C3, " TAAG Angola Airlines")
+DEF_AIRG_NAME(\wxd0C4, " V Australia")
+DEF_AIRG_NAME(\wxd0C5, " Austrian Arrows")
+DEF_AIRG_NAME(\wxd0C6, " Austral Lineas Aereas")  
+DEF_AIRG_NAME(\wxd0C7, " Dutch Antilles Express")  
+DEF_AIRG_NAME(\wxd0C8, " Allegiant Air")
+DEF_AIRG_NAME(\wxd0C9, " Insel Air")
+DEF_AIRG_NAME(\wxd0CA, " IndiGo")
+DEF_AIRG_NAME(\wxd0CB, " Philippines Airlines")
+DEF_AIRG_NAME(\wxd0CC, " Clan Mega")
+DEF_AIRG_NAME(\wxd0CD, " Farnair Europe")
+
+
+//Use ID's 0-99 first then go back Using 0A-9A then A0-FE           FF is used for purchase list text
+
+
+#undef LANG
+END_SECTION(Language-English)

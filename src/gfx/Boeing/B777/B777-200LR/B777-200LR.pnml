@@ -1,0 +1,269 @@
+
+// Boeing-777-200LR
+
+// Template: 
+#define Boeing_777_200LR_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 58, 29, -29, -15, ANIM]                                           \
+  [ 65, 1, 51, 26, -26, -13, ANIM]                                           \
+  [120, 1, 62, 29, -31, -15, ANIM]                                           \
+  [190, 1, 51, 37, -26, -19, ANIM]                                           \
+  [245, 1, 58, 41, -29, -21, ANIM]                                           \
+  [310, 1, 51, 37, -26, -19, ANIM]                                           \
+  [365, 1, 62, 29, -31, -15, ANIM]                                           \
+  [430, 1, 51, 26, -26, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 45, 58, 29, -29, -15, ANIM]                                          \
+  [ 65, 45, 51, 26, -26, -13, ANIM]                                          \
+  [120, 45, 62, 29, -31, -15, ANIM]                                          \
+  [190, 45, 51, 38, -26, -19, ANIM]                                          \
+  [245, 45, 58, 43, -29, -22, ANIM]                                          \
+  [310, 45, 51, 38, -26, -19, ANIM]                                          \
+  [365, 45, 62, 29, -31, -15, ANIM]                                          \
+  [430, 45, 51, 26, -26, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 90, 58, 45, -29, -23, ANIM]                                         \
+  [ 65, 90, 50, 41, -25, -21, ANIM]                                          \
+  [120, 90, 63, 30, -32, -15, ANIM]                                          \
+  [190, 90, 48, 27, -24, -14, ANIM]                                          \
+  [245, 90, 58, 17, -29, -9 , ANIM]                                          \
+  [310, 90, 48, 27, -24, -14, ANIM]                                          \
+  [365, 90, 63, 30, -32, -15, ANIM]                                          \
+  [430, 90, 50, 41, -25, -21, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 140, 58, 29, -29, -15, ANIM]                                         \
+  [ 65, 140, 51, 26, -29, -16, ANIM]                                         \
+  [120, 140, 62, 29, -31, -15, ANIM]                                         \
+  [190, 140, 51, 38, -26, -19, ANIM]                                         \
+  [245, 140, 58, 35, -29, -18, ANIM]                                         \
+  [310, 140, 51, 38, -26, -19, ANIM]                                         \
+  [365, 140, 62, 29, -31, -15, ANIM]                                         \
+  [430, 140, 51, 26, -26, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 180, 58, 37, -29, -19, ANIM]                                         \
+  [ 65, 180, 51, 33, -26, -17, ANIM]                                         \
+  [120, 180, 63, 29, -32, -15, ANIM]                                         \
+  [190, 180, 51, 32, -26, -16, ANIM]                                         \
+  [245, 180, 58, 28, -29, -14, ANIM]                                         \
+  [310, 180, 51, 32, -26, -16, ANIM]                                         \
+  [365, 180, 63, 29, -32, -15, ANIM]                                         \
+  [430, 180, 51, 33, -26, -17, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/(0)Greyscale.png"
+purchase_sprite(Boeing_777_200LR, 365, 5, 62, 22, -31, -11)
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/AirAustral.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_AirAustral) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/AirCanada.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_AirCanada) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/AirIndia.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_AirIndia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/Delta.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/Emirates.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/Qatar.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Qatar) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Greyscale, flight_state())
+{
+  15: Boeing_777_200LR_Greyscale_Climbing;
+  18: Boeing_777_200LR_Greyscale_Flight;
+  21: Boeing_777_200LR_Greyscale_Landing;
+  22: Boeing_777_200LR_Greyscale_Touchdown;
+      Boeing_777_200LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_AirAustral, flight_state())
+{
+  15: Boeing_777_200LR_AirAustral_Climbing;
+  18: Boeing_777_200LR_AirAustral_Flight;
+  21: Boeing_777_200LR_AirAustral_Landing;
+  22: Boeing_777_200LR_AirAustral_Touchdown;
+      Boeing_777_200LR_AirAustral_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_AirCanada, flight_state())
+{
+  15: Boeing_777_200LR_AirCanada_Climbing;
+  18: Boeing_777_200LR_AirCanada_Flight;
+  21: Boeing_777_200LR_AirCanada_Landing;
+  22: Boeing_777_200LR_AirCanada_Touchdown;
+      Boeing_777_200LR_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_AirIndia, flight_state())
+{
+  15: Boeing_777_200LR_AirIndia_Climbing;
+  18: Boeing_777_200LR_AirIndia_Flight;
+  21: Boeing_777_200LR_AirIndia_Landing;
+  22: Boeing_777_200LR_AirIndia_Touchdown;
+      Boeing_777_200LR_AirIndia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Delta, flight_state())
+{
+  15: Boeing_777_200LR_Delta_Climbing;
+  18: Boeing_777_200LR_Delta_Flight;
+  21: Boeing_777_200LR_Delta_Landing;
+  22: Boeing_777_200LR_Delta_Touchdown;
+      Boeing_777_200LR_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Emirates, flight_state())
+{
+  15: Boeing_777_200LR_Emirates_Climbing;
+  18: Boeing_777_200LR_Emirates_Flight;
+  21: Boeing_777_200LR_Emirates_Landing;
+  22: Boeing_777_200LR_Emirates_Touchdown;
+      Boeing_777_200LR_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Qatar, flight_state())
+{
+  15: Boeing_777_200LR_Qatar_Climbing;
+  18: Boeing_777_200LR_Qatar_Flight;
+  21: Boeing_777_200LR_Qatar_Landing;
+  22: Boeing_777_200LR_Qatar_Touchdown;
+      Boeing_777_200LR_Qatar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_sprites, cargo_subtype)
+{
+  1: Boeing_777_200LR_AirAustral;
+  2: Boeing_777_200LR_AirCanada;
+  3: Boeing_777_200LR_AirIndia;
+  4: Boeing_777_200LR_Delta;
+  5: Boeing_777_200LR_Emirates;
+  6: Boeing_777_200LR_Qatar;
+     Boeing_777_200LR_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_running_cost_factor, flight_state())
+{
+  plane_RC(212)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(265); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(451); // airplane climbing after take-off
+      18: return plane_speed_kmh(951); // heading for tower contact point
+  16..20: return plane_speed_kmh(459); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_AUSTRAL);
+  2: string(STR_VLIV_AIR_CANADA);
+  3: string(STR_VLIV_AIR_INDIA);
+  4: string(STR_VLIV_DELTA_AIR_LINES);
+  5: string(STR_VLIV_EMIRATES);
+  6: string(STR_VLIV_QATAR_AIRWAYS);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 364;
+  2: return 270;
+  3: return 238;
+  4: return 291;
+  5: return 266;
+  6: return 259;
+     return 314;
+}
+
+item (FEAT_AIRCRAFT, Boeing_777_200LR)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_777_200LR);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2006), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2006,2050);
+    retire_early: get_retire_early(2006,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 26;
+    passenger_capacity: 314;
+    mail_capacity: 40;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 3125;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_777_200LR_sprites;
+    purchase: Boeing_777_200LR_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_777_200LR_cargo_subtype_text;
+	passenger_capacity: Boeing_777_200LR_cargo_subtype_capacity;
+    speed: Boeing_777_200LR_speed;
+    running_cost_factor: Boeing_777_200LR_running_cost_factor;
+    sound_effect: Boeing_777_200LR_sound_effect;
+
+    cost_factor: 266; 
+    purchase_running_cost_factor: 212;
+    purchase_speed: plane_speed_kmh(951); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_200LR)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_200LR)
+  {
+    property
+    { range: 3125; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_777_200LR)
+  {
+    property
+    { range: 4690; }
+  }
+}

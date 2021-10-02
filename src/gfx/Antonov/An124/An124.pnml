@@ -1,0 +1,180 @@
+
+// Antonov-124
+
+// Template: 
+#define Antonov_124_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  7, 4, 62, 34, -31, -19, ANIM]                                           \
+  [ 90, 2, 54, 26, -27, -13, ANIM]                                           \
+  [161, 3, 65, 32, -33, -16, ANIM]                                           \
+  [246, 2, 54, 38, -27, -19, ANIM]                                           \
+  [310, 1, 61, 46, -31, -23, ANIM]                                           \
+  [383, 1, 54, 38, -27, -19, ANIM]                                           \
+  [454, 3, 66, 32, -33, -16, ANIM]                                           \
+  [538, 2, 54, 26, -27, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded_Transit, IMAGEFILE)                               \
+{                                                                            \
+  [  7, 54, 62, 34, -31, -17, ANIM]                                          \
+  [ 90, 52, 54, 26, -27, -13, ANIM]                                          \
+  [161, 53, 65, 32, -33, -16, ANIM]                                          \
+  [246, 52, 54, 38, -27, -19, ANIM]                                          \
+  [310, 51, 62, 46, -31, -23, ANIM]                                          \
+  [383, 52, 54, 38, -27, -19, ANIM]                                          \
+  [454, 53, 66, 32, -33, -16, ANIM]                                          \
+  [538, 52, 54, 26, -27, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  7, 104, 62, 34, -31, -17, ANIM]                                         \
+  [ 90, 102, 54, 26, -27, -13, ANIM]                                         \
+  [161, 103, 65, 32, -33, -16, ANIM]                                         \
+  [246, 102, 54, 38, -27, -19, ANIM]                                         \
+  [310, 101, 62, 46, -31, -23, ANIM]                                         \
+  [383, 102, 54, 38, -27, -19, ANIM]                                         \
+  [454, 103, 66, 32, -33, -16, ANIM]                                         \
+  [538, 102, 54, 26, -27, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  7, 151, 62, 38, -31, -19, ANIM]                                         \
+  [ 90, 156, 53, 30, -27, -15, ANIM]                                         \
+  [161, 153, 64, 32, -32, -16, ANIM]                                         \
+  [246, 152, 53, 38, -27, -19, ANIM]                                         \
+  [310, 151, 62, 46, -31, -23, ANIM]                                         \
+  [384, 152, 53, 38, -27, -19, ANIM]                                         \
+  [455, 153, 65, 32, -33, -16, ANIM]                                         \
+  [539, 156, 53, 30, -27, -15, ANIM]                                         \
+}                                                                            \
+spritegroup name##_Grounded                                                  \
+{ loading: [name##_Loading];                                                 \
+  loaded: [name##_Grounded_Transit]; }                                       \
+
+#define IMAGEFILE  "src/gfx/Antonov/An124/(0)Greyscale.png"
+purchase_sprite(Antonov_124, 454, 3, 66, 32, -33, -16)
+Antonov_124_sprite_layout_template(Antonov_124_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Antonov/An124/Aeroflot.png"
+Antonov_124_sprite_layout_template(Antonov_124_Aeroflot) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_Greyscale, flight_state())
+{
+  15: Antonov_124_Greyscale_Climbing;
+  18: Antonov_124_Greyscale_Flight;
+  21: Antonov_124_Greyscale_Climbing;
+  22: Antonov_124_Greyscale_Climbing;
+      Antonov_124_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_Aeroflot, flight_state())
+{
+  15: Antonov_124_Aeroflot_Climbing;
+  18: Antonov_124_Aeroflot_Flight;
+  21: Antonov_124_Aeroflot_Climbing;
+  22: Antonov_124_Aeroflot_Climbing;
+      Antonov_124_Aeroflot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_sprites, cargo_subtype)
+{
+   1:Antonov_124_Aeroflot;
+     Antonov_124_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_running_cost_factor, flight_state())
+{
+  plane_RC(180)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(531); // airplane climbing after take-off
+      18: return plane_speed_kmh(862); // heading for tower contact point
+  16..20: return plane_speed_kmh(862); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_124_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ANTONOV);
+  1: string(STR_VLIV_AEROFLOT);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Antonov_124)
+{
+  property
+  {
+    name: string(STR_AIRV_ANTONOV_124);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1986), 12, 26);
+    vehicle_life: 35;
+    model_life: get_model_life(1986,2050);
+    retire_early: get_retire_early(1986,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 15;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1075;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Antonov_124_sprites;
+    purchase: Antonov_124_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Antonov_124_cargo_subtype_text;
+    speed: Antonov_124_speed;
+    running_cost_factor: Antonov_124_running_cost_factor;
+    sound_effect: Antonov_124_sound_effect;
+    mail_capacity: return 1200;
+
+    cost_factor: 274; 
+    purchase_running_cost_factor: 180;
+    purchase_speed: plane_speed_kmh(862); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Antonov_124)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Antonov_124)
+  {
+    property
+    { range: 1075; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Antonov_124)
+  {
+    property
+    { range: 1615; }
+  }
+}

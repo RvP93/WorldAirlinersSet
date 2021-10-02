@@ -1,0 +1,456 @@
+START_SECTION(Planes-Tupolev-154M)
+
+    A0_PLANES(AIRV_TUPOLEV_154M, 1, 18)
+       00 \w1972-01-01 // introduction date
+       03 1E  //Vehicle Life In Years 
+       04 27  // model life in years 
+       06 0F // climate availability
+       07 \b15 // loading speed ( to be set )
+       A0_SET_AIR_PROP_USE_NEW_SPRITE()
+       A0_SET_AIR_PROP_NOT_HELICOPTER()
+       A0_SET_AIR_PROP_LARGE() 
+       0C 4A // speed in mph / 8 ( to be set)
+       0D 02 // acceleration
+       0F \w180 // pax capacity
+       11 \b18 // mail cap
+       12 07 // sound effect (jet)
+       13 00 00 00 00 //Cargo Types For Refitting
+       14 20    
+       16 0A  //Retire Vehicle Early 
+       18 \wx0001
+       19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_TUPOLEV_154M, 1, 1)
+                     1F \w735
+        
+  -1 * 0   10 F1
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx
+    spr() 2 2 09 23 38 -19 -10
+    spr() 49 2 09 23 43 -24 -7
+    spr() 100 2 09 21 53 -28 -6
+    spr() 160 2 09 29 43 -24 -15
+    spr() 210 2 09 33 38 -19 -17
+    spr() 250 2 09 29 43 -19 -15
+    spr() 300 2 09 21 53 -27 -6
+    spr() 360 2 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotO.pcx
+    spr() 2 2 09 23 38 -19 -10
+    spr() 49 2 09 23 43 -24 -7
+    spr() 100 2 09 21 53 -28 -6
+    spr() 160 2 09 29 43 -24 -15
+    spr() 210 2 09 33 38 -19 -17
+    spr() 250 2 09 29 43 -19 -15
+    spr() 300 2 09 21 53 -27 -6
+    spr() 360 2 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotN.pcx
+    spr() 2 2 09 23 38 -19 -10
+    spr() 49 2 09 23 43 -24 -7
+    spr() 100 2 09 21 53 -28 -6
+    spr() 160 2 09 29 43 -24 -15
+    spr() 210 2 09 33 38 -19 -17
+    spr() 250 2 09 29 43 -19 -15
+    spr() 300 2 09 21 53 -27 -6
+    spr() 360 2 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/UTAir.pcx
+    spr() 2 2 09 23 38 -19 -10
+    spr() 49 2 09 23 43 -24 -7
+    spr() 100 2 09 21 53 -28 -6
+    spr() 160 2 09 29 43 -24 -15
+    spr() 210 2 09 33 38 -19 -17
+    spr() 250 2 09 29 43 -19 -15
+    spr() 300 2 09 21 53 -27 -6
+    spr() 360 2 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/Ukraine.pcx
+    spr() 2 2 09 23 38 -19 -10
+    spr() 49 2 09 23 43 -24 -7
+    spr() 100 2 09 21 53 -28 -6
+    spr() 160 2 09 29 43 -24 -15
+    spr() 210 2 09 33 38 -19 -17
+    spr() 250 2 09 29 43 -19 -15
+    spr() 300 2 09 21 53 -27 -6
+    spr() 360 2 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F0 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // Aeroflot(New)
+                             03 00 03 03 // UTAir
+                             04 00 04 04 // Ukraine
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx
+     spr() 2 40 09 23 38 -19 -10
+     spr() 49 40 09 23 43 -24 -7
+     spr() 100 40 09 21 53 -28 -6
+     spr() 160 40 09 30 43 -24 -15
+     spr() 210 40 09 32 38 -19 -17
+     spr() 250 40 09 30 43 -19 -15
+     spr() 300 40 09 21 53 -27 -6
+     spr() 360 40 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotO.pcx
+     spr() 2 40 09 23 38 -19 -10
+     spr() 49 40 09 23 43 -24 -7
+     spr() 100 40 09 21 53 -28 -6
+     spr() 160 40 09 30 43 -24 -15
+     spr() 210 40 09 32 38 -19 -17
+     spr() 250 40 09 30 43 -19 -15
+     spr() 300 40 09 21 53 -27 -6
+     spr() 360 40 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotN.pcx
+     spr() 2 40 09 23 38 -19 -10
+     spr() 49 40 09 23 43 -24 -7
+     spr() 100 40 09 21 53 -28 -6
+     spr() 160 40 09 30 43 -24 -15
+     spr() 210 40 09 32 38 -19 -17
+     spr() 250 40 09 30 43 -19 -15
+     spr() 300 40 09 21 53 -27 -6
+     spr() 360 40 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/UTAir.pcx
+     spr() 2 40 09 23 38 -19 -10
+     spr() 49 40 09 23 43 -24 -7
+     spr() 100 40 09 21 53 -28 -6
+     spr() 160 40 09 30 43 -24 -15
+     spr() 210 40 09 32 38 -19 -17
+     spr() 250 40 09 30 43 -19 -15
+     spr() 300 40 09 21 53 -27 -6
+     spr() 360 40 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/Ukraine.pcx
+     spr() 2 40 09 23 38 -19 -10
+     spr() 49 40 09 23 43 -24 -7
+     spr() 100 40 09 21 53 -28 -6
+     spr() 160 40 09 30 43 -24 -15
+     spr() 210 40 09 32 38 -19 -17
+     spr() 250 40 09 30 43 -19 -15
+     spr() 300 40 09 21 53 -27 -6
+     spr() 360 40 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F1 81 F2 00 FF 05 // Taxing or Initiating Approach
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // Aeroflot(New)
+                             03 00 03 03 // UTAir
+                             04 00 04 04 // Ukraine
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx
+    spr() 2 80 09 21 38 -19 -16
+    spr() 50 80 09 31 43 -25 -13
+    spr() 100 80 09 22 51 -29 -5
+    spr() 160 80 09 19 41 -25 -7
+    spr() 210 80 09 18 38 -19 -9
+    spr() 250 80 09 19 41 -18 -7
+    spr() 300 80 09 22 51 -27 -6
+    spr() 360 80 09 31 43 -18 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotO.pcx
+    spr() 2 80 09 21 38 -19 -16
+    spr() 50 80 09 31 43 -25 -13
+    spr() 100 80 09 22 51 -29 -5
+    spr() 160 80 09 19 41 -25 -7
+    spr() 210 80 09 18 38 -19 -9
+    spr() 250 80 09 19 41 -18 -7
+    spr() 300 80 09 22 51 -27 -6
+    spr() 360 80 09 31 43 -18 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotN.pcx
+    spr() 2 81 09 21 38 -19 -16
+    spr() 50 80 09 31 43 -25 -13
+    spr() 100 80 09 22 51 -29 -5
+    spr() 160 80 09 19 41 -25 -7
+    spr() 210 80 09 18 38 -19 -9
+    spr() 250 80 09 19 41 -18 -7
+    spr() 300 80 09 22 51 -27 -6
+    spr() 360 80 09 31 43 -18 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/UTAir.pcx
+    spr() 2 80 09 21 38 -19 -16
+    spr() 50 80 09 31 43 -25 -13
+    spr() 100 80 09 22 51 -29 -5
+    spr() 160 80 09 19 41 -25 -7
+    spr() 210 80 09 18 38 -19 -9
+    spr() 250 80 09 19 41 -18 -7
+    spr() 300 80 09 22 51 -27 -6
+    spr() 360 80 09 31 43 -18 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/Ukraine.pcx
+    spr() 2 80 09 21 38 -19 -16
+    spr() 50 80 09 31 43 -25 -13
+    spr() 100 80 09 22 51 -29 -5
+    spr() 160 80 09 19 41 -25 -7
+    spr() 210 80 09 18 38 -19 -9
+    spr() 250 80 09 19 41 -18 -7
+    spr() 300 80 09 22 51 -27 -6
+    spr() 360 80 09 31 43 -18 -13
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F2 81 F2 00 FF 05 // Take Off 
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // Aeroflot(New)
+                             03 00 03 03 // UTAir
+                             04 00 04 04 // Ukraine
+                             FF FF // default
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx
+    spr() 2 120 09 21 38 -19 -11
+    spr() 50 120 09 23 43 -24 -7
+    spr() 100 120 09 21 53 -28 -6
+    spr() 160 120 09 30 43 -24 -15
+    spr() 210 120 09 33 38 -19 -17
+    spr() 250 120 09 30 43 -19 -15
+    spr() 300 120 09 21 53 -27 -6
+    spr() 360 120 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotO.pcx
+    spr() 2 120 09 32 38 -19 -10
+    spr() 50 120 09 23 43 -24 -7
+    spr() 100 120 09 21 53 -28 -6
+    spr() 160 120 09 30 43 -24 -15
+    spr() 210 120 09 33 38 -19 -17
+    spr() 250 120 09 30 43 -19 -15
+    spr() 300 120 09 21 53 -27 -6
+    spr() 360 120 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotN.pcx
+    spr() 2 120 09 32 38 -19 -10
+    spr() 50 120 09 23 43 -24 -7
+    spr() 100 120 09 21 53 -28 -6
+    spr() 160 120 09 30 43 -24 -15
+    spr() 210 120 09 33 38 -19 -17
+    spr() 250 120 09 30 43 -19 -15
+    spr() 300 120 09 21 53 -27 -6
+    spr() 360 120 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/UTAir.pcx
+    spr() 2 120 09 32 38 -19 -10
+    spr() 50 120 09 23 43 -24 -7
+    spr() 100 120 09 21 53 -28 -6
+    spr() 160 120 09 30 43 -24 -15
+    spr() 210 120 09 33 38 -19 -17
+    spr() 250 120 09 30 43 -19 -15
+    spr() 300 120 09 21 53 -27 -6
+    spr() 360 120 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/Ukraine.pcx
+    spr() 2 120 09 21 38 -19 -11
+    spr() 50 120 09 23 43 -24 -7
+    spr() 100 120 09 21 53 -28 -6
+    spr() 160 120 09 30 43 -24 -15
+    spr() 210 120 09 33 38 -19 -17
+    spr() 250 120 09 30 43 -19 -15
+    spr() 300 120 09 21 53 -27 -6
+    spr() 360 120 09 23 43 -19 -7
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F3 81 F2 00 FF 05 // Landed On Runway  
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // Aeroflot(New)
+                             03 00 03 03 // UTAir
+                             04 00 04 04 // Ukraine
+                             FF FF // default
+
+    A1_PLANES(5,8)
+    
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx
+    spr() 2 154 09 21 38 -19 -11
+    spr() 50 154 09 25 43 -25 -10
+    spr() 100 155 09 23 53 -29 -4
+    spr() 160 154 09 28 43 -23 -11
+    spr() 210 154 09 29 38 -19 -13
+    spr() 250 154 09 28 43 -19 -11
+    spr() 300 154 09 23 53 -27 -6
+    spr() 360 154 09 25 43 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotO.pcx
+    spr() 2 154 09 23 38 -19 -13
+    spr() 50 154 09 25 43 -25 -10
+    spr() 100 154 09 23 53 -29 -4
+    spr() 160 154 09 28 43 -23 -11
+    spr() 210 154 09 29 38 -19 -13
+    spr() 250 154 09 28 43 -19 -11
+    spr() 300 154 09 23 53 -27 -6
+    spr() 360 154 09 25 43 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/AeroflotN.pcx
+    spr() 2 154 09 23 38 -19 -13
+    spr() 50 154 09 25 43 -25 -10
+    spr() 100 154 09 23 53 -29 -4
+    spr() 160 154 09 28 43 -23 -11
+    spr() 210 154 09 29 38 -19 -13
+    spr() 250 154 09 28 43 -19 -11
+    spr() 300 154 09 23 53 -27 -6
+    spr() 360 154 09 25 43 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/UTAir.pcx
+    spr() 2 154 09 23 38 -19 -13
+    spr() 50 154 09 25 43 -25 -10
+    spr() 100 154 09 23 53 -29 -4
+    spr() 160 154 09 28 43 -23 -11
+    spr() 210 154 09 29 38 -19 -13
+    spr() 250 154 09 28 43 -19 -11
+    spr() 300 154 09 23 53 -27 -6
+    spr() 360 154 09 25 43 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/tupolev/tu154m/Ukraine.pcx
+    spr() 2 154 09 21 38 -19 -11
+    spr() 50 154 09 25 43 -25 -10
+    spr() 100 154 09 23 53 -29 -4
+    spr() 160 154 09 28 43 -23 -11
+    spr() 210 154 09 29 38 -19 -13
+    spr() 250 154 09 28 43 -19 -11
+    spr() 300 154 09 23 53 -27 -6
+    spr() 360 154 09 25 43 -19 -10
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F4 81 F2 00 FF 05 // Final Approach  
+                             00 00 00 00 // greyscale
+                             01 00 01 01 // Aeroflot(Old)
+                             02 00 02 02 // Aeroflot(New)
+                             03 00 03 03 // UTAir
+                             04 00 04 04 // Ukraine
+                             FF FF // default
+
+    A1_PLANES(1,1)
+
+    -1 sprites/pcx/tupolev/tu154m/(0)Greyscale.pcx 300 2 09 21 53 -27 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+  147 * 30	 02 03 5F 81 E2 00 FF 05 
+                                  F1 00 08 09   //Leaving Runway/Going to the in Way
+                                  F2 00 0F 0F   //Airplane climbing after take-off
+                                  F0 00 12 12   //Tower contact Point (Initiating Approach)	
+                                  F4 00 15 15   //Airplane landing (Descent)
+                                  F3 00 16 16   //Airplane braking after touchdown
+                                  F1 00         //When flying normally
+
+  148 * 22	 02 03 01 81 F2 00 FF 05          // 5 liveries
+                                00 80 00 00 // greyscale
+                                71 80 01 01 // Aeroflot (Old)
+                                53 80 02 02 // Aeroflot (New)
+                                21 80 04 04 // UTAir
+                                92 80 05 05 // Ukraine
+                                FF FF // end subtype selection   
+        		     
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             14 80 0D 0D   // Take Off 
+                             26 80 0F 0F   // Climbing
+                             4A 80 12 12   // Flight
+                             1C 80 10 14   // Approach
+                             11 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32934 0D 0F // Take Off
+                             \w32916 12 12 // Flight
+                             \w32920 10 14 // Approach
+                             \w32927 15 16 // Landing
+                             \w32855 08 0C // Grounded	
+                             \w32833       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32809 0B 0B //Purchase Cost Purchase List
+				                     \w32916 0E 0E //Running Cost Purchase List
+                             00 00				
+ 
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             4C 00                                 
+        
+   -1 * 0     03 03 01 AIRV_TUPOLEV_154M 01 
+                             FF 08 00   // P-List
+                             07 00      // Default  
+
+END_SECTION(Planes-Tupolev-154M)

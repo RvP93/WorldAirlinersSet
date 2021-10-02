@@ -1,0 +1,3167 @@
+START_SECTION(Planes-Airbus-A320-200)  
+
+    A0_PLANES(AIRV_AIRBUS_A320_200, 1, 19)
+        00 \w1989-01-01  //Introduction Date
+        03 12  //Vehicle Life In Years
+        04 3C  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b22 // Loading Speed in pax	
+        08 FF  // New gfx
+        09 02  //Helicopter?
+        0A 00  //Large?  
+        0C 46  //Speed in mph/8  
+        0D 02  // Acceleration
+        0F \w180  //Passenger Capacity   
+        11 \b18  //Mail Capacity 
+        12 07  //Sound Effect (Propeller)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        17 02  //2CC
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_AIRBUS_A320_200, 1, 1)
+                     1F \w1020
+        
+  -1 * 0   10 F1
+
+    A1_PLANES(46,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/(0)Greyscale.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirFrance.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Iberia.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Spanair.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Wizz.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Aeroflot.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirBerlin.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CondorBerlin.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Germanwings.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Indian.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Mexicana.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAsia.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Amsterdam.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Delta.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vietnam.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Austrian.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Swiss.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanada.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/United.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Brunei.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/ANA.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Avianca.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/EtihadF1.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/BA.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vueling.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/LAN.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Jetstar.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Finnair.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Croatia.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CSA.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Alitalia.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Tunisair.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Qatar.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Cyprus.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/TAP.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Asiana.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanadaNew.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAstana.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AustrianRetro.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Lufthansa.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/MiddleEast.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Olympic.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/SaudiArabian.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirIndia.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/IndiGo.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/PhilippinesAirlines.pcx
+    spr() 0 0 09 23 45 -23 -12
+    spr() 50 0 09 21 40 -20 -11
+    spr() 100 0 09 23 48 -24 -12
+    spr() 160 0 09 30 39 -20 -15
+    spr() 210 0 09 33 45 -23 -17
+    spr() 260 0 09 30 39 -20 -15
+    spr() 310 0 09 23 48 -24 -12
+    spr() 370 0 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9  02 03 00 01 01 \w0 \w0 
+   27 * 9  02 03 01 01 01 \w1 \w1
+   27 * 9  02 03 02 01 01 \w2 \w2
+   27 * 9  02 03 03 01 01 \w3 \w3
+   27 * 9  02 03 04 01 01 \w4 \w4
+   27 * 9  02 03 05 01 01 \w5 \w5
+   27 * 9  02 03 06 01 01 \w6 \w6
+   27 * 9  02 03 07 01 01 \w7 \w7
+   27 * 9  02 03 08 01 01 \w8 \w8
+  139 * 9  02 03 09 01 01 \w9 \w9
+  139 * 9  02 03 0A 01 01 \w10 \w10
+  139 * 9  02 03 0B 01 01 \w11 \w11
+  139 * 9  02 03 0C 01 01 \w12 \w12
+  139 * 9  02 03 0D 01 01 \w13 \w13
+  139 * 9  02 03 0E 01 01 \w14 \w14
+  139 * 9  02 03 0F 01 01 \w15 \w15
+  139 * 9  02 03 10 01 01 \w16 \w16
+  139 * 9  02 03 11 01 01 \w17 \w17
+  139 * 9  02 03 12 01 01 \w18 \w18
+  139 * 9  02 03 13 01 01 \w19 \w19
+  139 * 9  02 03 14 01 01 \w20 \w20
+  139 * 9  02 03 15 01 01 \w21 \w21
+  139 * 9  02 03 16 01 01 \w22 \w22
+  139 * 9  02 03 17 01 01 \w23 \w23
+  139 * 9  02 03 18 01 01 \w24 \w24
+  139 * 9  02 03 19 01 01 \w25 \w25
+  139 * 9  02 03 1A 01 01 \w26 \w26
+  139 * 9  02 03 1B 01 01 \w27 \w27
+  139 * 9  02 03 1C 01 01 \w28 \w28
+  139 * 9  02 03 1D 01 01 \w29 \w29
+  139 * 9  02 03 1E 01 01 \w30 \w30
+  139 * 9  02 03 1F 01 01 \w31 \w31
+  139 * 9  02 03 20 01 01 \w32 \w32
+  139 * 9  02 03 21 01 01 \w33 \w33
+  139 * 9  02 03 22 01 01 \w34 \w34
+  139 * 9  02 03 23 01 01 \w35 \w35
+  139 * 9  02 03 24 01 01 \w36 \w36
+  139 * 9  02 03 25 01 01 \w37 \w37
+  139 * 9  02 03 26 01 01 \w38 \w38
+  139 * 9  02 03 27 01 01 \w39 \w39
+  139 * 9  02 03 28 01 01 \w40 \w40
+  139 * 9  02 03 29 01 01 \w41 \w41
+  139 * 9  02 03 2A 01 01 \w42 \w42
+  139 * 9  02 03 2B 01 01 \w43 \w43
+  139 * 9  02 03 2C 01 01 \w44 \w44
+  139 * 9  02 03 2D 01 01 \w45 \w45
+
+  142 * 22	 02 03 F0 81 F2 00 FF 2E // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 07 07 // AirFrance
+                             02 00 1A 1A // Iberia
+                             03 00 26 26 // Spanair
+                             04 00 2B 2B // Wizz Air
+                             05 00 01 01 // Aeroflot
+                             06 00 06 06 // AirBerlin
+                             07 00 13 13 // CondorBerlin
+                             08 00 19 19 // Germanwings
+                             09 00 1B 1B // Indian
+                             0A 00 20 20 // Mexicana
+                             0B 00 02 02 // AirAsia
+                             0C 00 0A 0A // Amsterdam
+                             0D 00 16 16 // Delta
+                             0E 00 2C 2C // Vietnam
+                             0F 00 0D 0D // Austrian
+                             10 00 27 27 // Swiss
+                             11 00 05 05 // Air Canada
+                             12 00 2A 2A // United
+                             13 00 11 11 // Brunei
+                             14 00 0B 0B // ANA
+                             15 00 0F 0F // Avianca
+                             16 00 17 17 // EtihadF1
+                             17 00 10 10 // BA
+                             18 00 2D 2D // Vueling
+                             19 00 1E 1E // LAN
+                             1A 00 1D 1D // Jetstar
+                             1B 00 18 18 // Finnair
+                             1C 00 14 14 // Croatia
+                             1D 00 12 12 // CSA
+                             1E 00 09 09 // Alitalia
+                             1F 00 29 29 // Tunisair
+                             20 00 24 24 // Qatar
+                             21 00 15 15 // Cyprus
+                             22 00 28 28 // TAP
+                             23 00 0C 0C // Asiana
+                             24 00 04 04 // Air Canada New
+                             25 00 03 03 // Air Astana
+                             26 00 0E 0E // Austrian Retro
+                             27 00 1F 1F // Lufthansa
+                             28 00 21 21 // MiddleEast
+                             29 00 22 22 // Olympic 
+                             2A 00 25 25 // SaudiArabian
+                             2B 00 08 08 // Air India
+                             2C 00 1C 1C // IndiGo
+                             2D 00 23 23 // Philippines Airlines
+                             FF FF       // End livary graphical selection    
+
+    A1_PLANES(46,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/(0)Greyscale.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirFrance.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Iberia.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Spanair.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Wizz.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Aeroflot.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirBerlin.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CondorBerlin.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Germanwings.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Indian.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Mexicana.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAsia.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Amsterdam.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Delta.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vietnam.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Austrian.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Swiss.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanada.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/United.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Brunei.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/ANA.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Avianca.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/EtihadF1.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/BA.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vueling.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/LAN.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Jetstar.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Finnair.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Croatia.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CSA.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Alitalia.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Tunisair.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Qatar.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Cyprus.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/TAP.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Asiana.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanadaNew.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAstana.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AustrianRetro.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Lufthansa.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/MiddleEast.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Olympic.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/SaudiArabian.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirIndia.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/IndiGo.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/PhilippinesAirlines.pcx
+    spr() 0 35 09 23 45 -23 -12
+    spr() 50 35 09 21 40 -20 -11
+    spr() 100 35 09 23 48 -24 -12
+    spr() 160 35 09 30 39 -20 -15
+    spr() 210 35 09 33 45 -23 -17
+    spr() 260 35 09 30 39 -20 -15
+    spr() 310 35 09 23 48 -24 -12
+    spr() 370 35 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9  02 03 00 01 01 \w0 \w0 
+   27 * 9  02 03 01 01 01 \w1 \w1
+   27 * 9  02 03 02 01 01 \w2 \w2
+   27 * 9  02 03 03 01 01 \w3 \w3
+   27 * 9  02 03 04 01 01 \w4 \w4
+   27 * 9  02 03 05 01 01 \w5 \w5
+   27 * 9  02 03 06 01 01 \w6 \w6
+   27 * 9  02 03 07 01 01 \w7 \w7
+   27 * 9  02 03 08 01 01 \w8 \w8
+  139 * 9  02 03 09 01 01 \w9 \w9
+  139 * 9  02 03 0A 01 01 \w10 \w10
+  139 * 9  02 03 0B 01 01 \w11 \w11
+  139 * 9  02 03 0C 01 01 \w12 \w12
+  139 * 9  02 03 0D 01 01 \w13 \w13
+  139 * 9  02 03 0E 01 01 \w14 \w14
+  139 * 9  02 03 0F 01 01 \w15 \w15
+  139 * 9  02 03 10 01 01 \w16 \w16
+  139 * 9  02 03 11 01 01 \w17 \w17
+  139 * 9  02 03 12 01 01 \w18 \w18
+  139 * 9  02 03 13 01 01 \w19 \w19
+  139 * 9  02 03 14 01 01 \w20 \w20
+  139 * 9  02 03 15 01 01 \w21 \w21
+  139 * 9  02 03 16 01 01 \w22 \w22
+  139 * 9  02 03 17 01 01 \w23 \w23
+  139 * 9  02 03 18 01 01 \w24 \w24
+  139 * 9  02 03 19 01 01 \w25 \w25
+  139 * 9  02 03 1A 01 01 \w26 \w26
+  139 * 9  02 03 1B 01 01 \w27 \w27
+  139 * 9  02 03 1C 01 01 \w28 \w28
+  139 * 9  02 03 1D 01 01 \w29 \w29
+  139 * 9  02 03 1E 01 01 \w30 \w30
+  139 * 9  02 03 1F 01 01 \w31 \w31
+  139 * 9  02 03 20 01 01 \w32 \w32
+  139 * 9  02 03 21 01 01 \w33 \w33
+  139 * 9  02 03 22 01 01 \w34 \w34
+  139 * 9  02 03 23 01 01 \w35 \w35
+  139 * 9  02 03 24 01 01 \w36 \w36
+  139 * 9  02 03 25 01 01 \w37 \w37
+  139 * 9  02 03 26 01 01 \w38 \w38
+  139 * 9  02 03 27 01 01 \w39 \w39
+  139 * 9  02 03 28 01 01 \w40 \w40
+  139 * 9  02 03 29 01 01 \w41 \w41
+  139 * 9  02 03 2A 01 01 \w42 \w42
+  139 * 9  02 03 2B 01 01 \w43 \w43
+  139 * 9  02 03 2C 01 01 \w44 \w44
+  139 * 9  02 03 2D 01 01 \w45 \w45
+
+  142 * 22	 02 03 F1 81 F2 00 FF 2E // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 07 07 // AirFrance
+                             02 00 1A 1A // Iberia
+                             03 00 26 26 // Spanair
+                             04 00 2B 2B // Wizz Air
+                             05 00 01 01 // Aeroflot
+                             06 00 06 06 // AirBerlin
+                             07 00 13 13 // CondorBerlin
+                             08 00 19 19 // Germanwings
+                             09 00 1B 1B // Indian
+                             0A 00 20 20 // Mexicana
+                             0B 00 02 02 // AirAsia
+                             0C 00 0A 0A // Amsterdam
+                             0D 00 16 16 // Delta
+                             0E 00 2C 2C // Vietnam
+                             0F 00 0D 0D // Austrian
+                             10 00 27 27 // Swiss
+                             11 00 05 05 // Air Canada
+                             12 00 2A 2A // United
+                             13 00 11 11 // Brunei
+                             14 00 0B 0B // ANA
+                             15 00 0F 0F // Avianca
+                             16 00 17 17 // EtihadF1
+                             17 00 10 10 // BA
+                             18 00 2D 2D // Vueling
+                             19 00 1E 1E // LAN
+                             1A 00 1D 1D // Jetstar
+                             1B 00 18 18 // Finnair
+                             1C 00 14 14 // Croatia
+                             1D 00 12 12 // CSA
+                             1E 00 09 09 // Alitalia
+                             1F 00 29 29 // Tunisair
+                             20 00 24 24 // Qatar
+                             21 00 15 15 // Cyprus
+                             22 00 28 28 // TAP
+                             23 00 0C 0C // Asiana
+                             24 00 04 04 // Air Canada New
+                             25 00 03 03 // Air Astana
+                             26 00 0E 0E // Austrian Retro
+                             27 00 1F 1F // Lufthansa
+                             28 00 21 21 // MiddleEast
+                             29 00 22 22 // Olympic 
+                             2A 00 25 25 // SaudiArabian
+                             2B 00 08 08 // Air India
+                             2C 00 1C 1C // IndiGo
+                             2D 00 23 23 // Philippines Airlines
+                             FF FF       // End livary graphical selection  
+
+    A1_PLANES(46,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/(0)Greyscale.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirFrance.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Iberia.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Spanair.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Wizz.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Aeroflot.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirBerlin.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CondorBerlin.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Germanwings.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Indian.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Mexicana.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAsia.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Amsterdam.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Delta.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vietnam.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Austrian.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Swiss.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanada.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/United.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Brunei.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/ANA.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Avianca.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/EtihadF1.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/BA.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vueling.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/LAN.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Jetstar.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Finnair.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Croatia.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CSA.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Alitalia.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Tunisair.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Qatar.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Cyprus.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/TAP.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Asiana.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanadaNew.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAstana.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AustrianRetro.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Lufthansa.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/MiddleEast.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Olympic.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/SaudiArabian.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirIndia.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/IndiGo.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/PhilippinesAirlines.pcx
+    spr() 0 70 09 36 44 -22 -18
+    spr() 50 70 09 31 39 -20 -16
+    spr() 100 70 09 22 50 -25 -11
+    spr() 160 70 09 21 37 -19 -11
+    spr() 210 70 09 15 42 -21 -8
+    spr() 260 70 09 21 37 -19 -11
+    spr() 310 70 09 22 50 -25 -11
+    spr() 370 70 09 31 39 -40 -16
+    #undef SPRITE_LOCATION
+
+   27 * 9  02 03 00 01 01 \w0 \w0 
+   27 * 9  02 03 01 01 01 \w1 \w1
+   27 * 9  02 03 02 01 01 \w2 \w2
+   27 * 9  02 03 03 01 01 \w3 \w3
+   27 * 9  02 03 04 01 01 \w4 \w4
+   27 * 9  02 03 05 01 01 \w5 \w5
+   27 * 9  02 03 06 01 01 \w6 \w6
+   27 * 9  02 03 07 01 01 \w7 \w7
+   27 * 9  02 03 08 01 01 \w8 \w8
+  139 * 9  02 03 09 01 01 \w9 \w9
+  139 * 9  02 03 0A 01 01 \w10 \w10
+  139 * 9  02 03 0B 01 01 \w11 \w11
+  139 * 9  02 03 0C 01 01 \w12 \w12
+  139 * 9  02 03 0D 01 01 \w13 \w13
+  139 * 9  02 03 0E 01 01 \w14 \w14
+  139 * 9  02 03 0F 01 01 \w15 \w15
+  139 * 9  02 03 10 01 01 \w16 \w16
+  139 * 9  02 03 11 01 01 \w17 \w17
+  139 * 9  02 03 12 01 01 \w18 \w18
+  139 * 9  02 03 13 01 01 \w19 \w19
+  139 * 9  02 03 14 01 01 \w20 \w20
+  139 * 9  02 03 15 01 01 \w21 \w21
+  139 * 9  02 03 16 01 01 \w22 \w22
+  139 * 9  02 03 17 01 01 \w23 \w23
+  139 * 9  02 03 18 01 01 \w24 \w24
+  139 * 9  02 03 19 01 01 \w25 \w25
+  139 * 9  02 03 1A 01 01 \w26 \w26
+  139 * 9  02 03 1B 01 01 \w27 \w27
+  139 * 9  02 03 1C 01 01 \w28 \w28
+  139 * 9  02 03 1D 01 01 \w29 \w29
+  139 * 9  02 03 1E 01 01 \w30 \w30
+  139 * 9  02 03 1F 01 01 \w31 \w31
+  139 * 9  02 03 20 01 01 \w32 \w32
+  139 * 9  02 03 21 01 01 \w33 \w33
+  139 * 9  02 03 22 01 01 \w34 \w34
+  139 * 9  02 03 23 01 01 \w35 \w35
+  139 * 9  02 03 24 01 01 \w36 \w36
+  139 * 9  02 03 25 01 01 \w37 \w37
+  139 * 9  02 03 26 01 01 \w38 \w38
+  139 * 9  02 03 27 01 01 \w39 \w39
+  139 * 9  02 03 28 01 01 \w40 \w40
+  139 * 9  02 03 29 01 01 \w41 \w41
+  139 * 9  02 03 2A 01 01 \w42 \w42
+  139 * 9  02 03 2B 01 01 \w43 \w43
+  139 * 9  02 03 2C 01 01 \w44 \w44
+  139 * 9  02 03 2D 01 01 \w45 \w45
+
+  142 * 22	 02 03 F2 81 F2 00 FF 2E // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 07 07 // AirFrance
+                             02 00 1A 1A // Iberia
+                             03 00 26 26 // Spanair
+                             04 00 2B 2B // Wizz Air
+                             05 00 01 01 // Aeroflot
+                             06 00 06 06 // AirBerlin
+                             07 00 13 13 // CondorBerlin
+                             08 00 19 19 // Germanwings
+                             09 00 1B 1B // Indian
+                             0A 00 20 20 // Mexicana
+                             0B 00 02 02 // AirAsia
+                             0C 00 0A 0A // Amsterdam
+                             0D 00 16 16 // Delta
+                             0E 00 2C 2C // Vietnam
+                             0F 00 0D 0D // Austrian
+                             10 00 27 27 // Swiss
+                             11 00 05 05 // Air Canada
+                             12 00 2A 2A // United
+                             13 00 11 11 // Brunei
+                             14 00 0B 0B // ANA
+                             15 00 0F 0F // Avianca
+                             16 00 17 17 // EtihadF1
+                             17 00 10 10 // BA
+                             18 00 2D 2D // Vueling
+                             19 00 1E 1E // LAN
+                             1A 00 1D 1D // Jetstar
+                             1B 00 18 18 // Finnair
+                             1C 00 14 14 // Croatia
+                             1D 00 12 12 // CSA
+                             1E 00 09 09 // Alitalia
+                             1F 00 29 29 // Tunisair
+                             20 00 24 24 // Qatar
+                             21 00 15 15 // Cyprus
+                             22 00 28 28 // TAP
+                             23 00 0C 0C // Asiana
+                             24 00 04 04 // Air Canada New
+                             25 00 03 03 // Air Astana
+                             26 00 0E 0E // Austrian Retro
+                             27 00 1F 1F // Lufthansa
+                             28 00 21 21 // MiddleEast
+                             29 00 22 22 // Olympic 
+                             2A 00 25 25 // SaudiArabian
+                             2B 00 08 08 // Air India
+                             2C 00 1C 1C // IndiGo
+                             2D 00 23 23 // Philippines Airlines
+                             FF FF       // End livary graphical selection    
+ 
+    A1_PLANES(46,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/(0)Greyscale.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirFrance.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Iberia.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Spanair.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Wizz.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Aeroflot.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirBerlin.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CondorBerlin.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Germanwings.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Indian.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Mexicana.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAsia.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Amsterdam.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Delta.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vietnam.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Austrian.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Swiss.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanada.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/United.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Brunei.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/ANA.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Avianca.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/EtihadF1.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/BA.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vueling.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/LAN.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Jetstar.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Finnair.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Croatia.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CSA.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Alitalia.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Tunisair.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Qatar.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Cyprus.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/TAP.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Asiana.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanadaNew.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAstana.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AustrianRetro.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Lufthansa.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/MiddleEast.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Olympic.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/SaudiArabian.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirIndia.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/IndiGo.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/PhilippinesAirlines.pcx
+    spr() 0 120 09 23 44 -22 -12
+    spr() 50 120 09 21 40 -20 -11
+    spr() 100 120 09 22 48 -24 -11
+    spr() 160 120 09 30 39 -20 -15
+    spr() 210 120 09 28 44 -11 -14
+    spr() 260 120 09 30 39 -20 -15
+    spr() 310 120 09 22 48 -24 -11
+    spr() 370 120 09 21 40 -20 -11
+    #undef SPRITE_LOCATION
+
+   27 * 9  02 03 00 01 01 \w0 \w0 
+   27 * 9  02 03 01 01 01 \w1 \w1
+   27 * 9  02 03 02 01 01 \w2 \w2
+   27 * 9  02 03 03 01 01 \w3 \w3
+   27 * 9  02 03 04 01 01 \w4 \w4
+   27 * 9  02 03 05 01 01 \w5 \w5
+   27 * 9  02 03 06 01 01 \w6 \w6
+   27 * 9  02 03 07 01 01 \w7 \w7
+   27 * 9  02 03 08 01 01 \w8 \w8
+  139 * 9  02 03 09 01 01 \w9 \w9
+  139 * 9  02 03 0A 01 01 \w10 \w10
+  139 * 9  02 03 0B 01 01 \w11 \w11
+  139 * 9  02 03 0C 01 01 \w12 \w12
+  139 * 9  02 03 0D 01 01 \w13 \w13
+  139 * 9  02 03 0E 01 01 \w14 \w14
+  139 * 9  02 03 0F 01 01 \w15 \w15
+  139 * 9  02 03 10 01 01 \w16 \w16
+  139 * 9  02 03 11 01 01 \w17 \w17
+  139 * 9  02 03 12 01 01 \w18 \w18
+  139 * 9  02 03 13 01 01 \w19 \w19
+  139 * 9  02 03 14 01 01 \w20 \w20
+  139 * 9  02 03 15 01 01 \w21 \w21
+  139 * 9  02 03 16 01 01 \w22 \w22
+  139 * 9  02 03 17 01 01 \w23 \w23
+  139 * 9  02 03 18 01 01 \w24 \w24
+  139 * 9  02 03 19 01 01 \w25 \w25
+  139 * 9  02 03 1A 01 01 \w26 \w26
+  139 * 9  02 03 1B 01 01 \w27 \w27
+  139 * 9  02 03 1C 01 01 \w28 \w28
+  139 * 9  02 03 1D 01 01 \w29 \w29
+  139 * 9  02 03 1E 01 01 \w30 \w30
+  139 * 9  02 03 1F 01 01 \w31 \w31
+  139 * 9  02 03 20 01 01 \w32 \w32
+  139 * 9  02 03 21 01 01 \w33 \w33
+  139 * 9  02 03 22 01 01 \w34 \w34
+  139 * 9  02 03 23 01 01 \w35 \w35
+  139 * 9  02 03 24 01 01 \w36 \w36
+  139 * 9  02 03 25 01 01 \w37 \w37
+  139 * 9  02 03 26 01 01 \w38 \w38
+  139 * 9  02 03 27 01 01 \w39 \w39
+  139 * 9  02 03 28 01 01 \w40 \w40
+  139 * 9  02 03 29 01 01 \w41 \w41
+  139 * 9  02 03 2A 01 01 \w42 \w42
+  139 * 9  02 03 2B 01 01 \w43 \w43
+  139 * 9  02 03 2C 01 01 \w44 \w44
+  139 * 9  02 03 2D 01 01 \w45 \w45
+
+  142 * 22	 02 03 F3 81 F2 00 FF 2E // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 07 07 // AirFrance
+                             02 00 1A 1A // Iberia
+                             03 00 26 26 // Spanair
+                             04 00 2B 2B // Wizz Air
+                             05 00 01 01 // Aeroflot
+                             06 00 06 06 // AirBerlin
+                             07 00 13 13 // CondorBerlin
+                             08 00 19 19 // Germanwings
+                             09 00 1B 1B // Indian
+                             0A 00 20 20 // Mexicana
+                             0B 00 02 02 // AirAsia
+                             0C 00 0A 0A // Amsterdam
+                             0D 00 16 16 // Delta
+                             0E 00 2C 2C // Vietnam
+                             0F 00 0D 0D // Austrian
+                             10 00 27 27 // Swiss
+                             11 00 05 05 // Air Canada
+                             12 00 2A 2A // United
+                             13 00 11 11 // Brunei
+                             14 00 0B 0B // ANA
+                             15 00 0F 0F // Avianca
+                             16 00 17 17 // EtihadF1
+                             17 00 10 10 // BA
+                             18 00 2D 2D // Vueling
+                             19 00 1E 1E // LAN
+                             1A 00 1D 1D // Jetstar
+                             1B 00 18 18 // Finnair
+                             1C 00 14 14 // Croatia
+                             1D 00 12 12 // CSA
+                             1E 00 09 09 // Alitalia
+                             1F 00 29 29 // Tunisair
+                             20 00 24 24 // Qatar
+                             21 00 15 15 // Cyprus
+                             22 00 28 28 // TAP
+                             23 00 0C 0C // Asiana
+                             24 00 04 04 // Air Canada New
+                             25 00 03 03 // Air Astana
+                             26 00 0E 0E // Austrian Retro
+                             27 00 1F 1F // Lufthansa
+                             28 00 21 21 // MiddleEast
+                             29 00 22 22 // Olympic 
+                             2A 00 25 25 // SaudiArabian
+                             2B 00 08 08 // Air India
+                             2C 00 1C 1C // IndiGo
+                             2D 00 23 23 // Philippines Airlines
+                             FF FF       // End livary graphical selection    
+
+
+    A1_PLANES(46,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/(0)Greyscale.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirFrance.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Iberia.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Spanair.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Wizz.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Aeroflot.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirBerlin.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CondorBerlin.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Germanwings.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Indian.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Mexicana.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAsia.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Amsterdam.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Delta.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vietnam.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Austrian.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Swiss.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanada.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/United.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Brunei.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/ANA.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Avianca.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/EtihadF1.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/BA.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Vueling.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/LAN.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Jetstar.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Finnair.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Croatia.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/CSA.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Alitalia.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Tunisair.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Qatar.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Cyprus.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/TAP.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Asiana.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirCanadaNew.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirAstana.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AustrianRetro.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Lufthansa.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/MiddleEast.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/Olympic.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/SaudiArabian.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/AirIndia.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/IndiGo.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a320-200/PhilippinesAirlines.pcx
+    spr() 0 160 09 29 44 -22 -15
+    spr() 50 160 09 25 40 -20 -13
+    spr() 100 160 09 22 49 -25 -11
+    spr() 160 160 09 26 38 -19 -13
+    spr() 210 160 09 22 42 -21 -11
+    spr() 260 160 09 26 38 -19 -13
+    spr() 310 160 09 22 49 -25 -11
+    spr() 370 160 09 25 40 -20 -13
+    #undef SPRITE_LOCATION
+
+   27 * 9  02 03 00 01 01 \w0 \w0 
+   27 * 9  02 03 01 01 01 \w1 \w1
+   27 * 9  02 03 02 01 01 \w2 \w2
+   27 * 9  02 03 03 01 01 \w3 \w3
+   27 * 9  02 03 04 01 01 \w4 \w4
+   27 * 9  02 03 05 01 01 \w5 \w5
+   27 * 9  02 03 06 01 01 \w6 \w6
+   27 * 9  02 03 07 01 01 \w7 \w7
+   27 * 9  02 03 08 01 01 \w8 \w8
+  139 * 9  02 03 09 01 01 \w9 \w9
+  139 * 9  02 03 0A 01 01 \w10 \w10
+  139 * 9  02 03 0B 01 01 \w11 \w11
+  139 * 9  02 03 0C 01 01 \w12 \w12
+  139 * 9  02 03 0D 01 01 \w13 \w13
+  139 * 9  02 03 0E 01 01 \w14 \w14
+  139 * 9  02 03 0F 01 01 \w15 \w15
+  139 * 9  02 03 10 01 01 \w16 \w16
+  139 * 9  02 03 11 01 01 \w17 \w17
+  139 * 9  02 03 12 01 01 \w18 \w18
+  139 * 9  02 03 13 01 01 \w19 \w19
+  139 * 9  02 03 14 01 01 \w20 \w20
+  139 * 9  02 03 15 01 01 \w21 \w21
+  139 * 9  02 03 16 01 01 \w22 \w22
+  139 * 9  02 03 17 01 01 \w23 \w23
+  139 * 9  02 03 18 01 01 \w24 \w24
+  139 * 9  02 03 19 01 01 \w25 \w25
+  139 * 9  02 03 1A 01 01 \w26 \w26
+  139 * 9  02 03 1B 01 01 \w27 \w27
+  139 * 9  02 03 1C 01 01 \w28 \w28
+  139 * 9  02 03 1D 01 01 \w29 \w29
+  139 * 9  02 03 1E 01 01 \w30 \w30
+  139 * 9  02 03 1F 01 01 \w31 \w31
+  139 * 9  02 03 20 01 01 \w32 \w32
+  139 * 9  02 03 21 01 01 \w33 \w33
+  139 * 9  02 03 22 01 01 \w34 \w34
+  139 * 9  02 03 23 01 01 \w35 \w35
+  139 * 9  02 03 24 01 01 \w36 \w36
+  139 * 9  02 03 25 01 01 \w37 \w37
+  139 * 9  02 03 26 01 01 \w38 \w38
+  139 * 9  02 03 27 01 01 \w39 \w39
+  139 * 9  02 03 28 01 01 \w40 \w40
+  139 * 9  02 03 29 01 01 \w41 \w41
+  139 * 9  02 03 2A 01 01 \w42 \w42
+  139 * 9  02 03 2B 01 01 \w43 \w43
+  139 * 9  02 03 2C 01 01 \w44 \w44
+  139 * 9  02 03 2D 01 01 \w45 \w45
+
+  142 * 22	 02 03 F4 81 F2 00 FF 2E // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 07 07 // AirFrance
+                             02 00 1A 1A // Iberia
+                             03 00 26 26 // Spanair
+                             04 00 2B 2B // Wizz Air
+                             05 00 01 01 // Aeroflot
+                             06 00 06 06 // AirBerlin
+                             07 00 13 13 // CondorBerlin
+                             08 00 19 19 // Germanwings
+                             09 00 1B 1B // Indian
+                             0A 00 20 20 // Mexicana
+                             0B 00 02 02 // AirAsia
+                             0C 00 0A 0A // Amsterdam
+                             0D 00 16 16 // Delta
+                             0E 00 2C 2C // Vietnam
+                             0F 00 0D 0D // Austrian
+                             10 00 27 27 // Swiss
+                             11 00 05 05 // Air Canada
+                             12 00 2A 2A // United
+                             13 00 11 11 // Brunei
+                             14 00 0B 0B // ANA
+                             15 00 0F 0F // Avianca
+                             16 00 17 17 // EtihadF1
+                             17 00 10 10 // BA
+                             18 00 2D 2D // Vueling
+                             19 00 1E 1E // LAN
+                             1A 00 1D 1D // Jetstar
+                             1B 00 18 18 // Finnair
+                             1C 00 14 14 // Croatia
+                             1D 00 12 12 // CSA
+                             1E 00 09 09 // Alitalia
+                             1F 00 29 29 // Tunisair
+                             20 00 24 24 // Qatar
+                             21 00 15 15 // Cyprus
+                             22 00 28 28 // TAP
+                             23 00 0C 0C // Asiana
+                             24 00 04 04 // Air Canada New
+                             25 00 03 03 // Air Astana
+                             26 00 0E 0E // Austrian Retro
+                             27 00 1F 1F // Lufthansa
+                             28 00 21 21 // MiddleEast
+                             29 00 22 22 // Olympic 
+                             2A 00 25 25 // SaudiArabian
+                             2B 00 08 08 // Air India
+                             2C 00 1C 1C // IndiGo
+                             2D 00 23 23 // Philippines Airlines
+                             FF FF       // End livary graphical selection       
+
+  139 * 9	 01 03 01 01
+
+    3 sprites/pcx/airbus/a320-200/(0)Greyscale.pcx 310 1 09 21 48 -24 -12
+
+  139 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+  147 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 0	 02 03 01 81 F2 00 FF 2E     // 46 Liveries
+                             00 80 00 00 // Greyscale
+                             53 80 01 01 // Aeroflot
+                             1F 80 02 02 // Air Asia 
+                             9E 80 03 03 // Air Astana 
+                             9D 80 04 04 // Air Canada New
+                             0D 80 05 05 // Air Canada Old
+                             63 80 06 06 // Air Berlin
+                             13 80 07 07 // Air France
+                             C0 80 08 08 // Air India
+                             20 80 09 09 // Alitalia
+                             3B 80 0A 0A // Amsterdam
+                             28 80 0B 0B // ANA
+                             9C 80 0C 0C // Asiana
+                             3F 80 0D 0D // Austrian
+                             9F 80 0E 0E // Austrain Retro
+                             6A 80 0F 0F // Avianca
+                             54 80 10 10 // BA
+                             4D 80 11 11 // Brunei 
+                             A1 80 12 12 // CeczhCSA 
+                             65 80 13 13 // CondorBerlin
+                             A3 80 14 14 // Croatia  
+                             9B 80 15 15 // Cyprus
+                             0E 80 16 16 // Delta    
+                             7E 80 17 17 // EtihadF1
+                             2E 80 18 18 // Finnair  
+                             66 80 19 19 // Germanwings
+                             15 80 1A 1A // Iberia
+                             1C 80 1B 1B // Indian
+                             CA 80 1C 1C // IndiGo
+                             8B 80 1D 1D // Jetstar 
+                             8A 80 1E 1E // LAN
+                             69 80 1F 1F // Lufthansa
+                             1D 80 20 20 // Mexicana
+                             B0 80 21 21 // MiddleEast
+                             6B 80 22 22 // Olympic
+                             CB 80 23 23 // Philippines Airlines
+                             9A 80 24 24 // Qatar
+                             B1 80 25 25 // SaudiArabianAirlines
+                             16 80 26 26 // Spanair
+                             4A 80 27 27 // Swiss
+                             0A 80 28 28 // TAP
+                             A4 80 29 29 // Tunisair
+                             85 80 2A 2A // United    
+                             17 80 2B 2B // Wizz Air
+                             3E 80 2C 2C // Vietnam
+                             7F 80 2D 2D // Vueling
+                             FF FF       // End livary text selection   
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speed during flight
+                             14 80 0D 0D   // Take Off 
+                             1C 80 0F 0F   // Climbing
+                             46 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             12 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Cost during flight
+                             \w32852 0D 0F // Take Off
+                             \w32845 12 12 // Flight
+                             \w32846 10 14 // Approach
+                             \w32849 15 16 // Landing
+                             \w32817 08 0C // Grounded	
+                             \w32807       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32841 0B 0B // Purchase Cost Purchase List
+				                     \w32845 0E 0E // Running Cost Purchase List
+                             00 00
+                            
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00                             			
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03      // Callbacks
+                             01 00 19 19 // Livery Text
+                             06 00 33 33 // Play Sound
+                             04 00 36 36 // Change Speed/Cost
+  			                     5F 00       // Apply graphics
+
+   -1 * 0  02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // Cost
+                             4C 00
+
+   -1 * 0   03 03 01 AIRV_AIRBUS_A320_200 01  
+                             FF 08 00      // P-List
+                             07 00         // Default  
+
+END_SECTION(Planes-Airbus-A320-200)

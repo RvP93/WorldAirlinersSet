@@ -1,0 +1,31 @@
+##grflangid 0x5a
+##plural 1
+#
+# DO NOT USE TABS IN LNG FILE!
+#
+# -------- PARAMS AND PARAMS MENU --------
+#
+# -------- Aeroplanes --------
+STR_AIRV_AIRBUS_A300_600F                                       :Airbus A300-600F
+STR_AIRV_BOEING_787_9                                           :Boeing 787-9
+#
+# -------- Helicopters --------
+#
+# ------- Livery Names -------
+#
+# Cargo
+#
+# Low Cost
+#
+# One World
+STR_VLIV_AMERICAN_AIRLINES                                      :American Airlines
+#
+# Star Alliance
+#
+# Sky Team
+#
+# Unaffiliated
+STR_VLIV_AIR_FLORIDA                                            :Air Florida
+#
+# Others
+STR_VLIV_AIR_PACIFIC                                            :Air Pacific

@@ -1,0 +1,51 @@
+##grflangid 0x30
+##plural 7
+##gender m f n
+##case b c d m n w
+STR_GRF_NAME                                                    :WAS {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}The World Airliners Set (WAS){}{SILVER}zestaw stworzony w celu udostępnienia w OpenTTD samolotów w barwach obecnych i dawniejszych linii lotniczych z całego świata.{}{BLACK}Kod: {SILVER}Beardie, DJNekkid, Faddypainter, Frank, George, Rens and yorick{}{BLACK}Grafika: {SILVER}Beardie, Dimme, EXTSpotter, Faddypainter, Frank, Firzafp, Getuouk, Giles, RvP93, Simozzz, Trainboy2004 and Vlad{}Większość grafik pochodzi z setu PikkaBirds AV8 Set, proszę uwzględnić autora w przypadku użycia tych grafik. Więcej informacji w pliku readme.txt
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/worldairlinersset
+#
+# DO NOT USE TABS IN LNG FILE!
+#
+# -------- PARAMS AND PARAMS MENU --------
+STR_PARAM_NAME_ENABLE_STANDARD_PLANES                           :Standardowe samoloty
+STR_PARAM_DESC_ENABLE_STANDARD_PLANES                           :Włącz wszystkie standardowe samoloty
+STR_PARAM_NAME_ENABLE_RANGES                                    :Limit zasięgu
+STR_PARAM_DESC_ENABLE_RANGES                                    :Włącz ograniczenia zasięgu
+STR_PARAM_NAME_RANGES                                           :Zasięgi
+STR_PARAM_DESC_RANGES                                           :Zasięgi: Normalny, Długi lub Wyłączony
+STR_PARAM_VALUE_RANGES_OFF                                      :Zasięg wyłączony
+STR_PARAM_VALUE_RANGES_NORMAL                                   :Zasięg normalny
+STR_PARAM_VALUE_RANGES_LONG                                     :Zasięg długi
+STR_PARAM_BCOSTS_NAME                                           :Bazowy współczynnik kosztów zakupu
+STR_PARAM_BCOSTS_DESC                                           :Ustal mnożnik współczynnika kosztów zakupu (0 oznacza 1/16, 4 oznacza brak zmian, 8 oznacza x16)
+STR_PARAM_RCOSTS_NAME                                           :Bazowy współczynnik kosztów utrzymania
+STR_PARAM_RCOSTS_DESC                                           :Ustal mnożnik współczynnika kosztów utrzymania (0 oznacza 1/16, 4 oznacza brak zmian, 8 oznacza x16)
+#
+# -------- Aeroplanes --------
+STR_AIRV_AIRBUS_A330_200                                        :Airbus A330-200
+STR_AIRV_EMBRAER_ERJ_170LR                                      :Embraer 170 LR
+STR_AIRV_ILYUSHIN_62                                            :Ił-62
+#
+# -------- Helicopters --------
+#
+# ------- Livery Names -------
+#
+# Cargo
+#
+# Low Cost
+#
+# One World
+#
+# Star Alliance
+STR_VLIV_LOT                                                    : Polskie Linie Lotnicze LOT
+STR_VLIV_LUFTHANSA_PREVIOUS                                     : Lufthansa (dawne)
+#
+# Sky Team
+STR_VLIV_AEROFLOT                                               : Aerofłot
+STR_VLIV_AEROFLOT_OLD                                           : Aerofłot (dawny)
+#
+# Unaffiliated
+#
+# Others

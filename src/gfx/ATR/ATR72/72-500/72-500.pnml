@@ -1,0 +1,374 @@
+
+// ATR-72-500
+
+// Template: 
+#define ATR_72_500_sprite_layout_template(name)                              \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 46, 23, -23, -12, ANIM]                                           \
+  [ 50,	1, 40, 20, -20,	-10, ANIM]                                           \
+  [ 93,	1, 50, 23, -25,	-12, ANIM]                                           \
+  [146,	1, 41, 29, -21,	-15, ANIM]                                           \
+  [190,	1, 46, 34, -23,	-17, ANIM]                                           \
+  [240,	1, 41, 29, -21,	-15, ANIM]                                           \
+  [283,	1, 50, 23, -25,	-12, ANIM]                                           \
+  [336,	1, 40, 20, -20,	-10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 39, 46, 23, -23, -12, ANIM]                                          \
+  [ 50, 39, 40, 20, -20, -10, ANIM]                                          \
+  [ 93, 39, 50, 23, -25, -12, ANIM]                                          \
+  [146, 39, 41, 31, -21, -16, ANIM]                                          \
+  [190, 39, 46, 35, -23, -18, ANIM]                                          \
+  [240, 39, 41, 31, -21, -16, ANIM]                                          \
+  [283, 39, 50, 23, -25, -12, ANIM]                                          \
+  [336, 39, 40, 20, -20, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 78, 46, 35, -18, -18, ANIM]                                          \
+  [ 50, 78, 40, 29, -20, -15, ANIM]                                          \
+  [ 93, 78, 51, 24, -26, -12, ANIM]                                          \
+  [146, 78, 39, 17, -20, -9 , ANIM]                                          \
+  [190, 78, 44, 20, -22, -10, ANIM]                                          \
+  [240, 78, 39, 17, -20, -9 , ANIM]                                          \
+  [283, 78, 51, 24, -26, -12, ANIM]                                          \
+  [336, 78, 40, 29, -20, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 116, 46, 23, -23, -12, ANIM]                                         \
+  [ 50, 116, 40, 20, -20, -10, ANIM]                                         \
+  [ 93, 116, 50, 23, -25, -12, ANIM]                                         \
+  [146, 116, 41, 31, -21, -16, ANIM]                                         \
+  [190, 116, 46, 35, -23, -18, ANIM]                                         \
+  [240, 116, 41, 31, -21, -16, ANIM]                                         \
+  [283, 116, 50, 23, -25, -12, ANIM]                                         \
+  [336, 116, 40, 20, -20, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 46, 28, -23, -14, ANIM]                                         \
+  [ 50, 160, 40, 23, -20, -12, ANIM]                                         \
+  [ 93, 160, 50, 23, -25, -12, ANIM]                                         \
+  [146, 160, 39, 25, -20, -13, ANIM]                                         \
+  [190, 160, 46, 27, -23, -14, ANIM]                                         \
+  [240, 160, 39, 25, -20, -13, ANIM]                                         \
+  [283, 160, 50, 23, -25, -12, ANIM]                                         \
+  [336, 160, 40, 23, -20, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/(0)Greyscale.png"
+purchase_sprite(ATR_72_500, 283, 1, 50, 23, -25, -12)
+ATR_72_500_sprite_layout_template(ATR_72_500_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AerArran.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AerArran) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AirDeccan.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AirDeccan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AirDolomiti.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AirDolomiti) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/Airlinair.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_Airlinair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AirNostrum.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AirNostrum) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AirNostrumOld.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AirNostrumOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/Airserbia.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_Airserbia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AmericanEagle.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AmericanEagle) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/AurignyAirServices.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_AurignyAirServices)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/BinterCanarias.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_BinterCanarias)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/CSA.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_CSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/PrecisionAirServices.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_PrecisionAirServices) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-500/Swiftair.png"
+ATR_72_500_sprite_layout_template(ATR_72_500_Swiftair) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_Greyscale, flight_state())
+{
+  15: ATR_72_500_Greyscale_Climbing;
+  18: ATR_72_500_Greyscale_Flight;
+  21: ATR_72_500_Greyscale_Landing;
+  22: ATR_72_500_Greyscale_Touchdown;
+      ATR_72_500_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AerArran, flight_state())
+{
+  15: ATR_72_500_AerArran_Climbing;
+  18: ATR_72_500_AerArran_Flight;
+  21: ATR_72_500_AerArran_Landing;
+  22: ATR_72_500_AerArran_Touchdown;
+      ATR_72_500_AerArran_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AirDeccan, flight_state())
+{
+  15: ATR_72_500_AirDeccan_Climbing;
+  18: ATR_72_500_AirDeccan_Flight;
+  21: ATR_72_500_AirDeccan_Landing;
+  22: ATR_72_500_AirDeccan_Touchdown;
+      ATR_72_500_AirDeccan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AirDolomiti, flight_state())
+{
+  15: ATR_72_500_AirDolomiti_Climbing;
+  18: ATR_72_500_AirDolomiti_Flight;
+  21: ATR_72_500_AirDolomiti_Landing;
+  22: ATR_72_500_AirDolomiti_Touchdown;
+      ATR_72_500_AirDolomiti_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_Airlinair, flight_state())
+{
+  15: ATR_72_500_Airlinair_Climbing;
+  18: ATR_72_500_Airlinair_Flight;
+  21: ATR_72_500_Airlinair_Landing;
+  22: ATR_72_500_Airlinair_Touchdown;
+      ATR_72_500_Airlinair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AirNostrum, flight_state())
+{
+  15: ATR_72_500_AirNostrum_Climbing;
+  18: ATR_72_500_AirNostrum_Flight;
+  21: ATR_72_500_AirNostrum_Landing;
+  22: ATR_72_500_AirNostrum_Touchdown;
+      ATR_72_500_AirNostrum_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AirNostrumOld, flight_state())
+{
+  15: ATR_72_500_AirNostrumOld_Climbing;
+  18: ATR_72_500_AirNostrumOld_Flight;
+  21: ATR_72_500_AirNostrumOld_Landing;
+  22: ATR_72_500_AirNostrumOld_Touchdown;
+      ATR_72_500_AirNostrumOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_Airserbia, flight_state())
+{
+  15: ATR_72_500_Airserbia_Climbing;
+  18: ATR_72_500_Airserbia_Flight;
+  21: ATR_72_500_Airserbia_Landing;
+  22: ATR_72_500_Airserbia_Touchdown;
+      ATR_72_500_Airserbia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AmericanEagle, flight_state())
+{
+  15: ATR_72_500_AmericanEagle_Climbing;
+  18: ATR_72_500_AmericanEagle_Flight;
+  21: ATR_72_500_AmericanEagle_Landing;
+  22: ATR_72_500_AmericanEagle_Touchdown;
+      ATR_72_500_AmericanEagle_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_AurignyAirServices, flight_state())
+{
+  15: ATR_72_500_AurignyAirServices_Climbing;
+  18: ATR_72_500_AurignyAirServices_Flight;
+  21: ATR_72_500_AurignyAirServices_Landing;
+  22: ATR_72_500_AurignyAirServices_Touchdown;
+      ATR_72_500_AurignyAirServices_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_BinterCanarias, flight_state())
+{
+  15: ATR_72_500_BinterCanarias_Climbing;
+  18: ATR_72_500_BinterCanarias_Flight;
+  21: ATR_72_500_BinterCanarias_Landing;
+  22: ATR_72_500_BinterCanarias_Touchdown;
+      ATR_72_500_BinterCanarias_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_CSA, flight_state())
+{
+  15: ATR_72_500_CSA_Climbing;
+  18: ATR_72_500_CSA_Flight;
+  21: ATR_72_500_CSA_Landing;
+  22: ATR_72_500_CSA_Touchdown;
+      ATR_72_500_CSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_PrecisionAirServices, flight_state())
+{
+  15: ATR_72_500_PrecisionAirServices_Climbing;
+  18: ATR_72_500_PrecisionAirServices_Flight;
+  21: ATR_72_500_PrecisionAirServices_Landing;
+  22: ATR_72_500_PrecisionAirServices_Touchdown;
+      ATR_72_500_PrecisionAirServices_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_Swiftair, flight_state())
+{
+  15: ATR_72_500_Swiftair_Climbing;
+  18: ATR_72_500_Swiftair_Flight;
+  21: ATR_72_500_Swiftair_Landing;
+  22: ATR_72_500_Swiftair_Touchdown;
+      ATR_72_500_Swiftair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_sprites, cargo_subtype)
+{
+  1: ATR_72_500_AerArran;
+  2: ATR_72_500_AirDeccan;
+  3: ATR_72_500_AirDolomiti;
+  4: ATR_72_500_Airlinair;
+  5: ATR_72_500_AirNostrum;
+  6: ATR_72_500_AirNostrumOld;
+  7: ATR_72_500_Airserbia;
+  8: ATR_72_500_AmericanEagle;
+  9: ATR_72_500_AurignyAirServices;
+ 10: ATR_72_500_BinterCanarias;
+ 11: ATR_72_500_CSA;
+ 12: ATR_72_500_PrecisionAirServices;
+ 13: ATR_72_500_Swiftair;
+     ATR_72_500_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_running_cost_factor, flight_state())
+{
+  plane_RC(39)
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(346); // airplane climbing after take-off
+      18: return plane_speed_kmh(515); // heading for tower contact point
+  16..20: return plane_speed_kmh(378); // in flight
+  21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ATR);
+  1: string(STR_VLIV_AER_ARRAN_RINGED_DESIGN);
+  2: string(STR_VLIV_AIR_DECCAN);
+  3: string(STR_VLIV_AIR_DOLOMITI);
+  4: string(STR_VLIV_AIRLINAIR_AIR_FRANCE);
+  5: string(STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL);
+  6: string(STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD);
+  7: string(STR_VLIV_AIR_SERBIA);
+  8: string(STR_VLIV_AMERICAN_EAGLE);
+  9: string(STR_VLIV_AURIGNY_AIR_SERVICES);
+ 10: string(STR_VLIV_BINTER_CANARIAS);
+ 11: string(STR_VLIV_CZECH_AIRLINES);
+ 12: string(STR_VLIV_PRECISION_AIR_SERVICES);
+ 13: string(STR_VLIV_SWIFTAIR);     
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_500_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 66; // Aer Arran
+  2: return 72; // Air Deccan
+  3: return 64; // Air Dolomitu
+  4: return 70; // Airlinair
+  5: return 70; // Air Nostrum
+  6: return 70; // Air Nostrum Old
+  7: return 70; // Air Serbia
+  8: return 64; // American Eagle
+  9: return 66; // Aurigny Air Services
+ 10: return 72; // Binter Canarias
+ 11: return 70; // Czech Airlines
+ 12: return 70; // Precision Air Services
+ 13: return 68; // Swift Air
+     return 74;
+}
+
+item (FEAT_AIRCRAFT, ATR_72_500)
+{
+  property
+  {
+    name: string(STR_AIRV_ATR_72_500);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1997), 1, 1);
+    vehicle_life: 11;
+    model_life: get_model_life(1997,2024);
+    retire_early: get_retire_early(1997,2024);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 74;
+    mail_capacity: 7;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 295;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: ATR_72_500_sprites;
+    purchase: ATR_72_500_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: ATR_72_500_cargo_subtype_text;
+	passenger_capacity: ATR_72_500_cargo_subtype_capacity;
+    speed: ATR_72_500_speed;
+    running_cost_factor: ATR_72_500_running_cost_factor;
+    sound_effect: ATR_72_500_sound_effect;
+
+    cost_factor: 18; 
+    purchase_running_cost_factor: 39;
+    purchase_speed: plane_speed_kmh(515); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, ATR_72_500)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, ATR_72_500)
+  {
+    property
+    { range: 295; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, ATR_72_500)
+  {
+    property
+    { range: 445; }
+  }
+}

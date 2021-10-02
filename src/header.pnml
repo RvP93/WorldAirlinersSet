@@ -1,0 +1,56 @@
+ /// header
+
+// List of source files included from main file
+
+grf {
+    grfid: "WAS2";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESCRIPTION);
+    url:  string(STR_GRF_URL);
+    version: REPO_REVISION;
+    min_compatible_version: 1;
+  param 0 {
+    enable_standard_planes {
+      name: string(STR_PARAM_NAME_ENABLE_STANDARD_PLANES);
+      desc: string(STR_PARAM_DESC_ENABLE_STANDARD_PLANES);
+      type: bool;
+      bit: 0;
+      def_value: 0;
+    }
+  }
+  param 1 {
+    BCosts {
+      type: int;
+      name: string(STR_PARAM_BCOSTS_NAME);
+      desc: string(STR_PARAM_BCOSTS_DESC);
+      min_value: 0;
+      max_value: 8;
+      def_value: 4;
+    }
+  }
+  param 2 {
+    RCosts  {
+      type: int;
+      name: string(STR_PARAM_RCOSTS_NAME);
+      desc: string(STR_PARAM_RCOSTS_DESC);
+      min_value: 0;
+      max_value: 8;
+      def_value: 4;
+    }
+  }
+  param 3 {
+    Ranges {
+      type: int;
+      name: string(STR_PARAM_NAME_RANGES);
+      desc: string(STR_PARAM_DESC_RANGES);
+      min_value: 0;
+      max_value: 2;
+      def_value: 1;
+      names: {
+        0: string(STR_PARAM_VALUE_RANGES_OFF);
+        1: string(STR_PARAM_VALUE_RANGES_NORMAL);
+        2: string(STR_PARAM_VALUE_RANGES_LONG);
+      } ;
+    }
+  }    
+}

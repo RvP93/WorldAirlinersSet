@@ -1,0 +1,464 @@
+
+// Boeing-747-400
+
+// Template: 
+#define Boeing_747_400_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 66, 32, -33, -16, ANIM]                                           \
+  [ 75, 2, 60, 32, -30, -16, ANIM]                                           \
+  [140, 2, 69, 34, -35, -17, ANIM]                                           \
+  [215, 2, 58, 42, -29, -21, ANIM]                                           \
+  [280, 2, 64, 43, -32, -22, ANIM]                                           \
+  [350, 2, 58, 42, -29, -17, ANIM]                                           \
+  [415, 2, 69, 34, -35, -17, ANIM]                                           \
+  [490, 2, 60, 32, -30, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 50, 66, 32, -33, -16, ANIM]                                          \
+  [ 75, 50, 60, 32, -30, -16, ANIM]                                          \
+  [140, 50, 69, 34, -35, -17, ANIM]                                          \
+  [215, 50, 58, 43, -29, -22, ANIM]                                          \
+  [280, 50, 64, 45, -32, -23, ANIM]                                          \
+  [350, 50, 58, 43, -29, -22, ANIM]                                          \
+  [415, 50, 69, 34, -35, -17, ANIM]                                          \
+  [490, 50, 60, 32, -30, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 100, 64, 49, -32, -25, ANIM]                                         \
+  [ 75, 100, 59, 44, -30, -22, ANIM]                                         \
+  [140, 100, 70, 33, -35, -17, ANIM]                                         \
+  [215, 100, 58, 29, -29, -15, ANIM]                                         \
+  [280, 100, 64, 26, -33, -13, ANIM]                                         \
+  [350, 100, 58, 29, -29, -17, ANIM]                                         \
+  [415, 100, 70, 33, -35, -17, ANIM]                                         \
+  [490, 100, 58, 44, -29, -22, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 155, 66, 32, -33, -16, ANIM]                                         \
+  [ 75, 155, 60, 32, -30, -16, ANIM]                                         \
+  [140, 155, 69, 34, -35, -17, ANIM]                                         \
+  [215, 155, 58, 43, -29, -22, ANIM]                                         \
+  [280, 155, 64, 45, -32, -23, ANIM]                                         \
+  [350, 155, 58, 43, -29, -22, ANIM]                                         \
+  [415, 155, 69, 34, -35, -17, ANIM]                                         \
+  [490, 155, 59, 31, -30, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 210, 64, 41, -32, -21, ANIM]                                         \
+  [ 75, 210, 59, 38, -30, -19, ANIM]                                         \
+  [140, 210, 71, 34, -36, -17, ANIM]                                         \
+  [215, 210, 58, 35, -29, -18, ANIM]                                         \
+  [280, 210, 64, 38, -32, -19, ANIM]                                         \
+  [350, 210, 58, 35, -29, -18, ANIM]                                         \
+  [415, 210, 71, 34, -36, -17, ANIM]                                         \
+  [490, 210, 58, 37, -29, -19, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/(0)Greyscale.png"
+purchase_sprite(Boeing_747_400, 415, 10, 69, 21, -35, -11)
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/AirChina.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_AirChina) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/AirFrance.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/ANA.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_ANA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/ANAPokemon.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_ANAPokemon) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/ANZ.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_ANZ) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/BritishAirways.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Cathay.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Cathay) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/ChinaAirlines.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_ChinaAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Delta.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/ELAL.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_ELAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/EVA.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_EVA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/JAL.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_JAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/KLM.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Korean.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Lufthansa.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Qantas.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Saudi.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Saudi) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Singapore.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Singapore) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/VirginAtlantic.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_VirginAtlantic) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Greyscale, flight_state())
+{
+  15: Boeing_747_400_Greyscale_Climbing;
+  18: Boeing_747_400_Greyscale_Flight;
+  21: Boeing_747_400_Greyscale_Landing;
+  22: Boeing_747_400_Greyscale_Touchdown;
+      Boeing_747_400_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_AirChina, flight_state())
+{
+  15: Boeing_747_400_AirChina_Climbing;
+  18: Boeing_747_400_AirChina_Flight;
+  21: Boeing_747_400_AirChina_Landing;
+  22: Boeing_747_400_AirChina_Touchdown;
+      Boeing_747_400_AirChina_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_AirFrance, flight_state())
+{
+  15: Boeing_747_400_AirFrance_Climbing;
+  18: Boeing_747_400_AirFrance_Flight;
+  21: Boeing_747_400_AirFrance_Landing;
+  22: Boeing_747_400_AirFrance_Touchdown;
+      Boeing_747_400_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_ANA, flight_state())
+{
+  15: Boeing_747_400_ANA_Climbing;
+  18: Boeing_747_400_ANA_Flight;
+  21: Boeing_747_400_ANA_Landing;
+  22: Boeing_747_400_ANA_Touchdown;
+      Boeing_747_400_ANA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_ANAPokemon, flight_state())
+{
+  15: Boeing_747_400_ANAPokemon_Climbing;
+  18: Boeing_747_400_ANAPokemon_Flight;
+  21: Boeing_747_400_ANAPokemon_Landing;
+  22: Boeing_747_400_ANAPokemon_Touchdown;
+      Boeing_747_400_ANAPokemon_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_ANZ, flight_state())
+{
+  15: Boeing_747_400_ANZ_Climbing;
+  18: Boeing_747_400_ANZ_Flight;
+  21: Boeing_747_400_ANZ_Landing;
+  22: Boeing_747_400_ANZ_Touchdown;
+      Boeing_747_400_ANZ_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_BritishAirways, flight_state())
+{
+  15: Boeing_747_400_BritishAirways_Climbing;
+  18: Boeing_747_400_BritishAirways_Flight;
+  21: Boeing_747_400_BritishAirways_Landing;
+  22: Boeing_747_400_BritishAirways_Touchdown;
+      Boeing_747_400_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Cathay, flight_state())
+{
+  15: Boeing_747_400_Cathay_Climbing;
+  18: Boeing_747_400_Cathay_Flight;
+  21: Boeing_747_400_Cathay_Landing;
+  22: Boeing_747_400_Cathay_Touchdown;
+      Boeing_747_400_Cathay_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_ChinaAirlines, flight_state())
+{
+  15: Boeing_747_400_ChinaAirlines_Climbing;
+  18: Boeing_747_400_ChinaAirlines_Flight;
+  21: Boeing_747_400_ChinaAirlines_Landing;
+  22: Boeing_747_400_ChinaAirlines_Touchdown;
+      Boeing_747_400_ChinaAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Delta, flight_state())
+{
+  15: Boeing_747_400_Delta_Climbing;
+  18: Boeing_747_400_Delta_Flight;
+  21: Boeing_747_400_Delta_Landing;
+  22: Boeing_747_400_Delta_Touchdown;
+      Boeing_747_400_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_ELAL, flight_state())
+{
+  15: Boeing_747_400_ELAL_Climbing;
+  18: Boeing_747_400_ELAL_Flight;
+  21: Boeing_747_400_ELAL_Landing;
+  22: Boeing_747_400_ELAL_Touchdown;
+      Boeing_747_400_ELAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_EVA, flight_state())
+{
+  15: Boeing_747_400_EVA_Climbing;
+  18: Boeing_747_400_EVA_Flight;
+  21: Boeing_747_400_EVA_Landing;
+  22: Boeing_747_400_EVA_Touchdown;
+      Boeing_747_400_EVA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_JAL, flight_state())
+{
+  15: Boeing_747_400_JAL_Climbing;
+  18: Boeing_747_400_JAL_Flight;
+  21: Boeing_747_400_JAL_Landing;
+  22: Boeing_747_400_JAL_Touchdown;
+      Boeing_747_400_JAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_KLM, flight_state())
+{
+  15: Boeing_747_400_KLM_Climbing;
+  18: Boeing_747_400_KLM_Flight;
+  21: Boeing_747_400_KLM_Landing;
+  22: Boeing_747_400_KLM_Touchdown;
+      Boeing_747_400_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Korean, flight_state())
+{
+  15: Boeing_747_400_Korean_Climbing;
+  18: Boeing_747_400_Korean_Flight;
+  21: Boeing_747_400_Korean_Landing;
+  22: Boeing_747_400_Korean_Touchdown;
+      Boeing_747_400_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Lufthansa, flight_state())
+{
+  15: Boeing_747_400_Lufthansa_Climbing;
+  18: Boeing_747_400_Lufthansa_Flight;
+  21: Boeing_747_400_Lufthansa_Landing;
+  22: Boeing_747_400_Lufthansa_Touchdown;
+      Boeing_747_400_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Qantas, flight_state())
+{
+  15: Boeing_747_400_Qantas_Climbing;
+  18: Boeing_747_400_Qantas_Flight;
+  21: Boeing_747_400_Qantas_Landing;
+  22: Boeing_747_400_Qantas_Touchdown;
+      Boeing_747_400_Qantas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Saudi, flight_state())
+{
+  15: Boeing_747_400_Saudi_Climbing;
+  18: Boeing_747_400_Saudi_Flight;
+  21: Boeing_747_400_Saudi_Landing;
+  22: Boeing_747_400_Saudi_Touchdown;
+      Boeing_747_400_Saudi_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Singapore, flight_state())
+{
+  15: Boeing_747_400_Singapore_Climbing;
+  18: Boeing_747_400_Singapore_Flight;
+  21: Boeing_747_400_Singapore_Landing;
+  22: Boeing_747_400_Singapore_Touchdown;
+      Boeing_747_400_Singapore_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_VirginAtlantic, flight_state())
+{
+  15: Boeing_747_400_VirginAtlantic_Climbing;
+  18: Boeing_747_400_VirginAtlantic_Flight;
+  21: Boeing_747_400_VirginAtlantic_Landing;
+  22: Boeing_747_400_VirginAtlantic_Touchdown;
+      Boeing_747_400_VirginAtlantic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_sprites, cargo_subtype)
+{
+  1: Boeing_747_400_AirChina;
+  2: Boeing_747_400_AirFrance;
+  3: Boeing_747_400_ANA;
+  4: Boeing_747_400_ANAPokemon;
+  5: Boeing_747_400_ANZ;
+  6: Boeing_747_400_BritishAirways;
+  7: Boeing_747_400_Cathay;
+  8: Boeing_747_400_ChinaAirlines;
+  9: Boeing_747_400_Delta;
+ 10: Boeing_747_400_ELAL;
+ 11: Boeing_747_400_EVA;
+ 12: Boeing_747_400_JAL;
+ 13: Boeing_747_400_KLM;
+ 14: Boeing_747_400_Korean;
+ 15: Boeing_747_400_Lufthansa;
+ 16: Boeing_747_400_Qantas;
+ 17: Boeing_747_400_Saudi;
+ 18: Boeing_747_400_Singapore;
+ 19: Boeing_747_400_VirginAtlantic;
+     Boeing_747_400_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_running_cost_factor, flight_state())
+{
+  plane_RC(263)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(298); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(991); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(289); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_CHINA);
+  2: string(STR_VLIV_AIR_FRANCE);
+  3: string(STR_VLIV_ANA);
+  4: string(STR_VLIV_ANA_POKEMON_LIVERY_1999);
+  5: string(STR_VLIV_AIR_NEW_ZEALAND);
+  6: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  7: string(STR_VLIV_CATHAY_PACIFIC);
+  8: string(STR_VLIV_CHINA_AIRLINES);
+  9: string(STR_VLIV_DELTA_AIR_LINES);
+ 10: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+ 11: string(STR_VLIV_EVA_AIR);
+ 12: string(STR_VLIV_JAL);
+ 13: string(STR_VLIV_KLM);
+ 14: string(STR_VLIV_KOREAN_AIR);
+ 15: string(STR_VLIV_LUFTHANSA);
+ 16: string(STR_VLIV_QANTAS);
+ 17: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
+ 18: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 19: string(STR_VLIV_VIRGIN_ATLANTIC);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 344;
+  2: return 432;
+  3: return 298;
+  4: return 298;
+  5: return 393;
+  6: return 345;
+  7: return 359;
+  8: return 376;
+  9: return 389;
+ 10: return 405;
+ 11: return 372;
+ 12: return 326;
+ 13: return 408;
+ 14: return 335;
+ 15: return 352;
+ 16: return 364;
+ 17: return 374;
+ 18: return 375;
+ 19: return 367; 
+     return 416;
+}
+
+item (FEAT_AIRCRAFT, Boeing_747_400)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_747_400);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1988,2050);
+    retire_early: get_retire_early(1988,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 29;
+    passenger_capacity: 416;
+    mail_capacity: 52;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2420;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_747_400_sprites;
+    purchase: Boeing_747_400_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_747_400_cargo_subtype_text;
+	passenger_capacity: Boeing_747_400_cargo_subtype_capacity;
+    speed: Boeing_747_400_speed;
+    running_cost_factor: Boeing_747_400_running_cost_factor;
+    sound_effect: Boeing_747_400_sound_effect;
+
+    cost_factor: 297; 
+    purchase_running_cost_factor: 263;
+    purchase_speed: plane_speed_kmh(991); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400)
+  {
+    property
+    { range: 2420; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_400)
+  {
+    property
+    { range: 3630; }
+  }
+}

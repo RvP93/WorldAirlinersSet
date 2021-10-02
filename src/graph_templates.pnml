@@ -1,0 +1,8 @@
+ /// graphics definition
+
+// Определение спрайта меню покупки
+
+#define purchase_sprite(name, x, y, dx, dy, ox, oy)                               \
+spriteset (name##_purchase_sprite, IMAGEFILE)                                     \
+{ [x, y, dx, dy, ox, oy, ANIM] }                                                  \
+

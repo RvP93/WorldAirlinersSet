@@ -1,0 +1,254 @@
+
+// Fokker-F70
+
+// Template: 
+#define Fokker_F70_sprite_layout_template(name)                              \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 36, 19, -18, -10, ANIM]                                           \
+  [ 40, 1, 37, 17, -19, -9 , ANIM]                                           \
+  [ 80, 1, 44, 20, -22, -10, ANIM]                                           \
+  [130, 1, 37, 26, -19, -13, ANIM]                                           \
+  [170, 1, 36, 30, -18, -15, ANIM]                                           \
+  [210, 1, 37, 26, -19, -13, ANIM]                                           \
+  [250, 1, 44, 20, -22, -10, ANIM]                                           \
+  [300, 1, 37, 17, -19, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 36, 19, -18, -10, ANIM]                                          \
+  [ 40, 35, 37, 17, -19, -9 , ANIM]                                          \
+  [ 80, 35, 44, 20, -22, -10, ANIM]                                          \
+  [130, 35, 37, 26, -19, -13, ANIM]                                          \
+  [170, 35, 36, 30, -18, -15, ANIM]                                          \
+  [210, 35, 37, 26, -19, -13, ANIM]                                          \
+  [250, 35, 44, 20, -22, -11, ANIM]                                          \
+  [300, 35, 37, 17, -19, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 36, 28, -18, -14, ANIM]                                          \
+  [ 40, 70, 37, 25, -19, -13, ANIM]                                          \
+  [ 80, 70, 45, 18, -23, -9 , ANIM]                                          \
+  [130, 70, 37, 17, -19, -9 , ANIM]                                          \
+  [170, 70, 34, 18, -17, -9 , ANIM]                                          \
+  [210, 70, 37, 17, -19, -9 , ANIM]                                          \
+  [250, 70, 45, 18, -23, -9 , ANIM]                                          \
+  [300, 70, 37, 25, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 36, 19, -18, -10, ANIM]                                         \
+  [ 40, 100, 37, 17, -18, -9 , ANIM]                                         \
+  [ 80, 100, 44, 20, -22, -10, ANIM]                                         \
+  [130, 100, 37, 26, -19, -13, ANIM]                                         \
+  [170, 100, 36, 30, -18, -15, ANIM]                                         \
+  [210, 100, 37, 26, -19, -13, ANIM]                                         \
+  [250, 100, 44, 20, -22, -10, ANIM]                                         \
+  [300, 100, 37, 17, -19, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 36, 23, -18, -12, ANIM]                                         \
+  [ 40, 135, 37, 20, -19, -10, ANIM]                                         \
+  [ 80, 135, 45, 18, -23, -9 , ANIM]                                         \
+  [130, 135, 36, 21, -18, -11, ANIM]                                         \
+  [170, 135, 36, 24, -18, -12, ANIM]                                         \
+  [210, 135, 36, 21, -18, -11, ANIM]                                         \
+  [250, 135, 45, 18, -23, -9 , ANIM]                                         \
+  [300, 135, 37, 20, -19, -10, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Fokker/F70/(0)Greyscale.png"
+purchase_sprite(Fokker_F70, 250, 1, 44, 20, -22, -10)
+Fokker_F70_sprite_layout_template(Fokker_F70_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F70/Alliance.png"
+Fokker_F70_sprite_layout_template(Fokker_F70_Alliance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F70/Austrian.png"
+Fokker_F70_sprite_layout_template(Fokker_F70_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F70/BMI.png"
+Fokker_F70_sprite_layout_template(Fokker_F70_BMI) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F70/KLMCityhopper.png"
+Fokker_F70_sprite_layout_template(Fokker_F70_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Fokker/F70/Malev.png"
+Fokker_F70_sprite_layout_template(Fokker_F70_Malev) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_Greyscale, flight_state())
+{
+  15: Fokker_F70_Greyscale_Climbing;
+  18: Fokker_F70_Greyscale_Flight;
+  21: Fokker_F70_Greyscale_Landing;
+  22: Fokker_F70_Greyscale_Touchdown;
+      Fokker_F70_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_Alliance, flight_state())
+{
+  15: Fokker_F70_Alliance_Climbing;
+  18: Fokker_F70_Alliance_Flight;
+  21: Fokker_F70_Alliance_Landing;
+  22: Fokker_F70_Alliance_Touchdown;
+      Fokker_F70_Alliance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_Austrian, flight_state())
+{
+  15: Fokker_F70_Austrian_Climbing;
+  18: Fokker_F70_Austrian_Flight;
+  21: Fokker_F70_Austrian_Landing;
+  22: Fokker_F70_Austrian_Touchdown;
+      Fokker_F70_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_BMI, flight_state())
+{
+  15: Fokker_F70_BMI_Climbing;
+  18: Fokker_F70_BMI_Flight;
+  21: Fokker_F70_BMI_Landing;
+  22: Fokker_F70_BMI_Touchdown;
+      Fokker_F70_BMI_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_KLM, flight_state())
+{
+  15: Fokker_F70_KLM_Climbing;
+  18: Fokker_F70_KLM_Flight;
+  21: Fokker_F70_KLM_Landing;
+  22: Fokker_F70_KLM_Touchdown;
+      Fokker_F70_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_Malev, flight_state())
+{
+  15: Fokker_F70_Malev_Climbing;
+  18: Fokker_F70_Malev_Flight;
+  21: Fokker_F70_Malev_Landing;
+  22: Fokker_F70_Malev_Touchdown;
+      Fokker_F70_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_sprites, cargo_subtype)
+{
+  1: Fokker_F70_Alliance;
+  2: Fokker_F70_Austrian;
+  3: Fokker_F70_BMI;
+  4: Fokker_F70_KLM;
+  5: Fokker_F70_Malev;
+     Fokker_F70_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_running_cost_factor, flight_state())
+{
+  plane_RC(46)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(378); // airplane climbing after take-off
+      18: return plane_speed_kmh(838); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_FOKKER);
+  1: string(STR_VLIV_ALLIANCE_AIRLINES);
+  2: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  3: string(STR_VLIV_BMI_OLD);
+  4: string(STR_VLIV_KLM);
+  5: string(STR_VLIV_MALEV); 
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Fokker_F70_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 80;
+   2: return 80;
+   4: return 80;
+   5: return 72;
+  return 79;
+}
+
+item (FEAT_AIRCRAFT, Fokker_F70)
+{
+  property
+  {
+    name: string(STR_AIRV_FOKKER_70);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1992), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1992,1997);
+    retire_early: get_retire_early(1992,1997);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 79;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 615;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Fokker_F70_sprites;
+    purchase: Fokker_F70_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Fokker_F70_cargo_subtype_text;
+	passenger_capacity: Fokker_F70_cargo_subtype_capacity;
+    speed: Fokker_F70_speed;
+    running_cost_factor: Fokker_F70_running_cost_factor;
+    sound_effect: Fokker_F70_sound_effect;
+
+    cost_factor: 18; 
+    purchase_running_cost_factor: 46;
+    purchase_speed: plane_speed_kmh(838); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Fokker_F70)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Fokker_F70)
+  {
+    property
+    { range: 615; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Fokker_F70)
+  {
+    property
+    { range: 920; }
+  }
+}
+

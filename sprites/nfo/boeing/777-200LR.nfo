@@ -1,0 +1,589 @@
+START_SECTION(Planes-Boeing-777-200LR)  
+
+    A0_PLANES(AIRV_BOEING_777_200LR, 1, 19)
+                          00 \w2006-01-01  //Introduction Date
+                          03 1E  //Vehicle Life In Years
+                          04 FF  //Model Life in Years
+                          06 0F  //Climate Availability
+                          07 \b26 // Loading Speed in pax
+                          08 FF  // New gfx
+                          09 02  //Helicopter?
+                          0A 01  //Large?
+                          0C 49  //Speed in mph/8
+                          0D 02 // Accleration
+                          0F \w400  //Passenger Capacity
+                          11 \b40  //Mail Capacity 
+                          12 07  //Sound Effect (Jet)
+                          13 00 00 00 00 //Cargo Types For Refitting
+                          14 20
+                          16 0A  //Retire Vehicle Early 
+                          17 02  //2CC
+                          18 \wx0001
+                          19 \wx03FE //Subtract 4 for Tourists    
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_777_200LR, 1, 1)
+                     1F \w3125
+        
+  -1 * 0   10 F1
+
+   A1_PLANES(7,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirAustral.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Delta.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Emirates.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Qatar.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirCanada.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirIndia.pcx
+    spr() 01 01 09 29 58 -29 -15
+    spr() 65 01 09 26 51 -26 -13
+    spr() 120 01 09 29 62 -31 -15
+    spr() 190 01 09 37 51 -26 -19
+    spr() 245 01 09 41 58 -29 -21
+    spr() 310 01 09 37 51 -26 -19
+    spr() 365 01 09 29 62 -31 -15
+    spr() 430 01 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+   -1 * 9	 02 03 05 01 01 \w5 \w5
+   -1 * 9	 02 03 06 01 01 \w6 \w6
+
+  142 * 22	 02 03 F0 81 F2 00 FF 07 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Air Austral
+                             02 00 04 04 // Delta
+                             03 00 05 05 // Emirates
+                             04 00 06 06 // Qatar
+                             05 00 02 02 // Air Canada
+                             06 00 03 03 // Air India
+                             FF FF			     
+
+   A1_PLANES(7,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirAustral.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Delta.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Emirates.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Qatar.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirCanada.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirIndia.pcx
+    spr() 01 45 09 29 58 -29 -15
+    spr() 65 45 09 26 51 -26 -13
+    spr() 120 45 09 29 62 -31 -15
+    spr() 190 45 09 38 51 -26 -19
+    spr() 245 45 09 43 58 -29 -21
+    spr() 310 45 09 38 51 -26 -19
+    spr() 365 45 09 29 61 -31 -15
+    spr() 430 45 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+   
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+   -1 * 9	 02 03 05 01 01 \w5 \w5
+   -1 * 9	 02 03 06 01 01 \w6 \w6
+
+  143 * 22	 02 03 F1 81 F2 00 FF 07 // Taxing or Initiating Approach         
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Air Austral
+                             02 00 04 04 // Delta
+                             03 00 05 05 // Emirates
+                             04 00 06 06 // Qatar
+                             05 00 02 02 // Air Canada
+                             06 00 03 03 // Air India
+                             FF FF
+
+   A1_PLANES(7,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirAustral.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Delta.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Emirates.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Qatar.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirCanada.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirIndia.pcx
+    spr() 01 90 09 45 58 -29 -23
+    spr() 65 90 09 41 50 -25 -21
+    spr() 120 90 09 30 63 -32 -15
+    spr() 190 90 09 27 48 -24 -14
+    spr() 245 90 09 17 58 -29 -9
+    spr() 310 90 09 27 48 -24 -14
+    spr() 365 90 09 30 63 -32 -15
+    spr() 430 90 09 41 50 -25 -21
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+   -1 * 9	 02 03 05 01 01 \w5 \w5
+   -1 * 9	 02 03 06 01 01 \w6 \w6
+
+  144 * 22	 02 03 F2 81 F2 00 FF 07 // Take Off 
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Air Austral
+                             02 00 04 04 // Delta
+                             03 00 05 05 // Emirates
+                             04 00 06 06 // Qatar
+                             05 00 02 02 // Air Canada
+                             06 00 03 03 // Air India
+                             FF FF
+
+   A1_PLANES(7,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirAustral.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Delta.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Emirates.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Qatar.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirCanada.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirIndia.pcx
+    spr() 01 140 09 29 58 -29 -15
+    spr() 65 140 09 26 51 -26 -13
+    spr() 120 140 09 29 62 -31 -15
+    spr() 190 140 09 38 51 -26 -19
+    spr() 245 140 09 35 58 -29 -18
+    spr() 310 140 09 38 51 -26 -19
+    spr() 365 140 09 29 62 -31 -15
+    spr() 430 140 09 26 51 -26 -13
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+   -1 * 9	 02 03 05 01 01 \w5 \w5
+   -1 * 9	 02 03 06 01 01 \w6 \w6
+
+  145 * 22	 02 03 F3 81 F2 00 FF 07 // Landed On Runway     
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Air Austral
+                             02 00 04 04 // Delta
+                             03 00 05 05 // Emirates
+                             04 00 06 06 // Qatar
+                             05 00 02 02 // Air Canada
+                             06 00 03 03 // Air India
+                             FF FF
+                             
+   A1_PLANES(7,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirAustral.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Delta.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Emirates.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/Qatar.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirCanada.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-200lr/AirIndia.pcx
+    spr() 01 180 09 37 58 -29 -19
+    spr() 65 180 09 33 51 -26 -17
+    spr() 120 180 09 29 63 -32 -15
+    spr() 190 180 09 32 51 -26 -16
+    spr() 245 180 09 28 58 -29 -14
+    spr() 310 180 09 32 51 -26 -16
+    spr() 365 180 09 29 63 -32 -15
+    spr() 430 180 09 33 51 -26 -17
+    #undef SPRITE_LOCATION
+
+   -1 * 9	 02 03 00 01 01 \w0 \w0 
+   -1 * 9	 02 03 01 01 01 \w1 \w1
+   -1 * 9	 02 03 02 01 01 \w2 \w2
+   -1 * 9	 02 03 03 01 01 \w3 \w3
+   -1 * 9	 02 03 04 01 01 \w4 \w4
+   -1 * 9	 02 03 05 01 01 \w5 \w5
+   -1 * 9	 02 03 06 01 01 \w6 \w6
+
+  146 * 0	 02 03 F4 81 F2 00 FF 07 // Final Approach       
+                             00 00 00 00 // Greyscale
+                             01 00 01 01 // Air Austral
+                             02 00 04 04 // Delta
+                             03 00 05 05 // Emirates
+                             04 00 06 06 // Qatar
+                             05 00 02 02 // Air Canada
+                             06 00 03 03 // Air India
+                             FF FF
+                             
+    A1_PLANES(1,1)
+
+    -1 sprites/pcx/boeing/b777-200lr/(0)Greyscale.pcx 365 6 09 21 62 -31 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 0	 02 03 01 81 F2 00 FF 07 // 7 liveries
+			                       00 80 00 00 // Greyscale
+                             2B 80 01 01 // Air Austral
+                             0D 80 02 02 // Air Canada
+                             C0 80 03 03 // Air India
+                             0E 80 04 04 // Delta
+			                       18 80 05 05 // Emirates
+			                       9A 80 06 06 // Qatar
+                             FF FF // End
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             15 80 0D 0D   // Take Off 
+                             23 80 0F 0F   // Climbing
+                             49 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             13 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32996 0D 0F // Take Off
+                             \w32980 12 12 // Flight
+                             \w32984 10 14 // Approach
+                             \w32990 15 16 // Landing
+                             \w32914 08 0C // Grounded	
+                             \w32880       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w33034 0B 0B //Purchase Cost Purchase List
+				                     \w32980 0E 0E //Running Cost Purchase List
+                             00 00 					
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+
+   -1 * 0  02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             4C 00 
+
+   -1 * 0   03 03 01 AIRV_BOEING_777_200LR 01
+                             FF 08 00      // P-List
+                             07 00         // Default
+
+END_SECTION(Planes-Boeing-777-200LR)  

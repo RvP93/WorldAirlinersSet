@@ -1,0 +1,27 @@
+
+#define _K(x) x
+#define _concat(a,b) a##b
+#define concat(a,b) _concat(a,b)
+#define _QUOTEME(x) #x
+#define QUOTEME(x) _QUOTEME(x)
+#define act(x) -1 * 0 x   
+#define START_SECTION(name) ; ------------------------ START section name from __FILE__ ------------------------
+#define END_SECTION(name) ; -------------------------- END section name from __FILE__ ------------------------
+
+#define A0_PLANES(id, num_info, num_props) act(0) A0_FEATURE_PLANES HEX(num_props) HEX(num_info) id ; action 0 on plane id
+#define A0_SET_AIR_PROP_SMALL() A0_PROP_AIRCRAFT_IS_LARGE A0_VAL_AIRCRAFT_SMALL ; small aircraft
+#define A0_SET_AIR_PROP_LARGE() A0_PROP_AIRCRAFT_IS_LARGE A0_VAL_AIRCRAFT_LARGE ; large aircraft
+#define A0_SET_AIR_PROP_USE_NEW_SPRITE() A0_PROP_AIRCRAFT_SPRITE A0_VAL_AIRCRAFT_SPRITE_NEW ; using new sprite
+#define A0_SET_AIR_PROP_HELICOPTER() A0_PROP_AIRCRAFT_IS_HELICOPTER A0_VAL_AIRCRAFT_IS_HELICOPTER ; plane is helicopter
+#define A0_SET_AIR_PROP_NOT_HELICOPTER() A0_PROP_AIRCRAFT_IS_HELICOPTER A0_VAL_AIRCRAFT_NOT_HELICOPTER ; no helicopter
+
+#define A1_PLANES(num_sets, num_views) act(1) A0_FEATURE_PLANES HEX(num_sets) HEX(num_views)
+#define A2_PLANES(id, num_ent1, num_ent2) act(2) A0_FEATURE_PLANES id HEX(num_ent1) HEX(num_ent2)
+
+#define spr() -1 SPRITE_LOCATION
+
+#define TUPLE_2_0(a,b) a
+#define TUPLE_2_1(a,b) b
+
+#define TUPLE(tuple, size, index) TUPLE_I(tuple, size, index)
+#define TUPLE_I(t,s,n) TUPLE_ ## s ## _ ## n t

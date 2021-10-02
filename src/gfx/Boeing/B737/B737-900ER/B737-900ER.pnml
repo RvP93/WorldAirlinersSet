@@ -1,0 +1,312 @@
+
+// Boeing-737-900ER
+
+// Template: 
+#define Boeing_737_900ER_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 2, 43, 25, -21, -11, ANIM]                                           \
+  [ 49, 2, 40, 20, -22, -8 , ANIM]                                           \
+  [ 95, 2, 48, 25, -23, -13, ANIM]                                           \
+  [147, 2, 40, 32, -19, -17, ANIM]                                           \
+  [194, 2, 43, 34, -21, -18, ANIM]                                           \
+  [244, 2, 40, 32, -21, -17, ANIM]                                           \
+  [288, 2, 48, 25, -23, -13, ANIM]                                           \
+  [341, 2, 40, 20, -19, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 44, 43, 25, -21, -11, ANIM]                                          \
+  [ 49, 44, 40, 20, -22, -8 , ANIM]                                          \
+  [ 95, 44, 48, 25, -23, -13, ANIM]                                          \
+  [147, 44, 40, 32, -19, -17, ANIM]                                          \
+  [194, 44, 43, 34, -21, -18, ANIM]                                          \
+  [244, 44, 40, 32, -21, -17, ANIM]                                          \
+  [288, 44, 48, 25, -23, -13, ANIM]                                          \
+  [341, 44, 40, 20, -19, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 85, 42, 36, -21, -15, ANIM]                                          \
+  [ 49, 85, 39, 32, -22, -12, ANIM]                                          \
+  [ 95, 85, 50, 25, -25, -10, ANIM]                                          \
+  [147, 85, 37, 21, -19, -11, ANIM]                                          \
+  [194, 85, 41, 15, -19, -6 , ANIM]                                          \
+  [244, 85, 37, 21, -17, -12, ANIM]                                          \
+  [288, 85, 50, 25, -23, -12, ANIM]                                          \
+  [341, 85, 39, 32, -17, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 139, 43, 25, -21, -11, ANIM]                                         \
+  [ 49, 139, 40, 20, -22, -8 , ANIM]                                         \
+  [ 95, 139, 48, 25, -23, -13, ANIM]                                         \
+  [147, 139, 40, 32, -19, -17, ANIM]                                         \
+  [194, 139, 43, 34, -21, -18, ANIM]                                         \
+  [244, 139, 40, 32, -21, -17, ANIM]                                         \
+  [288, 139, 48, 25, -23, -13, ANIM]                                         \
+  [341, 139, 40, 20, -19, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 186, 42, 28, -21, -11, ANIM]                                         \
+  [ 49, 186, 40, 24, -22, -10, ANIM]                                         \
+  [ 95, 186, 49, 25, -23, -11, ANIM]                                         \
+  [147, 186, 41, 26, -19, -12, ANIM]                                         \
+  [194, 186, 42, 21, -21, -8 , ANIM]                                         \
+  [244, 186, 41, 26, -21, -13, ANIM]                                         \
+  [288, 186, 49, 25, -23, -11, ANIM]                                         \
+  [341, 186, 40, 24, -19, -9 , ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/(0)Greyscale.png"
+purchase_sprite(Boeing_737_900ER, 288, 2, 48, 25, -23, -13)
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Alaska.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Alaska) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Continental.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Delta.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Futura.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Futura) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Korean.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/LionAirlines.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_LionAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Turkish.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/United.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_United) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/XL.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_XL) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Greyscale, flight_state())
+{
+  15: Boeing_737_900ER_Greyscale_Climbing;
+  18: Boeing_737_900ER_Greyscale_Flight;
+  21: Boeing_737_900ER_Greyscale_Landing;
+  22: Boeing_737_900ER_Greyscale_Touchdown;
+      Boeing_737_900ER_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Alaska, flight_state())
+{
+  15: Boeing_737_900ER_Alaska_Climbing;
+  18: Boeing_737_900ER_Alaska_Flight;
+  21: Boeing_737_900ER_Alaska_Landing;
+  22: Boeing_737_900ER_Alaska_Touchdown;
+      Boeing_737_900ER_Alaska_Grounded;
+}
+	  
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Continental, flight_state())
+{
+  15: Boeing_737_900ER_Continental_Climbing;
+  18: Boeing_737_900ER_Continental_Flight;
+  21: Boeing_737_900ER_Continental_Landing;
+  22: Boeing_737_900ER_Continental_Touchdown;
+      Boeing_737_900ER_Continental_Grounded;
+}	  
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Delta, flight_state())
+{
+  15: Boeing_737_900ER_Delta_Climbing;
+  18: Boeing_737_900ER_Delta_Flight;
+  21: Boeing_737_900ER_Delta_Landing;
+  22: Boeing_737_900ER_Delta_Touchdown;
+      Boeing_737_900ER_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Futura, flight_state())
+{
+  15: Boeing_737_900ER_Futura_Climbing;
+  18: Boeing_737_900ER_Futura_Flight;
+  21: Boeing_737_900ER_Futura_Landing;
+  22: Boeing_737_900ER_Futura_Touchdown;
+      Boeing_737_900ER_Futura_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Korean, flight_state())
+{
+  15: Boeing_737_900ER_Korean_Climbing;
+  18: Boeing_737_900ER_Korean_Flight;
+  21: Boeing_737_900ER_Korean_Landing;
+  22: Boeing_737_900ER_Korean_Touchdown;
+      Boeing_737_900ER_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_LionAirlines, flight_state())
+{
+  15: Boeing_737_900ER_LionAirlines_Climbing;
+  18: Boeing_737_900ER_LionAirlines_Flight;
+  21: Boeing_737_900ER_LionAirlines_Landing;
+  22: Boeing_737_900ER_LionAirlines_Touchdown;
+      Boeing_737_900ER_LionAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Turkish, flight_state())
+{
+  15: Boeing_737_900ER_Turkish_Climbing;
+  18: Boeing_737_900ER_Turkish_Flight;
+  21: Boeing_737_900ER_Turkish_Landing;
+  22: Boeing_737_900ER_Turkish_Touchdown;
+      Boeing_737_900ER_Turkish_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_United, flight_state())
+{
+  15: Boeing_737_900ER_United_Climbing;
+  18: Boeing_737_900ER_United_Flight;
+  21: Boeing_737_900ER_United_Landing;
+  22: Boeing_737_900ER_United_Touchdown;
+      Boeing_737_900ER_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_XL, flight_state())
+{
+  15: Boeing_737_900ER_XL_Climbing;
+  18: Boeing_737_900ER_XL_Flight;
+  21: Boeing_737_900ER_XL_Landing;
+  22: Boeing_737_900ER_XL_Touchdown;
+      Boeing_737_900ER_XL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_sprites, cargo_subtype)
+{
+  1: Boeing_737_900ER_Alaska;
+  2: Boeing_737_900ER_Continental;
+  3: Boeing_737_900ER_Delta;
+  4: Boeing_737_900ER_Futura;
+  5: Boeing_737_900ER_Korean;
+  6: Boeing_737_900ER_LionAirlines;
+  7: Boeing_737_900ER_Turkish;
+  8: Boeing_737_900ER_United;
+  9: Boeing_737_900ER_XL;
+  	 Boeing_737_900ER_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_running_cost_factor, flight_state())
+{
+  plane_RC(84)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(975); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_ALASKA_AIRLINES);
+  2: string(STR_VLIV_CONTINENTAL);
+  3: string(STR_VLIV_DELTA_AIR_LINES);
+  4: string(STR_VLIV_FUTURA);
+  5: string(STR_VLIV_KOREAN_AIR);
+  6: string(STR_VLIV_LION_AIR);
+  7: string(STR_VLIV_TURKISH_AIRLINES);
+  8: string(STR_VLIV_UNITED_AIRLINES);
+  9: string(STR_VLIV_XL_AIRWAYS);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 181;
+  2: return 179;
+  3: return 180;
+  5: return 159;
+  6: return 206;
+  7: return 151;
+  8: return 179;
+     return 180;
+}
+
+item (FEAT_AIRCRAFT, Boeing_737_900ER)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_737_900ER);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2007), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2007,2262);
+    retire_early: get_retire_early(2007,2262);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 180;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 900;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_737_900ER_sprites;
+    purchase: Boeing_737_900ER_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_737_900ER_cargo_subtype_text;
+	passenger_capacity: Boeing_737_900ER_cargo_subtype_capacity;
+    speed: Boeing_737_900ER_speed;
+    running_cost_factor: Boeing_737_900ER_running_cost_factor;
+    sound_effect: Boeing_737_900ER_sound_effect;
+
+    cost_factor: 80; 
+    purchase_running_cost_factor: 84;
+    purchase_speed: plane_speed_kmh(975); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_900ER)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_900ER)
+  {
+    property
+    { range: 900; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_900ER)
+  {
+    property
+    { range: 1350; }
+  }
+}

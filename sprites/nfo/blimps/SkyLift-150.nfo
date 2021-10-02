@@ -1,0 +1,181 @@
+START_SECTION(Heli-Blimps-SkyLift_150)  
+// Action 0
+    A0_PLANES(AIRV_SKYLIFT_150, 1, 20)
+        00 \w2003-01-01  //Introduction Date
+			  03 19  //Vehicle Life In Years
+				04 3C  //Model Life in Years
+				06 0F  //Climate Availability
+				07 \b25 // Pax Load
+				08 FF  // New gfx
+				09 00  //Helicopter?
+				0A 00  //Large?  
+				0B 55  //Cost Factor  (needs setting)
+				0C 25  //Speed in mph/8 
+				0D 01  // Acceleration 
+				0E 57 //Running Cost Factor  (needs setting)
+				0F \w1000  //Passenger Capacity   
+				11 \b15  //Mail Capacity 
+				12 06  //Sound Effect (Prop)
+				13 00 00 00 00 //Cargo Types For Refitting
+				14 20    
+				16 0A  //Retire Vehicle Early 
+				18 \wxFFFE
+				19 \wx0001 //Subtract 4 for Tourists
+				    
+    A1_PLANES(2,8)
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx
+    spr() 0 0 09 52 52 -26 -26
+    spr() 70 0 09 48 76 -38 -24
+    spr() 170 0 09 31 94 -47 -16
+    spr() 280 0 09 51 76 -38 -26
+    spr() 370 0 09 58 52 -26 -29
+    spr() 440 0 09 51 76 -38 -26
+    spr() 540 0 09 31 94 -47 -16
+    spr() 650 0 09 48 75 -38 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/MegaBlimp.pcx 
+    spr() 0 0 09 52 52 -26 -26
+    spr() 70 0 09 48 76 -38 -24
+    spr() 170 0 09 31 94 -47 -16
+    spr() 280 0 09 51 76 -38 -26
+    spr() 370 0 09 58 52 -26 -29
+    spr() 440 0 09 51 76 -38 -26
+    spr() 540 0 09 31 94 -47 -16
+    spr() 650 0 09 48 75 -38 -24
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+
+  142 * 22	 02 03 F0 81 F2 00 FF 02 // In Flight
+                             00 00 00 00 // (0)Greyscale
+			     01 00 01 01 // MegaBlimp
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(2,8)
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx
+    spr() 0 75 09 53 52 -26 -27
+    spr() 70 75 09 48 76 -38 -24
+    spr() 170 75 09 33 94 -47 -17
+    spr() 280 75 09 51 76 -38 -26
+    spr() 370 75 09 58 50 -25 -29
+    spr() 440 75 09 51 76 -38 -26
+    spr() 540 75 09 32 94 -47 -16
+    spr() 650 75 09 48 76 -38 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/MegaBlimp.pcx
+    spr() 0 75 09 53 52 -26 -27
+    spr() 70 75 09 48 76 -38 -24
+    spr() 170 75 09 33 94 -47 -17
+    spr() 280 75 09 51 76 -38 -26
+    spr() 370 75 09 58 50 -25 -29
+    spr() 440 75 09 51 76 -38 -26
+    spr() 540 75 09 32 94 -47 -16
+    spr() 650 75 09 48 76 -38 -24
+    #undef SPRITE_LOCATION
+
+   55 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-FF
+   55 * 9	 02 03 01 01 01 \w1 \w1
+
+  143 * 22	 02 03 F1 81 F2 00 FF 02 // Taxing or Initiating Approach         
+                             00 00 00 00 
+                             01 00 01 01
+                             FF FF 
+
+    A1_PLANES(2,8)
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx
+    spr() 0 150 09 52 52 -26 -26
+    spr() 70 150 09 48 76 -38 -24
+    spr() 170 150 09 33 94 -47 -17
+    spr() 280 150 09 51 76 -38 -26
+    spr() 370 150 09 58 52 -26 -29
+    spr() 440 150 09 51 76 -38 -26
+    spr() 540 150 09 33 94 -47 -17
+    spr() 650 150 09 48 76 -38 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/blimps/skylift-150/MegaBlimp.pcx
+    spr() 0 150 09 52 52 -26 -26
+    spr() 70 150 09 48 76 -38 -24
+    spr() 170 150 09 33 94 -47 -17
+    spr() 280 150 09 51 76 -38 -26
+    spr() 370 150 09 58 52 -26 -29
+    spr() 440 150 09 51 76 -38 -26
+    spr() 540 150 09 33 94 -47 -17
+    spr() 650 150 09 48 76 -38 -24
+    #undef SPRITE_LOCATION
+
+   83 * 9	 02 03 00 01 01 \w0 \w0 //Use IDs 00-FF
+   83 * 9	 02 03 01 01 01 \w1 \w1
+
+  144 * 22	 02 03 F2 81 F2 00 FF 02 // Take Off 
+                             00 00 00 00 
+                             01 00 01 01
+                             FF FF
+
+   -1 * 0	 01 03 01 01
+
+    3 sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx 0 220 09 21 71 -36 -11
+
+   -1 * 0	 02 03 F3 01 01 00 00 00 00
+
+   -1 * 0	 01 03 01 04			// This is the graphics for the helicopter blades
+
+    3 sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx 738 168 09 1 1 0 0
+    3 sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx 754 168 09 1 1 0 0
+    3 sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx 770 168 09 1 1 0 0
+    3 sprites/pcx/blimps/skylift-150/(0)Greyscale.pcx 786 168 09 1 1 0 0
+
+   40 * 9	 02 03 F4 01 01 00 00 00 00
+
+// ----------------------------
+// ---- Different liveries ----
+// ----------------------------      
+
+  147 * 30	 02 03 5F 81 E2 00 FF 04   
+                                  F1 00 17 17   //Leaving Runway/Going to the in Way
+                                  F1 00 1A 1A   //Airplane climbing after take-off
+                                  F2 00 18 19   //Tower contact Point (Initiating Approach)	
+                                  F2 00 1B 1C   //Airplane landing (Descent)
+                                  F0 00         //When flying normally
+
+  148 * 22	 02 03 01 81 F2 00 FF 02          // 1 liveries
+                             00 80 00 00 // first livery textline
+                             CC 80 01 01 // 2nd livery textline Mega's (ClanMega) 
+                             FF FF       // End livery text selection
+
+   -1 * 26	 02 03 02 81 E2 00 FF 06       //Speed during flight
+				17 80 1A 1A //Heli (Vetical Take-Off) (185) Helipad
+				17 80 17 17 //Heli (Vetical Take-Off) (185) Airport
+				25 80 12 12 //Tower contact Point (Initiating Approach) (298)
+				1F 80 10 10 //Final Approach (Land/Another Pass) (249)
+				0F 80 19 19 //Heli Landing (Descent) (120) Airport
+				0F 80 1C 1C //Heli Landing (Descent) (120) Helipad
+				00 80
+
+   -1 * 10	 02 03 03 81 E2 00 FF 04      //Cost during flight
+				58 80 17 17 //Heli (Vetical Take-Off) (needs setting)
+				57 80 12 12 //Tower contact Point (Initiating Approach) (needs setting)
+				50 80 10 10 //Final Approach (Land/Another Pass) (needs setting)
+				4D 80 19 19 //Heli Landing (Descent) (needs setting)
+				00 80      //Normal flying
+
+   -1 * 10	 02 03 04 81 10 00 FF 02
+				02 00 0C 0C //Different Speeds
+				03 00 0E 0E //Different Costs
+				00 00
+
+  149 * 14	 02 03 05 81 0C 00 FF 02          // Only 1 callback
+                                  01 00 19 19 // Livery text callback
+				  04 00 36 36 // Change Speed/Cost Callback
+                                  5F 00       // Apply graphics
+
+   -1 * 0	 03 03 01 AIRV_SKYLIFT_150 01 FF F3 00 05 00
+
+  150 * 7	 03 03 81 AIRV_SKYLIFT_150 00 F4 00  // This is where the helicopter blades are overiden to our graphics
+END_SECTION(Heli-Blimps-SkyLift_150)

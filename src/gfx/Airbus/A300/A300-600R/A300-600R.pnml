@@ -1,0 +1,364 @@
+
+// Airbus-A300_600R
+
+// Template: 
+#define Airbus_A300_600R_sprite_layout_template(name)                        \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 52, 29, -26, -15, ANIM]                                           \
+  [ 60, 1, 52, 26, -26, -13, ANIM]                                           \
+  [120, 1, 64, 27, -32, -14, ANIM]                                           \
+  [190, 1, 52, 38, -26, -19, ANIM]                                           \
+  [250, 1, 52, 41, -26, -21, ANIM]                                           \
+  [310, 1, 52, 38, -26, -19, ANIM]                                           \
+  [370, 1, 64, 26, -32, -14, ANIM]                                           \
+  [444, 1, 52, 26, -26, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 55, 52, 29, -26, -15, ANIM]                                          \
+  [ 60, 55, 52, 26, -26, -13, ANIM]                                          \
+  [120, 55, 64, 27, -32, -14, ANIM]                                          \
+  [190, 55, 52, 40, -26, -20, ANIM]                                          \
+  [250, 55, 52, 43, -26, -22, ANIM]                                          \
+  [310, 55, 52, 40, -26, -20, ANIM]                                          \
+  [370, 55, 64, 27, -32, -14, ANIM]                                          \
+  [444, 55, 52, 26, -26, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 120, 52, 46, -26, -23, ANIM]                                         \
+  [ 60, 120, 50, 41, -25, -15, ANIM]                                         \
+  [120, 120, 63, 27, -32, -14, ANIM]                                         \
+  [190, 120, 48, 26, -24, -13, ANIM]                                         \
+  [250, 120, 52, 18, -26, -9, ANIM]                                          \
+  [310, 120, 48, 26, -24, -13, ANIM]                                         \
+  [370, 120, 63, 27, -32, -14, ANIM]                                         \
+  [444, 120, 50, 41, -25, -21, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 175, 52, 29, -26, -15, ANIM]                                         \
+  [ 60, 175, 52, 26, -26, -13, ANIM]                                         \
+  [120, 175, 64, 27, -32, -14, ANIM]                                         \
+  [190, 175, 52, 40, -26, -20, ANIM]                                         \
+  [250, 175, 52, 38, -26, -19, ANIM]                                         \
+  [310, 175, 52, 40, -26, -20, ANIM]                                         \
+  [370, 175, 64, 27, -32, -14, ANIM]                                         \
+  [444, 175, 51, 26, -26, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 235, 52, 38, -26, -19, ANIM]                                         \
+  [ 62, 235, 51, 33, -26, -17, ANIM]                                         \
+  [120, 235, 65, 28, -33, -14, ANIM]                                         \
+  [190, 235, 51, 33, -26, -17, ANIM]                                         \
+  [250, 235, 52, 30, -26, -15, ANIM]                                         \
+  [310, 235, 51, 33, -26, -17, ANIM]                                         \
+  [370, 235, 65, 28, -33, -14, ANIM]                                         \
+  [445, 235, 51, 33, -26, -17, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/(0)Greyscale.png"
+purchase_sprite(Airbus_A300_600R, 370, 1, 64, 26, -32, -14)
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/American.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Emirates.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/GarudaIndonesia.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_GarudaIndonesia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/JAL.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_JAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Korean.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Kuwait.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Kuwait) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Libyan.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Libyan) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Lufthansa.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/MahanAir.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_MahanAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Monarch.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Monarch) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Olympic.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Olympic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/ThaiAirways.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_ThaiAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600R/Tunisair.png"
+Airbus_A300_600R_sprite_layout_template(Airbus_A300_600R_Tunisair) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Greyscale, flight_state())
+{
+  15: Airbus_A300_600R_Greyscale_Climbing;
+  18: Airbus_A300_600R_Greyscale_Flight;
+  21: Airbus_A300_600R_Greyscale_Landing;
+  22: Airbus_A300_600R_Greyscale_Touchdown;
+      Airbus_A300_600R_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_American, flight_state())
+{
+  15: Airbus_A300_600R_American_Climbing;
+  18: Airbus_A300_600R_American_Flight;
+  21: Airbus_A300_600R_American_Landing;
+  22: Airbus_A300_600R_American_Touchdown;
+      Airbus_A300_600R_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Emirates, flight_state())
+{
+  15: Airbus_A300_600R_Emirates_Climbing;
+  18: Airbus_A300_600R_Emirates_Flight;
+  21: Airbus_A300_600R_Emirates_Landing;
+  22: Airbus_A300_600R_Emirates_Touchdown;
+      Airbus_A300_600R_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_GarudaIndonesia, flight_state())
+{
+  15: Airbus_A300_600R_GarudaIndonesia_Climbing;
+  18: Airbus_A300_600R_GarudaIndonesia_Flight;
+  21: Airbus_A300_600R_GarudaIndonesia_Landing;
+  22: Airbus_A300_600R_GarudaIndonesia_Touchdown;
+      Airbus_A300_600R_GarudaIndonesia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_JAL, flight_state())
+{
+  15: Airbus_A300_600R_JAL_Climbing;
+  18: Airbus_A300_600R_JAL_Flight;
+  21: Airbus_A300_600R_JAL_Landing;
+  22: Airbus_A300_600R_JAL_Touchdown;
+      Airbus_A300_600R_JAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Korean, flight_state())
+{
+  15: Airbus_A300_600R_Korean_Climbing;
+  18: Airbus_A300_600R_Korean_Flight;
+  21: Airbus_A300_600R_Korean_Landing;
+  22: Airbus_A300_600R_Korean_Touchdown;
+      Airbus_A300_600R_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Kuwait, flight_state())
+{
+  15: Airbus_A300_600R_Kuwait_Climbing;
+  18: Airbus_A300_600R_Kuwait_Flight;
+  21: Airbus_A300_600R_Kuwait_Landing;
+  22: Airbus_A300_600R_Kuwait_Touchdown;
+      Airbus_A300_600R_Kuwait_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Libyan, flight_state())
+{
+  15: Airbus_A300_600R_Libyan_Climbing;
+  18: Airbus_A300_600R_Libyan_Flight;
+  21: Airbus_A300_600R_Libyan_Landing;
+  22: Airbus_A300_600R_Libyan_Touchdown;
+      Airbus_A300_600R_Libyan_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Lufthansa, flight_state())
+{
+  15: Airbus_A300_600R_Lufthansa_Climbing;
+  18: Airbus_A300_600R_Lufthansa_Flight;
+  21: Airbus_A300_600R_Lufthansa_Landing;
+  22: Airbus_A300_600R_Lufthansa_Touchdown;
+      Airbus_A300_600R_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_MahanAir, flight_state())
+{
+  15: Airbus_A300_600R_MahanAir_Climbing;
+  18: Airbus_A300_600R_MahanAir_Flight;
+  21: Airbus_A300_600R_MahanAir_Landing;
+  22: Airbus_A300_600R_MahanAir_Touchdown;
+      Airbus_A300_600R_MahanAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Monarch, flight_state())
+{
+  15: Airbus_A300_600R_Monarch_Climbing;
+  18: Airbus_A300_600R_Monarch_Flight;
+  21: Airbus_A300_600R_Monarch_Landing;
+  22: Airbus_A300_600R_Monarch_Touchdown;
+      Airbus_A300_600R_Monarch_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Olympic, flight_state())
+{
+  15: Airbus_A300_600R_Olympic_Climbing;
+  18: Airbus_A300_600R_Olympic_Flight;
+  21: Airbus_A300_600R_Olympic_Landing;
+  22: Airbus_A300_600R_Olympic_Touchdown;
+      Airbus_A300_600R_Olympic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_ThaiAirways, flight_state())
+{
+  15: Airbus_A300_600R_ThaiAirways_Climbing;
+  18: Airbus_A300_600R_ThaiAirways_Flight;
+  21: Airbus_A300_600R_ThaiAirways_Landing;
+  22: Airbus_A300_600R_ThaiAirways_Touchdown;
+      Airbus_A300_600R_ThaiAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_Tunisair, flight_state())
+{
+  15: Airbus_A300_600R_Tunisair_Climbing;
+  18: Airbus_A300_600R_Tunisair_Flight;
+  21: Airbus_A300_600R_Tunisair_Landing;
+  22: Airbus_A300_600R_Tunisair_Touchdown;
+      Airbus_A300_600R_Tunisair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_sprites, cargo_subtype)
+{
+  1: Airbus_A300_600R_American;
+  2: Airbus_A300_600R_Emirates;
+  3: Airbus_A300_600R_GarudaIndonesia;
+  4: Airbus_A300_600R_JAL;
+  5: Airbus_A300_600R_Korean;
+  6: Airbus_A300_600R_Kuwait;
+  7: Airbus_A300_600R_Libyan;
+  8: Airbus_A300_600R_Lufthansa;
+  9: Airbus_A300_600R_MahanAir;
+ 10: Airbus_A300_600R_Monarch;
+ 11: Airbus_A300_600R_Olympic; 
+ 12: Airbus_A300_600R_ThaiAirways;
+ 13: Airbus_A300_600R_Tunisair;
+     Airbus_A300_600R_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_running_cost_factor, flight_state())
+{
+  plane_RC(117)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(354); // airplane climbing after take-off
+      18: return plane_speed_kmh(870); // heading for tower contact point
+  16..20: return plane_speed_kmh(338); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AMERICAN_AIRLINES);
+  2: string(STR_VLIV_EMIRATES);
+  3: string(STR_VLIV_GARUDA_INDONESIA);
+  4: string(STR_VLIV_JAL);
+  5: string(STR_VLIV_KOREAN_AIR);
+  6: string(STR_VLIV_KUWAIT_AIRWAYS);
+  7: string(STR_VLIV_LIBYAN_AIRLINES);
+  8: string(STR_VLIV_LUFTHANSA);
+  9: string(STR_VLIV_MAHAN_AIR);
+ 10: string(STR_VLIV_MONARCH_AIRLINES); 
+ 11: string(STR_VLIV_OLYMPIC_AIR);
+ 12: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 13: string(STR_VLIV_TUNISAIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600R_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 266;
+  2: return 216;
+  4: return 290;
+  5: return 248;
+  6: return 232;
+  7: return 253;
+  8: return 280;
+  9: return 256;
+ 10: return 361; 
+ 12: return 260;
+ 13: return 263;
+  return 220;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A300_600R)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A300_600R);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 4, 1);
+    vehicle_life: 22;
+    model_life: get_model_life(1988,2002);
+    retire_early: get_retire_early(1988,2002);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 49;
+    passenger_capacity: 220;
+    mail_capacity: 26;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2230;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A300_600R_sprites;
+    purchase: Airbus_A300_600R_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A300_600R_cargo_subtype_text;
+	passenger_capacity: Airbus_A300_600R_cargo_subtype_capacity;
+    speed: Airbus_A300_600R_speed;
+    running_cost_factor: Airbus_A300_600R_running_cost_factor;
+
+    cost_factor: 122; 
+    purchase_running_cost_factor: 117;
+    purchase_speed: plane_speed_kmh(870); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600R)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600R)
+  {
+    property
+    { range: 2230; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600R)
+  {
+    property
+    { range: 3345; }
+  }
+}

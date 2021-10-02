@@ -1,0 +1,334 @@
+
+// Douglas_DC8-50
+
+// Template: 
+#define Douglas_DC8_50_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 53, 27, -27, -14, ANIM]                                           \
+  [ 65, 1, 49, 25, -25, -13, ANIM]                                           \
+  [129, 1, 57, 27, -29, -14, ANIM]                                           \
+  [193, 1, 48, 31, -24, -16, ANIM]                                           \
+  [257, 1, 53, 36, -27, -18, ANIM]                                           \
+  [321, 1, 38, 31, -24, -16, ANIM]                                           \
+  [385, 1, 57, 27, -29, -14, ANIM]                                           \
+  [449, 1, 49, 25, -25, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 43, 53, 27, -27, -14, ANIM]                                          \
+  [ 65, 43, 49, 25, -25, -13, ANIM]                                          \
+  [129, 43, 57, 27, -29, -13, ANIM]                                          \
+  [193, 43, 48, 32, -24, -16, ANIM]                                          \
+  [257, 43, 53, 36, -27, -18, ANIM]                                          \
+  [321, 43, 48, 32, -24, -16, ANIM]                                          \
+  [385, 43, 57, 27, -29, -14, ANIM]                                          \
+  [449, 44, 49, 25, -25, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 87, 52, 42, -26, -21, ANIM]                                          \
+  [ 65, 87, 47, 38, -24, -19, ANIM]                                          \
+  [129, 87, 55, 27, -28, -14, ANIM]                                          \
+  [193, 87, 46, 24, -23, -12, ANIM]                                          \
+  [257, 87, 52, 14, -26, -7 , ANIM]                                          \
+  [321, 87, 46, 24, -23, -12, ANIM]                                          \
+  [385, 87, 55, 27, -26, -14, ANIM]                                          \
+  [449, 88, 47, 38, -24, -19, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 133, 52, 27, -26, -14, ANIM]                                         \
+  [ 65, 133, 49, 25, -25, -13, ANIM]                                         \
+  [129, 133, 57, 27, -29, -14, ANIM]                                         \
+  [193, 133, 48, 32, -24, -16, ANIM]                                         \
+  [257, 133, 52, 32, -26, -16, ANIM]                                         \
+  [321, 133, 48, 32, -24, -16, ANIM]                                         \
+  [385, 133, 57, 27, -29, -14, ANIM]                                         \
+  [449, 133, 49, 25, -25, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 172, 52, 35, -26, -18, ANIM]                                         \
+  [ 65, 172, 48, 30, -24, -15, ANIM]                                         \
+  [129, 172, 57, 26, -19, -13, ANIM]                                         \
+  [193, 172, 47, 28, -24, -14, ANIM]                                         \
+  [257, 172, 52, 23, -26, -12, ANIM]                                         \
+  [321, 172, 47, 28, -24, -14, ANIM]                                         \
+  [385, 172, 57, 26, -29, -13, ANIM]                                         \
+  [449, 172, 48, 30, -24, -15, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/(0)Greyscale.png"
+purchase_sprite(Douglas_DC8_50, 385, 1, 57, 27, -29, -14)
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Aviaco.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Aviaco) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Balair.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Balair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Cyprus.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Cyprus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Delta.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/EasternAirlines.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_EasternAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Iberia.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Icelandair.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Icelandair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/KLM.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/Swissair.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_Swissair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/United.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_United) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/DC8/DC8-50/VIASA.png"
+Douglas_DC8_50_sprite_layout_template(Douglas_DC8_50_VIASA) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Greyscale, flight_state())
+{
+  15: Douglas_DC8_50_Greyscale_Climbing;
+  18: Douglas_DC8_50_Greyscale_Flight;
+  21: Douglas_DC8_50_Greyscale_Landing;
+  22: Douglas_DC8_50_Greyscale_Touchdown;
+      Douglas_DC8_50_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Aviaco, flight_state())
+{
+  15: Douglas_DC8_50_Aviaco_Climbing;
+  18: Douglas_DC8_50_Aviaco_Flight;
+  21: Douglas_DC8_50_Aviaco_Landing;
+  22: Douglas_DC8_50_Aviaco_Touchdown;
+      Douglas_DC8_50_Aviaco_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Balair, flight_state())
+{
+  15: Douglas_DC8_50_Balair_Climbing;
+  18: Douglas_DC8_50_Balair_Flight;
+  21: Douglas_DC8_50_Balair_Landing;
+  22: Douglas_DC8_50_Balair_Touchdown;
+      Douglas_DC8_50_Balair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Cyprus, flight_state())
+{
+  15: Douglas_DC8_50_Cyprus_Climbing;
+  18: Douglas_DC8_50_Cyprus_Flight;
+  21: Douglas_DC8_50_Cyprus_Landing;
+  22: Douglas_DC8_50_Cyprus_Touchdown;
+      Douglas_DC8_50_Cyprus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Delta, flight_state())
+{
+  15: Douglas_DC8_50_Delta_Climbing;
+  18: Douglas_DC8_50_Delta_Flight;
+  21: Douglas_DC8_50_Delta_Landing;
+  22: Douglas_DC8_50_Delta_Touchdown;
+      Douglas_DC8_50_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_EasternAirlines, flight_state())
+{
+  15: Douglas_DC8_50_EasternAirlines_Climbing;
+  18: Douglas_DC8_50_EasternAirlines_Flight;
+  21: Douglas_DC8_50_EasternAirlines_Landing;
+  22: Douglas_DC8_50_EasternAirlines_Touchdown;
+      Douglas_DC8_50_EasternAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Iberia, flight_state())
+{
+  15: Douglas_DC8_50_Iberia_Climbing;
+  18: Douglas_DC8_50_Iberia_Flight;
+  21: Douglas_DC8_50_Iberia_Landing;
+  22: Douglas_DC8_50_Iberia_Touchdown;
+      Douglas_DC8_50_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Icelandair, flight_state())
+{
+  15: Douglas_DC8_50_Icelandair_Climbing;
+  18: Douglas_DC8_50_Icelandair_Flight;
+  21: Douglas_DC8_50_Icelandair_Landing;
+  22: Douglas_DC8_50_Icelandair_Touchdown;
+      Douglas_DC8_50_Icelandair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_KLM, flight_state())
+{
+  15: Douglas_DC8_50_KLM_Climbing;
+  18: Douglas_DC8_50_KLM_Flight;
+  21: Douglas_DC8_50_KLM_Landing;
+  22: Douglas_DC8_50_KLM_Touchdown;
+      Douglas_DC8_50_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_Swissair, flight_state())
+{
+  15: Douglas_DC8_50_Swissair_Climbing;
+  18: Douglas_DC8_50_Swissair_Flight;
+  21: Douglas_DC8_50_Swissair_Landing;
+  22: Douglas_DC8_50_Swissair_Touchdown;
+      Douglas_DC8_50_Swissair_Grounded;
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_United, flight_state())
+{
+  15: Douglas_DC8_50_United_Climbing;
+  18: Douglas_DC8_50_United_Flight;
+  21: Douglas_DC8_50_United_Landing;
+  22: Douglas_DC8_50_United_Touchdown;
+      Douglas_DC8_50_United_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_VIASA, flight_state())
+{
+  15: Douglas_DC8_50_VIASA_Climbing;
+  18: Douglas_DC8_50_VIASA_Flight;
+  21: Douglas_DC8_50_VIASA_Landing;
+  22: Douglas_DC8_50_VIASA_Touchdown;
+      Douglas_DC8_50_VIASA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_sprites, cargo_subtype)
+{
+  1: Douglas_DC8_50_Aviaco;
+  2: Douglas_DC8_50_Balair;
+  3: Douglas_DC8_50_Cyprus;
+  4: Douglas_DC8_50_Delta;
+  5: Douglas_DC8_50_EasternAirlines;
+  6: Douglas_DC8_50_Iberia;
+  7: Douglas_DC8_50_Icelandair;
+  8: Douglas_DC8_50_KLM;
+  9: Douglas_DC8_50_Swissair;
+ 10: Douglas_DC8_50_United;
+ 11: Douglas_DC8_50_VIASA;
+	 Douglas_DC8_50_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_running_cost_factor, flight_state())
+{
+  plane_RC(73)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(233); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(943); // heading for tower contact point
+  16..20: return plane_speed_kmh(402); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_DOUGLAS);
+  1: string(STR_VLIV_AVIACO);
+  2: string(STR_VLIV_BALAIR);
+  3: string(STR_VLIV_CYPRUS_AIRWAYS);
+  4: string(STR_VLIV_DELTA_AIR_LINES);
+  5: string(STR_VLIV_EASTERN_AIR_LINES);
+  6: string(STR_VLIV_IBERIA);
+  7: string(STR_VLIV_ICELANDAIR);
+  8: string(STR_VLIV_KLM);
+  9: string(STR_VLIV_SWISS_AIR);
+ 10: string(STR_VLIV_UNITED_AIRLINES);
+ 11: string(STR_VLIV_VIASA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Douglas_DC8_50_cargo_subtype_capacity, cargo_subtype)
+{
+      return 149;
+}
+
+item (FEAT_AIRCRAFT, Douglas_DC8_50)
+{
+  property
+  {
+    name: string(STR_AIRV_DOUGLAS_DC_8_50);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1961), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1961,1972);
+    retire_early: get_retire_early(1961,1972);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 23;
+    passenger_capacity: 189;
+    mail_capacity: 19;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1950;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Douglas_DC8_50_sprites;
+    purchase: Douglas_DC8_50_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Douglas_DC8_50_cargo_subtype_text;
+	passenger_capacity: Douglas_DC8_50_cargo_subtype_capacity;
+    speed: Douglas_DC8_50_speed;
+    running_cost_factor: Douglas_DC8_50_running_cost_factor;
+    sound_effect: Douglas_DC8_50_sound_effect;
+
+    cost_factor: 41; 
+    purchase_running_cost_factor: 127;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC8_50)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC8_50)
+  {
+    property
+    { range: 1950; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Douglas_DC8_50)
+  {
+    property
+    { range: 2930; }
+  }
+}

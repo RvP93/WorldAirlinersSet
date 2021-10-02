@@ -1,0 +1,46 @@
+ /// definition
+
+retire_early_default = -8;
+#define get_retire_early(x, y) x-y-2 < retire_early_default ? retire_early_default+1 : x-y-1
+#define get_model_life(x, y) y >= 2050 ? VEHICLE_NEVER_EXPIRES : (x-y-2 < retire_early_default ? y-x+2 : -retire_early_default)
+#define get_plane_year(year) year - 2
+#define get_climates_available() bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL, CLIMATE_TOYLAND)
+#define flight_state() (var[0xE2, 0, 0xFF])
+// 00: entering hangar
+// 01: going to hangar entrance point
+// 02: going to pad 1
+// 03: going to pad 2
+// 04: going to pad 3
+// 05: going to pad 2 / pad 3 common entry point
+// 06: going to pad 2 / pad 3 / hangar common entry point (large airports only)
+// 07: going to airport's junction point (this is the location where helicopters land and take off)
+// 08: leaving runway
+// 09: going to the in way
+// 10: entering runway
+// 11: going to the out way
+// 12: airplane waiting for take-off clearance (?)
+// 13: airplane taking off
+// 14: airplane preparing to take-off
+// 15: airplane climbing after take-off
+// 16..20: in flight
+//     16: final approach before landing or going for another round
+//     18: heading for tower contact point (where airplanes initiate their approach)
+//     20: heading for the final approach entry point
+// 21: airplane landing (descent)
+// 22: airplane braking after touchdown
+// 23: helicopter taking off from airport
+// 24: helicopter preparing to land at airport
+// 25: helicopter landing at airport
+// 26: helicopter taking off from heliport
+// 27: helicopter preparing to land at heliport
+// 28: helicopter landing at heliport
+#define plane_speed_kmh(speed) int(speed*5/64)
+#define plane_RC(RCbase)                                                                                                                                     \
+   8..12: return RCbase *50/100 ;  /* leaving runway, going to the in way, entering runway, going to the out way, airplane waiting for take-off clearance */ \
+  13..15: return RCbase *1      ;  /* airplane taking off, airplane preparing to take-off, airplane climbing after take-off                               */ \
+      18: return RCbase *88/100 ;  /* heading for tower contact point                                                                                     */ \
+  16..20: return RCbase *91/100 ;  /* in flight                                                                                                           */ \
+  21..22: return RCbase *95/100 ;  /* airplane landing, airplane braking after touchdown                                                                  */ \
+          return RCbase *37/100 ;                                                                                                                            \
+
+

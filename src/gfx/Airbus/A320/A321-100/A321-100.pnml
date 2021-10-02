@@ -1,0 +1,291 @@
+
+// Airbus-A321_100
+
+// Template: 
+#define Airbus_A321_100_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 25, -23, -13, ANIM]                                           \
+  [ 50, 0, 42, 22, -21, -11, ANIM]                                           \
+  [100, 0, 50, 23, -25, -12, ANIM]                                           \
+  [160, 0, 41, 31, -21, -16, ANIM]                                           \
+  [210, 0, 45, 35, -23, -18, ANIM]                                           \
+  [260, 0, 41, 31, -21, -16, ANIM]                                           \
+  [310, 0, 50, 23, -25, -12, ANIM]                                           \
+  [370, 0, 42, 22, -21, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 40, 45, 25, -23, -13, ANIM]                                          \
+  [ 50, 40, 42, 22, -21, -11, ANIM]                                          \
+  [100, 40, 50, 23, -25, -12, ANIM]                                          \
+  [160, 40, 41, 31, -21, -16, ANIM]                                          \
+  [210, 40, 45, 35, -23, -18, ANIM]                                          \
+  [260, 40, 41, 31, -21, -16, ANIM]                                          \
+  [310, 40, 50, 23, -25, -12, ANIM]                                          \
+  [370, 40, 42, 21, -21, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 80, 44, 39, -22, -19, ANIM]                                          \
+  [ 50, 80, 41, 33, -21, -17, ANIM]                                          \
+  [100, 80, 53, 23, -27, -12, ANIM]                                          \
+  [160, 80, 39, 21, -20, -12, ANIM]                                          \
+  [210, 80, 42, 16, -21, -8 , ANIM]                                          \
+  [260, 80, 39, 21, -20, -12, ANIM]                                          \
+  [310, 80, 53, 22, -27, -12, ANIM]                                          \
+  [370, 80, 41, 33, -21, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 130, 44, 25, -22, -13, ANIM]                                         \
+  [ 50, 130, 42, 22, -21, -11, ANIM]                                         \
+  [100, 130, 50, 22, -25, -11, ANIM]                                         \
+  [160, 130, 41, 31, -21, -16, ANIM]                                         \
+  [210, 130, 44, 30, -22, -15, ANIM]                                         \
+  [260, 130, 41, 31, -21, -16, ANIM]                                         \
+  [310, 130, 50, 22, -25, -11, ANIM]                                         \
+  [370, 130, 42, 22, -21, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 170, 44, 32, -22, -16, ANIM]                                         \
+  [ 50, 170, 42, 27, -21, -14, ANIM]                                         \
+  [100, 170, 51, 22, -26, -11, ANIM]                                         \
+  [160, 170, 39, 27, -20, -14, ANIM]                                         \
+  [210, 170, 42, 24, -21, -12, ANIM]                                         \
+  [260, 170, 39, 27, -20, -14, ANIM]                                         \
+  [310, 170, 51, 22, -26, -11, ANIM]                                         \
+  [370, 170, 43, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/(0)Greyscale.png"
+purchase_sprite(Airbus_A321_100, 310, 0, 50, 23, -25, -12)
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/AirFrance.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Alitalia.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Alitalia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Asiana.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Asiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Austrian.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Lufthansa.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/LufthansaRetro.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_LufthansaRetro) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Onur.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Onur) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-100/Swiss.png"
+Airbus_A321_100_sprite_layout_template(Airbus_A321_100_Swiss) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Greyscale, flight_state())
+{
+  15: Airbus_A321_100_Greyscale_Climbing;
+  18: Airbus_A321_100_Greyscale_Flight;
+  21: Airbus_A321_100_Greyscale_Landing;
+  22: Airbus_A321_100_Greyscale_Touchdown;
+      Airbus_A321_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_AirFrance, flight_state())
+{
+  15: Airbus_A321_100_AirFrance_Climbing;
+  18: Airbus_A321_100_AirFrance_Flight;
+  21: Airbus_A321_100_AirFrance_Landing;
+  22: Airbus_A321_100_AirFrance_Touchdown;
+      Airbus_A321_100_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Alitalia, flight_state())
+{
+  15: Airbus_A321_100_Alitalia_Climbing;
+  18: Airbus_A321_100_Alitalia_Flight;
+  21: Airbus_A321_100_Alitalia_Landing;
+  22: Airbus_A321_100_Alitalia_Touchdown;
+      Airbus_A321_100_Alitalia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Asiana, flight_state())
+{
+  15: Airbus_A321_100_Asiana_Climbing;
+  18: Airbus_A321_100_Asiana_Flight;
+  21: Airbus_A321_100_Asiana_Landing;
+  22: Airbus_A321_100_Asiana_Touchdown;
+      Airbus_A321_100_Asiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Austrian, flight_state())
+{
+  15: Airbus_A321_100_Austrian_Climbing;
+  18: Airbus_A321_100_Austrian_Flight;
+  21: Airbus_A321_100_Austrian_Landing;
+  22: Airbus_A321_100_Austrian_Touchdown;
+      Airbus_A321_100_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Lufthansa, flight_state())
+{
+  15: Airbus_A321_100_Lufthansa_Climbing;
+  18: Airbus_A321_100_Lufthansa_Flight;
+  21: Airbus_A321_100_Lufthansa_Landing;
+  22: Airbus_A321_100_Lufthansa_Touchdown;
+      Airbus_A321_100_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_LufthansaRetro, flight_state())
+{
+  15: Airbus_A321_100_LufthansaRetro_Climbing;
+  18: Airbus_A321_100_LufthansaRetro_Flight;
+  21: Airbus_A321_100_LufthansaRetro_Landing;
+  22: Airbus_A321_100_LufthansaRetro_Touchdown;
+      Airbus_A321_100_LufthansaRetro_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Onur, flight_state())
+{
+  15: Airbus_A321_100_Onur_Climbing;
+  18: Airbus_A321_100_Onur_Flight;
+  21: Airbus_A321_100_Onur_Landing;
+  22: Airbus_A321_100_Onur_Touchdown;
+      Airbus_A321_100_Onur_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_Swiss, flight_state())
+{
+  15: Airbus_A321_100_Swiss_Climbing;
+  18: Airbus_A321_100_Swiss_Flight;
+  21: Airbus_A321_100_Swiss_Landing;
+  22: Airbus_A321_100_Swiss_Touchdown;
+      Airbus_A321_100_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_sprites, cargo_subtype)
+{
+  1: Airbus_A321_100_AirFrance;
+  2: Airbus_A321_100_Alitalia;
+  3: Airbus_A321_100_Asiana;
+  4: Airbus_A321_100_Austrian;
+  5: Airbus_A321_100_Lufthansa;
+  6: Airbus_A321_100_LufthansaRetro;
+  7: Airbus_A321_100_Onur; 
+  8: Airbus_A321_100_Swiss;
+     Airbus_A321_100_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_running_cost_factor, flight_state())
+{
+  plane_RC(75)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_ALITALIA);
+  3: string(STR_VLIV_ASIANA_AIRLINES);
+  4: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  5: string(STR_VLIV_LUFTHANSA);
+  6: string(STR_VLIV_LUFTHANSA_RETRO);
+  7: string(STR_VLIV_ONUR_AIR);
+  8: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_100_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 212;
+   2: return 186;
+   3: return 200;
+   4: return 200;
+   5: return 190;
+   6: return 190;
+   7: return 220;
+   8: return 176;   
+  return 185;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A321_100)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A321_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1994), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1994,2050);
+    retire_early: get_retire_early(1994,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 32;
+    passenger_capacity: 185;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 785;
+  }
+  graphics {
+    default: Airbus_A321_100_sprites;
+    purchase: Airbus_A321_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A321_100_cargo_subtype_text;
+	passenger_capacity: Airbus_A321_100_cargo_subtype_capacity;
+    speed: Airbus_A321_100_speed;
+    running_cost_factor: Airbus_A321_100_running_cost_factor;
+
+    cost_factor: 84; 
+    purchase_running_cost_factor: 75;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_100)
+  {
+    property
+    { range: 785; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_100)
+  {
+    property
+    { range: 1175; }
+  }
+}

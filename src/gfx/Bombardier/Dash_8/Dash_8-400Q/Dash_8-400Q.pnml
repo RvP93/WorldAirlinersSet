@@ -1,0 +1,434 @@
+
+// Bombardier-Dash8-400Q
+
+// Template: 
+#define Bombardier_Dash_8_400Q_sprite_layout_template(name)                  \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 44, 21, -22, -11, ANIM]                                           \
+  [ 50, 1, 41, 20, -21, -10, ANIM]                                           \
+  [ 95, 1, 48, 22, -24, -11, ANIM]                                           \
+  [150, 1, 40, 30, -20, -15, ANIM]                                           \
+  [195, 1, 44, 36, -22, -18, ANIM]                                           \
+  [245, 1, 40, 30, -20, -15, ANIM]                                           \
+  [290, 1, 48, 22, -24, -11, ANIM]                                           \
+  [345, 1, 41, 20, -21, -10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 44, 21, -22, -11, ANIM]                                          \
+  [ 50, 40, 41, 20, -21, -10, ANIM]                                          \
+  [ 95, 40, 48, 23, -24, -12, ANIM]                                          \
+  [150, 40, 40, 31, -20, -16, ANIM]                                          \
+  [195, 40, 44, 36, -22, -18, ANIM]                                          \
+  [245, 40, 40, 31, -20, -16, ANIM]                                          \
+  [290, 40, 48, 23, -24, -12, ANIM]                                          \
+  [345, 40, 41, 20, -21, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 44, 33, -22, -17, ANIM]                                          \
+  [ 50, 80, 42, 28, -21, -14, ANIM]                                          \
+  [ 95, 80, 50, 23, -24, -11, ANIM]                                          \
+  [150, 80, 39, 17, -20, -9 , ANIM]                                          \
+  [195, 80, 44, 19, -22, -10, ANIM]                                          \
+  [245, 80, 39, 17, -20, -9 , ANIM]                                          \
+  [290, 80, 50, 23, -25, -12, ANIM]                                          \
+  [345, 80, 42, 28, -21, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 115, 44, 21, -22, -11, ANIM]                                         \
+  [ 50, 115, 41, 20, -21, -10, ANIM]                                         \
+  [ 95, 115, 48, 23, -24, -12, ANIM]                                         \
+  [150, 115, 40, 31, -20, -16, ANIM]                                         \
+  [195, 115, 44, 36, -22, -18, ANIM]                                         \
+  [245, 115, 40, 31, -20, -16, ANIM]                                         \
+  [290, 115, 48, 23, -24, -12, ANIM]                                         \
+  [345, 115, 41, 20, -21, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 155, 44, 25, -22, -13, ANIM]                                         \
+  [ 50, 155, 42, 23, -21, -12, ANIM]                                         \
+  [ 95, 155, 49, 23, -25, -12, ANIM]                                         \
+  [150, 155, 42, 26, -21, -13, ANIM]                                         \
+  [195, 155, 44, 31, -22, -16, ANIM]                                         \
+  [245, 155, 42, 26, -21, -13, ANIM]                                         \
+  [290, 155, 49, 23, -25, -12, ANIM]                                         \
+  [345, 155, 42, 23, -21, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/(0)Greyscale.png"
+purchase_sprite(Bombardier_Dash_8_400Q, 290, 1, 48, 22, -24, -11)
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirBaltic.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_AirBaltic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirBerlin.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_AirBerlin) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AirNiugini.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_AirNiugini) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/AustrianArrows.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_AustrianArrows) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Brussels.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Brussels) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Croatia.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Croatia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Eurolot.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Eurolot) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Flybe.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Flybe) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/LOT.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Luxair.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Luxair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Olympic.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Olympic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Qantaslink.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Qantaslink) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/QantaslinkPinkRibbon.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_QantaslinkPinkRibbon) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/SAS.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/SATA.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_SATA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/UnitedExpress.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_UnitedExpress) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/Dash_8/Dash_8-400Q/Wideroe.png"
+Bombardier_Dash_8_400Q_sprite_layout_template(Bombardier_Dash_8_400Q_Wideroe) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Greyscale, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Greyscale_Climbing;
+  18: Bombardier_Dash_8_400Q_Greyscale_Flight;
+  21: Bombardier_Dash_8_400Q_Greyscale_Landing;
+  22: Bombardier_Dash_8_400Q_Greyscale_Touchdown;
+      Bombardier_Dash_8_400Q_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_AirBaltic, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_AirBaltic_Climbing;
+  18: Bombardier_Dash_8_400Q_AirBaltic_Flight;
+  21: Bombardier_Dash_8_400Q_AirBaltic_Landing;
+  22: Bombardier_Dash_8_400Q_AirBaltic_Touchdown;
+      Bombardier_Dash_8_400Q_AirBaltic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_AirBerlin, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_AirBerlin_Climbing;
+  18: Bombardier_Dash_8_400Q_AirBerlin_Flight;
+  21: Bombardier_Dash_8_400Q_AirBerlin_Landing;
+  22: Bombardier_Dash_8_400Q_AirBerlin_Touchdown;
+      Bombardier_Dash_8_400Q_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_AirNiugini, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_AirNiugini_Climbing;
+  18: Bombardier_Dash_8_400Q_AirNiugini_Flight;
+  21: Bombardier_Dash_8_400Q_AirNiugini_Landing;
+  22: Bombardier_Dash_8_400Q_AirNiugini_Touchdown;
+      Bombardier_Dash_8_400Q_AirNiugini_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_AustrianArrows, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_AustrianArrows_Climbing;
+  18: Bombardier_Dash_8_400Q_AustrianArrows_Flight;
+  21: Bombardier_Dash_8_400Q_AustrianArrows_Landing;
+  22: Bombardier_Dash_8_400Q_AustrianArrows_Touchdown;
+      Bombardier_Dash_8_400Q_AustrianArrows_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Brussels, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Brussels_Climbing;
+  18: Bombardier_Dash_8_400Q_Brussels_Flight;
+  21: Bombardier_Dash_8_400Q_Brussels_Landing;
+  22: Bombardier_Dash_8_400Q_Brussels_Touchdown;
+      Bombardier_Dash_8_400Q_Brussels_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Croatia, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Croatia_Climbing;
+  18: Bombardier_Dash_8_400Q_Croatia_Flight;
+  21: Bombardier_Dash_8_400Q_Croatia_Landing;
+  22: Bombardier_Dash_8_400Q_Croatia_Touchdown;
+      Bombardier_Dash_8_400Q_Croatia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Eurolot, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Eurolot_Climbing;
+  18: Bombardier_Dash_8_400Q_Eurolot_Flight;
+  21: Bombardier_Dash_8_400Q_Eurolot_Landing;
+  22: Bombardier_Dash_8_400Q_Eurolot_Touchdown;
+      Bombardier_Dash_8_400Q_Eurolot_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Flybe, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Flybe_Climbing;
+  18: Bombardier_Dash_8_400Q_Flybe_Flight;
+  21: Bombardier_Dash_8_400Q_Flybe_Landing;
+  22: Bombardier_Dash_8_400Q_Flybe_Touchdown;
+      Bombardier_Dash_8_400Q_Flybe_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_LOT, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_LOT_Climbing;
+  18: Bombardier_Dash_8_400Q_LOT_Flight;
+  21: Bombardier_Dash_8_400Q_LOT_Landing;
+  22: Bombardier_Dash_8_400Q_LOT_Touchdown;
+      Bombardier_Dash_8_400Q_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Luxair, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Luxair_Climbing;
+  18: Bombardier_Dash_8_400Q_Luxair_Flight;
+  21: Bombardier_Dash_8_400Q_Luxair_Landing;
+  22: Bombardier_Dash_8_400Q_Luxair_Touchdown;
+      Bombardier_Dash_8_400Q_Luxair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Olympic, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Olympic_Climbing;
+  18: Bombardier_Dash_8_400Q_Olympic_Flight;
+  21: Bombardier_Dash_8_400Q_Olympic_Landing;
+  22: Bombardier_Dash_8_400Q_Olympic_Touchdown;
+      Bombardier_Dash_8_400Q_Olympic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Qantaslink, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Qantaslink_Climbing;
+  18: Bombardier_Dash_8_400Q_Qantaslink_Flight;
+  21: Bombardier_Dash_8_400Q_Qantaslink_Landing;
+  22: Bombardier_Dash_8_400Q_Qantaslink_Touchdown;
+      Bombardier_Dash_8_400Q_Qantaslink_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_QantaslinkPinkRibbon, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_QantaslinkPinkRibbon_Climbing;
+  18: Bombardier_Dash_8_400Q_QantaslinkPinkRibbon_Flight;
+  21: Bombardier_Dash_8_400Q_QantaslinkPinkRibbon_Landing;
+  22: Bombardier_Dash_8_400Q_QantaslinkPinkRibbon_Touchdown;
+      Bombardier_Dash_8_400Q_QantaslinkPinkRibbon_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_SAS, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_SAS_Climbing;
+  18: Bombardier_Dash_8_400Q_SAS_Flight;
+  21: Bombardier_Dash_8_400Q_SAS_Landing;
+  22: Bombardier_Dash_8_400Q_SAS_Touchdown;
+      Bombardier_Dash_8_400Q_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_SATA, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_SATA_Climbing;
+  18: Bombardier_Dash_8_400Q_SATA_Flight;
+  21: Bombardier_Dash_8_400Q_SATA_Landing;
+  22: Bombardier_Dash_8_400Q_SATA_Touchdown;
+      Bombardier_Dash_8_400Q_SATA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_UnitedExpress, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_UnitedExpress_Climbing;
+  18: Bombardier_Dash_8_400Q_UnitedExpress_Flight;
+  21: Bombardier_Dash_8_400Q_UnitedExpress_Landing;
+  22: Bombardier_Dash_8_400Q_UnitedExpress_Touchdown;
+      Bombardier_Dash_8_400Q_UnitedExpress_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_Wideroe, flight_state())
+{
+  15: Bombardier_Dash_8_400Q_Wideroe_Climbing;
+  18: Bombardier_Dash_8_400Q_Wideroe_Flight;
+  21: Bombardier_Dash_8_400Q_Wideroe_Landing;
+  22: Bombardier_Dash_8_400Q_Wideroe_Touchdown;
+      Bombardier_Dash_8_400Q_Wideroe_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_sprites, cargo_subtype)
+{
+  1: Bombardier_Dash_8_400Q_AirBaltic;
+  2: Bombardier_Dash_8_400Q_AirBerlin;
+  3: Bombardier_Dash_8_400Q_AirNiugini;
+  4: Bombardier_Dash_8_400Q_AustrianArrows;
+  5: Bombardier_Dash_8_400Q_Brussels;
+  6: Bombardier_Dash_8_400Q_Croatia;
+  7: Bombardier_Dash_8_400Q_Eurolot;
+  8: Bombardier_Dash_8_400Q_Flybe;
+  9: Bombardier_Dash_8_400Q_LOT;
+ 10: Bombardier_Dash_8_400Q_Luxair;
+ 11: Bombardier_Dash_8_400Q_Olympic;
+ 12: Bombardier_Dash_8_400Q_Qantaslink;
+ 13: Bombardier_Dash_8_400Q_QantaslinkPinkRibbon;
+ 14: Bombardier_Dash_8_400Q_SAS;
+ 15: Bombardier_Dash_8_400Q_SATA;
+ 16: Bombardier_Dash_8_400Q_UnitedExpress;
+ 17: Bombardier_Dash_8_400Q_Wideroe;
+     Bombardier_Dash_8_400Q_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_running_cost_factor, flight_state())
+{
+  plane_RC(35)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(668); // heading for tower contact point
+  16..20: return plane_speed_kmh(322); // in flight
+  21..22: return plane_speed_kmh(225); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOMBARDIER);
+  1: string(STR_VLIV_AIR_BALTIC);
+  2: string(STR_VLIV_AIR_BERLIN);
+  3: string(STR_VLIV_AIR_NIUGINI);
+  4: string(STR_VLIV_AUSTRIAN_ARROWS);
+  5: string(STR_VLIV_BRUSSELS_AIRLINES);
+  6: string(STR_VLIV_CROATIA_AIRLINES);
+  7: string(STR_VLIV_EUROLOT);
+  8: string(STR_VLIV_FLYBE);
+  9: string(STR_VLIV_LOT);
+ 10: string(STR_VLIV_LUXAIR);
+ 11: string(STR_VLIV_OLYMPIC_AIR);
+ 12: string(STR_VLIV_QANTASLINK);
+ 13: string(STR_VLIV_QANTASLINK_PINK_RIBBON);
+ 14: string(STR_VLIV_SAS);
+ 15: string(STR_VLIV_SATA);
+ 16: string(STR_VLIV_UNITED_EXPRESS);
+ 17: string(STR_VLIV_WIDEROE); 
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_400Q_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 76; // Air Baltic
+  2: return 76; // Air Berlin
+  3: return 74; // Air Niugini
+  4: return 76; // Austrian
+  5: return 78; // Brussels Airlines
+  6: return 76; // Croatia Airlines
+  7: return 78; // Eurolot
+  8: return 78; // FlyBe
+  9: return 78; // LOT
+ 10: return 76; // Luxair
+ 11: return 78; // Olympic
+ 12: return 74; // Qantas Link
+ 13: return 74; // Qantas Link Pink Ribbon
+ 14: return 72; // SAS
+ 15: return 78; // Sata
+ 16: return 71; // United Express
+ 17: return 78; // Wideroe
+     return 78;
+}
+
+item (FEAT_AIRCRAFT, Bombardier_Dash_8_400Q)
+{
+  property
+  {
+    name: string(STR_AIRV_BOMBARDIER_DASH_8_400Q);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2000), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(2000,2016);
+    retire_early: get_retire_early(2000,2016);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 29;
+    passenger_capacity: 78;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 455;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Bombardier_Dash_8_400Q_sprites;
+    purchase: Bombardier_Dash_8_400Q_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Bombardier_Dash_8_400Q_cargo_subtype_text;
+	passenger_capacity: Bombardier_Dash_8_400Q_cargo_subtype_capacity;
+    speed: Bombardier_Dash_8_400Q_speed;
+    running_cost_factor: Bombardier_Dash_8_400Q_running_cost_factor;
+    sound_effect: Bombardier_Dash_8_400Q_sound_effect;
+
+    cost_factor: 22; 
+    purchase_running_cost_factor: 35;
+    purchase_speed: plane_speed_kmh(668); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Bombardier_Dash_8_400Q)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Bombardier_Dash_8_400Q)
+  {
+    property
+    { range: 455; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Bombardier_Dash_8_400Q)
+  {
+    property
+    { range: 680; }
+  }
+}

@@ -1,0 +1,549 @@
+##grflangid 0x07
+##plural 6
+##gender m f n p
+##case abl acc dat f gen m n nom p pre
+STR_GRF_NAME                                                    :ВАСя {VERSION}
+STR_GRF_DESCRIPTION                                             :{ORANGE}The World Airliners Set (WAS/ВАСя){}{SILVER}Набор предназначен для представления старых и не очень авиакомпаний в OpenTTD.{}{BLACK}Код: {SILVER}Beardie, DJNekkid, Faddypainter, Frank, George, Rens, Huub и Yorick{}{BLACK}Графика: {SILVER}Beardie, Dimme, EXTSpotter, Faddypainter, Frank, Firzafp, Getuouk, Giles, RvP93, Simozzz, Huub, Trainboy2004 и Vlad{}Большинство графики базируется на AV8 Set (PikkaBirds), не забывайте на это ссылаться. Все детали  и полный список участников в README
+STR_GRF_URL                                                     :http://dev.openttdcoop.org/projects/worldairlinersset
+STR_MIN_OPENTTD_VERSION                                         :1.2.0.23744
+#
+# DO NOT USE TABS IN LNG FILE!
+#
+# -------- PARAMS AND PARAMS MENU --------
+STR_PARAM_NAME_ENABLE_STANDARD_PLANES                           :Включить оригинальные самолёты
+STR_PARAM_DESC_ENABLE_STANDARD_PLANES                           :Оригинальные самолёты доступны в меню покупки
+STR_PARAM_NAME_ENABLE_RANGES                                    :Включить дальность полёта
+STR_PARAM_DESC_ENABLE_RANGES                                    :Включить дальность полёта (максимальное расстояние между аэропортами)
+STR_PARAM_NAME_RANGES                                           :Дальность полётов
+STR_PARAM_DESC_RANGES                                           :Дальность полёта: обычная, большая, не ограниченая
+STR_PARAM_VALUE_RANGES_OFF                                      :Дальность полётов не ограничена
+STR_PARAM_VALUE_RANGES_NORMAL                                   :Обычная дальность полётов
+STR_PARAM_VALUE_RANGES_LONG                                     :Большая дальность полётов
+STR_PARAM_BCOSTS_NAME                                           :Изменение цен
+STR_PARAM_BCOSTS_DESC                                           :Устанавливает изменение цены самолётов (0 уменьшает цены в 16 раз, 4 оставляет без изменений, 8 увеличивает в 16 раз)
+STR_PARAM_RCOSTS_NAME                                           :Изменение стоимости обслуживания
+STR_PARAM_RCOSTS_DESC                                           :Устанавливает изменение стоимости обслуживания самолётов (0 уменьшает стоимость в 16 раз, 4 оставляет без изменений, 8 увеличивает в 16 раз)
+#
+# -------- Aeroplanes --------
+STR_AIRV_AIRBUS_A300_600R                                       :Аэробус A300-600R
+STR_AIRV_AIRBUS_A300_600F                                       :Аэробус A300-600F
+STR_AIRV_AIRBUS_A310_200                                        :Аэробус A310-200
+STR_AIRV_AIRBUS_A310_300                                        :Аэробус A310-300
+STR_AIRV_AIRBUS_A310_300F                                       :Аэробус A310-300F
+STR_AIRV_AIRBUS_A318                                            :Аэробус А318
+STR_AIRV_AIRBUS_A319                                            :Аэробус А319
+STR_AIRV_AIRBUS_A320_100                                        :Аэробус А320-100
+STR_AIRV_AIRBUS_A320_200                                        :Аэробус А320-200
+STR_AIRV_AIRBUS_A320NEO                                         :Аэробус A320neo
+STR_AIRV_AIRBUS_A321_100                                        :Аэробус А321-100
+STR_AIRV_AIRBUS_A321_200                                        :Аэробус А321-200
+STR_AIRV_AIRBUS_A330_200                                        :Аэробус А330-200
+STR_AIRV_AIRBUS_A330_200F                                       :Аэробус A330-200F
+STR_AIRV_AIRBUS_A330_300                                        :Аэробус А330-300
+STR_AIRV_AIRBUS_A340_300                                        :Аэробус А340-300
+STR_AIRV_AIRBUS_A340_500                                        :Аэробус А340-500
+STR_AIRV_AIRBUS_A340_600                                        :Аэробус А340-600
+STR_AIRV_AIRBUS_A380_800                                        :Аэробус А380-800
+STR_AIRV_ANTONOV_124                                            :Антонов Ан-124
+STR_AIRV_ANTONOV_225                                            :Антонов Ан-225
+STR_AIRV_ATR_42_300                                             :АТР 42-300
+STR_AIRV_ATR_42_300F                                            :АТР 42-300F
+STR_AIRV_ATR_42_500                                             :АТР 42-500
+STR_AIRV_ATR_72_200                                             :АТР 72-200
+STR_AIRV_ATR_72_200F                                            :АТР 72-200F
+STR_AIRV_ATR_72_500                                             :АТР 72-500
+STR_AIRV_BAC_1_11_200                                           :BAC 1-11-200
+STR_AIRV_BAC_1_11_300                                           :BAC 1-11-300
+STR_AIRV_BAC_1_11_400                                           :BAC 1-11-400
+STR_AIRV_BAC_1_11_500                                           :BAC 1-11-500
+STR_AIRV_BAC_CONCORDE                                           :Конкорд (Aerospatiale/BAC)
+STR_AIRV_BAE_146_100                                            :BAe 146-100
+STR_AIRV_BAE_146_200                                            :BAe 146-200
+STR_AIRV_BAE_146_300                                            :BAe 146-300
+STR_AIRV_BAE_146_300QT                                          :BAe 146-300QT
+STR_AIRV_BOEING_707_320                                         :Боинг 707-320
+STR_AIRV_BOEING_707_420                                         :Боинг 707-420
+STR_AIRV_BOEING_717_200                                         :Боинг 717-200
+STR_AIRV_BOEING_727_100                                         :Боинг 727-100
+STR_AIRV_BOEING_727_200                                         :Боинг 727-200
+STR_AIRV_BOEING_737_100                                         :Боинг 737-100
+STR_AIRV_BOEING_737_200                                         :Боинг 737-200
+STR_AIRV_BOEING_737_200C                                        :Боинг 737-200C
+STR_AIRV_BOEING_737_300                                         :Боинг 737-300
+STR_AIRV_BOEING_737_300F                                        :Боинг 737-300F
+STR_AIRV_BOEING_737_400                                         :Боинг 737-400
+STR_AIRV_BOEING_737_500                                         :Боинг 737-500
+STR_AIRV_BOEING_737_600                                         :Боинг 737-600
+STR_AIRV_BOEING_737_700                                         :Боинг 737-700
+STR_AIRV_BOEING_737_800                                         :Боинг 737-800
+STR_AIRV_BOEING_737_900                                         :Боинг 737-900
+STR_AIRV_BOEING_737_900ER                                       :Боинг 737-900ER
+STR_AIRV_BOEING_737_MAX8                                        :Боинг 737 MAX 8
+STR_AIRV_BOEING_747_100                                         :Боинг 747-100
+STR_AIRV_BOEING_747_200                                         :Боинг 747-200
+STR_AIRV_BOEING_747_200M                                        :Боинг 747-200M
+STR_AIRV_BOEING_747_300                                         :Боинг 747-300
+STR_AIRV_BOEING_747_300M                                        :Боинг 747-300M
+STR_AIRV_BOEING_747_400                                         :Боинг 747-400
+STR_AIRV_BOEING_747_400D                                        :Боинг 747-400D
+STR_AIRV_BOEING_747_400ER                                       :Боинг 747-400ER
+STR_AIRV_BOEING_747_400BCF                                      :Боинг 747-400F BCF
+STR_AIRV_BOEING_747_400SCD                                      :Боинг 747-400F SCD
+STR_AIRV_BOEING_747_400ERF                                      :Боинг 747-400F ERF
+STR_AIRV_BOEING_747_400M                                        :Боинг 747-400M
+STR_AIRV_BOEING_747_8I                                          :Боинг 747-8I
+STR_AIRV_BOEING_747_8F                                          :Боинг 747-8F
+STR_AIRV_BOEING_757_200                                         :Боинг 757-200
+STR_AIRV_BOEING_757_200F                                        :Боинг 757-200F
+STR_AIRV_BOEING_767_200                                         :Боинг 767-200
+STR_AIRV_BOEING_767_200ER                                       :Боинг 767-200ER
+STR_AIRV_BOEING_767_300                                         :Боинг 767-300
+STR_AIRV_BOEING_767_300ER                                       :Боинг 767-300ER
+STR_AIRV_BOEING_767_400ER                                       :Боинг 767-400ER
+STR_AIRV_BOEING_767_300F                                        :Боинг 767-300F
+STR_AIRV_BOEING_777_200                                         :Боинг 777-200
+STR_AIRV_BOEING_777_200ER                                       :Боинг 777-200ER
+STR_AIRV_BOEING_777_200LR                                       :Боинг 777-200LR
+STR_AIRV_BOEING_777_200F                                        :Боинг 777-200F
+STR_AIRV_BOEING_777_300                                         :Боинг 777-300
+STR_AIRV_BOEING_777_300ER                                       :Боинг 777-300ER
+STR_AIRV_BOEING_787_8                                           :Боинг 787-8
+STR_AIRV_BOEING_787_9                                           :Боинг 787-9
+STR_AIRV_BOMBARDIER_CRJ100ER                                    :Бомбардье CRJ-100ER
+STR_AIRV_BOMBARDIER_CRJ100LR                                    :Бомбардье CRJ-100LR
+STR_AIRV_BOMBARDIER_CRJ200ER                                    :Бомбардье CRJ-200ER
+STR_AIRV_BOMBARDIER_CRJ200LR                                    :Бомбардье CRJ-200LR
+STR_AIRV_BOMBARDIER_CRJ700                                      :Бомбардье CRJ-700
+STR_AIRV_BOMBARDIER_CRJ700ER                                    :Бомбардье CRJ-700ER
+STR_AIRV_BOMBARDIER_CRJ900                                      :Бомбардье CRJ-900
+STR_AIRV_BOMBARDIER_CRJ900ER                                    :Бомбардье CRJ-900ER
+STR_AIRV_BOMBARDIER_CRJ900LR                                    :Бомбардье CRJ-900LR
+STR_AIRV_BOMBARDIER_DASH_8_100                                  :Бомбардье Dash 8-100
+STR_AIRV_BOMBARDIER_DASH_8_200                                  :Бомбардье Dash 8-200
+STR_AIRV_BOMBARDIER_DASH_8_200Q                                 :Бомбардье Dash 8-200Q
+STR_AIRV_BOMBARDIER_DASH_8_300                                  :Бомбардье Dash 8-300
+STR_AIRV_BOMBARDIER_DASH_8_300Q                                 :Бомбардье Dash 8-300Q
+STR_AIRV_BOMBARDIER_DASH_8_400Q                                 :Бомбардье Dash 8-Q400
+STR_AIRV_EMBRAER_ERJ_170LR                                      :Эмбраер 170 LR
+STR_AIRV_EMBRAER_ERJ_175STD                                     :Эмбраер 175 STD
+STR_AIRV_EMBRAER_ERJ_190STD                                     :Эмбраер 190 STD
+STR_AIRV_EMBRAER_ERJ_190LR                                      :Эмбраер 190 LR
+STR_AIRV_EMBRAER_ERJ_190AR                                      :Эмбраер 190 AR
+STR_AIRV_EMBRAER_ERJ_195STD                                     :Эмбраер 195 STD
+STR_AIRV_EMBRAER_ERJ_195LR                                      :Эмбраер 195 LR
+STR_AIRV_EMBRAER_ERJ_195AR                                      :Эмбраер 195 AR
+STR_AIRV_FOKKER_70                                              :Фоккер 70
+STR_AIRV_FOKKER_100                                             :Фоккер 100
+STR_AIRV_LOCKHEED_L049_CONSTELLATION                            :Локхид Л-049 Созвездие
+STR_AIRV_ILYUSHIN_62                                            :Ильюшин Ил-62
+STR_AIRV_DOUGLAS_DC_8_10                                        :Дуглас DC-8-10
+STR_AIRV_DOUGLAS_DC_8_20                                        :Дуглас DC-8-20
+STR_AIRV_DOUGLAS_DC_8_30                                        :Дуглас DC-8-30
+STR_AIRV_DOUGLAS_DC_8_40                                        :Дуглас DC-8-40
+STR_AIRV_DOUGLAS_DC_8_50                                        :Дуглас DC-8-50
+STR_AIRV_DOUGLAS_DC_9_10                                        :Дуглас DC-9-10
+STR_AIRV_DOUGLAS_DC_9_20                                        :Дуглас DC-9-20
+STR_AIRV_DOUGLAS_DC_9_30                                        :Дуглас DC-9-30
+STR_AIRV_DOUGLAS_DC_9_40                                        :Дуглас DC-9-40
+STR_AIRV_DOUGLAS_DC_9_50                                        :Дуглас DC-9-50
+STR_AIRV_DOUGLAS_DC_10_10                                       :Дуглас DC-10-10
+STR_AIRV_DOUGLAS_DC_10_30                                       :Дуглас DC-10-30
+STR_AIRV_DOUGLAS_DC_10_40                                       :Дуглас DC-10-40
+STR_AIRV_MCDONNELL_DOUGLAS_MD_81                                :МакДоннел Дуглас MD-81
+STR_AIRV_MCDONNELL_DOUGLAS_MD_82                                :МакДоннел Дуглас MD-82
+STR_AIRV_MCDONNELL_DOUGLAS_MD_83                                :МакДоннел Дуглас MD-83
+STR_AIRV_MCDONNELL_DOUGLAS_MD_87                                :МакДоннел Дуглас MD-87
+STR_AIRV_MCDONNELL_DOUGLAS_MD_88                                :МакДоннел Дуглас MD-88
+STR_AIRV_MCDONNELL_DOUGLAS_MD_90                                :МакДоннел Дуглас MD-90
+STR_AIRV_MCDONNELL_DOUGLAS_DC_10_30                             :МакДоннел Дуглас DC 10-30
+STR_AIRV_MCDONNELL_DOUGLAS_MD_11                                :МакДоннел Дуглас MD-11
+STR_AIRV_MCDONNELL_DOUGLAS_MD_11F                               :МакДоннел Дуглас MD-11F
+STR_AIRV_SUD_CARAVELLE_III                                      :Каравелла III
+STR_AIRV_TUPOLEV_TU134                                          :Туполев Ту-134
+STR_AIRV_TUPOLEV_TU154B                                         :Туполев Ту-154Б
+STR_AIRV_TUPOLEV_TU154M                                         :Туполев Ту-154М
+STR_AIRV_BOEING_TEST                                            :Тест
+#
+# -------- Helicopters --------
+STR_AIRV_SKYLIFT_150                                            :Небесный лифт 150
+#
+# ------- Livery Names -------
+STR_VLIV_MANUFACTURERS                                          : Окраска производителя
+STR_VLIV_AIRBUS                                                 : Окраска завода Аэробус
+STR_VLIV_ANTONOV                                                : Окраска бюро Антонова
+STR_VLIV_ATR                                                    : Окраска АТР
+STR_VLIV_BAC                                                    : Окраска BAС
+STR_VLIV_BAE                                                    : Окраска BAe
+STR_VLIV_BOEING                                                 : Окраска завода Боинг
+STR_VLIV_BOMBARDIER                                             : Окраска завода Бомбардье
+STR_VLIV_EMBRAER                                                : Окраска компании Эмбраер
+STR_VLIV_DOUGLAS                                                : Окраска Дуглас
+STR_VLIV_FOKKER                                                 : Окраска Фоккер
+STR_VLIV_LOCKHEED                                               : Окраска Локхид
+STR_VLIV_ILYUSHIN                                               : Окраска бюро Ильюшина
+STR_VLIV_MCDONNEL_DOUGLAS                                       : Окраска МакДоннел Дуглас
+STR_VLIV_SUD                                                    : Окраска национального общества авиастроения юго-запада (Франция)
+STR_VLIV_TUPOLEV                                                : Окраска бюро Туполева
+STR_VLIV_WAS                                                    : Юбилейная окраска к семилетию ВАСи
+#
+# Cargo
+STR_VLIV_AEROLOGIC                                              : АэроЛоджик (Германия)
+STR_VLIV_AIRBRIDGE                                              : Небесный грузовой мост (Россия)
+STR_VLIV_AIR_CHINA_CARGO                                        : Международная авиационная компания Китая, подразделение грузовых авиаперевозок
+STR_VLIV_AIR_FRANCE_CARGO                                       : Французские авиалинии, подразделение грузовых авиаперевозок
+STR_VLIV_AIR_UKRAINE                                            : Окраска бюро Антонова (Украина)
+STR_VLIV_AIR_USSR                                               : Окраска бюро Антонова (СССР)
+STR_VLIV_BA_WORLD_CARGO                                         : Британские авиалинии, подразделение международных грузовых перевозок
+STR_VLIV_CATHAY_PACIFIC_CARGO                                   : Катай Пассифик (Гонконг), подразделение грузовых авиаперевозок
+STR_VLIV_CARGOLUX                                               : Элитные грузы (Люксембург)
+STR_VLIV_CHANNEL_EXPRESS                                        : Экспресс канал (Великобритания)
+STR_VLIV_CHINA_AIRLINES_CARGO                                   : Китайские авиалинии, подразделение грузовых авиаперевозок
+STR_VLIV_CYGNUS                                                 : Корпорация Небо Игнуса
+STR_VLIV_DHL                                                    : Диэчэль (Германия)
+STR_VLIV_EMIRATES_SKYCARGO                                      : Авиакомпания Эмираты (ОАЭ), подразделение грузовых перевозок
+STR_VLIV_EVA_AIR_CARGO                                          : Небо Евы (Тайвань), подразделение грузовых авиаперевозок
+STR_VLIV_FEDEX                                                  : Федеральный экспресс (США)
+STR_VLIV_ICELANDAIR_CARGO                                       : Авиалинии Исландии, подразделение грузовых авиаперевозок
+STR_VLIV_KALITTA_AIR                                            : Небо Калитты (США)
+STR_VLIV_KLM_CARGO                                              : Королевская авиационная компания (Нидерланды), подразделение грузовых авиаперевозок
+STR_VLIV_KOREAN_AIR_CARGO                                       : Небо Кореи (Южная Корея), подразделение грузовых авиаперевозок
+STR_VLIV_LAN_CARGO                                              : Чилийские авиалинии, подразделение грузовых авиаперевозок
+STR_VLIV_MARTINAIR_CARGO                                        : Небо Мартина (Нидерланды), подразделение грузовых авиаперевозок
+STR_VLIV_NIPPON_CARGO_AIRLINES                                  : Ниппон грузовые авиалинии (Япония)
+STR_VLIV_NIPPON_CARGO_AIRLINES_GREEN_FREIGHTER                  : Ниппон грузовые авиалинии (Япония) (зелёная окраска)
+STR_VLIV_QANTAS_FREIGHT                                         : Летающие кенгуру (Австралия), подразделение грузовых авиаперевозок
+STR_VLIV_QATAR_AIRWAYS_CARGO                                    : Авиалинии Катара, подразделение грузовых авиаперевозок
+STR_VLIV_REGIONAL_CARGO                                         : подразделение региональных грузовых авиаперевозок
+STR_VLIV_ROYAL_MAIL                                             : Королевская почта (Великобритания)
+STR_VLIV_SOUTH_AFRICAN_CARGO                                    : Авиалинии Южной Африки, подразделение грузовых авиаперевозок
+STR_VLIV_TNT                                                    : Авиалинии ТНТ (Бельгия)
+STR_VLIV_TURKISH_AIRLINES_CARGO                                 : Турецкие авиалинии, подразделение грузовых авиаперевозок
+STR_VLIV_UPS                                                    : Единая служба доставки (США)
+STR_VLIV_VOLGA_DNEPR                                            : Волга-Днепр (Россия)
+#
+# Low Cost
+STR_VLIV_AB_AIRLINES                                            : Бристольские авиалинии (Великобритания)
+STR_VLIV_AIR_ARABIA                                             : Небо Аравии (ОАЭ)
+STR_VLIV_AIR_ASIA                                               : Небо Азии (Малайзия)
+STR_VLIV_AIR_BALTIC                                             : Небо Балтии (Латвия)
+STR_VLIV_AIR_DECCAN                                             : Небо Деккана (Индия)
+STR_VLIV_ALASKA_AIRLINES                                        : Авиалинии Аляски (США)
+STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL                         : Авиалинии Аляски (США) (окраска "Дисней")
+STR_VLIV_AMSTERDAM_AIRLINES                                     : Амстердамские авиалинии (Нидерланды)
+STR_VLIV_ARKE_FLY                                               : Арке (Голландия)
+STR_VLIV_BUZZ                                                   : Базз (Великобритания)
+STR_VLIV_CONDOR_BERLIN                                          : Кондор (Германия) (окраска Берлин)
+STR_VLIV_CONDOR                                                 : Кондор (Германия)
+STR_VLIV_DBA                                                    : Немецкие британские авиалинии (Германия)
+STR_VLIV_EASYJET                                                : Простой реактивный (Великобритания)
+STR_VLIV_EASYJET_OLD                                            : Простой реактивный (Великобритания) (старая окраска)
+STR_VLIV_FLYBE                                                  : Флайби (Великобритания)
+STR_VLIV_FLYDUBAI                                               : Авиационная корпорация Дубая (ОАЭ)
+STR_VLIV_FLYEGYPT                                               : Лети в Египет
+STR_VLIV_FLYNORDIC                                              : ФлайНордик (Швеция)
+STR_VLIV_FRONTIER_AIRLINES_RACOON_FOX                           : Граничные авиалинии (США) (окраска енотовидной лисы)
+STR_VLIV_FRONTIER_AIRLINES                                      : Граничные авиалинии (США)
+STR_VLIV_GOL                                                    : С целью летать (Бразилия)
+STR_VLIV_JETAIRFLY                                              : Реактивные полёты (Бельгия)
+STR_VLIV_KUBAN_AIRLINES                                         : Авиалинии Кубани (Россия)
+STR_VLIV_KULULA                                                 : Кулула (ЮАР)
+STR_VLIV_LEVEL                                                                                                  : Уровень (Испания)
+STR_VLIV_LION_AIR                                               : Львиное небо (Индонезия)
+STR_VLIV_NORWEGIAN_AIR                                          : Небо Норвегии
+STR_VLIV_NORWEGIAN_LONG_HAUL                                    : Норвежские магистральные авиалинии
+STR_VLIV_ONUR_AIR                                               : Небо Онура (Турция)
+STR_VLIV_PEOPLEXPRESS                                           : Людской экспресс (США)
+STR_VLIV_RYANAIR                                                : Небо Райна (Ирландия)
+STR_VLIV_RYANAIR_OLD                                            : Небо Райна (Ирландия) (старая окраска)
+STR_VLIV_SKYWEST                                                : Западный воздух (Австралия)
+STR_VLIV_SMALL_PLANET                                           : Авиалинии маленькой планеты (Литва)
+STR_VLIV_SOUTHWEST_AIRLINES                                     : Юго-западные авиалинии (США)
+STR_VLIV_SOUTH_WEST_GOLD                                        : Авиалинии югозапада (США) (золотая окраска)
+STR_VLIV_TRANSAVIA                                              : Трансавия (Нидерланды)
+STR_VLIV_VIRGIN_BLUE                                            : Авиалинии Вирджин Атлантик (Великобритания) (синяя окраска)
+STR_VLIV_WAMOS                                                                                                  : Небо Вамоса (Испания)
+STR_VLIV_WIZZ_AIR                                               : Небо Виз (Венгрия)
+STR_VLIV_WOW_AIR                                                : Небо Вовы (Исландия)
+STR_VLIV_XL_AIRWAYS                                             : Очень большие авиалинии (Великобритания)
+#
+# One World
+STR_VLIV_AIR_BERLIN                                             : Небо Берлина (Германия)
+STR_VLIV_AIR_BERLIN_INTERIM                                     : Небо Берлина (Германия) (переходная окраска)
+STR_VLIV_AIR_BERLIN_NEW                                         : Небо Берлина (Германия) (новая окраска)
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            : Небо Нострума (Испания), подразделение региональных авиаперевозок Иберия
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        : Небо Нострума (Испания), подразделение региональных авиаперевозок Иберия (старая окраска)
+STR_VLIV_AMERICAN_AIRLINES                                      : Американские авиалинии
+STR_VLIV_AMERICAN_AIRLINES_OLD                                  : Американские авиалинии (старая окраска)
+STR_VLIV_AMERICAN_EAGLE                                         : Американский орёл
+STR_VLIV_BRITISH_AIRWAYS_LANDOR                                 : Британские авиалинии (ландор)
+STR_VLIV_BRITISH_AIRWAYS_LANDOR_RED                             : Британские авиалинии (красный Ландор)
+STR_VLIV_BRITISH_AIRWAYS_NEGUS                                  : Британские авиалинии (царь царей)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG                             : Британские авиалинии (британский флаг)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR                      : Британские авиалинии (британский флаг общее небо)
+STR_VLIV_BRITISH_AIRWAYS_CITYFLYER                              : Британские авиалинии (городской самолёт)
+STR_VLIV_CATHAY_PACIFIC                                         : Катай Пассифик (Гонконг)
+STR_VLIV_DRAGONAIR                                              : Небесный Дракон (Гонконг)
+STR_VLIV_FINNAIR                                                : Небо Финляндии
+STR_VLIV_FINNAIR_MOOMIN_STICKERS                                : Небо Финляндии (специальная окраска с Мумитролями)
+STR_VLIV_FINNAIR_OLD                                            : Небо Финляндии (старая окраска)
+STR_VLIV_IBERIA                                                 : Иберия (Испания)
+STR_VLIV_IBERIA_OLD                                             : Иберия (Испания) (старая окраска)
+STR_VLIV_JAL                                                    : Японские авиалинии
+STR_VLIV_JAL_GREEN                                              : Японские авиалинии (зелёная окраска)
+STR_VLIV_JAPAN_AIR_SYSTEM                                       : Японские авиасистемы
+STR_VLIV_JETSTAR_AIRWAYS                                        : Авиалинии реактивной звезды (Австралия)
+STR_VLIV_LAN_AIRLINES                                           : Чилийские авиалинии
+STR_VLIV_MALAYSIA_AIRLINES                                      : Малайзийские авиалинии
+STR_VLIV_MALEV                                                  : Венгерская авиационная компания
+STR_VLIV_MEXICANA                                               : Мексиканские авиалинии
+STR_VLIV_QANTAS                                                 : Летающие кенгуру (Австралия)
+STR_VLIV_QANTAS_ONEWORLD                                        : Летающие кенгуру (Австралия) (окраска одного мира)
+STR_VLIV_QANTAS_VJET                                            : 5-реактивные летающие кенгуру (Австралия)
+STR_VLIV_QANTASLINK                                             : Линия летающих кенгуру (Австралия)
+STR_VLIV_QANTASLINK_PINK_RIBBON                                 : Линия летающих кенгуру (Австралия) (розовая окраска)
+STR_VLIV_QATAR_AIRWAYS                                          : Авиалинии Катара
+STR_VLIV_ROYAL_JORDANIAN                                        : Королевские авиалинии Иордании
+STR_VLIV_S7_AIRLINES                                            : Авиалинии С7 (Россия)
+STR_VLIV_SRILANKAN_AIRLINES                                     : Шри-Ланкийские авиалинии
+STR_VLIV_TAM_AIRLINES                                           : Бразильские авиалинии (TAM)
+STR_VLIV_US_AIRWAYS                                             : Американские авиалинии (США)
+STR_VLIV_US_AIRWAYS_OLD                                         : Американские авиалинии (США) (старая окраска)
+#
+# Star Alliance
+STR_VLIV_AEGAN_AIRLINES                                         : Эгейские авиалинии (Греция)
+STR_VLIV_AIR_CANADA                                             : Небо Канады
+STR_VLIV_AIR_CANADA_97_06                                       : Небо Канады (окраска 97-06)
+STR_VLIV_AIR_CANADA_NEW                                         : Небо Канады (новая окраска)
+STR_VLIV_AIR_CANADA_ROUGE                                       : Небо Канады (красная окраска)
+STR_VLIV_AIR_CHINA                                              : Международная авиационная компания Китая
+STR_VLIV_AIR_DOLOMITI                                           : Небо Доломита (Италия)
+STR_VLIV_AIR_INDIA                                              : Небо Индии
+STR_VLIV_AIR_INDIA_OLD                                          : Небо Индии (старая окраска)
+STR_VLIV_AIR_INDIA_REGIONAL                                     : Небо Индии, подразделение региональных авиаперевозок
+STR_VLIV_AIR_NEW_ZEALAND                                        : Новозеландские авиалинии
+STR_VLIV_AIR_NELSON                                             : Небо Нельсона (Новая Зеландия)
+STR_VLIV_ANA                                                    : Все авиалинии Ниппон (Япония)
+STR_VLIV_ANA_WAVES                                              : Все авиалинии Ниппон (Япония) (окраска волны для первого 777-300)
+STR_VLIV_ANA_GOLD                                               : Все авиалинии Ниппон (Япония) (золотая окраска)
+STR_VLIV_ANA_PIKACHU_LIVERY_2005                                : Все авиалинии Ниппон (Япония) (окраска Пикачу 2005 года)
+STR_VLIV_ANA_POKEMON_LIVERY_1999                                : Все авиалинии Ниппон (Япония) (окраска покемоны 1999 года)
+STR_VLIV_ANSETT_NEW_ZEALAND                                     : Ансет Новая Зелендия
+STR_VLIV_ASIANA_AIRLINES                                        : Сеульские авиалинии
+STR_VLIV_AUSTRIAN_AIRLINES                                      : Австрийские авиалинии
+STR_VLIV_AUSTRIAN_AIRLINES_RETRO                                : Австралийские авиалинии (ретро окраска)
+STR_VLIV_AUSTRIAN_ARROWS                                        : Тирольские авиалинии (Австрия)
+STR_VLIV_AVIANCA                                                : Государственные авиалинии Колумбии
+STR_VLIV_BLUE1                                                  : первая синяя окраска
+STR_VLIV_BMI_OLD                                                : Малыш БМИ (Великобритания) (старая окраска)
+STR_VLIV_BMI_BABY                                               : Малыш БМИ (Великобритания)
+STR_VLIV_BRUSSELS_AIRLINES                                      : Брюссельские авиалинии
+STR_VLIV_CONTINENTAL                                            : Континентальные авиалинии (США)
+STR_VLIV_CONTINENTAL_OLD                                        : Континентальные авиалинии (США) (старая окраска)
+STR_VLIV_COPA_AIRLINES                                          : Панамская авиационная компания
+STR_VLIV_CROATIA_AIRLINES                                       : Хорватские авиалинии
+STR_VLIV_EGYPT_AIR                                              : Небо Египта
+STR_VLIV_EVA_AIR                                                : Небо Евы (Тайвань)
+STR_VLIV_ETHIOPIAN_AIRLINES                                     : Эфиопские авиалинии
+STR_VLIV_GERMANWINGS_OLD                                        : Немецкие крылья (Германия) (старая окраска)
+STR_VLIV_GERMANWINGS                                            : Немецкие крылья (Германия)
+STR_VLIV_INDIAN_AIRLINES                                        : Индийские авиалинии
+STR_VLIC_JAZZ                                                   : Джаз авиация (Канада)
+STR_VLIV_LOT                                                    : LOT Польские авиалинии
+STR_VLIV_LUFTHANSA                                              : Небо союза (Германия)
+STR_VLIV_LUFTHANSA_PREVIOUS                                     : Небо союза (Германия) (старая окраска)
+STR_VLIV_LUFTHANSA_RETRO                                        : Небо союза (Германия) (ретро окраска)
+STR_VLIV_LUFTHANSA_REGIONAL                                     : Небо союза (Германия), подразделение региональных авиаперевозок
+STR_VLIV_OLYMPIC_AIR                                            : Небо Олимпии (Греция)
+STR_VLIV_SAS                                                    : Скандинавские авиалинии (Швеция)
+STR_VLIV_SHENZHEN_AIRLINES                                      : Шэньчжэньские авиалинии (Китай)
+STR_VLIV_SINGAPORE_AIRLINES                                     : Сингапурские авиалинии
+STR_VLIV_SOUTH_AFRICAN_AIRWAYS                                  : Авиалинии Южной Африки
+STR_VLIV_SPANAIR                                                : Небо Испании
+STR_VLIV_SWISS_AIR                                              : Небо Швейцарии
+STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Швейцарские международные авиалинии
+STR_VLIV_TAP                                                    : Португальские авиаперевозоки
+STR_VLIV_PORTUGALIA                                             : Португальские авиалинии
+STR_VLIV_THAI_AIRWAYS_INTERNATIONAL                             : Тайские международные авиалинии
+STR_VLIV_TURKISH_AIRLINES                                       : Турецкие авиалинии
+STR_VLIV_UNITED_AIRLINES                                        : Объединённые авиалинии (США)
+STR_VLIV_UNITED_EXPRESS                                         : Объединённый экспресс (США)
+#
+# Sky Team
+STR_VLIV_AEROFLOT                                               : Аэрофлот (Россия)
+STR_VLIV_AEROFLOT_OLD                                           : Аэрофлот (Россия) (старая окраска)
+STR_VLIV_AEROLINEAS_ARGENTINAS                                  : Аргентинские авиалинии
+STR_VLIV_AEROMEXICO                                             : АэроМехико (Мексика)
+STR_VLIV_AIR_EUROPA                                             : Небо Европы (Испания)
+STR_VLIV_AIR_FRANCE                                             : Французские авиалинии
+STR_VLIV_AIRLINAIR_AIR_FRANCE                                   : Небо Эйрлин (франция)
+STR_VLIV_ALITALIA                                               : Алиталия (Италия)
+STR_VLIV_ALITALIA_OLD                                           : Алиталия (Италия) (старая окраска)
+STR_VLIV_ALITALIA_CITY                                          : Алиталия городские линии (Италия)
+STR_VLIV_BRITAIR                                                : Небо Бретани (Франция)
+STR_VLIV_CHINA_AIRLINES                                         : Китайские авиалинии
+STR_VLIV_CHINA_EASTERN                                          : Восточные авиалинии Китая
+STR_VLIV_CHINA_SOUTHERN                                         : Китайские южные авиалинии
+STR_VLIV_CZECH_AIRLINES                                         : Чешские авиалинии
+STR_VLIV_DELTA_AIR_LINES                                        : Авиалинии дельты (США)
+STR_VLIV_DELTA_CONNECTION                                       : Дельта соединение (США)
+STR_VLIV_GARUDA_INDONESIA                                       : Гаруда Индонезия
+STR_VLIV_HOP                                                                                                    : ГОП! (Франция)
+STR_VLIV_KENYA_AIRWAYS                                          : Кенийские авиалинии
+STR_VLIV_KLM                                                    : Королевская авиационная компания (Нидерланды)
+STR_VLIV_KLM_RETRO_LIVERY                                       : Королевская авиационная компания (Нидерланды) (ретро окраска)
+STR_VLIV_KLM_CITYHOPPER                                         : Королевская авиационная компания (Нидерланды), подразделение ближнемагистральных авиаперевозок
+STR_VLIV_KOREAN_AIR                                             : Небо Кореи (Южная Корея)
+STR_VLIV_MIDDLE_EAST_AIRLINES                                   : Средневосточные авиалинии (Ливан)
+STR_VLIV_NORTHWEST_AIRLINES                                     : Северо-западные авиалинии (США)
+STR_VLIV_NORTHWEST_AIRLINK                                      : Северо-западные авиалинии (США) (торговая марка)
+STR_VLIV_SAUDI_ARABIAN_AIRLINES                                 : Авиалинии Саудовской Аравии
+STR_VLIV_TAROM                                                  : Румынская национальная компания воздушного транспорта
+STR_VLIV_VIETNAM_AIRLINES                                       : Вьетнамские авиалинии
+STR_VLIV_XIAMEN_AIR                                             : Небо Сямэнь (Китай)
+#
+# Unaffiliated
+STR_VLIV_AER_ARRAN_ORIGINAL                                     : Небо Арран (Ирландия)
+STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Небо Арран (Ирландия) (окраска с кругами)
+STR_VLIV_AER_LINGUS                                             : Воздушный флот (Ирландия)
+STR_VLIV_AER_LINGUS_REGIONAL                                    : Воздушный флот (Ирландия), подразделение региональных авиаперевозок
+STR_VLIV_AIR_ASTANA                                             : Небо Астаны (Казахстан)
+STR_VLIV_AIR_AUSTRAL                                            : Небо Австралии (Франция)
+STR_VLIV_AIR_CONTRACTORS                                        : Небо Контракторс (Ирландия)
+STR_VLIV_AIR_COMET                                              : Небесная комета (Испания)
+STR_VLIV_AIR_DO                                                 : Международные авиалинии Хоккайдо (Япония)
+STR_VLIV_AIR_FLORIDA                                            : Небо Флориды (США)
+STR_VLIV_AIR_GREENLAND                                          : Небо Гренландии (Дания)
+STR_VLIV_AIR_ITALY                                              : Небо Италии
+STR_VLIV_AIR_KORYO                                              : Небо корейских авиалиний (КНДР)
+STR_VLIV_AIR_MACAU                                              : Небо Макао (Китай)
+STR_VLIV_AIR_MALTA                                              : Небо Мальты
+STR_VLIV_AIR_NAMIBIA                                            : Небо Намибии
+STR_VLIV_AIR_NIUGINI                                            : Небо Ниугини (Папуа-Новая Гвинея)
+STR_VLIV_AIR_PLUS_COMET                                         : Небесная комета (Испания)
+STR_VLIV_AIR_SEYCHELLES                                         : Небо Сейшельс (Сейшельские Острова)
+STR_VLIV_AIR_SOUTHWEST                                          : Него юго-запада (Канада)
+STR_VLIV_AIR_TRANSAT                                            : Небо Трансата (Канада)
+STR_VLIV_AMASZONAS_PARAGUAY                                     : АмасЗонас Парагвай
+STR_VLIV_ASTRA_AIRWAYS                                                                                  : Авиалинии Астры (Греция)
+STR_VLIV_ASTRAEUS                                               : Авиалинии Астрей (Великобритания)
+STR_VLIV_AURIGNY_AIR_SERVICES                                   : Небесные сервисы Ауригни (Нормандские острова)
+STR_VLIV_AZERBAIJAN_AIRLINES                                    : Авиалинии Азербайджана
+STR_VLIV_BIMAN_BANGLADESH_AIRLINES                              : Бангладешские авиалинии Биман
+STR_VLIV_BRITISH_AIRTOURS                                       : Британские авиатуры
+STR_VLIV_BRITISH_CALEDONIAN                                     : Британия и Каледония (Великобритания)
+STR_VLIV_BULGARIA_AIR                                           : Небо Болгарии
+STR_VLIV_CHINA_WEST_AIR                                         : Китайские западные авиалинии
+STR_VLIV_CYPRUS_AIRWAYS                                         : Кипрские авиалинии
+STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : Израильские авиалинии Эль Аль
+STR_VLIV_EMIRATES                                               : Авиакомпания Эмираты (ОАЭ)
+STR_VLIV_EUROPEAN_AIRCHARTER                                    : Европейский небесный чартер (Великобритания)
+STR_VLIV_ETIHAD_AIRWAYS                                         : Авиалинии Объединённых Арабских Эмиратов
+STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1                     : Авиалинии Объединённых Арабских Эмиратов (окраска формулы 1 Абу-Даби)
+STR_VLIV_GULF_AIR                                               : Небо Галфа (Бахрейн)
+STR_VLIV_HAINAN_AIRLINES                                        : Хайнаньские авиалинии (Китай)
+STR_VLIV_HAWAIIAN_AIRLINES                                      : Гавайские авиалинии
+STR_VLIV_HELLENIC_IMPERIAL_AIRWAYS                              : Эллинские имперские авиалинии (Греция)
+STR_VLIV_HELVETIC_AIRWAYS_OLD                                   : Швейцарские авиалинии (старая окраска)
+STR_VLIV_HIGHLAND_EXPRESS                                       : Горные воздушные пути (Шотландия)
+STR_VLIV_ICELANDAIR                                             : Авиалинии Исландии
+STR_VLIV_IRAN_AIR                                               : Небо Ирана
+STR_VLIV_JAT_AIRWAYS                                            : Югославские авиалинии
+STR_VLIV_JETBLUE                                                : Реактивная синева (США)
+STR_VLIV_KMV                                                    : Кавминводыавиа (Россия)
+STR_VLIV_LIBYAN_AIRLINES                                        : Ливийские авиалинии
+STR_VLIV_MALMO_AVIATION                                         : Авиация Мальмё (Швеция)
+STR_VLIV_MALMO_AVIATION_SVENSK_FOOTBALL                         : Авиация Мальмё (Швеция) (футбольная окраска)
+STR_VLIV_MARTINAIR                                              : Небо Мартина (Нидерланды)
+STR_VLIV_MAT_MACEDONIAN                                         : Македонскии Авиалинии (Греция)
+STR_VLIV_MONARCH_AIRLINES                                       : Королевские авиалинии (Великобритания)
+STR_VLIV_MONTENEGRO_AIRLINES                                    : Авиалинии Монтенегро (Черногория)
+STR_VLIV_OMNI_AIR_INTERNATIONAL                                 : Международные авиалинии омни (США)
+STR_VLIV_PALMAIR                                                : Небо Палма (Великобритания)
+STR_VLIV_PERUVIAN                                               : Перуанские авиалинии
+STR_VLIV_PIA                                                    : Пакистанские международные авиалинии
+STR_VLIV_PRECISION_AIR_SERVICES                                 : Небо Преcижн (Танзания)
+STR_VLIV_ROSSIYA_AIRLINES                                       : Россия
+STR_VLIV_ROYAL_BRUNEI_AIRLINES                                  : Королевские авиалинии Брунея
+STR_VLIV_SAMOA_AIRWAYS                                          : Авиалинии Самоа
+STR_VLIV_SATA                                                   : Небо Азорских островов (Португалия)
+STR_VLIV_SATENA                                                 : Воздушное сообщение национальных территорий (Колумбия)
+STR_VLIV_SKYMARK_AIRLINES                                       : Авиалинии небесного знака (Япония)
+STR_VLIV_SLOKAIR                                                : Международное небо Слок (Гамбия)
+STR_VLIV_TRANSAERO                                              : Трансаэро (Россия)
+STR_VLIV_TUNISAIR                                               : Авиалинии Туниса
+STR_VLIV_TURKMENISTAN_AIRLINES                                  : Туркменские авиалинии
+STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES                         : Международные авиалинии Украины
+STR_VLIV_UZBEKISTAN_AIRWAYS                                     : Узбекские авиалинии
+STR_VLIV_UTAIR                                                  : ЮТэйр (Россия)
+STR_VLIV_VARIG                                                  : Воздушный транспорт Риу-Гранди (Бразилия)
+STR_VLIV_VIRGIN_ATLANTIC                                        : Авиалинии Вирджин Атлантик (Великобритания)
+STR_VLIV_WIDEROE                                                : Видерое (Норвегия)
+STR_VLIV_YEMENIA                                                : Авиалинии Йемена
+#
+# Others
+STR_VLIV_ADRIA_AIRWAYS                                          : Адрия авиалинии (Словения)
+STR_VLIV_AIR_ONE                                                : Первые в небе (Италия)
+STR_VLIV_AIR_NAURU                                              : Небо Науру (Республика Науру)
+STR_VLIV_AIR_SERBIA                                             : Небо Сербии
+STR_VLIV_AIR_SLOVAKIA                                           : Небо Словакии
+STR_VLIV_AIR_TAHITI_NUI                                                                                 : Небо Тахити Нуи (Полинезия)
+STR_VLIV_ALLEGIANT_AIR                                          : Всенебесный гигант (США)
+STR_VLIV_ARKAS                                                  : Небо Аркаса (Турция)
+STR_VLIV_AUSTRAL_LINEAS_AEREAS                                  : Точная авиакомпания (Аргентина)
+STR_VLIV_BIRGENAIR                                              : Небо Биргена (Турция)
+STR_VLIV_CLAN_MEGA                                              : Мега клан
+STR_VLIV_DUTCH_ANTILLES_EXPRESS                                 : Голландский экспресс Антильских островов (Нидерланды)
+STR_VLIV_FARNAIR_EUROPE                                         : Небо Фарна (Швейцария)
+STR_VLIV_INDIGO                                                 : Иди в Индию
+STR_VLIV_INSEL_AIR                                              : Небо Инзеля (Нидерланды)
+STR_VLIV_MAHAN_AIR                                              : Небо Махана (Иран)
+STR_VLIV_OMAN_AIR                                               : Оманские авиалинии
+STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS                             : Панамериканские мировые авиалинии (США)
+STR_VLIV_PHILIPPINES_AIRLINES                                   : Филиппинские авиалинии
+STR_VLIV_RWANDAIR                                               : Небо Руанды
+STR_VLIV_SLOK_AIR                                               : Международное небо Слок (Гамбия)
+STR_VLIV_SURINAM_AIRWAYS                                        : Авиалинии Республики Суринам
+STR_VLIV_TAAG_ANGOLA_AIRLINES                                   : Авиалинии Анголы (TAAG)
+STR_VLIV_V_AUSTRALIA                                            : Австралийские международные авиалинии
+STR_VLIV_VUELING_AIRLINES                                       : Летающие (Испания)
+STR_VLIV_FLYGLOBESPAN                                           : Полёт шириной в мир (Великобритания)
+STR_VLIV_SUNEXPRESS                                             : Авиация быстрого солнца (Турция)
+STR_VLIV_THOMSON_AIRWAYS                                        : Авиалинии Томсона (Великобритания)
+STR_VLIV_TWA                                                    : Всемирные авиалинии (США)
+STR_VLIV_PSA                                                    : Тихоокеанские юго-западные авиалинии (США)
+STR_VLIV_SPANTAX                                                : Испанское такси
+STR_VLIV_LAKER_AIRWAYS                                          : Авиалинии Лакера (Великобритания)
+STR_VLIV_FIJI_AIRWAYS                                           : Авиалинии Фиджи
+STR_VLIV_AVIACO                                                 : Коммерческая авиация (Испания)
+STR_VLIV_ARIANA_AFGHAN_AIRLINES                                 : Афганские авиалинии Арианы
+STR_VLIV_ESTONIAN                                               : Эстонские авиалинии
+STR_VLIV_HAPAG_LLOYD                                            : ОАО сообщение Гамбург-Америка (Германия)
+STR_VLIV_ROYAL_AIR_MAROC                                        : Королевские авиалинии Марокко
+STR_VLIV_SWIFTAIR                                               : Небо Свифт (Испания)
+STR_VLIV_BALAIR                                                 : Небо Бали (Швейцария)
+STR_VLIV_CLICKAIR                                               : Небо за клик (Испания)
+STR_VLIV_AIR_ALGERIE                                            : Алжирские авиалинии
+STR_VLIV_VOLOTEA                                            : Летаем вокруг (Испания)
+STR_VLIV_AIR_PACIFIC                                            : Небо тихого океана (США)
+STR_VLIV_PEGASUS                                                : Авиалинии Пегасов (Турция)
+STR_VLIV_EASTERN_AIR_LINES                                      : Восточные авиалинии (США)
+STR_VLIV_GIRJET                                                 : Исполнительное управление авивперевозок (Испания)
+STR_VLIV_WESTJET                                                : Реактивный запад (Канада)
+STR_VLIV_BELAVIA                                                : Белавиа (Белоруссия)
+STR_VLIV_TRAVEL_SERVICE                                         : Услуги путешествий (Чехословакия)
+STR_VLIV_ALLIANCE_AIRLINES                                      : Авиалинии Альянса (Австралия)
+STR_VLIV_BOAC                                                   : Корпорация заморских линий (Великобритания)
+STR_VLIV_CUBANA_DE_AVIACION                                     : Авиация Кубы
+STR_VLIV_VIASA                                                  : Венесуэльские международные авиалинии
+STR_VLIV_ALBASTAR                                               : Звезда Альбы (Испания)
+STR_VLIV_PRIVILEGE_STYLE                                        : Привилегированный стиль (Испания)
+STR_VLIV_BINTER_CANARIAS                                        : Бинтер Канарские острова (Испания)
+STR_VLIV_FUTURA                                                 : Будущее (Испания)
+STR_VLIV_AEROPOSTAL                                             : Аэропосталь (Франция)
+STR_VLIV_JET_TIME                                               : Реактивное время (Дания)
+STR_VLIV_EUROLOT                                                : Евролот (Польша)
+STR_VLIV_KUWAIT_AIRWAYS                                         : Кувейтские авиалинии
+STR_VLIV_AIR_AFRIQUE                                            : Небо Африки (Берег слоновой кости)
+STR_VLIV_VIM_AIRLINES                                           : ВИМ-Авиа (Россия)
+STR_VLIV_VIM_AIRLINES_OLD                                       : ВИМ-Авиа (Россия) (старая окраска)
+STR_VLIV_DAN_AIR_LONDON                                         : ДАН в небе Лондона (Великобритания)

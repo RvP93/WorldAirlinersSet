@@ -1,0 +1,1380 @@
+START_SECTION(Planes-Boeing-777-300)  
+
+    A0_PLANES(AIRV_BOEING_777_300, 1, 19)
+        00 \w1998-01-01  //Introduction Date
+        03 1E  //Vehicle Life In Years
+        04 16  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b26 // Loading Speed in pax
+        08 FF  // New gfx
+        09 02  //Helicopter?
+        0A 01  //Large? 
+        0C 49  //Speed in mph/8 
+        0D 02 // Accleration
+        0F \w451  //Passenger Capacity 
+        11 \b45 //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20 
+        16 0A  //Retire Vehicle Early
+        17 02  //2CC
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+        
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_777_300, 1, 1)
+                     1F \w2000
+        
+  -1 * 0   10 F1        
+
+   A1_PLANES(19,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/(0)Greyscale.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Emirates.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/JAL.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/KLM.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+   
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Singapore.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Korean.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirFrance.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Cathay.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANA.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/BA.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/PIA.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirCanada.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirIndia.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANAWave.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANZ.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/EgyptAir.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/GarudaIndonesia.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/TAAG.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/VAustralia.pcx
+    spr() 01 01 09 33 58 -29 -17
+    spr() 60 01 09 29 58 -29 -15
+    spr() 120 01 09 31 70 -35 -16
+    spr() 195 01 09 43 59 -30 -22
+    spr() 260 01 09 46 58 -29 -23
+    spr() 325 01 09 43 59 -30 -22
+    spr() 390 01 09 31 70 -35 -16
+    spr() 465 01 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+   27 * 9	 02 03 10 01 01 \w16 \w16
+   27 * 9	 02 03 11 01 01 \w17 \w17
+   27 * 9	 02 03 12 01 01 \w18 \w18
+
+  142 * 22	 02 03 F0 81 F2 00 FF 13 // In Flight
+                            00 00 00 00 // Greyscale
+                            01 00 09 09 // Emirates
+                            02 00 0D 0D // KLM
+                            03 00 0C 0C // JAL
+                            04 00 10 10 // Singapore
+                            05 00 0E 0E // Korean Air
+                            06 00 02 02 // Air France
+                            07 00 08 08 // Cathay
+                            08 00 05 05 // All Nippons Airways
+                            09 00 07 07 // British Airways
+                            0A 00 0F 0F // Pakistan International Airlines
+                            0B 00 01 01 // Air Canada
+                            0C 00 03 03 // Air India
+                            0D 00 06 06 // All Nippon Airways Waves
+                            0E 00 04 04 // Air New Zealand
+                            0F 00 0A 0A // Egypt Air
+                            10 00 0B 0B // Garuda Indonesia
+                            11 00 11 11 // TAAG Angola Airlines
+                            12 00 12 12 // V Australia
+                            FF FF
+
+   A1_PLANES(19,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/(0)Greyscale.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Emirates.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/JAL.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/KLM.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Singapore.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Korean.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirFrance.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Cathay.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANA.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/BA.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/PIA.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirCanada.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirIndia.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANAWave.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANZ.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/EgyptAir.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/GarudaIndonesia.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/TAAG.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/VAustralia.pcx
+    spr() 01 50 09 33 58 -29 -17
+    spr() 60 50 09 29 58 -29 -15
+    spr() 120 50 09 31 70 -35 -16
+    spr() 195 50 09 43 59 -30 -22
+    spr() 260 50 09 47 58 -29 -24
+    spr() 325 50 09 43 59 -30 -22
+    spr() 390 50 09 31 70 -35 -16
+    spr() 465 50 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+   27 * 9	 02 03 10 01 01 \w16 \w16
+   27 * 9	 02 03 11 01 01 \w17 \w17
+   27 * 9	 02 03 12 01 01 \w18 \w18
+
+  143 * 22	 02 03 F1 81 F2 00 FF 13 // Taxing or Initiating Approach         
+                            00 00 00 00 // Greyscale
+                            01 00 09 09 // Emirates
+                            02 00 0D 0D // KLM
+                            03 00 0C 0C // JAL
+                            04 00 10 10 // Singapore
+                            05 00 0E 0E // Korean Air
+                            06 00 02 02 // Air France
+                            07 00 08 08 // Cathay
+                            08 00 05 05 // All Nippons Airways
+                            09 00 07 07 // British Airways
+                            0A 00 0F 0F // Pakistan International Airlines
+                            0B 00 01 01 // Air Canada
+                            0C 00 03 03 // Air India
+                            0D 00 06 06 // All Nippon Airways Waves
+                            0E 00 04 04 // Air New Zealand
+                            0F 00 0A 0A // Egypt Air
+                            10 00 0B 0B // Garuda Indonesia
+                            11 00 11 11 // TAAG Angola Airlines
+                            12 00 12 12 // V Australia
+                            FF FF
+
+   A1_PLANES(19,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/(0)Greyscale.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Emirates.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/JAL.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/KLM.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Singapore.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Korean.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirFrance.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Cathay.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANA.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/BA.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/PIA.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirCanada.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirIndia.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANAWave.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANZ.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/EgyptAir.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/GarudaIndonesia.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/TAAG.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/VAustralia.pcx
+    spr() 01 100 09 49 58 -29 -25
+    spr() 60 100 09 47 56 -28 -24
+    spr() 120 100 09 32 69 -35 -16
+    spr() 195 100 09 27 55 -28 -14
+    spr() 260 100 09 21 58 -29 -11
+    spr() 325 100 09 27 55 -28 -14
+    spr() 390 100 09 32 69 -35 -16
+    spr() 465 100 09 47 56 -28 -24
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+   27 * 9	 02 03 10 01 01 \w16 \w16
+   27 * 9	 02 03 11 01 01 \w17 \w17
+   27 * 9	 02 03 12 01 01 \w18 \w18
+
+  144 * 22	 02 03 F2 81 F2 00 FF 13 // Take Off 
+                            00 00 00 00 // Greyscale
+                            01 00 09 09 // Emirates
+                            02 00 0D 0D // KLM
+                            03 00 0C 0C // JAL
+                            04 00 10 10 // Singapore
+                            05 00 0E 0E // Korean Air
+                            06 00 02 02 // Air France
+                            07 00 08 08 // Cathay
+                            08 00 05 05 // All Nippons Airways
+                            09 00 07 07 // British Airways
+                            0A 00 0F 0F // Pakistan International Airlines
+                            0B 00 01 01 // Air Canada
+                            0C 00 03 03 // Air India
+                            0D 00 06 06 // All Nippon Airways Waves
+                            0E 00 04 04 // Air New Zealand
+                            0F 00 0A 0A // Egypt Air
+                            10 00 0B 0B // Garuda Indonesia
+                            11 00 11 11 // TAAG Angola Airlines
+                            12 00 12 12 // V Australia
+                            FF FF
+
+   A1_PLANES(19,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/(0)Greyscale.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Emirates.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/JAL.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/KLM.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Singapore.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Korean.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirFrance.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Cathay.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANA.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/BA.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/PIA.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirCanada.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirIndia.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANAWave.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANZ.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/EgyptAir.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/GarudaIndonesia.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/TAAG.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/VAustralia.pcx
+    spr() 01 150 09 33 58 -29 -17
+    spr() 60 150 09 29 58 -29 -15
+    spr() 120 150 09 31 70 -35 -16
+    spr() 195 150 09 43 59 -30 -22
+    spr() 260 150 09 39 58 -29 -20
+    spr() 325 150 09 43 59 -30 -22
+    spr() 390 150 09 31 70 -35 -16
+    spr() 465 150 09 29 58 -29 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+   27 * 9	 02 03 10 01 01 \w16 \w16
+   27 * 9	 02 03 11 01 01 \w17 \w17
+   27 * 9	 02 03 12 01 01 \w18 \w18
+
+  145 * 22	 02 03 F3 81 F2 00 FF 13 // Landed On Runway     
+                            00 00 00 00 // Greyscale
+                            01 00 09 09 // Emirates
+                            02 00 0D 0D // KLM
+                            03 00 0C 0C // JAL
+                            04 00 10 10 // Singapore
+                            05 00 0E 0E // Korean Air
+                            06 00 02 02 // Air France
+                            07 00 08 08 // Cathay
+                            08 00 05 05 // All Nippons Airways
+                            09 00 07 07 // British Airways
+                            0A 00 0F 0F // Pakistan International Airlines
+                            0B 00 01 01 // Air Canada
+                            0C 00 03 03 // Air India
+                            0D 00 06 06 // All Nippon Airways Waves
+                            0E 00 04 04 // Air New Zealand
+                            0F 00 0A 0A // Egypt Air
+                            10 00 0B 0B // Garuda Indonesia
+                            11 00 11 11 // TAAG Angola Airlines
+                            12 00 12 12 // V Australia
+                            FF FF
+   A1_PLANES(19,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/(0)Greyscale.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Emirates.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/JAL.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/KLM.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Singapore.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Korean.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirFrance.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/Cathay.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANA.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/BA.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/PIA.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirCanada.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/AirIndia.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANAWave.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/ANZ.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/EgyptAir.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/GarudaIndonesia.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/TAAG.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b777-300/VAustralia.pcx
+    spr() 01 200 09 41 58 -29 -21
+    spr() 60 200 09 39 59 -30 -20
+    spr() 120 200 09 29 70 -35 -15
+    spr() 195 200 09 34 58 -29 -17
+    spr() 260 200 09 30 58 -29 -15
+    spr() 325 200 09 34 58 -29 -17
+    spr() 390 200 09 29 70 -35 -15
+    spr() 465 200 09 39 59 -30 -20
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+   27 * 9	 02 03 10 01 01 \w16 \w16
+   27 * 9	 02 03 11 01 01 \w17 \w17
+   27 * 9	 02 03 12 01 01 \w18 \w18
+
+  146 * 22	 02 03 F4 81 F2 00 FF 13 // Final Approach       
+                            00 00 00 00 // Greyscale
+                            01 00 09 09 // Emirates
+                            02 00 0D 0D // KLM
+                            03 00 0C 0C // JAL
+                            04 00 10 10 // Singapore
+                            05 00 0E 0E // Korean Air
+                            06 00 02 02 // Air France
+                            07 00 08 08 // Cathay
+                            08 00 05 05 // All Nippons Airways
+                            09 00 07 07 // British Airways
+                            0A 00 0F 0F // Pakistan International Airlines
+                            0B 00 01 01 // Air Canada
+                            0C 00 03 03 // Air India
+                            0D 00 06 06 // All Nippon Airways Waves
+                            0E 00 04 04 // Air New Zealand
+                            0F 00 0A 0A // Egypt Air
+                            10 00 0B 0B // Garuda Indonesia
+                            11 00 11 11 // TAAG Angola Airlines
+                            12 00 12 12 // V Australia
+                            FF FF
+
+    A1_PLANES(1,1)
+
+    -1 sprites/pcx/boeing/b777-300/(0)Greyscale.pcx 390 6 09 21 70 -35 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 0	 02 03 01 81 F2 00 FF 13 // 18 Liveries
+                             00 80 00 00 // Greyscale
+                             0D 80 01 01 // Air Canada
+                             13 80 02 02 // Air France
+                             C0 80 03 03 // Air India
+                             3C 80 04 04 // Air New Zealand
+                             28 80 05 05 // All Nippon Airways
+                             C1 80 06 06 // All Nippon Airways Waves
+                             54 80 07 07 // British Airways
+                             68 80 08 08 // Cathay Pacific
+                             18 80 09 09 // Emirates
+                             C2 80 0A 0A // Egypt Air
+                             5C 80 0B 0B // Garuda Indonesia
+                             56 80 0C 0C // JAL
+                             73 80 0D 0D // KLM
+                             89 80 0E 0E // Korean Air
+                             A2 80 0F 0F // Pakistan International Airlines 
+                             19 80 10 10 // Singapore
+                             C3 80 11 11 // TAAG Angola Airlines
+                             C4 80 12 12 // V Australia
+                             FF FF // End
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             15 80 0D 0D   // Take Off 
+                             23 80 0F 0F   // Climbing
+                             49 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             15 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w33018 0D 0F // Take Off
+                             \w32994 12 12 // Flight
+                             \w32999 10 14 // Approach
+                             \w33008 15 16 // Landing
+                             \w32908 08 0C // Grounded	
+                             \w32870       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w33030 0B 0B //Purchase Cost Purchase List
+				                     \w32994 0E 0E //Running Cost Purchase List
+                             00 00 					
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics				  
+
+   -1 * 0  02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             4C 00 
+
+   -1 * 0   03 03 01 AIRV_BOEING_777_300 01
+                             FF 08 00      // P-List
+                             07 00         // Default
+
+END_SECTION(Planes-Boeing-777-300)  

@@ -1,0 +1,1184 @@
+START_SECTION(Planes-Airbus-A330-200)  
+
+    A0_PLANES(AIRV_AIRBUS_A330_200, 1, 19)
+        00 \w1998-01-01  //Introduction Date
+        03 19  //Vehicle Life In Years
+        04 16  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b49 // Loading Speed in pax
+        08 FF  // New gfx
+        09 02  //Helicopter?
+        0A 00  //Large?  
+        0C 44  //Speed in mph/8  
+        0D 02 // Accleration
+        0F \w293  //Passenger Capacity   
+        11 \b29  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        17 02  //2CC
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_AIRBUS_A330_200, 1, 1)
+                     1F \w2415
+        
+  -1 * 0   10 F1
+
+   A1_PLANES(16,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/(0)Greyscale.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Delta.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Emirates.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/KLM.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Korean.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qantas.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Swiss.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/TAM.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Aeroflot.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Avianca.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Etihad.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qatar.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/AirFrance.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Alitalia.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/MalasiaAirlines.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/GarudaIndonsia.pcx
+    spr() 01 01 09 30 66 -33 -15
+    spr() 75 01 09 29 57 -29 -15
+    spr() 140 01 09 34 65 -33 -17
+    spr() 215 01 09 38 57 -29 -19
+    spr() 280 01 09 42 66 -33 -21
+    spr() 350 01 09 38 57 -29 -19
+    spr() 415 01 09 34 65 -33 -17
+    spr() 485 01 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00+
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+
+  142 * 22	 02 03 F0 81 F2 00 FF 10 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 05 05 // Delta
+                             02 00 06 06 // Emirates
+                             03 00 09 09 // KLM
+                             04 00 0A 0A // Korean
+                             05 00 0C 0C // Qantas
+                             06 00 0E 0E // Swiss
+                             07 00 0F 0F // TAM
+                             08 00 01 01 // Aeroflot
+                             09 00 04 04 // Avianca
+                             0A 00 07 07 // Etihad
+                             0B 00 0D 0D // Qatar
+                             0C 00 02 02 // Air France
+                             0D 00 03 03 // Alitalia
+                             0E 00 0B 0B // Malasia Arilines
+                             0F 00 08 08 // Garuda Indonsia				     
+                             FF FF
+
+   A1_PLANES(16,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/(0)Greyscale.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Delta.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Emirates.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/KLM.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Korean.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qantas.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Swiss.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/TAM.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Aeroflot.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Avianca.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Etihad.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qatar.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/AirFrance.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Alitalia.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/MalasiaAirlines.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/GarudaIndonsia.pcx
+    spr() 01 50 09 30 66 -33 -15
+    spr() 75 50 09 29 57 -29 -15
+    spr() 140 50 09 34 65 -33 -17
+    spr() 215 50 09 40 57 -29 -20
+    spr() 280 50 09 43 66 -33 -22
+    spr() 350 50 09 40 57 -29 -20
+    spr() 415 50 09 34 65 -33 -17
+    spr() 485 50 09 29 57 -29 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00+
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+
+
+  142 * 22	 02 03 F1 81 F2 00 FF 10 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 05 05 // Delta
+                             02 00 06 06 // Emirates
+                             03 00 09 09 // KLM
+                             04 00 0A 0A // Korean
+                             05 00 0C 0C // Qantas
+                             06 00 0E 0E // Swiss
+                             07 00 0F 0F // TAM
+                             08 00 01 01 // Aeroflot
+                             09 00 04 04 // Avianca
+                             0A 00 07 07 // Etihad
+                             0B 00 0D 0D // Qatar
+                             0C 00 02 02 // Air France
+                             0D 00 03 03 // Alitalia
+                             0E 00 0B 0B // Malasia Arilines
+                             0F 00 08 08 // Garuda Indonsia				     
+                             FF FF
+
+   A1_PLANES(16,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/(0)Greyscale.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Delta.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Emirates.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/KLM.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Korean.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qantas.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Swiss.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/TAM.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Aeroflot.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Avianca.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Etihad.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qatar.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/AirFrance.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Alitalia.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/MalasiaAirlines.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/GarudaIndonsia.pcx
+    spr() 01 100 09 45 66 -33 -23
+    spr() 75 100 09 43 55 -28 -22
+    spr() 140 100 09 34 62 -31 -17
+    spr() 215 100 09 29 55 -28 -15
+    spr() 280 100 09 18 64 -32 -09
+    spr() 350 100 09 29 55 -28 -15
+    spr() 415 100 09 34 62 -31 -17
+    spr() 485 100 09 43 55 -28 -22
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00+
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+
+  142 * 22	 02 03 F2 81 F2 00 FF 10 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 05 05 // Delta
+                             02 00 06 06 // Emirates
+                             03 00 09 09 // KLM
+                             04 00 0A 0A // Korean
+                             05 00 0C 0C // Qantas
+                             06 00 0E 0E // Swiss
+                             07 00 0F 0F // TAM
+                             08 00 01 01 // Aeroflot
+                             09 00 04 04 // Avianca
+                             0A 00 07 07 // Etihad
+                             0B 00 0D 0D // Qatar
+                             0C 00 02 02 // Air France
+                             0D 00 03 03 // Alitalia
+                             0E 00 0B 0B // Malasia Arilines
+                             0F 00 08 08 // Garuda Indonsia				     
+                             FF FF
+
+   A1_PLANES(16,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/(0)Greyscale.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Delta.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Emirates.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/KLM.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Korean.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qantas.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Swiss.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/TAM.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Aeroflot.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Avianca.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Etihad.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qatar.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/AirFrance.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Alitalia.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/MalasiaAirlines.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/GarudaIndonsia.pcx
+    spr() 01 150 09 30 66 -33 -15
+    spr() 75  150 09 29 57 -28 -15
+    spr() 140 150 09 34 65 -33 -17
+    spr() 215 150 09 40 57 -28 -20
+    spr() 280 150 09 39 66 -33 -20
+    spr() 350 150 09 40 57 -28 -20
+    spr() 415 150 09 34 65 -33 -17
+    spr() 485 150 09 29 57 -28 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00+
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+
+  142 * 22	 02 03 F3 81 F2 00 FF 10 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 05 05 // Delta
+                             02 00 06 06 // Emirates
+                             03 00 09 09 // KLM
+                             04 00 0A 0A // Korean
+                             05 00 0C 0C // Qantas
+                             06 00 0E 0E // Swiss
+                             07 00 0F 0F // TAM
+                             08 00 01 01 // Aeroflot
+                             09 00 04 04 // Avianca
+                             0A 00 07 07 // Etihad
+                             0B 00 0D 0D // Qatar
+                             0C 00 02 02 // Air France
+                             0D 00 03 03 // Alitalia
+                             0E 00 0B 0B // Malasia Arilines
+                             0F 00 08 08 // Garuda Indonsia				     
+                             FF FF
+
+   A1_PLANES(16,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/(0)Greyscale.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Delta.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Emirates.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/KLM.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Korean.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qantas.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Swiss.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/TAM.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Aeroflot.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Avianca.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Etihad.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Qatar.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/AirFrance.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/Alitalia.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/MalasiaAirlines.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/airbus/a330-200/GarudaIndonsia.pcx
+    spr() 01 200 09 37 66 -33 -19
+    spr() 75 200 09 35 56 -28 -18
+    spr() 140 200 09 34 66 -33 -17
+    spr() 215 200 09 35 57 -28 -18
+    spr() 280 200 09 29 66 -33 -15
+    spr() 350 200 09 35 57 -28 -18
+    spr() 415 200 09 34 66 -33 -17
+    spr() 485 200 09 35 56 -28 -18 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00+
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+   27 * 9	 02 03 0B 01 01 \w11 \w11
+   27 * 9	 02 03 0C 01 01 \w12 \w12
+   27 * 9	 02 03 0D 01 01 \w13 \w13
+   27 * 9	 02 03 0E 01 01 \w14 \w14
+   27 * 9	 02 03 0F 01 01 \w15 \w15
+
+  142 * 22	 02 03 F4 81 F2 00 FF 10 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 05 05 // Delta
+                             02 00 06 06 // Emirates
+                             03 00 09 09 // KLM
+                             04 00 0A 0A // Korean
+                             05 00 0C 0C // Qantas
+                             06 00 0E 0E // Swiss
+                             07 00 0F 0F // TAM
+                             08 00 01 01 // Aeroflot
+                             09 00 04 04 // Avianca
+                             0A 00 07 07 // Etihad
+                             0B 00 0D 0D // Qatar
+                             0C 00 02 02 // Air France
+                             0D 00 03 03 // Alitalia
+                             0E 00 0B 0B // Malasia Arilines
+                             0F 00 08 08 // Garuda Indonsia		     
+                             FF FF
+
+   A1_PLANES(1,1)
+
+    -1 sprites/pcx/airbus/a330-300/(0)Greyscale.pcx 415 9 09 21 69 -35 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 0	 02 03 01 81 F2 00 FF 10     // 16 Liveries
+                             00 80 00 00 // Greyscale
+                             53 80 01 01 // Aeroflot
+                             13 80 02 02 // Air France   
+                             20 80 03 03 // Alitalia
+                             6A 80 04 04 // Avianca 
+                             0E 80 05 05 // Delta
+                             18 80 06 06 // Emirates
+                             8F 80 07 07 // Etihad 
+                             5C 80 08 08 // Garuda Indonsia
+                             73 80 09 09 // KLM
+                             89 80 0A 0A // Korean
+                             AA 80 0B 0B // Malasia Airlines 			     
+                             0F 80 0C 0C // Qantas
+                             9A 80 0D 0D // Qatar    
+                             4A 80 0E 0E // Swiss
+                             5F 80 0F 0F // TAM
+                             FF FF // End
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speed during flight
+                             16 80 0D 0D   // Take Off 
+                             25 80 0F 0F   // Climbing
+                             44 80 12 12   // Flight
+                             22 80 10 14   // Approach
+                             13 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Cost during flight
+                             \w32944 0D 0F // Take Off
+                             \w32928 12 12 // Flight
+                             \w32932 10 14 // Approach
+                             \w32938 15 16 // Landing
+                             \w32868 08 0C // Grounded	
+                             \w32840       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32937 0B 0B //Purchase Cost Purchase List
+				                     \w32928 0E 0E //Running Cost Purchase List
+                             00 00
+                            
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00                             				
+
+   -1 * 0	  02 03 07 81 0C 00 FF 03      // Callbacks
+                             01 00 19 19 // Livery Text
+                             06 00 33 33 // Play Sound
+                             04 00 36 36 // Change Speed/Cost
+  			                     5F 00       // Apply graphics
+
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // Cost
+                             4C 00
+
+   -1 * 0     03 03 01 AIRV_AIRBUS_A330_200 01  
+                             FF 08 00      // P-List
+                             07 00         // Default
+
+END_SECTION(Planes-Airbus-A330-200)  

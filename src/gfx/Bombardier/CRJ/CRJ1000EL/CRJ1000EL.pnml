@@ -1,0 +1,186 @@
+
+// Bombardier-CRJ1000EL
+
+// Template: 
+#define Bombardier_CRJ1000EL_sprite_layout_template(name)                      \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 30, 25, -15, -13, ANIM]                                           \
+  [ 33, 1, 40, 21, -20, -11, ANIM]                                           \
+  [ 75, 1, 47, 21, -24, -11, ANIM]                                           \
+  [125, 1, 37, 28, -19, -14, ANIM]                                           \
+  [170, 1, 32, 34, -16, -17, ANIM]                                           \
+  [205, 1, 37, 28, -19, -14, ANIM]                                           \
+  [250, 1, 47, 21, -24, -11, ANIM]                                           \
+  [300, 1, 40, 21, -20, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 30, 25, -15, -13, ANIM]                                          \
+  [ 33, 40, 40, 21, -20, -11, ANIM]                                          \
+  [ 75, 40, 47, 21, -24, -11, ANIM]                                          \
+  [125, 40, 37, 28, -19, -14, ANIM]                                          \
+  [170, 40, 32, 37, -16, -18, ANIM]                                          \
+  [205, 40, 37, 28, -19, -14, ANIM]                                          \
+  [250, 40, 47, 21, -24, -11, ANIM]                                          \
+  [300, 40, 40, 21, -20, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 30, 25, -15, -13, ANIM]                                          \
+  [ 33, 80, 40, 21, -20, -11, ANIM]                                          \
+  [ 75, 80, 47, 22, -24, -11, ANIM]                                          \
+  [125, 80, 42, 16, -21, -8 , ANIM]                                          \
+  [170, 80, 32, 26, -16, -13, ANIM]                                          \
+  [205, 80, 42, 16, -21, -8 , ANIM]                                          \
+  [250, 80, 47, 22, -24, -11, ANIM]                                          \
+  [300, 80, 41, 26, -21, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 113, 30, 25, -14, -12, ANIM]                                         \
+  [ 33, 113, 40, 21, -20, -11, ANIM]                                         \
+  [ 75, 113, 47, 21, -24, -11, ANIM]                                         \
+  [125, 113, 37, 28, -17, -14, ANIM]                                         \
+  [170, 113, 32, 35, -16, -18, ANIM]                                         \
+  [205, 113, 37, 28, -17, -14, ANIM]                                         \
+  [250, 113, 47, 21, -24, -11, ANIM]                                         \
+  [300, 113, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 150, 30, 30, -15, -15, ANIM]                                         \
+  [ 33, 150, 39, 26, -20, -13, ANIM]                                         \
+  [ 75, 150, 47, 20, -22, -10, ANIM]                                         \
+  [125, 150, 39, 25, -20, -13, ANIM]                                         \
+  [170, 150, 32, 33, -16, -17, ANIM]                                         \
+  [205, 150, 39, 25, -20, -13, ANIM]                                         \
+  [250, 150, 47, 20, -22, -10, ANIM]                                         \
+  [300, 150, 37, 23, -19, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ1000EL/(0)Greyscale.png"
+purchase_sprite(Bombardier_CRJ1000EL, 250, 1, 47, 21, -24, -11)
+Bombardier_CRJ1000EL_sprite_layout_template(Bombardier_CRJ1000EL_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ1000EL/HOP.png"
+Bombardier_CRJ1000EL_sprite_layout_template(Bombardier_CRJ1000EL_HOP) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_Greyscale, flight_state())
+{
+  15: Bombardier_CRJ1000EL_Greyscale_Climbing;
+  18: Bombardier_CRJ1000EL_Greyscale_Flight;
+  21: Bombardier_CRJ1000EL_Greyscale_Landing;
+  22: Bombardier_CRJ1000EL_Greyscale_Touchdown;
+      Bombardier_CRJ1000EL_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_HOP, flight_state())
+{
+  15: Bombardier_CRJ1000EL_HOP_Climbing;
+  18: Bombardier_CRJ1000EL_HOP_Flight;
+  21: Bombardier_CRJ1000EL_HOP_Landing;
+  22: Bombardier_CRJ1000EL_HOP_Touchdown;
+      Bombardier_CRJ1000EL_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_sprites, cargo_subtype)
+{
+  1: Bombardier_CRJ1000EL_HOP;
+     Bombardier_CRJ1000EL_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_running_cost_factor, flight_state())
+{
+  plane_RC(50)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(386); // airplane climbing after take-off
+      18: return plane_speed_kmh(850); // heading for tower contact point
+  16..20: return plane_speed_kmh(323); // in flight
+  21..22: return plane_speed_kmh(266); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOMBARDIER);
+  1: string(STR_VLIV_HOP);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ1000EL_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 100;
+     return 100;
+}
+
+item (FEAT_AIRCRAFT, Bombardier_CRJ1000EL)
+{
+  property
+  {
+    name: string(STR_AIRV_BOMBARDIER_CRJ1000EL);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2010), 12, 14);
+    vehicle_life: 25;
+    model_life: get_model_life(2010,2262);
+    retire_early: get_retire_early(2010,2262);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 11;
+    passenger_capacity: 100;
+    mail_capacity: 10;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 325;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Bombardier_CRJ1000EL_sprites;
+    purchase: Bombardier_CRJ1000EL_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Bombardier_CRJ1000EL_cargo_subtype_text;
+	passenger_capacity: Bombardier_CRJ1000EL_cargo_subtype_capacity;
+    speed: Bombardier_CRJ1000EL_speed;
+    running_cost_factor: Bombardier_CRJ1000EL_running_cost_factor;
+
+    cost_factor: 45; 
+    purchase_running_cost_factor: 63;
+    purchase_speed: plane_speed_kmh(850); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ1000EL)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ1000EL)
+  {
+    property
+    { range: 325; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ1000EL)
+  {
+    property
+    { range: 485; }
+  }
+}

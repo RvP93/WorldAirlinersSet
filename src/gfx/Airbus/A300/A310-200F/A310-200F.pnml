@@ -1,0 +1,181 @@
+
+// Airbus-A310_200F
+
+// Template: 
+#define Airbus_A310_200F_sprite_layout_template(name)                        \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 52, 26, -26, -13, ANIM]                                           \
+  [ 55, 1, 48, 25, -24, -13, ANIM]                                           \
+  [105, 1, 53, 25, -27, -13, ANIM]                                           \
+  [160, 1, 46, 32, -23, -16, ANIM]                                           \
+  [210, 1, 52, 36, -26, -18, ANIM]                                           \
+  [265, 1, 46, 32, -23, -16, ANIM]                                           \
+  [315, 1, 53, 25, -27, -13, ANIM]                                           \
+  [370, 1, 48, 25, -24, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 52, 26, -26, -13, ANIM]                                          \
+  [ 55, 40, 48, 25, -24, -13, ANIM]                                          \
+  [105, 40, 53, 25, -27, -13, ANIM]                                          \
+  [160, 40, 46, 33, -23, -17, ANIM]                                          \
+  [210, 40, 52, 36, -26, -18, ANIM]                                          \
+  [265, 40, 46, 33, -23, -17, ANIM]                                          \
+  [315, 40, 53, 25, -27, -13, ANIM]                                          \
+  [370, 40, 48, 25, -24, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 52, 39, -26, -20, ANIM]                                          \
+  [ 55, 80, 44, 35, -22, -18, ANIM]                                          \
+  [105, 80, 53, 27, -27, -14, ANIM]                                          \
+  [160, 80, 44, 25, -22, -13, ANIM]                                          \
+  [210, 80, 52, 17, -26, -9 , ANIM]                                          \
+  [265, 80, 44, 25, -22, -13, ANIM]                                          \
+  [315, 80, 53, 27, -27, -14, ANIM]                                          \
+  [370, 80, 44, 35, -22, -18, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 120, 52, 26, -26, -13, ANIM]                                         \
+  [ 55, 120, 48, 25, -24, -13, ANIM]                                         \
+  [105, 120, 53, 25, -27, -13, ANIM]                                         \
+  [160, 120, 46, 33, -23, -17, ANIM]                                         \
+  [210, 120, 52, 36, -26, -18, ANIM]                                         \
+  [265, 120, 46, 33, -23, -17, ANIM]                                         \
+  [315, 120, 53, 25, -27, -13, ANIM]                                         \
+  [370, 120, 48, 25, -26, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 52, 33, -26, -17, ANIM]                                         \
+  [ 55, 160, 43, 28, -22, -14, ANIM]                                         \
+  [105, 160, 54, 27, -27, -14, ANIM]                                         \
+  [160, 160, 44, 32, -22, -16, ANIM]                                         \
+  [210, 160, 52, 23, -26, -12, ANIM]                                         \
+  [265, 160, 44, 32, -22, -16, ANIM]                                         \
+  [315, 160, 54, 27, -27, -14, ANIM]                                         \
+  [370, 160, 43, 28, -22, -14, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200F/(0)Greyscale.png"
+purchase_sprite(Airbus_A310_200F, 315, 1, 53, 25, -27, -13)
+Airbus_A310_200F_sprite_layout_template(Airbus_A310_200F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200F/FedEx.png"
+Airbus_A310_200F_sprite_layout_template(Airbus_A310_200F_FedEx) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_Greyscale, flight_state())
+{
+  15: Airbus_A310_200F_Greyscale_Climbing;
+  18: Airbus_A310_200F_Greyscale_Flight;
+  21: Airbus_A310_200F_Greyscale_Landing;
+  22: Airbus_A310_200F_Greyscale_Touchdown;
+      Airbus_A310_200F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_FedEx, flight_state())
+{
+  15: Airbus_A310_200F_FedEx_Climbing;
+  18: Airbus_A310_200F_FedEx_Flight;
+  21: Airbus_A310_200F_FedEx_Landing;
+  22: Airbus_A310_200F_FedEx_Touchdown;
+      Airbus_A310_200F_FedEx_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_sprites, cargo_subtype)
+{
+  1: Airbus_A310_200F_FedEx;
+     Airbus_A310_200F_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_running_cost_factor, flight_state())
+{
+  plane_RC(126)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(354); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(338); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_FEDEX);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A310_200F)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A310_200F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1984), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1984,1988);
+    retire_early: get_retire_early(1984,1988);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1000;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A310_200F_sprites;
+    purchase: Airbus_A310_200F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A310_200F_cargo_subtype_text;
+    speed: Airbus_A310_200F_speed;
+    running_cost_factor: Airbus_A310_200F_running_cost_factor;
+    mail_capacity: return 325;
+
+    cost_factor: 134; 
+    purchase_running_cost_factor: 126;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A310_200F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A310_200F)
+  {
+    property
+    { range: 1000; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A310_200F)
+  {
+    property
+    { range: 1500; }
+  }
+}

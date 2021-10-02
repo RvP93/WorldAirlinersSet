@@ -1,0 +1,210 @@
+
+// Boeing-747-8I
+
+// Template: 
+#define Boeing_747_8I_sprite_layout_template(name)                           \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 68, 35, -34, -18, ANIM]                                           \
+  [ 80, 0, 63, 33, -32, -17, ANIM]                                           \
+  [150, 0, 72, 35, -37, -18, ANIM]                                           \
+  [235, 0, 61, 43, -31, -22, ANIM]                                           \
+  [300, 0, 66, 46, -33, -23, ANIM]                                           \
+  [370, 0, 61, 43, -31, -22, ANIM]                                           \
+  [440, 0, 72, 36, -37, -18, ANIM]                                           \
+  [520, 0, 63, 33, -32, -17, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 50, 68, 35, -34, -18, ANIM]                                          \
+  [ 80, 50, 63, 33, -32, -17, ANIM]                                          \
+  [150, 50, 72, 36, -37, -18, ANIM]                                          \
+  [235, 50, 61, 46, -31, -23, ANIM]                                          \
+  [300, 50, 66, 48, -33, -24, ANIM]                                          \
+  [370, 50, 61, 46, -31, -23, ANIM]                                          \
+  [440, 50, 72, 36, -36, -18, ANIM]                                          \
+  [520, 50, 63, 33, -32, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 100, 62, 52, -31, -26, ANIM]                                         \
+  [ 80, 100, 59, 47, -30, -24, ANIM]                                         \
+  [150, 100, 73, 34, -37, -17, ANIM]                                         \
+  [235, 100, 61, 30, -31, -15, ANIM]                                         \
+  [300, 100, 60, 29, -33, -13, ANIM]                                         \
+  [370, 100, 61, 30, -31, -15, ANIM]                                         \
+  [440, 100, 73, 34, -37, -17, ANIM]                                         \
+  [520, 100, 59, 47, -30, -24, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 160, 62, 35, -31, -18, ANIM]                                         \
+  [ 80, 160, 63, 33, -32, -17, ANIM]                                         \
+  [150, 160, 72, 36, -35, -17, ANIM]                                         \
+  [235, 160, 61, 46, -31, -23, ANIM]                                         \
+  [300, 160, 66, 48, -33, -24, ANIM]                                         \
+  [370, 160, 61, 46, -31, -23, ANIM]                                         \
+  [440, 160, 72, 36, -35, -17, ANIM]                                         \
+  [520, 160, 63, 33, -32, -17, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 210, 62, 44, -31, -22, ANIM]                                         \
+  [ 80, 210, 60, 40, -30, -20, ANIM]                                         \
+  [150, 210, 74, 31, -37, -16, ANIM]                                         \
+  [235, 210, 60, 36, -30, -18, ANIM]                                         \
+  [300, 210, 62, 41, -31, -22, ANIM]                                         \
+  [370, 210, 60, 36, -30, -17, ANIM]                                         \
+  [440, 210, 74, 31, -37, -16, ANIM]                                         \
+  [520, 210, 60, 40, -29, -19, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-8I/(0)Greyscale.png"
+purchase_sprite(Boeing_747_8I, 440, 7, 72, 23, -36, -12)
+Boeing_747_8I_sprite_layout_template(Boeing_747_8I_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-8I/AirChina.png"
+Boeing_747_8I_sprite_layout_template(Boeing_747_8I_AirChina) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-8I/Lufthansa.png"
+Boeing_747_8I_sprite_layout_template(Boeing_747_8I_Lufthansa) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_Greyscale, flight_state())
+{
+  15: Boeing_747_8I_Greyscale_Climbing;
+  18: Boeing_747_8I_Greyscale_Flight;
+  21: Boeing_747_8I_Greyscale_Landing;
+  22: Boeing_747_8I_Greyscale_Touchdown;
+      Boeing_747_8I_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_AirChina, flight_state())
+{
+  15: Boeing_747_8I_AirChina_Climbing;
+  18: Boeing_747_8I_AirChina_Flight;
+  21: Boeing_747_8I_AirChina_Landing;
+  22: Boeing_747_8I_AirChina_Touchdown;
+      Boeing_747_8I_AirChina_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_Lufthansa, flight_state())
+{
+  15: Boeing_747_8I_Lufthansa_Climbing;
+  18: Boeing_747_8I_Lufthansa_Flight;
+  21: Boeing_747_8I_Lufthansa_Landing;
+  22: Boeing_747_8I_Lufthansa_Touchdown;
+      Boeing_747_8I_Lufthansa_Grounded;
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_sprites, cargo_subtype)
+{
+  1: Boeing_747_8I_AirChina;
+  2: Boeing_747_8I_Lufthansa;
+     Boeing_747_8I_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_running_cost_factor, flight_state())
+{
+  plane_RC(280)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(289); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(451); // airplane climbing after take-off
+      18: return plane_speed_kmh(1007); // heading for tower contact point
+  16..20: return plane_speed_kmh(475); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_CHINA);
+  2: string(STR_VLIV_LUFTHANSA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_8I_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 365;
+  2: return 386;
+     return 467;
+}
+
+item (FEAT_AIRCRAFT, Boeing_747_8I)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_747_8I);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2012), 1, 1);
+    vehicle_life: 40;
+    model_life: get_model_life(2012,2050);
+    retire_early: get_retire_early(2012,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 29;
+    passenger_capacity: 467;
+    mail_capacity: 54;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2665;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_747_8I_sprites;
+    purchase: Boeing_747_8I_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_747_8I_cargo_subtype_text;
+	passenger_capacity: Boeing_747_8I_cargo_subtype_capacity;
+    speed: Boeing_747_8I_speed;
+    running_cost_factor: Boeing_747_8I_running_cost_factor;
+    sound_effect: Boeing_747_8I_sound_effect;
+
+    cost_factor: 321; 
+    purchase_running_cost_factor: 280;
+    purchase_speed: plane_speed_kmh(1007); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_8I)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_8I)
+  {
+    property
+    { range: 2665; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_747_8I)
+  {
+    property
+    { range: 4000; }
+  }
+}

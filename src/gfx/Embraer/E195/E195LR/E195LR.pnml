@@ -1,0 +1,330 @@
+
+// Embraer-E195LR
+
+// Template: 
+#define Embraer_E195LR_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 37, 23, -19, -12, ANIM]                                           \
+  [ 45, 1, 37, 18, -19, -9 , ANIM]                                           \
+  [ 85, 1, 47, 21, -24, -11, ANIM]                                           \
+  [135, 1, 36, 24, -18, -12, ANIM]                                           \
+  [175, 1, 33, 30, -17, -15, ANIM]                                           \
+  [215, 1, 36, 24, -18, -12, ANIM]                                           \
+  [255, 1, 47, 21, -24, -11, ANIM]                                           \
+  [305, 1, 37, 18, -19, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 37, 23, -19, -12, ANIM]                                          \
+  [ 45, 35, 37, 18, -19, -9 , ANIM]                                          \
+  [ 85, 35, 47, 21, -24, -11, ANIM]                                          \
+  [135, 35, 36, 25, -18, -13, ANIM]                                          \
+  [175, 35, 33, 30, -17, -15, ANIM]                                          \
+  [215, 35, 36, 25, -18, -13, ANIM]                                          \
+  [255, 35, 47, 21, -24, -11, ANIM]                                          \
+  [305, 35, 37, 18, -19, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 39, 31, -20, -16, ANIM]                                          \
+  [ 45, 70, 36, 28, -18, -14, ANIM]                                          \
+  [ 85, 70, 47, 20, -24, -10, ANIM]                                          \
+  [135, 70, 37, 18, -19, -9 , ANIM]                                          \
+  [175, 70, 35, 15, -18, -8 , ANIM]                                          \
+  [215, 70, 37, 18, -19, -9 , ANIM]                                          \
+  [255, 70, 47, 20, -24, -10, ANIM]                                          \
+  [305, 70, 36, 28, -18, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 37, 23, -19, -12, ANIM]                                         \
+  [ 45, 105, 37, 18, -19, -9 , ANIM]                                         \
+  [ 85, 105, 47, 21, -24, -11, ANIM]                                         \
+  [135, 105, 36, 25, -18, -13, ANIM]                                         \
+  [175, 105, 33, 30, -16, -15, ANIM]                                         \
+  [215, 105, 36, 25, -18, -13, ANIM]                                         \
+  [255, 105, 47, 21, -24, -11, ANIM]                                         \
+  [305, 105, 37, 18, -19, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 39, 25, -20, -13, ANIM]                                         \
+  [ 45, 140, 37, 23, -19, -12, ANIM]                                         \
+  [ 85, 140, 45, 23, -22, -12, ANIM]                                         \
+  [135, 140, 37, 21, -18, -11, ANIM]                                         \
+  [175, 140, 33, 22, -16, -11, ANIM]                                         \
+  [215, 140, 37, 21, -19, -11, ANIM]                                         \
+  [255, 140, 45, 23, -23, -12, ANIM]                                         \
+  [305, 140, 37, 23, -19, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/(0)Greyscale.png"
+purchase_sprite(Embraer_E195LR, 255, 1, 47, 21, -24, -11)
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/AirDolomiti.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_AirDolomiti) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/AirEuropa.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_AirEuropa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/AirEuropaOld.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_AirEuropaOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/Austrian.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/Belavia.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Belavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/Flybe.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Flybe) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/GreatDane.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_GreatDane) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/LOT.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/Lufthansa.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E195/E195LR/Montenegro.png"
+Embraer_E195LR_sprite_layout_template(Embraer_E195LR_Montenegro) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Greyscale, flight_state())
+{
+  15: Embraer_E195LR_Greyscale_Climbing;
+  18: Embraer_E195LR_Greyscale_Flight;
+  21: Embraer_E195LR_Greyscale_Landing;
+  22: Embraer_E195LR_Greyscale_Touchdown;
+      Embraer_E195LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_AirDolomiti, flight_state())
+{
+  15: Embraer_E195LR_AirDolomiti_Climbing;
+  18: Embraer_E195LR_AirDolomiti_Flight;
+  21: Embraer_E195LR_AirDolomiti_Landing;
+  22: Embraer_E195LR_AirDolomiti_Touchdown;
+      Embraer_E195LR_AirDolomiti_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_AirEuropa, flight_state())
+{
+  15: Embraer_E195LR_AirEuropa_Climbing;
+  18: Embraer_E195LR_AirEuropa_Flight;
+  21: Embraer_E195LR_AirEuropa_Landing;
+  22: Embraer_E195LR_AirEuropa_Touchdown;
+      Embraer_E195LR_AirEuropa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_AirEuropaOld, flight_state())
+{
+  15: Embraer_E195LR_AirEuropaOld_Climbing;
+  18: Embraer_E195LR_AirEuropaOld_Flight;
+  21: Embraer_E195LR_AirEuropaOld_Landing;
+  22: Embraer_E195LR_AirEuropaOld_Touchdown;
+      Embraer_E195LR_AirEuropaOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Austrian, flight_state())
+{
+  15: Embraer_E195LR_Austrian_Climbing;
+  18: Embraer_E195LR_Austrian_Flight;
+  21: Embraer_E195LR_Austrian_Landing;
+  22: Embraer_E195LR_Austrian_Touchdown;
+      Embraer_E195LR_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Belavia, flight_state())
+{
+  15: Embraer_E195LR_Belavia_Climbing;
+  18: Embraer_E195LR_Belavia_Flight;
+  21: Embraer_E195LR_Belavia_Landing;
+  22: Embraer_E195LR_Belavia_Touchdown;
+      Embraer_E195LR_Belavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Flybe, flight_state())
+{
+  15: Embraer_E195LR_Flybe_Climbing;
+  18: Embraer_E195LR_Flybe_Flight;
+  21: Embraer_E195LR_Flybe_Landing;
+  22: Embraer_E195LR_Flybe_Touchdown;
+      Embraer_E195LR_Flybe_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_GreatDane, flight_state())
+{
+  15: Embraer_E195LR_GreatDane_Climbing;
+  18: Embraer_E195LR_GreatDane_Flight;
+  21: Embraer_E195LR_GreatDane_Landing;
+  22: Embraer_E195LR_GreatDane_Touchdown;
+      Embraer_E195LR_GreatDane_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_LOT, flight_state())
+{
+  15: Embraer_E195LR_LOT_Climbing;
+  18: Embraer_E195LR_LOT_Flight;
+  21: Embraer_E195LR_LOT_Landing;
+  22: Embraer_E195LR_LOT_Touchdown;
+      Embraer_E195LR_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Lufthansa, flight_state())
+{
+  15: Embraer_E195LR_Lufthansa_Climbing;
+  18: Embraer_E195LR_Lufthansa_Flight;
+  21: Embraer_E195LR_Lufthansa_Landing;
+  22: Embraer_E195LR_Lufthansa_Touchdown;
+      Embraer_E195LR_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_Montenegro, flight_state())
+{
+  15: Embraer_E195LR_Montenegro_Climbing;
+  18: Embraer_E195LR_Montenegro_Flight;
+  21: Embraer_E195LR_Montenegro_Landing;
+  22: Embraer_E195LR_Montenegro_Touchdown;
+      Embraer_E195LR_Montenegro_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_sprites, cargo_subtype)
+{
+  1: Embraer_E195LR_AirDolomiti;
+  2: Embraer_E195LR_AirEuropa;
+  3: Embraer_E195LR_AirEuropaOld;
+  4: Embraer_E195LR_Austrian;
+  5: Embraer_E195LR_Belavia;
+  6: Embraer_E195LR_Flybe;
+  7: Embraer_E195LR_GreatDane;
+  8: Embraer_E195LR_LOT;
+  9: Embraer_E195LR_Lufthansa;
+ 10: Embraer_E195LR_Montenegro;
+  	 Embraer_E195LR_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_running_cost_factor, flight_state())
+{
+  plane_RC(66)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(886); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_AIR_DOLOMITI);
+  2: string(STR_VLIV_AIR_EUROPA);
+  3: string(STR_VLIV_AIR_EUROPA_OLD);
+  4: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  5: string(STR_VLIV_BELAVIA);
+  6: string(STR_VLIV_FLYBE);
+  7: string(STR_VLIV_GREAT_DANE);
+  8: string(STR_VLIV_LOT);
+  9: string(STR_VLIV_LUFTHANSA);
+ 10: string(STR_VLIV_MONTENEGRO_AIRLINES);
+      return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E195LR_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 120; // Air Dolomiti
+  2: return 122; // Air Europa
+  3: return 122; // Air Europa Old
+  4: return 120; // Austrian
+  5: return 107; // Belavia
+  6: return 118; // Flybe
+  7: return 118; // GreatDane
+  8: return 112; // LOT
+  9: return 112; // Lufthansa
+ 10: return 116; // Montenegro
+     return 118;
+}
+
+item (FEAT_AIRCRAFT, Embraer_E195LR)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_195LR);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2005), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2005,2259);
+    retire_early: get_retire_early(2005,2259);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 118;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 600;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_E195LR_sprites;
+    purchase: Embraer_E195LR_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_E195LR_cargo_subtype_text;
+	passenger_capacity: Embraer_E195LR_cargo_subtype_capacity;
+    speed: Embraer_E195LR_speed;
+    running_cost_factor: Embraer_E195LR_running_cost_factor;
+    sound_effect: Embraer_E195LR_sound_effect;
+
+    cost_factor: 37; 
+    purchase_running_cost_factor: 66;
+    purchase_speed: plane_speed_kmh(886); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195LR)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195LR)
+  {
+    property
+    { range: 600; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_E195LR)
+  {
+    property
+    { range: 900; }
+  }
+}
+

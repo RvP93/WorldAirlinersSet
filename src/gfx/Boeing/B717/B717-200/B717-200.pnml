@@ -1,0 +1,238 @@
+
+// Boeing-717-200
+
+// Template: 
+#define Boeing_717_200_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 34, 19, -17, -10, ANIM]                                           \
+  [ 40, 1, 39, 17, -20, -9 , ANIM]                                           \
+  [ 85, 1, 47, 20, -24, -10, ANIM]                                           \
+  [135, 1, 38, 28, -19, -14, ANIM]                                           \
+  [180, 1, 34, 32, -17, -16, ANIM]                                           \
+  [220, 1, 38, 28, -19, -14, ANIM]                                           \
+  [260, 1, 47, 20, -24, -10, ANIM]                                           \
+  [310, 1, 39, 17, -20, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 34, 19, -17, -10, ANIM]                                          \
+  [ 40, 35, 39, 17, -20, -9 , ANIM]                                          \
+  [ 85, 35, 47, 20, -24, -10, ANIM]                                          \
+  [135, 35, 38, 28, -19, -14, ANIM]                                          \
+  [180, 35, 34, 32, -17, -16, ANIM]                                          \
+  [220, 35, 38, 28, -19, -14, ANIM]                                          \
+  [260, 35, 47, 20, -24, -10, ANIM]                                          \
+  [310, 35, 39, 17, -20, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 34, 29, -17, -15, ANIM]                                          \
+  [ 40, 70, 38, 26, -19, -13, ANIM]                                          \
+  [ 85, 70, 46, 19, -23, -10, ANIM]                                          \
+  [135, 70, 38, 18, -19, -9 , ANIM]                                          \
+  [180, 70, 52, 14, -26, -7 , ANIM]                                          \
+  [220, 70, 38, 18, -19, -9 , ANIM]                                          \
+  [260, 70, 46, 19, -23, -10, ANIM]                                          \
+  [310, 70, 38, 25, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 34, 19, -17, -10, ANIM]                                         \
+  [ 40, 105, 39, 17, -20, -9 , ANIM]                                         \
+  [ 85, 105, 47, 20, -24, -10, ANIM]                                         \
+  [135, 105, 38, 28, -19, -14, ANIM]                                         \
+  [180, 105, 34, 32, -17, -16, ANIM]                                         \
+  [220, 105, 38, 28, -19, -14, ANIM]                                         \
+  [260, 105, 47, 20, -24, -10, ANIM]                                         \
+  [310, 105, 38, 17, -19, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 34, 23, -16, -12, ANIM]                                         \
+  [ 40, 140, 39, 20, -20, -10, ANIM]                                         \
+  [ 85, 140, 47, 17, -24, -9 , ANIM]                                         \
+  [135, 140, 37, 23, -19, -12, ANIM]                                         \
+  [180, 140, 32, 27, -16, -14, ANIM]                                         \
+  [220, 140, 37, 23, -19, -12, ANIM]                                         \
+  [260, 140, 47, 17, -24, -9 , ANIM]                                         \
+  [310, 140, 39, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B717/B717-200/(0)Greyscale.png"
+purchase_sprite(Boeing_717_200, 260, 1, 47, 20, -24, -10)
+Boeing_717_200_sprite_layout_template(Boeing_717_200_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B717/B717-200/Delta.png"
+Boeing_717_200_sprite_layout_template(Boeing_717_200_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B717/B717-200/QantasLink.png"
+Boeing_717_200_sprite_layout_template(Boeing_717_200_QantasLink) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B717/B717-200/Spanair.png"
+Boeing_717_200_sprite_layout_template(Boeing_717_200_Spanair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B717/B717-200/Volotea.png"
+Boeing_717_200_sprite_layout_template(Boeing_717_200_Volotea) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_Greyscale, flight_state())
+{
+  15: Boeing_717_200_Greyscale_Climbing;
+  18: Boeing_717_200_Greyscale_Flight;
+  21: Boeing_717_200_Greyscale_Landing;
+  22: Boeing_717_200_Greyscale_Touchdown;
+      Boeing_717_200_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_Delta, flight_state())
+{
+  15: Boeing_717_200_Delta_Climbing;
+  18: Boeing_717_200_Delta_Flight;
+  21: Boeing_717_200_Delta_Landing;
+  22: Boeing_717_200_Delta_Touchdown;
+      Boeing_717_200_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_QantasLink, flight_state())
+{
+  15: Boeing_717_200_QantasLink_Climbing;
+  18: Boeing_717_200_QantasLink_Flight;
+  21: Boeing_717_200_QantasLink_Landing;
+  22: Boeing_717_200_QantasLink_Touchdown;
+      Boeing_717_200_QantasLink_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_Spanair, flight_state())
+{
+  15: Boeing_717_200_Spanair_Climbing;
+  18: Boeing_717_200_Spanair_Flight;
+  21: Boeing_717_200_Spanair_Landing;
+  22: Boeing_717_200_Spanair_Touchdown;
+      Boeing_717_200_Spanair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_Volotea, flight_state())
+{
+  15: Boeing_717_200_Volotea_Climbing;
+  18: Boeing_717_200_Volotea_Flight;
+  21: Boeing_717_200_Volotea_Landing;
+  22: Boeing_717_200_Volotea_Touchdown;
+      Boeing_717_200_Volotea_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_sprites, cargo_subtype)
+{
+  1: Boeing_717_200_Delta;
+  2: Boeing_717_200_QantasLink;
+  3: Boeing_717_200_Spanair;
+  4: Boeing_717_200_Volotea;
+     Boeing_717_200_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_running_cost_factor, flight_state())
+{
+  plane_RC(59)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(443); // airplane climbing after take-off
+      18: return plane_speed_kmh(918); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_DELTA_AIR_LINES);
+  2: string(STR_VLIV_QANTASLINK);
+  3: string(STR_VLIV_SPANAIR);
+  4: string(STR_VLIV_VOLOTEA);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_717_200_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 110;
+  2: return 110;
+  4: return 125;
+     return 117;
+}
+
+item (FEAT_AIRCRAFT, Boeing_717_200)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_717_200);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1999), 1, 1);
+    vehicle_life: 14;
+    model_life: get_model_life(1999,2006);
+    retire_early: get_retire_early(1999,2006);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 117;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 870;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_717_200_sprites;
+    purchase: Boeing_717_200_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_717_200_cargo_subtype_text;
+	passenger_capacity: Boeing_717_200_cargo_subtype_capacity;
+    speed: Boeing_717_200_speed;
+    running_cost_factor: Boeing_717_200_running_cost_factor;
+    sound_effect: Boeing_717_200_sound_effect;
+
+    cost_factor: 34; 
+    purchase_running_cost_factor: 59;
+    purchase_speed: plane_speed_kmh(918); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_717_200)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_717_200)
+  {
+    property
+    { range: 870; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_717_200)
+  {
+    property
+    { range: 1310; }
+  }
+}

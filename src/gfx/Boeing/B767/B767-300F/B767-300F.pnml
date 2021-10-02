@@ -1,0 +1,216 @@
+
+// Boeing-767-300F
+
+// Template: 
+#define Boeing_767_300F_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 58, 26, -29, -13, ANIM]                                           \
+  [ 65, 1, 52, 25, -26, -13, ANIM]                                           \
+  [125, 1, 56, 33, -28, -17, ANIM]                                           \
+  [190, 1, 49, 33, -25, -17, ANIM]                                           \
+  [245, 1, 58, 35, -29, -18, ANIM]                                           \
+  [310, 1, 49, 33, -25, -17, ANIM]                                           \
+  [365, 1, 56, 33, -28, -17, ANIM]                                           \
+  [425, 1, 52, 25, -26, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 58, 26, -29, -13, ANIM]                                          \
+  [ 65, 40, 52, 25, -26, -13, ANIM]                                          \
+  [125, 40, 56, 33, -28, -17, ANIM]                                          \
+  [190, 40, 49, 35, -25, -18, ANIM]                                          \
+  [245, 40, 58, 37, -29, -19, ANIM]                                          \
+  [310, 40, 49, 35, -25, -18, ANIM]                                          \
+  [365, 40, 56, 33, -28, -17, ANIM]                                          \
+  [425, 40, 52, 25, -26, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 58, 41, -29, -22, ANIM]                                          \
+  [ 65, 80, 52, 37, -26, -19, ANIM]                                          \
+  [125, 80, 57, 31, -28, -16, ANIM]                                          \
+  [190, 80, 49, 25, -25, -13, ANIM]                                          \
+  [245, 80, 58, 15, -29, -8 , ANIM]                                          \
+  [310, 80, 49, 25, -25, -13, ANIM]                                          \
+  [365, 80, 57, 31, -28, -16, ANIM]                                          \
+  [425, 80, 52, 37, -26, -19, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 125, 58, 25, -29, -13, ANIM]                                         \
+  [ 65, 125, 52, 25, -26, -13, ANIM]                                         \
+  [125, 125, 56, 33, -28, -17, ANIM]                                         \
+  [190, 125, 49, 35, -25, -13, ANIM]                                         \
+  [245, 125, 58, 37, -29, -19, ANIM]                                         \
+  [310, 125, 49, 35, -25, -13, ANIM]                                         \
+  [365, 125, 56, 33, -28, -17, ANIM]                                         \
+  [425, 125, 52, 25, -26, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 165, 58, 33, -29, -17, ANIM]                                         \
+  [ 65, 165, 53, 30, -27, -15, ANIM]                                         \
+  [125, 165, 57, 33, -28, -17, ANIM]                                         \
+  [190, 165, 50, 30, -25, -15, ANIM]                                         \
+  [245, 165, 58, 26, -29, -13, ANIM]                                         \
+  [310, 165, 50, 30, -25, -15, ANIM]                                         \
+  [365, 165, 57, 33, -28, -17, ANIM]                                         \
+  [425, 165, 53, 30, -27, -15, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300F/(0)Greyscale.png"
+purchase_sprite(Boeing_767_300F, 365, 1, 56, 33, -28, -17)
+Boeing_767_300F_sprite_layout_template(Boeing_767_300F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300F/DHL.png"
+Boeing_767_300F_sprite_layout_template(Boeing_767_300F_DHL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300F/LAN.png"
+Boeing_767_300F_sprite_layout_template(Boeing_767_300F_LAN) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300F/QantasFreight.png"
+Boeing_767_300F_sprite_layout_template(Boeing_767_300F_QantasFreight) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_Greyscale, flight_state())
+{
+  15: Boeing_767_300F_Greyscale_Climbing;
+  18: Boeing_767_300F_Greyscale_Flight;
+  21: Boeing_767_300F_Greyscale_Climbing;
+  22: Boeing_767_300F_Greyscale_Touchdown;
+      Boeing_767_300F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_DHL, flight_state())
+{
+  15: Boeing_767_300F_DHL_Climbing;
+  18: Boeing_767_300F_DHL_Flight;
+  21: Boeing_767_300F_DHL_Climbing;
+  22: Boeing_767_300F_DHL_Touchdown;
+      Boeing_767_300F_DHL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_LAN, flight_state())
+{
+  15: Boeing_767_300F_LAN_Climbing;
+  18: Boeing_767_300F_LAN_Flight;
+  21: Boeing_767_300F_LAN_Climbing;
+  22: Boeing_767_300F_LAN_Touchdown;
+      Boeing_767_300F_LAN_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_QantasFreight, flight_state())
+{
+  15: Boeing_767_300F_QantasFreight_Climbing;
+  18: Boeing_767_300F_QantasFreight_Flight;
+  21: Boeing_767_300F_QantasFreight_Climbing;
+  22: Boeing_767_300F_QantasFreight_Touchdown;
+      Boeing_767_300F_QantasFreight_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_running_cost_factor, flight_state())
+{
+  plane_RC(187)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(910); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(257); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_sprites, cargo_subtype)
+{
+  1: Boeing_767_300F_DHL;
+  2: Boeing_767_300F_LAN;
+  3: Boeing_767_300F_QantasFreight;
+     Boeing_767_300F_Greyscale;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_DHL);
+  2: string(STR_VLIV_LAN_CARGO);
+  3: string(STR_VLIV_QANTAS_FREIGHT);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Boeing_767_300F)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_767_300F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1995), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1995,2050);
+    retire_early: get_retire_early(1995,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1085;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_767_300F_sprites;
+    purchase: Boeing_767_300F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_767_300F_cargo_subtype_text;
+    speed: Boeing_767_300F_speed;
+    running_cost_factor: Boeing_767_300F_running_cost_factor;
+    sound_effect: Boeing_767_300F_sound_effect;
+    mail_capacity: return 480;
+
+    cost_factor: 152;
+    purchase_running_cost_factor: 187;
+    purchase_speed: plane_speed_kmh(910); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_300F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_300F)
+  {
+    property
+    { range: 1085; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_300F)
+  {
+    property
+    { range: 1630; }
+  }
+}

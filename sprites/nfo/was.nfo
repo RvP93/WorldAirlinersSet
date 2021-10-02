@@ -1,0 +1,24 @@
+#include "macros.nfo"
+#include "ids.nfo"
+#include "00header/00header.nfo"
+#include "00header/001parameters.nfo"
+#include "00header/002remove.nfo"
+#include "00header/005sounds.nfo"
+#include "01strings/01strings.nfo"
+START_SECTION(Planes)
+#include "airbus/airbus.nfo"
+#include "atr/atr.nfo"
+#include "bac/bac.nfo"
+#include "bae/bae.nfo"
+#include "boeing/boeing.nfo"
+#include "bombardier/bombardier.nfo"
+#include "embraer/embraer.nfo"
+#include "fokker/fokker.nfo"
+#include "ilyushin/ilyushin.nfo"
+#include "mcdonnell_douglas/md.nfo"
+#include "tupolev/tu.nfo"
+END_SECTION(Planes)
+START_SECTION(Heli)
+#include "blimps/blimps.nfo"
+END_SECTION(Heli)
+-1 * 42  0C 00 20 44 4F 4E 27 54 20 50 41 4E 49 43 20 20 44 4F 4E 27 54 20 50 41 4E 49 43 20 20 44 4F 4E 27 54 20 50 41 4E 49 43 20 00

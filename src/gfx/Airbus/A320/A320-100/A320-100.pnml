@@ -1,0 +1,215 @@
+
+// Airbus-A320_100
+
+// Template: 
+#define Airbus_A320_100_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 1, 45, 23, -23, -12, ANIM]                                           \
+  [ 50, 1, 40, 21, -20, -11, ANIM]                                           \
+  [100, 1, 48, 23, -24, -12, ANIM]                                           \
+  [160, 1, 39, 30, -20, -15, ANIM]                                           \
+  [210, 1, 45, 33, -23, -17, ANIM]                                           \
+  [260, 1, 39, 30, -20, -15, ANIM]                                           \
+  [310, 1, 48, 23, -24, -12, ANIM]                                           \
+  [370, 1, 40, 21, -20, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 36, 45, 23, -23, -12, ANIM]                                          \
+  [ 50, 36, 40, 21, -20, -11, ANIM]                                          \
+  [100, 36, 48, 23, -24, -12, ANIM]                                          \
+  [160, 36, 39, 30, -20, -15, ANIM]                                          \
+  [210, 36, 45, 33, -23, -17, ANIM]                                          \
+  [260, 36, 39, 30, -20, -15, ANIM]                                          \
+  [310, 36, 48, 23, -24, -12, ANIM]                                          \
+  [370, 36, 40, 21, -20, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 71, 44, 36, -22, -18, ANIM]                                          \
+  [ 50, 71, 39, 31, -20, -16, ANIM]                                          \
+  [100, 71, 50, 22, -25, -11, ANIM]                                          \
+  [160, 71, 37, 21, -19, -11, ANIM]                                          \
+  [210, 71, 42, 15, -21, -8 , ANIM]                                          \
+  [260, 71, 37, 21, -19, -11, ANIM]                                          \
+  [310, 71, 50, 22, -25, -11, ANIM]                                          \
+  [370, 71, 39, 31, -40, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 121, 44, 23, -22, -12, ANIM]                                         \
+  [ 50, 121, 40, 21, -20, -11, ANIM]                                         \
+  [100, 121, 48, 22, -24, -11, ANIM]                                         \
+  [160, 121, 39, 30, -20, -15, ANIM]                                         \
+  [210, 121, 44, 28, -11, -14, ANIM]                                         \
+  [260, 121, 39, 30, -20, -15, ANIM]                                         \
+  [310, 121, 48, 22, -24, -11, ANIM]                                         \
+  [370, 121, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 161, 44, 29, -22, -15, ANIM]                                         \
+  [ 50, 161, 40, 25, -20, -13, ANIM]                                         \
+  [100, 161, 49, 22, -25, -11, ANIM]                                         \
+  [160, 161, 38, 26, -19, -13, ANIM]                                         \
+  [210, 161, 42, 22, -21, -11, ANIM]                                         \
+  [260, 161, 38, 26, -19, -13, ANIM]                                         \
+  [310, 161, 49, 22, -25, -11, ANIM]                                         \
+  [370, 161, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-100/(0)Greyscale.png"
+purchase_sprite(Airbus_A320_100, 310, 1, 48, 23, -24, -12)
+Airbus_A320_100_sprite_layout_template(Airbus_A320_100_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-100/AirFrance.png"
+Airbus_A320_100_sprite_layout_template(Airbus_A320_100_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-100/AirInter.png"
+Airbus_A320_100_sprite_layout_template(Airbus_A320_100_AirInter) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-100/BA.png"
+Airbus_A320_100_sprite_layout_template(Airbus_A320_100_BA) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_Greyscale, flight_state())
+{
+  15: Airbus_A320_100_Greyscale_Climbing;
+  18: Airbus_A320_100_Greyscale_Flight;
+  21: Airbus_A320_100_Greyscale_Landing;
+  22: Airbus_A320_100_Greyscale_Touchdown;
+      Airbus_A320_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_AirFrance, flight_state())
+{
+  15: Airbus_A320_100_AirFrance_Climbing;
+  18: Airbus_A320_100_AirFrance_Flight;
+  21: Airbus_A320_100_AirFrance_Landing;
+  22: Airbus_A320_100_AirFrance_Touchdown;
+      Airbus_A320_100_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_AirInter, flight_state())
+{
+  15: Airbus_A320_100_AirInter_Climbing;
+  18: Airbus_A320_100_AirInter_Flight;
+  21: Airbus_A320_100_AirInter_Landing;
+  22: Airbus_A320_100_AirInter_Touchdown;
+      Airbus_A320_100_AirInter_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_BA, flight_state())
+{
+  15: Airbus_A320_100_BA_Climbing;
+  18: Airbus_A320_100_BA_Flight;
+  21: Airbus_A320_100_BA_Landing;
+  22: Airbus_A320_100_BA_Touchdown;
+      Airbus_A320_100_BA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_sprites, cargo_subtype)
+{
+  1: Airbus_A320_100_AirFrance;
+  2: Airbus_A320_100_AirInter;
+  3: Airbus_A320_100_BA;
+     Airbus_A320_100_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_running_cost_factor, flight_state())
+{
+  plane_RC(64)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_AIR_INTER);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG); 
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_100_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 165; // Air France
+   3: return 149; // BA
+  return 150;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A320_100)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A320_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 3, 28);
+    vehicle_life: 18;
+    model_life: get_model_life(1988,2010);
+    retire_early: get_retire_early(1988,2010);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 22;
+    passenger_capacity: 150;
+    mail_capacity: 18;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 980;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A320_100_sprites;
+    purchase: Airbus_A320_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A320_100_cargo_subtype_text;
+	passenger_capacity: Airbus_A320_100_cargo_subtype_capacity;
+    speed: Airbus_A320_100_speed;
+    running_cost_factor: Airbus_A320_100_running_cost_factor;
+
+    cost_factor: 71; 
+    purchase_running_cost_factor: 64;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320_100)
+  {
+    property
+    { range: 980; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A320_100)
+  {
+    property
+    { range: 1470; }
+  }
+}

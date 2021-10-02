@@ -1,0 +1,7 @@
+ /// basecost
+
+basecost
+{
+  PR_BUILD_VEHICLE_AIRCRAFT: BCosts-4;
+  PR_RUNNING_AIRCRAFT: RCosts-4; 
+}

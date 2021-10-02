@@ -1,0 +1,265 @@
+
+// Boeing-737-100
+
+// Template: 
+#define Boeing_737_100_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 41, 19, -21, -10, ANIM]                                           \
+  [ 50, 0, 35, 18, -18, -9 , ANIM]                                           \
+  [ 90, 0, 40, 23, -20, -12, ANIM]                                           \
+  [140, 0, 34, 28, -17, -14, ANIM]                                           \
+  [180, 0, 41, 28, -21, -14, ANIM]                                           \
+  [230, 0, 34, 28, -17, -14, ANIM]                                           \
+  [270, 0, 40, 23, -20, -12, ANIM]                                           \
+  [320, 0, 35, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 30, 41, 19, -21, -10, ANIM]                                          \
+  [ 50, 30, 35, 18, -18, -9 , ANIM]                                          \
+  [ 90, 30, 40, 23, -20, -12, ANIM]                                          \
+  [140, 30, 34, 30, -15, -20, ANIM]                                          \
+  [180, 30, 41, 28, -21, -14, ANIM]                                          \
+  [230, 30, 34, 30, -17, -15, ANIM]                                          \
+  [270, 30, 40, 23, -20, -12, ANIM]                                          \
+  [320, 30, 35, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 70, 40, 27, -20, -14, ANIM]                                          \
+  [ 50, 70, 32, 27, -17, -14, ANIM]                                          \
+  [ 90, 70, 40, 23, -20, -12, ANIM]                                          \
+  [140, 70, 31, 21, -16, -11, ANIM]                                          \
+  [180, 70, 36, 13, -18, -7 , ANIM]                                          \
+  [230, 70, 31, 21, -16, -11, ANIM]                                          \
+  [270, 70, 40, 23, -20, -12, ANIM]                                          \
+  [322, 70, 32, 27, -17, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 100, 40, 18, -20, -9 , ANIM]                                         \
+  [ 50, 100, 35, 18, -18, -9 , ANIM]                                         \
+  [ 90, 100, 40, 23, -20, -12, ANIM]                                         \
+  [140, 100, 34, 30, -17, -15, ANIM]                                         \
+  [180, 100, 40, 23, -20, -11, ANIM]                                         \
+  [230, 100, 34, 30, -17, -17, ANIM]                                         \
+  [270, 100, 40, 23, -20, -12, ANIM]                                         \
+  [320, 100, 35, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 140, 40, 23, -20, -12, ANIM]                                         \
+  [ 50, 140, 36, 22, -18, -11, ANIM]                                         \
+  [ 90, 140, 40, 23, -20, -12, ANIM]                                         \
+  [140, 140, 34, 24, -17, -12, ANIM]                                         \
+  [180, 140, 40, 17, -20, -9 , ANIM]                                         \
+  [230, 140, 34, 24, -17, -12, ANIM]                                         \
+  [270, 140, 40, 23, -20, -12, ANIM]                                         \
+  [320, 140, 36, 22, -18, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/(0)Greyscale.PNG"
+purchase_sprite(Boeing_737_100, 270, 0,  40, 23, -20, -12)
+Boeing_737_100_sprite_layout_template(Boeing_737_100_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/AirFlorida.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_AirFlorida) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/AnsettNewZealand.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_AnsettNewZealand) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/ContinentalOld.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_ContinentalOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/LufthansaOld.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_LufthansaOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/PEOPLExpress.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_PEOPLExpress) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-100/SingaporeAirlines.png"
+Boeing_737_100_sprite_layout_template(Boeing_737_100_SingaporeAirlines) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_Greyscale, flight_state())
+{
+  15: Boeing_737_100_Greyscale_Climbing;
+  18: Boeing_737_100_Greyscale_Flight;
+  21: Boeing_737_100_Greyscale_Landing;
+  22: Boeing_737_100_Greyscale_Touchdown;
+      Boeing_737_100_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_AirFlorida, flight_state())
+{
+  15: Boeing_737_100_AirFlorida_Climbing;
+  18: Boeing_737_100_AirFlorida_Flight;
+  21: Boeing_737_100_AirFlorida_Landing;
+  22: Boeing_737_100_AirFlorida_Touchdown;
+      Boeing_737_100_AirFlorida_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_AnsettNewZealand, flight_state())
+{
+  15: Boeing_737_100_AnsettNewZealand_Climbing;
+  18: Boeing_737_100_AnsettNewZealand_Flight;
+  21: Boeing_737_100_AnsettNewZealand_Landing;
+  22: Boeing_737_100_AnsettNewZealand_Touchdown;
+      Boeing_737_100_AnsettNewZealand_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_ContinentalOld, flight_state())
+{
+  15: Boeing_737_100_ContinentalOld_Climbing;
+  18: Boeing_737_100_ContinentalOld_Flight;
+  21: Boeing_737_100_ContinentalOld_Landing;
+  22: Boeing_737_100_ContinentalOld_Touchdown;
+      Boeing_737_100_ContinentalOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_LufthansaOld, flight_state())
+{
+  15: Boeing_737_100_LufthansaOld_Climbing;
+  18: Boeing_737_100_LufthansaOld_Flight;
+  21: Boeing_737_100_LufthansaOld_Landing;
+  22: Boeing_737_100_LufthansaOld_Touchdown;
+      Boeing_737_100_LufthansaOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_PEOPLExpress, flight_state())
+{
+  15: Boeing_737_100_PEOPLExpress_Climbing;
+  18: Boeing_737_100_PEOPLExpress_Flight;
+  21: Boeing_737_100_PEOPLExpress_Landing;
+  22: Boeing_737_100_PEOPLExpress_Touchdown;
+      Boeing_737_100_PEOPLExpress_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_SingaporeAirlines, flight_state())
+{
+  15: Boeing_737_100_SingaporeAirlines_Climbing;
+  18: Boeing_737_100_SingaporeAirlines_Flight;
+  21: Boeing_737_100_SingaporeAirlines_Landing;
+  22: Boeing_737_100_SingaporeAirlines_Touchdown;
+      Boeing_737_100_SingaporeAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_sprites, cargo_subtype)
+{
+  1: Boeing_737_100_AirFlorida;
+  2: Boeing_737_100_AnsettNewZealand;
+  3: Boeing_737_100_ContinentalOld;
+  4: Boeing_737_100_LufthansaOld;
+  5: Boeing_737_100_PEOPLExpress;
+  6: Boeing_737_100_SingaporeAirlines;
+     Boeing_737_100_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_running_cost_factor, flight_state())
+{
+  plane_RC(64)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(878); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_FLORIDA);
+  2: string(STR_VLIV_ANSETT_NEW_ZEALAND);
+  3: string(STR_VLIV_CONTINENTAL);
+  4: string(STR_VLIV_LUFTHANSA);
+  5: string(STR_VLIV_PEOPLEXPRESS);
+  6: string(STR_VLIV_SINGAPORE_AIRLINES);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_100_cargo_subtype_capacity, cargo_subtype)
+{
+  2: return 85;
+  3: return 94;
+     return 85;
+}
+
+item (FEAT_AIRCRAFT, Boeing_737_100)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_737_100);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1967), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1967,1973);
+    retire_early: get_retire_early(1967,1973);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 85;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 855;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_737_100_sprites;
+    purchase: Boeing_737_100_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_737_100_cargo_subtype_text;
+	passenger_capacity: Boeing_737_100_cargo_subtype_capacity;
+    speed: Boeing_737_100_speed;
+    running_cost_factor: Boeing_737_100_running_cost_factor;
+    sound_effect: Boeing_737_100_sound_effect;
+
+    cost_factor: 29; 
+    purchase_running_cost_factor: 64;
+    purchase_speed: plane_speed_kmh(878); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_100)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_100)
+  {
+    property
+    { range: 855; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_100)
+  {
+    property
+    { range: 1285; }
+  }
+}

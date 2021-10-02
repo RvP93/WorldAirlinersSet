@@ -1,0 +1,262 @@
+
+// Airbus-A318
+
+// Template: 
+#define Airbus_A318_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  5, 5, 45, 19, -23, -10, ANIM]                                           \
+  [ 55, 5, 40, 21, -20, -11, ANIM]                                           \
+  [100, 5, 44, 23, -22, -12, ANIM]                                           \
+  [150, 5, 39, 30, -20, -15, ANIM]                                           \
+  [195, 5, 45, 29, -23, -15, ANIM]                                           \
+  [248, 5, 39, 30, -20, -15, ANIM]                                           \
+  [294, 5, 44, 23, -22, -12, ANIM]                                           \
+  [346, 5, 40, 21, -20, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  5, 47, 45, 19, -23, -10, ANIM]                                          \
+  [ 55, 47, 40, 21, -20, -11, ANIM]                                          \
+  [100, 47, 44, 23, -22, -12, ANIM]                                          \
+  [150, 47, 39, 30, -20, -15, ANIM]                                          \
+  [195, 47, 45, 29, -23, -15, ANIM]                                          \
+  [248, 47, 39, 30, -20, -15, ANIM]                                          \
+  [294, 47, 44, 23, -22, -12, ANIM]                                          \
+  [346, 47, 40, 21, -20, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  5, 99, 44, 31, -22, -16, ANIM]                                          \
+  [ 55, 99, 39, 31, -20, -16, ANIM]                                          \
+  [100, 99, 46, 22, -23, -11, ANIM]                                          \
+  [150, 99, 34, 21, -17, -11, ANIM]                                          \
+  [195, 99, 42, 13, -21, -7 , ANIM]                                          \
+  [248, 99, 34, 21, -17, -11, ANIM]                                          \
+  [294, 99, 46, 22, -23, -11, ANIM]                                          \
+  [346, 99, 39, 31, -20, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  5, 146, 44, 19, -22, -10, ANIM]                                         \
+  [ 55, 146, 40, 21, -20, -11, ANIM]                                         \
+  [100, 146, 44, 22, -22, -11, ANIM]                                         \
+  [150, 146, 39, 30, -20, -15, ANIM]                                         \
+  [195, 146, 44, 24, -22, -12, ANIM]                                         \
+  [248, 146, 39, 30, -20, -15, ANIM]                                         \
+  [294, 146, 44, 22, -22, -11, ANIM]                                         \
+  [346, 146, 40, 21, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  5, 190, 44, 24, -22, -12, ANIM]                                         \
+  [ 55, 190, 40, 25, -20, -13, ANIM]                                         \
+  [100, 190, 45, 22, -23, -11, ANIM]                                         \
+  [150, 190, 38, 26, -19, -23, ANIM]                                         \
+  [195, 190, 42, 18, -21, -9 , ANIM]                                         \
+  [248, 190, 38, 26, -19, -23, ANIM]                                         \
+  [294, 190, 45, 22, -23, -11, ANIM]                                         \
+  [346, 190, 40, 25, -20, -13, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/(0)Greyscale.png"
+purchase_sprite(Airbus_A318, 294, 5, 44, 23, -22, -12)
+Airbus_A318_sprite_layout_template(Airbus_A318_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/AirFrance.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/Avianca.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_Avianca) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/BA.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_BA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/Frontier.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_Frontier) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/LAN.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_LAN) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A318/TAROM.png"
+Airbus_A318_sprite_layout_template(Airbus_A318_TAROM) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_Greyscale, flight_state())
+{
+  15: Airbus_A318_Greyscale_Climbing;
+  18: Airbus_A318_Greyscale_Flight;
+  21: Airbus_A318_Greyscale_Landing;
+  22: Airbus_A318_Greyscale_Touchdown;
+      Airbus_A318_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_AirFrance, flight_state())
+{
+  15: Airbus_A318_AirFrance_Climbing;
+  18: Airbus_A318_AirFrance_Flight;
+  21: Airbus_A318_AirFrance_Landing;
+  22: Airbus_A318_AirFrance_Touchdown;
+      Airbus_A318_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_Avianca, flight_state())
+{
+  15: Airbus_A318_Avianca_Climbing;
+  18: Airbus_A318_Avianca_Flight;
+  21: Airbus_A318_Avianca_Landing;
+  22: Airbus_A318_Avianca_Touchdown;
+      Airbus_A318_Avianca_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_BA, flight_state())
+{
+  15: Airbus_A318_BA_Climbing;
+  18: Airbus_A318_BA_Flight;
+  21: Airbus_A318_BA_Landing;
+  22: Airbus_A318_BA_Touchdown;
+      Airbus_A318_BA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_Frontier, flight_state())
+{
+  15: Airbus_A318_Frontier_Climbing;
+  18: Airbus_A318_Frontier_Flight;
+  21: Airbus_A318_Frontier_Landing;
+  22: Airbus_A318_Frontier_Touchdown;
+      Airbus_A318_Frontier_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_LAN, flight_state())
+{
+  15: Airbus_A318_LAN_Climbing;
+  18: Airbus_A318_LAN_Flight;
+  21: Airbus_A318_LAN_Landing;
+  22: Airbus_A318_LAN_Touchdown;
+      Airbus_A318_LAN_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_TAROM, flight_state())
+{
+  15: Airbus_A318_TAROM_Climbing;
+  18: Airbus_A318_TAROM_Flight;
+  21: Airbus_A318_TAROM_Landing;
+  22: Airbus_A318_TAROM_Touchdown;
+      Airbus_A318_TAROM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_sprites, cargo_subtype)
+{
+  1: Airbus_A318_AirFrance;
+  2: Airbus_A318_Avianca;
+  3: Airbus_A318_BA;
+  4: Airbus_A318_Frontier;
+  5: Airbus_A318_LAN;
+  6: Airbus_A318_TAROM;
+     Airbus_A318_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_running_cost_factor, flight_state())
+{
+  plane_RC(90)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(346); // airplane climbing after take-off
+      18: return plane_speed_kmh(854); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_AVIANCA);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  4: string(STR_VLIV_FRONTIER_AIRLINES);
+  5: string(STR_VLIV_LAN_AIRLINES);
+  6: string(STR_VLIV_TAROM);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A318_cargo_subtype_capacity, cargo_subtype)
+{ 
+   1: return 120;
+   2: return 100;
+   3: return 32;
+   4: return 114;
+   5: return 126;
+   6: return 113;
+   return 107;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A318)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A318);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2003), 1, 15);
+    vehicle_life: 25;
+    model_life: get_model_life(2003,2050);
+    retire_early: get_retire_early(2003,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 107;
+    mail_capacity: 12;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 665;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A318_sprites;
+    purchase: Airbus_A318_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A318_cargo_subtype_text;
+	passenger_capacity: Airbus_A318_cargo_subtype_capacity;
+    speed: Airbus_A318_speed;
+    running_cost_factor: Airbus_A318_running_cost_factor;
+
+    cost_factor: 57; 
+    purchase_running_cost_factor: 90;
+    purchase_speed: plane_speed_kmh(854); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A318)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A318)
+  {
+    property
+    { range: 665; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A318)
+  {
+    property
+    { range: 1000; }
+  }
+}

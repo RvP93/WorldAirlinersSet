@@ -1,0 +1,276 @@
+
+// Embraer-E190LR
+
+// Template: 
+#define Embraer_E190LR_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 37, 22, -19, -11, ANIM]                                           \
+  [ 47, 1, 35, 18, -18, -9 , ANIM]                                           \
+  [ 87, 1, 45, 21, -23, -11, ANIM]                                           \
+  [137, 2, 34, 23, -17, -12, ANIM]                                           \
+  [175, 2, 33, 29, -17, -15, ANIM]                                           \
+  [215, 2, 34, 23, -17, -12, ANIM]                                           \
+  [255, 1, 45, 21, -23, -11, ANIM]                                           \
+  [305, 1, 35, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 37, 22, -19, -11, ANIM]                                          \
+  [ 47, 35, 35, 18, -18, -9 , ANIM]                                          \
+  [ 87, 35, 45, 21, -23, -11, ANIM]                                          \
+  [137, 36, 34, 24, -17, -12, ANIM]                                          \
+  [175, 36, 33, 29, -17, -15, ANIM]                                          \
+  [215, 36, 34, 24, -17, -12, ANIM]                                          \
+  [255, 35, 45, 21, -23, -11, ANIM]                                          \
+  [305, 35, 35, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 39, 30, -20, -15, ANIM]                                          \
+  [ 48, 70, 34, 26, -17, -13, ANIM]                                          \
+  [ 87, 70, 45, 20, -23, -10, ANIM]                                          \
+  [136, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [175, 71, 35, 14, -18, -7 , ANIM]                                          \
+  [215, 70, 35, 18, -18, -9 , ANIM]                                          \
+  [255, 70, 45, 20, -23, -10, ANIM]                                          \
+  [305, 70, 34, 26, -17, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 105, 37, 22, -19, -11, ANIM]                                         \
+  [ 47, 105, 35, 18, -18, -9 , ANIM]                                         \
+  [ 87, 105, 45, 21, -23, -11, ANIM]                                         \
+  [137, 106, 34, 24, -16, -12, ANIM]                                         \
+  [175, 106, 33, 29, -16, -15, ANIM]                                         \
+  [215, 106, 34, 24, -16, -12, ANIM]                                         \
+  [255, 105, 45, 21, -23, -11, ANIM]                                         \
+  [305, 105, 35, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 140, 39, 24, -20, -12, ANIM]                                         \
+  [ 48, 140, 34, 21, -17, -11, ANIM]                                         \
+  [ 87, 140, 43, 23, -22, -12, ANIM]                                         \
+  [136, 140, 35, 21, -18, -11, ANIM]                                         \
+  [175, 141, 33, 21, -16, -11, ANIM]                                         \
+  [215, 140, 35, 21, -18, -11, ANIM]                                         \
+  [255, 140, 43, 23, -22, -12, ANIM]                                         \
+  [305, 140, 34, 21, -17, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/(0)Greyscale.png"
+purchase_sprite(Embraer_E190LR, 255, 1, 45, 21, -23, -11)
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Finnair.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Helvetic.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Helvetic) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/HOP.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_HOP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Niki.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Niki) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/PegasFly.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_PegasFly) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/TAP.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_TAP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Ukraine.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Ukraine) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Greyscale, flight_state())
+{
+  15: Embraer_E190LR_Greyscale_Climbing;
+  18: Embraer_E190LR_Greyscale_Flight;
+  21: Embraer_E190LR_Greyscale_Landing;
+  22: Embraer_E190LR_Greyscale_Touchdown;
+      Embraer_E190LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Finnair, flight_state())
+{
+  15: Embraer_E190LR_Finnair_Climbing;
+  18: Embraer_E190LR_Finnair_Flight;
+  21: Embraer_E190LR_Finnair_Landing;
+  22: Embraer_E190LR_Finnair_Touchdown;
+      Embraer_E190LR_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Helvetic, flight_state())
+{
+  15: Embraer_E190LR_Helvetic_Climbing;
+  18: Embraer_E190LR_Helvetic_Flight;
+  21: Embraer_E190LR_Helvetic_Landing;
+  22: Embraer_E190LR_Helvetic_Touchdown;
+      Embraer_E190LR_Helvetic_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_HOP, flight_state())
+{
+  15: Embraer_E190LR_HOP_Climbing;
+  18: Embraer_E190LR_HOP_Flight;
+  21: Embraer_E190LR_HOP_Landing;
+  22: Embraer_E190LR_HOP_Touchdown;
+      Embraer_E190LR_HOP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Niki, flight_state())
+{
+  15: Embraer_E190LR_Niki_Climbing;
+  18: Embraer_E190LR_Niki_Flight;
+  21: Embraer_E190LR_Niki_Landing;
+  22: Embraer_E190LR_Niki_Touchdown;
+      Embraer_E190LR_Niki_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_PegasFly, flight_state())
+{
+  15: Embraer_E190LR_PegasFly_Climbing;
+  18: Embraer_E190LR_PegasFly_Flight;
+  21: Embraer_E190LR_PegasFly_Landing;
+  22: Embraer_E190LR_PegasFly_Touchdown;
+      Embraer_E190LR_PegasFly_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_TAP, flight_state())
+{
+  15: Embraer_E190LR_TAP_Climbing;
+  18: Embraer_E190LR_TAP_Flight;
+  21: Embraer_E190LR_TAP_Landing;
+  22: Embraer_E190LR_TAP_Touchdown;
+      Embraer_E190LR_TAP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Ukraine, flight_state())
+{
+  15: Embraer_E190LR_Ukraine_Climbing;
+  18: Embraer_E190LR_Ukraine_Flight;
+  21: Embraer_E190LR_Ukraine_Landing;
+  22: Embraer_E190LR_Ukraine_Touchdown;
+      Embraer_E190LR_Ukraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_sprites, cargo_subtype)
+{
+  1: Embraer_E190LR_Finnair;
+  2: Embraer_E190LR_Helvetic;
+  3: Embraer_E190LR_HOP;
+  4: Embraer_E190LR_Niki;
+  5: Embraer_E190LR_PegasFly;
+  6: Embraer_E190LR_TAP;
+  7: Embraer_E190LR_Ukraine;
+  	 Embraer_E190LR_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_running_cost_factor, flight_state())
+{
+  plane_RC(29)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(886); // heading for tower contact point
+  16..20: return plane_speed_kmh(427); // in flight
+  21..22: return plane_speed_kmh(273); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_EMBRAER);
+  1: string(STR_VLIV_FINNAIR);
+  2: string(STR_VLIV_HELVETIC_AIRWAYS);
+  3: string(STR_VLIV_HOP);
+  4: string(STR_VLIV_NIKI);
+  5: string(STR_VLIV_PEGAS_FLY);
+  5: string(STR_VLIV_TAP);
+  6: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 100; // Finnair
+  2: return 100; // HOP
+  3: return 112; // Helvetic
+  4: return 112; // Niki
+  5: return 110; // Pegas Fly
+  6: return 106; // TAP
+  7: return 104; // Ukraine
+     return 106;
+}
+
+item (FEAT_AIRCRAFT, Embraer_E190LR)
+{
+  property
+  {
+    name: string(STR_AIRV_EMBRAER_ERJ_190LR);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(2004), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(2004,2259);
+    retire_early: get_retire_early(2004,2259);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 19;
+    passenger_capacity: 106;
+    mail_capacity: 11;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 765;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Embraer_E190LR_sprites;
+    purchase: Embraer_E190LR_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Embraer_E190LR_cargo_subtype_text;
+	passenger_capacity: Embraer_E190LR_cargo_subtype_capacity;
+    speed: Embraer_E190LR_speed;
+    running_cost_factor: Embraer_E190LR_running_cost_factor;
+
+    cost_factor: 60; 
+    purchase_running_cost_factor: 29;
+    purchase_speed: plane_speed_kmh(886); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190LR)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190LR)
+  {
+    property
+    { range: 765; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Embraer_E190LR)
+  {
+    property
+    { range: 1150; }
+  }
+}

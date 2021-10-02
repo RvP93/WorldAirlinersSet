@@ -1,0 +1,229 @@
+
+// BAC-Concorde
+
+// Template: 
+#define BAC_CONCORDE_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 36, 34, -18, -17, ANIM]                                           \
+  [ 45, 0, 52, 29, -26, -15, ANIM]                                           \
+  [108, 0, 74, 22, -37, -11, ANIM]                                           \
+  [192, 0, 53, 35, -27, -18, ANIM]                                           \
+  [255, 0, 36, 38, -18, -19, ANIM]                                           \
+  [301, 0, 53, 35, -27, -18, ANIM]                                           \
+  [364, 0, 74, 22, -37, -11, ANIM]                                           \
+  [448, 0, 52, 29, -26, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 50, 36, 37, -18, -19, ANIM]                                          \
+  [ 45, 50, 52, 30, -26, -15, ANIM]                                          \
+  [108, 50, 72, 22, -36, -11, ANIM]                                          \
+  [192, 50, 54, 34, -27, -17, ANIM]                                          \
+  [255, 50, 34, 39, -19, -20, ANIM]                                          \
+  [301, 50, 54, 34, -27, -17, ANIM]                                          \
+  [364, 50, 72, 23, -36, -12, ANIM]                                          \
+  [448, 50, 52, 30, -26, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 100, 36, 50, -18, -25, ANIM]                                         \
+  [ 45, 100, 46, 50, -23, -25, ANIM]                                         \
+  [108, 100, 65, 35, -33, -18, ANIM]                                         \
+  [192, 100, 46, 20, -23, -10, ANIM]                                         \
+  [255, 100, 28, 12, -14, -6 , ANIM]                                         \
+  [301, 100, 46, 20, -23, -10, ANIM]                                         \
+  [364, 100, 65, 35, -33, -18, ANIM]                                         \
+  [448, 100, 46, 50, -23, -25, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 175, 36, 34, -18, -17, ANIM]                                         \
+  [ 45, 175, 52, 29, -26, -11, ANIM]                                         \
+  [108, 175, 73, 22, -37, -11, ANIM]                                         \
+  [192, 175, 53, 36, -27, -18, ANIM]                                         \
+  [255, 175, 34, 42, -17, -21, ANIM]                                         \
+  [301, 175, 53, 36, -27, -18, ANIM]                                         \
+  [364, 175, 73, 23, -37, -12, ANIM]                                         \
+  [448, 175, 52, 29, -26, -15, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 225, 36, 41, -18, -21, ANIM]                                         \
+  [ 45, 225, 51, 36, -26, -18, ANIM]                                         \
+  [108, 225, 72, 22, -36, -11, ANIM]                                         \
+  [192, 225, 52, 27, -26, -14, ANIM]                                         \
+  [255, 225, 34, 32, -17, -16, ANIM]                                         \
+  [301, 225, 52, 27, -26, -14, ANIM]                                         \
+  [364, 225, 72, 22, -36, -11, ANIM]                                         \
+  [448, 225, 51, 26, -26, -18, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/BAC/Concorde/(0)Greyscale.png"
+purchase_sprite(BAC_CONCORDE, 364, 0, 74, 22, -37, -11)
+BAC_CONCORDE_sprite_layout_template(BAC_CONCORDE_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/Concorde/AirFrance.png"
+BAC_CONCORDE_sprite_layout_template(BAC_CONCORDE_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/Concorde/BritishAirways.png"
+BAC_CONCORDE_sprite_layout_template(BAC_CONCORDE_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/Concorde/BritishAirwaysLandor.png"
+BAC_CONCORDE_sprite_layout_template(BAC_CONCORDE_BritishAirwaysLandor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/Concorde/BritishAirwaysNegus.png"
+BAC_CONCORDE_sprite_layout_template(BAC_CONCORDE_BritishAirwaysNegus) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_Greyscale, flight_state())
+{
+  15: BAC_CONCORDE_Greyscale_Climbing;
+  18: BAC_CONCORDE_Greyscale_Flight;
+  21: BAC_CONCORDE_Greyscale_Landing;
+  22: BAC_CONCORDE_Greyscale_Touchdown;
+      BAC_CONCORDE_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_AirFrance, flight_state())
+{
+  15: BAC_CONCORDE_AirFrance_Climbing;
+  18: BAC_CONCORDE_AirFrance_Flight;
+  21: BAC_CONCORDE_AirFrance_Landing;
+  22: BAC_CONCORDE_AirFrance_Touchdown;
+      BAC_CONCORDE_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_BritishAirways, flight_state())
+{
+  15: BAC_CONCORDE_BritishAirways_Climbing;
+  18: BAC_CONCORDE_BritishAirways_Flight;
+  21: BAC_CONCORDE_BritishAirways_Landing;
+  22: BAC_CONCORDE_BritishAirways_Touchdown;
+      BAC_CONCORDE_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_BritishAirwaysLandor, flight_state())
+{
+  15: BAC_CONCORDE_BritishAirwaysLandor_Climbing;
+  18: BAC_CONCORDE_BritishAirwaysLandor_Flight;
+  21: BAC_CONCORDE_BritishAirwaysLandor_Landing;
+  22: BAC_CONCORDE_BritishAirwaysLandor_Touchdown;
+      BAC_CONCORDE_BritishAirwaysLandor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_BritishAirwaysNegus, flight_state())
+{
+  15: BAC_CONCORDE_BritishAirwaysNegus_Climbing;
+  18: BAC_CONCORDE_BritishAirwaysNegus_Flight;
+  21: BAC_CONCORDE_BritishAirwaysNegus_Landing;
+  22: BAC_CONCORDE_BritishAirwaysNegus_Touchdown;
+      BAC_CONCORDE_BritishAirwaysNegus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_sprites, cargo_subtype)
+{
+  1: BAC_CONCORDE_AirFrance;
+  2: BAC_CONCORDE_BritishAirways;
+  3: BAC_CONCORDE_BritishAirwaysLandor;
+  4: BAC_CONCORDE_BritishAirwaysNegus;
+     BAC_CONCORDE_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_running_cost_factor, flight_state())
+{
+  plane_RC(198)
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(451); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(515); // airplane climbing after take-off
+      18: return plane_speed_kmh(2337); // heading for tower contact point
+  16..20: return plane_speed_kmh(547); // in flight
+  21..22: return plane_speed_kmh(298); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_CONCORDE_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BAC);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+  4: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, BAC_CONCORDE)
+{
+  property
+  {
+    name: string(STR_AIRV_BAC_CONCORDE);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1976), 1, 1);
+    vehicle_life: 27;
+    model_life: get_model_life(1976,2003);
+    retire_early: get_retire_early(1976,2003);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 11;
+    passenger_capacity: 100;
+    mail_capacity: 10;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1230;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: BAC_CONCORDE_sprites;
+    purchase: BAC_CONCORDE_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: BAC_CONCORDE_cargo_subtype_text;
+    speed: BAC_CONCORDE_speed;
+    running_cost_factor: BAC_CONCORDE_running_cost_factor;
+    sound_effect: BAC_CONCORDE_sound_effect;
+
+    cost_factor: 160; 
+    purchase_running_cost_factor: 198;
+    purchase_speed: plane_speed_kmh(2337); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, BAC_CONCORDE)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, BAC_CONCORDE)
+  {
+    property
+    { range: 1230; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, BAC_CONCORDE)
+  {
+    property
+    { range: 1845; }
+  }
+}

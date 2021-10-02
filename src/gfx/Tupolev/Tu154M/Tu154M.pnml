@@ -1,0 +1,381 @@
+
+// Tupolev-Tu154M
+
+// Template: 
+#define Tupolev_Tu154M_sprite_layout_template(name)                           \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  2, 2, 38, 23, -19, -11, ANIM]                                           \
+  [ 51, 3, 41, 21, -20, -10, ANIM]                                           \
+  [100, 2, 52, 21, -26, -10, ANIM]                                           \
+  [160, 2, 41, 28, -20, -14, ANIM]                                           \
+  [210, 2, 38, 33, -19, -16, ANIM]                                           \
+  [252, 2, 41, 28, -20, -14, ANIM]                                           \
+  [301, 2, 52, 21, -26, -10, ANIM]                                           \
+  [360, 3, 41, 21, -20, -11, ANIM]                                           \
+}                                                                             \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 40, 38, 23, -19, -11, ANIM]                                          \
+  [ 51, 41, 41, 21, -20, -10, ANIM]                                          \
+  [100, 40, 52, 21, -26, -10, ANIM]                                          \
+  [160, 40, 41, 29, -20, -14, ANIM]                                          \
+  [210, 40, 38, 32, -19, -16, ANIM]                                          \
+  [252, 40, 41, 29, -20, -14, ANIM]                                          \
+  [301, 40, 52, 21, -26, -10, ANIM]                                          \
+  [360, 41, 41, 21, -20, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  2, 80, 38, 32, -19, -16, ANIM]                                          \
+  [ 52, 80, 41, 29, -20, -14, ANIM]                                          \
+  [100, 80, 51, 22, -25, -11, ANIM]                                          \
+  [160, 80, 41, 19, -20, -9 , ANIM]                                          \
+  [210, 80, 38, 18, -19, -9 , ANIM]                                          \
+  [250, 80, 41, 19, -20, -9 , ANIM]                                          \
+  [300, 80, 51, 22, -25, -11, ANIM]                                          \
+  [360, 80, 41, 29, -20, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  2, 120, 38, 21, -19, -10, ANIM]                                         \
+  [ 52, 120, 41, 22, -20, -11, ANIM]                                         \
+  [100, 120, 52, 21, -26, -10, ANIM]                                         \
+  [160, 120, 41, 29, -20, -14, ANIM]                                         \
+  [210, 120, 38, 33, -19, -16, ANIM]                                         \
+  [252, 120, 41, 29, -20, -14, ANIM]                                         \
+  [301, 120, 52, 21, -26, -10, ANIM]                                         \
+  [360, 121, 41, 21, -20, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  2, 154, 38, 21, -19, -10, ANIM]                                         \
+  [ 51, 155, 42, 22, -21, -11, ANIM]                                         \
+  [100, 157, 53, 21, -26, -10, ANIM]                                         \
+  [160, 155, 41, 27, -20, -13, ANIM]                                         \
+  [210, 154, 38, 29, -19, -14, ANIM]                                         \
+  [252, 154, 41, 27, -20, -13, ANIM]                                         \
+  [301, 156, 52, 21, -26, -10, ANIM]                                         \
+  [360, 155, 43, 22, -21, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/(0)Greyscale.png"
+purchase_sprite(Tupolev_Tu154M, 301, 2, 52, 21, -26, -10)
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/AirVia.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_AirVia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Alrosa.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Alrosa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/BalkanBulgarian.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_BalkanBulgarian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/BalkanBulgariaOld.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_BalkanBulgarianOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Baskirian.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Baskirian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Belavia.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Belavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/CSA.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_CSA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Interflug.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Interflug) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/LOT.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_LOT) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Rossiya.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Rossiya) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/S7Airlines.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_S7Airlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Ukraine.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Ukraine) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Utair.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Utair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Vladivostok.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Vladivostok) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Tupolev/Tu154M/Yamal.png"
+Tupolev_Tu154M_sprite_layout_template(Tupolev_Tu154M_Yamal) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Greyscale, flight_state())
+{
+  15: Tupolev_Tu154M_Greyscale_Climbing;
+  18: Tupolev_Tu154M_Greyscale_Flight;
+  21: Tupolev_Tu154M_Greyscale_Landing;
+  22: Tupolev_Tu154M_Greyscale_Touchdown;
+      Tupolev_Tu154M_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_AirVia, flight_state())
+{
+  15: Tupolev_Tu154M_AirVia_Climbing;
+  18: Tupolev_Tu154M_AirVia_Flight;
+  21: Tupolev_Tu154M_AirVia_Landing;
+  22: Tupolev_Tu154M_AirVia_Touchdown;
+      Tupolev_Tu154M_AirVia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Alrosa, flight_state())
+{
+  15: Tupolev_Tu154M_Alrosa_Climbing;
+  18: Tupolev_Tu154M_Alrosa_Flight;
+  21: Tupolev_Tu154M_Alrosa_Landing;
+  22: Tupolev_Tu154M_Alrosa_Touchdown;
+      Tupolev_Tu154M_Alrosa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_BalkanBulgarian, flight_state())
+{
+  15: Tupolev_Tu154M_BalkanBulgarian_Climbing;
+  18: Tupolev_Tu154M_BalkanBulgarian_Flight;
+  21: Tupolev_Tu154M_BalkanBulgarian_Landing;
+  22: Tupolev_Tu154M_BalkanBulgarian_Touchdown;
+      Tupolev_Tu154M_BalkanBulgarian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_BalkanBulgarianOld, flight_state())
+{
+  15: Tupolev_Tu154M_BalkanBulgarianOld_Climbing;
+  18: Tupolev_Tu154M_BalkanBulgarianOld_Flight;
+  21: Tupolev_Tu154M_BalkanBulgarianOld_Landing;
+  22: Tupolev_Tu154M_BalkanBulgarianOld_Touchdown;
+      Tupolev_Tu154M_BalkanBulgarianOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Baskirian, flight_state())
+{
+  15: Tupolev_Tu154M_Baskirian_Climbing;
+  18: Tupolev_Tu154M_Baskirian_Flight;
+  21: Tupolev_Tu154M_Baskirian_Landing;
+  22: Tupolev_Tu154M_Baskirian_Touchdown;
+      Tupolev_Tu154M_Baskirian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Belavia, flight_state())
+{
+  15: Tupolev_Tu154M_Belavia_Climbing;
+  18: Tupolev_Tu154M_Belavia_Flight;
+  21: Tupolev_Tu154M_Belavia_Landing;
+  22: Tupolev_Tu154M_Belavia_Touchdown;
+      Tupolev_Tu154M_Belavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_CSA, flight_state())
+{
+  15: Tupolev_Tu154M_CSA_Climbing;
+  18: Tupolev_Tu154M_CSA_Flight;
+  21: Tupolev_Tu154M_CSA_Landing;
+  22: Tupolev_Tu154M_CSA_Touchdown;
+      Tupolev_Tu154M_CSA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Interflug, flight_state())
+{
+  15: Tupolev_Tu154M_Interflug_Climbing;
+  18: Tupolev_Tu154M_Interflug_Flight;
+  21: Tupolev_Tu154M_Interflug_Landing;
+  22: Tupolev_Tu154M_Interflug_Touchdown;
+      Tupolev_Tu154M_Interflug_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_LOT, flight_state())
+{
+  15: Tupolev_Tu154M_LOT_Climbing;
+  18: Tupolev_Tu154M_LOT_Flight;
+  21: Tupolev_Tu154M_LOT_Landing;
+  22: Tupolev_Tu154M_LOT_Touchdown;
+      Tupolev_Tu154M_LOT_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Rossiya, flight_state())
+{
+  15: Tupolev_Tu154M_Rossiya_Climbing;
+  18: Tupolev_Tu154M_Rossiya_Flight;
+  21: Tupolev_Tu154M_Rossiya_Landing;
+  22: Tupolev_Tu154M_Rossiya_Touchdown;
+      Tupolev_Tu154M_Rossiya_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_S7Airlines, flight_state())
+{
+  15: Tupolev_Tu154M_S7Airlines_Climbing;
+  18: Tupolev_Tu154M_S7Airlines_Flight;
+  21: Tupolev_Tu154M_S7Airlines_Landing;
+  22: Tupolev_Tu154M_S7Airlines_Touchdown;
+      Tupolev_Tu154M_S7Airlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Ukraine, flight_state())
+{
+  15: Tupolev_Tu154M_Ukraine_Climbing;
+  18: Tupolev_Tu154M_Ukraine_Flight;
+  21: Tupolev_Tu154M_Ukraine_Landing;
+  22: Tupolev_Tu154M_Ukraine_Touchdown;
+      Tupolev_Tu154M_Ukraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Utair, flight_state())
+{
+  15: Tupolev_Tu154M_Utair_Climbing;
+  18: Tupolev_Tu154M_Utair_Flight;
+  21: Tupolev_Tu154M_Utair_Landing;
+  22: Tupolev_Tu154M_Utair_Touchdown;
+      Tupolev_Tu154M_Utair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Vladivostok, flight_state())
+{
+  15: Tupolev_Tu154M_Vladivostok_Climbing;
+  18: Tupolev_Tu154M_Vladivostok_Flight;
+  21: Tupolev_Tu154M_Vladivostok_Landing;
+  22: Tupolev_Tu154M_Vladivostok_Touchdown;
+      Tupolev_Tu154M_Vladivostok_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_Yamal, flight_state())
+{
+  15: Tupolev_Tu154M_Yamal_Climbing;
+  18: Tupolev_Tu154M_Yamal_Flight;
+  21: Tupolev_Tu154M_Yamal_Landing;
+  22: Tupolev_Tu154M_Yamal_Touchdown;
+      Tupolev_Tu154M_Yamal_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_sprites, cargo_subtype)
+{
+  1: Tupolev_Tu154M_AirVia;
+  2: Tupolev_Tu154M_Alrosa;
+  3: Tupolev_Tu154M_BalkanBulgarian;
+  4: Tupolev_Tu154M_BalkanBulgarianOld;
+  5: Tupolev_Tu154M_Baskirian;
+  6: Tupolev_Tu154M_Belavia;
+  7: Tupolev_Tu154M_CSA;
+  8: Tupolev_Tu154M_Interflug;
+  9: Tupolev_Tu154M_LOT;
+ 10: Tupolev_Tu154M_Rossiya;
+ 11: Tupolev_Tu154M_S7Airlines;
+ 12: Tupolev_Tu154M_Ukraine;
+ 13: Tupolev_Tu154M_Utair;
+ 14: Tupolev_Tu154M_Vladivostok;
+ 15: Tupolev_Tu154M_Yamal;
+     Tupolev_Tu154M_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_running_cost_factor, flight_state())
+{
+  plane_RC(90)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(435); // airplane climbing after take-off
+      18: return plane_speed_kmh(951); // heading for tower contact point
+  16..20: return plane_speed_kmh(362); // in flight
+  21..22: return plane_speed_kmh(225); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_TUPOLEV);
+  1: string(STR_VLIV_AIR_VIA);
+  2: string(STR_VLIV_ALROSA);
+  3: string(STR_VLIV_BALKAN_BULGARIAN);
+  4: string(STR_VLIV_BALKAN_BULGARIAN_OLD);
+  5: string(STR_VLIV_BAL_BASHKIRIAN);
+  6: string(STR_VLIV_BELAVIA);
+  7: string(STR_VLIV_CZECH_AIRLINES);
+  8: string(STR_VLIV_INTERFLUG);
+  9: string(STR_VLIV_LOT);
+ 10: string(STR_VLIV_ROSSIYA_AIRLINES);
+ 11: string(STR_VLIV_S7_AIRLINES);
+ 12: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+ 13: string(STR_VLIV_UTAIR);
+ 14: string(STR_VLIV_VLADIVOSTOCK);
+ 15: string(STR_VLIV_YAMAL);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Tupolev_Tu154M_cargo_subtype_capacity, cargo_subtype)
+{ 
+  11: return 150; //S7
+   return 150;
+}
+
+item (FEAT_AIRCRAFT, Tupolev_Tu154M)
+{
+  property
+  {
+    name: string(STR_AIRV_TUPOLEV_TU154M);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1966), 9, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1972,2011);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 150;
+    mail_capacity: 15;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 735;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Tupolev_Tu154M_sprites;
+    purchase: Tupolev_Tu154M_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Tupolev_Tu154M_cargo_subtype_text;
+	passenger_capacity: Tupolev_Tu154M_cargo_subtype_capacity;
+    speed: Tupolev_Tu154M_speed;
+    running_cost_factor: Tupolev_Tu154M_running_cost_factor;
+
+    cost_factor: 41; 
+    purchase_running_cost_factor: 148;
+    purchase_speed: plane_speed_kmh(951); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu154M)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu154M)
+  {
+    property
+    { range: 785; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Tupolev_Tu154M)
+  {
+    property
+    { range: 1100; }
+  }
+}

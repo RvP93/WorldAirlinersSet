@@ -1,0 +1,268 @@
+
+// Boeing-737-600
+
+// Template: 
+#define Boeing_737_600_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 43, 19, -22, -10, ANIM]                                           \
+  [ 50, 1, 36, 18, -18, -9 , ANIM]                                           \
+  [ 90, 1, 40, 25, -20, -13, ANIM]                                           \
+  [135, 1, 36, 30, -18, -15, ANIM]                                           \
+  [180, 1, 43, 29, -22, -15, ANIM]                                           \
+  [230, 1, 36, 30, -18, -15, ANIM]                                           \
+  [270, 1, 40, 25, -20, -13, ANIM]                                           \
+  [315, 1, 36, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 43, 19, -22, -10, ANIM]                                          \
+  [ 50, 35, 37, 18, -19, -9 , ANIM]                                          \
+  [ 90, 35, 40, 25, -20, -13, ANIM]                                          \
+  [135, 35, 36, 30, -18, -15, ANIM]                                          \
+  [180, 35, 43, 29, -22, -15, ANIM]                                          \
+  [230, 35, 36, 30, -18, -15, ANIM]                                          \
+  [270, 35, 40, 25, -20, -13, ANIM]                                          \
+  [315, 35, 37, 18, -19, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 42, 27, -21, -14, ANIM]                                          \
+  [ 50, 70, 35, 28, -18, -14, ANIM]                                          \
+  [ 90, 70, 42, 24, -21, -12, ANIM]                                          \
+  [135, 70, 33, 21, -17, -11, ANIM]                                          \
+  [180, 70, 41, 14, -21, -7 , ANIM]                                          \
+  [230, 70, 33, 21, -17, -11, ANIM]                                          \
+  [270, 70, 42, 24, -21, -12, ANIM]                                          \
+  [315, 70, 35, 28, -18, -14, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 42, 19, -21, -10, ANIM]                                         \
+  [ 50, 100, 37, 18, -19, -9 , ANIM]                                         \
+  [ 90, 100, 40, 25, -20, -13, ANIM]                                         \
+  [135, 100, 36, 30, -18, -15, ANIM]                                         \
+  [180, 100, 42, 24, -21, -12, ANIM]                                         \
+  [230, 100, 36, 30, -18, -15, ANIM]                                         \
+  [270, 100, 40, 25, -20, -13, ANIM]                                         \
+  [315, 100, 37, 18, -19, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 42, 23, -21, -12, ANIM]                                         \
+  [ 50, 135, 36, 22, -18, -11, ANIM]                                         \
+  [ 90, 135, 44, 24, -22, -12, ANIM]                                         \
+  [135, 135, 37, 26, -19, -13, ANIM]                                         \
+  [180, 135, 42, 18, -21, -9 , ANIM]                                         \
+  [230, 135, 37, 26, -19, -13, ANIM]                                         \
+  [270, 135, 44, 24, -22, -12, ANIM]                                         \
+  [315, 135, 36, 22, -18, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/(0)Greyscale.png"
+purchase_sprite(Boeing_737_600, 270, 1, 40, 25, -20, -13)
+Boeing_737_600_sprite_layout_template(Boeing_737_600_Greyscale)
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/AirAlgerie.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_AirAlgerie) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/AirEuropa.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_AirEuropa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/Austrian.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/Malev.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_Malev) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/SAS.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-600/Westjet.png"
+Boeing_737_600_sprite_layout_template(Boeing_737_600_Westjet) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_Greyscale, flight_state())
+{
+  15: Boeing_737_600_Greyscale_Climbing;
+  18: Boeing_737_600_Greyscale_Flight;
+  21: Boeing_737_600_Greyscale_Landing;
+  22: Boeing_737_600_Greyscale_Touchdown;
+      Boeing_737_600_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_AirAlgerie, flight_state())
+{
+  15: Boeing_737_600_AirAlgerie_Climbing;
+  18: Boeing_737_600_AirAlgerie_Flight;
+  21: Boeing_737_600_AirAlgerie_Landing;
+  22: Boeing_737_600_AirAlgerie_Touchdown;
+      Boeing_737_600_AirAlgerie_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_AirEuropa, flight_state())
+{
+  15: Boeing_737_600_AirEuropa_Climbing;
+  18: Boeing_737_600_AirEuropa_Flight;
+  21: Boeing_737_600_AirEuropa_Landing;
+  22: Boeing_737_600_AirEuropa_Touchdown;
+      Boeing_737_600_AirEuropa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_Austrian, flight_state())
+{
+  15: Boeing_737_600_Austrian_Climbing;
+  18: Boeing_737_600_Austrian_Flight;
+  21: Boeing_737_600_Austrian_Landing;
+  22: Boeing_737_600_Austrian_Touchdown;
+      Boeing_737_600_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_Malev, flight_state())
+{
+  15: Boeing_737_600_Malev_Climbing;
+  18: Boeing_737_600_Malev_Flight;
+  21: Boeing_737_600_Malev_Landing;
+  22: Boeing_737_600_Malev_Touchdown;
+      Boeing_737_600_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_SAS, flight_state())
+{
+  15: Boeing_737_600_SAS_Climbing;
+  18: Boeing_737_600_SAS_Flight;
+  21: Boeing_737_600_SAS_Landing;
+  22: Boeing_737_600_SAS_Touchdown;
+      Boeing_737_600_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_Westjet, flight_state())
+{
+  15: Boeing_737_600_Westjet_Climbing;
+  18: Boeing_737_600_Westjet_Flight;
+  21: Boeing_737_600_Westjet_Landing;
+  22: Boeing_737_600_Westjet_Touchdown;
+      Boeing_737_600_Westjet_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_sprites, cargo_subtype)
+{
+  1: Boeing_737_600_AirAlgerie;
+  2: Boeing_737_600_AirEuropa;
+  3: Boeing_737_600_Austrian;
+  4: Boeing_737_600_Malev;
+  5: Boeing_737_600_SAS;
+  6: Boeing_737_600_Westjet;
+  	 Boeing_737_600_Greyscale;
+}  
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_running_cost_factor, flight_state())
+{
+  plane_RC(74)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(959); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_ALGERIE);
+  2: string(STR_VLIV_AIR_EUROPA);
+  3: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  4: string(STR_VLIV_MALEV);
+  5: string(STR_VLIV_SAS);
+  6: string(STR_VLIV_WESTJET);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_600_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 101;
+  3: return 121;
+  4: return 109;
+  5: return 120;
+  6: return 119;
+     return 108;
+}
+
+item (FEAT_AIRCRAFT, Boeing_737_600)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_737_600);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1999), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1999,2254);
+    retire_early: get_retire_early(1999,2254);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 18;
+    passenger_capacity: 108;
+    mail_capacity: 13;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1015;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_737_600_sprites;
+    purchase: Boeing_737_600_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_737_600_cargo_subtype_text;
+	passenger_capacity: Boeing_737_600_cargo_subtype_capacity;
+    speed: Boeing_737_600_speed;
+    running_cost_factor: Boeing_737_600_running_cost_factor;
+    sound_effect: Boeing_737_600_sound_effect;
+
+    cost_factor: 53; 
+    purchase_running_cost_factor: 74;
+    purchase_speed: plane_speed_kmh(959); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_600)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_600)
+  {
+    property
+    { range: 1015; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_737_600)
+  {
+    property
+    { range: 1525; }
+  }
+}

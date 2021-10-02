@@ -1,0 +1,194 @@
+START_SECTION(Planes-BAC-1-11-200) 
+ 
+	  A0_PLANES(AIRV_BAC_1_11_200, 1, 20)
+        00 \w1964-01-01 //Introduction Date
+        02 00           //Decay Speed
+        03 0C           //Vehicle Life In Years
+        04 19           //Model Life in Years
+        06 0F           //Climate Availability
+        07 \b16         // Loading speed in pax/"tick"
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()  
+        0C 44           //Speed in mph/8  
+        0D 01           //Acceleration 
+        0F \w75         //Passenger Capacity   
+        11 \b8          //Mail Capacity 
+        12 06           //Sound Effect (Propeller)
+        13 00 00 00 00  //Cargo Types For Refitting
+        14 20    
+        16 0D           //Retire Vehicle Early
+        17 10 
+        18 \wx0001 
+        19 \wx03FE      //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BAC_1_11_200, 1, 1)
+                     1F \w235
+        
+  -1 * 0   10 F1        
+        		
+    A1_PLANES(1,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bac/1-11-200/(0)Greyscale.pcx
+    spr() 1 1 09 18 40 -20 -9  
+    spr() 45 1 09 18 34 -16 -9 
+    spr() 85 1 09 20 42 -21 -10
+    spr() 130 1 09 25 33 -16 -13 
+    spr() 165 1 09 29 40 -20 -15
+    spr() 210 1 09 25 33 -16 -13
+    spr() 245 1 09 20 42 -21 -10
+    spr() 290 1 09 18 34 -16 -9
+    #undef SPRITE_LOCATION
+
+   -1 * 0	 02 03 00 01 01 \w0 \w0 
+
+   -1 * 0	 02 03 F0 81 F2 00 FF 01       // In Flight
+                             00 00 00 00 // Greyscale 
+                             FF FF       // End
+
+    A1_PLANES(1,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bac/1-11-200/(0)Greyscale.pcx
+    spr() 1 35 09 18 40 -20 -9  
+    spr() 45 35 09 18 34 -16 -9
+    spr() 85 35 09 20 42 -21 -10
+    spr() 130 35 09 25 33 -16 -13
+    spr() 165 35 09 29 40 -20 -15
+    spr() 210 35 09 25 33 -16 -13
+    spr() 245 35 09 20 42 -21 -10
+    spr() 290 35 09 18 34 -16 -9
+    #undef SPRITE_LOCATION
+
+   -1 * 0	 02 03 00 01 01 \w0 \w0 
+
+   -1 * 0	 02 03 F1 81 F2 00 FF 01       // Taxing or Initiating Approach 
+                             00 00 00 00 // Greyscale	     
+                             FF FF       // End
+
+    A1_PLANES(1,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bac/1-11-200/(0)Greyscale.pcx
+    spr() 1 65 09 27 40 -20 -14 
+    spr() 45 65 09 23 34 -16 -12
+    spr() 85 65 09 20 43 -22 -10
+    spr() 130 65 09 17 34 -16 -9 
+    spr() 165 65 09 17 36 -18 -9
+    spr() 210 65 09 17 34 -16 -9
+    spr() 245 65 09 20 43 -22 -10
+    spr() 290 65 09 23 34 -16 -12
+    #undef SPRITE_LOCATION
+
+   -1 * 0	 02 03 00 01 01 \w0 \w0 
+
+   -1 * 0	 02 03 F2 81 F2 00 FF 01       // Take Off 
+                             00 00 00 00 // Greyscale	     
+                             FF FF       // End
+
+    A1_PLANES(1,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bac/1-11-200/(0)Greyscale.pcx
+    spr() 1 95 09 18 40 -20 -9 
+    spr() 45 95 09 18 34 -16 -9 
+    spr() 85 95 09 20 42 -21 -10
+    spr() 130 95 09 25 33 -16 -13
+    spr() 165 95 09 29 40 -20 -15
+    spr() 210 95 09 25 33 -16 -13
+    spr() 245 95 09 20 42 -21 -10
+    spr() 290 95 09 18 34 -16 -9
+    #undef SPRITE_LOCATION
+
+   -1 * 0	 02 03 00 01 01 \w0 \w0 
+
+   -1 * 0	 02 03 F3 81 F2 00 FF 01       // Landed On Runway   
+                             00 00 00 00 // Greyscale			     
+                             FF FF       // End
+
+    A1_PLANES(1,8)
+
+    #define SPRITE_LOCATION sprites/pcx/bac/1-11-200/(0)Greyscale.pcx
+    spr() 1 125 09 22 40 -20 -11
+    spr() 45 125 09 21 34 -16 -11
+    spr() 85 125 09 20 43 -22 -10
+    spr() 130 125 09 20 34 -16 -10
+    spr() 165 125 09 24 40 -20 -12
+    spr() 210 125 09 20 34 -16 -10
+    spr() 245 125 09 20 43 -22 -10
+    spr() 290 125 09 21 34 -16 -11
+    #undef SPRITE_LOCATION
+
+   -1 * 0	 02 03 00 01 01 \w0 \w0 
+
+   -1 * 0	 02 03 F4 81 F2 00 FF 01       // Final Approach
+                             00 00 00 00 // Greyscale	
+                             FF FF       // End
+                             
+    A1_PLANES(1,1)          
+                       
+    3 sprites/pcx/bac/1-11-200/(0)Greyscale.pcx 245 1 09 20 42 -21 -10 
+                                
+   -1 * 0	 02 03 4C 01 01 \w0 \w0                           
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+   -1 * 0	 02 03 01 81 F2 00 FF 01         // 1 Liveries
+                             00 80 00 00   // GreyScale    			        
+                             FF FF         // End
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             1B 80 0F 0F   // Climbing
+                             44 80 12 12   // Flight
+                             23 80 10 14   // Approach
+                             11 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32861 0D 0F // Take Off
+                             \w32847 12 12 // Flight
+                             \w32850 10 14 // Approach
+                             \w32856 15 16 // Landing
+                             \w32802 08 0C // Grounded	
+                             \w32787       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00			
+
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32792 0B 0B // Purchase Cost Purchase List
+				                     \w32847 0E 0E // Running Cost Purchase List
+                             00 00 				
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0  02 03 08 81 0C 00 FF 01         // Text Callback's (Purchase List)   
+                             05 00 36 36   // Costs
+                             4C 00                                  
+
+   -1 * 0	 03 03 01 AIRV_BAC_1_11_200 01
+                             FF 08 00      // P-List
+                             07 00         // Default  
+                             
+END_SECTION(Planes-BAC-1-11-200)  

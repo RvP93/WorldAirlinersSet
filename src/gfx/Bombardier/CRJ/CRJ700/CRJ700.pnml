@@ -1,0 +1,209 @@
+
+// Bombardier-CRJ700
+
+// Template: 
+#define Bombardier_CRJ700_sprite_layout_template(name)                       \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 28, 22, -14, -11, ANIM]                                           \
+  [ 30, 1, 36, 18, -18, -9 , ANIM]                                           \
+  [ 70, 1, 40, 20, -20, -10, ANIM]                                           \
+  [120, 1, 32, 24, -16, -12, ANIM]                                           \
+  [165, 1, 30, 30, -15, -15, ANIM]                                           \
+  [200, 1, 32, 25, -17, -13, ANIM]                                           \
+  [245, 1, 40, 20, -20, -10, ANIM]                                           \
+  [295, 1, 36, 18, -18, -9 , ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 35, 28, 22, -14, -11, ANIM]                                          \
+  [ 30, 35, 36, 18, -18, -9 , ANIM]                                          \
+  [ 70, 35, 40, 20, -20, -10, ANIM]                                          \
+  [120, 35, 32, 25, -16, -13, ANIM]                                          \
+  [165, 35, 30, 31, -15, -16, ANIM]                                          \
+  [200, 35, 32, 25, -16, -13, ANIM]                                          \
+  [245, 35, 40, 20, -20, -10, ANIM]                                          \
+  [295, 35, 36, 18, -18, -9 , ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 70, 28, 26, -14, -13, ANIM]                                          \
+  [ 30, 70, 38, 23, -19, -12, ANIM]                                          \
+  [ 70, 70, 43, 19, -22, -10, ANIM]                                          \
+  [120, 70, 38, 16, -19, -8 , ANIM]                                          \
+  [165, 70, 30, 23, -15, -12, ANIM]                                          \
+  [200, 70, 38, 16, -19, -8 , ANIM]                                          \
+  [245, 70, 43, 19, -23, -10, ANIM]                                          \
+  [295, 70, 38, 23, -19, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 100, 28, 22, -14, -11, ANIM]                                         \
+  [ 30, 100, 36, 18, -18, -9 , ANIM]                                         \
+  [ 70, 100, 40, 20, -20, -10, ANIM]                                         \
+  [120, 100, 32, 25, -16, -13, ANIM]                                         \
+  [165, 100, 30, 31, -15, -16, ANIM]                                         \
+  [200, 100, 32, 25, -16, -13, ANIM]                                         \
+  [245, 100, 40, 20, -20, -10, ANIM]                                         \
+  [295, 100, 36, 18, -18, -9 , ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 135, 28, 26, -14, -13, ANIM]                                         \
+  [ 30, 135, 35, 21, -18, -11, ANIM]                                         \
+  [ 70, 135, 43, 18, -22, -9 , ANIM]                                         \
+  [120, 135, 33, 21, -17, -11, ANIM]                                         \
+  [165, 135, 30, 29, -15, -15, ANIM]                                         \
+  [200, 135, 33, 21, -17, -11, ANIM]                                         \
+  [245, 135, 43, 18, -22, -9 , ANIM]                                         \
+  [295, 135, 35, 21, -18, -11, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ700/(0)Greyscale.png"
+purchase_sprite(Bombardier_CRJ700, 245, 1, 40, 20, -20, -10)
+Bombardier_CRJ700_sprite_layout_template(Bombardier_CRJ700_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ700/AirIndiaRegional.png"
+Bombardier_CRJ700_sprite_layout_template(Bombardier_CRJ700_AirIndiaRegional) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ700/Britair.png"
+Bombardier_CRJ700ER_sprite_layout_template(Bombardier_CRJ700_Britair) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_Greyscale, flight_state())
+{
+  15: Bombardier_CRJ700_Greyscale_Climbing;
+  18: Bombardier_CRJ700_Greyscale_Flight;
+  21: Bombardier_CRJ700_Greyscale_Landing;
+  22: Bombardier_CRJ700_Greyscale_Touchdown;
+      Bombardier_CRJ700_Greyscale_Grounded;
+}
+ 
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_AirIndiaRegional, flight_state())
+{
+  15: Bombardier_CRJ700_AirIndiaRegional_Climbing;
+  18: Bombardier_CRJ700_AirIndiaRegional_Flight;
+  21: Bombardier_CRJ700_AirIndiaRegional_Landing;
+  22: Bombardier_CRJ700_AirIndiaRegional_Touchdown;
+      Bombardier_CRJ700_AirIndiaRegional_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_Britair, flight_state())
+{
+  15: Bombardier_CRJ700_Britair_Climbing;
+  18: Bombardier_CRJ700_Britair_Flight;
+  21: Bombardier_CRJ700_Britair_Landing;
+  22: Bombardier_CRJ700_Britair_Touchdown;
+      Bombardier_CRJ700_Britair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_sprites, cargo_subtype)
+{
+  1: Bombardier_CRJ700_AirIndiaRegional;
+  2: Bombardier_CRJ700_Britair;
+     Bombardier_CRJ700_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_running_cost_factor, flight_state())
+{
+  plane_RC(45)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(386); // airplane climbing after take-off
+      18: return plane_speed_kmh(830); // heading for tower contact point
+  16..20: return plane_speed_kmh(322); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOMBARDIER);
+  1: string(STR_VLIV_AIR_INDIA_REGIONAL);
+  2: string(STR_VLIV_BRITAIR); 
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ700_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 70;
+  2: return 72;
+     return 70;
+}
+
+item (FEAT_AIRCRAFT, Bombardier_CRJ700)
+{
+  property
+  {
+    name: string(STR_AIRV_BOMBARDIER_CRJ700);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1997), 1, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1997,2020);
+    retire_early: get_retire_early(1997,2020);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 16;
+    passenger_capacity: 70;
+    mail_capacity: 8;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 405;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Bombardier_CRJ700_sprites;
+    purchase: Bombardier_CRJ700_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Bombardier_CRJ700_cargo_subtype_text;
+	passenger_capacity: Bombardier_CRJ700_cargo_subtype_capacity;
+    speed: Bombardier_CRJ700_speed;
+    running_cost_factor: Bombardier_CRJ700_running_cost_factor;
+    sound_effect: Bombardier_CRJ700_sound_effect;
+
+    cost_factor: 22; 
+    purchase_running_cost_factor: 45;
+    purchase_speed: plane_speed_kmh(830); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ700)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ700)
+  {
+    property
+    { range: 405; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Bombardier_CRJ700)
+  {
+    property
+    { range: 610; }
+  }
+}

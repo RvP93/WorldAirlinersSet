@@ -1,0 +1,740 @@
+
+// Airbus-A321_200
+
+// Template: 
+#define Airbus_A321_200_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 45, 25, -23, -13, ANIM]                                           \
+  [ 50, 0, 42, 22, -21, -11, ANIM]                                           \
+  [100, 0, 50, 23, -25, -12, ANIM]                                           \
+  [160, 0, 41, 31, -21, -16, ANIM]                                           \
+  [210, 0, 45, 35, -23, -18, ANIM]                                           \
+  [260, 0, 41, 31, -21, -16, ANIM]                                           \
+  [310, 0, 50, 23, -25, -12, ANIM]                                           \
+  [370, 0, 42, 22, -21, -11, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 40, 45, 25, -23, -13, ANIM]                                          \
+  [ 50, 40, 42, 22, -21, -11, ANIM]                                          \
+  [100, 40, 50, 23, -25, -12, ANIM]                                          \
+  [160, 40, 41, 31, -21, -16, ANIM]                                          \
+  [210, 40, 45, 35, -23, -18, ANIM]                                          \
+  [260, 40, 41, 31, -21, -16, ANIM]                                          \
+  [310, 40, 50, 23, -25, -12, ANIM]                                          \
+  [370, 40, 42, 21, -21, -11, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  0, 80, 44, 39, -22, -19, ANIM]                                          \
+  [ 50, 80, 41, 33, -21, -17, ANIM]                                          \
+  [100, 80, 53, 23, -27, -12, ANIM]                                          \
+  [160, 80, 39, 21, -20, -12, ANIM]                                          \
+  [210, 80, 42, 16, -21, -8 , ANIM]                                          \
+  [260, 80, 39, 21, -20, -12, ANIM]                                          \
+  [310, 80, 53, 22, -27, -12, ANIM]                                          \
+  [370, 80, 41, 33, -21, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  0, 130, 44, 25, -22, -13, ANIM]                                         \
+  [ 50, 130, 42, 22, -21, -11, ANIM]                                         \
+  [100, 130, 50, 22, -25, -11, ANIM]                                         \
+  [160, 130, 41, 31, -21, -16, ANIM]                                         \
+  [210, 130, 44, 30, -22, -15, ANIM]                                         \
+  [260, 130, 41, 31, -21, -16, ANIM]                                         \
+  [310, 130, 50, 22, -25, -11, ANIM]                                         \
+  [370, 130, 42, 22, -21, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 170, 44, 32, -22, -16, ANIM]                                         \
+  [ 50, 170, 42, 27, -21, -14, ANIM]                                         \
+  [100, 170, 51, 22, -26, -11, ANIM]                                         \
+  [160, 170, 39, 27, -20, -14, ANIM]                                         \
+  [210, 170, 42, 24, -21, -12, ANIM]                                         \
+  [260, 170, 39, 27, -20, -14, ANIM]                                         \
+  [310, 170, 51, 22, -26, -11, ANIM]                                         \
+  [370, 170, 42, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/(0)Greyscale.png"
+purchase_sprite(Airbus_A321_200, 310, 0, 50, 23, -25, -12)
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AerLingus.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_AerLingus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirAstana.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_AirAstana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirBerlin.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_AirBerlin) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirCanada.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_AirCanada) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/AirFrance.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/American.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Asiana.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Asiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Austrian.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/BA.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_BA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/ChinaEastern.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/ChinaSouthern.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_ChinaSouthern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Condor.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Condor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Delta.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/EgyptAir.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_EgyptAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Finnair.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/FinnairNew.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_FinnairNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Iberia.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/IberiaNew.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_IberiaNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Jetstar.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Jetstar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Jet2.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Jet2) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Lufthansa.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/LufthansaRetro.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_LufthansaRetro) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Metrojet.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Metrojet) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Monarch.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Monarch) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Onur.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Onur) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Qatar.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Qatar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/RoyalJordanian.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_RoyalJordanian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/S7.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_S7) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/SAS.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/SmallPlanet.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_SmallPlanet) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Swiss.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/TAM.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_TAM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/TAP.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_TAP) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/ThomasCook.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_ThomasCook) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Turkish.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/USAirways.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_USAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Vueling.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Vueling) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A321-200/Wizz.png"
+Airbus_A321_200_sprite_layout_template(Airbus_A321_200_Wizz) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Greyscale, flight_state())
+{
+  15: Airbus_A321_200_Greyscale_Climbing;
+  18: Airbus_A321_200_Greyscale_Flight;
+  21: Airbus_A321_200_Greyscale_Landing;
+  22: Airbus_A321_200_Greyscale_Touchdown;
+      Airbus_A321_200_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_AerLingus, flight_state())
+{
+  15: Airbus_A321_200_AerLingus_Climbing;
+  18: Airbus_A321_200_AerLingus_Flight;
+  21: Airbus_A321_200_AerLingus_Landing;
+  22: Airbus_A321_200_AerLingus_Touchdown;
+      Airbus_A321_200_AerLingus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_AirAstana, flight_state())
+{
+  15: Airbus_A321_200_AirAstana_Climbing;
+  18: Airbus_A321_200_AirAstana_Flight;
+  21: Airbus_A321_200_AirAstana_Landing;
+  22: Airbus_A321_200_AirAstana_Touchdown;
+      Airbus_A321_200_AirAstana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_AirBerlin, flight_state())
+{
+  15: Airbus_A321_200_AirBerlin_Climbing;
+  18: Airbus_A321_200_AirBerlin_Flight;
+  21: Airbus_A321_200_AirBerlin_Landing;
+  22: Airbus_A321_200_AirBerlin_Touchdown;
+      Airbus_A321_200_AirBerlin_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_AirCanada, flight_state())
+{
+  15: Airbus_A321_200_AirCanada_Climbing;
+  18: Airbus_A321_200_AirCanada_Flight;
+  21: Airbus_A321_200_AirCanada_Landing;
+  22: Airbus_A321_200_AirCanada_Touchdown;
+      Airbus_A321_200_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_AirFrance, flight_state())
+{
+  15: Airbus_A321_200_AirFrance_Climbing;
+  18: Airbus_A321_200_AirFrance_Flight;
+  21: Airbus_A321_200_AirFrance_Landing;
+  22: Airbus_A321_200_AirFrance_Touchdown;
+      Airbus_A321_200_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_American, flight_state())
+{
+  15: Airbus_A321_200_American_Climbing;
+  18: Airbus_A321_200_American_Flight;
+  21: Airbus_A321_200_American_Landing;
+  22: Airbus_A321_200_American_Touchdown;
+      Airbus_A321_200_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Asiana, flight_state())
+{
+  15: Airbus_A321_200_Asiana_Climbing;
+  18: Airbus_A321_200_Asiana_Flight;
+  21: Airbus_A321_200_Asiana_Landing;
+  22: Airbus_A321_200_Asiana_Touchdown;
+      Airbus_A321_200_Asiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Austrian, flight_state())
+{
+  15: Airbus_A321_200_Austrian_Climbing;
+  18: Airbus_A321_200_Austrian_Flight;
+  21: Airbus_A321_200_Austrian_Landing;
+  22: Airbus_A321_200_Austrian_Touchdown;
+      Airbus_A321_200_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_BA, flight_state())
+{
+  15: Airbus_A321_200_BA_Climbing;
+  18: Airbus_A321_200_BA_Flight;
+  21: Airbus_A321_200_BA_Landing;
+  22: Airbus_A321_200_BA_Touchdown;
+      Airbus_A321_200_BA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_ChinaEastern, flight_state())
+{
+  15: Airbus_A321_200_ChinaEastern_Climbing;
+  18: Airbus_A321_200_ChinaEastern_Flight;
+  21: Airbus_A321_200_ChinaEastern_Landing;
+  22: Airbus_A321_200_ChinaEastern_Touchdown;
+      Airbus_A321_200_ChinaEastern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_ChinaSouthern, flight_state())
+{
+  15: Airbus_A321_200_ChinaSouthern_Climbing;
+  18: Airbus_A321_200_ChinaSouthern_Flight;
+  21: Airbus_A321_200_ChinaSouthern_Landing;
+  22: Airbus_A321_200_ChinaSouthern_Touchdown;
+      Airbus_A321_200_ChinaSouthern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Condor, flight_state())
+{
+  15: Airbus_A321_200_Condor_Climbing;
+  18: Airbus_A321_200_Condor_Flight;
+  21: Airbus_A321_200_Condor_Landing;
+  22: Airbus_A321_200_Condor_Touchdown;
+      Airbus_A321_200_Condor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Delta, flight_state())
+{
+  15: Airbus_A321_200_Delta_Climbing;
+  18: Airbus_A321_200_Delta_Flight;
+  21: Airbus_A321_200_Delta_Landing;
+  22: Airbus_A321_200_Delta_Touchdown;
+      Airbus_A321_200_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_EgyptAir, flight_state())
+{
+  15: Airbus_A321_200_EgyptAir_Climbing;
+  18: Airbus_A321_200_EgyptAir_Flight;
+  21: Airbus_A321_200_EgyptAir_Landing;
+  22: Airbus_A321_200_EgyptAir_Touchdown;
+      Airbus_A321_200_EgyptAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Finnair, flight_state())
+{
+  15: Airbus_A321_200_Finnair_Climbing;
+  18: Airbus_A321_200_Finnair_Flight;
+  21: Airbus_A321_200_Finnair_Landing;
+  22: Airbus_A321_200_Finnair_Touchdown;
+      Airbus_A321_200_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_FinnairNew, flight_state())
+{
+  15: Airbus_A321_200_FinnairNew_Climbing;
+  18: Airbus_A321_200_FinnairNew_Flight;
+  21: Airbus_A321_200_FinnairNew_Landing;
+  22: Airbus_A321_200_FinnairNew_Touchdown;
+      Airbus_A321_200_FinnairNew_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Iberia, flight_state())
+{
+  15: Airbus_A321_200_Iberia_Climbing;
+  18: Airbus_A321_200_Iberia_Flight;
+  21: Airbus_A321_200_Iberia_Landing;
+  22: Airbus_A321_200_Iberia_Touchdown;
+      Airbus_A321_200_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_IberiaNew, flight_state())
+{
+  15: Airbus_A321_200_IberiaNew_Climbing;
+  18: Airbus_A321_200_IberiaNew_Flight;
+  21: Airbus_A321_200_IberiaNew_Landing;
+  22: Airbus_A321_200_IberiaNew_Touchdown;
+      Airbus_A321_200_IberiaNew_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Jetstar, flight_state())
+{
+  15: Airbus_A321_200_Jetstar_Climbing;
+  18: Airbus_A321_200_Jetstar_Flight;
+  21: Airbus_A321_200_Jetstar_Landing;
+  22: Airbus_A321_200_Jetstar_Touchdown;
+      Airbus_A321_200_Jetstar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Jet2, flight_state())
+{
+  15: Airbus_A321_200_Jet2_Climbing;
+  18: Airbus_A321_200_Jet2_Flight;
+  21: Airbus_A321_200_Jet2_Landing;
+  22: Airbus_A321_200_Jet2_Touchdown;
+      Airbus_A321_200_Jet2_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Lufthansa, flight_state())
+{
+  15: Airbus_A321_200_Lufthansa_Climbing;
+  18: Airbus_A321_200_Lufthansa_Flight;
+  21: Airbus_A321_200_Lufthansa_Landing;
+  22: Airbus_A321_200_Lufthansa_Touchdown;
+      Airbus_A321_200_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_LufthansaRetro, flight_state())
+{
+  15: Airbus_A321_200_LufthansaRetro_Climbing;
+  18: Airbus_A321_200_LufthansaRetro_Flight;
+  21: Airbus_A321_200_LufthansaRetro_Landing;
+  22: Airbus_A321_200_LufthansaRetro_Touchdown;
+      Airbus_A321_200_LufthansaRetro_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Metrojet, flight_state())
+{
+  15: Airbus_A321_200_Metrojet_Climbing;
+  18: Airbus_A321_200_Metrojet_Flight;
+  21: Airbus_A321_200_Metrojet_Landing;
+  22: Airbus_A321_200_Metrojet_Touchdown;
+      Airbus_A321_200_Metrojet_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Monarch, flight_state())
+{
+  15: Airbus_A321_200_Monarch_Climbing;
+  18: Airbus_A321_200_Monarch_Flight;
+  21: Airbus_A321_200_Monarch_Landing;
+  22: Airbus_A321_200_Monarch_Touchdown;
+      Airbus_A321_200_Monarch_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Onur, flight_state())
+{
+  15: Airbus_A321_200_Onur_Climbing;
+  18: Airbus_A321_200_Onur_Flight;
+  21: Airbus_A321_200_Onur_Landing;
+  22: Airbus_A321_200_Onur_Touchdown;
+      Airbus_A321_200_Onur_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Qatar, flight_state())
+{
+  15: Airbus_A321_200_Qatar_Climbing;
+  18: Airbus_A321_200_Qatar_Flight;
+  21: Airbus_A321_200_Qatar_Landing;
+  22: Airbus_A321_200_Qatar_Touchdown;
+      Airbus_A321_200_Qatar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_RoyalJordanian, flight_state())
+{
+  15: Airbus_A321_200_RoyalJordanian_Climbing;
+  18: Airbus_A321_200_RoyalJordanian_Flight;
+  21: Airbus_A321_200_RoyalJordanian_Landing;
+  22: Airbus_A321_200_RoyalJordanian_Touchdown;
+      Airbus_A321_200_RoyalJordanian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_S7, flight_state())
+{
+  15: Airbus_A321_200_S7_Climbing;
+  18: Airbus_A321_200_S7_Flight;
+  21: Airbus_A321_200_S7_Landing;
+  22: Airbus_A321_200_S7_Touchdown;
+      Airbus_A321_200_S7_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_SAS, flight_state())
+{
+  15: Airbus_A321_200_SAS_Climbing;
+  18: Airbus_A321_200_SAS_Flight;
+  21: Airbus_A321_200_SAS_Landing;
+  22: Airbus_A321_200_SAS_Touchdown;
+      Airbus_A321_200_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_SmallPlanet, flight_state())
+{
+  15: Airbus_A321_200_SmallPlanet_Climbing;
+  18: Airbus_A321_200_SmallPlanet_Flight;
+  21: Airbus_A321_200_SmallPlanet_Landing;
+  22: Airbus_A321_200_SmallPlanet_Touchdown;
+      Airbus_A321_200_SmallPlanet_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Swiss, flight_state())
+{
+  15: Airbus_A321_200_Swiss_Climbing;
+  18: Airbus_A321_200_Swiss_Flight;
+  21: Airbus_A321_200_Swiss_Landing;
+  22: Airbus_A321_200_Swiss_Touchdown;
+      Airbus_A321_200_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_TAM, flight_state())
+{
+  15: Airbus_A321_200_TAM_Climbing;
+  18: Airbus_A321_200_TAM_Flight;
+  21: Airbus_A321_200_TAM_Landing;
+  22: Airbus_A321_200_TAM_Touchdown;
+      Airbus_A321_200_TAM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_TAP, flight_state())
+{
+  15: Airbus_A321_200_TAP_Climbing;
+  18: Airbus_A321_200_TAP_Flight;
+  21: Airbus_A321_200_TAP_Landing;
+  22: Airbus_A321_200_TAP_Touchdown;
+      Airbus_A321_200_TAP_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_ThomasCook, flight_state())
+{
+  15: Airbus_A321_200_ThomasCook_Climbing;
+  18: Airbus_A321_200_ThomasCook_Flight;
+  21: Airbus_A321_200_ThomasCook_Landing;
+  22: Airbus_A321_200_ThomasCook_Touchdown;
+      Airbus_A321_200_ThomasCook_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Turkish, flight_state())
+{
+  15: Airbus_A321_200_Turkish_Climbing;
+  18: Airbus_A321_200_Turkish_Flight;
+  21: Airbus_A321_200_Turkish_Landing;
+  22: Airbus_A321_200_Turkish_Touchdown;
+      Airbus_A321_200_Turkish_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_USAirways, flight_state())
+{
+  15: Airbus_A321_200_USAirways_Climbing;
+  18: Airbus_A321_200_USAirways_Flight;
+  21: Airbus_A321_200_USAirways_Landing;
+  22: Airbus_A321_200_USAirways_Touchdown;
+      Airbus_A321_200_USAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Vueling, flight_state())
+{
+  15: Airbus_A321_200_Vueling_Climbing;
+  18: Airbus_A321_200_Vueling_Flight;
+  21: Airbus_A321_200_Vueling_Landing;
+  22: Airbus_A321_200_Vueling_Touchdown;
+      Airbus_A321_200_Vueling_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_Wizz, flight_state())
+{
+  15: Airbus_A321_200_Wizz_Climbing;
+  18: Airbus_A321_200_Wizz_Flight;
+  21: Airbus_A321_200_Wizz_Landing;
+  22: Airbus_A321_200_Wizz_Touchdown;
+      Airbus_A321_200_Wizz_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_sprites, cargo_subtype)
+{
+  1: Airbus_A321_200_AerLingus;
+  2: Airbus_A321_200_AirAstana;
+  3: Airbus_A321_200_AirBerlin;
+  4: Airbus_A321_200_AirCanada;
+  5: Airbus_A321_200_AirFrance;
+  6: Airbus_A321_200_American;
+  7: Airbus_A321_200_Asiana;
+  8: Airbus_A321_200_Austrian;
+  9: Airbus_A321_200_BA;
+ 10: Airbus_A321_200_ChinaEastern;
+ 11: Airbus_A321_200_ChinaSouthern;
+ 12: Airbus_A321_200_Condor;
+ 13: Airbus_A321_200_Delta;
+ 14: Airbus_A321_200_EgyptAir;
+ 15: Airbus_A321_200_Finnair;
+ 16: Airbus_A321_200_FinnairNew;
+ 17: Airbus_A321_200_Iberia;
+ 18: Airbus_A321_200_IberiaNew;
+ 19: Airbus_A321_200_Jetstar;
+ 20: Airbus_A321_200_Jet2;
+ 21: Airbus_A321_200_Lufthansa;
+ 22: Airbus_A321_200_LufthansaRetro;
+ 23: Airbus_A321_200_Metrojet;
+ 24: Airbus_A321_200_Monarch;
+ 25: Airbus_A321_200_Onur;
+ 26: Airbus_A321_200_Qatar;
+ 27: Airbus_A321_200_RoyalJordanian;
+ 28: Airbus_A321_200_S7;
+ 29: Airbus_A321_200_SAS;
+ 30: Airbus_A321_200_SmallPlanet;
+ 31: Airbus_A321_200_Swiss;
+ 32: Airbus_A321_200_TAM;
+ 33: Airbus_A321_200_TAP;
+ 34: Airbus_A321_200_ThomasCook;
+ 35: Airbus_A321_200_Turkish;
+ 36: Airbus_A321_200_USAirways;
+ 37: Airbus_A321_200_Vueling;
+ 38: Airbus_A321_200_Wizz;
+     Airbus_A321_200_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_running_cost_factor, flight_state())
+{
+  plane_RC(87)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(362); // airplane climbing after take-off
+      18: return plane_speed_kmh(902); // heading for tower contact point
+  16..20: return plane_speed_kmh(467); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_AIR_ASTANA);
+  3: string(STR_VLIV_AIR_BERLIN_NEW);
+  4: string(STR_VLIV_AIR_CANADA);
+  5: string(STR_VLIV_AIR_FRANCE);
+  6: string(STR_VLIV_AMERICAN_AIRLINES);
+  7: string(STR_VLIV_ASIANA_AIRLINES);
+  8: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  9: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+ 10: string(STR_VLIV_CHINA_EASTERN);
+ 11: string(STR_VLIV_CHINA_SOUTHERN);
+ 12: string(STR_VLIV_CONDOR);
+ 13: string(STR_VLIV_DELTA_AIR_LINES);
+ 14: string(STR_VLIV_EGYPT_AIR);
+ 15: string(STR_VLIV_FINNAIR_OLD);
+ 16: string(STR_VLIV_FINNAIR);
+ 17: string(STR_VLIV_IBERIA_OLD);
+ 18: string(STR_VLIV_IBERIA);
+ 19: string(STR_VLIV_JETSTAR_AIRWAYS);
+ 20: string(STR_VLIV_JET2);
+ 21: string(STR_VLIV_LUFTHANSA);
+ 22: string(STR_VLIV_LUFTHANSA_RETRO);
+ 23: string(STR_VLIV_METROJET);
+ 24: string(STR_VLIV_MONARCH_AIRLINES);
+ 25: string(STR_VLIV_ONUR_AIR);
+ 26: string(STR_VLIV_QATAR_AIRWAYS);
+ 27: string(STR_VLIV_ROYAL_JORDANIAN);
+ 28: string(STR_VLIV_S7_AIRLINES);
+ 29: string(STR_VLIV_SAS);
+ 30: string(STR_VLIV_SMALL_PLANET);
+ 31: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 32: string(STR_VLIV_TAM_AIRLINES);
+ 33: string(STR_VLIV_TAP);
+ 34: string(STR_VLIV_THOMAS_COOK);
+ 35: string(STR_VLIV_TURKISH_AIRLINES);
+ 36: string(STR_VLIV_US_AIRWAYS);
+ 37: string(STR_VLIV_VUELING_AIRLINES);
+ 38: string(STR_VLIV_WIZZ_AIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A321_200_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 212; // Aer Lingus
+   2: return 179; // Air Astana
+   3: return 210; // Air Berlin
+   4: return 183; // Air Canada
+   5: return 180; // Air France
+   6: return 187; // American Airlines
+   7: return 177; // Asiana
+   8: return 200; // Austrian
+   9: return 188; // British
+  10: return 177; // China Eastern
+  11: return 179; // China Southern
+  12: return 210; // Condor
+  13: return 192; // Delta
+  14: return 161; // Egypt
+  15: return 196; // Finnair Old
+  16: return 196; // Finnair
+  17: return 174; // Iberia Old
+  18: return 174; // Iberia
+  19: return 220; // Jetstar
+  20: return 220; // Jet2
+  21: return 190; // Lufthansa
+  22: return 190; // Lufthansa Retro
+  23: return 220; // Metrojet
+  24: return 220; // Monarch
+  25: return 220; // Onur Air
+  26: return 177; // Qatar
+  27: return 168; // RoyalJordanian
+  28: return 198; // S7
+  29: return 198; // SAS
+  30: return 220; // Small Planet
+  31: return 176; // Swiss
+  32: return 220; // TAM
+  33: return 200; // TAP
+  34: return 220; // ThomasCook
+  35: return 188; // Turkish
+  36: return 187; // US
+  37: return 220; // Vuelling
+  38: return 230; // Wizz
+  return 185;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A321_200)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A321_200);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1996), 12, 1);
+    vehicle_life: 25;
+    model_life: get_model_life(1996,2050);
+    retire_early: get_retire_early(1996,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 32;
+    passenger_capacity: 185;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 885;
+  }
+  graphics {
+    default: Airbus_A321_200_sprites;
+    purchase: Airbus_A321_200_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A321_200_cargo_subtype_text;
+	passenger_capacity: Airbus_A321_200_cargo_subtype_capacity;
+    speed: Airbus_A321_200_speed;
+    running_cost_factor: Airbus_A321_200_running_cost_factor;
+
+    cost_factor: 84; 
+    purchase_running_cost_factor: 87;
+    purchase_speed: plane_speed_kmh(902); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_200)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_200)
+  {
+    property
+    { range: 885; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A321_200)
+  {
+    property
+    { range: 1325; }
+  }
+}

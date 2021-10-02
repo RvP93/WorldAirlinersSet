@@ -1,0 +1,180 @@
+
+// Antonov-225
+
+// Template: 
+#define Antonov_225_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  0, 0, 74, 38, -37, -19, ANIM]                                           \
+  [ 80, 0, 65, 33, -32, -16, ANIM]                                           \
+  [150, 0, 79, 37, -39, -19, ANIM]                                           \
+  [235, 0, 66, 40, -33, -20, ANIM]                                           \
+  [305, 0, 70, 46, -35, -23, ANIM]                                           \
+  [380, 0, 66, 40, -33, -20, ANIM]                                           \
+  [450, 0, 79, 37, -39, -19, ANIM]                                           \
+  [535, 0, 65, 33, -32, -16, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded_Transit, IMAGEFILE)                               \
+{                                                                            \
+  [  0, 50, 74, 38, -37, -19, ANIM]                                          \
+  [ 80, 50, 65, 33, -32, -16, ANIM]                                          \
+  [150, 50, 79, 37, -39, -19, ANIM]                                          \
+  [235, 50, 66, 40, -33, -20, ANIM]                                          \
+  [305, 50, 70, 46, -35, -23, ANIM]                                          \
+  [380, 50, 66, 40, -33, -20, ANIM]                                          \
+  [450, 50, 79, 37, -39, -19, ANIM]                                          \
+  [535, 50, 65, 33, -32, -16, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 74, 38, -37, -19, ANIM]                                         \
+  [ 80, 100, 65, 33, -32, -16, ANIM]                                         \
+  [150, 100, 79, 37, -39, -19, ANIM]                                         \
+  [235, 100, 66, 40, -33, -20, ANIM]                                         \
+  [305, 100, 70, 46, -35, -23, ANIM]                                         \
+  [380, 100, 66, 40, -33, -20, ANIM]                                         \
+  [450, 100, 79, 37, -39, -19, ANIM]                                         \
+  [535, 100, 65, 33, -32, -16, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  0, 150, 74, 39, -37, -20, ANIM]                                         \
+  [ 80, 150, 65, 33, -32, -16, ANIM]                                         \
+  [150, 150, 79, 37, -39, -19, ANIM]                                         \
+  [235, 150, 66, 40, -33, -20, ANIM]                                         \
+  [305, 150, 70, 46, -35, -23, ANIM]                                         \
+  [380, 150, 66, 40, -33, -20, ANIM]                                         \
+  [450, 150, 79, 37, -39, -19, ANIM]                                         \
+  [535, 150, 65, 33, -32, -16, ANIM]                                         \
+}                                                                            \
+spritegroup name##_Grounded                                                  \
+{ loading: [name##_Loading];                                                 \
+  loaded: [name##_Grounded_Transit]; }                                       \
+
+#define IMAGEFILE  "src/gfx/Antonov/An225/(0)Greyscale.png"
+purchase_sprite(Antonov_225, 450, 0, 79, 37, -39, -19)
+Antonov_225_sprite_layout_template(Antonov_225_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Antonov/An225/Ukraine.png"
+Antonov_225_sprite_layout_template(Antonov_225_Ukraine) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_Greyscale, flight_state())
+{
+  15: Antonov_225_Greyscale_Climbing;
+  18: Antonov_225_Greyscale_Flight;
+  21: Antonov_225_Greyscale_Climbing;
+  22: Antonov_225_Greyscale_Climbing;
+      Antonov_225_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_Ukraine, flight_state())
+{
+  15: Antonov_225_Ukraine_Climbing;
+  18: Antonov_225_Ukraine_Flight;
+  21: Antonov_225_Ukraine_Climbing;
+  22: Antonov_225_Ukraine_Climbing;
+      Antonov_225_Ukraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_sprites, cargo_subtype)
+{
+  1: Antonov_225_Ukraine;
+	 Antonov_225_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_running_cost_factor, flight_state())
+{
+  plane_RC(180)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(273); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(531); // airplane climbing after take-off
+      18: return plane_speed_kmh(846); // heading for tower contact point
+  16..20: return plane_speed_kmh(846); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Antonov_225_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ANTONOV);
+  1: string(STR_VLIV_ANTONOV_UKRAINE);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Antonov_225)
+{
+  property
+  {
+    name: string(STR_AIRV_ANTONOV_225);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1988), 12, 21);
+    vehicle_life: 35;
+    model_life: get_model_life(1988,2050);
+    retire_early: get_retire_early(1988,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2770;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Antonov_225_sprites;
+    purchase: Antonov_225_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Antonov_225_cargo_subtype_text;
+    speed: Antonov_225_speed;
+    running_cost_factor: Antonov_225_running_cost_factor;
+    sound_effect: Antonov_225_sound_effect;
+    mail_capacity: return 1500;
+
+    cost_factor: 274; 
+    purchase_running_cost_factor: 180;
+    purchase_speed: plane_speed_kmh(846); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Antonov_225)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Antonov_225)
+  {
+    property
+    { range: 2770; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Antonov_225)
+  {
+    property
+    { range: 4160; }
+  }
+}

@@ -1,0 +1,278 @@
+
+// Boeing-707-420
+
+// Template: 
+#define Boeing_707_420_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 53, 27, -27, -14, ANIM]                                           \
+  [ 65, 1, 49, 25, -25, -13, ANIM]                                           \
+  [130, 1, 57, 27, -29, -18, ANIM]                                           \
+  [195, 1, 48, 31, -24, -15, ANIM]                                           \
+  [260, 1, 53, 36, -27, -18, ANIM]                                           \
+  [325, 1, 48, 31, -24, -16, ANIM]                                           \
+  [390, 1, 57, 27, -29, -14, ANIM]                                           \
+  [455, 1, 49, 25, -25, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 53, 27, -26, -18, ANIM]                                          \
+  [ 65, 50, 49, 25, -25, -13, ANIM]                                          \
+  [130, 50, 57, 27, -29, -18, ANIM]                                          \
+  [195, 50, 48, 32, -24, -16, ANIM]                                          \
+  [260, 50, 53, 36, -26, -18, ANIM]                                          \
+  [325, 50, 48, 32, -24, -16, ANIM]                                          \
+  [390, 50, 57, 27, -29, -14, ANIM]                                          \
+  [455, 50, 49, 25, -25, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 52, 42, -26, -21, ANIM]                                         \
+  [ 65, 100, 47, 38, -24, -18, ANIM]                                         \
+  [130, 100, 55, 27, -28, -14, ANIM]                                         \
+  [195, 100, 46, 24, -23, -12, ANIM]                                         \
+  [260, 100, 52, 14, -26, -7 , ANIM]                                         \
+  [325, 100, 46, 24, -23, -12, ANIM]                                         \
+  [390, 100, 57, 27, -29, -14, ANIM]                                         \
+  [455, 100, 47, 38, -24, -18, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 170, 52, 27, -26, -14, ANIM]                                         \
+  [ 65, 170, 49, 25, -25, -13, ANIM]                                         \
+  [130, 170, 57, 27, -29, -18, ANIM]                                         \
+  [195, 170, 48, 32, -24, -16, ANIM]                                         \
+  [260, 170, 52, 32, -26, -16, ANIM]                                         \
+  [325, 170, 48, 32, -24, -16, ANIM]                                         \
+  [390, 170, 57, 27, -29, -14, ANIM]                                         \
+  [455, 170, 49, 25, -20, -11, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 215, 52, 35, -26, -18, ANIM]                                         \
+  [ 65, 215, 48, 30, -24, -15, ANIM]                                         \
+  [130, 215, 57, 26, -29, -14, ANIM]                                         \
+  [195, 215, 47, 28, -24, -14, ANIM]                                         \
+  [260, 215, 52, 23, -26, -12, ANIM]                                         \
+  [325, 215, 47, 28, -24, -14, ANIM]                                         \
+  [390, 215, 57, 27, -29, -14, ANIM]                                         \
+  [455, 215, 48, 30, -24, -15, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/(0)Greyscale.png"
+purchase_sprite(Boeing_707_420, 390, 1, 57, 27, -29, -14)
+Boeing_707_420_sprite_layout_template(Boeing_707_420_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/AirIndia.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_AirIndia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/BOAC.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_BOAC) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/BritishAirways.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_BritishAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/Condor.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_Condor) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/ElAl.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_ElAl) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/Lufthansa.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B707/B707-420/VARIG.png"
+Boeing_707_420_sprite_layout_template(Boeing_707_420_VARIG) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_Greyscale, flight_state())
+{
+  15: Boeing_707_420_Greyscale_Climbing;
+  18: Boeing_707_420_Greyscale_Flight;
+  21: Boeing_707_420_Greyscale_Landing;
+  22: Boeing_707_420_Greyscale_Touchdown;
+      Boeing_707_420_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_AirIndia, flight_state())
+{
+  15: Boeing_707_420_AirIndia_Climbing;
+  18: Boeing_707_420_AirIndia_Flight;
+  21: Boeing_707_420_AirIndia_Landing;
+  22: Boeing_707_420_AirIndia_Touchdown;
+      Boeing_707_420_AirIndia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_BOAC, flight_state())
+{
+  15: Boeing_707_420_BOAC_Climbing;
+  18: Boeing_707_420_BOAC_Flight;
+  21: Boeing_707_420_BOAC_Landing;
+  22: Boeing_707_420_BOAC_Touchdown;
+      Boeing_707_420_BOAC_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_BritishAirways, flight_state())
+{
+  15: Boeing_707_420_BritishAirways_Climbing;
+  18: Boeing_707_420_BritishAirways_Flight;
+  21: Boeing_707_420_BritishAirways_Landing;
+  22: Boeing_707_420_BritishAirways_Touchdown;
+      Boeing_707_420_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_Condor, flight_state())
+{
+  15: Boeing_707_420_Condor_Climbing;
+  18: Boeing_707_420_Condor_Flight;
+  21: Boeing_707_420_Condor_Landing;
+  22: Boeing_707_420_Condor_Touchdown;
+      Boeing_707_420_Condor_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_ElAl, flight_state())
+{
+  15: Boeing_707_420_ElAl_Climbing;
+  18: Boeing_707_420_ElAl_Flight;
+  21: Boeing_707_420_ElAl_Landing;
+  22: Boeing_707_420_ElAl_Touchdown;
+      Boeing_707_420_ElAl_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_Lufthansa, flight_state())
+{
+  15: Boeing_707_420_Lufthansa_Climbing;
+  18: Boeing_707_420_Lufthansa_Flight;
+  21: Boeing_707_420_Lufthansa_Landing;
+  22: Boeing_707_420_Lufthansa_Touchdown;
+      Boeing_707_420_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_VARIG, flight_state())
+{
+  15: Boeing_707_420_VARIG_Climbing;
+  18: Boeing_707_420_VARIG_Flight;
+  21: Boeing_707_420_VARIG_Landing;
+  22: Boeing_707_420_VARIG_Touchdown;
+      Boeing_707_420_VARIG_Grounded;
+}
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_sprites, cargo_subtype)
+{
+  1: Boeing_707_420_AirIndia;
+  2: Boeing_707_420_BOAC;
+  3: Boeing_707_420_BritishAirways;
+  4: Boeing_707_420_Condor;
+  5: Boeing_707_420_ElAl;
+  6: Boeing_707_420_Lufthansa;
+  7: Boeing_707_420_VARIG;
+     Boeing_707_420_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_running_cost_factor, flight_state())
+{
+  plane_RC(135)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(225); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(427); // airplane climbing after take-off
+      18: return plane_speed_kmh(991); // heading for tower contact point
+  16..20: return plane_speed_kmh(402); // in flight
+  21..22: return plane_speed_kmh(193); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;                          
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_INDIA_OLD);
+  2: string(STR_VLIV_BOAC);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  4: string(STR_VLIV_CONDOR);
+  5: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+  6: string(STR_VLIV_LUFTHANSA);
+  7: string(STR_VLIV_VARIG);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_707_420_cargo_subtype_capacity, cargo_subtype)
+{
+     return 189;
+}
+
+item (FEAT_AIRCRAFT, Boeing_707_420)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_707_420);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1960), 1, 1);
+    vehicle_life: 18;
+    model_life: get_model_life(1960,1978);
+    retire_early: get_retire_early(1960,1978);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 14;
+    passenger_capacity: 189;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2210;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_707_420_sprites;
+    purchase: Boeing_707_420_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_707_420_cargo_subtype_text;
+	passenger_capacity: Boeing_707_420_cargo_subtype_capacity;
+    speed: Boeing_707_420_speed;
+    running_cost_factor: Boeing_707_420_running_cost_factor;
+    sound_effect: Boeing_707_420_sound_effect;
+
+    cost_factor: 41; 
+    purchase_running_cost_factor: 135;
+    purchase_speed: plane_speed_kmh(991); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_420)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_420)
+  {
+    property
+    { range: 2210; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_707_420)
+  {
+    property
+    { range: 3320; }
+  }
+}

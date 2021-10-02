@@ -1,0 +1,177 @@
+
+// Ilyushin-76
+
+// Template: 
+#define Ilyushin_76_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 60, 24, -30, -12, ANIM]                                           \
+  [ 65, 1, 47, 25, -24, -13, ANIM]                                           \
+  [120, 1, 58, 32, -29, -16, ANIM]                                           \
+  [180, 1, 48, 37, -24, -19, ANIM]                                           \
+  [230, 1, 60, 42, -30, -21, ANIM]                                           \
+  [295, 1, 48, 37, -24, -19, ANIM]                                           \
+  [350, 1, 58, 32, -29, -16, ANIM]                                           \
+  [410, 1, 47, 25, -24, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded_Transit, IMAGEFILE)                               \
+{                                                                            \
+  [  1, 50, 60, 24, -30, -12, ANIM]                                          \
+  [ 65, 50, 47, 25, -24, -13, ANIM]                                          \
+  [120, 50, 58, 32, -29, -16, ANIM]                                          \
+  [180, 50, 48, 37, -24, -19, ANIM]                                          \
+  [230, 50, 60, 42, -30, -21, ANIM]                                          \
+  [295, 50, 48, 37, -24, -19, ANIM]                                          \
+  [350, 50, 58, 32, -29, -16, ANIM]                                          \
+  [410, 50, 47, 25, -24, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 95, 60, 38, -30, -19, ANIM]                                          \
+  [ 65, 95, 49, 34, -25, -17, ANIM]                                          \
+  [120, 95, 59, 31, -30, -16, ANIM]                                          \
+  [180, 95, 49, 27, -25, -14, ANIM]                                          \
+  [230, 95, 56, 27, -29, -14, ANIM]                                          \
+  [295, 95, 49, 27, -25, -14, ANIM]                                          \
+  [350, 95, 59, 31, -30, -16, ANIM]                                          \
+  [410, 95, 49, 34, -25, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 140, 60, 24, -30, -12, ANIM]                                         \
+  [ 65, 140, 47, 25, -24, -13, ANIM]                                         \
+  [120, 140, 58, 32, -29, -16, ANIM]                                         \
+  [180, 140, 51, 38, -26, -19, ANIM]                                         \
+  [230, 140, 60, 42, -30, -21, ANIM]                                         \
+  [295, 140, 48, 37, -24, -19, ANIM]                                         \
+  [350, 140, 58, 32, -29, -16, ANIM]                                         \
+  [410, 140, 47, 25, -24, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Loading, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 185, 60, 27, -30, -14, ANIM]                                         \
+  [ 65, 185, 47, 25, -28, -13, ANIM]                                         \
+  [120, 185, 58, 32, -29, -16, ANIM]                                         \
+  [180, 185, 48, 37, -24, -19, ANIM]                                         \
+  [230, 185, 60, 42, -30, -21, ANIM]                                         \
+  [295, 185, 48, 37, -24, -19, ANIM]                                         \
+  [350, 185, 58, 32, -29, -16, ANIM]                                         \
+  [410, 185, 47, 25, -28, -13, ANIM]                                         \
+}                                                                            \
+spritegroup name##_Grounded                                                  \
+{ loading: [name##_Loading];                                                 \
+  loaded: [name##_Grounded_Transit]; }                                       \
+
+#define IMAGEFILE  "src/gfx/Ilyushin/Il76/(0)Greyscale.png"
+purchase_sprite(Ilyushin_76, 350, 50, 58, 32, -29, -16)
+Ilyushin_76_sprite_layout_template(Ilyushin_76_Greyscale) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_Greyscale, flight_state())
+{
+  15: Ilyushin_76_Greyscale_Climbing;
+  18: Ilyushin_76_Greyscale_Flight;
+  21: Ilyushin_76_Greyscale_Climbing;
+  22: Ilyushin_76_Greyscale_Touchdown;
+      Ilyushin_76_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_sprites, cargo_subtype)
+{
+	 Ilyushin_76_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_running_cost_factor, flight_state())
+{
+  plane_RC(180)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(295); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(475); // airplane climbing after take-off
+      18: return plane_speed_kmh(798); // heading for tower contact point
+  16..20: return plane_speed_kmh(441); // in flight
+  21..22: return plane_speed_kmh(286); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Ilyushin_76_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ILYUSHIN);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Ilyushin_76)
+{
+  property
+  {
+    name: string(STR_AIRV_ILYUSHIN_76);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1974), 06, 01);
+    vehicle_life: 15;
+    model_life: get_model_life(1974,1997);
+    retire_early: get_retire_early(1974,1997);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 10;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1200;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Ilyushin_76_sprites;
+    purchase: Ilyushin_76_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Ilyushin_76_cargo_subtype_text;
+    speed: Ilyushin_76_speed;
+    running_cost_factor: Ilyushin_76_running_cost_factor;
+    sound_effect: Ilyushin_76_sound_effect;
+    mail_capacity: return 320;
+
+    cost_factor: 44; 
+    purchase_running_cost_factor: 214;
+    purchase_speed: plane_speed_kmh(798); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Ilyushin_76)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Ilyushin_76)
+  {
+    property
+    { range: 1200; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Ilyushin_76)
+  {
+    property
+    { range: 1800; }
+  }
+}

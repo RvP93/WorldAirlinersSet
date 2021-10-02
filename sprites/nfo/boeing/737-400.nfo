@@ -1,0 +1,714 @@
+START_SECTION(Planes-Boeing-737-400)
+// Action 0
+    A0_PLANES(AIRV_BOEING_737_400, 1, 18)
+        00 \w1985-01-01  //Introduction Date
+			  03 1E  //Vehicle Life In Years
+				04 10  //Model Life in Years
+				06 0F  //Climate Availability
+				07 \b22 // Loading Speed
+				08 FF  // New gfx
+				09 02  //Helicopter?
+				0A 00  //Large?  
+				0C 47  //Speed in mph/8 
+				0D 02  // Accleration
+				0F \w168  //Passenger Capacity   
+				11 \b17  //Mail Capacity 
+				12 07  //Sound Effect (Jet)
+				13 00 00 00 00 //Cargo Types For Refitting
+				14 20    
+				16 02  //Retire Vehicle Early 
+				18 \wx0001
+				19 \wx03FE //Subtract 4 for Tourists
+		
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_737_400, 1, 1)
+                     1F \w755
+        
+  -1 * 0   10 F1    
+    		
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/(0)Greyscale.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/ABAirlines.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(Landor).pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/USAirways.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/JAT.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(UnionFlag).pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/Alaska.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/AlaskaDisney.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/KLM.pcx
+    spr() 1 1 09 23 41 -21 -12
+    spr() 50 1 09 19 37 -19 -10
+    spr() 90 1 09 23 44 -22 -12
+    spr() 140 1 09 31 36 -18 -16
+    spr() 180 1 09 32 41 -21 -16
+    spr() 230 1 09 31 36 -18 -16
+    spr() 270 1 09 23 44 -22 -12
+    spr() 320 1 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+
+  142 * 22	 02 03 F0 81 F2 00 FF 09 // In Flight
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // ABAirlines
+                               02 00 04 04  // BritishAirways(Landor)
+                               03 00 08 08  // USAirways
+                               04 00 06 06  // JAT
+                               05 00 05 05  // BritishAirways(UnionFlag)
+                               06 00 02 02  // Alaska
+                               07 00 03 03  // Alaska Disney
+                               08 00 07 07  // KLM			     
+                               FF FF        // End livery graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/(0)Greyscale.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/ABAirlines.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(Landor).pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/USAirways.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/JAT.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(UnionFlag).pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/Alaska.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/AlaskaDisney.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/KLM.pcx
+    spr() 1 35 09 23 41 -21 -12
+    spr() 50 35 09 19 37 -19 -10
+    spr() 90 35 09 23 44 -22 -12
+    spr() 140 35 09 31 36 -18 -16
+    spr() 180 35 09 32 41 -21 -16
+    spr() 230 35 09 31 36 -18 -16
+    spr() 270 35 09 23 44 -22 -12
+    spr() 320 35 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+
+  143 * 22	 02 03 F1 81 F2 00 FF 09 // Taxing or Initiating Approach         
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // ABAirlines
+                               02 00 04 04  // BritishAirways(Landor)
+                               03 00 08 08  // USAirways
+                               04 00 06 06  // JAT
+                               05 00 05 05  // BritishAirways(UnionFlag)
+                               06 00 02 02  // Alaska
+                               07 00 03 03  // Alaska Disney
+                               08 00 07 07  // KLM			     
+                               FF FF        // End livery graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/(0)Greyscale.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/ABAirlines.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(Landor).pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/USAirways.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/JAT.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(UnionFlag).pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/Alaska.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION  
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/AlaskaDisney.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION 
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/KLM.pcx
+    spr() 1 70 09 32 40 -20 -16
+    spr() 50 70 09 29 34 -17 -15
+    spr() 90 70 09 23 44 -22 -12
+    spr() 140 70 09 21 34 -17 -11
+    spr() 180 70 09 14 36 -18 -7
+    spr() 230 70 09 21 34 -17 -11
+    spr() 270 70 09 23 44 -22 -12
+    spr() 320 70 09 29 34 -17 -15
+    #undef SPRITE_LOCATION  
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+
+  144 * 22	 02 03 F2 81 F2 00 FF 09 // Take Off 
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // ABAirlines
+                               02 00 04 04  // BritishAirways(Landor)
+                               03 00 08 08  // USAirways
+                               04 00 06 06  // JAT
+                               05 00 05 05  // BritishAirways(UnionFlag)
+                               06 00 02 02  // Alaska
+                               07 00 03 03  // Alaska Disney
+                               08 00 07 07  // KLM			     
+                               FF FF        // End livery graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/(0)Greyscale.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/ABAirlines.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(Landor).pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/USAirways.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/JAT.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(UnionFlag).pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/Alaska.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/AlaskaDisney.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/KLM.pcx
+    spr() 1 110 09 22 40 -20 -11
+    spr() 50 110 09 19 37 -19 -10
+    spr() 90 110 09 23 44 -22 -12
+    spr() 140 110 09 31 36 -18 -16
+    spr() 180 110 09 27 40 -20 -14
+    spr() 230 110 09 31 36 -18 -16
+    spr() 270 110 09 23 44 -22 -12
+    spr() 320 110 09 19 37 -19 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+
+  145 * 22	 02 03 F3 81 F2 00 FF 09 // Landed On Runway     
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // ABAirlines
+                               02 00 04 04  // BritishAirways(Landor)
+                               03 00 08 08  // USAirways
+                               04 00 06 06  // JAT
+                               05 00 05 05  // BritishAirways(UnionFlag)
+                               06 00 02 02  // Alaska
+                               07 00 03 03  // Alaska Disney
+                               08 00 07 07  // KLM			     
+                               FF FF        // End livery graphical selection
+
+    A1_PLANES(9,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/(0)Greyscale.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/ABAirlines.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(Landor).pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/USAirways.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/JAT.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/BritishAirways(UnionFlag).pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/Alaska.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/AlaskaDisney.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b737-400/KLM.pcx
+    spr() 1 145 09 27 40 -20 -14
+    spr() 50 145 09 23 36 -18 -12
+    spr() 90 145 09 23 44 -22 -12
+    spr() 140 145 09 27 36 -18 -14
+    spr() 180 145 09 21 40 -20 -11
+    spr() 230 145 09 27 36 -18 -14
+    spr() 270 145 09 23 44 -22 -12
+    spr() 320 145 09 23 36 -18 -12
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+
+  146 * 22	 02 03 F4 81 F2 00 FF 09 // Final Approach       
+                               00 00 00 00  // Greyscale
+                               01 00 01 01  // ABAirlines
+                               02 00 04 04  // BritishAirways(Landor)
+                               03 00 08 08  // USAirways
+                               04 00 06 06  // JAT
+                               05 00 05 05  // BritishAirways(UnionFlag)
+                               06 00 02 02  // Alaska
+                               07 00 03 03  // Alaska Disney
+                               08 00 07 07  // KLM			     
+                               FF FF        // End livery graphical selection
+
+// ----------------------------
+// ---- Different liveries ----
+// ----------------------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 09         // 9 liveries
+                               00 80 00 00   // Greyscale
+                               41 80 01 01   // AB Airlines
+                               4E 80 02 02   // Alaska   
+                               4F 80 03 03   // Alaska Disney
+                               29 80 04 04   // British Airways (Landor)
+                               54 80 05 05   // British Airways (Union Flag) 
+                               59 80 06 06   // JAT
+                               73 80 07 07   // KLM		
+                               45 80 08 08   // US Airways
+                               FF FF         // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             20 80 0F 0F   // Climbing
+                             47 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             14 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32853 0D 0F // Take Off
+                             \w32844 12 12 // Flight
+                             \w32846 10 14 // Approach
+                             \w32849 15 16 // Landing
+                             \w32815 08 0C // Grounded	
+                             \w32805       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+
+   -1 * 0  02 03 05 81 10 00 FF 02
+				                     \w32817 0B 0B // Purchase Cost Purchase List
+				                     \w32844 0E 0E // Running Cost Purchase List
+                             00 00 	
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0    02 03 08 81 0C 00 FF 01         // Text Callback's (Purchase List)   
+                               05 00 36 36 
+                               5F 00                                   
+
+  150 * 7	   03 03 01 AIRV_BOEING_737_400 01
+                               FF 08 00
+                               07 00  
+
+END_SECTION(Planes-Boeing-737-400)

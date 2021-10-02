@@ -1,0 +1,854 @@
+START_SECTION(Planes-Airbus-A340-600)  
+
+    A0_PLANES(AIRV_AIRBUS_A340_600, 1, 19)
+        00 \w2002-01-01  //Introduction Date
+        03 1E  //Vehicle Life In Years
+        04 FF  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b47 // Loading Speed in pax
+        08 FF  // New gfx
+        09 02  //Helicopter?
+        0A 01  //Large?  
+        0C 47  //Speed in mph/8  
+        0D 02 // Accleration
+        0F \w440  //Passenger Capacity   
+        11 \b44  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        17 02  //2CC
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_AIRBUS_A340_600, 1, 1)
+                     1F \w2635
+        
+  -1 * 0   10 F1
+
+   A1_PLANES(11,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/(0)Greyscale.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Lufthansa.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Virgin.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Thai.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/SouthAfrican.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/ChinaEastern.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Iberia.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Qatar.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Hainan.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Etihad.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/EtihadF1.pcx
+    spr() 01 01 09 36 68 -34 -18
+    spr() 75 01 09 31 60 -30 -16
+    spr() 140 01 09 36 76 -38 -18
+    spr() 220 01 09 42 59 -30 -21
+    spr() 285 01 09 44 66 -33 -22
+    spr() 355 01 09 42 59 -30 -21
+    spr() 420 01 09 36 76 -39 -19
+    spr() 500 01 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+
+  142 * 22	 02 03 F0 81 F2 00 FF 0B // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // Lufthansa
+                             02 00 0A 0A // Virgin
+                             03 00 09 09 // Thai Airways
+                             04 00 08 08 // South African
+                             05 00 01 01 // China Eastern
+                             06 00 05 05 // Iberia
+                             07 00 07 07 // Qatar
+                             08 00 04 04 // Hainan Airlines
+                             09 00 02 02 // Etihad
+                             0A 00 03 03 // EtihadF1
+                             FF FF
+
+   A1_PLANES(11,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/(0)Greyscale.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Lufthansa.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Virgin.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Thai.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/SouthAfrican.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/ChinaEastern.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Iberia.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Qatar.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Hainan.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Etihad.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/EtihadF1.pcx
+    spr() 01 50 09 36 68 -34 -18
+    spr() 75 50 09 31 60 -30 -16
+    spr() 140 50 09 36 76 -38 -18
+    spr() 220 50 09 44 59 -30 -22
+    spr() 285 50 09 45 66 -33 -23
+    spr() 355 50 09 44 59 -30 -22
+    spr() 420 50 09 36 76 -38 -18
+    spr() 500 50 09 31 60 -30 -16
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+
+  143 * 22	 02 03 F1 81 F2 00 FF 0B // Taxing or Initiating Approach         
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // Lufthansa
+                             02 00 0A 0A // Virgin
+                             03 00 09 09 // Thai Airways
+                             04 00 08 08 // South African
+                             05 00 01 01 // China Eastern
+                             06 00 05 05 // Iberia
+                             07 00 07 07 // Qatar
+                             08 00 04 04 // Hainan Airlines
+                             09 00 02 02 // Etihad
+                             0A 00 03 03 // EtihadF1
+                             FF FF
+
+   A1_PLANES(11,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/(0)Greyscale.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Lufthansa.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Virgin.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Thai.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/SouthAfrican.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/ChinaEastern.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Iberia.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Qatar.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Hainan.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Etihad.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/EtihadF1.pcx
+    spr() 01 100 09 53 66 -33 -27
+    spr() 75 100 09 49 59 -30 -25
+    spr() 140 100 09 35 72 -36 -18
+    spr() 220 100 09 29 59 -30 -15
+    spr() 285 100 09 19 64 -32 -10 
+    spr() 355 100 09 29 59 -30 -15
+    spr() 420 100 09 35 72 -36 -18
+    spr() 500 100 09 49 59 -30 -25
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+
+  144 * 22	 02 03 F2 81 F2 00 FF 0B // Take Off 
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // Lufthansa
+                             02 00 0A 0A // Virgin
+                             03 00 09 09 // Thai Airways
+                             04 00 08 08 // South African
+                             05 00 01 01 // China Eastern
+                             06 00 05 05 // Iberia
+                             07 00 07 07 // Qatar
+                             08 00 04 04 // Hainan Airlines
+                             09 00 02 02 // Etihad
+                             0A 00 03 03 // EtihadF1
+                             FF FF
+
+   A1_PLANES(11,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/(0)Greyscale.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Lufthansa.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Virgin.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Thai.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/SouthAfrican.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/ChinaEastern.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Iberia.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Qatar.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Hainan.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Etihad.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/EtihadF1.pcx
+    spr() 01 155 09 32 68 -34 -16
+    spr() 75 155 09 31 60 -30 -16
+    spr() 140 155 09 36 76 -38 -18
+    spr() 220 155 09 44 60 -30 -22
+    spr() 285 155 09 41 66 -33 -21
+    spr() 355 155 09 44 60 -30 -22
+    spr() 420 155 09 36 76 -38 -18
+    spr() 500 155 09 31 61 -31 -16
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+
+  145 * 22	 02 03 F3 81 F2 00 FF 0B // Landed On Runway     
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // Lufthansa
+                             02 00 0A 0A // Virgin
+                             03 00 09 09 // Thai Airways
+                             04 00 08 08 // South African
+                             05 00 01 01 // China Eastern
+                             06 00 05 05 // Iberia
+                             07 00 07 07 // Qatar
+                             08 00 04 04 // Hainan Airlines
+                             09 00 02 02 // Etihad
+                             0A 00 03 03 // EtihadF1
+                             FF FF
+
+
+   A1_PLANES(11,8)
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/(0)Greyscale.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Lufthansa.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Virgin.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Thai.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/SouthAfrican.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/ChinaEastern.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Iberia.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Qatar.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Hainan.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/Etihad.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/airbus/a340-600/EtihadF1.pcx
+    spr() 01 205 09 45 68 -34 -23
+    spr() 75 205 09 39 60 -30 -20
+    spr() 140 205 09 35 73 -37 -18
+    spr() 220 205 09 37 59 -30 -19
+    spr() 285 205 09 35 68 -34 -18
+    spr() 355 205 09 37 59 -30 -19
+    spr() 420 205 09 35 73 -37 -18
+    spr() 500 205 09 39 60 -30 -20
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+   27 * 9	 02 03 05 01 01 \w5 \w5
+   27 * 9	 02 03 06 01 01 \w6 \w6
+   27 * 9	 02 03 07 01 01 \w7 \w7
+   27 * 9	 02 03 08 01 01 \w8 \w8
+   27 * 9	 02 03 09 01 01 \w9 \w9
+   27 * 9	 02 03 0A 01 01 \w10 \w10
+
+  146 * 22	 02 03 F4 81 F2 00 FF 0B // Final Approach       
+                             00 00 00 00 // Greyscale
+                             01 00 06 06 // Lufthansa
+                             02 00 0A 0A // Virgin
+                             03 00 09 09 // Thai Airways
+                             04 00 08 08 // South African
+                             05 00 01 01 // China Eastern
+                             06 00 05 05 // Iberia
+                             07 00 07 07 // Qatar
+                             08 00 04 04 // Hainan Airlines
+                             09 00 02 02 // Etihad
+                             0A 00 03 03 // EtihadF1
+                             FF FF
+
+   A1_PLANES(1,1)
+
+    -1 sprites/pcx/airbus/a340-300/(0)Greyscale.pcx 415 9 09 21 69 -35 -11
+
+   27 * 9	 02 03 4C 01 01 \w0 \w0
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 0B // 11 liveries
+                             00 80 00 00 // Greyscale
+                             67 80 01 01 // China Eastern
+                             8F 80 02 02 // Etihad
+                             7E 80 03 03 // EtihadF1
+                             52 80 04 04 // Hainan Airlines
+                             15 80 05 05 // Iberia
+                             69 80 06 06 // Lufthansa
+                             9A 80 07 07 // Qatar
+                             1E 80 08 08 // South African
+                             70 80 09 09 // Thai Airways
+                             57 80 0A 0A // Virgin
+                             FF FF // End
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             16 80 0D 0D   // Take Off 
+                             25 80 0F 0F   // Climbing
+                             47 80 12 12   // Flight
+                             22 80 10 14   // Approach
+                             13 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w33052 0D 0F // Take Off
+                             \w33027 12 12 // Flight
+                             \w33032 10 14 // Approach
+                             \w33042 15 16 // Landing
+                             \w32932 08 0C // Grounded	
+                             \w32887       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                    \w32999 0B 0B //Purchase Cost Purchase List
+				                    \w33027 0E 0E //Running Cost Purchase List
+                            00 00
+ 
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00                             			
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                                 05 00 36 36 // Cost
+                                 4C 00
+
+   -1 * 0     03 03 01 AIRV_AIRBUS_A340_600 01  
+                             FF 08 00      // P-List
+                             07 00         // Default 
+
+END_SECTION(Planes-Airbus-A340-600)  

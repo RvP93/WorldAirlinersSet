@@ -1,0 +1,318 @@
+START_SECTION(Planes-Boeing-717-200)
+// Action 0
+    A0_PLANES(AIRV_BOEING_717_200, 1, 18)
+        00 \w1999-01-01  //Introduction Date
+        03 0E  //Vehicle Life In Years
+        04 07  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b10 // Loading Speed
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()
+        0C 47  //Speed in mph/8 
+        0D 02  // Accleration
+        0F \w117  //Passenger Capacity   
+        11 \b12  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 02  //Retire Vehicle Early 
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_BOEING_717_200, 1, 1)
+                     1F \w870
+        
+  -1 * 0   10 F1
+		
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/(0)Greyscale.pcx
+    spr() 1 1 09 19 34 -17 -10
+    spr() 40 1 09 17 39 -20 -9
+    spr() 85 1 09 20 47 -24 -10
+    spr() 135 1 09 28 38 -19 -14
+    spr() 180 1 09 32 34 -17 -16
+    spr() 220 1 09 28 38 -19 -14
+    spr() 260 1 09 20 47 -24 -10
+    spr() 310 1 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/QantasLink.pcx
+    spr() 1 1 09 19 34 -17 -10
+    spr() 40 1 09 17 39 -20 -9
+    spr() 85 1 09 20 47 -24 -10
+    spr() 135 1 09 28 38 -19 -14
+    spr() 180 1 09 32 34 -17 -16
+    spr() 220 1 09 28 38 -19 -14
+    spr() 260 1 09 20 47 -24 -10
+    spr() 310 1 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION  
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/Spanair.pcx
+    spr() 1 1 09 19 34 -17 -10
+    spr() 40 1 09 17 39 -20 -9
+    spr() 85 1 09 20 47 -24 -10
+    spr() 135 1 09 28 38 -19 -14
+    spr() 180 1 09 32 34 -17 -16
+    spr() 220 1 09 28 38 -19 -14
+    spr() 260 1 09 20 47 -24 -10
+    spr() 310 1 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F0 81 F2 00 FF 03 // In Flight
+			                       00 00 00 00 // Greyscale
+			                       01 00 01 01 // Qantas Link
+			                       02 00 02 02 // Spanair
+                             FF FF       // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/(0)Greyscale.pcx
+    spr() 1 35 09 19 34 -17 -10
+    spr() 40 35 09 17 39 -20 -9
+    spr() 85 35 09 20 47 -24 -10
+    spr() 135 35 09 28 38 -19 -14
+    spr() 180 35 09 32 34 -17 -16
+    spr() 220 35 09 28 38 -19 -14
+    spr() 260 35 09 20 47 -24 -10
+    spr() 310 35 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/QantasLink.pcx
+    spr() 1 35 09 19 34 -17 -10
+    spr() 40 35 09 17 39 -20 -9
+    spr() 85 35 09 20 47 -24 -10
+    spr() 135 35 09 28 38 -19 -14
+    spr() 180 35 09 32 34 -17 -16
+    spr() 220 35 09 28 38 -19 -14
+    spr() 260 35 09 20 47 -24 -10
+    spr() 310 35 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION 
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/Spanair.pcx
+    spr() 1 35 09 19 34 -17 -10
+    spr() 40 35 09 17 39 -20 -9
+    spr() 85 35 09 20 47 -24 -10
+    spr() 135 35 09 28 38 -19 -14
+    spr() 180 35 09 32 34 -17 -16
+    spr() 220 35 09 28 38 -19 -14
+    spr() 260 35 09 20 47 -24 -10
+    spr() 310 35 09 17 39 -20 -9 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F1 81 F2 00 FF 03 // In Flight
+			                       00 00 00 00 // Greyscale
+			                       01 00 01 01 // Qantas Link
+			                       02 00 02 02 // Spanair
+                             FF FF       // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/(0)Greyscale.pcx
+    spr() 1 70 09 29 34 -17 -15
+    spr() 40 70 09 26 38 -19 -13
+    spr() 85 70 09 19 46 -23 -10
+    spr() 135 70 09 18 38 -19 -9
+    spr() 180 70 09 19 28 -14 -10
+    spr() 220 70 09 18 38 -19 -9
+    spr() 260 70 09 19 46 -23 -10
+    spr() 310 70 09 25 38 -19 -13 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/QantasLink.pcx
+    spr() 1 70 09 29 34 -17 -15
+    spr() 40 70 09 26 38 -19 -13
+    spr() 85 70 09 19 46 -23 -10
+    spr() 135 70 09 18 38 -19 -9
+    spr() 180 70 09 19 28 -14 -10
+    spr() 220 70 09 18 38 -19 -9
+    spr() 260 70 09 19 46 -23 -10
+    spr() 310 70 09 25 38 -19 -13 
+    #undef SPRITE_LOCATION   
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/Spanair.pcx
+    spr() 1 70 09 29 34 -17 -15
+    spr() 40 70 09 26 38 -19 -13
+    spr() 85 70 09 19 46 -23 -10
+    spr() 135 70 09 18 38 -19 -9
+    spr() 180 70 09 19 28 -14 -10
+    spr() 220 70 09 18 38 -19 -9
+    spr() 260 70 09 19 46 -23 -10
+    spr() 310 70 09 25 38 -19 -13 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F2 81 F2 00 FF 03 // In Flight
+			                       00 00 00 00 // Greyscale
+			                       01 00 01 01 // Qantas Link
+			                       02 00 02 02 // Spanair
+                             FF FF       // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/(0)Greyscale.pcx
+    spr() 1 105 09 19 34 -17 -10
+    spr() 40 105 09 17 39 -20 -9
+    spr() 85 105 09 20 47 -24 -10
+    spr() 135 105 09 28 38 -19 -14
+    spr() 180 105 09 32 34 -17 -16
+    spr() 220 105 09 28 38 -19 -14
+    spr() 260 105 09 20 47 -24 -10
+    spr() 310 105 09 17 38 -19 -9 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/QantasLink.pcx
+    spr() 1 105 09 19 34 -17 -10
+    spr() 40 105 09 17 39 -20 -9
+    spr() 85 105 09 20 47 -24 -10
+    spr() 135 105 09 28 38 -19 -14
+    spr() 180 105 09 32 34 -17 -16
+    spr() 220 105 09 28 38 -19 -14
+    spr() 260 105 09 20 47 -24 -10
+    spr() 310 105 09 17 38 -19 -9 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/Spanair.pcx
+    spr() 1 105 09 19 34 -17 -10
+    spr() 40 105 09 17 39 -20 -9
+    spr() 85 105 09 20 47 -24 -10
+    spr() 135 105 09 28 38 -19 -14
+    spr() 180 105 09 32 34 -17 -16
+    spr() 220 105 09 28 38 -19 -14
+    spr() 260 105 09 20 47 -24 -10
+    spr() 310 105 09 17 38 -19 -9 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F3 81 F2 00 FF 03 // In Flight
+			                       00 00 00 00 // Greyscale
+			                       01 00 01 01 // Qantas Link
+			                       02 00 02 02 // Spanair
+                             FF FF       // End livery graphical selection
+
+    A1_PLANES(3,8)
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/(0)Greyscale.pcx
+    spr() 1 140 09 23 34 -17 -12
+    spr() 40 140 09 20 39 -20 -10
+    spr() 85 140 09 17 47 -24 -9
+    spr() 135 140 09 23 37 -19 -12
+    spr() 180 140 09 27 32 -16 -14
+    spr() 220 140 09 23 37 -19 -12
+    spr() 260 140 09 17 47 -24 -9
+    spr() 310 140 09 21 39 -20 -11 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/QantasLink.pcx
+    spr() 1 140 09 23 34 -17 -12
+    spr() 40 140 09 20 39 -20 -10
+    spr() 85 140 09 17 47 -24 -9
+    spr() 135 140 09 23 37 -19 -12
+    spr() 180 140 09 27 32 -16 -14
+    spr() 220 140 09 23 37 -19 -12
+    spr() 260 140 09 17 47 -24 -9
+    spr() 310 140 09 21 39 -20 -11 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/boeing/b717-200/Spanair.pcx
+    spr() 1 140 09 23 34 -17 -12
+    spr() 40 140 09 20 39 -20 -10
+    spr() 85 140 09 17 47 -24 -9
+    spr() 135 140 09 23 37 -19 -12
+    spr() 180 140 09 27 32 -16 -14
+    spr() 220 140 09 23 37 -19 -12
+    spr() 260 140 09 17 47 -24 -9
+    spr() 310 140 09 21 39 -20 -11 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-FF
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+
+  142 * 22	 02 03 F4 81 F2 00 FF 03 // In Flight
+			                       00 00 00 00 // Greyscale
+			                       01 00 01 01 // Qantas Link
+			                       02 00 02 02 // Spanair
+                             FF FF       // End livery graphical selection
+
+// ----------------------------
+// ---- Different liveries ----
+// ----------------------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+   -1 * 0	 02 03 01 81 F2 00 FF 03          // 3 liveries
+                             00 80 00 00 // first livery textline
+                             97 80 01 01 // Qantas Link 
+                             16 80 02 02 // Spanair			     
+                             FF FF       // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             13 80 0D 0D   // Take Off 
+                             22 80 0F 0F   // Climbing
+                             47 80 12 12   // Flight
+                             24 80 10 14   // Approach
+                             14 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32832 0D 0F // Take Off
+                             \w32827 12 12 // Flight
+                             \w32828 10 14 // Approach
+                             \w32830 15 16 // Landing
+                             \w32808 08 0C // Grounded	
+                             \w32802       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32802 0B 0B //Purchase Cost Purchase List
+				                     \w32827 0E 0E //Running Cost Purchase List
+                             00 00 	
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0  02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // Cost
+                             5F 00                                  
+
+  150 * 7	 03 03 01 AIRV_BOEING_717_200 01
+                             FF 08 00      // P-List
+                             07 00         // Default
+
+END_SECTION(Planes-Boeing-717-200)

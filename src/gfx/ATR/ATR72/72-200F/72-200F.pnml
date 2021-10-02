@@ -1,0 +1,201 @@
+
+// ATR-72-200F
+
+// Template: 
+#define ATR_72_200F_sprite_layout_template(name)                             \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 46, 23, -23, -12, ANIM]                                           \
+  [ 50,	1, 40, 20, -20,	-10, ANIM]                                           \
+  [ 93,	1, 50, 23, -25,	-12, ANIM]                                           \
+  [146,	1, 41, 29, -21,	-15, ANIM]                                           \
+  [190,	1, 46, 34, -23,	-17, ANIM]                                           \
+  [240,	1, 41, 29, -21,	-15, ANIM]                                           \
+  [283,	1, 50, 23, -25,	-12, ANIM]                                           \
+  [336,	1, 40, 20, -20,	-10, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 39, 46, 23, -23, -12, ANIM]                                          \
+  [ 50, 39, 40, 20, -20, -10, ANIM]                                          \
+  [ 93, 39, 50, 23, -25, -12, ANIM]                                          \
+  [146, 39, 41, 31, -21, -16, ANIM]                                          \
+  [190, 39, 46, 35, -23, -18, ANIM]                                          \
+  [240, 39, 41, 31, -21, -16, ANIM]                                          \
+  [283, 39, 50, 23, -25, -12, ANIM]                                          \
+  [336, 39, 40, 20, -20, -10, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 78, 46, 35, -18, -18, ANIM]                                          \
+  [ 50, 78, 40, 29, -20, -15, ANIM]                                          \
+  [ 93, 78, 51, 24, -26, -12, ANIM]                                          \
+  [146, 78, 39, 17, -20, -9 , ANIM]                                          \
+  [190, 78, 44, 20, -22, -10, ANIM]                                          \
+  [240, 78, 39, 17, -20, -9 , ANIM]                                          \
+  [283, 78, 51, 24, -26, -12, ANIM]                                          \
+  [336, 78, 40, 29, -20, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 116, 46, 23, -23, -12, ANIM]                                         \
+  [ 50, 116, 40, 20, -20, -10, ANIM]                                         \
+  [ 93, 116, 50, 23, -25, -12, ANIM]                                         \
+  [146, 116, 41, 31, -21, -16, ANIM]                                         \
+  [190, 116, 46, 35, -23, -18, ANIM]                                         \
+  [240, 116, 41, 31, -21, -16, ANIM]                                         \
+  [283, 116, 50, 23, -25, -12, ANIM]                                         \
+  [336, 116, 40, 20, -20, -10, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 160, 46, 28, -23, -14, ANIM]                                         \
+  [ 50, 160, 40, 23, -20, -12, ANIM]                                         \
+  [ 93, 160, 50, 23, -25, -12, ANIM]                                         \
+  [146, 160, 39, 25, -20, -13, ANIM]                                         \
+  [190, 160, 46, 27, -23, -14, ANIM]                                         \
+  [240, 160, 39, 25, -20, -13, ANIM]                                         \
+  [283, 160, 50, 23, -25, -12, ANIM]                                         \
+  [336, 160, 40, 23, -20, -12, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-200F/(0)Greyscale.png"
+purchase_sprite(ATR_72_200F, 283, 39, 50, 23, -25, -12)
+ATR_72_200F_sprite_layout_template(ATR_72_200F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-200F/FarnairEurope.png"
+ATR_72_200F_sprite_layout_template(ATR_72_200F_FarnairEurope) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/ATR/ATR72/72-200F/Fedex.png"
+ATR_72_200F_sprite_layout_template(ATR_72_200F_Fedex) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_Greyscale, flight_state())
+{
+  15: ATR_72_200F_Greyscale_Climbing;
+  18: ATR_72_200F_Greyscale_Flight;
+  21: ATR_72_200F_Greyscale_Landing;
+  22: ATR_72_200F_Greyscale_Touchdown;
+      ATR_72_200F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_FarnairEurope, flight_state())
+{
+  15: ATR_72_200F_FarnairEurope_Climbing;
+  18: ATR_72_200F_FarnairEurope_Flight;
+  21: ATR_72_200F_FarnairEurope_Landing;
+  22: ATR_72_200F_FarnairEurope_Touchdown;
+      ATR_72_200F_FarnairEurope_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_Fedex, flight_state())
+{
+  15: ATR_72_200F_Fedex_Climbing;
+  18: ATR_72_200F_Fedex_Flight;
+  21: ATR_72_200F_Fedex_Landing;
+  22: ATR_72_200F_Fedex_Touchdown;
+      ATR_72_200F_Fedex_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_sprites, cargo_subtype)
+{
+  1: ATR_72_200F_FarnairEurope;
+  2: ATR_72_200F_Fedex;
+     ATR_72_200F_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_running_cost_factor, flight_state())
+{
+  plane_RC(39)
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(257); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(346); // airplane climbing after take-off
+      18: return plane_speed_kmh(523); // heading for tower contact point
+  16..20: return plane_speed_kmh(362); // in flight
+  21..22: return plane_speed_kmh(217); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_sound_effect, extra_callback_info1)
+{
+  SOUND_EVENT_START     : sound("src/sound/av_turbogo.wav");
+  SOUND_EVENT_TOUCHDOWN : sound("src/sound/av_landturbo.wav");
+                          return CB_RESULT_NO_SOUND;
+}
+
+switch (FEAT_AIRCRAFT, SELF, ATR_72_200F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_ATR);
+  1: string(STR_VLIV_FARNAIR_EUROPE);
+  2: string(STR_VLIV_FEDEX);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, ATR_72_200F)
+{
+  property
+  {
+    name: string(STR_AIRV_ATR_72_200F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1991), 1, 1);
+    vehicle_life: 11;
+    model_life: get_model_life(1991,2024);
+    retire_early: get_retire_early(1991,2024);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_SMALL;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 5;
+    passenger_capacity: 0;
+    mail_capacity: 66;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 290;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: ATR_72_200F_sprites;
+    purchase: ATR_72_200F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: ATR_72_200F_cargo_subtype_text;
+    speed: ATR_72_200F_speed;
+    running_cost_factor: ATR_72_200F_running_cost_factor;
+    sound_effect: ATR_72_200F_sound_effect;
+
+    cost_factor: 19; 
+    purchase_running_cost_factor: 39;
+    purchase_speed: plane_speed_kmh(523); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, ATR_72_200F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, ATR_72_200F)
+  {
+    property
+    { range: 290; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, ATR_72_200F)
+  {
+    property
+    { range: 435; }
+  }
+}

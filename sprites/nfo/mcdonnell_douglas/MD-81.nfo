@@ -1,0 +1,450 @@
+START_SECTION(Planes-MCDONNELL-DOUGLAS-MD-81)
+
+    A0_PLANES(AIRV_MCDONNELL_DOUGLAS_MD_81, 1, 18)
+        00 \w1980-01-01  //Introduction Date
+        03 19  //Vehicle Life In Years
+        04 0C  //Model Life in Years
+        06 0F  //Climate Availability
+        07 \b16 // Loading Speed
+        A0_SET_AIR_PROP_USE_NEW_SPRITE()
+        A0_SET_AIR_PROP_NOT_HELICOPTER()
+        A0_SET_AIR_PROP_SMALL()
+        0C 3F  //Speed in mph/8 
+        0D 02  // Accleration
+        0F \w172  //Passenger Capacity   
+        11 \b17  //Mail Capacity 
+        12 07  //Sound Effect (Jet)
+        13 00 00 00 00 //Cargo Types For Refitting
+        14 20    
+        16 0A  //Retire Vehicle Early 
+        18 \wx0001
+        19 \wx03FE //Subtract 4 for Tourists
+
+  -1 * 0	 09 rangepar 01 02 00 F1  // (skip to F1)  
+        
+  A0_PLANES(AIRV_MCDONNELL_DOUGLAS_MD_81, 1, 1)
+                     1F \w525
+        
+  -1 * 0   10 F1
+				
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/(0)Greyscale.pcx
+    spr() 1 1 09 22 34 -17 -11
+    spr() 40 1 09 19 44 -22 -10
+    spr() 90 1 09 20 52 -26 -10
+    spr() 150 1 09 31 43 -22 -16
+    spr() 200 1 09 35 34 -17 -18
+    spr() 240 1 09 31 43 -22 -16
+    spr() 290 1 09 20 52 -26 -10
+    spr() 350 1 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JapanAirSystems.pcx
+    spr() 1 1 09 22 34 -17 -11
+    spr() 40 1 09 19 44 -22 -10
+    spr() 90 1 09 20 52 -26 -10
+    spr() 150 1 09 31 43 -22 -16
+    spr() 200 1 09 35 34 -17 -18
+    spr() 240 1 09 31 43 -22 -16
+    spr() 290 1 09 20 52 -26 -10
+    spr() 350 1 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/SAS.pcx
+    spr() 1 1 09 22 34 -17 -11
+    spr() 40 1 09 19 44 -22 -10
+    spr() 90 1 09 20 52 -26 -10
+    spr() 150 1 09 31 43 -22 -16
+    spr() 200 1 09 35 34 -17 -18
+    spr() 240 1 09 31 43 -22 -16
+    spr() 290 1 09 20 52 -26 -10
+    spr() 350 1 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/Swissair.pcx
+    spr() 1 1 09 22 34 -17 -11
+    spr() 40 1 09 19 44 -22 -10
+    spr() 90 1 09 20 52 -26 -10
+    spr() 150 1 09 31 43 -22 -16
+    spr() 200 1 09 35 34 -17 -18
+    spr() 240 1 09 31 43 -22 -16
+    spr() 290 1 09 20 52 -26 -10
+    spr() 350 1 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JAL.pcx
+    spr() 1 1 09 22 34 -17 -11
+    spr() 40 1 09 19 44 -22 -10
+    spr() 90 1 09 20 52 -26 -10
+    spr() 150 1 09 31 43 -22 -16
+    spr() 200 1 09 35 34 -17 -18
+    spr() 240 1 09 31 43 -22 -16
+    spr() 290 1 09 20 52 -26 -10
+    spr() 350 1 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+
+  142 * 22	 02 03 F0 81 F2 00 FF 05 // In Flight
+                             00 00 00 00 // Greyscale
+                             01 00 02 02 // JapanAirSystems
+                             02 00 03 03 // SAS
+                             03 00 04 04 // Swissair
+                             04 00 01 01 // JAL
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/(0)Greyscale.pcx
+    spr() 1 40 09 22 34 -17 -11
+    spr() 40 40 09 19 44 -22 -10
+    spr() 90 40 09 20 52 -26 -10
+    spr() 150 40 09 31 43 -22 -16
+    spr() 200 40 09 35 34 -17 -18
+    spr() 240 40 09 31 43 -22 -16
+    spr() 290 40 09 20 52 -26 -10
+    spr() 350 40 09 19 44 -22 -10 
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JapanAirSystems.pcx
+    spr() 1 40 09 22 34 -17 -11
+    spr() 40 40 09 19 44 -22 -10
+    spr() 90 40 09 20 52 -26 -10
+    spr() 150 40 09 31 43 -22 -16
+    spr() 200 40 09 35 34 -17 -18
+    spr() 240 40 09 31 43 -22 -16
+    spr() 290 40 09 20 52 -26 -10
+    spr() 350 40 09 19 44 -22 -10 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/SAS.pcx
+    spr() 1 40 09 22 34 -17 -11
+    spr() 40 40 09 19 44 -22 -10
+    spr() 90 40 09 20 52 -26 -10
+    spr() 150 40 09 31 43 -22 -16
+    spr() 200 40 09 35 34 -17 -18
+    spr() 240 40 09 31 43 -22 -16
+    spr() 290 40 09 20 52 -26 -10
+    spr() 350 40 09 19 44 -22 -10 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/Swissair.pcx
+    spr() 1 40 09 22 34 -17 -11
+    spr() 40 40 09 19 44 -22 -10
+    spr() 90 40 09 20 52 -26 -10
+    spr() 150 40 09 31 43 -22 -16
+    spr() 200 40 09 35 34 -17 -18
+    spr() 240 40 09 31 43 -22 -16
+    spr() 290 40 09 20 52 -26 -10
+    spr() 350 40 09 19 44 -22 -10 
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JAL.pcx
+    spr() 1 40 09 22 34 -17 -11
+    spr() 40 40 09 19 44 -22 -10
+    spr() 90 40 09 20 52 -26 -10
+    spr() 150 40 09 31 43 -22 -16
+    spr() 200 40 09 35 34 -17 -18
+    spr() 240 40 09 31 43 -22 -16
+    spr() 290 40 09 20 52 -26 -10
+    spr() 350 40 09 19 44 -22 -10 
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+
+  143 * 22	 02 03 F1 81 F2 00 FF 05 // Taxing or Initiating Approach   
+                             00 00 00 00 // Greyscale
+                             01 00 02 02 // JapanAirSystems
+                             02 00 03 03 // SAS
+                             03 00 04 04 // Swissair
+                             04 00 01 01 // JAL
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/(0)Greyscale.pcx
+    spr() 1 80 09 32 34 -17 -16
+    spr() 40 80 09 29 41 -21 -15
+    spr() 90 80 09 19 50 -25 -10
+    spr() 150 80 09 18 41 -21 -9
+    spr() 200 80 09 21 28 -14 -11
+    spr() 240 80 09 18 41 -21 -9
+    spr() 290 80 09 19 50 -25 -10
+    spr() 350 80 09 29 41 -21 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JapanAirSystems.pcx
+    spr() 1 80 09 32 34 -17 -16
+    spr() 40 80 09 29 41 -21 -15
+    spr() 90 80 09 19 50 -25 -10
+    spr() 150 80 09 18 41 -21 -9
+    spr() 200 80 09 21 28 -14 -11
+    spr() 240 80 09 18 41 -21 -9
+    spr() 290 80 09 19 50 -25 -10
+    spr() 350 80 09 29 41 -21 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/SAS.pcx
+    spr() 1 80 09 32 34 -17 -16
+    spr() 40 80 09 29 41 -21 -15
+    spr() 90 80 09 19 50 -25 -10
+    spr() 150 80 09 18 41 -21 -9
+    spr() 200 80 09 21 28 -14 -11
+    spr() 240 80 09 18 41 -21 -9
+    spr() 290 80 09 19 50 -25 -10
+    spr() 350 80 09 29 41 -21 -15
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/Swissair.pcx
+    spr() 1 80 09 32 34 -17 -16
+    spr() 40 80 09 29 41 -21 -15
+    spr() 90 80 09 19 50 -25 -10
+    spr() 150 80 09 18 41 -21 -9
+    spr() 200 80 09 21 28 -14 -11
+    spr() 240 80 09 18 41 -21 -9
+    spr() 290 80 09 19 50 -25 -10
+    spr() 350 80 09 29 41 -21 -15
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JAL.pcx
+    spr() 1 80 09 32 34 -17 -16
+    spr() 40 80 09 29 41 -21 -15
+    spr() 90 80 09 19 50 -25 -10
+    spr() 150 80 09 18 41 -21 -9
+    spr() 200 80 09 21 28 -14 -11
+    spr() 240 80 09 18 41 -21 -9
+    spr() 290 80 09 19 50 -25 -10
+    spr() 350 80 09 29 41 -21 -15
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+
+  144 * 22	 02 03 F2 81 F2 00 FF 05 // Take Off 
+                             00 00 00 00 // Greyscale
+                             01 00 02 02 // JapanAirSystems
+                             02 00 03 03 // SAS
+                             03 00 04 04 // Swissair
+                             04 00 01 01 // JAL
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/(0)Greyscale.pcx
+    spr() 1 120 09 22 34 -17 -11
+    spr() 40 120 09 19 44 -22 -10
+    spr() 90 120 09 20 52 -26 -10
+    spr() 150 120 09 30 42 -21 -15 
+    spr() 200 120 09 35 34 -17 -18
+    spr() 240 120 09 30 42 -21 -15 
+    spr() 290 120 09 20 52 -26 -10
+    spr() 350 120 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JapanAirSystems.pcx
+    spr() 1 120 09 22 34 -17 -11
+    spr() 40 120 09 19 44 -22 -10
+    spr() 90 120 09 20 52 -26 -10
+    spr() 150 120 09 30 42 -21 -15 
+    spr() 200 120 09 35 34 -17 -18
+    spr() 240 120 09 30 42 -21 -15 
+    spr() 290 120 09 20 52 -26 -10
+    spr() 350 120 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/SAS.pcx
+    spr() 1 120 09 22 34 -17 -11
+    spr() 40 120 09 19 44 -22 -10
+    spr() 90 120 09 20 52 -26 -10
+    spr() 150 120 09 30 42 -21 -15 
+    spr() 200 120 09 35 34 -17 -18
+    spr() 240 120 09 30 42 -21 -15 
+    spr() 290 120 09 20 52 -26 -10
+    spr() 350 120 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/Swissair.pcx
+    spr() 1 120 09 22 34 -17 -11
+    spr() 40 120 09 19 44 -22 -10
+    spr() 90 120 09 20 52 -26 -10
+    spr() 150 120 09 30 42 -21 -15 
+    spr() 200 120 09 35 34 -17 -18
+    spr() 240 120 09 30 42 -21 -15 
+    spr() 290 120 09 20 52 -26 -10
+    spr() 350 120 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JAL.pcx
+    spr() 1 120 09 22 34 -17 -11
+    spr() 40 120 09 19 44 -22 -10
+    spr() 90 120 09 20 52 -26 -10
+    spr() 150 120 09 30 42 -21 -15 
+    spr() 200 120 09 35 34 -17 -18
+    spr() 240 120 09 30 42 -21 -15 
+    spr() 290 120 09 20 52 -26 -10
+    spr() 350 120 09 19 44 -22 -10
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+
+  145 * 22	 02 03 F3 81 F2 00 FF 05 // Landed On Runway 
+                             00 00 00 00 // Greyscale
+                             01 00 02 02 // JapanAirSystems
+                             02 00 03 03 // SAS
+                             03 00 04 04 // Swissair
+                             04 00 01 01 // JAL
+                             FF FF       // End livary graphical selection
+
+    A1_PLANES(5,8)
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/(0)Greyscale.pcx
+    spr() 1 160 09 26 34 -17 -13
+    spr() 40 160 09 23 42 -21 -12
+    spr() 90 160 09 17 50 -25 -9
+    spr() 150 160 09 23 40 -20 -12
+    spr() 200 160 09 29 32 -16 -15
+    spr() 240 160 09 23 40 -20 -12
+    spr() 290 160 09 17 50 -25 -9
+    spr() 350 160 09 23 42 -21 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JapanAirSystems.pcx
+    spr() 1 160 09 26 34 -17 -13
+    spr() 40 160 09 23 42 -21 -12
+    spr() 90 160 09 17 50 -25 -9
+    spr() 150 160 09 23 40 -20 -12
+    spr() 200 160 09 29 32 -16 -15
+    spr() 240 160 09 23 40 -20 -12
+    spr() 290 160 09 17 50 -25 -9
+    spr() 350 160 09 23 42 -21 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/SAS.pcx
+    spr() 1 160 09 26 34 -17 -13
+    spr() 40 160 09 23 42 -21 -12
+    spr() 90 160 09 17 50 -25 -9
+    spr() 150 160 09 23 40 -20 -12
+    spr() 200 160 09 29 32 -16 -15
+    spr() 240 160 09 23 40 -20 -12
+    spr() 290 160 09 17 50 -25 -9
+    spr() 350 160 09 23 42 -21 -12
+    #undef SPRITE_LOCATION
+
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/Swissair.pcx
+    spr() 1 160 09 26 34 -17 -13
+    spr() 40 160 09 23 42 -21 -12
+    spr() 90 160 09 17 50 -25 -9
+    spr() 150 160 09 23 40 -20 -12
+    spr() 200 160 09 29 32 -16 -15
+    spr() 240 160 09 23 40 -20 -12
+    spr() 290 160 09 17 50 -25 -9
+    spr() 350 160 09 23 42 -21 -12
+    #undef SPRITE_LOCATION
+    
+    #define SPRITE_LOCATION sprites/pcx/mcdonnell_douglas/md81/JAL.pcx
+    spr() 1 160 09 26 34 -17 -13
+    spr() 40 160 09 23 42 -21 -12
+    spr() 90 160 09 17 50 -25 -9
+    spr() 150 160 09 23 40 -20 -12
+    spr() 200 160 09 29 32 -16 -15
+    spr() 240 160 09 23 40 -20 -12
+    spr() 290 160 09 17 50 -25 -9
+    spr() 350 160 09 23 42 -21 -12
+    #undef SPRITE_LOCATION
+
+   27 * 9	 02 03 00 01 01 \w0 \w0 //use IDs 00-0F
+   27 * 9	 02 03 01 01 01 \w1 \w1
+   27 * 9	 02 03 02 01 01 \w2 \w2
+   27 * 9	 02 03 03 01 01 \w3 \w3
+   27 * 9	 02 03 04 01 01 \w4 \w4
+
+  146 * 22	 02 03 F4 81 F2 00 FF 05 // Final Approach 
+                             00 00 00 00 // Greyscale
+                             01 00 02 02 // JapanAirSystems
+                             02 00 03 03 // SAS
+                             03 00 04 04 // Swissair
+                             04 00 01 01 // JAL
+                             FF FF       // End livary graphical selection
+
+// -----------------
+// ---- Details ----
+// -----------------
+
+   -1 * 0	 02 03 5F 81 E2 00 FF 05   
+                             F1 00 08 09   // Grounded
+                             F2 00 0F 0F   // Climbing
+                             F0 00 12 12   // Flight	
+                             F4 00 15 15   // Landing
+                             F3 00 16 16   // Touchdown
+                             F1 00         // Other
+
+  148 * 22	 02 03 01 81 F2 00 FF 05     // 5 Liveries
+                             00 80 00 00 // Greyscale
+                             56 80 01 01 // JAL	
+                             78 80 02 02 // Japan Air Systems
+                             46 80 03 03 // SAS
+                             77 80 04 04 // Swissair
+                             FF FF       // End livery text selection
+
+   -1 * 0	 02 03 02 81 E2 00 FF 05         // Speeds
+                             14 80 0D 0D   // Take Off 
+                             1F 80 0F 0F   // Climbing
+                             3F 80 12 12   // Flight
+                             1C 80 10 14   // Approach
+                             13 80 15 16   // Landing
+                             00 80
+
+   -1 * 0	 02 03 03 81 E2 00 FF 05         // Costs
+                             \w32867 0D 0F // Take Off
+                             \w32855 12 12 // Flight
+                             \w32858 10 14 // Approach
+                             \w32862 15 16 // Landing
+                             \w32817 08 0C // Grounded	
+                             \w32805       // Parked/Other				
+
+   -1 * 0	 02 03 04 81 10 00 FF 02
+                             02 00 0C 0C   // Different Speeds
+                             03 00 0E 0E   // Different Costs
+                             00 00
+				
+   -1 * 0   02 03 05 81 10 00 FF 02
+				                     \w32814 0B 0B //Purchase Cost Purchase List
+				                     \w32855 0E 0E //Running Cost Purchase List
+                             00 00 				
+
+   -1 * 0  02 03 06 81 10 00 FF 02
+                             snd_av_turbogo   80 01 01 // Play Takeoff Sound
+                             snd_av_landturbo 80 05 05 // Play Touchdown Sound
+                             00 00
+
+   -1 * 0	 02 03 07 81 0C 00 FF 03         // Callbacks
+                             01 00 19 19   // Livery Text
+                             06 00 33 33   // Play Sound
+                             04 00 36 36   // Change Speed/Cost				
+                             5F 00         // Apply Graphics
+                                  
+   -1 * 0   02 03 08 81 0C 00 FF 01     // Text Callback's (Purchase List)   
+                             05 00 36 36 // 
+                             5F 00                                   
+
+  150 * 7	 03 03 01 AIRV_MCDONNELL_DOUGLAS_MD_81 01
+                             FF 08 00   // P-List
+                             07 00      // Default    
+
+END_SECTION(Planes-MCDONNELL-DOUGLAS-MD-81)

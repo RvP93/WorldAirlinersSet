@@ -1,0 +1,607 @@
+
+// Airbus-A330_300
+
+// Template: 
+#define Airbus_A330_300_sprite_layout_template(name)                         \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 66, 32, -33, -16, ANIM]                                           \
+  [ 75, 1, 59, 30, -30, -15, ANIM]                                           \
+  [140, 1, 69, 34, -35, -17, ANIM]                                           \
+  [215, 1, 59, 40, -30, -20, ANIM]                                           \
+  [280, 1, 66, 44, -33, -22, ANIM]                                           \
+  [350, 1, 59, 40, -30, -20, ANIM]                                           \
+  [415, 1, 69, 34, -35, -17, ANIM]                                           \
+  [490, 1, 59, 30, -30, -15, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 50, 66, 32, -33, -16, ANIM]                                          \
+  [ 75, 50, 59, 30, -30, -15, ANIM]                                          \
+  [140, 50, 69, 34, -35, -17, ANIM]                                          \
+  [215, 50, 59, 42, -30, -21, ANIM]                                          \
+  [280, 50, 66, 45, -33, -23, ANIM]                                          \
+  [350, 50, 59, 42, -30, -21, ANIM]                                          \
+  [415, 50, 69, 34, -35, -17, ANIM]                                          \
+  [490, 50, 59, 30, -30, -15, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 100, 66, 49, -33, -25, ANIM]                                         \
+  [ 75, 100, 57, 45, -29, -23, ANIM]                                         \
+  [140, 100, 68, 34, -32, -17, ANIM]                                         \
+  [215, 100, 57, 29, -29, -15, ANIM]                                         \
+  [280, 100, 64, 19, -32, -10, ANIM]                                         \
+  [350, 100, 57, 29, -29, -15, ANIM]                                         \
+  [415, 100, 68, 34, -34, -17, ANIM]                                         \
+  [490, 100, 57, 45, -29, -23, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 155, 66, 32, -33, -16, ANIM]                                         \
+  [ 75, 155, 59, 30, -30, -15, ANIM]                                         \
+  [140, 155, 69, 34, -35, -17, ANIM]                                         \
+  [215, 155, 58, 42, -29, -21, ANIM]                                         \
+  [280, 155, 66, 41, -33, -21, ANIM]                                         \
+  [350, 155, 59, 42, -30, -21, ANIM]                                         \
+  [415, 155, 69, 34, -35, -17, ANIM]                                         \
+  [490, 155, 58, 30, -29, -18, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 205, 66, 37, -33, -21, ANIM]                                         \
+  [ 75, 205, 58, 36, -29, -18, ANIM]                                         \
+  [140, 205, 70, 34, -35, -17, ANIM]                                         \
+  [215, 205, 57, 36, -29, -18, ANIM]                                         \
+  [280, 205, 66, 31, -33, -16, ANIM]                                         \
+  [350, 205, 57, 36, -29, -18, ANIM]                                         \
+  [415, 205, 70, 34, -35, -17, ANIM]                                         \
+  [490, 205, 58, 36, -29, -18, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/(0)Greyscale.png"
+purchase_sprite(Airbus_A330_300, 415, 1, 69, 34, -35, -17)
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/AirCanada.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_AirCanada) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/AirEuropa.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_AirEuropa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/American.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Asiana.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Asiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/CatheyPacific.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_CatheyPacific) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/ChinaEastern.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Delta.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/EgyptAir.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_EgyptAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Etihad.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Etihad) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Evelop.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Evelop) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/FijiAirways.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_FijiAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Finnair.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Finnair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/FinnairNew.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_FinnairNew) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Garuda.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Garuda) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Iberia.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Iberia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/KLM.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_KLM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Korean.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Korean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Lufthansa.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Malaysian.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Malaysian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/OmanAir.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_OmanAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Qantas.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Qatar.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Qatar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/SAS.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Singapore.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Singapore) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Swiss.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Swiss) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/ThaiAirways.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_ThaiAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Turkish.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/USAir.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_USAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/WOW.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_WOW) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Greyscale, flight_state())
+{
+  15: Airbus_A330_300_Greyscale_Climbing;
+  18: Airbus_A330_300_Greyscale_Flight;
+  21: Airbus_A330_300_Greyscale_Landing;
+  22: Airbus_A330_300_Greyscale_Touchdown;
+      Airbus_A330_300_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_AirCanada, flight_state())
+{
+  15: Airbus_A330_300_AirCanada_Climbing;
+  18: Airbus_A330_300_AirCanada_Flight;
+  21: Airbus_A330_300_AirCanada_Landing;
+  22: Airbus_A330_300_AirCanada_Touchdown;
+      Airbus_A330_300_AirCanada_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_AirEuropa, flight_state())
+{
+  15: Airbus_A330_300_AirEuropa_Climbing;
+  18: Airbus_A330_300_AirEuropa_Flight;
+  21: Airbus_A330_300_AirEuropa_Landing;
+  22: Airbus_A330_300_AirEuropa_Touchdown;
+      Airbus_A330_300_AirEuropa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_American, flight_state())
+{
+  15: Airbus_A330_300_American_Climbing;
+  18: Airbus_A330_300_American_Flight;
+  21: Airbus_A330_300_American_Landing;
+  22: Airbus_A330_300_American_Touchdown;
+      Airbus_A330_300_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Asiana, flight_state())
+{
+  15: Airbus_A330_300_Asiana_Climbing;
+  18: Airbus_A330_300_Asiana_Flight;
+  21: Airbus_A330_300_Asiana_Landing;
+  22: Airbus_A330_300_Asiana_Touchdown;
+      Airbus_A330_300_Asiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_CatheyPacific, flight_state())
+{
+  15: Airbus_A330_300_CatheyPacific_Climbing;
+  18: Airbus_A330_300_CatheyPacific_Flight;
+  21: Airbus_A330_300_CatheyPacific_Landing;
+  22: Airbus_A330_300_CatheyPacific_Touchdown;
+      Airbus_A330_300_CatheyPacific_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_ChinaEastern, flight_state())
+{
+  15: Airbus_A330_300_ChinaEastern_Climbing;
+  18: Airbus_A330_300_ChinaEastern_Flight;
+  21: Airbus_A330_300_ChinaEastern_Landing;
+  22: Airbus_A330_300_ChinaEastern_Touchdown;
+      Airbus_A330_300_ChinaEastern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Delta, flight_state())
+{
+  15: Airbus_A330_300_Delta_Climbing;
+  18: Airbus_A330_300_Delta_Flight;
+  21: Airbus_A330_300_Delta_Landing;
+  22: Airbus_A330_300_Delta_Touchdown;
+      Airbus_A330_300_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_EgyptAir, flight_state())
+{
+  15: Airbus_A330_300_EgyptAir_Climbing;
+  18: Airbus_A330_300_EgyptAir_Flight;
+  21: Airbus_A330_300_EgyptAir_Landing;
+  22: Airbus_A330_300_EgyptAir_Touchdown;
+      Airbus_A330_300_EgyptAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Etihad, flight_state())
+{
+  15: Airbus_A330_300_Etihad_Climbing;
+  18: Airbus_A330_300_Etihad_Flight;
+  21: Airbus_A330_300_Etihad_Landing;
+  22: Airbus_A330_300_Etihad_Touchdown;
+      Airbus_A330_300_Etihad_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Evelop, flight_state())
+{
+  15: Airbus_A330_300_Evelop_Climbing;
+  18: Airbus_A330_300_Evelop_Flight;
+  21: Airbus_A330_300_Evelop_Landing;
+  22: Airbus_A330_300_Evelop_Touchdown;
+      Airbus_A330_300_Evelop_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_FijiAirways, flight_state())
+{
+  15: Airbus_A330_300_FijiAirways_Climbing;
+  18: Airbus_A330_300_FijiAirways_Flight;
+  21: Airbus_A330_300_FijiAirways_Landing;
+  22: Airbus_A330_300_FijiAirways_Touchdown;
+      Airbus_A330_300_FijiAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Finnair, flight_state())
+{
+  15: Airbus_A330_300_Finnair_Climbing;
+  18: Airbus_A330_300_Finnair_Flight;
+  21: Airbus_A330_300_Finnair_Landing;
+  22: Airbus_A330_300_Finnair_Touchdown;
+      Airbus_A330_300_Finnair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_FinnairNew, flight_state())
+{
+  15: Airbus_A330_300_FinnairNew_Climbing;
+  18: Airbus_A330_300_FinnairNew_Flight;
+  21: Airbus_A330_300_FinnairNew_Landing;
+  22: Airbus_A330_300_FinnairNew_Touchdown;
+      Airbus_A330_300_FinnairNew_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Garuda, flight_state())
+{
+  15: Airbus_A330_300_Garuda_Climbing;
+  18: Airbus_A330_300_Garuda_Flight;
+  21: Airbus_A330_300_Garuda_Landing;
+  22: Airbus_A330_300_Garuda_Touchdown;
+      Airbus_A330_300_Garuda_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Iberia, flight_state())
+{
+  15: Airbus_A330_300_Iberia_Climbing;
+  18: Airbus_A330_300_Iberia_Flight;
+  21: Airbus_A330_300_Iberia_Landing;
+  22: Airbus_A330_300_Iberia_Touchdown;
+      Airbus_A330_300_Iberia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_KLM, flight_state())
+{
+  15: Airbus_A330_300_KLM_Climbing;
+  18: Airbus_A330_300_KLM_Flight;
+  21: Airbus_A330_300_KLM_Landing;
+  22: Airbus_A330_300_KLM_Touchdown;
+      Airbus_A330_300_KLM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Korean, flight_state())
+{
+  15: Airbus_A330_300_Korean_Climbing;
+  18: Airbus_A330_300_Korean_Flight;
+  21: Airbus_A330_300_Korean_Landing;
+  22: Airbus_A330_300_Korean_Touchdown;
+      Airbus_A330_300_Korean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Lufthansa, flight_state())
+{
+  15: Airbus_A330_300_Lufthansa_Climbing;
+  18: Airbus_A330_300_Lufthansa_Flight;
+  21: Airbus_A330_300_Lufthansa_Landing;
+  22: Airbus_A330_300_Lufthansa_Touchdown;
+      Airbus_A330_300_Lufthansa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Malaysian, flight_state())
+{
+  15: Airbus_A330_300_Malaysian_Climbing;
+  18: Airbus_A330_300_Malaysian_Flight;
+  21: Airbus_A330_300_Malaysian_Landing;
+  22: Airbus_A330_300_Malaysian_Touchdown;
+      Airbus_A330_300_Malaysian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_OmanAir, flight_state())
+{
+  15: Airbus_A330_300_OmanAir_Climbing;
+  18: Airbus_A330_300_OmanAir_Flight;
+  21: Airbus_A330_300_OmanAir_Landing;
+  22: Airbus_A330_300_OmanAir_Touchdown;
+      Airbus_A330_300_OmanAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Qantas, flight_state())
+{
+  15: Airbus_A330_300_Qantas_Climbing;
+  18: Airbus_A330_300_Qantas_Flight;
+  21: Airbus_A330_300_Qantas_Landing;
+  22: Airbus_A330_300_Qantas_Touchdown;
+      Airbus_A330_300_Qantas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Qatar, flight_state())
+{
+  15: Airbus_A330_300_Qatar_Climbing;
+  18: Airbus_A330_300_Qatar_Flight;
+  21: Airbus_A330_300_Qatar_Landing;
+  22: Airbus_A330_300_Qatar_Touchdown;
+      Airbus_A330_300_Qatar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_SAS, flight_state())
+{
+  15: Airbus_A330_300_SAS_Climbing;
+  18: Airbus_A330_300_SAS_Flight;
+  21: Airbus_A330_300_SAS_Landing;
+  22: Airbus_A330_300_SAS_Touchdown;
+      Airbus_A330_300_SAS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Singapore, flight_state())
+{
+  15: Airbus_A330_300_Singapore_Climbing;
+  18: Airbus_A330_300_Singapore_Flight;
+  21: Airbus_A330_300_Singapore_Landing;
+  22: Airbus_A330_300_Singapore_Touchdown;
+      Airbus_A330_300_Singapore_Grounded;
+}	  
+	  
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Swiss, flight_state())
+{
+  15: Airbus_A330_300_Swiss_Climbing;
+  18: Airbus_A330_300_Swiss_Flight;
+  21: Airbus_A330_300_Swiss_Landing;
+  22: Airbus_A330_300_Swiss_Touchdown;
+      Airbus_A330_300_Swiss_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_ThaiAirways, flight_state())
+{
+  15: Airbus_A330_300_ThaiAirways_Climbing;
+  18: Airbus_A330_300_ThaiAirways_Flight;
+  21: Airbus_A330_300_ThaiAirways_Landing;
+  22: Airbus_A330_300_ThaiAirways_Touchdown;
+      Airbus_A330_300_ThaiAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Turkish, flight_state())
+{
+  15: Airbus_A330_300_Turkish_Climbing;
+  18: Airbus_A330_300_Turkish_Flight;
+  21: Airbus_A330_300_Turkish_Landing;
+  22: Airbus_A330_300_Turkish_Touchdown;
+      Airbus_A330_300_Turkish_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_USAir, flight_state())
+{
+  15: Airbus_A330_300_USAir_Climbing;
+  18: Airbus_A330_300_USAir_Flight;
+  21: Airbus_A330_300_USAir_Landing;
+  22: Airbus_A330_300_USAir_Touchdown;
+      Airbus_A330_300_USAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_WOW, flight_state())
+{
+  15: Airbus_A330_300_WOW_Climbing;
+  18: Airbus_A330_300_WOW_Flight;
+  21: Airbus_A330_300_WOW_Landing;
+  22: Airbus_A330_300_WOW_Touchdown;
+      Airbus_A330_300_WOW_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_sprites, cargo_subtype)
+{
+  1: Airbus_A330_300_AirCanada;
+  2: Airbus_A330_300_AirEuropa; 
+  3: Airbus_A330_300_American;
+  4: Airbus_A330_300_Asiana;
+  5: Airbus_A330_300_CatheyPacific;
+  6: Airbus_A330_300_ChinaEastern;
+  7: Airbus_A330_300_Delta;
+  8: Airbus_A330_300_EgyptAir;
+  9: Airbus_A330_300_Etihad;
+ 10: Airbus_A330_300_Evelop;
+ 11: Airbus_A330_300_FijiAirways;
+ 12: Airbus_A330_300_Finnair;
+ 13: Airbus_A330_300_FinnairNew;
+ 14: Airbus_A330_300_Garuda;
+ 15: Airbus_A330_300_Iberia;
+ 16: Airbus_A330_300_KLM;
+ 17: Airbus_A330_300_Korean;
+ 18: Airbus_A330_300_Lufthansa;
+ 19: Airbus_A330_300_Malaysian;
+ 20: Airbus_A330_300_OmanAir;
+ 21: Airbus_A330_300_Qantas;
+ 22: Airbus_A330_300_Qatar;
+ 23: Airbus_A330_300_SAS;
+ 24: Airbus_A330_300_Singapore;
+ 25: Airbus_A330_300_Swiss;
+ 26: Airbus_A330_300_ThaiAirways;
+ 27: Airbus_A330_300_Turkish;
+ 28: Airbus_A330_300_USAir;
+ 29: Airbus_A330_300_WOW;
+     Airbus_A330_300_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_running_cost_factor, flight_state())
+{
+  plane_RC(166)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(281); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(483); // airplane climbing after take-off
+      18: return plane_speed_kmh(926); // heading for tower contact point
+  16..20: return plane_speed_kmh(443); // in flight
+  21..22: return plane_speed_kmh(241); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_AIR_CANADA);
+  2: string(STR_VLIV_AIR_EUROPA);
+  3: string(STR_VLIV_AMERICAN_AIRLINES);
+  4: string(STR_VLIV_ASIANA_AIRLINES);
+  5: string(STR_VLIV_CATHAY_PACIFIC);
+  6: string(STR_VLIV_CHINA_EASTERN);
+  7: string(STR_VLIV_DELTA_AIR_LINES);
+  8: string(STR_VLIV_EGYPT_AIR);
+  9: string(STR_VLIV_ETIHAD_AIRWAYS);
+ 10: string(STR_VLIV_EVELOP);
+ 11: string(STR_VLIV_FIJI_AIRWAYS);
+ 12: string(STR_VLIV_FINNAIR_OLD);
+ 13: string(STR_VLIV_FINNAIR);
+ 14: string(STR_VLIV_GARUDA_INDONESIA);
+ 15: string(STR_VLIV_IBERIA);
+ 16: string(STR_VLIV_KLM);
+ 17: string(STR_VLIV_KOREAN_AIR);
+ 18: string(STR_VLIV_LUFTHANSA);
+ 19: string(STR_VLIV_MALAYSIA_AIRLINES);
+ 20: string(STR_VLIV_OMAN_AIR);
+ 21: string(STR_VLIV_QANTAS);
+ 22: string(STR_VLIV_QATAR_AIRWAYS);
+ 23: string(STR_VLIV_SAS);
+ 24: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 25: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 26: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 27: string(STR_VLIV_TURKISH_AIRLINES);
+ 28: string(STR_VLIV_US_AIRWAYS);
+ 29: string(STR_VLIV_WOW_AIR);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_cargo_subtype_capacity, cargo_subtype)
+{
+   1: return 265; // Air Canada
+   2: return 388; // Air Europa
+   3: return 291; // American Airlines
+   4: return 275; // Asiana
+   5: return 242; // Cathay
+   6: return 300; // China Eastern
+   7: return 293; // Delta
+   8: return 301; // Egypt
+   9: return 231; // Etihad
+  10: return 388; // Evelop
+  11: return 313; // Fiji
+  12: return 263; // FinnairOld
+  13: return 263; // Finnair
+  14: return 251; // Garuda
+  15: return 278; // Iberia
+  16: return 292; // KLM
+  17: return 276; // Korean
+  18: return 221; // Lufthansa
+  19: return 283; // Malaysian
+  20: return 289; // Oman
+  21: return 291; // Qantas
+  22: return 259; // Qatar
+  23: return 267; // SAS
+  24: return 285; // Singapore
+  25: return 236; // Swiss
+  26: return 299; // Thai
+  27: return 289; // Turkish
+  28: return 291; // US Airways
+  29: return 345; // WOW
+  return 295;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A330_300)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A330_300);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1994), 11, 2);
+    vehicle_life: 25;
+    model_life: get_model_life(1994,2050);
+    retire_early: get_retire_early(1994,2050);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 43;
+    passenger_capacity: 295;
+    mail_capacity: 34;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 1950;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A330_300_sprites;
+    purchase: Airbus_A330_300_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A330_300_cargo_subtype_text;
+	passenger_capacity: Airbus_A330_300_cargo_subtype_capacity;
+    speed: Airbus_A330_300_speed;
+    running_cost_factor: Airbus_A330_300_running_cost_factor;
+
+    cost_factor: 187; 
+    purchase_running_cost_factor: 166;
+    purchase_speed: plane_speed_kmh(926); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_300)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_300)
+  {
+    property
+    { range: 1950; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A330_300)
+  {
+    property
+    { range: 2925; }
+  }
+}

@@ -1,0 +1,222 @@
+
+// Airbus-A300_600F
+
+// Template: 
+#define Airbus_A300_600F_sprite_layout_template(name)                        \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 52, 29, -26, -15, ANIM]                                           \
+  [ 60, 1, 52, 26, -26, -13, ANIM]                                           \
+  [120, 1, 64, 27, -32, -14, ANIM]                                           \
+  [190, 1, 52, 38, -26, -19, ANIM]                                           \
+  [250, 1, 52, 41, -26, -21, ANIM]                                           \
+  [310, 1, 52, 38, -26, -19, ANIM]                                           \
+  [370, 1, 64, 26, -32, -14, ANIM]                                           \
+  [444, 1, 52, 26, -26, -13, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 55, 52, 29, -26, -15, ANIM]                                          \
+  [ 60, 55, 52, 26, -26, -13, ANIM]                                          \
+  [120, 55, 64, 27, -32, -14, ANIM]                                          \
+  [190, 55, 52, 40, -26, -20, ANIM]                                          \
+  [250, 55, 52, 43, -26, -22, ANIM]                                          \
+  [310, 55, 52, 40, -26, -20, ANIM]                                          \
+  [370, 55, 64, 27, -32, -14, ANIM]                                          \
+  [444, 55, 52, 26, -26, -13, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 120, 52, 46, -26, -23, ANIM]                                         \
+  [ 60, 120, 50, 41, -25, -15, ANIM]                                         \
+  [120, 120, 63, 27, -32, -14, ANIM]                                         \
+  [190, 120, 48, 26, -24, -13, ANIM]                                         \
+  [250, 120, 52, 18, -26, -9, ANIM]                                          \
+  [310, 120, 48, 26, -24, -13, ANIM]                                         \
+  [370, 120, 63, 27, -32, -14, ANIM]                                         \
+  [444, 120, 50, 41, -25, -21, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 175, 52, 29, -26, -15, ANIM]                                         \
+  [ 60, 175, 52, 26, -26, -13, ANIM]                                         \
+  [120, 175, 64, 27, -32, -14, ANIM]                                         \
+  [190, 175, 52, 40, -26, -20, ANIM]                                         \
+  [250, 175, 52, 38, -26, -19, ANIM]                                         \
+  [310, 175, 52, 40, -26, -20, ANIM]                                         \
+  [370, 175, 64, 27, -32, -14, ANIM]                                         \
+  [444, 175, 51, 26, -26, -13, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 235, 52, 38, -26, -19, ANIM]                                         \
+  [ 62, 235, 51, 33, -26, -17, ANIM]                                         \
+  [120, 235, 65, 28, -33, -14, ANIM]                                         \
+  [190, 235, 51, 33, -26, -17, ANIM]                                         \
+  [250, 235, 52, 30, -26, -15, ANIM]                                         \
+  [310, 235, 51, 33, -26, -17, ANIM]                                         \
+  [370, 235, 65, 28, -33, -14, ANIM]                                         \
+  [445, 235, 51, 33, -26, -17, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/(0)Greyscale.png"
+purchase_sprite(Airbus_A300_600F, 370, 1, 64, 26, -32, -14)
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/FedEx.png"
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_FedEx) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/KoreanCargo.png"
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_KoreanCargo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/QatarCargo.png"
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_QatarCargo) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/UPS.png"
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_UPS) 
+#undef IMAGEFILE
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_Greyscale, flight_state())
+{
+  15: Airbus_A300_600F_Greyscale_Climbing;
+  18: Airbus_A300_600F_Greyscale_Flight;
+  21: Airbus_A300_600F_Greyscale_Landing;
+  22: Airbus_A300_600F_Greyscale_Touchdown;
+      Airbus_A300_600F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_FedEx, flight_state())
+{
+  15: Airbus_A300_600F_FedEx_Climbing;
+  18: Airbus_A300_600F_FedEx_Flight;
+  21: Airbus_A300_600F_FedEx_Landing;
+  22: Airbus_A300_600F_FedEx_Touchdown;
+      Airbus_A300_600F_FedEx_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_KoreanCargo, flight_state())
+{
+  15: Airbus_A300_600F_KoreanCargo_Climbing;
+  18: Airbus_A300_600F_KoreanCargo_Flight;
+  21: Airbus_A300_600F_KoreanCargo_Landing;
+  22: Airbus_A300_600F_KoreanCargo_Touchdown;
+      Airbus_A300_600F_KoreanCargo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_QatarCargo, flight_state())
+{
+  15: Airbus_A300_600F_QatarCargo_Climbing;
+  18: Airbus_A300_600F_QatarCargo_Flight;
+  21: Airbus_A300_600F_QatarCargo_Landing;
+  22: Airbus_A300_600F_QatarCargo_Touchdown;
+      Airbus_A300_600F_QatarCargo_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_UPS, flight_state())
+{
+  15: Airbus_A300_600F_UPS_Climbing;
+  18: Airbus_A300_600F_UPS_Flight;
+  21: Airbus_A300_600F_UPS_Landing;
+  22: Airbus_A300_600F_UPS_Touchdown;
+      Airbus_A300_600F_UPS_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_sprites, cargo_subtype)
+{
+  1: Airbus_A300_600F_FedEx;
+  2: Airbus_A300_600F_KoreanCargo;
+  3: Airbus_A300_600F_QatarCargo;
+  4: Airbus_A300_600F_UPS;
+     Airbus_A300_600F_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_running_cost_factor, flight_state())
+{
+  plane_RC(128)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(249); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(354); // airplane climbing after take-off
+      18: return plane_speed_kmh(870); // heading for tower contact point
+  16..20: return plane_speed_kmh(338); // in flight
+  21..22: return plane_speed_kmh(233); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_AIRBUS);
+  1: string(STR_VLIV_FEDEX);
+  2: string(STR_VLIV_KOREAN_AIR_CARGO);
+  3: string(STR_VLIV_QATAR_AIRWAYS_CARGO);
+  4: string(STR_VLIV_UPS);
+     return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_AIRCRAFT, Airbus_A300_600F)
+{
+  property
+  {
+    name: string(STR_AIRV_AIRBUS_A300_600F);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1994), 7, 1);
+    vehicle_life: 35;
+    model_life: get_model_life(1994,2009);
+    retire_early: get_retire_early(1994,2009);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+    cargo_allow_refit: [BATT, CERE, JAVA, COLA, CTCD, DIAM, DYES, ENSP, FMSP, FERT, FICR, FISH, FZDR, FOOD, FRUT, FRVG, GLAS, GOLD, GOOD, LVST, MAIL, MAIZ, MNSP, MILK, OIL_, OLSD, PAPR, PLST, PLAS, RSGR, RFPR, RUBR, STEL, SUGR, SGBT, SGCN, SWET, TOFF, TOYS, VALU, VEHI, WHEA, WDPR, WOOL];
+    reliability_decay: 20;
+    loading_speed: 20;
+    passenger_capacity: 0;
+    mail_capacity: 0;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2565;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Airbus_A300_600F_sprites;
+    purchase: Airbus_A300_600F_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Airbus_A300_600F_cargo_subtype_text;
+    speed: Airbus_A300_600F_speed;
+    running_cost_factor: Airbus_A300_600F_running_cost_factor;
+	mail_capacity: return 438;
+
+    cost_factor: 122; 
+    purchase_running_cost_factor: 128;
+    purchase_speed: plane_speed_kmh(870); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600F)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600F)
+  {
+    property
+    { range: 2565; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Airbus_A300_600F)
+  {
+    property
+    { range: 3845; }
+  }
+}

@@ -1,0 +1,332 @@
+
+// Boeing-767-200ER
+
+// Template: 
+#define Boeing_767_200ER_sprite_layout_template(name)                          \
+spriteset (name##_Flight, IMAGEFILE)                                         \
+{                                                                            \
+  [  1, 1, 58, 24, -29, -12, ANIM]                                           \
+  [ 65, 1, 46, 23, -23, -12, ANIM]                                           \
+  [125, 1, 51, 27, -26, -14, ANIM]                                           \
+  [190, 1, 41, 32, -21, -16, ANIM]                                           \
+  [245, 1, 54, 33, -27, -17, ANIM]                                           \
+  [310, 1, 41, 32, -21, -16, ANIM]                                           \
+  [365, 1, 51, 27, -26, -14, ANIM]                                           \
+  [425, 1, 46, 23, -23, -12, ANIM]                                           \
+}                                                                            \
+spriteset (name##_Grounded, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 40, 58, 24, -29, -12, ANIM]                                          \
+  [ 65, 40, 46, 23, -23, -12, ANIM]                                          \
+  [125, 40, 51, 28, -26, -14, ANIM]                                          \
+  [190, 40, 41, 32, -21, -16, ANIM]                                          \
+  [245, 40, 54, 35, -27, -18, ANIM]                                          \
+  [310, 40, 41, 32, -21, -16, ANIM]                                          \
+  [365, 40, 51, 28, -26, -14, ANIM]                                          \
+  [425, 40, 46, 23, -23, -12, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Climbing, IMAGEFILE)                                       \
+{                                                                            \
+  [  1, 80, 58, 39, -29, -20, ANIM]                                          \
+  [ 65, 80, 45, 33, -23, -17, ANIM]                                          \
+  [125, 80, 51, 27, -26, -14, ANIM]                                          \
+  [190, 80, 44, 24, -22, -12, ANIM]                                          \
+  [245, 80, 55, 15, -28, -8 , ANIM]                                          \
+  [310, 80, 44, 23, -22, -12, ANIM]                                          \
+  [365, 80, 51, 27, -26, -14, ANIM]                                          \
+  [425, 80, 45, 33, -23, -17, ANIM]                                          \
+}                                                                            \
+spriteset (name##_Touchdown, IMAGEFILE)                                      \
+{                                                                            \
+  [  1, 125, 58, 24, -29, -12, ANIM]                                         \
+  [ 65, 125, 46, 23, -23, -12, ANIM]                                         \
+  [125, 125, 51, 27, -26, -14, ANIM]                                         \
+  [190, 125, 41, 32, -21, -16, ANIM]                                         \
+  [245, 125, 54, 35, -28, -19, ANIM]                                         \
+  [310, 125, 41, 32, -21, -16, ANIM]                                         \
+  [365, 125, 51, 27, -26, -14, ANIM]                                         \
+  [425, 125, 46, 23, -23, -12, ANIM]                                         \
+}                                                                            \
+spriteset (name##_Landing, IMAGEFILE)                                        \
+{                                                                            \
+  [  1, 165, 58, 31, -29, -16, ANIM]                                         \
+  [ 65, 165, 44, 27, -22, -14, ANIM]                                         \
+  [125, 165, 50, 28, -25, -14, ANIM]                                         \
+  [190, 165, 45, 29, -23, -15, ANIM]                                         \
+  [245, 165, 54, 25, -27, -13, ANIM]                                         \
+  [310, 165, 45, 29, -23, -15, ANIM]                                         \
+  [365, 165, 50, 28, -25, -14, ANIM]                                         \
+  [425, 165, 44, 27, -22, -14, ANIM]                                         \
+}                                                                            \
+
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/(0)Greyscale.png"
+purchase_sprite(Boeing_767_200ER, 365, 1, 51, 27, -26, -14)
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Greyscale) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/AirFrance.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_AirFrance) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/AirHolland.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_AirHolland) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/AirItaly.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_AirItaly) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/American.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_American) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/BalkanBulgarian.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_BalkanBulgarian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/British.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_British) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Kuwait.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Kuwait) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Meridiana.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Meridiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/TWA.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_TWA) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Utair.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Utair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Varig.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Varig) 
+#undef IMAGEFILE
+
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Greyscale, flight_state())
+{
+  15: Boeing_767_200ER_Greyscale_Climbing;
+  18: Boeing_767_200ER_Greyscale_Flight;
+  21: Boeing_767_200ER_Greyscale_Landing;
+  22: Boeing_767_200ER_Greyscale_Touchdown;
+      Boeing_767_200ER_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_AirFrance, flight_state())
+{
+  15: Boeing_767_200ER_AirFrance_Climbing;
+  18: Boeing_767_200ER_AirFrance_Flight;
+  21: Boeing_767_200ER_AirFrance_Landing;
+  22: Boeing_767_200ER_AirFrance_Touchdown;
+      Boeing_767_200ER_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_AirHolland, flight_state())
+{
+  15: Boeing_767_200ER_AirHolland_Climbing;
+  18: Boeing_767_200ER_AirHolland_Flight;
+  21: Boeing_767_200ER_AirHolland_Landing;
+  22: Boeing_767_200ER_AirHolland_Touchdown;
+      Boeing_767_200ER_AirHolland_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_AirItaly, flight_state())
+{
+  15: Boeing_767_200ER_AirItaly_Climbing;
+  18: Boeing_767_200ER_AirItaly_Flight;
+  21: Boeing_767_200ER_AirItaly_Landing;
+  22: Boeing_767_200ER_AirItaly_Touchdown;
+      Boeing_767_200ER_AirItaly_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_American, flight_state())
+{
+  15: Boeing_767_200ER_American_Climbing;
+  18: Boeing_767_200ER_American_Flight;
+  21: Boeing_767_200ER_American_Landing;
+  22: Boeing_767_200ER_American_Touchdown;
+      Boeing_767_200ER_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_BalkanBulgarian, flight_state())
+{
+  15: Boeing_767_200ER_BalkanBulgarian_Climbing;
+  18: Boeing_767_200ER_BalkanBulgarian_Flight;
+  21: Boeing_767_200ER_BalkanBulgarian_Landing;
+  22: Boeing_767_200ER_BalkanBulgarian_Touchdown;
+      Boeing_767_200ER_BalkanBulgarian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_British, flight_state())
+{
+  15: Boeing_767_200ER_British_Climbing;
+  18: Boeing_767_200ER_British_Flight;
+  21: Boeing_767_200ER_British_Landing;
+  22: Boeing_767_200ER_British_Touchdown;
+      Boeing_767_200ER_British_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Kuwait, flight_state())
+{
+  15: Boeing_767_200ER_Kuwait_Climbing;
+  18: Boeing_767_200ER_Kuwait_Flight;
+  21: Boeing_767_200ER_Kuwait_Landing;
+  22: Boeing_767_200ER_Kuwait_Touchdown;
+      Boeing_767_200ER_Kuwait_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Meridiana, flight_state())
+{
+  15: Boeing_767_200ER_Meridiana_Climbing;
+  18: Boeing_767_200ER_Meridiana_Flight;
+  21: Boeing_767_200ER_Meridiana_Landing;
+  22: Boeing_767_200ER_Meridiana_Touchdown;
+      Boeing_767_200ER_Meridiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_TWA, flight_state())
+{
+  15: Boeing_767_200ER_TWA_Climbing;
+  18: Boeing_767_200ER_TWA_Flight;
+  21: Boeing_767_200ER_TWA_Landing;
+  22: Boeing_767_200ER_TWA_Touchdown;
+      Boeing_767_200ER_TWA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Utair, flight_state())
+{
+  15: Boeing_767_200ER_Utair_Climbing;
+  18: Boeing_767_200ER_Utair_Flight;
+  21: Boeing_767_200ER_Utair_Landing;
+  22: Boeing_767_200ER_Utair_Touchdown;
+      Boeing_767_200ER_Utair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Varig, flight_state())
+{
+  15: Boeing_767_200ER_Varig_Climbing;
+  18: Boeing_767_200ER_Varig_Flight;
+  21: Boeing_767_200ER_Varig_Landing;
+  22: Boeing_767_200ER_Varig_Touchdown;
+      Boeing_767_200ER_Varig_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_sprites, cargo_subtype)
+{
+  1: Boeing_767_200ER_AirFrance;
+  2: Boeing_767_200ER_AirHolland;
+  3: Boeing_767_200ER_AirItaly;
+  4: Boeing_767_200ER_American;
+  5: Boeing_767_200ER_BalkanBulgarian;
+  6: Boeing_767_200ER_British;
+  7: Boeing_767_200ER_Kuwait;
+  8: Boeing_767_200ER_Meridiana;
+  9: Boeing_767_200ER_TWA;
+ 10: Boeing_767_200ER_Utair;
+ 11: Boeing_767_200ER_Varig;
+     Boeing_767_200ER_Greyscale;
+}
+                             
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_running_cost_factor, flight_state())
+{
+  plane_RC(125)
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_speed, flight_state())
+{
+  12..13: return plane_speed_kmh(241); // airplane waiting for take-off clearance, airplane taking off
+      15: return plane_speed_kmh(410); // airplane climbing after take-off
+      18: return plane_speed_kmh(910); // heading for tower contact point
+  16..20: return plane_speed_kmh(451); // in flight
+  21..22: return plane_speed_kmh(249); // airplane landing, airplane braking after touchdown
+          return plane_speed_kmh(201);
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_cargo_subtype_text, cargo_subtype)
+{
+  0: string(STR_VLIV_BOEING);
+  1: string(STR_VLIV_AIR_FRANCE);
+  2: string(STR_VLIV_AIR_HOLLAND);
+  3: string(STR_VLIV_AIR_ITALY);
+  4: string(STR_VLIV_AMERICAN_AIRLINES);
+  5: string(STR_VLIV_BALKAN_BULGARIAN);
+  6: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+  7: string(STR_VLIV_KUWAIT_AIRWAYS);
+  8: string(STR_VLIV_MERIDIANA);
+  9: string(STR_VLIV_TWA);
+ 10: string(STR_VLIV_UTAIR);
+ 11: string(STR_VLIV_VARIG);
+     return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_cargo_subtype_capacity, cargo_subtype)
+{
+  2: return 290; // Air Holland
+  3: return 253; // Air Italy
+  4: return 168; // American
+  6: return 184; // British Airways
+  8: return 253; // Meridiana
+  9: return 172; // TWA
+     return 181;
+}
+
+item (FEAT_AIRCRAFT, Boeing_767_200ER)
+{
+  property
+  {
+    name: string(STR_AIRV_BOEING_767_200ER);
+    climates_available: get_climates_available();
+    introduction_date: date(get_plane_year(1984), 1, 1);
+    vehicle_life: 30;
+    model_life: get_model_life(1984,1994);
+    retire_early: get_retire_early(1984,1994);
+
+    sprite_id: SPRITE_ID_NEW_AIRCRAFT;
+    aircraft_type: AIRCRAFT_TYPE_LARGE;
+    misc_flags: bitmask(AIRCRAFT_FLAG_2CC);
+    cargo_allow_refit: [PASS, TOUR];
+    reliability_decay: 20;
+    loading_speed: 32;
+    passenger_capacity: 181;
+    mail_capacity: 22;
+    acceleration: 27;                  // in 27,75 mph/day
+    range: 2450;
+    sound_effect: SOUND_JET;
+  }
+  graphics {
+    default: Boeing_767_200ER_sprites;
+    purchase: Boeing_767_200ER_purchase_sprite;
+    colour_mapping: PALETTE_CC_FIRST;
+
+    cargo_subtype_text: Boeing_767_200ER_cargo_subtype_text;
+	passenger_capacity: Boeing_767_200ER_cargo_subtype_capacity;
+    speed: Boeing_767_200ER_speed;
+    running_cost_factor: Boeing_767_200ER_running_cost_factor;
+
+    cost_factor: 131; 
+    purchase_running_cost_factor: 125;
+    purchase_speed: plane_speed_kmh(910); 
+  }
+}
+
+if (Ranges == 0)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_200ER)
+  {
+    property
+    { range: 0; }
+  }
+}
+
+if (Ranges == 1)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_200ER)
+  {
+    property
+    { range: 2450; }
+  }
+}
+
+if (Ranges == 2)
+{
+  item (FEAT_AIRCRAFT, Boeing_767_200ER)
+  {
+    property
+    { range: 3675; }
+  }
+}
