@@ -30,14 +30,14 @@ sort (FEAT_AIRCRAFT,
 	Boeing_777_200, Boeing_777_200ER, Boeing_777_200LR, Boeing_777_200F, Boeing_777_300, Boeing_777_300ER,
 	Boeing_787_8, Boeing_787_9,
 	//Bombardier
-	Bombardier_CRJ100ER, Bombardier_CRJ100LR, Bombardier_CRJ200ER, Bombardier_CRJ200LR, Bombardier_CRJ700, Bombardier_CRJ700ER, Bombardier_CRJ900, Bombardier_CRJ900ER, Bombardier_CRJ900LR, Bombardier_CRJ1000,
+	Bombardier_CRJ100ER, Bombardier_CRJ100LR, Bombardier_CRJ200ER, Bombardier_CRJ200LR, Bombardier_CRJ700, Bombardier_CRJ700ER, Bombardier_CRJ900, Bombardier_CRJ900ER, Bombardier_CRJ900LR, Bombardier_CRJ1000, Bombardier_CRJ1000EL,
 	Bombardier_Dash_8_100, Bombardier_Dash_8_200, Bombardier_Dash_8_200Q, Bombardier_Dash_8_300, Bombardier_Dash_8_300Q, Bombardier_Dash_8_400Q,
 	//Douglas
 	Douglas_DC8_10, Douglas_DC8_20, Douglas_DC8_30, Douglas_DC8_40, Douglas_DC8_50,
 	Douglas_DC9_10, Douglas_DC9_20, Douglas_DC9_30, Douglas_DC9_40, Douglas_DC9_50,
 	Douglas_DC10_10, Douglas_DC10_30, Douglas_DC10_40,
 	//Embraer
-	Embraer_E170LR, Embraer_E175STD, Embraer_E190STD, Embraer_E190AR, Embraer_E190LR, Embraer_E195STD, Embraer_E195LR, Embraer_E195AR,
+	Embraer_ERJ145, Embraer_E170STD, Embraer_E170LR, Embraer_E175STD, Embraer_E175LR, Embraer_E190STD, Embraer_E190AR, Embraer_E190LR, Embraer_E195STD, Embraer_E195LR, Embraer_E195AR,
 	//Fokker
 	Fokker_F70, Fokker_F100,
 	//Lockheed
