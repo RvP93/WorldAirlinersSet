@@ -138,7 +138,7 @@ item (FEAT_AIRCRAFT, Embraer_ERJ145)
 {
   property
   {
-    name: string(STR_AIRV_EMBRAER_ERJ_195STD);
+    name: string(STR_AIRV_EMBRAER_ERJ_145);
     climates_available: get_climates_available();
     introduction_date: date(get_plane_year(1996), 1, 1);
     vehicle_life: 18;
