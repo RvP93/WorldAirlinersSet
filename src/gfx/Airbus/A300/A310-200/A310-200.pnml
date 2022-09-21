@@ -69,6 +69,9 @@ Airbus_A310_200_sprite_layout_template(Airbus_A310_200_AirAlgerie)
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/AirFrance.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_AirFrance) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/AirLiberte.png"
+Airbus_A310_200_sprite_layout_template(Airbus_A310_200_AirLiberte) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/AirMalta.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_AirMalta) 
 #undef IMAGEFILE
@@ -90,6 +93,12 @@ Airbus_A310_200_sprite_layout_template(Airbus_A310_200_IranAir)
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/Kenya.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_Kenya) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/Kuwait.png"
+Airbus_A310_200_sprite_layout_template(Airbus_A310_200_Kuwait) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/MEA.png"
+Airbus_A310_200_sprite_layout_template(Airbus_A310_200_MEA) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/PanAm.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_PanAm) 
 #undef IMAGEFILE
@@ -98,6 +107,9 @@ Airbus_A310_200_sprite_layout_template(Airbus_A310_200_RoyalJordanian)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/S7Airlines.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_S7Airlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/Sabena.png"
+Airbus_A310_200_sprite_layout_template(Airbus_A310_200_Sabena) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A300/A310-200/Singapore.png"
 Airbus_A310_200_sprite_layout_template(Airbus_A310_200_Singapore) 
@@ -134,6 +146,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_AirFrance, flight_state())
   21: Airbus_A310_200_AirFrance_Landing;
   22: Airbus_A310_200_AirFrance_Touchdown;
       Airbus_A310_200_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_AirLiberte, flight_state())
+{
+  15: Airbus_A310_200_AirLiberte_Climbing;
+  18: Airbus_A310_200_AirLiberte_Flight;
+  21: Airbus_A310_200_AirLiberte_Landing;
+  22: Airbus_A310_200_AirLiberte_Touchdown;
+      Airbus_A310_200_AirLiberte_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_AirMalta, flight_state())
@@ -199,6 +220,24 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_Kenya, flight_state())
       Airbus_A310_200_Kenya_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_Kuwait, flight_state())
+{
+  15: Airbus_A310_200_Kuwait_Climbing;
+  18: Airbus_A310_200_Kuwait_Flight;
+  21: Airbus_A310_200_Kuwait_Landing;
+  22: Airbus_A310_200_Kuwait_Touchdown;
+      Airbus_A310_200_Kuwait_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_MEA, flight_state())
+{
+  15: Airbus_A310_200_MEA_Climbing;
+  18: Airbus_A310_200_MEA_Flight;
+  21: Airbus_A310_200_MEA_Landing;
+  22: Airbus_A310_200_MEA_Touchdown;
+      Airbus_A310_200_MEA_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_PanAm, flight_state())
 {
   15: Airbus_A310_200_PanAm_Climbing;
@@ -226,6 +265,14 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_S7Airlines, flight_state())
       Airbus_A310_200_S7Airlines_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_Sabena, flight_state())
+{
+  15: Airbus_A310_200_Sabena_Climbing;
+  18: Airbus_A310_200_Sabena_Flight;
+  21: Airbus_A310_200_Sabena_Landing;
+  22: Airbus_A310_200_Sabena_Touchdown;
+      Airbus_A310_200_Sabena_Grounded;
+}
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_Singapore, flight_state())
 {
@@ -259,19 +306,23 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_sprites, cargo_subtype)
 {
   1: Airbus_A310_200_AirAlgerie;
   2: Airbus_A310_200_AirFrance;
-  3: Airbus_A310_200_AirMalta;
-  4: Airbus_A310_200_BritishCaledonian;
-  5: Airbus_A310_200_Condor;
-  6: Airbus_A310_200_Cyprus;
-  7: Airbus_A310_200_HapagLloyd;
-  8: Airbus_A310_200_IranAir;
-  9: Airbus_A310_200_Kenya;
- 10: Airbus_A310_200_PanAm;
- 11: Airbus_A310_200_RoyalJordanian;
- 12: Airbus_A310_200_S7Airlines; 
- 13: Airbus_A310_200_Singapore;
- 14: Airbus_A310_200_Swissair;
- 15: Airbus_A310_200_Turkish; 
+  3: Airbus_A310_200_AirLiberte;
+  4: Airbus_A310_200_AirMalta;
+  5: Airbus_A310_200_BritishCaledonian;
+  6: Airbus_A310_200_Condor;
+  7: Airbus_A310_200_Cyprus;
+  8: Airbus_A310_200_HapagLloyd;
+  9: Airbus_A310_200_IranAir;
+ 10: Airbus_A310_200_Kenya;
+ 11: Airbus_A310_200_Kuwait;
+ 12: Airbus_A310_200_MEA;
+ 13: Airbus_A310_200_PanAm;
+ 14: Airbus_A310_200_RoyalJordanian;
+ 15: Airbus_A310_200_S7Airlines; 
+ 16: Airbus_A310_200_Sabena;
+ 17: Airbus_A310_200_Singapore;
+ 18: Airbus_A310_200_Swissair;
+ 19: Airbus_A310_200_Turkish; 
      Airbus_A310_200_Greyscale;
 }
                              
@@ -302,19 +353,23 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_cargo_subtype_text, cargo_subtype)
   0: string(STR_VLIV_AIRBUS);
   1: string(STR_VLIV_AIR_ALGERIE);
   2: string(STR_VLIV_AIR_FRANCE);
-  3: string(STR_VLIV_AIR_MALTA);
-  4: string(STR_VLIV_BRITISH_CALEDONIAN);
-  5: string(STR_VLIV_CONDOR);
-  6: string(STR_VLIV_CYPRUS_AIRWAYS);
-  7: string(STR_VLIV_HAPAG_LLOYD);
-  8: string(STR_VLIV_IRAN_AIR);
-  9: string(STR_VLIV_KENYA_AIRWAYS);
- 10: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
- 11: string(STR_VLIV_ROYAL_JORDANIAN);
- 12: string(STR_VLIV_S7_AIRLINES); 
- 13: string(STR_VLIV_SINGAPORE_AIRLINES);
- 14: string(STR_VLIV_SWISS_AIR);
- 15: string(STR_VLIV_TURKISH_AIRLINES);
+  3: string(STR_VLIV_AIR_LIBERTE);
+  4: string(STR_VLIV_AIR_MALTA);
+  5: string(STR_VLIV_BRITISH_CALEDONIAN);
+  6: string(STR_VLIV_CONDOR);
+  7: string(STR_VLIV_CYPRUS_AIRWAYS);
+  8: string(STR_VLIV_HAPAG_LLOYD);
+  9: string(STR_VLIV_IRAN_AIR);
+ 10: string(STR_VLIV_KENYA_AIRWAYS);
+ 11: string(STR_VLIV_KUWAIT_AIRWAYS);
+ 12: string(STR_VLIV_MIDDLE_EAST_AIRLINES);
+ 13: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+ 14: string(STR_VLIV_ROYAL_JORDANIAN);
+ 15: string(STR_VLIV_S7_AIRLINES); 
+ 16: string(STR_VLIV_SABENA); 
+ 17: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 18: string(STR_VLIV_SWISS_AIR);
+ 19: string(STR_VLIV_TURKISH_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -322,14 +377,14 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A310_200_cargo_subtype_capacity, cargo_subty
 {
    1: return 218; // AirAlgerie
    2: return 164; // AirFrance
-   5: return 265; // Condor
-   7: return 271; // HapagLloyd
-   8: return 212; // IranAir
-  10: return 201; // PamAm
-  12: return 255; // S7
-  13: return 183; // Singapore
-  14: return 208; // Swiss
-  15: return 210; // Turkish
+   6: return 265; // Condor
+   8: return 271; // HapagLloyd
+   9: return 212; // IranAir
+  13: return 201; // PamAm
+  15: return 255; // S7
+  17: return 183; // Singapore
+  18: return 208; // Swiss
+  19: return 210; // Turkish
    return 218;
 }
 
@@ -339,7 +394,7 @@ item (FEAT_AIRCRAFT, Airbus_A310_200)
   {
     name: string(STR_AIRV_AIRBUS_A310_200);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1983), 1, 1);
+    introduction_date: date(get_plane_year(1983), 4, 1);
     vehicle_life: 28;
     model_life: get_model_life(1983,1988);
     retire_early: get_retire_early(1983,1988);
