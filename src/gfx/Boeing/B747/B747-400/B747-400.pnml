@@ -108,6 +108,9 @@ Boeing_747_400_sprite_layout_template(Boeing_747_400_Korean)
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Lufthansa.png"
 Boeing_747_400_sprite_layout_template(Boeing_747_400_Lufthansa) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Philippines.png"
+Boeing_747_400_sprite_layout_template(Boeing_747_400_Philippines) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-400/Qantas.png"
 Boeing_747_400_sprite_layout_template(Boeing_747_400_Qantas) 
 #undef IMAGEFILE
@@ -265,6 +268,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Lufthansa, flight_state())
       Boeing_747_400_Lufthansa_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Philippines, flight_state())
+{
+  15: Boeing_747_400_Philippines_Climbing;
+  18: Boeing_747_400_Philippines_Flight;
+  21: Boeing_747_400_Philippines_Landing;
+  22: Boeing_747_400_Philippines_Touchdown;
+      Boeing_747_400_Philippines_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_Qantas, flight_state())
 {
   15: Boeing_747_400_Qantas_Climbing;
@@ -318,10 +330,11 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_sprites, cargo_subtype)
  13: Boeing_747_400_KLM;
  14: Boeing_747_400_Korean;
  15: Boeing_747_400_Lufthansa;
- 16: Boeing_747_400_Qantas;
- 17: Boeing_747_400_Saudi;
- 18: Boeing_747_400_Singapore;
- 19: Boeing_747_400_VirginAtlantic;
+ 16: Boeing_747_400_Philippines;
+ 17: Boeing_747_400_Qantas;
+ 18: Boeing_747_400_Saudi;
+ 19: Boeing_747_400_Singapore;
+ 20: Boeing_747_400_VirginAtlantic;
      Boeing_747_400_Greyscale;
 }
 
@@ -365,34 +378,36 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_cargo_subtype_text, cargo_subtype)
  13: string(STR_VLIV_KLM);
  14: string(STR_VLIV_KOREAN_AIR);
  15: string(STR_VLIV_LUFTHANSA);
- 16: string(STR_VLIV_QANTAS);
- 17: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
- 18: string(STR_VLIV_SINGAPORE_AIRLINES);
- 19: string(STR_VLIV_VIRGIN_ATLANTIC);
+ 16: string(STR_VLIV_PHILIPPINES_AIRLINES);
+ 17: string(STR_VLIV_QANTAS);
+ 18: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
+ 19: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 20: string(STR_VLIV_VIRGIN_ATLANTIC);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_400_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 344;
-  2: return 432;
-  3: return 298;
-  4: return 298;
-  5: return 393;
-  6: return 345;
-  7: return 359;
-  8: return 376;
-  9: return 389;
- 10: return 405;
- 11: return 372;
- 12: return 326;
- 13: return 408;
- 14: return 335;
- 15: return 352;
- 16: return 364;
- 17: return 374;
- 18: return 375;
- 19: return 367; 
+  1: return 344; // Air China
+  2: return 432; // Air France
+  3: return 298; // ANA
+  4: return 298; // ANA - Pokemon
+  5: return 393; // Air New Zealand
+  6: return 345; // British Airways
+  7: return 359; // Cathay Pacific
+  8: return 376; // China Airlines
+  9: return 389; // Delta Airlines
+ 10: return 405; // EL Al
+ 11: return 372; // Eva Airways
+ 12: return 326; // JAL
+ 13: return 408; // KLM
+ 14: return 335; // Korean
+ 15: return 352; // Lufthansa
+ 16: return 425; // Philippines
+ 17: return 364; // Qantas
+ 18: return 374; // Saudi
+ 19: return 375; // Singapore
+ 20: return 367; // Virgin
      return 416;
 }
 
@@ -402,10 +417,10 @@ item (FEAT_AIRCRAFT, Boeing_747_400)
   {
     name: string(STR_AIRV_BOEING_747_400);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1988), 1, 1);
+    introduction_date: date(get_plane_year(1989), 2, 9);
     vehicle_life: 30;
-    model_life: get_model_life(1988,2050);
-    retire_early: get_retire_early(1988,2050);
+    model_life: get_model_life(1989,2005);
+    retire_early: get_retire_early(1989,2005);
 
     sprite_id: SPRITE_ID_NEW_AIRCRAFT;
     aircraft_type: AIRCRAFT_TYPE_LARGE;

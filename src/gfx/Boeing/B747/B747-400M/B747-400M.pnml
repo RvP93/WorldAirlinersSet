@@ -75,6 +75,9 @@ Boeing_747_400M_sprite_layout_template(Boeing_747_400M_KLM)
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/Lufthansa.png"
 Boeing_747_400M_sprite_layout_template(Boeing_747_400M_Lufthansa) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-400M/Philippines.png"
+Boeing_747_400M_sprite_layout_template(Boeing_747_400M_Philippines) 
+#undef IMAGEFILE
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_Greyscale, flight_state())
 {
@@ -121,12 +124,22 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_Lufthansa, flight_state())
       Boeing_747_400M_Lufthansa_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_Philippines, flight_state())
+{
+  15: Boeing_747_400M_Philippines_Climbing;
+  18: Boeing_747_400M_Philippines_Flight;
+  21: Boeing_747_400M_Philippines_Landing;
+  22: Boeing_747_400M_Philippines_Touchdown;
+      Boeing_747_400M_Philippines_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_sprites, cargo_subtype)
 {
   1: Boeing_747_400M_AirFrance;
   2: Boeing_747_400M_EVA;
   3: Boeing_747_400M_KLM;
   4: Boeing_747_400M_Lufthansa;
+  5: Boeing_747_400M_Philippines;
      Boeing_747_400M_Greyscale;
 }
                              
@@ -159,8 +172,20 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_cargo_subtype_text, cargo_subtype)
   2: string(STR_VLIV_EVA_AIR);
   3: string(STR_VLIV_KLM);
   4: string(STR_VLIV_LUFTHANSA);
+  5: string(STR_VLIV_PHILIPPINES_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_400M_cargo_subtype_capacity, cargo_subtype)
+{
+  1: return 434; // Air France
+  2: return 276; // Eva Airways
+  3: return 268; // KLM
+  4: return 330; // Lufthansa
+  5: return 391; // Philippines
+     return 266;
+}
+
 
 item (FEAT_AIRCRAFT, Boeing_747_400M)
 {
@@ -168,7 +193,7 @@ item (FEAT_AIRCRAFT, Boeing_747_400M)
   {
     name: string(STR_AIRV_BOEING_747_400M);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1989), 1, 1);
+    introduction_date: date(get_plane_year(1989), 9, 1);
     vehicle_life: 30;
     model_life: get_model_life(1989,2002);
     retire_early: get_retire_early(1989,2002);
