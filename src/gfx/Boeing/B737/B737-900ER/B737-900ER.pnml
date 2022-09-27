@@ -66,14 +66,23 @@ Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Greyscale)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Alaska.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Alaska) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/AzurAir.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_AzurAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Continental.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Continental) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Delta.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Delta) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/ElAl.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_ElAl) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Futura.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Futura) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/JetAirways.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_JetAirways) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Korean.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Korean) 
@@ -81,8 +90,20 @@ Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Korean)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/LionAirlines.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_LionAirlines) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/PegasFly.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_PegasFly) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/SkyUp.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_SkyUp) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/SomonAir.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_SomonAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Turkish.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/Ukraine.png"
+Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_Ukraine) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-900ER/United.png"
 Boeing_737_900ER_sprite_layout_template(Boeing_737_900ER_United) 
@@ -108,7 +129,16 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Alaska, flight_state())
   22: Boeing_737_900ER_Alaska_Touchdown;
       Boeing_737_900ER_Alaska_Grounded;
 }
-	  
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_AzurAir, flight_state())
+{
+  15: Boeing_737_900ER_AzurAir_Climbing;
+  18: Boeing_737_900ER_AzurAir_Flight;
+  21: Boeing_737_900ER_AzurAir_Landing;
+  22: Boeing_737_900ER_AzurAir_Touchdown;
+      Boeing_737_900ER_AzurAir_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Continental, flight_state())
 {
   15: Boeing_737_900ER_Continental_Climbing;
@@ -127,6 +157,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Delta, flight_state())
       Boeing_737_900ER_Delta_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_ElAl, flight_state())
+{
+  15: Boeing_737_900ER_ElAl_Climbing;
+  18: Boeing_737_900ER_ElAl_Flight;
+  21: Boeing_737_900ER_ElAl_Landing;
+  22: Boeing_737_900ER_ElAl_Touchdown;
+      Boeing_737_900ER_ElAl_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Futura, flight_state())
 {
   15: Boeing_737_900ER_Futura_Climbing;
@@ -134,6 +173,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Futura, flight_state())
   21: Boeing_737_900ER_Futura_Landing;
   22: Boeing_737_900ER_Futura_Touchdown;
       Boeing_737_900ER_Futura_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_JetAirways, flight_state())
+{
+  15: Boeing_737_900ER_JetAirways_Climbing;
+  18: Boeing_737_900ER_JetAirways_Flight;
+  21: Boeing_737_900ER_JetAirways_Landing;
+  22: Boeing_737_900ER_JetAirways_Touchdown;
+      Boeing_737_900ER_JetAirways_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Korean, flight_state())
@@ -154,6 +202,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_LionAirlines, flight_state())
       Boeing_737_900ER_LionAirlines_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_PegasFly, flight_state())
+{
+  15: Boeing_737_900ER_PegasFly_Climbing;
+  18: Boeing_737_900ER_PegasFly_Flight;
+  21: Boeing_737_900ER_PegasFly_Landing;
+  22: Boeing_737_900ER_PegasFly_Touchdown;
+      Boeing_737_900ER_PegasFly_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_SkyUp, flight_state())
+{
+  15: Boeing_737_900ER_SkyUp_Climbing;
+  18: Boeing_737_900ER_SkyUp_Flight;
+  21: Boeing_737_900ER_SkyUp_Landing;
+  22: Boeing_737_900ER_SkyUp_Touchdown;
+      Boeing_737_900ER_SkyUp_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_SomonAir, flight_state())
+{
+  15: Boeing_737_900ER_SomonAir_Climbing;
+  18: Boeing_737_900ER_SomonAir_Flight;
+  21: Boeing_737_900ER_SomonAir_Landing;
+  22: Boeing_737_900ER_SomonAir_Touchdown;
+      Boeing_737_900ER_SomonAir_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Turkish, flight_state())
 {
   15: Boeing_737_900ER_Turkish_Climbing;
@@ -161,6 +236,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Turkish, flight_state())
   21: Boeing_737_900ER_Turkish_Landing;
   22: Boeing_737_900ER_Turkish_Touchdown;
       Boeing_737_900ER_Turkish_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_Ukraine, flight_state())
+{
+  15: Boeing_737_900ER_Ukraine_Climbing;
+  18: Boeing_737_900ER_Ukraine_Flight;
+  21: Boeing_737_900ER_Ukraine_Landing;
+  22: Boeing_737_900ER_Ukraine_Touchdown;
+      Boeing_737_900ER_Ukraine_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_United, flight_state())
@@ -184,14 +268,21 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_XL, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_sprites, cargo_subtype)
 {
   1: Boeing_737_900ER_Alaska;
-  2: Boeing_737_900ER_Continental;
-  3: Boeing_737_900ER_Delta;
-  4: Boeing_737_900ER_Futura;
-  5: Boeing_737_900ER_Korean;
-  6: Boeing_737_900ER_LionAirlines;
-  7: Boeing_737_900ER_Turkish;
-  8: Boeing_737_900ER_United;
-  9: Boeing_737_900ER_XL;
+  2: Boeing_737_900ER_AzurAir;
+  3: Boeing_737_900ER_Continental;
+  4: Boeing_737_900ER_Delta;
+  5: Boeing_737_900ER_ElAl;
+  6: Boeing_737_900ER_Futura;
+  7: Boeing_737_900ER_JetAirways;
+  8: Boeing_737_900ER_Korean;
+  9: Boeing_737_900ER_LionAirlines;
+ 10: Boeing_737_900ER_PegasFly;
+ 11: Boeing_737_900ER_SkyUp;
+ 12: Boeing_737_900ER_SomonAir;
+ 13: Boeing_737_900ER_Turkish;
+ 14: Boeing_737_900ER_Ukraine;
+ 15: Boeing_737_900ER_United;
+ 16: Boeing_737_900ER_XL;
   	 Boeing_737_900ER_Greyscale;
 }  
                              
@@ -221,26 +312,41 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BOEING);
   1: string(STR_VLIV_ALASKA_AIRLINES);
-  2: string(STR_VLIV_CONTINENTAL);
-  3: string(STR_VLIV_DELTA_AIR_LINES);
-  4: string(STR_VLIV_FUTURA);
-  5: string(STR_VLIV_KOREAN_AIR);
-  6: string(STR_VLIV_LION_AIR);
-  7: string(STR_VLIV_TURKISH_AIRLINES);
-  8: string(STR_VLIV_UNITED_AIRLINES);
-  9: string(STR_VLIV_XL_AIRWAYS);
+  2: string(STR_VLIV_AER_AZUR_AIR);
+  3: string(STR_VLIV_CONTINENTAL);
+  4: string(STR_VLIV_DELTA_AIR_LINES);
+  5: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+  6: string(STR_VLIV_FUTURA);
+  7: string(STR_VLIV_JET_AIRWAYS);
+  8: string(STR_VLIV_KOREAN_AIR);
+  9: string(STR_VLIV_LION_AIR);
+ 10: string(STR_VLIV_PEGAS_FLY);
+ 11: string(STR_VLIV_SKYUP);
+ 12: string(STR_VLIV_SOMON_AIR);
+ 13: string(STR_VLIV_TURKISH_AIRLINES);
+ 14: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+ 15: string(STR_VLIV_UNITED_AIRLINES);
+ 16: string(STR_VLIV_XL_AIRWAYS);
        return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_900ER_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 181;
-  2: return 179;
-  3: return 180;
-  5: return 159;
-  6: return 206;
-  7: return 151;
-  8: return 179;
+  1: return 181; // Alaska
+  2: return 215; // Azur Air
+  3: return 179; // Continental
+  4: return 180; // Delta
+  5: return 172; // ElAl
+  7: return 184; // JetAirways
+  8: return 159; // Korean
+  9: return 206; // Lion Air
+ 10: return 215; // PegasFly
+ 11: return 215; // SkyUp
+ 12: return 184; // SomonAir
+ 13: return 151; // Turkish
+ 14: return 215; // Ukraine
+ 15: return 179; // United
+ 16: return 215; // XL Airways
      return 180;
 }
 
@@ -250,7 +356,7 @@ item (FEAT_AIRCRAFT, Boeing_737_900ER)
   {
     name: string(STR_AIRV_BOEING_737_900ER);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(2007), 1, 1);
+    introduction_date: date(get_plane_year(2007), 4, 27);
     vehicle_life: 30;
     model_life: get_model_life(2007,2262);
     retire_early: get_retire_early(2007,2262);

@@ -425,6 +425,7 @@ STR_VLIV_XIAMEN_AIR                                             : Xiamen Air
 # Unaffiliated
 STR_VLIV_AER_ARRAN_ORIGINAL                                     : Aer Arran (Original)
 STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Aer Arran (Ringed Design)
+STR_VLIV_AER_AZUR_AIR                                           : Azur Air
 STR_VLIV_AER_LINGUS                                             : Aer Lingus
 STR_VLIV_AER_LINGUS_REGIONAL                                    : Aer Lingus Regional
 STR_VLIV_AIR_ASTANA                                             : Air Astana
@@ -489,6 +490,7 @@ STR_VLIV_ICELANDAIR                                             : Icelandair
 STR_VLIV_IRAN_AIR                                               : Iran Air
 STR_VLIV_IRAQI_AIRWAYS                                          : Iraqi Airways
 STR_VLIV_JAT_AIRWAYS                                            : JAT Airways
+STR_VLIV_JET_AIRWAYS                                            : JET Airways
 STR_VLIV_JETBLUE                                                : JetBlue
 STR_VLIV_KMV                                                    : KMV Avia
 STR_VLIV_LAGUNAIR                                               : LagunAir
@@ -515,7 +517,9 @@ STR_VLIV_SAMOA_AIRWAYS                                          : Samoa Airways
 STR_VLIV_SATA                                                   : SATA - Air Acores
 STR_VLIV_SATENA                                                 : SATENA
 STR_VLIV_SKYMARK_AIRLINES                                       : Skymark Airlines
+STR_VLIV_SKYUP                                                  : SkyUp Airlines
 STR_VLIV_SLOKAIR                                                : Slok Air International
+STR_VLIV_SOMON_AIR                                              : Somon Air
 STR_VLIV_SUDAN_AIRWAYS                                          : Sudan Airways
 STR_VLIV_TAE                                                    : TAE - Trabajos Aéreos y Enlaces
 STR_VLIV_THOMAS_COOK                                            : Thomas Cook
