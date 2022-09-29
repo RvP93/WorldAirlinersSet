@@ -78,6 +78,9 @@ Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Delta)
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/Emirates.png"
 Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Emirates) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/EtioptianAirlines.png"
+Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_EtioptianAirlines) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200LR/Qatar.png"
 Boeing_777_200LR_sprite_layout_template(Boeing_777_200LR_Qatar) 
 #undef IMAGEFILE
@@ -136,6 +139,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Emirates, flight_state())
       Boeing_777_200LR_Emirates_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_EtioptianAirlines, flight_state())
+{
+  15: Boeing_777_200LR_EtioptianAirlines_Climbing;
+  18: Boeing_777_200LR_EtioptianAirlines_Flight;
+  21: Boeing_777_200LR_EtioptianAirlines_Landing;
+  22: Boeing_777_200LR_EtioptianAirlines_Touchdown;
+      Boeing_777_200LR_EtioptianAirlines_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_Qatar, flight_state())
 {
   15: Boeing_777_200LR_Qatar_Climbing;
@@ -152,7 +164,8 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_sprites, cargo_subtype)
   3: Boeing_777_200LR_AirIndia;
   4: Boeing_777_200LR_Delta;
   5: Boeing_777_200LR_Emirates;
-  6: Boeing_777_200LR_Qatar;
+  6: Boeing_777_200LR_EtioptianAirlines;
+  7: Boeing_777_200LR_Qatar;
      Boeing_777_200LR_Greyscale;
 }
                              
@@ -186,18 +199,20 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_cargo_subtype_text, cargo_subtype)
   3: string(STR_VLIV_AIR_INDIA);
   4: string(STR_VLIV_DELTA_AIR_LINES);
   5: string(STR_VLIV_EMIRATES);
-  6: string(STR_VLIV_QATAR_AIRWAYS);
+  6: string(STR_VLIV_ETHIOPIAN_AIRLINES);
+  7: string(STR_VLIV_QATAR_AIRWAYS);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200LR_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 364;
-  2: return 270;
-  3: return 238;
-  4: return 291;
-  5: return 266;
-  6: return 259;
+  1: return 364; // Air Austral
+  2: return 270; // Air Canada
+  3: return 238; // Air India
+  4: return 291; // Delta
+  5: return 266; // Emirates
+  6: return 321; // Ethiopian
+  7: return 259; // Qatar
      return 314;
 }
 
