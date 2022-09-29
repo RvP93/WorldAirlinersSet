@@ -129,15 +129,15 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_300_sound_effect, extra_callback_
 switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_300_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BOMBARDIER);
-  1: string(STR_VLIC_JAZZ);
+  1: string(STR_VLIV_JAZZ);
   2: string(STR_VLIV_WIDEROE); 
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Bombardier_Dash_8_300_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 42;
-  2: return 50;
+  1: return 42; // Jazz
+  2: return 50; // Wideroe
      return 50;
 }
 
