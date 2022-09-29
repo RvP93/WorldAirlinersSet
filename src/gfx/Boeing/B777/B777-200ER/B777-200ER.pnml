@@ -75,6 +75,9 @@ Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_AirFrance)
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/AirNewZealand.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_AirNewZealand) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/AirPeace.png"
+Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_AirPeace) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/Alitalia.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_Alitalia) 
 #undef IMAGEFILE
@@ -93,11 +96,17 @@ Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_BritishAirways)
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/Delta.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_Delta) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/EgyptAir.png"
+Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_EgyptAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/ElAl.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_ElAl) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/Emirates.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_Emirates) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/Euroatlantic.png"
+Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_Euroatlantic) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-200ER/JAL.png"
 Boeing_777_200ER_sprite_layout_template(Boeing_777_200ER_JAL) 
@@ -172,6 +181,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_AirNewZealand, flight_state())
       Boeing_777_200ER_AirNewZealand_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_AirPeace, flight_state())
+{
+  15: Boeing_777_200ER_AirPeace_Climbing;
+  18: Boeing_777_200ER_AirPeace_Flight;
+  21: Boeing_777_200ER_AirPeace_Landing;
+  22: Boeing_777_200ER_AirPeace_Touchdown;
+      Boeing_777_200ER_AirPeace_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_Alitalia, flight_state())
 {
   15: Boeing_777_200ER_Alitalia_Climbing;
@@ -226,6 +244,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_Delta, flight_state())
       Boeing_777_200ER_Delta_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_EgyptAir, flight_state())
+{
+  15: Boeing_777_200ER_EgyptAir_Climbing;
+  18: Boeing_777_200ER_EgyptAir_Flight;
+  21: Boeing_777_200ER_EgyptAir_Landing;
+  22: Boeing_777_200ER_EgyptAir_Touchdown;
+      Boeing_777_200ER_EgyptAir_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_ElAl, flight_state())
 {
   15: Boeing_777_200ER_ElAl_Climbing;
@@ -242,6 +269,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_Emirates, flight_state())
   21: Boeing_777_200ER_Emirates_Landing;
   22: Boeing_777_200ER_Emirates_Touchdown;
       Boeing_777_200ER_Emirates_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_Euroatlantic, flight_state())
+{
+  15: Boeing_777_200ER_Euroatlantic_Climbing;
+  18: Boeing_777_200ER_Euroatlantic_Flight;
+  21: Boeing_777_200ER_Euroatlantic_Landing;
+  22: Boeing_777_200ER_Euroatlantic_Touchdown;
+      Boeing_777_200ER_Euroatlantic_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_JAL, flight_state())
@@ -331,23 +367,26 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_sprites, cargo_subtype)
   2: Boeing_777_200ER_AirAustral;
   3: Boeing_777_200ER_AirFrance;
   4: Boeing_777_200ER_AirNewZealand;
-  5: Boeing_777_200ER_Alitalia;
-  6: Boeing_777_200ER_AmericanAirlines;
-  7: Boeing_777_200ER_ANA;
-  8: Boeing_777_200ER_Austrian;
-  9: Boeing_777_200ER_BritishAirways;
- 10: Boeing_777_200ER_Delta;
- 11: Boeing_777_200ER_ElAl;
- 12: Boeing_777_200ER_Emirates;
- 13: Boeing_777_200ER_JAL;
- 14: Boeing_777_200ER_KLM;
- 15: Boeing_777_200ER_Korean;
- 16: Boeing_777_200ER_RoyalBrunei;
- 17: Boeing_777_200ER_Singapore;
- 18: Boeing_777_200ER_Thai;
- 19: Boeing_777_200ER_Transaero;
- 20: Boeing_777_200ER_United;
- 21: Boeing_777_200ER_VietnamAirlines;
+  5: Boeing_777_200ER_AirPeace;
+  6: Boeing_777_200ER_Alitalia;
+  7: Boeing_777_200ER_AmericanAirlines;
+  8: Boeing_777_200ER_ANA;
+  9: Boeing_777_200ER_Austrian;
+ 10: Boeing_777_200ER_BritishAirways;
+ 11: Boeing_777_200ER_Delta;
+ 12: Boeing_777_200ER_EgyptAir;
+ 13: Boeing_777_200ER_ElAl;
+ 14: Boeing_777_200ER_Emirates;
+ 15: Boeing_777_200ER_Euroatlantic;
+ 16: Boeing_777_200ER_JAL;
+ 17: Boeing_777_200ER_KLM;
+ 18: Boeing_777_200ER_Korean;
+ 19: Boeing_777_200ER_RoyalBrunei;
+ 20: Boeing_777_200ER_Singapore;
+ 21: Boeing_777_200ER_Thai;
+ 22: Boeing_777_200ER_Transaero;
+ 23: Boeing_777_200ER_United;
+ 24: Boeing_777_200ER_VietnamAirlines;
      Boeing_777_200ER_Greyscale;
 }
                              
@@ -380,49 +419,55 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_cargo_subtype_text, cargo_subtype)
   2: string(STR_VLIV_AIR_AUSTRAL);
   3: string(STR_VLIV_AIR_FRANCE);
   4: string(STR_VLIV_AIR_NEW_ZEALAND);
-  5: string(STR_VLIV_ALITALIA);
-  6: string(STR_VLIV_AMERICAN_AIRLINES);
-  7: string(STR_VLIV_ANA);
-  8: string(STR_VLIV_AUSTRIAN_AIRLINES);
-  9: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
- 10: string(STR_VLIV_DELTA_AIR_LINES);
- 11: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
- 12: string(STR_VLIV_EMIRATES);
- 13: string(STR_VLIV_JAL);
- 14: string(STR_VLIV_KLM);
- 15: string(STR_VLIV_KOREAN_AIR);
- 16: string(STR_VLIV_ROYAL_BRUNEI_AIRLINES);
- 17: string(STR_VLIV_SINGAPORE_AIRLINES);
- 18: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
- 19: string(STR_VLIV_TRANSAERO);
- 20: string(STR_VLIV_UNITED_AIRLINES);
- 21: string(STR_VLIV_VIETNAM_AIRLINES);
+  5: string(STR_VLIV_AIR_PEACE);
+  6: string(STR_VLIV_ALITALIA);
+  7: string(STR_VLIV_AMERICAN_AIRLINES);
+  8: string(STR_VLIV_ANA);
+  9: string(STR_VLIV_AUSTRIAN_AIRLINES);
+ 10: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+ 11: string(STR_VLIV_DELTA_AIR_LINES);
+ 12: string(STR_VLIV_EGYPT_AIR_OLD);
+ 13: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+ 14: string(STR_VLIV_EMIRATES);
+ 15: string(STR_VLIV_EUROATLANTIC);
+ 16: string(STR_VLIV_JAL);
+ 17: string(STR_VLIV_KLM);
+ 18: string(STR_VLIV_KOREAN_AIR);
+ 19: string(STR_VLIV_ROYAL_BRUNEI_AIRLINES);
+ 20: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 21: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 22: string(STR_VLIV_TRANSAERO);
+ 23: string(STR_VLIV_UNITED_AIRLINES);
+ 24: string(STR_VLIV_VIETNAM_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_777_200ER_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 267;
-  2: return 364;
-  3: return 280;
-  4: return 304;
-  5: return 293;
-  6: return 260;
-  7: return 223;
-  8: return 308;
-  9: return 224;
- 10: return 291;
- 11: return 279;
- 12: return 290;
- 13: return 245;
- 14: return 316;
- 15: return 248;
- 16: return 285;
- 17: return 266;
- 18: return 292;
- 19: return 306;
- 20: return 269;
- 21: return 309; 
+  1: return 267; // Aeromexico
+  2: return 364; // Air Austral
+  3: return 280; // Air France
+  4: return 304; // Air New Zealand
+  5: return 274; // Air Peace
+  6: return 293; // Alitalia
+  7: return 260; // American
+  8: return 223; // ANA
+  9: return 308; // Austrian
+ 10: return 224; // British Airways
+ 11: return 291; // Delta
+ 12: return 319; // EgyptAir
+ 13: return 279; // ELAl
+ 14: return 290; // Emirates
+ 15: return 293; // Euroatlantic
+ 16: return 245; // JAL
+ 17: return 316; // KLM
+ 18: return 248; // Korean
+ 19: return 285; // Royal Brunei
+ 20: return 266; // Singapore
+ 21: return 292; // Thai
+ 22: return 306; // Transaero
+ 23: return 269; // United
+ 24: return 309; // Vietnam
      return 314;
 }
 
