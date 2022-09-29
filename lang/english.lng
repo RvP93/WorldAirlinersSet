@@ -192,292 +192,220 @@ STR_VLIV_SUD                                                    : SUD Livery
 STR_VLIV_TUPOLEV                                                : Tupolev Livery
 STR_VLIV_WAS                                                    : WAS 7th Year Anniversary Livery
 #
-# Cargo
-STR_VLIV_AEROLOGIC                                              : Aerologic
-STR_VLIV_AIRBRIDGE                                              : AirBridgeCargo Airlines
-STR_VLIV_AIR_CHINA_CARGO                                        : Air China Cargo
-STR_VLIV_AIR_FRANCE_CARGO                                       : Air France Cargo
-STR_VLIV_ANTONOV_UKRAINE                                        : Antonov Design Bureau Ukraine
-STR_VLIV_AIR_USSR                                               : Antonov Design Bureau USSR
-STR_VLIV_BA_WORLD_CARGO                                         : British Airways World Cargo
-STR_VLIV_CATHAY_PACIFIC_CARGO                                   : Cathay Pacific Cargo
-STR_VLIV_CARGOLUX                                               : Cargolux
-STR_VLIV_CHANNEL_EXPRESS                                        : Channel Express
-STR_VLIV_CHINA_AIRLINES_CARGO                                   : China Airlines Cargo
-STR_VLIV_CYGNUS                                                 : Cygnus Air
-STR_VLIV_DHL                                                    : DHL
-STR_VLIV_EMIRATES_SKYCARGO                                      : Emirates SkyCargo
-STR_VLIV_EVA_AIR_CARGO                                          : EVA Air Cargo
-STR_VLIV_FEDEX                                                  : FedEx
-STR_VLIV_FEDEX_OLD                                              : FedEx (Old)
-STR_VLIV_ICELANDAIR_CARGO                                       : Icelandair Cargo
-STR_VLIV_KALITTA_AIR                                            : Kalitta Air
-STR_VLIV_KLM_CARGO                                              : KLM Cargo
-STR_VLIV_KOREAN_AIR_CARGO                                       : Korean Air Cargo
-STR_VLIV_LAN_CARGO                                              : LAN Cargo
-STR_VLIV_MARTINAIR_CARGO                                        : Martinair Cargo
-STR_VLIV_NIPPON_CARGO_AIRLINES                                  : Nippon Cargo Airlines
-STR_VLIV_NIPPON_CARGO_AIRLINES_GREEN_FREIGHTER                  : Nippon Cargo Airlines (Green Freighter)
-STR_VLIV_QANTAS_FREIGHT                                         : Qantas Freight
-STR_VLIV_QATAR_AIRWAYS_CARGO                                    : Qatar Airways Cargo
-STR_VLIV_REGIONAL_CARGO                                         : Regional Cargo
-STR_VLIV_ROYAL_MAIL                                             : Royal Mail
-STR_VLIV_SOUTH_AFRICAN_CARGO                                    : South African Cargo
-STR_VLIV_TNT                                                    : TNT Airways
-STR_VLIV_TURKISH_AIRLINES_CARGO                                 : Turkish Airlines Cargo
-STR_VLIV_ULS_CARGO                                              : ULS Airlines Cargo
-STR_VLIV_UPS                                                    : UPS
-STR_VLIV_VOLGA_DNEPR                                            : Volga-Dnepr
-#
-# Low Cost
+# All Airlines
 STR_VLIV_AB_AIRLINES                                            : AB Airlines
+STR_VLIV_ADRIA_AIRWAYS                                          : Adria Airways
+STR_VLIV_AEGAN_AIRLINES                                         : Aegan Airlines
+STR_VLIV_AER_ARRAN_ORIGINAL                                     : Aer Arran (Original)
+STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Aer Arran (Ringed Design)
+STR_VLIV_AER_LINGUS                                             : Aer Lingus
+STR_VLIV_AER_LINGUS_REGIONAL                                    : Aer Lingus Regional
+STR_VLIV_AEROFLOT                                               : Aeroflot
+STR_VLIV_AEROFLOT_OLD                                           : Aeroflot (Old)
+STR_VLIV_AEROLINEAS_ARGENTINAS                                  : Aerolineas Argentinas
+STR_VLIV_AEROLOGIC                                              : Aerologic
+STR_VLIV_AEROMEXICO                                             : Aeromexico
+STR_VLIV_AEROPOSTAL                                             : Aeropostal
+STR_VLIV_AIR_AFRIQUE                                            : Air Afrique
+STR_VLIV_AIR_ALGERIE                                            : Air Algerie
 STR_VLIV_AIR_ARABIA                                             : Air Arabia
 STR_VLIV_AIR_ASIA                                               : Air Asia
+STR_VLIV_AIR_ASTANA                                             : Air Astana
+STR_VLIV_AIR_AUSTRAL                                            : Air Austral
 STR_VLIV_AIR_BALTIC                                             : Air Baltic
-STR_VLIV_AIR_DECCAN                                             : Air Deccan
-STR_VLIV_AIR_HOLLAND                                            : Air Holland
-STR_VLIV_ALASKA_AIRLINES                                        : Alaska Airlines
-STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL                         : Alaska Airlines (Disney Special)
-STR_VLIV_ALBAWINGS                                              : Albawings
-STR_VLIV_AMSTERDAM_AIRLINES                                     : Amsterdam Airlines
-STR_VLIV_ARKE_FLY                                               : Arke Fly
-STR_VLIV_BUZZ                                                   : Buzz
-STR_VLIV_CONDOR_BERLIN                                          : Condor Berlin
-STR_VLIV_CONDOR                                                 : Condor
-STR_VLIV_DBA                                                    : DBA
-STR_VLIV_EASYJET                                                : EasyJet
-STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
-STR_VLIV_EUROWINGS                                              : Eurowings
-STR_VLIV_FLYBE                                                  : Flybe
-STR_VLIV_FLYDUBAI                                               : Flydubai
-STR_VLIV_FLYEGYPT                                               : Fly Egypt
-STR_VLIV_FLYNORDIC                                              : FlyNordic
-STR_VLIV_FRONTIER_AIRLINES_RACOON_FOX                           : Frontier Airlines (Racoon + Fox)
-STR_VLIV_FRONTIER_AIRLINES                                      : Frontier Airlines
-STR_VLIV_GOL                                                    : Gol Linhas Aéreas 
-STR_VLIV_JET2                                                   : Jet2
-STR_VLIV_JETAIRFLY                                              : Jetairfly
-STR_VLIV_KUBAN_AIRLINES                                         : Kuban Airlines
-STR_VLIV_KULULA                                                 : Kulula
-STR_VLIV_LAUDA_EUROPE                                           : Lauda Europe
-STR_VLIV_LEVEL													: Level
-STR_VLIV_LION_AIR                                               : Lion Air
-STR_VLIV_NIKI                                                   : Niki
-STR_VLIV_NORWEGIAN_AIR                                          : Norwegian Air
-STR_VLIV_NORWEGIAN_LONG_HAUL                                    : Norwegian Long Haul
-STR_VLIV_ONUR_AIR                                               : Onur Air
-STR_VLIV_PEOPLEXPRESS                                           : PEOPLExpress
-STR_VLIV_RYANAIR                                                : Ryanair
-STR_VLIV_RYANAIR_OLD                                            : Ryanair (Old)
-STR_VLIV_SKYWEST                                                : Skywest
-STR_VLIV_SMALL_PLANET                                           : Small Planet Airlines
-STR_VLIV_SOUTHWEST_AIRLINES                                     : Southwest Airlines
-STR_VLIV_SOUTH_WEST_GOLD                                        : South West (Gold)
-STR_VLIV_TRANSAVIA                                              : Transavia
-STR_VLIV_TUI													: TUI
-STR_VLIV_VIRGIN_BLUE                                            : Virgin Blue
-STR_VLIV_WAMOS													: Wamos
-STR_VLIV_WIZZ_AIR                                               : Wizz Air
-STR_VLIV_WIZZ_AIR_OLD                                           : Wizz Air (Old)
-STR_VLIV_WOW_AIR                                                : WOW Air
-STR_VLIV_XL_AIRWAYS                                             : XL Airways
-#
-# One World
 STR_VLIV_AIR_BERLIN                                             : Air Berlin
 STR_VLIV_AIR_BERLIN_INTERIM                                     : Air Berlin (Interim)
 STR_VLIV_AIR_BERLIN_NEW                                         : Air Berlin (New)
-STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            : Air Nostrum (Iberia Regional)
-STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        : Air Nostrum (Old) (Iberia Regional)
-STR_VLIV_AMERICAN_AIRLINES                                      : American Airlines
-STR_VLIV_AMERICAN_AIRLINES_OLD                                  : American Airlines (Old)
-STR_VLIV_AMERICAN_EAGLE                                         : American Eagle
-STR_VLIV_BRITISH_AIRWAYS_LANDOR                                 : British Airways (Landor)
-STR_VLIV_BRITISH_AIRWAYS_LANDOR_RED                             : British Airways (Landor Red)
-STR_VLIV_BRITISH_AIRWAYS_NEGUS                                  : British Airways (Negus)
-STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG                             : British Airways (Union Flag)
-STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR                      : British Airways Union Flag (Comair)
-STR_VLIV_BRITISH_AIRWAYS_CITYFLYER                              : British Airways CityFlyer
-STR_VLIV_CATHAY_PACIFIC                                         : Cathay Pacific
-STR_VLIV_DRAGONAIR                                              : Dragonair
-STR_VLIV_FINNAIR                                                : Finnair
-STR_VLIV_FINNAIR_MOOMIN_STICKERS                                : Finnair - Special Moomin Stickers Livery
-STR_VLIV_FINNAIR_OLD                                            : Finnair (Old)
-STR_VLIV_IBERIA                                                 : Iberia
-STR_VLIV_IBERIA_OLD                                             : Iberia (Old)
-STR_VLIV_JAL                                                    : Japan Airlines
-STR_VLIV_JAL_GREEN                                              : JAL Green
-STR_VLIV_JAPAN_AIR_SYSTEM                                       : Japan Air System
-STR_VLIV_JETSTAR_AIRWAYS                                        : Jetstar Airways
-STR_VLIV_LAN_AIRLINES                                           : LAN Airlines
-STR_VLIV_MALAYSIA_AIRLINES                                      : Malaysia Airlines
-STR_VLIV_MALEV                                                  : Malev
-STR_VLIV_MALEV_OLD                                              : Malev (Old)
-STR_VLIV_MEXICANA                                               : Mexicana
-STR_VLIV_QANTAS                                                 : Qantas
-STR_VLIV_QANTAS_ONEWORLD                                        : Qantas - Oneworld Livery
-STR_VLIV_QANTAS_VJET                                            : Qantas V-Jet
-STR_VLIV_QANTASLINK                                             : Qantaslink
-STR_VLIV_QANTASLINK_PINK_RIBBON                                 : Qantaslink (Pink Ribbon)
-STR_VLIV_QATAR_AIRWAYS                                          : Qatar Airways
-STR_VLIV_ROYAL_JORDANIAN                                        : Royal Jordanian
-STR_VLIV_S7_AIRLINES                                            : S7 Siberia Airlines
-STR_VLIV_SRILANKAN_AIRLINES                                     : SriLankan Airlines
-STR_VLIV_TAM_AIRLINES                                           : TAM Linhas Aereas
-STR_VLIV_US_AIRWAYS                                             : US Airways
-STR_VLIV_US_AIRWAYS_OLD                                         : US Airways (Old)
-#
-# Star Alliance
-STR_VLIV_AEGAN_AIRLINES                                         : Aegan Airlines
 STR_VLIV_AIR_CANADA                                             : Air Canada
 STR_VLIV_AIR_CANADA_97_06                                       : Air Canada 97-06
 STR_VLIV_AIR_CANADA_NEW                                         : Air Canada (New)
 STR_VLIV_AIR_CANADA_ROUGE                                       : Air Canada Rouge
 STR_VLIV_AIR_CHINA                                              : Air China
+STR_VLIV_AIR_CHINA_CARGO                                        : Air China Cargo
+STR_VLIV_AIR_COMET                                              : Air Comet
+STR_VLIV_AIR_CONTRACTORS                                        : Air Contractors
+STR_VLIV_AIR_DECCAN                                             : Air Deccan
+STR_VLIV_AIR_DO                                                 : Air Do
 STR_VLIV_AIR_DOLOMITI                                           : Air Dolomiti
+STR_VLIV_AIR_EUROPA                                             : Air Europa
+STR_VLIV_AIR_EUROPA_OLD                                         : Air Europa (Old)
+STR_VLIV_AIR_FLORIDA                                            : Air Florida
+STR_VLIV_AIR_FRANCE                                             : Air France
+STR_VLIV_AIR_FRANCE_CARGO                                       : Air France Cargo
+STR_VLIV_AIR_GREENLAND                                          : Air Greenland
+STR_VLIV_AIR_HOLLAND                                            : Air Holland
 STR_VLIV_AIR_INDIA                                              : Air India
 STR_VLIV_AIR_INDIA_OLD                                          : Air India (Old)
 STR_VLIV_AIR_INDIA_REGIONAL                                     : Air India Regional
-STR_VLIV_AIR_NEW_ZEALAND                                        : Air New Zealand
+STR_VLIV_AIR_INTER                                              : Air Inter
+STR_VLIV_AIR_ITALY                                              : Air Italy
+STR_VLIV_AIR_KORYO                                              : Air Koryo
+STR_VLIV_AIR_MACAU                                              : Air Macau
+STR_VLIV_AIR_MALTA                                              : Air Malta
+STR_VLIV_AIR_NAMIBIA                                            : Air Namibia
+STR_VLIV_AIR_NAURU                                              : Air Nauru
 STR_VLIV_AIR_NELSON                                             : Air Nelson (Air New Zealand Link)
+STR_VLIV_AIR_NEW_ZEALAND                                        : Air New Zealand
+STR_VLIV_AIR_NIUGINI                                            : Air Niugini
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            : Air Nostrum (Iberia Regional)
+STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        : Air Nostrum (Old) (Iberia Regional)
+STR_VLIV_AIR_ONE                                                : Air One
+STR_VLIV_AIR_PACIFIC                                            : Air Pacific
+STR_VLIV_AIR_PEACE                                              : Air Peace
+STR_VLIV_AIR_PLUS_COMET                                         : Air Plus Comet
+STR_VLIV_AIR_SERBIA                                             : Air Serbia
+STR_VLIV_AIR_SEYCHELLES                                         : Air Seychelles
+STR_VLIV_AIR_SLOVAKIA                                           : Air Slovakia
+STR_VLIV_AIR_SOUTHWEST                                          : Air Southwest
+STR_VLIV_AIR_SPAIN                                              : Air Spain
+STR_VLIV_AIR_TAHITI_NUI                                         : Air Tahiti Nui
+STR_VLIV_AIR_TRANSAT                                            : Air Transat
+STR_VLIV_AIR_UKRAINE                                            : Air Ukraine
+STR_VLIV_AIR_USSR                                               : Antonov Design Bureau USSR
+STR_VLIV_AIR_VIA                                                : Air VIA
+STR_VLIV_AIRBRIDGE                                              : AirBridgeCargo Airlines
+STR_VLIV_AIRLINAIR_AIR_FRANCE                                   : Airlinair (Air France)
+STR_VLIV_ALASKA_AIRLINES                                        : Alaska Airlines
+STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL                         : Alaska Airlines (Disney Special)
+STR_VLIV_ALBASTAR                                               : Albastar
+STR_VLIV_ALBAWINGS                                              : Albawings
+STR_VLIV_ALITALIA                                               : Alitalia
+STR_VLIV_ALITALIA_CITY                                          : Alitalia Cityliner
+STR_VLIV_ALITALIA_OLD                                           : Alitalia (Old)
+STR_VLIV_ALLEGIANT_AIR                                          : Allegiant Air
+STR_VLIV_ALLIANCE_AIRLINES                                      : Alliance Airlines
+STR_VLIV_ALROSA                                                 : Alrosa
+STR_VLIV_AMASZONAS_PARAGUAY                                     : Amaszonas Paraguay
+STR_VLIV_AMERICAN_AIRLINES                                      : American Airlines
+STR_VLIV_AMERICAN_AIRLINES_OLD                                  : American Airlines (Old)
+STR_VLIV_AMERICAN_EAGLE                                         : American Eagle
+STR_VLIV_AMSTERDAM_AIRLINES                                     : Amsterdam Airlines
 STR_VLIV_ANA                                                    : ANA - All Nippon Airways
-STR_VLIV_ANA_WAVES                                              : ANA Waves - First 777-300
 STR_VLIV_ANA_GOLD                                               : ANA Gold Livery
 STR_VLIV_ANA_PIKACHU_LIVERY_2005                                : ANA Pikachu Livery (2005)
 STR_VLIV_ANA_POKEMON_LIVERY_1999                                : ANA Pokemon Livery (1999)
+STR_VLIV_ANA_WAVES                                              : ANA Waves - First 777-300
 STR_VLIV_ANSETT_NEW_ZEALAND                                     : Ansett New Zealand
+STR_VLIV_ANTONOV_UKRAINE                                        : Antonov Design Bureau Ukraine
+STR_VLIV_ARIANA_AFGHAN_AIRLINES                                 : Ariana Afghan Airlines
+STR_VLIV_ARKAS                                                  : Arkas
+STR_VLIV_ARKE_FLY                                               : Arke Fly
 STR_VLIV_ASIANA_AIRLINES                                        : Asiana Airlines
+STR_VLIV_ASTRA_AIRWAYS                                          : Astra Airways
+STR_VLIV_ASTRAEUS                                               : Astraeus Airlines
+STR_VLIV_AURIGNY_AIR_SERVICES                                   : Aurigny Air Services
+STR_VLIV_AUSTRAL_LINEAS_AEREAS                                  : Austral Lineas Aereas
 STR_VLIV_AUSTRIAN_AIRLINES                                      : Austrian Airlines
 STR_VLIV_AUSTRIAN_AIRLINES_OLD                                  : Austrian Airlines (Old)
 STR_VLIV_AUSTRIAN_AIRLINES_RETRO                                : Austrian Airlines Retro
 STR_VLIV_AUSTRIAN_ARROWS                                        : Austrian Arrows
+STR_VLIV_AVIACO                                                 : Aviaco
 STR_VLIV_AVIANCA                                                : Avianca
-STR_VLIV_BLUE1                                                  : Blue1
-STR_VLIV_BMI_OLD                                                : BMI (Old)
-STR_VLIV_BMI_BABY                                               : BMI Baby
-STR_VLIV_BRUSSELS_AIRLINES                                      : Brussels Airlines
-STR_VLIV_CONTINENTAL                                            : Continental
-STR_VLIV_CONTINENTAL_OLD                                        : Continental (Old)
-STR_VLIV_COPA_AIRLINES                                          : Copa Airlines
-STR_VLIV_CROATIA_AIRLINES                                       : Croatia Airlines
-STR_VLIV_EGYPT_AIR                                              : Egypt Air
-STR_VLIV_EVA_AIR                                                : EVA Air
-STR_VLIV_ETHIOPIAN_AIRLINES                                     : Ethiopian Airlines
-STR_VLIV_GERMANWINGS_OLD                                        : Germanwings (Old)
-STR_VLIV_GERMANWINGS                                            : Germanwings
-STR_VLIV_INDIAN_AIRLINES                                        : Indian Airlines
-STR_VLIC_JAZZ                                                   : Jazz Aviation
-STR_VLIV_LOT                                                    : LOT Polish Airlines
-STR_VLIV_LUFTHANSA                                              : Lufthansa
-STR_VLIV_LUFTHANSA_PREVIOUS                                     : Lufthansa (Old)
-STR_VLIV_LUFTHANSA_RETRO                                        : Lufthansa (Retro)
-STR_VLIV_LUFTHANSA_REGIONAL                                     : Lufthansa Regional
-STR_VLIV_OLYMPIC_AIR                                            : Olympic Air
-STR_VLIV_SAS                                                    : SAS
-STR_VLIV_SHENZHEN_AIRLINES                                      : Shenzhen Airlines
-STR_VLIV_SINGAPORE_AIRLINES                                     : Singapore Airlines
-STR_VLIV_SOUTH_AFRICAN_AIRWAYS                                  : South African Airways
-STR_VLIV_SPANAIR                                                : Spanair
-STR_VLIV_SWISS_AIR                                              : Swiss Air
-STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Swiss International Airlines
-STR_VLIV_TAP                                                    : TAP Portugal
-STR_VLIV_TAP_OLD                                                : TAP Portugal (Old)
-STR_VLIV_PORTUGALIA                                             : Portugalia
-STR_VLIV_THAI_AIRWAYS_INTERNATIONAL                             : Thai Airways International
-STR_VLIV_TURKISH_AIRLINES                                       : Turkish Airlines
-STR_VLIV_UNITED_AIRLINES                                        : United Airlines
-STR_VLIV_UNITED_EXPRESS                                         : United Express
-#
-# Sky Team
-STR_VLIV_AEROFLOT                                               : Aeroflot
-STR_VLIV_AEROFLOT_OLD                                           : Aeroflot (Old)
-STR_VLIV_AEROLINEAS_ARGENTINAS                                  : Aerolineas Argentinas
-STR_VLIV_AEROMEXICO                                             : Aeromexico
-STR_VLIV_AIR_EUROPA                                             : Air Europa
-STR_VLIV_AIR_EUROPA_OLD                                         : Air Europa (Old)
-STR_VLIV_AIR_FRANCE                                             : Air France
-STR_VLIV_AIRLINAIR_AIR_FRANCE                                   : Airlinair (Air France)
-STR_VLIV_ALITALIA                                               : Alitalia
-STR_VLIV_ALITALIA_OLD                                           : Alitalia (Old)
-STR_VLIV_ALITALIA_CITY                                          : Alitalia Cityliner
-STR_VLIV_BRITAIR                                                : BritAir (Air France)
-STR_VLIV_CHINA_AIRLINES                                         : China Airlines
-STR_VLIV_CHINA_EASTERN                                          : China Eastern Airlines
-STR_VLIV_CHINA_SOUTHERN                                         : China Southern Airlines
-STR_VLIV_CZECH_AIRLINES                                         : CSA Czech Airlines
-STR_VLIV_DELTA_AIR_LINES                                        : Delta Air Lines
-STR_VLIV_DELTA_CONNECTION                                       : Delta Connection
-STR_VLIV_GARUDA_INDONESIA                                       : Garuda Indonesia
-STR_VLIV_HOP													: HOP!
-STR_VLIV_KENYA_AIRWAYS                                          : Kenya Airways      
-STR_VLIV_KLM                                                    : KLM
-STR_VLIV_KLM_RETRO_LIVERY                                       : KLM Retro Livery
-STR_VLIV_KLM_CITYHOPPER                                         : KLM Cityhopper
-STR_VLIV_KOREAN_AIR                                             : Korean Air
-STR_VLIV_MIDDLE_EAST_AIRLINES                                   : Middle East Airlines
-STR_VLIV_NORTHWEST_AIRLINES                                     : Northwest Airlines
-STR_VLIV_NORTHWEST_AIRLINK                                      : Northwest Airlink
-STR_VLIV_SAUDI_ARABIAN_AIRLINES                                 : Saudia
-STR_VLIV_TAROM                                                  : TAROM
-STR_VLIV_TAROM_OLD                                              : TAROM (Old)
-STR_VLIV_VIETNAM_AIRLINES                                       : Vietnam Airlines
-STR_VLIV_XIAMEN_AIR                                             : Xiamen Air
-#
-# Unaffiliated
-STR_VLIV_AER_ARRAN_ORIGINAL                                     : Aer Arran (Original)
-STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Aer Arran (Ringed Design)
-STR_VLIV_AER_AZUR_AIR                                           : Azur Air
-STR_VLIV_AER_LINGUS                                             : Aer Lingus
-STR_VLIV_AER_LINGUS_REGIONAL                                    : Aer Lingus Regional
-STR_VLIV_AIR_ASTANA                                             : Air Astana
-STR_VLIV_AIR_AUSTRAL                                            : Air Austral
-STR_VLIV_AIR_CONTRACTORS                                        : Air Contractors
-STR_VLIV_AIR_COMET                                              : Air Comet
-STR_VLIV_AIR_DO                                                 : Air Do
-STR_VLIV_AIR_FLORIDA                                            : Air Florida
-STR_VLIV_AIR_GREENLAND                                          : Air Greenland
-STR_VLIV_AIR_ITALY                                              : Air Italy
-STR_VLIV_AIR_KORYO                                              : Air Koryo
-STR_VLIV_AIR_LIBERTE                                            : Air Liberte
-STR_VLIV_AIR_MACAU                                              : Air Macau
-STR_VLIV_AIR_MALTA                                              : Air Malta
-STR_VLIV_AIR_NAMIBIA                                            : Air Namibia
-STR_VLIV_AIR_NIUGINI                                            : Air Niugini
-STR_VLIV_AIR_PLUS_COMET                                         : Air Plus Comet
-STR_VLIV_AIR_SEYCHELLES                                         : Air Seychelles
-STR_VLIV_AIR_SOUTHWEST                                          : Air Southwest
-STR_VLIV_AIR_SPAIN                                              : Air Spain
-STR_VLIV_AIR_TRANSAT                                            : Air Transat
-STR_VLIV_AIR_UKRAINE                                            : Air Ukraine
-STR_VLIV_ALROSA                                                 : Alrosa
-STR_VLIV_AMASZONAS_PARAGUAY                                     : Amaszonas Paraguay
-STR_VLIV_ASTRA_AIRWAYS											: Astra Airways
-STR_VLIV_ASTRAEUS                                               : Astraeus Airlines
-STR_VLIV_AURIGNY_AIR_SERVICES                                   : Aurigny Air Services
 STR_VLIV_AVIOGENEX                                              : Aviogenex
 STR_VLIV_AZERBAIJAN_AIRLINES                                    : Azerbaijan Airlines
+STR_VLIV_BA_WORLD_CARGO                                         : British Airways World Cargo
 STR_VLIV_BAL_BASHKIRIAN                                         : BAL Bashkirian Airlines
+STR_VLIV_BALAIR                                                 : Balair
 STR_VLIV_BALKAN_BULGARIAN                                       : Balkan Bulgarian Airlines
 STR_VLIV_BALKAN_BULGARIAN_OLD                                   : Balkan Bulgarian Airlines (Old)
+STR_VLIV_BELAVIA                                                : Belavia
+STR_VLIV_BELAVIA_OLD                                            : Belavia(Old)
 STR_VLIV_BIMAN_BANGLADESH_AIRLINES                              : Biman Bangladesh Airlines
+STR_VLIV_BINTER_CANARIAS                                        : Binter Canarias
+STR_VLIV_BIRGENAIR                                              : Birgenair
+STR_VLIV_BLUE1                                                  : Blue1
+STR_VLIV_BMI_BABY                                               : BMI Baby
+STR_VLIV_BMI_OLD                                                : BMI (Old)
+STR_VLIV_BOAC                                                   : BOAC British Overseas Airways Corporation
+STR_VLIV_BRANIFF                                                : Braniff Internation Airways
+STR_VLIV_BRITAIR                                                : BritAir (Air France)
 STR_VLIV_BRITISH_AIRTOURS                                       : British Airtours
+STR_VLIV_BRITISH_AIRWAYS_CITYFLYER                              : British Airways CityFlyer
+STR_VLIV_BRITISH_AIRWAYS_LANDOR                                 : British Airways (Landor)
+STR_VLIV_BRITISH_AIRWAYS_LANDOR_RED                             : British Airways (Landor Red)
+STR_VLIV_BRITISH_AIRWAYS_NEGUS                                  : British Airways (Negus)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG                             : British Airways (Union Flag)
+STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR                      : British Airways Union Flag (Comair)
 STR_VLIV_BRITISH_CALEDONIAN                                     : British Caledonian
+STR_VLIV_BRUSSELS_AIRLINES                                      : Brussels Airlines
 STR_VLIV_BULGARIA_AIR                                           : Bulgaria Air
+STR_VLIV_BUZZ                                                   : Buzz
+STR_VLIV_CARGOLUX                                               : Cargolux
 STR_VLIV_CARPATAIR                                              : Carpatair
+STR_VLIV_CATHAY_PACIFIC                                         : Cathay Pacific
+STR_VLIV_CATHAY_PACIFIC_CARGO                                   : Cathay Pacific Cargo
+STR_VLIV_CHANNEL_EXPRESS                                        : Channel Express
+STR_VLIV_CHINA_AIRLINES                                         : China Airlines
+STR_VLIV_CHINA_AIRLINES_CARGO                                   : China Airlines Cargo
+STR_VLIV_CHINA_EASTERN                                          : China Eastern Airlines
+STR_VLIV_CHINA_SOUTHERN                                         : China Southern Airlines
 STR_VLIV_CHINA_WEST_AIR                                         : China West Air
+STR_VLIV_CLAN_MEGA                                              : Clan Mega
+STR_VLIV_CLICKAIR                                               : Clickair
+STR_VLIV_CONDOR                                                 : Condor
+STR_VLIV_CONDOR_BERLIN                                          : Condor Berlin
+STR_VLIV_CONTINENTAL                                            : Continental
+STR_VLIV_CONTINENTAL_OLD                                        : Continental (Old)
 STR_VLIV_CONVIASA                                               : Conviasa
+STR_VLIV_COPA_AIRLINES                                          : Copa Airlines
+STR_VLIV_CROATIA_AIRLINES                                       : Croatia Airlines
+STR_VLIV_CUBANA_DE_AVIACION                                     : Cubana de Aviacion
+STR_VLIV_CYGNUS                                                 : Cygnus Air
 STR_VLIV_CYPRUS_AIRWAYS                                         : Cyprus Airways
+STR_VLIV_CZECH_AIRLINES                                         : CSA Czech Airlines
+STR_VLIV_DAN_AIR_LONDON                                         : Dan Air London
+STR_VLIV_DBA                                                    : DBA
+STR_VLIV_DELTA_AIR_LINES                                        : Delta Air Lines
+STR_VLIV_DELTA_CONNECTION                                       : Delta Connection
+STR_VLIV_DHL                                                    : DHL
+STR_VLIV_DRAGONAIR                                              : Dragonair
+STR_VLIV_DUTCH_ANTILLES_EXPRESS                                 : Dutch Antilles Express
+STR_VLIV_EASTERN_AIR_LINES                                      : Eastern Air Lines
+STR_VLIV_EASYJET                                                : EasyJet
+STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
+STR_VLIV_EGYPT_AIR                                              : Egypt Air
+STR_VLIV_EGYPT_AIR_OLD                                          : Egypt Air (Old)
 STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : El Al Israel Airlines
 STR_VLIV_ELLINAIR                                               : Ellinair
-STR_VLIV_ENTER_AIR                                              : Enter Air
 STR_VLIV_EMIRATES                                               : Emirates
-STR_VLIV_EUROPEAN_AIRCHARTER                                    : European AirCharter
+STR_VLIV_EMIRATES_SKYCARGO                                      : Emirates SkyCargo
+STR_VLIV_ENTER_AIR                                              : Enter Air
+STR_VLIV_ESTONIAN                                               : Estonian Air
+STR_VLIV_ETHIOPIAN_AIRLINES                                     : Ethiopian Airlines
 STR_VLIV_ETIHAD_AIRWAYS                                         : Etihad Airways
 STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1                     : Etihad Airways (Abu Dhabi Formula 1)
+STR_VLIV_EUROATLANTIC                                           : EuroAtlantic Airways
+STR_VLIV_EUROLOT                                                : Eurolot
+STR_VLIV_EUROPEAN_AIRCHARTER                                    : European AirCharter
+STR_VLIV_EUROWINGS                                              : Eurowings
+STR_VLIV_EVA_AIR                                                : EVA Air
+STR_VLIV_EVA_AIR_CARGO                                          : EVA Air Cargo
 STR_VLIV_EVELOP                                                 : Evelop
+STR_VLIV_FARNAIR_EUROPE                                         : Farnair Europe
+STR_VLIV_FEDEX                                                  : FedEx
+STR_VLIV_FEDEX_OLD                                              : FedEx (Old)
+STR_VLIV_FIJI_AIRWAYS                                           : Fiji Airways
+STR_VLIV_FINNAIR                                                : Finnair
+STR_VLIV_FINNAIR_MOOMIN_STICKERS                                : Finnair - Special Moomin Stickers Livery
+STR_VLIV_FINNAIR_OLD                                            : Finnair (Old)
+STR_VLIV_FLYBE                                                  : Flybe
+STR_VLIV_FLYDUBAI                                               : Flydubai
+STR_VLIV_FLYEGYPT                                               : Fly Egypt
+STR_VLIV_FLYGLOBESPAN                                           : Flyglobespan
+STR_VLIV_FLYNORDIC                                              : FlyNordic
+STR_VLIV_FRONTIER_AIRLINES                                      : Frontier Airlines
+STR_VLIV_FRONTIER_AIRLINES_RACOON_FOX                           : Frontier Airlines (Racoon + Fox)
+STR_VLIV_FUTURA                                                 : Futura
+STR_VLIV_GARUDA_INDONESIA                                       : Garuda Indonesia
 STR_VLIV_GERMANIA                                               : Germania
+STR_VLIV_GERMANWINGS                                            : Germanwings
+STR_VLIV_GERMANWINGS_OLD                                        : Germanwings (Old)
+STR_VLIV_GIRJET                                                 : Girjet
+STR_VLIV_GOL                                                    : Gol Linhas Aéreas 
 STR_VLIV_GREAT_DANE                                             : Great Dane Airlines
 STR_VLIV_GULF_AIR                                               : Gulf Air
 STR_VLIV_HAINAN_AIRLINES                                        : Hainan Airlines
+STR_VLIV_HAPAG_LLOYD                                            : Hapag Lloyd
 STR_VLIV_HAWAIIAN_AIRLINES                                      : Hawaiian Airlines
 STR_VLIV_HELLENIC_IMPERIAL_AIRWAYS                              : Hellenic Imperial Airways
 STR_VLIV_HELVETIC_AIRWAYS                                       : Helvetic Airways
@@ -485,130 +413,188 @@ STR_VLIV_HELVETIC_AIRWAYS_OLD                                   : Helvetic Airwa
 STR_VLIV_HIGHLAND_EXPRESS                                       : Highland Express
 STR_VLIV_HISKY                                                  : HiSky
 STR_VLIV_HISPANIA                                               : Hispania Lineas Aereas
+STR_VLIV_HOP                                                    : HOP!
+STR_VLIV_IBERIA                                                 : Iberia
+STR_VLIV_IBERIA_OLD                                             : Iberia (Old)
 STR_VLIV_IBERWORLD                                              : Iberworld
 STR_VLIV_ICELANDAIR                                             : Icelandair
-STR_VLIV_IRAN_AIR                                               : Iran Air
-STR_VLIV_IRAQI_AIRWAYS                                          : Iraqi Airways
-STR_VLIV_JAT_AIRWAYS                                            : JAT Airways
-STR_VLIV_JET_AIRWAYS                                            : JET Airways
-STR_VLIV_JETBLUE                                                : JetBlue
-STR_VLIV_KMV                                                    : KMV Avia
-STR_VLIV_LAGUNAIR                                               : LagunAir
-STR_VLIV_LIBYAN_AIRLINES                                        : Libyan Airlines
-STR_VLIV_LUXAIR                                                 : Luxair
-STR_VLIV_MALMO_AVIATION                                         : Malmo Aviation
-STR_VLIV_MALMO_AVIATION_SVENSK_FOOTBALL                         : Malmo Aviation (Svensk Football)
-STR_VLIV_MARTINAIR                                              : Martinair
-STR_VLIV_MAT_MACEDONIAN                                         : MAT Macedonian Airlines
-STR_VLIV_MERIDIANA                                              : Meridiana
-STR_VLIV_METROJET                                               : Mertrojet
-STR_VLIV_MONARCH_AIRLINES                                       : Monarch Airlines
-STR_VLIV_MONTENEGRO_AIRLINES                                    : Montenegro Airlines
-STR_VLIV_OMNI_AIR_INTERNATIONAL                                 : Omni Air International
-STR_VLIV_PALMAIR                                                : Palmair
-STR_VLIV_PEGAS_FLY                                              : Pegas Fly
-STR_VLIV_PERUVIAN                                               : Peruvian Airlines
-STR_VLIV_PIA                                                    : Pakistan International Airlines
-STR_VLIV_PRECISION_AIR_SERVICES                                 : Precision Air
-STR_VLIV_ROSSIYA_AIRLINES                                       : Rossiya Airlines
-STR_VLIV_ROSSIYA_AIRLINES_OLD                                   : Rossiya Airlines (Old)
-STR_VLIV_ROYAL_BRUNEI_AIRLINES                                  : Royal Brunei Airlines
-STR_VLIV_SAMOA_AIRWAYS                                          : Samoa Airways
-STR_VLIV_SATA                                                   : SATA - Air Acores
-STR_VLIV_SATENA                                                 : SATENA
-STR_VLIV_SKYMARK_AIRLINES                                       : Skymark Airlines
-STR_VLIV_SKYUP                                                  : SkyUp Airlines
-STR_VLIV_SLOKAIR                                                : Slok Air International
-STR_VLIV_SOMON_AIR                                              : Somon Air
-STR_VLIV_SUDAN_AIRWAYS                                          : Sudan Airways
-STR_VLIV_TAE                                                    : TAE - Trabajos Aéreos y Enlaces
-STR_VLIV_THOMAS_COOK                                            : Thomas Cook
-STR_VLIV_TRANSAERO                                              : Transaero
-STR_VLIV_TUNISAIR                                               : Tunisair
-STR_VLIV_TURKMENISTAN_AIRLINES                                  : Turkmenistan Airlines
-STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES                         : Ukraine International Airlines
-STR_VLIV_UZBEKISTAN_AIRWAYS                                     : Uzbekistan Airways
-STR_VLIV_URAL_AIRLINES                                          : Ural Airlines
-STR_VLIV_UTAIR                                                  : UTair
-STR_VLIV_VARIG                                                  : Varig
-STR_VLIV_VIRGIN_ATLANTIC                                        : Virgin Atlantic
-STR_VLIV_VLADIVOSTOCK                                           : Vladivostok Air
-STR_VLIV_WIDEROE                                                : Wideroe
-STR_VLIV_YAMAL                                                  : Yamal Airlines
-STR_VLIV_YEMENIA                                                : Yemenia
-#
-# Others
-STR_VLIV_ADRIA_AIRWAYS                                          : Adria Airways
-STR_VLIV_AIR_ONE                                                : Air One
-STR_VLIV_AIR_INTER                                              : Air Inter
-STR_VLIV_AIR_NAURU                                              : Air Nauru
-STR_VLIV_AIR_SERBIA                                             : Air Serbia
-STR_VLIV_AIR_SLOVAKIA                                           : Air Slovakia
-STR_VLIV_AIR_TAHITI_NUI                                         : Air Tahiti Nui
-STR_VLIV_AIR_VIA                                                : Air VIA
-STR_VLIV_ALLEGIANT_AIR                                          : Allegiant Air
-STR_VLIV_ARKAS                                                  : Arkas
-STR_VLIV_AUSTRAL_LINEAS_AEREAS                                  : Austral Lineas Aereas
-STR_VLIV_BRANIFF                                                : Braniff Internation Airways
-STR_VLIV_BIRGENAIR                                              : Birgenair
-STR_VLIV_CLAN_MEGA                                              : Clan Mega
-STR_VLIV_DUTCH_ANTILLES_EXPRESS                                 : Dutch Antilles Express
-STR_VLIV_FARNAIR_EUROPE                                         : Farnair Europe
+STR_VLIV_ICELANDAIR_CARGO                                       : Icelandair Cargo
+STR_VLIV_INDIAN_AIRLINES                                        : Indian Airlines
 STR_VLIV_INDIGO                                                 : IndiGo
 STR_VLIV_INSEL_AIR                                              : Insel Air
 STR_VLIV_INTERFLUG                                              : Interflug
-STR_VLIV_MAHAN_AIR                                              : Mahan Air
-STR_VLIV_OMAN_AIR                                               : Oman Air
-STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS                             : Pan American World Airways
-STR_VLIV_PHILIPPINES_AIRLINES                                   : Philippines Airlines
-STR_VLIV_RWANDAIR                                               : RwandAir
-STR_VLIV_SLOK_AIR                                               : Slok Air
-STR_VLIV_SURINAM_AIRWAYS                                        : Surinam Airways
-STR_VLIV_TAAG_ANGOLA_AIRLINES                                   : TAAG Angola Airlines
-STR_VLIV_V_AUSTRALIA                                            : V Australia
-STR_VLIV_VUELING_AIRLINES                                       : Vueling Airlines
-STR_VLIV_FLYGLOBESPAN                                           : Flyglobespan
-STR_VLIV_SUNEXPRESS                                             : SunExpress
-STR_VLIV_THOMSON_AIRWAYS                                        : Thomson Airways
-STR_VLIV_TWA                                                    : TWA - Trans World Airlines
-STR_VLIV_PSA                                                    : PSA - Pacific Southwest Airlines
-STR_VLIV_SABENA                                                 : Sabena
-STR_VLIV_SPANTAX                                                : Spantax
-STR_VLIV_LAKER_AIRWAYS                                          : Laker Airways
-STR_VLIV_FIJI_AIRWAYS                                           : Fiji Airways
-STR_VLIV_AVIACO                                                 : Aviaco
-STR_VLIV_ARIANA_AFGHAN_AIRLINES                                 : Ariana Afghan Airlines
-STR_VLIV_ESTONIAN                                               : Estonian Air
-STR_VLIV_HAPAG_LLOYD                                            : Hapag Lloyd
-STR_VLIV_ROYAL_AIR_MAROC                                        : Royal Air Maroc
-STR_VLIV_SWIFTAIR                                               : Swiftair
-STR_VLIV_BALAIR                                                 : Balair
-STR_VLIV_CLICKAIR                                               : Clickair
-STR_VLIV_AIR_ALGERIE                                            : Air Algerie
-STR_VLIV_AIR_PACIFIC                                            : Air Pacific
-STR_VLIV_PEGASUS                                                : Pegasus Airlines
-STR_VLIV_EASTERN_AIR_LINES                                      : Eastern Air Lines
-STR_VLIV_GIRJET                                                 : Girjet
-STR_VLIV_WESTJET                                                : Westjet
-STR_VLIV_BELAVIA                                                : Belavia
-STR_VLIV_BELAVIA_OLD                                            : Belavia(Old)
-STR_VLIV_TRAVEL_SERVICE                                         : Travel Service 
-STR_VLIV_ALLIANCE_AIRLINES                                      : Alliance Airlines
-STR_VLIV_BOAC                                                   : BOAC British Overseas Airways Corporation
-STR_VLIV_CUBANA_DE_AVIACION                                     : Cubana de Aviacion
-STR_VLIV_VIASA                                                  : VIASA
-STR_VLIV_ALBASTAR                                               : Albastar
-STR_VLIV_PRIVILEGE_STYLE                                        : Privilege Style
-STR_VLIV_BINTER_CANARIAS                                        : Binter Canarias
-STR_VLIV_FUTURA                                                 : Futura
-STR_VLIV_AEROPOSTAL                                             : Aeropostal
+STR_VLIV_IRAN_AIR                                               : Iran Air
+STR_VLIV_IRAQI_AIRWAYS                                          : Iraqi Airways
+STR_VLIV_JAL                                                    : Japan Airlines
+STR_VLIV_JAL_GREEN                                              : JAL Green
+STR_VLIV_JAPAN_AIR_SYSTEM                                       : Japan Air System
+STR_VLIV_JAT_AIRWAYS                                            : JAT Airways
+STR_VLIV_JAZZ                                                   : Jazz Aviation
 STR_VLIV_JET_TIME                                               : Jet Time
-STR_VLIV_EUROLOT                                                : Eurolot
+STR_VLIV_JET2                                                   : Jet2
+STR_VLIV_JETAIRFLY                                              : Jetairfly
+STR_VLIV_JETBLUE                                                : JetBlue
+STR_VLIV_JETSTAR_AIRWAYS                                        : Jetstar Airways
+STR_VLIV_KALITTA_AIR                                            : Kalitta Air
+STR_VLIV_KENYA_AIRWAYS                                          : Kenya Airways      
+STR_VLIV_KLM                                                    : KLM
+STR_VLIV_KLM_CARGO                                              : KLM Cargo
+STR_VLIV_KLM_CITYHOPPER                                         : KLM Cityhopper
+STR_VLIV_KLM_RETRO_LIVERY                                       : KLM Retro Livery
+STR_VLIV_KMV                                                    : KMV Avia
+STR_VLIV_KOREAN_AIR                                             : Korean Air
+STR_VLIV_KOREAN_AIR_CARGO                                       : Korean Air Cargo
+STR_VLIV_KUBAN_AIRLINES                                         : Kuban Airlines
+STR_VLIV_KULULA                                                 : Kulula
 STR_VLIV_KUWAIT_AIRWAYS                                         : Kuwait Airways
-STR_VLIV_AIR_AFRIQUE                                            : Air Afrique
+STR_VLIV_LAGUNAIR                                               : LagunAir
+STR_VLIV_LAKER_AIRWAYS                                          : Laker Airways
+STR_VLIV_LAN_AIRLINES                                           : LAN Airlines
+STR_VLIV_LAN_CARGO                                              : LAN Cargo
+STR_VLIV_LAUDA_EUROPE                                           : Lauda Europe
+STR_VLIV_LEVEL                                                  : Level
+STR_VLIV_LIBYAN_AIRLINES                                        : Libyan Airlines
+STR_VLIV_LION_AIR                                               : Lion Air
+STR_VLIV_LOT                                                    : LOT Polish Airlines
+STR_VLIV_LUFTHANSA                                              : Lufthansa
+STR_VLIV_LUFTHANSA_PREVIOUS                                     : Lufthansa (Old)
+STR_VLIV_LUFTHANSA_REGIONAL                                     : Lufthansa Regional
+STR_VLIV_LUFTHANSA_RETRO                                        : Lufthansa (Retro)
+STR_VLIV_LUXAIR                                                 : Luxair
+STR_VLIV_MAHAN_AIR                                              : Mahan Air
+STR_VLIV_MALAYSIA_AIRLINES                                      : Malaysia Airlines
+STR_VLIV_MALEV                                                  : Malev
+STR_VLIV_MALEV_OLD                                              : Malev (Old)
+STR_VLIV_MALMO_AVIATION                                         : Malmo Aviation
+STR_VLIV_MALMO_AVIATION_SVENSK_FOOTBALL                         : Malmo Aviation (Svensk Football)
+STR_VLIV_MARTINAIR                                              : Martinair
+STR_VLIV_MARTINAIR_CARGO                                        : Martinair Cargo
+STR_VLIV_MAT_MACEDONIAN                                         : MAT Macedonian Airlines
+STR_VLIV_MERIDIANA                                              : Meridiana
+STR_VLIV_METROJET                                               : Mertrojet
+STR_VLIV_MEXICANA                                               : Mexicana
+STR_VLIV_MIDDLE_EAST_AIRLINES                                   : Middle East Airlines
+STR_VLIV_MONARCH_AIRLINES                                       : Monarch Airlines
+STR_VLIV_MONTENEGRO_AIRLINES                                    : Montenegro Airlines
+STR_VLIV_NEOS                                                   : Neos
+STR_VLIV_NIKI                                                   : Niki
+STR_VLIV_NIPPON_CARGO_AIRLINES                                  : Nippon Cargo Airlines
+STR_VLIV_NIPPON_CARGO_AIRLINES_GREEN_FREIGHTER                  : Nippon Cargo Airlines (Green Freighter)
+STR_VLIV_NORTHWEST_AIRLINES                                     : Northwest Airlines
+STR_VLIV_NORTHWEST_AIRLINK                                      : Northwest Airlink
+STR_VLIV_NORWEGIAN_AIR                                          : Norwegian Air
+STR_VLIV_NORWEGIAN_LONG_HAUL                                    : Norwegian Long Haul
+STR_VLIV_OLYMPIC_AIR                                            : Olympic Air
+STR_VLIV_OMAN_AIR                                               : Oman Air
+STR_VLIV_OMNI_AIR_INTERNATIONAL                                 : Omni Air International
+STR_VLIV_ONUR_AIR                                               : Onur Air
+STR_VLIV_PALMAIR                                                : Palmair
+STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS                             : Pan American World Airways
+STR_VLIV_PEGAS_FLY                                              : Pegas Fly
+STR_VLIV_PEGASUS                                                : Pegasus Airlines
+STR_VLIV_PEOPLEXPRESS                                           : PEOPLExpress
+STR_VLIV_PERUVIAN                                               : Peruvian Airlines
+STR_VLIV_PHILIPPINES_AIRLINES                                   : Philippines Airlines
+STR_VLIV_PIA                                                    : Pakistan International Airlines
+STR_VLIV_PORTUGALIA                                             : Portugalia
+STR_VLIV_PRECISION_AIR_SERVICES                                 : Precision Air
+STR_VLIV_PRIVILEGE_STYLE                                        : Privilege Style
+STR_VLIV_PSA                                                    : PSA - Pacific Southwest Airlines
+STR_VLIV_QANTAS                                                 : Qantas
+STR_VLIV_QANTAS_FREIGHT                                         : Qantas Freight
+STR_VLIV_QANTAS_ONEWORLD                                        : Qantas - Oneworld Livery
+STR_VLIV_QANTAS_VJET                                            : Qantas V-Jet
+STR_VLIV_QANTASLINK                                             : Qantaslink
+STR_VLIV_QANTASLINK_PINK_RIBBON                                 : Qantaslink (Pink Ribbon)
+STR_VLIV_QATAR_AIRWAYS                                          : Qatar Airways
+STR_VLIV_QATAR_AIRWAYS_CARGO                                    : Qatar Airways Cargo
+STR_VLIV_REGIONAL_CARGO                                         : Regional Cargo
+STR_VLIV_ROSSIYA_AIRLINES                                       : Rossiya Airlines
+STR_VLIV_ROSSIYA_AIRLINES_OLD                                   : Rossiya Airlines (Old)
+STR_VLIV_ROYAL_AIR_MAROC                                        : Royal Air Maroc
+STR_VLIV_ROYAL_BRUNEI_AIRLINES                                  : Royal Brunei Airlines
+STR_VLIV_ROYAL_JORDANIAN                                        : Royal Jordanian
+STR_VLIV_ROYAL_MAIL                                             : Royal Mail
+STR_VLIV_RWANDAIR                                               : RwandAir
+STR_VLIV_RYANAIR                                                : Ryanair
+STR_VLIV_RYANAIR_OLD                                            : Ryanair (Old)
+STR_VLIV_S7_AIRLINES                                            : S7 Siberia Airlines
+STR_VLIV_SABENA                                                 : Sabena
+STR_VLIV_SAMOA_AIRWAYS                                          : Samoa Airways
+STR_VLIV_SAS                                                    : SAS
+STR_VLIV_SATA                                                   : SATA - Air Acores
+STR_VLIV_SATENA                                                 : SATENA
+STR_VLIV_SAUDI_ARABIAN_AIRLINES                                 : Saudia
+STR_VLIV_SHENZHEN_AIRLINES                                      : Shenzhen Airlines
+STR_VLIV_SINGAPORE_AIRLINES                                     : Singapore Airlines
+STR_VLIV_SKYMARK_AIRLINES                                       : Skymark Airlines
+STR_VLIV_SKYWEST                                                : Skywest
+STR_VLIV_SLOK_AIR                                               : Slok Air
+STR_VLIV_SLOKAIR                                                : Slok Air International
+STR_VLIV_SMALL_PLANET                                           : Small Planet Airlines
+STR_VLIV_SMART_WINGS                                            : Smart Wings
+STR_VLIV_SOUTH_AFRICAN_AIRWAYS                                  : South African Airways
+STR_VLIV_SOUTH_AFRICAN_CARGO                                    : South African Cargo
+STR_VLIV_SOUTH_WEST_GOLD                                        : South West (Gold)
+STR_VLIV_SOUTHWEST_AIRLINES                                     : Southwest Airlines
+STR_VLIV_SPANAIR                                                : Spanair
+STR_VLIV_SPANTAX                                                : Spantax
+STR_VLIV_SRILANKAN_AIRLINES                                     : SriLankan Airlines
+STR_VLIV_SUDAN_AIRWAYS                                          : Sudan Airways
+STR_VLIV_SUNEXPRESS                                             : SunExpress
+STR_VLIV_SURINAM_AIRWAYS                                        : Surinam Airways
+STR_VLIV_SWIFTAIR                                               : Swiftair
+STR_VLIV_SWISS_AIR                                              : Swiss Air
+STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Swiss International Airlines
+STR_VLIV_TAAG_ANGOLA_AIRLINES                                   : TAAG Angola Airlines
+STR_VLIV_TAE                                                    : TAE - Trabajos Aéreos y Enlaces
+STR_VLIV_TAM_AIRLINES                                           : TAM Linhas Aereas
+STR_VLIV_TAP                                                    : TAP Portugal
+STR_VLIV_TAP_OLD                                                : TAP Portugal (Old)
+STR_VLIV_TAROM                                                  : TAROM
+STR_VLIV_TAROM_OLD                                              : TAROM (Old)
+STR_VLIV_THAI_AIRWAYS_INTERNATIONAL                             : Thai Airways International
+STR_VLIV_THOMAS_COOK                                            : Thomas Cook
+STR_VLIV_THOMSON_AIRWAYS                                        : Thomson Airways
+STR_VLIV_TNT                                                    : TNT Airways
+STR_VLIV_TRANSAERO                                              : Transaero
+STR_VLIV_TRANSAVIA                                              : Transavia
+STR_VLIV_TRAVEL_SERVICE                                         : Travel Service 
+STR_VLIV_TUI                                                    : TUI
+STR_VLIV_TUNISAIR                                               : Tunisair
+STR_VLIV_TURKISH_AIRLINES                                       : Turkish Airlines
+STR_VLIV_TURKISH_AIRLINES_CARGO                                 : Turkish Airlines Cargo
+STR_VLIV_TURKMENISTAN_AIRLINES                                  : Turkmenistan Airlines
+STR_VLIV_TWA                                                    : TWA - Trans World Airlines
+STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES                         : Ukraine International Airlines
+STR_VLIV_ULS_CARGO                                              : ULS Airlines Cargo
+STR_VLIV_UNITED_AIRLINES                                        : United Airlines
+STR_VLIV_UNITED_EXPRESS                                         : United Express
+STR_VLIV_UPS                                                    : UPS
+STR_VLIV_URAL_AIRLINES                                          : Ural Airlines
+STR_VLIV_US_AIRWAYS                                             : US Airways
+STR_VLIV_US_AIRWAYS_OLD                                         : US Airways (Old)
+STR_VLIV_UTAIR                                                  : UTair
+STR_VLIV_UZBEKISTAN_AIRWAYS                                     : Uzbekistan Airways
+STR_VLIV_V_AUSTRALIA                                            : V Australia
+STR_VLIV_VARIG                                                  : Varig
+STR_VLIV_VIASA                                                  : VIASA
+STR_VLIV_VIETNAM_AIRLINES                                       : Vietnam Airlines
 STR_VLIV_VIM_AIRLINES                                           : VIM Airlines
 STR_VLIV_VIM_AIRLINES_OLD                                       : VIM Airlines (Old)
+STR_VLIV_VIRGIN_ATLANTIC                                        : Virgin Atlantic
+STR_VLIV_VIRGIN_BLUE                                            : Virgin Blue
+STR_VLIV_VLADIVOSTOCK                                           : Vladivostok Air
+STR_VLIV_VOLGA_DNEPR                                            : Volga-Dnepr
 STR_VLIV_VOLOTEA                                                : Volotea
-STR_VLIV_DAN_AIR_LONDON                                         : Dan Air London
-STR_VLIV_SMART_WINGS											: Smart Wings
-STR_VLIV_NEOS													: Neos
+STR_VLIV_VUELING_AIRLINES                                       : Vueling Airlines
+STR_VLIV_WAMOS                                                  : Wamos
+STR_VLIV_WESTJET                                                : Westjet
+STR_VLIV_WIDEROE                                                : Wideroe
+STR_VLIV_WIZZ_AIR                                               : Wizz Air
+STR_VLIV_WIZZ_AIR_OLD                                           : Wizz Air (Old)
+STR_VLIV_WOW_AIR                                                : WOW Air
+STR_VLIV_XIAMEN_AIR                                             : Xiamen Air
+STR_VLIV_XL_AIRWAYS                                             : XL Airways
+STR_VLIV_YAMAL                                                  : Yamal Airlines
+STR_VLIV_YEMENIA                                                : Yemenia
