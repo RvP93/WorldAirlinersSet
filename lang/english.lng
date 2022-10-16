@@ -198,6 +198,7 @@ STR_VLIV_ADRIA_AIRWAYS                                          : Adria Airways
 STR_VLIV_AEGAN_AIRLINES                                         : Aegan Airlines
 STR_VLIV_AER_ARRAN_ORIGINAL                                     : Aer Arran (Original)
 STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Aer Arran (Ringed Design)
+STR_VLIV_AER_AZUR_AIR                                           : Azur Air
 STR_VLIV_AER_LINGUS                                             : Aer Lingus
 STR_VLIV_AER_LINGUS_REGIONAL                                    : Aer Lingus Regional
 STR_VLIV_AEROFLOT                                               : Aeroflot
@@ -240,6 +241,7 @@ STR_VLIV_AIR_INDIA_REGIONAL                                     : Air India Regi
 STR_VLIV_AIR_INTER                                              : Air Inter
 STR_VLIV_AIR_ITALY                                              : Air Italy
 STR_VLIV_AIR_KORYO                                              : Air Koryo
+STR_VLIV_AIR_LIBERTE                                            : Air Liberte
 STR_VLIV_AIR_MACAU                                              : Air Macau
 STR_VLIV_AIR_MALTA                                              : Air Malta
 STR_VLIV_AIR_NAMIBIA                                            : Air Namibia
@@ -251,7 +253,6 @@ STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            : Air Nostrum (I
 STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        : Air Nostrum (Old) (Iberia Regional)
 STR_VLIV_AIR_ONE                                                : Air One
 STR_VLIV_AIR_PACIFIC                                            : Air Pacific
-STR_VLIV_AIR_PEACE                                              : Air Peace
 STR_VLIV_AIR_PLUS_COMET                                         : Air Plus Comet
 STR_VLIV_AIR_SERBIA                                             : Air Serbia
 STR_VLIV_AIR_SEYCHELLES                                         : Air Seychelles
@@ -364,7 +365,6 @@ STR_VLIV_EASTERN_AIR_LINES                                      : Eastern Air Li
 STR_VLIV_EASYJET                                                : EasyJet
 STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
 STR_VLIV_EGYPT_AIR                                              : Egypt Air
-STR_VLIV_EGYPT_AIR_OLD                                          : Egypt Air (Old)
 STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : El Al Israel Airlines
 STR_VLIV_ELLINAIR                                               : Ellinair
 STR_VLIV_EMIRATES                                               : Emirates
@@ -374,7 +374,6 @@ STR_VLIV_ESTONIAN                                               : Estonian Air
 STR_VLIV_ETHIOPIAN_AIRLINES                                     : Ethiopian Airlines
 STR_VLIV_ETIHAD_AIRWAYS                                         : Etihad Airways
 STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1                     : Etihad Airways (Abu Dhabi Formula 1)
-STR_VLIV_EUROATLANTIC                                           : EuroAtlantic Airways
 STR_VLIV_EUROLOT                                                : Eurolot
 STR_VLIV_EUROPEAN_AIRCHARTER                                    : European AirCharter
 STR_VLIV_EUROWINGS                                              : Eurowings
@@ -430,13 +429,14 @@ STR_VLIV_JAL_GREEN                                              : JAL Green
 STR_VLIV_JAPAN_AIR_SYSTEM                                       : Japan Air System
 STR_VLIV_JAT_AIRWAYS                                            : JAT Airways
 STR_VLIV_JAZZ                                                   : Jazz Aviation
+STR_VLIV_JET_AIRWAYS                                            : JET Airways
 STR_VLIV_JET_TIME                                               : Jet Time
 STR_VLIV_JET2                                                   : Jet2
 STR_VLIV_JETAIRFLY                                              : Jetairfly
 STR_VLIV_JETBLUE                                                : JetBlue
 STR_VLIV_JETSTAR_AIRWAYS                                        : Jetstar Airways
 STR_VLIV_KALITTA_AIR                                            : Kalitta Air
-STR_VLIV_KENYA_AIRWAYS                                          : Kenya Airways      
+STR_VLIV_KENYA_AIRWAYS                                          : Kenya Airways
 STR_VLIV_KLM                                                    : KLM
 STR_VLIV_KLM_CARGO                                              : KLM Cargo
 STR_VLIV_KLM_CITYHOPPER                                         : KLM Cityhopper
@@ -528,11 +528,13 @@ STR_VLIV_SAUDI_ARABIAN_AIRLINES                                 : Saudia
 STR_VLIV_SHENZHEN_AIRLINES                                      : Shenzhen Airlines
 STR_VLIV_SINGAPORE_AIRLINES                                     : Singapore Airlines
 STR_VLIV_SKYMARK_AIRLINES                                       : Skymark Airlines
+STR_VLIV_SKYUP                                                  : SkyUp Airlines
 STR_VLIV_SKYWEST                                                : Skywest
 STR_VLIV_SLOK_AIR                                               : Slok Air
 STR_VLIV_SLOKAIR                                                : Slok Air International
 STR_VLIV_SMALL_PLANET                                           : Small Planet Airlines
 STR_VLIV_SMART_WINGS                                            : Smart Wings
+STR_VLIV_SOMON_AIR                                              : Somon Air
 STR_VLIV_SOUTH_AFRICAN_AIRWAYS                                  : South African Airways
 STR_VLIV_SOUTH_AFRICAN_CARGO                                    : South African Cargo
 STR_VLIV_SOUTH_WEST_GOLD                                        : South West (Gold)
