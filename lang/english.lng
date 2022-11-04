@@ -277,6 +277,7 @@ STR_VLIV_ALLEGIANT_AIR                                          : Allegiant Air
 STR_VLIV_ALLIANCE_AIRLINES                                      : Alliance Airlines
 STR_VLIV_ALROSA                                                 : Alrosa
 STR_VLIV_AMASZONAS_PARAGUAY                                     : Amaszonas Paraguay
+STR_VLIV_AMC_AVIATION                                           : AMC Aviation
 STR_VLIV_AMERICAN_AIRLINES                                      : American Airlines
 STR_VLIV_AMERICAN_AIRLINES_OLD                                  : American Airlines (Old)
 STR_VLIV_AMERICAN_EAGLE                                         : American Eagle
@@ -309,6 +310,7 @@ STR_VLIV_BAL_BASHKIRIAN                                         : BAL Bashkirian
 STR_VLIV_BALAIR                                                 : Balair
 STR_VLIV_BALKAN_BULGARIAN                                       : Balkan Bulgarian Airlines
 STR_VLIV_BALKAN_BULGARIAN_OLD                                   : Balkan Bulgarian Airlines (Old)
+STR_VLIV_BAVARIA_GERMANAIR                                       : Bavaria Germanair
 STR_VLIV_BELAVIA                                                : Belavia
 STR_VLIV_BELAVIA_OLD                                            : Belavia(Old)
 STR_VLIV_BIMAN_BANGLADESH_AIRLINES                              : Biman Bangladesh Airlines
@@ -353,6 +355,7 @@ STR_VLIV_CROATIA_AIRLINES                                       : Croatia Airlin
 STR_VLIV_CUBANA_DE_AVIACION                                     : Cubana de Aviacion
 STR_VLIV_CYGNUS                                                 : Cygnus Air
 STR_VLIV_CYPRUS_AIRWAYS                                         : Cyprus Airways
+STR_VLIV_CYPRUS_AIRWAYS_OLD                                     : Cyprus Airways (Old)
 STR_VLIV_CZECH_AIRLINES                                         : CSA Czech Airlines
 STR_VLIV_DAN_AIR_LONDON                                         : Dan Air London
 STR_VLIV_DBA                                                    : DBA
@@ -407,6 +410,7 @@ STR_VLIV_HAINAN_AIRLINES                                        : Hainan Airline
 STR_VLIV_HAPAG_LLOYD                                            : Hapag Lloyd
 STR_VLIV_HAWAIIAN_AIRLINES                                      : Hawaiian Airlines
 STR_VLIV_HELLENIC_IMPERIAL_AIRWAYS                              : Hellenic Imperial Airways
+STR_VLIV_HELLO                                                  : Hello
 STR_VLIV_HELVETIC_AIRWAYS                                       : Helvetic Airways
 STR_VLIV_HELVETIC_AIRWAYS_OLD                                   : Helvetic Airways (Old)
 STR_VLIV_HIGHLAND_EXPRESS                                       : Highland Express
@@ -451,6 +455,7 @@ STR_VLIV_LAGUNAIR                                               : LagunAir
 STR_VLIV_LAKER_AIRWAYS                                          : Laker Airways
 STR_VLIV_LAN_AIRLINES                                           : LAN Airlines
 STR_VLIV_LAN_CARGO                                              : LAN Cargo
+STR_VLIV_LAUDA                                                  : Lauda
 STR_VLIV_LAUDA_EUROPE                                           : Lauda Europe
 STR_VLIV_LEVEL                                                  : Level
 STR_VLIV_LIBYAN_AIRLINES                                        : Libyan Airlines
@@ -546,8 +551,10 @@ STR_VLIV_SUDAN_AIRWAYS                                          : Sudan Airways
 STR_VLIV_SUNEXPRESS                                             : SunExpress
 STR_VLIV_SURINAM_AIRWAYS                                        : Surinam Airways
 STR_VLIV_SWIFTAIR                                               : Swiftair
-STR_VLIV_SWISS_AIR                                              : Swiss Air
-STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Swiss International Airlines
+STR_VLIV_SWISSAIR                                               : Swissair
+STR_VLIV_SWISS_AIR                                              : Swissair
+STR_VLIV_SWISS                                                  : Swiss
+STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Swiss
 STR_VLIV_TAAG_ANGOLA_AIRLINES                                   : TAAG Angola Airlines
 STR_VLIV_TAE                                                    : TAE - Trabajos Aéreos y Enlaces
 STR_VLIV_TAM_AIRLINES                                           : TAM Linhas Aereas
