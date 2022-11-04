@@ -66,14 +66,32 @@ BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Greyscale)
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Adria.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Adria) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BavariaGermanair.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_BavariaGermanair) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishAirways.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_BritishAirways) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/BritishCaledonian.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_BritishCaledonian) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Cyprus.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Cyprus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/CyprusOld.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_CyprusOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/DanAir.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_DanAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/EuropeanAirCharter.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_EuropeanAirCharter) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/HapagLloyd.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_HapagLloyd) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Lauda.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Lauda) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Monarch.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Monarch) 
@@ -83,6 +101,12 @@ BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Ryanair)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Ryanair1.png"
 BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Ryanair1) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/Swissair.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_Swissair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/BAC/1-11/1-11-500/TAROM.png"
+BAC_1_11_500_sprite_layout_template(BAC_1_11_500_TAROM) 
 #undef IMAGEFILE
 
 switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Greyscale, flight_state())
@@ -103,6 +127,15 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Adria, flight_state())
       BAC_1_11_500_Adria_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_BavariaGermanair, flight_state())
+{
+  15: BAC_1_11_500_BavariaGermanair_Climbing;
+  18: BAC_1_11_500_BavariaGermanair_Flight;
+  21: BAC_1_11_500_BavariaGermanair_Landing;
+  22: BAC_1_11_500_BavariaGermanair_Touchdown;
+      BAC_1_11_500_BavariaGermanair_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_BritishAirways, flight_state())
 {
   15: BAC_1_11_500_BritishAirways_Climbing;
@@ -121,6 +154,33 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_BritishCaledonian, flight_state())
       BAC_1_11_500_BritishCaledonian_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Cyprus, flight_state())
+{
+  15: BAC_1_11_500_Cyprus_Climbing;
+  18: BAC_1_11_500_Cyprus_Flight;
+  21: BAC_1_11_500_Cyprus_Landing;
+  22: BAC_1_11_500_Cyprus_Touchdown;
+      BAC_1_11_500_Cyprus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_CyprusOld, flight_state())
+{
+  15: BAC_1_11_500_CyprusOld_Climbing;
+  18: BAC_1_11_500_CyprusOld_Flight;
+  21: BAC_1_11_500_CyprusOld_Landing;
+  22: BAC_1_11_500_CyprusOld_Touchdown;
+      BAC_1_11_500_CyprusOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_DanAir, flight_state())
+{
+  15: BAC_1_11_500_DanAir_Climbing;
+  18: BAC_1_11_500_DanAir_Flight;
+  21: BAC_1_11_500_DanAir_Landing;
+  22: BAC_1_11_500_DanAir_Touchdown;
+      BAC_1_11_500_DanAir_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_EuropeanAirCharter, flight_state())
 {
   15: BAC_1_11_500_EuropeanAirCharter_Climbing;
@@ -128,6 +188,24 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_EuropeanAirCharter, flight_state())
   21: BAC_1_11_500_EuropeanAirCharter_Landing;
   22: BAC_1_11_500_EuropeanAirCharter_Touchdown;
       BAC_1_11_500_EuropeanAirCharter_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_HapagLloyd, flight_state())
+{
+  15: BAC_1_11_500_HapagLloyd_Climbing;
+  18: BAC_1_11_500_HapagLloyd_Flight;
+  21: BAC_1_11_500_HapagLloyd_Landing;
+  22: BAC_1_11_500_HapagLloyd_Touchdown;
+      BAC_1_11_500_HapagLloyd_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Lauda, flight_state())
+{
+  15: BAC_1_11_500_Lauda_Climbing;
+  18: BAC_1_11_500_Lauda_Flight;
+  21: BAC_1_11_500_Lauda_Landing;
+  22: BAC_1_11_500_Lauda_Touchdown;
+      BAC_1_11_500_Lauda_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Monarch, flight_state())
@@ -157,15 +235,41 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Ryanair1, flight_state())
       BAC_1_11_500_Ryanair1_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_Swissair, flight_state())
+{
+  15: BAC_1_11_500_Swissair_Climbing;
+  18: BAC_1_11_500_Swissair_Flight;
+  21: BAC_1_11_500_Swissair_Landing;
+  22: BAC_1_11_500_Swissair_Touchdown;
+      BAC_1_11_500_Swissair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_TAROM, flight_state())
+{
+  15: BAC_1_11_500_TAROM_Climbing;
+  18: BAC_1_11_500_TAROM_Flight;
+  21: BAC_1_11_500_TAROM_Landing;
+  22: BAC_1_11_500_TAROM_Touchdown;
+      BAC_1_11_500_TAROM_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_sprites, cargo_subtype)
 {
   1: BAC_1_11_500_Adria;
-  2: BAC_1_11_500_BritishAirways;
-  3: BAC_1_11_500_BritishCaledonian;
-  4: BAC_1_11_500_EuropeanAirCharter;
-  5: BAC_1_11_500_Monarch;
-  6: BAC_1_11_500_Ryanair;
-  7: BAC_1_11_500_Ryanair1;
+  2: BAC_1_11_500_BavariaGermanair;
+  3: BAC_1_11_500_BritishAirways;
+  4: BAC_1_11_500_BritishCaledonian;
+  5: BAC_1_11_500_Cyprus;
+  6: BAC_1_11_500_CyprusOld;
+  7: BAC_1_11_500_DanAir;
+  8: BAC_1_11_500_EuropeanAirCharter;
+  9: BAC_1_11_500_HapagLloyd;
+ 10: BAC_1_11_500_Monarch;
+ 11: BAC_1_11_500_Lauda;
+ 12: BAC_1_11_500_Ryanair;
+ 13: BAC_1_11_500_Ryanair1;
+ 14: BAC_1_11_500_Swissair;
+ 15: BAC_1_11_500_TAROM;
      BAC_1_11_500_Greyscale;
 }
                              
@@ -195,13 +299,29 @@ switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BAC);
   1: string(STR_VLIV_ADRIA_AIRWAYS);
-  2: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
-  3: string(STR_VLIV_BRITISH_CALEDONIAN);
-  4: string(STR_VLIV_EUROPEAN_AIRCHARTER);
-  5: string(STR_VLIV_MONARCH_AIRLINES);
-  6: string(STR_VLIV_RYANAIR);
-  7: string(STR_VLIV_RYANAIR_OLD);
+  2: string(STR_VLIV_BAVARIA_GERMANAIR);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  4: string(STR_VLIV_BRITISH_CALEDONIAN);
+  5: string(STR_VLIV_CYPRUS_AIRWAYS);
+  6: string(STR_VLIV_CYPRUS_AIRWAYS_OLD);
+  7: string(STR_VLIV_DAN_AIR_LONDON);
+  8: string(STR_VLIV_EUROPEAN_AIRCHARTER);
+  9: string(STR_VLIV_HAPAG_LLOYD);
+ 10: string(STR_VLIV_LAUDA);
+ 11: string(STR_VLIV_MONARCH_AIRLINES);
+ 12: string(STR_VLIV_RYANAIR);
+ 13: string(STR_VLIV_RYANAIR_OLD);
+ 14: string(STR_VLIV_SWISSAIR);
+ 15: string(STR_VLIV_TAROM);
      return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_AIRCRAFT, SELF, BAC_1_11_500_cargo_subtype_capacity, cargo_subtype)
+{
+  2: return 114; // BavariaGermanair
+  9: return 114; // HapagLloyd
+  15: return 89; // TAROM
+     return 115;
 }
 
 item (FEAT_AIRCRAFT, BAC_1_11_500)
@@ -210,10 +330,10 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
   {
     name: string(STR_AIRV_BAC_1_11_500);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1964), 1, 1);
+    introduction_date: date(get_plane_year(1967), 1, 1);
     vehicle_life: 12;
-    model_life: get_model_life(1964,1989);
-    retire_early: get_retire_early(1964,1989);
+    model_life: get_model_life(1967,1989);
+    retire_early: get_retire_early(1967,1989);
 
     sprite_id: SPRITE_ID_NEW_AIRCRAFT;
     aircraft_type: AIRCRAFT_TYPE_SMALL;
