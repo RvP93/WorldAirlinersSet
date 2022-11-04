@@ -63,6 +63,9 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(McDonnell_Douglas_MD90, 290, 1, 52, 20, -26, -10)
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Greyscale) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/AMCAviation.png"
+McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_AMCAviation) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/Blue1.png"
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Blue1) 
 #undef IMAGEFILE
@@ -72,11 +75,17 @@ McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Delta)
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/EVAAir.png"
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_EVAAir) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/Hello.png"
+McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Hello) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/JAL.png"
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_JAL) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/SAS.png"
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_SAS) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/Saudia.png"
+McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Saudia) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD90/Turkish.png"
 McDonnell_Douglas_MD90_sprite_layout_template(McDonnell_Douglas_MD90_Turkish) 
@@ -89,6 +98,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Greyscale, flight_state())
   21: McDonnell_Douglas_MD90_Greyscale_Landing;
   22: McDonnell_Douglas_MD90_Greyscale_Touchdown;
       McDonnell_Douglas_MD90_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_AMCAviation, flight_state())
+{
+  15: McDonnell_Douglas_MD90_AMCAviation_Climbing;
+  18: McDonnell_Douglas_MD90_AMCAviation_Flight;
+  21: McDonnell_Douglas_MD90_AMCAviation_Landing;
+  22: McDonnell_Douglas_MD90_AMCAviation_Touchdown;
+      McDonnell_Douglas_MD90_AMCAviation_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Blue1, flight_state())
@@ -118,6 +136,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_EVAAir, flight_state())
       McDonnell_Douglas_MD90_EVAAir_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Hello, flight_state())
+{
+  15: McDonnell_Douglas_MD90_Hello_Climbing;
+  18: McDonnell_Douglas_MD90_Hello_Flight;
+  21: McDonnell_Douglas_MD90_Hello_Landing;
+  22: McDonnell_Douglas_MD90_Hello_Touchdown;
+      McDonnell_Douglas_MD90_Hello_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_JAL, flight_state())
 {
   15: McDonnell_Douglas_MD90_JAL_Climbing;
@@ -136,6 +163,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_SAS, flight_state())
       McDonnell_Douglas_MD90_SAS_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Saudia, flight_state())
+{
+  15: McDonnell_Douglas_MD90_Saudia_Climbing;
+  18: McDonnell_Douglas_MD90_Saudia_Flight;
+  21: McDonnell_Douglas_MD90_Saudia_Landing;
+  22: McDonnell_Douglas_MD90_Saudia_Touchdown;
+      McDonnell_Douglas_MD90_Saudia_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Turkish, flight_state())
 {
   15: McDonnell_Douglas_MD90_Turkish_Climbing;
@@ -147,12 +183,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_Turkish, flight_state())
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_sprites, cargo_subtype)
 {
-  1: McDonnell_Douglas_MD90_Blue1;
-  2: McDonnell_Douglas_MD90_Delta;
-  3: McDonnell_Douglas_MD90_EVAAir;
-  4: McDonnell_Douglas_MD90_JAL;
-  5: McDonnell_Douglas_MD90_SAS;
-  6: McDonnell_Douglas_MD90_Turkish;
+  1: McDonnell_Douglas_MD90_AMCAviation;
+  2: McDonnell_Douglas_MD90_Blue1;
+  3: McDonnell_Douglas_MD90_Delta;
+  4: McDonnell_Douglas_MD90_EVAAir;
+  5: McDonnell_Douglas_MD90_Hella;
+  6: McDonnell_Douglas_MD90_JAL;
+  7: McDonnell_Douglas_MD90_SAS;
+  8: McDonnell_Douglas_MD90_Saudia;
+  9: McDonnell_Douglas_MD90_Turkish;
 	 McDonnell_Douglas_MD90_Greyscale;
 }
                              
@@ -181,23 +220,28 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_sound_effect, extra_callback
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_MCDONNEL_DOUGLAS);
-  1: string(STR_VLIV_BLUE1);
-  2: string(STR_VLIV_DELTA_AIR_LINES);
-  3: string(STR_VLIV_EVA_AIR);
-  4: string(STR_VLIV_JAL);
-  5: string(STR_VLIV_SAS);
-  6: string(STR_VLIV_TURKISH_AIRLINES);
+  1: string(STR_VLIV_AMC_AVIATION);
+  2: string(STR_VLIV_BLUE1);
+  3: string(STR_VLIV_DELTA_AIR_LINES);
+  4: string(STR_VLIV_EVA_AIR);
+  5: string(STR_VLIV_HELLO);
+  6: string(STR_VLIV_JAL);
+  7: string(STR_VLIV_SAS);
+  8: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
+  9: string(STR_VLIV_TURKISH_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 166;
-  2: return 160;
-  3: return 152;
-  4: return 150;
-  5: return 141;
-  6: return 155;
+  2: return 166; // Blue1
+  3: return 160; // Delta
+  4: return 152; // EvaAir
+  5: return 167; // Hello
+  6: return 150; // JAL
+  7: return 141; // SAS
+  8: return 121; // Saudia
+  9: return 155; // Turkish
      return 155;
 }
 
@@ -207,10 +251,10 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD90)
   {
     name: string(STR_AIRV_MCDONNELL_DOUGLAS_MD_90);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1993), 1, 1);
+    introduction_date: date(get_plane_year(1993), 22, 2);
     vehicle_life: 20;
-    model_life: get_model_life(1993, 2000);
-    retire_early: get_retire_early(1993,2000);
+    model_life: get_model_life(1993, 2020);
+    retire_early: get_retire_early(1993,2020);
 
     sprite_id: SPRITE_ID_NEW_AIRCRAFT;
     aircraft_type: AIRCRAFT_TYPE_SMALL;
