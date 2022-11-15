@@ -63,6 +63,9 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(Airbus_A300_600F, 370, 1, 64, 26, -32, -14)
 Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_Greyscale) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/DHL.png"
+Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_DHL) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A300/A300-600F/FedEx.png"
 Airbus_A300_600F_sprite_layout_template(Airbus_A300_600F_FedEx) 
 #undef IMAGEFILE
@@ -83,6 +86,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_Greyscale, flight_state())
   21: Airbus_A300_600F_Greyscale_Landing;
   22: Airbus_A300_600F_Greyscale_Touchdown;
       Airbus_A300_600F_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_DHL, flight_state())
+{
+  15: Airbus_A300_600F_DHL_Climbing;
+  18: Airbus_A300_600F_DHL_Flight;
+  21: Airbus_A300_600F_DHL_Landing;
+  22: Airbus_A300_600F_DHL_Touchdown;
+      Airbus_A300_600F_DHL_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_FedEx, flight_state())
@@ -123,10 +135,11 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_UPS, flight_state())
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_sprites, cargo_subtype)
 {
-  1: Airbus_A300_600F_FedEx;
-  2: Airbus_A300_600F_KoreanCargo;
-  3: Airbus_A300_600F_QatarCargo;
-  4: Airbus_A300_600F_UPS;
+  1: Airbus_A300_600F_DHL;
+  2: Airbus_A300_600F_FedEx;
+  3: Airbus_A300_600F_KoreanCargo;
+  4: Airbus_A300_600F_QatarCargo;
+  5: Airbus_A300_600F_UPS;
      Airbus_A300_600F_Greyscale;
 }
                              
@@ -148,10 +161,11 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_speed, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Airbus_A300_600F_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_AIRBUS);
-  1: string(STR_VLIV_FEDEX);
-  2: string(STR_VLIV_KOREAN_AIR_CARGO);
-  3: string(STR_VLIV_QATAR_AIRWAYS_CARGO);
-  4: string(STR_VLIV_UPS);
+  1: string(STR_VLIV_DHL);
+  2: string(STR_VLIV_FEDEX);
+  3: string(STR_VLIV_KOREAN_AIR_CARGO);
+  4: string(STR_VLIV_QATAR_AIRWAYS_CARGO);
+  5: string(STR_VLIV_UPS);
      return CB_RESULT_NO_TEXT;
 }
 
