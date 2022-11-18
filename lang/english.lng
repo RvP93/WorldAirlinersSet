@@ -455,6 +455,7 @@ STR_VLIV_LAGUNAIR                                               : LagunAir
 STR_VLIV_LAKER_AIRWAYS                                          : Laker Airways
 STR_VLIV_LAN_AIRLINES                                           : LAN Airlines
 STR_VLIV_LAN_CARGO                                              : LAN Cargo
+STR_VLIV_LATAM                                                  : LATAM
 STR_VLIV_LAUDA                                                  : Lauda
 STR_VLIV_LAUDA_EUROPE                                           : Lauda Europe
 STR_VLIV_LEVEL                                                  : Level
@@ -485,6 +486,7 @@ STR_VLIV_NEOS                                                   : Neos
 STR_VLIV_NIKI                                                   : Niki
 STR_VLIV_NIPPON_CARGO_AIRLINES                                  : Nippon Cargo Airlines
 STR_VLIV_NIPPON_CARGO_AIRLINES_GREEN_FREIGHTER                  : Nippon Cargo Airlines (Green Freighter)
+STR_VLIV_NORDWIND_AIRLINES                                      : Nordwind Airlines
 STR_VLIV_NORTHWEST_AIRLINES                                     : Northwest Airlines
 STR_VLIV_NORTHWEST_AIRLINK                                      : Northwest Airlink
 STR_VLIV_NORWEGIAN_AIR                                          : Norwegian Air
@@ -518,6 +520,7 @@ STR_VLIV_ROSSIYA_AIRLINES                                       : Rossiya Airlin
 STR_VLIV_ROSSIYA_AIRLINES_OLD                                   : Rossiya Airlines (Old)
 STR_VLIV_ROYAL_AIR_MAROC                                        : Royal Air Maroc
 STR_VLIV_ROYAL_BRUNEI_AIRLINES                                  : Royal Brunei Airlines
+STR_VLIV_ROYAL_FLIGHT                                           : Royal Flight
 STR_VLIV_ROYAL_JORDANIAN                                        : Royal Jordanian
 STR_VLIV_ROYAL_MAIL                                             : Royal Mail
 STR_VLIV_RWANDAIR                                               : RwandAir
