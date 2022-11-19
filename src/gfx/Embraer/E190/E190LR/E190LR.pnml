@@ -63,6 +63,9 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(Embraer_E190LR, 255, 1, 45, 21, -23, -11)
 Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Greyscale)
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Airzena.png"
+Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Embraer/E190/E190LR/Finnair.png"
 Embraer_E190LR_sprite_layout_template(Embraer_E190LR_Finnair) 
 #undef IMAGEFILE
@@ -92,6 +95,15 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Greyscale, flight_state())
   21: Embraer_E190LR_Greyscale_Landing;
   22: Embraer_E190LR_Greyscale_Touchdown;
       Embraer_E190LR_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Airzena, flight_state())
+{
+  15: Embraer_E190LR_Airzena_Climbing;
+  18: Embraer_E190LR_Airzena_Flight;
+  21: Embraer_E190LR_Airzena_Landing;
+  22: Embraer_E190LR_Airzena_Touchdown;
+      Embraer_E190LR_Airzena_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Finnair, flight_state())
@@ -159,13 +171,14 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_Ukraine, flight_state())
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_sprites, cargo_subtype)
 {
-  1: Embraer_E190LR_Finnair;
-  2: Embraer_E190LR_Helvetic;
-  3: Embraer_E190LR_HOP;
-  4: Embraer_E190LR_Niki;
-  5: Embraer_E190LR_PegasFly;
-  6: Embraer_E190LR_TAP;
-  7: Embraer_E190LR_Ukraine;
+  1: Embraer_E190LR_Airzena;
+  2: Embraer_E190LR_Finnair;
+  3: Embraer_E190LR_Helvetic;
+  4: Embraer_E190LR_HOP;
+  5: Embraer_E190LR_Niki;
+  6: Embraer_E190LR_PegasFly;
+  7: Embraer_E190LR_TAP;
+  8: Embraer_E190LR_Ukraine;
   	 Embraer_E190LR_Greyscale;
 }  
                              
@@ -187,25 +200,27 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_speed, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_EMBRAER);
-  1: string(STR_VLIV_FINNAIR);
-  2: string(STR_VLIV_HELVETIC_AIRWAYS);
-  3: string(STR_VLIV_HOP);
-  4: string(STR_VLIV_NIKI);
-  5: string(STR_VLIV_PEGAS_FLY);
-  5: string(STR_VLIV_TAP);
-  6: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+  1: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  2: string(STR_VLIV_FINNAIR);
+  3: string(STR_VLIV_HELVETIC_AIRWAYS);
+  4: string(STR_VLIV_HOP);
+  5: string(STR_VLIV_NIKI);
+  6: string(STR_VLIV_PEGAS_FLY);
+  7: string(STR_VLIV_TAP);
+  8: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
        return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Embraer_E190LR_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 100; // Finnair
-  2: return 100; // HOP
-  3: return 112; // Helvetic
-  4: return 112; // Niki
-  5: return 110; // Pegas Fly
-  6: return 106; // TAP
-  7: return 104; // Ukraine
+  1: return 97; // Airzena
+  2: return 100; // Finnair
+  3: return 100; // HOP
+  4: return 112; // Helvetic
+  5: return 112; // Niki
+  6: return 110; // Pegas Fly
+  7: return 106; // TAP
+  8: return 104; // Ukraine
      return 106;
 }
 

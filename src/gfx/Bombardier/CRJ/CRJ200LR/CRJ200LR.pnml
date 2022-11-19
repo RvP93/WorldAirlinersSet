@@ -66,6 +66,9 @@ Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Greyscale)
 #define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/Adria.png"
 Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Adria) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/Airzena.png"
+Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Bombardier/CRJ/CRJ200LR/AmaszonasParaguay.png"
 Bombardier_CRJ200LR_sprite_layout_template(Bombardier_CRJ200LR_AmaszonasParaguay) 
 #undef IMAGEFILE
@@ -92,6 +95,15 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_Adria, flight_state())
   21: Bombardier_CRJ200LR_Adria_Landing;
   22: Bombardier_CRJ200LR_Adria_Touchdown;
       Bombardier_CRJ200LR_Adria_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_Airzena, flight_state())
+{
+  15: Bombardier_CRJ200LR_Airzena_Climbing;
+  18: Bombardier_CRJ200LR_Airzena_Flight;
+  21: Bombardier_CRJ200LR_Airzena_Landing;
+  22: Bombardier_CRJ200LR_Airzena_Touchdown;
+      Bombardier_CRJ200LR_Airzena_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_AmaszonasParaguay, flight_state())
@@ -124,9 +136,10 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_UTAir, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_sprites, cargo_subtype)
 {
   1: Bombardier_CRJ200LR_Adria;
-  2: Bombardier_CRJ200LR_AmaszonasParaguay;
-  3: Bombardier_CRJ200LR_Rwanda;
-  4: Bombardier_CRJ200LR_UTAir;
+  2: Bombardier_CRJ200LR_Airzena;
+  3: Bombardier_CRJ200LR_AmaszonasParaguay;
+  4: Bombardier_CRJ200LR_Rwanda;
+  5: Bombardier_CRJ200LR_UTAir;
      Bombardier_CRJ200LR_Greyscale;
 }
                              
@@ -156,18 +169,20 @@ switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_cargo_subtype_text, cargo_subty
 {
   0: string(STR_VLIV_BOMBARDIER);
   1: string(STR_VLIV_ADRIA_AIRWAYS);
-  2: string(STR_VLIV_AMASZONAS_PARAGUAY);
-  3: string(STR_VLIV_RWANDAIR);
-  4: string(STR_VLIV_UTAIR);
+  2: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  3: string(STR_VLIV_AMASZONAS_PARAGUAY);
+  4: string(STR_VLIV_RWANDAIR);
+  5: string(STR_VLIV_UTAIR);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Bombardier_CRJ200LR_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 48;
-  2: return 50;
-  3: return 50;
-  4: return 50;
+  1: return 48; // Adria
+  2: return 50; // Airzena
+  3: return 50; // Amaszonas
+  4: return 50; // Rwanda
+  5: return 50; // Utair
      return 50;
 }
 
