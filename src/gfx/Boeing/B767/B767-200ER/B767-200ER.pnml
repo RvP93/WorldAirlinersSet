@@ -84,6 +84,9 @@ Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_British)
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Kuwait.png"
 Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Kuwait) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Malev.png"
+Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Malev) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-200ER/Meridiana.png"
 Boeing_767_200ER_sprite_layout_template(Boeing_767_200ER_Meridiana) 
 #undef IMAGEFILE
@@ -170,6 +173,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Kuwait, flight_state())
       Boeing_767_200ER_Kuwait_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Malev, flight_state())
+{
+  15: Boeing_767_200ER_Malev_Climbing;
+  18: Boeing_767_200ER_Malev_Flight;
+  21: Boeing_767_200ER_Malev_Landing;
+  22: Boeing_767_200ER_Malev_Touchdown;
+      Boeing_767_200ER_Malev_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_Meridiana, flight_state())
 {
   15: Boeing_767_200ER_Meridiana_Climbing;
@@ -215,10 +227,11 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_sprites, cargo_subtype)
   5: Boeing_767_200ER_BalkanBulgarian;
   6: Boeing_767_200ER_British;
   7: Boeing_767_200ER_Kuwait;
-  8: Boeing_767_200ER_Meridiana;
-  9: Boeing_767_200ER_TWA;
- 10: Boeing_767_200ER_Utair;
- 11: Boeing_767_200ER_Varig;
+  8: Boeing_767_200ER_Malev;
+  9: Boeing_767_200ER_Meridiana;
+ 10: Boeing_767_200ER_TWA;
+ 11: Boeing_767_200ER_Utair;
+ 12: Boeing_767_200ER_Varig;
      Boeing_767_200ER_Greyscale;
 }
                              
@@ -247,10 +260,11 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_cargo_subtype_text, cargo_subtype)
   5: string(STR_VLIV_BALKAN_BULGARIAN);
   6: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
   7: string(STR_VLIV_KUWAIT_AIRWAYS);
-  8: string(STR_VLIV_MERIDIANA);
-  9: string(STR_VLIV_TWA);
- 10: string(STR_VLIV_UTAIR);
- 11: string(STR_VLIV_VARIG);
+  8: string(STR_VLIV_MALEV);
+  9: string(STR_VLIV_MERIDIANA);
+ 10: string(STR_VLIV_TWA);
+ 11: string(STR_VLIV_UTAIR);
+ 12: string(STR_VLIV_VARIG);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -260,8 +274,9 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_200ER_cargo_subtype_capacity, cargo_subt
   3: return 253; // Air Italy
   4: return 168; // American
   6: return 184; // British Airways
-  8: return 253; // Meridiana
-  9: return 172; // TWA
+  8: return 188; // Malev
+  9: return 253; // Meridiana
+ 10: return 172; // TWA
      return 181;
 }
 
