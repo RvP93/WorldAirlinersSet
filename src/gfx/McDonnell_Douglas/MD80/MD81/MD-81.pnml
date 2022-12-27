@@ -63,6 +63,9 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(McDonnell_Douglas_MD81, 290, 1, 52, 20, -26, -10)
 McDonnell_Douglas_MD81_sprite_layout_template(McDonnell_Douglas_MD81_Greyscale) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD81/Austrian.png"
+McDonnell_Douglas_MD81_sprite_layout_template(McDonnell_Douglas_MD81_Austrian) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD81/JAL.png"
 McDonnell_Douglas_MD81_sprite_layout_template(McDonnell_Douglas_MD81_JAL) 
 #undef IMAGEFILE
@@ -92,6 +95,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_Greyscale, flight_state())
   21: McDonnell_Douglas_MD81_Greyscale_Landing;
   22: McDonnell_Douglas_MD81_Greyscale_Touchdown;
       McDonnell_Douglas_MD81_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_Austrian, flight_state())
+{
+  15: McDonnell_Douglas_MD81_Austrian_Climbing;
+  18: McDonnell_Douglas_MD81_Austrian_Flight;
+  21: McDonnell_Douglas_MD81_Austrian_Landing;
+  22: McDonnell_Douglas_MD81_Austrian_Touchdown;
+      McDonnell_Douglas_MD81_Austrian_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_JAL, flight_state())
@@ -159,13 +171,14 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_TWA, flight_state())
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_sprites, cargo_subtype)
 {
-  1: McDonnell_Douglas_MD81_JAL;
-  2: McDonnell_Douglas_MD81_JAS;
-  3: McDonnell_Douglas_MD81_PSA;
-  4: McDonnell_Douglas_MD81_SAS;
-  5: McDonnell_Douglas_MD81_Spanair;
-  6: McDonnell_Douglas_MD81_Swissair;
-  7: McDonnell_Douglas_MD81_TWA;
+  1: McDonnell_Douglas_MD81_Austrian;
+  2: McDonnell_Douglas_MD81_JAL;
+  3: McDonnell_Douglas_MD81_JAS;
+  4: McDonnell_Douglas_MD81_PSA;
+  5: McDonnell_Douglas_MD81_SAS;
+  6: McDonnell_Douglas_MD81_Spanair;
+  7: McDonnell_Douglas_MD81_Swissair;
+  8: McDonnell_Douglas_MD81_TWA;
 	 McDonnell_Douglas_MD81_Greyscale;
 }
                              
@@ -194,25 +207,27 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_sound_effect, extra_callback
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_MCDONNEL_DOUGLAS);
-  1: string(STR_VLIV_JAL);
-  2: string(STR_VLIV_JAPAN_AIR_SYSTEM);
-  3: string(STR_VLIV_PSA);
-  4: string(STR_VLIV_SAS);
-  5: string(STR_VLIV_SPANAIR);
-  6: string(STR_VLIV_SWISS_AIR);
-  7: string(STR_VLIV_TWA);
+  1: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  2: string(STR_VLIV_JAL);
+  3: string(STR_VLIV_JAPAN_AIR_SYSTEM);
+  4: string(STR_VLIV_PSA);
+  5: string(STR_VLIV_SAS);
+  6: string(STR_VLIV_SPANAIR);
+  7: string(STR_VLIV_SWISS_AIR);
+  8: string(STR_VLIV_TWA);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD81_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 163;
-  2: return 163;
-  3: return 150;
-  4: return 150;
-  5: return 153;
-  6: return 161;
-  7: return 144;
+  1: return 137; // Austrian
+  2: return 163; // JAL
+  3: return 163; // JAS
+  4: return 150; // PSA
+  5: return 150; // SAS
+  6: return 153; // Spanair
+  7: return 161; // Swiss
+  8: return 144; // TWA
      return 155;
 }
 
