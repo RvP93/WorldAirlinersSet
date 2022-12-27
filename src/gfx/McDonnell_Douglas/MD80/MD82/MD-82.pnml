@@ -72,6 +72,9 @@ McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Allegiant)
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/AmericanAirlines.png"
 McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_AmericanAirlines) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Austrian.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Austrian) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Continental.png"
 McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Continental) 
 #undef IMAGEFILE
@@ -83,6 +86,9 @@ McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_FlyNordic)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/InselAir.png"
 McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_InselAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Meridiana.png"
+McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Meridiana) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/McDonnell_Douglas/MD80/MD82/Northwest.png"
 McDonnell_Douglas_MD82_sprite_layout_template(McDonnell_Douglas_MD82_Northwest) 
@@ -142,6 +148,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_AmericanAirlines, flight_sta
       McDonnell_Douglas_MD82_AmericanAirlines_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Austrian, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Austrian_Climbing;
+  18: McDonnell_Douglas_MD82_Austrian_Flight;
+  21: McDonnell_Douglas_MD82_Austrian_Landing;
+  22: McDonnell_Douglas_MD82_Austrian_Touchdown;
+      McDonnell_Douglas_MD82_Austrian_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Continental, flight_state())
 {
   15: McDonnell_Douglas_MD82_Continental_Climbing;
@@ -176,6 +191,15 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_InselAir, flight_state())
   21: McDonnell_Douglas_MD82_InselAir_Landing;
   22: McDonnell_Douglas_MD82_InselAir_Touchdown;
       McDonnell_Douglas_MD82_InselAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Meridiana, flight_state())
+{
+  15: McDonnell_Douglas_MD82_Meridiana_Climbing;
+  18: McDonnell_Douglas_MD82_Meridiana_Flight;
+  21: McDonnell_Douglas_MD82_Meridiana_Landing;
+  22: McDonnell_Douglas_MD82_Meridiana_Touchdown;
+      McDonnell_Douglas_MD82_Meridiana_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_Northwest, flight_state())
@@ -246,17 +270,19 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_sprites, cargo_subtype)
   1: McDonnell_Douglas_MD82_Alitalia;
   2: McDonnell_Douglas_MD82_Allegiant;
   3: McDonnell_Douglas_MD82_AmericanAirlines;
-  4: McDonnell_Douglas_MD82_Continental;
-  5: McDonnell_Douglas_MD82_Finnair;
-  6: McDonnell_Douglas_MD82_FlyNordic;
-  7: McDonnell_Douglas_MD82_InselAir;
-  8: McDonnell_Douglas_MD82_Northwest;
-  9: McDonnell_Douglas_MD82_NorwegianAir;
- 10: McDonnell_Douglas_MD82_PSA;
- 11: McDonnell_Douglas_MD82_SAS;
- 12: McDonnell_Douglas_MD82_Spanair;
- 13: McDonnell_Douglas_MD82_Swissair;
- 14: McDonnell_Douglas_MD82_TWA;
+  4: McDonnell_Douglas_MD82_Austrian;
+  5: McDonnell_Douglas_MD82_Continental;
+  6: McDonnell_Douglas_MD82_Finnair;
+  7: McDonnell_Douglas_MD82_FlyNordic;
+  8: McDonnell_Douglas_MD82_InselAir;
+  9: McDonnell_Douglas_MD82_Meridiana;
+ 10: McDonnell_Douglas_MD82_Northwest;
+ 11: McDonnell_Douglas_MD82_NorwegianAir;
+ 12: McDonnell_Douglas_MD82_PSA;
+ 13: McDonnell_Douglas_MD82_SAS;
+ 14: McDonnell_Douglas_MD82_Spanair;
+ 15: McDonnell_Douglas_MD82_Swissair;
+ 16: McDonnell_Douglas_MD82_TWA;
 	 McDonnell_Douglas_MD82_Greyscale;
 }
                              
@@ -288,32 +314,38 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_cargo_subtype_text, cargo_su
   1: string(STR_VLIV_ALITALIA);
   2: string(STR_VLIV_ALLEGIANT_AIR);
   3: string(STR_VLIV_AMERICAN_AIRLINES);
-  4: string(STR_VLIV_CONTINENTAL);
-  5: string(STR_VLIV_FINNAIR);
-  6: string(STR_VLIV_FLYNORDIC);
-  7: string(STR_VLIV_INSEL_AIR);
-  8: string(STR_VLIV_NORTHWEST_AIRLINES);
-  9: string(STR_VLIV_NORWEGIAN_AIR);
- 10: string(STR_VLIV_PSA);
- 11: string(STR_VLIV_SAS);
- 12: string(STR_VLIV_SPANAIR);
- 13: string(STR_VLIV_SWISS_AIR);
- 14: string(STR_VLIV_TWA);
+  4: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  5: string(STR_VLIV_CONTINENTAL);
+  6: string(STR_VLIV_FINNAIR);
+  7: string(STR_VLIV_FLYNORDIC);
+  8: string(STR_VLIV_INSEL_AIR);
+  9: string(STR_VLIV_MERIDIANA);
+ 10: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 11: string(STR_VLIV_NORWEGIAN_AIR);
+ 12: string(STR_VLIV_PSA);
+ 13: string(STR_VLIV_SAS);
+ 14: string(STR_VLIV_SPANAIR);
+ 15: string(STR_VLIV_SWISS_AIR);
+ 16: string(STR_VLIV_TWA);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD82_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 141;
-  2: return 166;
-  3: return 140;
-  4: return 144;
-  5: return 141;
-  9: return 162;
- 10: return 150;
- 11: return 153;
- 12: return 150;
- 14: return 144;
+  1: return 141; // Alitalia
+  2: return 166; // Allegiant
+  3: return 140; // AmericanAirlines
+  4: return 137; // Austrian
+  5: return 144; // Continental
+  6: return 141; // Finnair
+  7: return 162; // FlyNordic
+  8: return 141; // InselAir
+  9: return 165; // Meridiana
+ 11: return 162; // Norwegian
+ 12: return 150; // PSA
+ 13: return 153; // SAS
+ 14: return 150; // Spanair
+ 16: return 144; // TWA
      return 155;
 }
 
