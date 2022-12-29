@@ -78,6 +78,9 @@ Boeing_787_9_sprite_layout_template(Boeing_787_9_American)
 #define IMAGEFILE  "src/gfx/Boeing/B787/B787-9/BritishAirways.png"
 Boeing_787_9_sprite_layout_template(Boeing_787_9_BritishAirways) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B787/B787-9/EgyptAir.png"
+Boeing_787_9_sprite_layout_template(Boeing_787_9_EgyptAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B787/B787-9/ElAl.png"
 Boeing_787_9_sprite_layout_template(Boeing_787_9_ElAl) 
 #undef IMAGEFILE
@@ -167,6 +170,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_BritishAirways, flight_state())
   21: Boeing_787_9_BritishAirways_Landing;
   22: Boeing_787_9_BritishAirways_Touchdown;
       Boeing_787_9_BritishAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_EgyptAir, flight_state())
+{
+  15: Boeing_787_9_EgyptAir_Climbing;
+  18: Boeing_787_9_EgyptAir_Flight;
+  21: Boeing_787_9_EgyptAir_Landing;
+  22: Boeing_787_9_EgyptAir_Touchdown;
+      Boeing_787_9_EgyptAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_ElAl, flight_state())
@@ -285,18 +297,19 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_sprites, cargo_subtype)
   3: Boeing_787_9_ANZ;
   4: Boeing_787_9_American;
   5: Boeing_787_9_BritishAirways;
-  6: Boeing_787_9_ElAl;
-  7: Boeing_787_9_JAL;
-  8: Boeing_787_9_KLM;
-  9: Boeing_787_9_LAN;
- 10: Boeing_787_9_Neos; 
- 11: Boeing_787_9_Qantas;
- 12: Boeing_787_9_RoyalAirMaroc;
- 13: Boeing_787_9_TUI;
- 14: Boeing_787_9_Turkish;
- 15: Boeing_787_9_United;
- 16: Boeing_787_9_Vietnam;
- 17: Boeing_787_9_VirginAtlantic;
+  6: Boeing_787_9_EgyptAir;
+  7: Boeing_787_9_ElAl;
+  8: Boeing_787_9_JAL;
+  9: Boeing_787_9_KLM;
+ 10: Boeing_787_9_LAN;
+ 11: Boeing_787_9_Neos; 
+ 12: Boeing_787_9_Qantas;
+ 13: Boeing_787_9_RoyalAirMaroc;
+ 14: Boeing_787_9_TUI;
+ 15: Boeing_787_9_Turkish;
+ 16: Boeing_787_9_United;
+ 17: Boeing_787_9_Vietnam;
+ 18: Boeing_787_9_VirginAtlantic;
      Boeing_787_9_Greyscale;
 }
               
@@ -323,18 +336,19 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_cargo_subtype_text, cargo_subtype)
   3: string(STR_VLIV_AIR_NEW_ZEALAND);
   4: string(STR_VLIV_AMERICAN_AIRLINES);
   5: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
-  6: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
-  7: string(STR_VLIV_JAL);
-  8: string(STR_VLIV_KLM);
-  9: string(STR_VLIV_LAN_AIRLINES);
- 10: string(STR_VLIV_NEOS); 
- 11: string(STR_VLIV_QANTAS);
- 12: string(STR_VLIV_ROYAL_AIR_MAROC);
- 13: string(STR_VLIV_TUI);
- 14: string(STR_VLIV_TURKISH_AIRLINES);
- 15: string(STR_VLIV_UNITED_AIRLINES);
- 16: string(STR_VLIV_VIETNAM_AIRLINES);
- 17: string(STR_VLIV_VIRGIN_ATLANTIC);
+  6: string(STR_VLIV_EGYPT_AIR);
+  7: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+  8: string(STR_VLIV_JAL);
+  9: string(STR_VLIV_KLM);
+ 10: string(STR_VLIV_LAN_AIRLINES);
+ 11: string(STR_VLIV_NEOS); 
+ 12: string(STR_VLIV_QANTAS);
+ 13: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 14: string(STR_VLIV_TUI);
+ 15: string(STR_VLIV_TURKISH_AIRLINES);
+ 16: string(STR_VLIV_UNITED_AIRLINES);
+ 17: string(STR_VLIV_VIETNAM_AIRLINES);
+ 18: string(STR_VLIV_VIRGIN_ATLANTIC);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -345,18 +359,19 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_787_9_cargo_subtype_capacity, cargo_subtype)
   3: return 302; // Air New Zealand
   4: return 285; // American
   5: return 216; // British Airways
-  6: return 271; // El Al
-  7: return 195; // JAL
-  8: return 294; // KLM
-  9: return 292; // LAN
- 10: return 359; // Neos 
- 11: return 236; // Qantas
- 12: return 302; // RoyalAirMaroc
- 13: return 345; // TUI
- 14: return 300; // Turkish
- 15: return 252; // United
- 16: return 274; // Vietnam
- 17: return 264; // Virgin Atlantic
+  6: return 309; // EgyptAir
+  7: return 271; // El Al
+  8: return 195; // JAL
+  9: return 294; // KLM
+ 10: return 292; // LAN
+ 11: return 359; // Neos 
+ 12: return 236; // Qantas
+ 13: return 302; // RoyalAirMaroc
+ 14: return 345; // TUI
+ 15: return 300; // Turkish
+ 16: return 252; // United
+ 17: return 274; // Vietnam
+ 18: return 264; // Virgin Atlantic
      return 280;
 }
 
