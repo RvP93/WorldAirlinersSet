@@ -93,6 +93,9 @@ Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Norwegian)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/SmartWings.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_SmartWings) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Turkish.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Turkish) 
+#undef IMAGEFILE
 
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Greyscale, flight_state())
@@ -194,6 +197,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_SmartWings, flight_state())
       Boeing_737_MAX8_SmartWings_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Turkish, flight_state())
+{
+  15: Boeing_737_MAX8_Turkish_Climbing;
+  18: Boeing_737_MAX8_Turkish_Flight;
+  21: Boeing_737_MAX8_Turkish_Landing;
+  22: Boeing_737_MAX8_Turkish_Touchdown;
+      Boeing_737_MAX8_Turkish_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_sprites, cargo_subtype)
 {
   1: Boeing_737_MAX8_AirChina;
@@ -206,6 +218,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_sprites, cargo_subtype)
   8: Boeing_737_MAX8_LOT;
   9: Boeing_737_MAX8_Norwegian;
  10: Boeing_737_MAX8_SmartWings;
+ 11: Boeing_737_MAX8_Turkish;
 	 Boeing_737_MAX8_Greyscale;
 }  
                              
@@ -237,6 +250,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_text, cargo_subtype)
   8: string(STR_VLIV_LOT);
   9: string(STR_VLIV_NORWEGIAN_AIR);
  10: string(STR_VLIV_SMART_WINGS);
+ 11: string(STR_VLIV_TURKISH_AIRLINES);
 	 return CB_RESULT_NO_TEXT;
 }
 
@@ -252,6 +266,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_capacity, cargo_subty
   8: return 186; // LOT
   9: return 189; // Norwegian
  10: return 189; // Smart Wings
+ 11: return 151; // Turkish
      return 162;
 }
 
