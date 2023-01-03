@@ -92,6 +92,9 @@ Boeing_727_200_sprite_layout_template(Boeing_727_200_AirFrance)
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirHolland.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_AirHolland) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/AirMalta.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_AirMalta) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Alitalia.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_Alitalia) 
 #undef IMAGEFILE
@@ -116,11 +119,17 @@ Boeing_727_200_sprite_layout_template(Boeing_727_200_DanAirLondon)
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Delta.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_Delta) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/HapagLloyd.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_HapagLloyd) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Iberia.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_Iberia) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Icelandair.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_Icelandair) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/Iraqi.png"
+Boeing_727_200_sprite_layout_template(Boeing_727_200_Iraqi) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-200/JAT.png"
 Boeing_727_200_sprite_layout_template(Boeing_727_200_JAT) 
@@ -219,6 +228,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirHolland, flight_state())
       Boeing_727_200_AirHolland_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_AirMalta, flight_state())
+{
+  15: Boeing_727_200_AirMalta_Climbing;
+  18: Boeing_727_200_AirMalta_Flight;
+  21: Boeing_727_200_AirMalta_Landing;
+  22: Boeing_727_200_AirMalta_Touchdown;
+      Boeing_727_200_AirMalta_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Alitalia, flight_state())
 {
   15: Boeing_727_200_Alitalia_Climbing;
@@ -291,6 +309,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Delta, flight_state())
       Boeing_727_200_Delta_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_HapagLloyd, flight_state())
+{
+  15: Boeing_727_200_HapagLloyd_Climbing;
+  18: Boeing_727_200_HapagLloyd_Flight;
+  21: Boeing_727_200_HapagLloyd_Landing;
+  22: Boeing_727_200_HapagLloyd_Touchdown;
+      Boeing_727_200_HapagLloyd_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Iberia, flight_state())
 {
   15: Boeing_727_200_Iberia_Climbing;
@@ -307,6 +334,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Icelandair, flight_state())
   21: Boeing_727_200_Icelandair_Landing;
   22: Boeing_727_200_Icelandair_Touchdown;
       Boeing_727_200_Icelandair_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_Iraqi, flight_state())
+{
+  15: Boeing_727_200_Iraqi_Climbing;
+  18: Boeing_727_200_Iraqi_Flight;
+  21: Boeing_727_200_Iraqi_Landing;
+  22: Boeing_727_200_Iraqi_Touchdown;
+      Boeing_727_200_Iraqi_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_JAT, flight_state())
@@ -416,27 +452,30 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_sprites, cargo_subtype)
   4: Boeing_727_200_AirFlorida;
   5: Boeing_727_200_AirFrance;
   6: Boeing_727_200_AirHolland;
-  7: Boeing_727_200_Alitalia;
-  8: Boeing_727_200_American;
-  9: Boeing_727_200_Aviogenex;
- 10: Boeing_727_200_Comair;
- 11: Boeing_727_200_Condor;
- 12: Boeing_727_200_Continental;
- 13: Boeing_727_200_DanAirLondon; 
- 14: Boeing_727_200_Delta;
- 15: Boeing_727_200_Iberia;
- 16: Boeing_727_200_Icelandair;
- 17: Boeing_727_200_JAT;
- 18: Boeing_727_200_Kuwait;
- 19: Boeing_727_200_Libyan;
- 20: Boeing_727_200_Lufthansa;
- 21: Boeing_727_200_Northwest;
- 22: Boeing_727_200_Olympic;
- 23: Boeing_727_200_PanAm;
- 24: Boeing_727_200_RAM;
- 25: Boeing_727_200_SouthAfrican;
- 26: Boeing_727_200_TAPOld;
- 27: Boeing_727_200_United;
+  7: Boeing_727_200_AirMalta;
+  8: Boeing_727_200_Alitalia;
+  9: Boeing_727_200_American;
+ 10: Boeing_727_200_Aviogenex;
+ 11: Boeing_727_200_Comair;
+ 12: Boeing_727_200_Condor;
+ 13: Boeing_727_200_Continental;
+ 14: Boeing_727_200_DanAirLondon; 
+ 15: Boeing_727_200_Delta;
+ 16: Boeing_727_200_HapagLloyd;
+ 17: Boeing_727_200_Iberia;
+ 18: Boeing_727_200_Icelandair;
+ 19: Boeing_727_200_Iraqi;
+ 20: Boeing_727_200_JAT;
+ 21: Boeing_727_200_Kuwait;
+ 22: Boeing_727_200_Libyan;
+ 23: Boeing_727_200_Lufthansa;
+ 24: Boeing_727_200_Northwest;
+ 25: Boeing_727_200_Olympic;
+ 26: Boeing_727_200_PanAm;
+ 27: Boeing_727_200_RAM;
+ 28: Boeing_727_200_SouthAfrican;
+ 29: Boeing_727_200_TAPOld;
+ 30: Boeing_727_200_United;
      Boeing_727_200_Greyscale;
 }
                              
@@ -471,39 +510,42 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_cargo_subtype_text, cargo_subtype)
   4: string(STR_VLIV_AIR_FLORIDA);
   5: string(STR_VLIV_AIR_FRANCE);
   6: string(STR_VLIV_AIR_HOLLAND);
-  7: string(STR_VLIV_ALITALIA);
-  8: string(STR_VLIV_AMERICAN_AIRLINES_OLD);
-  9: string(STR_VLIV_AVIOGENEX);
- 10: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR);
- 11: string(STR_VLIV_CONDOR);
- 12: string(STR_VLIV_CONTINENTAL_OLD);
- 13: string(STR_VLIV_DAN_AIR_LONDON); 
- 14: string(STR_VLIV_DELTA_AIR_LINES);
- 15: string(STR_VLIV_IBERIA);
- 16: string(STR_VLIV_ICELANDAIR);
- 17: string(STR_VLIV_JAT_AIRWAYS);
- 18: string(STR_VLIV_KUWAIT_AIRWAYS);
- 19: string(STR_VLIV_LIBYAN_AIRLINES);
- 20: string(STR_VLIV_LUFTHANSA);
- 21: string(STR_VLIV_NORTHWEST_AIRLINES);
- 22: string(STR_VLIV_OLYMPIC_AIR);
- 23: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
- 24: string(STR_VLIV_ROYAL_AIR_MAROC);
- 25: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
- 26: string(STR_VLIV_TAP_OLD);
- 27: string(STR_VLIV_UNITED_AIRLINES);
+  7: string(STR_VLIV_AIR_MALTA);
+  8: string(STR_VLIV_ALITALIA);
+  9: string(STR_VLIV_AMERICAN_AIRLINES_OLD);
+ 10: string(STR_VLIV_AVIOGENEX);
+ 11: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG_COMAIR);
+ 12: string(STR_VLIV_CONDOR);
+ 13: string(STR_VLIV_CONTINENTAL_OLD);
+ 14: string(STR_VLIV_DAN_AIR_LONDON); 
+ 15: string(STR_VLIV_DELTA_AIR_LINES);
+ 16: string(STR_VLIV_HAPAG_LLOYD);
+ 17: string(STR_VLIV_IBERIA);
+ 18: string(STR_VLIV_ICELANDAIR);
+ 19: string(STR_VLIV_IRAQI_AIRWAYS);
+ 20: string(STR_VLIV_JAT_AIRWAYS);
+ 21: string(STR_VLIV_KUWAIT_AIRWAYS);
+ 22: string(STR_VLIV_LIBYAN_AIRLINES);
+ 23: string(STR_VLIV_LUFTHANSA);
+ 24: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 25: string(STR_VLIV_OLYMPIC_AIR);
+ 26: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+ 27: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 28: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 29: string(STR_VLIV_TAP_OLD);
+ 30: string(STR_VLIV_UNITED_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_727_200_cargo_subtype_capacity, cargo_subtype)
 {
   5: return 156; //Air France
-  8: return 144; //American Airlines
- 12: return 149; //Continental
- 14: return 131; //Delta
- 15: return 146; //Iberia
- 16: return 164; //Icelandair
- 23: return 141; //PAN AM
+  9: return 144; //American Airlines
+ 13: return 149; //Continental
+ 15: return 131; //Delta
+ 17: return 146; //Iberia
+ 18: return 164; //Icelandair
+ 26: return 141; //PAN AM
   return 147;
 }
 
