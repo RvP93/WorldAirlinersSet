@@ -577,6 +577,7 @@ STR_VLIV_TRAVEL_SERVICE                                         : Travel Service
 STR_VLIV_TUI                                                    : TUI
 STR_VLIV_TUNISAIR                                               : Tunisair
 STR_VLIV_TURKISH_AIRLINES                                       : Turkish Airlines
+STR_VLIV_TURKISH_AIRLINES_OLD                                   : Turkish Airlines (Old)
 STR_VLIV_TURKISH_AIRLINES_CARGO                                 : Turkish Airlines Cargo
 STR_VLIV_TURKMENISTAN_AIRLINES                                  : Turkmenistan Airlines
 STR_VLIV_TWA                                                    : TWA - Trans World Airlines

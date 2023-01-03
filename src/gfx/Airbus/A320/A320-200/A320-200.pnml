@@ -315,6 +315,9 @@ Airbus_A320_200_sprite_layout_template(Airbus_A320_200_Tunisair)
 #define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/Turkish.png"
 Airbus_A320_200_sprite_layout_template(Airbus_A320_200_Turkish) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/TurkishOld.png"
+Airbus_A320_200_sprite_layout_template(Airbus_A320_200_TurkishOld) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A320/A320-200/United.png"
 Airbus_A320_200_sprite_layout_template(Airbus_A320_200_United) 
 #undef IMAGEFILE
@@ -1105,6 +1108,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_Turkish, flight_state())
       Airbus_A320_200_Turkish_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_TurkishOld, flight_state())
+{
+  15: Airbus_A320_200_TurkishOld_Climbing;
+  18: Airbus_A320_200_TurkishOld_Flight;
+  21: Airbus_A320_200_TurkishOld_Landing;
+  22: Airbus_A320_200_TurkishOld_Touchdown;
+      Airbus_A320_200_TurkishOld_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_United, flight_state())
 {
   15: Airbus_A320_200_United_Climbing;
@@ -1263,14 +1275,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_sprites, cargo_subtype)
  82: Airbus_A320_200_ThomasCook;
  83: Airbus_A320_200_Tunisair;
  84: Airbus_A320_200_Turkish;
- 85: Airbus_A320_200_United;
- 86: Airbus_A320_200_Ural;
- 87: Airbus_A320_200_USAirways;
- 88: Airbus_A320_200_Uzbekistan;
- 89: Airbus_A320_200_Vietnam;
- 90: Airbus_A320_200_Vueling;
- 91: Airbus_A320_200_Wizz; 
- 92: Airbus_A320_200_WizzOld; 
+ 85: Airbus_A320_200_TurkishOld;
+ 86: Airbus_A320_200_United;
+ 87: Airbus_A320_200_Ural;
+ 88: Airbus_A320_200_USAirways;
+ 89: Airbus_A320_200_Uzbekistan;
+ 90: Airbus_A320_200_Vietnam;
+ 91: Airbus_A320_200_Vueling;
+ 92: Airbus_A320_200_Wizz; 
+ 93: Airbus_A320_200_WizzOld; 
      Airbus_A320_200_Greyscale;
 }
                              
@@ -1376,14 +1389,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_cargo_subtype_text, cargo_subtype)
  82: string(STR_VLIV_THOMAS_COOK);
  83: string(STR_VLIV_TUNISAIR);
  84: string(STR_VLIV_TURKISH_AIRLINES);
- 85: string(STR_VLIV_UNITED_AIRLINES);
- 86: string(STR_VLIV_URAL_AIRLINES);
- 87: string(STR_VLIV_US_AIRWAYS);
- 88: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
- 89: string(STR_VLIV_VIETNAM_AIRLINES);
- 90: string(STR_VLIV_VUELING_AIRLINES);
- 91: string(STR_VLIV_WIZZ_AIR);  
- 92: string(STR_VLIV_WIZZ_AIR_OLD);  
+ 85: string(STR_VLIV_TURKISH_AIRLINES_OLD);
+ 86: string(STR_VLIV_UNITED_AIRLINES);
+ 87: string(STR_VLIV_URAL_AIRLINES);
+ 88: string(STR_VLIV_US_AIRWAYS);
+ 89: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
+ 90: string(STR_VLIV_VIETNAM_AIRLINES);
+ 91: string(STR_VLIV_VUELING_AIRLINES);
+ 92: string(STR_VLIV_WIZZ_AIR);  
+ 93: string(STR_VLIV_WIZZ_AIR_OLD);  
      return CB_RESULT_NO_TEXT;
 }
 
@@ -1473,14 +1487,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_cargo_subtype_capacity, cargo_subty
   82: return 180; // Thomas Cook
   83: return 145; // Tunisair
   84: return 153; // Turkish
-  85: return 150; // United
-  86: return 156; // Ural
-  87: return 150; // US Airways
-  88: return 150; // Uzbekistan Airways
-  89: return 150; // Vietnam Airlines
-  90: return 180; // Vueling
-  91: return 180; // Wizz Air
-  92: return 180; // Wizz Air Old
+  85: return 153; // TurkishOld
+  86: return 150; // United
+  87: return 156; // Ural
+  88: return 150; // US Airways
+  89: return 150; // Uzbekistan Airways
+  90: return 150; // Vietnam Airlines
+  91: return 180; // Vueling
+  92: return 180; // Wizz Air
+  93: return 180; // Wizz Air Old
   return 150;
 }
 
