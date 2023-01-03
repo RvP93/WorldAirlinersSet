@@ -126,6 +126,9 @@ Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Emirates)
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/Etihad.png"
 Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Etihad) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/Eurowings.png"
+Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Eurowings) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/Evelop.png"
 Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Evelop) 
 #undef IMAGEFILE
@@ -179,6 +182,9 @@ Airbus_A330_200_sprite_layout_template(Airbus_A330_200_RoyalJordanian)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/Saudia.png"
 Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Saudia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/SriLankan.png"
+Airbus_A330_200_sprite_layout_template(Airbus_A330_200_SriLankan) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-200/Swiss.png"
 Airbus_A330_200_sprite_layout_template(Airbus_A330_200_Swiss) 
@@ -400,6 +406,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_Etihad, flight_state())
       Airbus_A330_200_Etihad_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_Eurowings, flight_state())
+{
+  15: Airbus_A330_200_Eurowings_Climbing;
+  18: Airbus_A330_200_Eurowings_Flight;
+  21: Airbus_A330_200_Eurowings_Landing;
+  22: Airbus_A330_200_Eurowings_Touchdown;
+      Airbus_A330_200_Eurowings_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_Evelop, flight_state())
 {
   15: Airbus_A330_200_Evelop_Climbing;
@@ -562,6 +577,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_Saudia, flight_state())
       Airbus_A330_200_Saudia_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_SriLankan, flight_state())
+{
+  15: Airbus_A330_200_SriLankan_Climbing;
+  18: Airbus_A330_200_SriLankan_Flight;
+  21: Airbus_A330_200_SriLankan_Landing;
+  22: Airbus_A330_200_SriLankan_Touchdown;
+      Airbus_A330_200_SriLankan_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_Swiss, flight_state())
 {
   15: Airbus_A330_200_Swiss_Climbing;
@@ -648,31 +672,33 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_sprites, cargo_subtype)
  19: Airbus_A330_200_EgyptAir;
  20: Airbus_A330_200_Emirates;
  21: Airbus_A330_200_Etihad;
- 22: Airbus_A330_200_Evelop;
- 23: Airbus_A330_200_FijiAirways; 
- 24: Airbus_A330_200_GarudaIndonesia;
- 25: Airbus_A330_200_GulfAir;
- 26: Airbus_A330_200_Iberia;
- 27: Airbus_A330_200_KLM;
- 28: Airbus_A330_200_Korean;
- 29: Airbus_A330_200_Level;
- 30: Airbus_A330_200_Libyan;
- 31: Airbus_A330_200_MalasiaAirlines;
- 32: Airbus_A330_200_MEA;
- 33: Airbus_A330_200_Monarch;
- 34: Airbus_A330_200_OmanAir;
- 35: Airbus_A330_200_Qantas;
- 36: Airbus_A330_200_QantasOneworld;
- 37: Airbus_A330_200_Qatar;
- 38: Airbus_A330_200_RoyalJordanian;
- 39: Airbus_A330_200_Saudia;
- 40: Airbus_A330_200_Swiss;
- 41: Airbus_A330_200_TAM;
- 42: Airbus_A330_200_TAP;
- 43: Airbus_A330_200_ThomasCook;
- 44: Airbus_A330_200_Turkish;
- 45: Airbus_A330_200_Wamos;
- 46: Airbus_A330_200_XLAirways;
+ 22: Airbus_A330_200_Eurowings;
+ 23: Airbus_A330_200_Evelop;
+ 24: Airbus_A330_200_FijiAirways; 
+ 25: Airbus_A330_200_GarudaIndonesia;
+ 26: Airbus_A330_200_GulfAir;
+ 27: Airbus_A330_200_Iberia;
+ 28: Airbus_A330_200_KLM;
+ 29: Airbus_A330_200_Korean;
+ 30: Airbus_A330_200_Level;
+ 31: Airbus_A330_200_Libyan;
+ 32: Airbus_A330_200_MalasiaAirlines;
+ 33: Airbus_A330_200_MEA;
+ 34: Airbus_A330_200_Monarch;
+ 35: Airbus_A330_200_OmanAir;
+ 36: Airbus_A330_200_Qantas;
+ 37: Airbus_A330_200_QantasOneworld;
+ 38: Airbus_A330_200_Qatar;
+ 39: Airbus_A330_200_RoyalJordanian;
+ 40: Airbus_A330_200_Saudia;
+ 41: Airbus_A330_200_SriLankan;
+ 42: Airbus_A330_200_Swiss;
+ 43: Airbus_A330_200_TAM;
+ 44: Airbus_A330_200_TAP;
+ 45: Airbus_A330_200_ThomasCook;
+ 46: Airbus_A330_200_Turkish;
+ 47: Airbus_A330_200_Wamos;
+ 48: Airbus_A330_200_XLAirways;
      Airbus_A330_200_Greyscale;
 }
                              
@@ -715,31 +741,33 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_cargo_subtype_text, cargo_subtype)
  19: string(STR_VLIV_EGYPT_AIR);
  20: string(STR_VLIV_EMIRATES);
  21: string(STR_VLIV_ETIHAD_AIRWAYS);
- 22: string(STR_VLIV_EVELOP);
- 23: string(STR_VLIV_FIJI_AIRWAYS);
- 24: string(STR_VLIV_GARUDA_INDONESIA);
- 25: string(STR_VLIV_GULF_AIR);
- 26: string(STR_VLIV_IBERIA);
- 27: string(STR_VLIV_KLM);
- 28: string(STR_VLIV_KOREAN_AIR);
- 29: string(STR_VLIV_LEVEL);
- 30: string(STR_VLIV_LIBYAN_AIRLINES);
- 31: string(STR_VLIV_MALAYSIA_AIRLINES);
- 32: string(STR_VLIV_MIDDLE_EAST_AIRLINES);
- 33: string(STR_VLIV_MONARCH_AIRLINES);
- 34: string(STR_VLIV_OMAN_AIR);
- 35: string(STR_VLIV_QANTAS);
- 36: string(STR_VLIV_QANTAS_ONEWORLD);
- 37: string(STR_VLIV_QATAR_AIRWAYS);
- 38: string(STR_VLIV_ROYAL_JORDANIAN);
- 39: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
- 40: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
- 41: string(STR_VLIV_TAM_AIRLINES);
- 42: string(STR_VLIV_TAP);
- 43: string(STR_VLIV_THOMAS_COOK);
- 44: string(STR_VLIV_TURKISH_AIRLINES);
- 45: string(STR_VLIV_WAMOS);
- 46: string(STR_VLIV_XL_AIRWAYS);
+ 22: string(STR_VLIV_EUROWINGS);
+ 23: string(STR_VLIV_EVELOP);
+ 24: string(STR_VLIV_FIJI_AIRWAYS);
+ 25: string(STR_VLIV_GARUDA_INDONESIA);
+ 26: string(STR_VLIV_GULF_AIR);
+ 27: string(STR_VLIV_IBERIA);
+ 28: string(STR_VLIV_KLM);
+ 29: string(STR_VLIV_KOREAN_AIR);
+ 30: string(STR_VLIV_LEVEL);
+ 31: string(STR_VLIV_LIBYAN_AIRLINES);
+ 32: string(STR_VLIV_MALAYSIA_AIRLINES);
+ 33: string(STR_VLIV_MIDDLE_EAST_AIRLINES);
+ 34: string(STR_VLIV_MONARCH_AIRLINES);
+ 35: string(STR_VLIV_OMAN_AIR);
+ 36: string(STR_VLIV_QANTAS);
+ 37: string(STR_VLIV_QANTAS_ONEWORLD);
+ 38: string(STR_VLIV_QATAR_AIRWAYS);
+ 39: string(STR_VLIV_ROYAL_JORDANIAN);
+ 40: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
+ 41: string(STR_VLIV_SRILANKAN_AIRLINES);
+ 42: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 43: string(STR_VLIV_TAM_AIRLINES);
+ 44: string(STR_VLIV_TAP);
+ 45: string(STR_VLIV_THOMAS_COOK);
+ 46: string(STR_VLIV_TURKISH_AIRLINES);
+ 47: string(STR_VLIV_WAMOS);
+ 48: string(STR_VLIV_XL_AIRWAYS);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -765,32 +793,34 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_200_cargo_subtype_capacity, cargo_subty
   18: return 234; // Delta
   19: return 268; // Egypt Air
   20: return 237; // Emirates
-  21: return 273; // Ethihad
-  22: return 287; // Evelop
-  23: return 254; // Fiji
-  24: return 222; // Garuda
-  25: return 231; // Gulf Air
-  26: return 288; // Iberia
-  27: return 243; // KLM
-  28: return 218; // Korean Air
-  29: return 314; // Level
-  30: return 259; // Libyan
-  31: return 229; // Malaysia
-  32: return 250; // MEA
-  33: return 374; // Monarch
-  34: return 216; // Oman Air
-  35: return 239; // Qantas
-  36: return 271; // Qantas OneWorld
-  37: return 228; // Qatar
-  38: return 283; // Royal Jordanian
-  39: return 253; // Saudi
-  40: return 229; // Swiss
-  41: return 223; // TAM
-  42: return 263; // TAP
-  43: return 322; // Thomas Cook
-  44: return 250; // Turkish
-  45: return 374; // Wamos
-  46: return 364; // XL
+  21: return 273; // Etihad
+  22: return 310; // Eurowings
+  23: return 287; // Evelop
+  24: return 254; // Fiji
+  25: return 222; // Garuda
+  26: return 231; // Gulf Air
+  27: return 288; // Iberia
+  28: return 243; // KLM
+  29: return 218; // Korean Air
+  30: return 314; // Level
+  31: return 259; // Libyan
+  32: return 229; // Malaysia
+  33: return 250; // MEA
+  34: return 374; // Monarch
+  35: return 216; // Oman Air
+  36: return 239; // Qantas
+  37: return 271; // Qantas OneWorld
+  38: return 228; // Qatar
+  39: return 283; // Royal Jordanian
+  40: return 253; // Saudi
+  41: return 274; // SriLankan
+  42: return 229; // Swiss
+  43: return 223; // TAM
+  44: return 263; // TAP
+  45: return 322; // Thomas Cook
+  46: return 250; // Turkish
+  47: return 374; // Wamos
+  48: return 364; // XL
   return 253;
 }
 
