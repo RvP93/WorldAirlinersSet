@@ -195,7 +195,7 @@ STR_VLIV_WAS                                                    : WAS 7th Year A
 # All Airlines
 STR_VLIV_AB_AIRLINES                                            : AB Airlines
 STR_VLIV_ADRIA_AIRWAYS                                          : Adria Airways
-STR_VLIV_AEGAN_AIRLINES                                         : Aegan Airlines
+STR_VLIV_AEGEAN_AIRLINES                                        : Aegean Airlines
 STR_VLIV_AER_ARRAN_ORIGINAL                                     : Aer Arran (Original)
 STR_VLIV_AER_ARRAN_RINGED_DESIGN                                : Aer Arran (Ringed Design)
 STR_VLIV_AER_AZUR_AIR                                           : Azur Air
@@ -217,6 +217,7 @@ STR_VLIV_AIR_BALTIC                                             : Air Baltic
 STR_VLIV_AIR_BERLIN                                             : Air Berlin
 STR_VLIV_AIR_BERLIN_INTERIM                                     : Air Berlin (Interim)
 STR_VLIV_AIR_BERLIN_NEW                                         : Air Berlin (New)
+STR_VLIV_AIR_CAIRO                                              : Air Cairo
 STR_VLIV_AIR_CANADA                                             : Air Canada
 STR_VLIV_AIR_CANADA_97_06                                       : Air Canada 97-06
 STR_VLIV_AIR_CANADA_NEW                                         : Air Canada (New)

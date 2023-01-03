@@ -1305,7 +1305,7 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_speed, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320_200_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_AIRBUS);
-  1: string(STR_VLIV_AEGAN_AIRLINES);
+  1: string(STR_VLIV_AEGEAN_AIRLINES);
   2: string(STR_VLIV_AER_LINGUS);
   3: string(STR_VLIV_AEROFLOT);
   4: string(STR_VLIV_AIR_ARABIA);

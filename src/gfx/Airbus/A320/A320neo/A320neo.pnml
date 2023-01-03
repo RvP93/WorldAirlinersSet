@@ -63,6 +63,12 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(Airbus_A320neo, 310, 0, 48, 23, -24, -12)
 Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Greyscale) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Aegean.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Aegean) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AirCairo.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_AirCairo) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/AirMalta.png"
 Airbus_A320neo_sprite_layout_template(Airbus_A320neo_AirMalta) 
 #undef IMAGEFILE
@@ -87,6 +93,9 @@ Airbus_A320neo_sprite_layout_template(Airbus_A320neo_S7)
 #define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/SAS.png"
 Airbus_A320neo_sprite_layout_template(Airbus_A320neo_SAS) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/SriLankan.png"
+Airbus_A320neo_sprite_layout_template(Airbus_A320neo_SriLankan) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A320/A320neo/Swiss.png"
 Airbus_A320neo_sprite_layout_template(Airbus_A320neo_Swiss) 
 #undef IMAGEFILE
@@ -110,6 +119,24 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Greyscale, flight_state())
   21: Airbus_A320neo_Greyscale_Landing;
   22: Airbus_A320neo_Greyscale_Touchdown;
       Airbus_A320neo_Greyscale_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Aegean, flight_state())
+{
+  15: Airbus_A320neo_Aegean_Climbing;
+  18: Airbus_A320neo_Aegean_Flight;
+  21: Airbus_A320neo_Aegean_Landing;
+  22: Airbus_A320neo_Aegean_Touchdown;
+      Airbus_A320neo_Aegean_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_AirCairo, flight_state())
+{
+  15: Airbus_A320neo_AirCairo_Climbing;
+  18: Airbus_A320neo_AirCairo_Flight;
+  21: Airbus_A320neo_AirCairo_Landing;
+  22: Airbus_A320neo_AirCairo_Touchdown;
+      Airbus_A320neo_AirCairo_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_AirMalta, flight_state())
@@ -184,6 +211,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_SAS, flight_state())
       Airbus_A320neo_SAS_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_SriLankan, flight_state())
+{
+  15: Airbus_A320neo_SriLankan_Climbing;
+  18: Airbus_A320neo_SriLankan_Flight;
+  21: Airbus_A320neo_SriLankan_Landing;
+  22: Airbus_A320neo_SriLankan_Touchdown;
+      Airbus_A320neo_SriLankan_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Swiss, flight_state())
 {
   15: Airbus_A320neo_Swiss_Climbing;
@@ -232,19 +268,22 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_Wizz, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_sprites, cargo_subtype)
 {
   
- 1: Airbus_A320neo_AirMalta;
- 2: Airbus_A320neo_BritishAirways;
- 3: Airbus_A320neo_Easyjet;
- 4: Airbus_A320neo_Iberia;
- 5: Airbus_A320neo_Lufthansa;
- 6: Airbus_A320neo_Pegasus;
- 7: Airbus_A320neo_S7;
- 8: Airbus_A320neo_SAS;
- 9: Airbus_A320neo_Swiss;
-10: Airbus_A320neo_TAP;
-11: Airbus_A320neo_Ural;
-12: Airbus_A320neo_Vueling;
-13: Airbus_A320neo_Wizz;
+  1: Airbus_A320neo_Aegean;
+  2: Airbus_A320neo_AirCairo;
+  3: Airbus_A320neo_AirMalta;
+  4: Airbus_A320neo_BritishAirways;
+  5: Airbus_A320neo_Easyjet;
+  6: Airbus_A320neo_Iberia;
+  7: Airbus_A320neo_Lufthansa;
+  8: Airbus_A320neo_Pegasus;
+  9: Airbus_A320neo_S7;
+ 10: Airbus_A320neo_SAS;
+ 11: Airbus_A320neo_SriLankan;
+ 12: Airbus_A320neo_Swiss;
+ 13: Airbus_A320neo_TAP;
+ 14: Airbus_A320neo_Ural;
+ 15: Airbus_A320neo_Vueling;
+ 16: Airbus_A320neo_Wizz;
      Airbus_A320neo_Greyscale;
 }
                              
@@ -266,36 +305,43 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_speed, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_AIRBUS);
-  1: string(STR_VLIV_AIR_MALTA);
-  2: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
-  3: string(STR_VLIV_EASYJET);
-  4: string(STR_VLIV_IBERIA);
-  5: string(STR_VLIV_LUFTHANSA);
-  6: string(STR_VLIV_PEGASUS);
-  7: string(STR_VLIV_S7_AIRLINES);
-  8: string(STR_VLIV_SAS);
-  9: string(STR_VLIV_SWISS_AIR);
- 10: string(STR_VLIV_TAP);
- 11: string(STR_VLIV_URAL_AIRLINES);
- 12: string(STR_VLIV_VUELING_AIRLINES);
- 13: string(STR_VLIV_WIZZ_AIR);
+  1: string(STR_VLIV_AEGEAN_AIRLINES);
+  2: string(STR_VLIV_AIR_CAIRO);
+  3: string(STR_VLIV_AIR_MALTA);
+  4: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  5: string(STR_VLIV_EASYJET);
+  6: string(STR_VLIV_IBERIA);
+  7: string(STR_VLIV_LUFTHANSA);
+  8: string(STR_VLIV_PEGASUS);
+  9: string(STR_VLIV_S7_AIRLINES);
+ 10: string(STR_VLIV_SAS);
+ 11: string(STR_VLIV_SRILANKAN_AIRLINES);
+ 12: string(STR_VLIV_SWISS_AIR);
+ 13: string(STR_VLIV_TAP);
+ 14: string(STR_VLIV_URAL_AIRLINES);
+ 15: string(STR_VLIV_VUELING_AIRLINES);
+ 16: string(STR_VLIV_WIZZ_AIR);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A320neo_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 180; // Air Malta
-  2: return 180; // British
-  3: return 186; // Easyjet
-  4: return 180; // Iberia
-  5: return 180; // Lufthansa
-  6: return 186; // Pegasus
-  7: return 164; // S7
-  8: return 174; // SAS
-  9: return 180; // Swiss
- 10: return 174; // TAP
- 12: return 186; // Vueling
- 13: return 186; // Wizz
+  1: return 180; // Aeagean
+  2: return 186; // Air Cairo
+  3: return 180; // Air Malta
+  4: return 180; // British
+  5: return 186; // Easyjet
+  6: return 180; // Iberia
+  7: return 180; // Lufthansa
+  8: return 186; // Pegasus
+  9: return 164; // S7
+ 10: return 174; // SAS
+ 11: return 150; // SriLankan
+ 12: return 180; // Swiss
+ 13: return 174; // TAP
+ 14: return 176; // Ural
+ 15: return 186; // Vueling
+ 16: return 186; // Wizz
      return 165;
 }
 
