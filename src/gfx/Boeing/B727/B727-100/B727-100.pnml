@@ -95,6 +95,9 @@ Boeing_727_100_sprite_layout_template(Boeing_727_100_PSA)
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Sabena.png"
 Boeing_727_100_sprite_layout_template(Boeing_727_100_Sabena) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/Saudi.png"
+Boeing_727_100_sprite_layout_template(Boeing_727_100_Saudi) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B727/B727-100/TWA.png"
 Boeing_727_100_sprite_layout_template(Boeing_727_100_TWA) 
 #undef IMAGEFILE
@@ -165,6 +168,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Sabena, flight_state())
       Boeing_727_100_Sabena_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_Saudi, flight_state())
+{
+  15: Boeing_727_100_Saudi_Climbing;
+  18: Boeing_727_100_Saudi_Flight;
+  21: Boeing_727_100_Saudi_Landing;
+  22: Boeing_727_100_Saudi_Touchdown;
+      Boeing_727_100_Saudi_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_TWA, flight_state())
 {
   15: Boeing_727_100_TWA_Climbing;
@@ -191,8 +203,9 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_sprites, cargo_subtype)
   4: Boeing_727_100_PanAm;
   5: Boeing_727_100_PSA;
   6: Boeing_727_100_Sabena;
-  7: Boeing_727_100_TWA;
-  8: Boeing_727_100_United;
+  7: Boeing_727_100_Saudi;
+  8: Boeing_727_100_TWA;
+  9: Boeing_727_100_United;
      Boeing_727_100_Greyscale;
 }
                              
@@ -220,8 +233,9 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_cargo_subtype_text, cargo_subtype)
   4: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
   5: string(STR_VLIV_PSA);
   6: string(STR_VLIV_SABENA);
-  7: string(STR_VLIV_TWA);
-  8: string(STR_VLIV_UNITED_AIRLINES);
+  7: string(STR_VLIV_SAUDI_ARABIAN_AIRLINES);
+  8: string(STR_VLIV_TWA);
+  9: string(STR_VLIV_UNITED_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -230,8 +244,8 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_727_100_cargo_subtype_capacity, cargo_subtyp
   1: return 119; // Continental
   3: return 131; // Lufthansa
   4: return 131; // PanAm
-  7: return 101; // TWA
-  8: return 108; // United
+  8: return 101; // TWA
+  9: return 108; // United
   return 131;
 }
 
