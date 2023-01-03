@@ -78,6 +78,9 @@ Boeing_747_200M_sprite_layout_template(Boeing_747_200M_KLM)
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-200M/Lufthansa.png"
 Boeing_747_200M_sprite_layout_template(Boeing_747_200M_Lufthansa) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-200M/MEA.png"
+Boeing_747_200M_sprite_layout_template(Boeing_747_200M_MEA) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-200M/Philippines.png"
 Boeing_747_200M_sprite_layout_template(Boeing_747_200M_Philippines) 
 #undef IMAGEFILE
@@ -139,6 +142,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_200M_Lufthansa, flight_state())
       Boeing_747_200M_Lufthansa_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_200M_MEA, flight_state())
+{
+  15: Boeing_747_200M_MEA_Climbing;
+  18: Boeing_747_200M_MEA_Flight;
+  21: Boeing_747_200M_MEA_Landing;
+  22: Boeing_747_200M_MEA_Touchdown;
+      Boeing_747_200M_MEA_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_200M_Philippines, flight_state())
 {
   15: Boeing_747_200M_Philippines_Climbing;
@@ -164,8 +176,9 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_200M_sprites, cargo_subtype)
   3: Boeing_747_200M_Iberia;
   4: Boeing_747_200M_KLM;
   5: Boeing_747_200M_Lufthansa;
-  6: Boeing_747_200M_Philippines;
-  7: Boeing_747_200M_SAS;
+  6: Boeing_747_200M_MEA;
+  7: Boeing_747_200M_Philippines;
+  8: Boeing_747_200M_SAS;
      Boeing_747_200M_Greyscale;
 }
                              
@@ -199,8 +212,9 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_200M_cargo_subtype_text, cargo_subtype)
   3: string(STR_VLIV_IBERIA);
   4: string(STR_VLIV_KLM);
   5: string(STR_VLIV_LUFTHANSA);
-  6: string(STR_VLIV_PHILIPPINES_AIRLINES);
-  7: string(STR_VLIV_SAS);
+  6: string(STR_VLIV_MIDDLE_EAST_AIRLINES);
+  7: string(STR_VLIV_PHILIPPINES_AIRLINES);
+  8: string(STR_VLIV_SAS);
      return CB_RESULT_NO_TEXT;
 }
 
