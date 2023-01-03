@@ -135,6 +135,9 @@ Airbus_A330_300_sprite_layout_template(Airbus_A330_300_SAS)
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Singapore.png"
 Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Singapore) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/SriLankan.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_SriLankan) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Swiss.png"
 Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Swiss) 
 #undef IMAGEFILE
@@ -143,6 +146,9 @@ Airbus_A330_300_sprite_layout_template(Airbus_A330_300_ThaiAirways)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/Turkish.png"
 Airbus_A330_300_sprite_layout_template(Airbus_A330_300_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/TurkishOld.png"
+Airbus_A330_300_sprite_layout_template(Airbus_A330_300_TurkishOld) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A330/A330-300/USAir.png"
 Airbus_A330_300_sprite_layout_template(Airbus_A330_300_USAir) 
@@ -377,6 +383,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Singapore, flight_state())
       Airbus_A330_300_Singapore_Grounded;
 }	  
 	  
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_SriLankan, flight_state())
+{
+  15: Airbus_A330_300_SriLankan_Climbing;
+  18: Airbus_A330_300_SriLankan_Flight;
+  21: Airbus_A330_300_SriLankan_Landing;
+  22: Airbus_A330_300_SriLankan_Touchdown;
+      Airbus_A330_300_SriLankan_Grounded;
+}	  
+	  
 switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Swiss, flight_state())
 {
   15: Airbus_A330_300_Swiss_Climbing;
@@ -402,6 +417,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_Turkish, flight_state())
   21: Airbus_A330_300_Turkish_Landing;
   22: Airbus_A330_300_Turkish_Touchdown;
       Airbus_A330_300_Turkish_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_TurkishOld, flight_state())
+{
+  15: Airbus_A330_300_TurkishOld_Climbing;
+  18: Airbus_A330_300_TurkishOld_Flight;
+  21: Airbus_A330_300_TurkishOld_Landing;
+  22: Airbus_A330_300_TurkishOld_Touchdown;
+      Airbus_A330_300_TurkishOld_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_USAir, flight_state())
@@ -448,11 +472,13 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_sprites, cargo_subtype)
  22: Airbus_A330_300_Qatar;
  23: Airbus_A330_300_SAS;
  24: Airbus_A330_300_Singapore;
- 25: Airbus_A330_300_Swiss;
- 26: Airbus_A330_300_ThaiAirways;
- 27: Airbus_A330_300_Turkish;
- 28: Airbus_A330_300_USAir;
- 29: Airbus_A330_300_WOW;
+ 25: Airbus_A330_300_SriLankan;
+ 26: Airbus_A330_300_Swiss;
+ 27: Airbus_A330_300_ThaiAirways;
+ 28: Airbus_A330_300_Turkish;
+ 29: Airbus_A330_300_TurkishOld;
+ 30: Airbus_A330_300_USAir;
+ 31: Airbus_A330_300_WOW;
      Airbus_A330_300_Greyscale;
 }
                              
@@ -498,11 +524,13 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_cargo_subtype_text, cargo_subtype)
  22: string(STR_VLIV_QATAR_AIRWAYS);
  23: string(STR_VLIV_SAS);
  24: string(STR_VLIV_SINGAPORE_AIRLINES);
- 25: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
- 26: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
- 27: string(STR_VLIV_TURKISH_AIRLINES);
- 28: string(STR_VLIV_US_AIRWAYS);
- 29: string(STR_VLIV_WOW_AIR);
+ 25: string(STR_VLIV_SRILANKAN_AIRLINES);
+ 26: string(STR_VLIV_SWISS_INTERNATIONAL_AIRLINES);
+ 27: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 28: string(STR_VLIV_TURKISH_AIRLINES);
+ 29: string(STR_VLIV_TURKISH_AIRLINES_OLD);
+ 30: string(STR_VLIV_US_AIRWAYS);
+ 31: string(STR_VLIV_WOW_AIR);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -532,11 +560,13 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A330_300_cargo_subtype_capacity, cargo_subty
   22: return 259; // Qatar
   23: return 267; // SAS
   24: return 285; // Singapore
-  25: return 236; // Swiss
-  26: return 299; // Thai
-  27: return 289; // Turkish
-  28: return 291; // US Airways
-  29: return 345; // WOW
+  25: return 297; // SriLankan
+  26: return 236; // Swiss
+  27: return 299; // Thai
+  28: return 289; // Turkish
+  29: return 289; // TurkishOld
+  30: return 291; // US Airways
+  31: return 345; // WOW
   return 295;
 }
 
