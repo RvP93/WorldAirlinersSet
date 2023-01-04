@@ -75,6 +75,9 @@ Boeing_737_500_sprite_layout_template(Boeing_737_500_AirDo)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/AirFrance.png"
 Boeing_737_500_sprite_layout_template(Boeing_737_500_AirFrance) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Airzena.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Albawings.png"
 Boeing_737_500_sprite_layout_template(Boeing_737_500_Albawings) 
 #undef IMAGEFILE
@@ -95,6 +98,15 @@ Boeing_737_500_sprite_layout_template(Boeing_737_500_LOT)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Lufthansa.png"
 Boeing_737_500_sprite_layout_template(Boeing_737_500_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Malev.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Malev) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/RAM.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_RAM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/Rwandair.png"
+Boeing_737_500_sprite_layout_template(Boeing_737_500_Rwandair) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-500/SAS.png"
 Boeing_737_500_sprite_layout_template(Boeing_737_500_SAS) 
@@ -153,6 +165,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_AirFrance, flight_state())
   21: Boeing_737_500_AirFrance_Landing;
   22: Boeing_737_500_AirFrance_Touchdown;
       Boeing_737_500_AirFrance_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Airzena, flight_state())
+{
+  15: Boeing_737_500_Airzena_Climbing;
+  18: Boeing_737_500_Airzena_Flight;
+  21: Boeing_737_500_Airzena_Landing;
+  22: Boeing_737_500_Airzena_Touchdown;
+      Boeing_737_500_Airzena_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Albawings, flight_state())
@@ -218,6 +239,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Lufthansa, flight_state())
       Boeing_737_500_Lufthansa_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Malev, flight_state())
+{
+  15: Boeing_737_500_Malev_Climbing;
+  18: Boeing_737_500_Malev_Flight;
+  21: Boeing_737_500_Malev_Landing;
+  22: Boeing_737_500_Malev_Touchdown;
+      Boeing_737_500_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_RAM, flight_state())
+{
+  15: Boeing_737_500_RAM_Climbing;
+  18: Boeing_737_500_RAM_Flight;
+  21: Boeing_737_500_RAM_Landing;
+  22: Boeing_737_500_RAM_Touchdown;
+      Boeing_737_500_RAM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_Rwandair, flight_state())
+{
+  15: Boeing_737_500_Rwandair_Climbing;
+  18: Boeing_737_500_Rwandair_Flight;
+  21: Boeing_737_500_Rwandair_Landing;
+  22: Boeing_737_500_Rwandair_Touchdown;
+      Boeing_737_500_Rwandair_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_SAS, flight_state())
 {
   15: Boeing_737_500_SAS_Climbing;
@@ -260,17 +308,21 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_sprites, cargo_subtype)
   2: Boeing_737_500_AirBerlin;
   3: Boeing_737_500_AirDo;
   4: Boeing_737_500_AirFrance;
-  5: Boeing_737_500_Albawings;
-  6: Boeing_737_500_ANA;
-  7: Boeing_737_500_Belavia;
-  8: Boeing_737_500_BritishAirwaysLandor;
-  9: Boeing_737_500_Continental;
- 10: Boeing_737_500_LOT;
- 11: Boeing_737_500_Lufthansa;
- 12: Boeing_737_500_SAS;
- 13: Boeing_737_500_Tunisair;
- 14: Boeing_737_500_United;
- 15: Boeing_737_500_UTAir;
+  5: Boeing_737_500_Airzena;
+  6: Boeing_737_500_Albawings;
+  7: Boeing_737_500_ANA;
+  8: Boeing_737_500_Belavia;
+  9: Boeing_737_500_BritishAirwaysLandor;
+ 10: Boeing_737_500_Continental;
+ 11: Boeing_737_500_LOT;
+ 12: Boeing_737_500_Lufthansa;
+ 13: Boeing_737_500_Malev;
+ 14: Boeing_737_500_RAM;
+ 15: Boeing_737_500_Rwandair;
+ 16: Boeing_737_500_SAS;
+ 17: Boeing_737_500_Tunisair;
+ 18: Boeing_737_500_United;
+ 19: Boeing_737_500_UTAir;
 	 Boeing_737_500_Greyscale;
 }  
                              
@@ -303,17 +355,21 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_cargo_subtype_text, cargo_subtype)
   2: string(STR_VLIV_AIR_BERLIN);
   3: string(STR_VLIV_AIR_DO);
   4: string(STR_VLIV_AIR_FRANCE);
-  5: string(STR_VLIV_ALBAWINGS);
-  6: string(STR_VLIV_ANA);
-  7: string(STR_VLIV_BELAVIA);
-  8: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
-  9: string(STR_VLIV_CONTINENTAL);
- 10: string(STR_VLIV_LOT);
- 11: string(STR_VLIV_LUFTHANSA);
- 12: string(STR_VLIV_SAS);
- 13: string(STR_VLIV_TUNISAIR);
- 14: string(STR_VLIV_UNITED_AIRLINES);
- 15: string(STR_VLIV_UTAIR);  
+  5: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  6: string(STR_VLIV_ALBAWINGS);
+  7: string(STR_VLIV_ANA);
+  8: string(STR_VLIV_BELAVIA);
+  9: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+ 10: string(STR_VLIV_CONTINENTAL);
+ 11: string(STR_VLIV_LOT);
+ 12: string(STR_VLIV_LUFTHANSA);
+ 13: string(STR_VLIV_MALEV);
+ 14: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 15: string(STR_VLIV_RWANDAIR);
+ 16: string(STR_VLIV_SAS);
+ 17: string(STR_VLIV_TUNISAIR);
+ 18: string(STR_VLIV_UNITED_AIRLINES);
+ 19: string(STR_VLIV_UTAIR);  
      return CB_RESULT_NO_TEXT;
 }
 
@@ -323,17 +379,20 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_500_cargo_subtype_capacity, cargo_subtyp
   2: return 104; // Air Berlin
   3: return 126; // Air Do
   4: return 112; // Air France
-  5: return 132; // Albawings
-  6: return 126; // ANA
-  7: return 123; // Belavia
-  8: return 110; // British Airways
-  9: return 114; // Continental
- 10: return 108; // LOT
- 11: return 120; // Lufthansa
- 12: return 120; // SAS
- 13: return 114; // Tunisair
- 14: return 114; // United
- 15: return 126; // Utair
+  5: return 115; // Airzena Georgian
+  6: return 132; // Albawings
+  7: return 126; // ANA
+  8: return 123; // Belavia
+  9: return 110; // British Airways
+ 10: return 114; // Continental
+ 11: return 108; // LOT
+ 12: return 120; // Lufthansa
+ 14: return 109; // RAM
+ 15: return  92; // Rwandair
+ 16: return 120; // SAS
+ 17: return 114; // Tunisair
+ 18: return 114; // United
+ 19: return 126; // Utair
      return 108;
 }
 
