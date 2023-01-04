@@ -78,6 +78,9 @@ Boeing_737_400_sprite_layout_template(Boeing_737_400_AirEuropa)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/AirOne.png"
 Boeing_737_400_sprite_layout_template(Boeing_737_400_AirOne) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/Airzena.png"
+Boeing_737_400_sprite_layout_template(Boeing_737_400_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/AlaskaAirlines.png"
 Boeing_737_400_sprite_layout_template(Boeing_737_400_AlaskaAirlines) 
 #undef IMAGEFILE
@@ -131,6 +134,9 @@ Boeing_737_400_sprite_layout_template(Boeing_737_400_Pegasus)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/Qantas.png"
 Boeing_737_400_sprite_layout_template(Boeing_737_400_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/RAM.png"
+Boeing_737_400_sprite_layout_template(Boeing_737_400_RAM) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-400/Turkish.png"
 Boeing_737_400_sprite_layout_template(Boeing_737_400_Turkish) 
@@ -191,6 +197,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_AirOne, flight_state())
   21: Boeing_737_400_AirOne_Landing;
   22: Boeing_737_400_AirOne_Touchdown;
       Boeing_737_400_AirOne_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_Airzena, flight_state())
+{
+  15: Boeing_737_400_Airzena_Climbing;
+  18: Boeing_737_400_Airzena_Flight;
+  21: Boeing_737_400_Airzena_Landing;
+  22: Boeing_737_400_Airzena_Touchdown;
+      Boeing_737_400_Airzena_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_AlaskaAirlines, flight_state())
@@ -356,6 +371,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_Qantas, flight_state())
       Boeing_737_400_Qantas_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_RAM, flight_state())
+{
+  15: Boeing_737_400_RAM_Climbing;
+  18: Boeing_737_400_RAM_Flight;
+  21: Boeing_737_400_RAM_Landing;
+  22: Boeing_737_400_RAM_Touchdown;
+      Boeing_737_400_RAM_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_Turkish, flight_state())
 {
   15: Boeing_737_400_Turkish_Climbing;
@@ -381,26 +405,28 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_sprites, cargo_subtype)
   3: Boeing_737_400_AirBerlin;
   4: Boeing_737_400_AirEuropa;
   5: Boeing_737_400_AirOne;
-  6: Boeing_737_400_AlaskaAirlines;
-  7: Boeing_737_400_AlaskaAirlinesDisney;
-  8: Boeing_737_400_Albastar;
-  9: Boeing_737_400_BritishAirwaysLandor;
- 10: Boeing_737_400_BritishAirwaysUnionFlag;
- 11: Boeing_737_400_Futura; 
- 12: Boeing_737_400_Garuda;
- 13: Boeing_737_400_HapagLloyd;
- 14: Boeing_737_400_Iberia;
- 15: Boeing_737_400_Icelandair;
- 16: Boeing_737_400_JAT;
- 17: Boeing_737_400_KLM;
- 18: Boeing_737_400_LOT;
- 19: Boeing_737_400_Lufthansa;
- 20: Boeing_737_400_Malev;
- 21: Boeing_737_400_Olympic;
- 22: Boeing_737_400_Pegasus;
- 23: Boeing_737_400_Qantas; 
- 24: Boeing_737_400_Turkish;
- 25: Boeing_737_400_USAirways;
+  6: Boeing_737_400_Airzena;
+  7: Boeing_737_400_AlaskaAirlines;
+  8: Boeing_737_400_AlaskaAirlinesDisney;
+  9: Boeing_737_400_Albastar;
+ 10: Boeing_737_400_BritishAirwaysLandor;
+ 11: Boeing_737_400_BritishAirwaysUnionFlag;
+ 12: Boeing_737_400_Futura; 
+ 13: Boeing_737_400_Garuda;
+ 14: Boeing_737_400_HapagLloyd;
+ 15: Boeing_737_400_Iberia;
+ 16: Boeing_737_400_Icelandair;
+ 17: Boeing_737_400_JAT;
+ 18: Boeing_737_400_KLM;
+ 19: Boeing_737_400_LOT;
+ 20: Boeing_737_400_Lufthansa;
+ 21: Boeing_737_400_Malev;
+ 22: Boeing_737_400_Olympic;
+ 23: Boeing_737_400_Pegasus;
+ 24: Boeing_737_400_Qantas; 
+ 25: Boeing_737_400_RAM; 
+ 26: Boeing_737_400_Turkish;
+ 27: Boeing_737_400_USAirways;
 	 Boeing_737_400_Greyscale;
 }  
                              
@@ -434,50 +460,55 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_cargo_subtype_text, cargo_subtype)
   3: string(STR_VLIV_AIR_BERLIN);
   4: string(STR_VLIV_AIR_EUROPA);
   5: string(STR_VLIV_AIR_ONE);
-  6: string(STR_VLIV_ALASKA_AIRLINES);
-  7: string(STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL);
-  8: string(STR_VLIV_ALBASTAR);
-  9: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
- 10: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
- 11: string(STR_VLIV_FUTURA);
- 12: string(STR_VLIV_GARUDA_INDONESIA);
- 13: string(STR_VLIV_HAPAG_LLOYD);
- 14: string(STR_VLIV_IBERIA);
- 15: string(STR_VLIV_ICELANDAIR);
- 16: string(STR_VLIV_JAT_AIRWAYS);
- 17: string(STR_VLIV_KLM);
- 18: string(STR_VLIV_LOT); 
- 19: string(STR_VLIV_LUFTHANSA);
- 20: string(STR_VLIV_MALEV);
- 21: string(STR_VLIV_OLYMPIC_AIR);
- 22: string(STR_VLIV_PEGASUS);
- 23: string(STR_VLIV_QANTAS);
- 24: string(STR_VLIV_TURKISH_AIRLINES);
- 25: string(STR_VLIV_US_AIRWAYS);  
+  6: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  7: string(STR_VLIV_ALASKA_AIRLINES);
+  8: string(STR_VLIV_ALASKA_AIRLINES_DISNEY_SPECIAL);
+  9: string(STR_VLIV_ALBASTAR);
+ 10: string(STR_VLIV_BRITISH_AIRWAYS_LANDOR);
+ 11: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+ 12: string(STR_VLIV_FUTURA);
+ 13: string(STR_VLIV_GARUDA_INDONESIA);
+ 14: string(STR_VLIV_HAPAG_LLOYD);
+ 15: string(STR_VLIV_IBERIA);
+ 16: string(STR_VLIV_ICELANDAIR);
+ 17: string(STR_VLIV_JAT_AIRWAYS);
+ 18: string(STR_VLIV_KLM);
+ 19: string(STR_VLIV_LOT); 
+ 20: string(STR_VLIV_LUFTHANSA);
+ 21: string(STR_VLIV_MALEV);
+ 22: string(STR_VLIV_OLYMPIC_AIR);
+ 23: string(STR_VLIV_PEGASUS);
+ 24: string(STR_VLIV_QANTAS);
+ 25: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 26: string(STR_VLIV_TURKISH_AIRLINES);
+ 27: string(STR_VLIV_US_AIRWAYS);  
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_400_cargo_subtype_capacity, cargo_subtype)
 {
-  3: return 167;
-  4: return 162;
-  5: return 153;
-  6: return 144;
-  7: return 144;
-  8: return 170;
-  9: return 153;
- 10: return 145;
- 11: return 170;
- 12: return 134;
- 14: return 162;
- 15: return 153;
- 16: return 156;
- 17: return 147;
- 18: return 154;
- 21: return 150;
- 22: return 150;
- 23: return 150;
- 24: return 144;
+  3: return 167; // Air Berlin
+  4: return 162; // Air Europa
+  5: return 153; // Air One
+  6: return 145; // Airzena Georgian
+  7: return 144; // Alaska
+  8: return 144; // Alaska Disney
+  9: return 170; // Albastar
+ 10: return 153; // BA Landor
+ 11: return 145; // BA Union
+ 12: return 170; // Futura
+ 13: return 134; // Garuda
+ 15: return 162; // Iberia
+ 16: return 153; // Icelandair
+ 17: return 156; // JAT
+ 18: return 147; // KLM
+ 19: return 154; // LOT
+ 22: return 150; // Olympic
+ 23: return 150; // Pegasus
+ 24: return 150; // Qantas
+ 25: return 138; // RAM
+ 26: return 144; // Turkish
+ 27: return 144; // US Airways
      return 146;
 }
 
