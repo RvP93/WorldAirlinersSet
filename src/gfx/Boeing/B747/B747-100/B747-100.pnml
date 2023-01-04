@@ -63,6 +63,9 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
 purchase_sprite(Boeing_747_100, 405, 1, 69, 31, -35, -16)
 Boeing_747_100_sprite_layout_template(Boeing_747_100_Greyscale) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B747/B747-100/AerLingus.png"
+Boeing_747_100_sprite_layout_template(Boeing_747_100_AerLingus) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B747/B747-100/Alitalia.png"
 Boeing_747_100_sprite_layout_template(Boeing_747_100_Alitalia) 
 #undef IMAGEFILE
@@ -91,6 +94,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_Greyscale, flight_state())
       Boeing_747_100_Greyscale_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_AerLingus, flight_state())
+{
+  15: Boeing_747_100_AerLingus_Climbing;
+  18: Boeing_747_100_AerLingus_Flight;
+  21: Boeing_747_100_AerLingus_Landing;
+  22: Boeing_747_100_AerLingus_Touchdown;
+      Boeing_747_100_AerLingus_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_Alitalia, flight_state())
 {
   15: Boeing_747_100_Alitalia_Climbing;
@@ -99,7 +111,6 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_Alitalia, flight_state())
   22: Boeing_747_100_Alitalia_Touchdown;
       Boeing_747_100_Alitalia_Grounded;
 }
-
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_BritishAirwaysNegus, flight_state())
 {
@@ -148,12 +159,13 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_United, flight_state())
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_sprites, cargo_subtype)
 {
-  1: Boeing_747_100_Alitalia;
-  2: Boeing_747_100_BritishAirwaysNegus;
-  3: Boeing_747_100_JAL;
-  4: Boeing_747_100_PanAm;
-  5: Boeing_747_100_TWA;
-  6: Boeing_747_100_United;
+  1: Boeing_747_100_AerLingus;
+  2: Boeing_747_100_Alitalia;
+  3: Boeing_747_100_BritishAirwaysNegus;
+  4: Boeing_747_100_JAL;
+  5: Boeing_747_100_PanAm;
+  6: Boeing_747_100_TWA;
+  7: Boeing_747_100_United;
      Boeing_747_100_Greyscale;
 }
                              
@@ -182,12 +194,13 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_sound_effect, extra_callback_info1)
 switch (FEAT_AIRCRAFT, SELF, Boeing_747_100_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BOEING);
-  1: string(STR_VLIV_ALITALIA);
-  2: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
-  3: string(STR_VLIV_JAL);
-  4: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
-  5: string(STR_VLIV_TWA);
-  6: string(STR_VLIV_UNITED_AIRLINES);
+  1: string(STR_VLIV_AER_LINGUS);
+  2: string(STR_VLIV_ALITALIA);
+  3: string(STR_VLIV_BRITISH_AIRWAYS_NEGUS);
+  4: string(STR_VLIV_JAL);
+  5: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+  6: string(STR_VLIV_TWA);
+  7: string(STR_VLIV_UNITED_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
