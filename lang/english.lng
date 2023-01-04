@@ -277,7 +277,7 @@ STR_VLIV_ALITALIA_CITY                                          : Alitalia Cityl
 STR_VLIV_ALITALIA_OLD                                           : Alitalia (Old)
 STR_VLIV_ALLEGIANT_AIR                                          : Allegiant Air
 STR_VLIV_ALLIANCE_AIRLINES                                      : Alliance Airlines
-STR_VLIV_ALROSA                                                 : Alrosa
+STR_VLIV_ALROSA                                                 : Alrosa Avia
 STR_VLIV_AMASZONAS_PARAGUAY                                     : Amaszonas Paraguay
 STR_VLIV_AMC_AVIATION                                           : AMC Aviation
 STR_VLIV_AMERICAN_AIRLINES                                      : American Airlines
@@ -289,6 +289,7 @@ STR_VLIV_ANA_GOLD                                               : ANA Gold Liver
 STR_VLIV_ANA_PIKACHU_LIVERY_2005                                : ANA Pikachu Livery (2005)
 STR_VLIV_ANA_POKEMON_LIVERY_1999                                : ANA Pokemon Livery (1999)
 STR_VLIV_ANA_WAVES                                              : ANA Waves - First 777-300
+STR_VLIV_ANADOLUJET                                             : Anadolujet
 STR_VLIV_ANSETT_NEW_ZEALAND                                     : Ansett New Zealand
 STR_VLIV_ANTONOV_UKRAINE                                        : Antonov Design Bureau Ukraine
 STR_VLIV_ARIANA_AFGHAN_AIRLINES                                 : Ariana Afghan Airlines
@@ -369,6 +370,7 @@ STR_VLIV_DUTCH_ANTILLES_EXPRESS                                 : Dutch Antilles
 STR_VLIV_EASTERN_AIR_LINES                                      : Eastern Air Lines
 STR_VLIV_EASYJET                                                : EasyJet
 STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
+STR_VLIV_ECAIR                                                  : ECAir
 STR_VLIV_EGYPT_AIR                                              : Egypt Air
 STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : El Al Israel Airlines
 STR_VLIV_ELLINAIR                                               : Ellinair
@@ -480,6 +482,7 @@ STR_VLIV_MARTINAIR_CARGO                                        : Martinair Carg
 STR_VLIV_MAT_MACEDONIAN                                         : MAT Macedonian Airlines
 STR_VLIV_MERIDIANA                                              : Meridiana
 STR_VLIV_METROJET                                               : Mertrojet
+STR_VLIV_MAURITANIA_AIRLINES                                    : Mauritania Airlines
 STR_VLIV_MEXICANA                                               : Mexicana
 STR_VLIV_MIDDLE_EAST_AIRLINES                                   : Middle East Airlines
 STR_VLIV_MIDDLE_EAST_AIRLINES_OLD                               : Middle East Airlines (Old)
