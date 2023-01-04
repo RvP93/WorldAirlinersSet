@@ -72,8 +72,14 @@ Boeing_737_700_sprite_layout_template(Boeing_737_700_Argentinas)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/AirBerlin.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_AirBerlin) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Airzena.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Alaska.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_Alaska) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Alrosa.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Alrosa) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/ANA.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_ANA) 
@@ -96,11 +102,17 @@ Boeing_737_700_sprite_layout_template(Boeing_737_700_Delta)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Easyjet.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_Easyjet) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/ECAir.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_ECAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/GOL.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_GOL) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/JetTime.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_JetTime) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Kenya.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Kenya) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/KLM.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_KLM) 
@@ -108,8 +120,20 @@ Boeing_737_700_sprite_layout_template(Boeing_737_700_KLM)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Luxair.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_Luxair) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Malev.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Malev) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Mauritania.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Mauritania) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/OmanAir.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_OmanAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/RAM.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_RAM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Rwandair.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_Rwandair) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/SAS.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_SAS) 
@@ -125,6 +149,9 @@ Boeing_737_700_sprite_layout_template(Boeing_737_700_TAROM)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/Transavia.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_Transavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/TUI.png"
+Boeing_737_700_sprite_layout_template(Boeing_737_700_TUI) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-700/United.png"
 Boeing_737_700_sprite_layout_template(Boeing_737_700_United) 
@@ -169,6 +196,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_AirBerlin, flight_state())
       Boeing_737_700_AirBerlin_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Airzena, flight_state())
+{
+  15: Boeing_737_700_Airzena_Climbing;
+  18: Boeing_737_700_Airzena_Flight;
+  21: Boeing_737_700_Airzena_Landing;
+  22: Boeing_737_700_Airzena_Touchdown;
+      Boeing_737_700_Airzena_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Alaska, flight_state())
 {
   15: Boeing_737_700_Alaska_Climbing;
@@ -176,6 +212,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Alaska, flight_state())
   21: Boeing_737_700_Alaska_Landing;
   22: Boeing_737_700_Alaska_Touchdown;
       Boeing_737_700_Alaska_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Alrosa, flight_state())
+{
+  15: Boeing_737_700_Alrosa_Climbing;
+  18: Boeing_737_700_Alrosa_Flight;
+  21: Boeing_737_700_Alrosa_Landing;
+  22: Boeing_737_700_Alrosa_Touchdown;
+      Boeing_737_700_Alrosa_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_ANA, flight_state())
@@ -241,6 +286,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Easyjet, flight_state())
       Boeing_737_700_Easyjet_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_ECAir, flight_state())
+{
+  15: Boeing_737_700_ECAir_Climbing;
+  18: Boeing_737_700_ECAir_Flight;
+  21: Boeing_737_700_ECAir_Landing;
+  22: Boeing_737_700_ECAir_Touchdown;
+      Boeing_737_700_ECAir_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_GOL, flight_state())
 {
   15: Boeing_737_700_GOL_Climbing;
@@ -257,6 +311,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_JetTime, flight_state())
   21: Boeing_737_700_JetTime_Landing;
   22: Boeing_737_700_JetTime_Touchdown;
       Boeing_737_700_JetTime_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Kenya, flight_state())
+{
+  15: Boeing_737_700_Kenya_Climbing;
+  18: Boeing_737_700_Kenya_Flight;
+  21: Boeing_737_700_Kenya_Landing;
+  22: Boeing_737_700_Kenya_Touchdown;
+      Boeing_737_700_Kenya_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_KLM, flight_state())
@@ -277,6 +340,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Luxair, flight_state())
       Boeing_737_700_Luxair_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Malev, flight_state())
+{
+  15: Boeing_737_700_Malev_Climbing;
+  18: Boeing_737_700_Malev_Flight;
+  21: Boeing_737_700_Malev_Landing;
+  22: Boeing_737_700_Malev_Touchdown;
+      Boeing_737_700_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Mauritania, flight_state())
+{
+  15: Boeing_737_700_Mauritania_Climbing;
+  18: Boeing_737_700_Mauritania_Flight;
+  21: Boeing_737_700_Mauritania_Landing;
+  22: Boeing_737_700_Mauritania_Touchdown;
+      Boeing_737_700_Mauritania_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_OmanAir, flight_state())
 {
   15: Boeing_737_700_OmanAir_Climbing;
@@ -284,6 +365,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_OmanAir, flight_state())
   21: Boeing_737_700_OmanAir_Landing;
   22: Boeing_737_700_OmanAir_Touchdown;
       Boeing_737_700_OmanAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_RAM, flight_state())
+{
+  15: Boeing_737_700_RAM_Climbing;
+  18: Boeing_737_700_RAM_Flight;
+  21: Boeing_737_700_RAM_Landing;
+  22: Boeing_737_700_RAM_Touchdown;
+      Boeing_737_700_RAM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Rwandair, flight_state())
+{
+  15: Boeing_737_700_Rwandair_Climbing;
+  18: Boeing_737_700_Rwandair_Flight;
+  21: Boeing_737_700_Rwandair_Landing;
+  22: Boeing_737_700_Rwandair_Touchdown;
+      Boeing_737_700_Rwandair_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_SAS, flight_state())
@@ -331,6 +430,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_Transavia, flight_state())
       Boeing_737_700_Transavia_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_TUI, flight_state())
+{
+  15: Boeing_737_700_TUI_Climbing;
+  18: Boeing_737_700_TUI_Flight;
+  21: Boeing_737_700_TUI_Landing;
+  22: Boeing_737_700_TUI_Touchdown;
+      Boeing_737_700_TUI_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_United, flight_state())
 {
   15: Boeing_737_700_United_Climbing;
@@ -354,26 +462,35 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_sprites, cargo_subtype)
   1: Boeing_737_700_Aeromexico;
   2: Boeing_737_700_Argentinas;
   3: Boeing_737_700_AirBerlin;
-  4: Boeing_737_700_Alaska;
-  5: Boeing_737_700_ANA;
-  6: Boeing_737_700_ANAGold;
-  7: Boeing_737_700_Astraeus;
-  8: Boeing_737_700_Austrian;
-  9: Boeing_737_700_Continental;
- 10: Boeing_737_700_Delta;
- 11: Boeing_737_700_Easyjet;
- 12: Boeing_737_700_GOL;
- 13: Boeing_737_700_JetTime;
- 14: Boeing_737_700_KLM;
- 15: Boeing_737_700_Luxair;
- 16: Boeing_737_700_OmanAir;
- 17: Boeing_737_700_SAS;
- 18: Boeing_737_700_Southwest;
- 19: Boeing_737_700_TAAG;
- 20: Boeing_737_700_TAROM;
- 21: Boeing_737_700_Transavia;
- 22: Boeing_737_700_United;
- 23: Boeing_737_700_Westjet;
+  4: Boeing_737_700_Airzena;
+  5: Boeing_737_700_Alaska;
+  6: Boeing_737_700_Alrosa;
+  7: Boeing_737_700_ANA;
+  8: Boeing_737_700_ANAGold;
+  9: Boeing_737_700_Astraeus;
+ 10: Boeing_737_700_Austrian;
+ 11: Boeing_737_700_Continental;
+ 12: Boeing_737_700_Delta;
+ 13: Boeing_737_700_Easyjet;
+ 14: Boeing_737_700_ECAir;
+ 15: Boeing_737_700_GOL;
+ 16: Boeing_737_700_JetTime;
+ 17: Boeing_737_700_Kenya;
+ 18: Boeing_737_700_KLM;
+ 19: Boeing_737_700_Luxair;
+ 20: Boeing_737_700_Malev;
+ 21: Boeing_737_700_Mauritania;
+ 22: Boeing_737_700_OmanAir;
+ 23: Boeing_737_700_RAM;
+ 24: Boeing_737_700_Rwandair;
+ 25: Boeing_737_700_SAS;
+ 26: Boeing_737_700_Southwest;
+ 27: Boeing_737_700_TAAG;
+ 28: Boeing_737_700_TAROM;
+ 29: Boeing_737_700_Transavia;
+ 30: Boeing_737_700_TUI;
+ 31: Boeing_737_700_United;
+ 32: Boeing_737_700_Westjet;
   	 Boeing_737_700_Greyscale;
 }  
                           
@@ -405,26 +522,35 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_cargo_subtype_text, cargo_subtype)
   1: string(STR_VLIV_AEROMEXICO );
   2: string(STR_VLIV_AEROLINEAS_ARGENTINAS);
   3: string(STR_VLIV_AIR_BERLIN_NEW);
-  4: string(STR_VLIV_ALASKA_AIRLINES);
-  5: string(STR_VLIV_ANA);
-  6: string(STR_VLIV_ANA_GOLD);
-  7: string(STR_VLIV_ASTRAEUS);
-  8: string(STR_VLIV_AUSTRIAN_AIRLINES);
-  9: string(STR_VLIV_CONTINENTAL);
- 10: string(STR_VLIV_DELTA_AIR_LINES);
- 11: string(STR_VLIV_EASYJET);
- 12: string(STR_VLIV_GOL);
- 13: string(STR_VLIV_JET_TIME);
- 14: string(STR_VLIV_KLM);
- 15: string(STR_VLIV_LUXAIR);
- 16: string(STR_VLIV_OMAN_AIR);
- 17: string(STR_VLIV_SAS);
- 18: string(STR_VLIV_SOUTHWEST_AIRLINES);
- 19: string(STR_VLIV_TAAG_ANGOLA_AIRLINES);
- 20: string(STR_VLIV_TAROM);
- 21: string(STR_VLIV_TRANSAVIA);
- 22: string(STR_VLIV_UNITED_AIRLINES);
- 23: string(STR_VLIV_WESTJET);
+  4: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  5: string(STR_VLIV_ALASKA_AIRLINES);
+  6: string(STR_VLIV_ALROSA);
+  7: string(STR_VLIV_ANA);
+  8: string(STR_VLIV_ANA_GOLD);
+  9: string(STR_VLIV_ASTRAEUS);
+ 10: string(STR_VLIV_AUSTRIAN_AIRLINES);
+ 11: string(STR_VLIV_CONTINENTAL);
+ 12: string(STR_VLIV_DELTA_AIR_LINES);
+ 13: string(STR_VLIV_EASYJET);
+ 14: string(STR_VLIV_ECAIR);
+ 15: string(STR_VLIV_GOL);
+ 16: string(STR_VLIV_JET_TIME);
+ 17: string(STR_VLIV_KENYA_AIRWAYS);
+ 18: string(STR_VLIV_KLM);
+ 19: string(STR_VLIV_LUXAIR);
+ 20: string(STR_VLIV_MALEV);
+ 21: string(STR_VLIV_MAURITANIA_AIRLINES);
+ 22: string(STR_VLIV_OMAN_AIR);
+ 23: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 24: string(STR_VLIV_RWANDAIR);
+ 25: string(STR_VLIV_SAS);
+ 26: string(STR_VLIV_SOUTHWEST_AIRLINES);
+ 27: string(STR_VLIV_TAAG_ANGOLA_AIRLINES);
+ 28: string(STR_VLIV_TAROM);
+ 29: string(STR_VLIV_TRANSAVIA);
+ 20: string(STR_VLIV_TUI);
+ 31: string(STR_VLIV_UNITED_AIRLINES);
+ 32: string(STR_VLIV_WESTJET);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -432,27 +558,35 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_cargo_subtype_capacity, cargo_subtyp
 {
   1: return 114; // Aeromexico
   2: return 128; // Aerolineas Argentinas
-  3: return 144; // Air berlin
-  4: return 124; // Alaska Airlines
-  5: return 120; // Ana
-  6: return 120; // Ana Gold
-  7: return 148; // Astraeus
-  8: return 138; // Austrian
-  9: return 118; // Continental
- 10: return 124; // Delta
- 11: return 149; // Easyjet
- 12: return 144; // GOL
- 13: return 148; // Jet Time
- 14: return 132; // KLM
- 15: return 141; // Luxair
- 16: return 114; // Oman Air
- 17: return 140; // Sas
- 18: return 143; // Southwest
- 19: return 120; // Taag
- 20: return 116; // Tarom
- 21: return 149; // Transavia
- 22: return 118; // United
- 23: return 136; // Westjet
+  3: return 144; // Air Berlin
+  4: return 132; // Airzena Georgian
+  5: return 124; // Alaska Airlines
+  6: return 138; // Alrosa
+  7: return 120; // Ana
+  8: return 120; // Ana Gold
+  9: return 148; // Astraeus
+ 10: return 138; // Austrian
+ 11: return 118; // Continental
+ 12: return 124; // Delta
+ 13: return 149; // Easyjet
+ 14: return 126; // EC Air
+ 15: return 144; // GOL
+ 16: return 148; // Jet Time
+ 17: return 116; // Kenya
+ 18: return 132; // KLM
+ 19: return 141; // Luxair
+ 20: return 121; // Malev
+ 22: return 114; // Oman Air
+ 23: return 114  // RAM
+ 24: return 120  // Rwandair
+ 25: return 140; // Sas
+ 26: return 143; // Southwest
+ 27: return 120; // Taag
+ 28: return 116; // Tarom
+ 29: return 149; // Transavia
+ 30: return 148; // TUI
+ 31: return 118; // United
+ 32: return 136; // Westjet
      return 128;
 }
 
