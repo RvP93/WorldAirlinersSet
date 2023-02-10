@@ -1,0 +1,28 @@
+# Cmake output
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+# Output files
+bin
+.nmlcache
+# Visual Studio folder
+.vs
+# Generator output
+out
+build
+build.ninja
+.ninja_log
+# Building Tools
+nmlc.exe
+grfid.exe
+
+#Generated custom tag file
+custom_tags.txt

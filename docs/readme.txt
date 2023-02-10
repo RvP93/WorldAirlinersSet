@@ -1,6 +1,6 @@
 WAS README
-Revision {{GRF_REVISION}}
-MD5: {{GRF_MD5}}
+Revision ${GRF_REVISION}
+MD5: ${GRF_MD5}
 ---------------------------------------------------------
 
 Table of Contents:
