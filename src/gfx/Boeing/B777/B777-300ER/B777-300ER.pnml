@@ -106,7 +106,7 @@ Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_EgyptAir)
 Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Emirates) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Etiopian.png"
-Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Emirates) 
+Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Etiopian) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B777/B777-300ER/Garuda.png"
 Boeing_777_300ER_sprite_layout_template(Boeing_777_300ER_Garuda) 
