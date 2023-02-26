@@ -187,7 +187,7 @@ switch (FEAT_AIRCRAFT, SELF, McDonnell_Douglas_MD90_sprites, cargo_subtype)
   2: McDonnell_Douglas_MD90_Blue1;
   3: McDonnell_Douglas_MD90_Delta;
   4: McDonnell_Douglas_MD90_EVAAir;
-  5: McDonnell_Douglas_MD90_Hella;
+  5: McDonnell_Douglas_MD90_Hello;
   6: McDonnell_Douglas_MD90_JAL;
   7: McDonnell_Douglas_MD90_SAS;
   8: McDonnell_Douglas_MD90_Saudia;
@@ -251,7 +251,7 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD90)
   {
     name: string(STR_AIRV_MCDONNELL_DOUGLAS_MD_90);
     climates_available: get_climates_available();
-    introduction_date: date(get_plane_year(1993), 22, 2);
+    introduction_date: date(get_plane_year(1993), 2, 22);
     vehicle_life: 20;
     model_life: get_model_life(1993, 2020);
     retire_early: get_retire_early(1993,2020);
