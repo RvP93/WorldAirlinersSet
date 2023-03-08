@@ -1,4 +1,4 @@
-
+s
 // Boeing-737-800
 
 // Template:
@@ -84,8 +84,20 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_AirEuropaOld)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AirTransat.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_AirTransat) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Airzena.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Airzena) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Alaska.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Alaska) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AlbaStar.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_AlbaStar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Alrosa.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Alrosa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AMC.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_AMC) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AmericanAirlines.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_AmericanAirlines) 
@@ -93,11 +105,26 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_AmericanAirlines)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/ANA.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_ANA) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Anadolujet.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Anadolujet) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/ArikAir.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_ArikAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/ArkeFly.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_ArkeFly) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Austrian.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AzurAir.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_AzurAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/AzurAirUkraine.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_AzurAirUkraine) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Badr.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Badr) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Belavia.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Belavia) 
@@ -108,8 +135,17 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_BelaviaOld)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Biman.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Biman) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/BlueAir.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_BlueAir) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Bluebird.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Bluebird) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Continental.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Continental) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Corendon.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Corendon) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Delta.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Delta) 
@@ -126,11 +162,20 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_ElAl)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/EnterAir.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_EnterAir) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/ETF.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_ETF) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Ethiopian.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Ethiopian) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/EuroAtlantic.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_EuroAtlantic) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Fiji.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Fiji) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/FlyBaghdad.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_FlyBaghdad) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/FlyDubai.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_FlyDubai) 
@@ -141,6 +186,9 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_FlyEgypt)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/FlyGlobespan.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_FlyGlobespan) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Flyr.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Flyr) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Futura.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Futura) 
 #undef IMAGEFILE
@@ -150,8 +198,26 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Garuda)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/GOL.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_GOL) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/HapagLloyd.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_HapagLloyd) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Iraqi.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Iraqi) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/JAL.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_JAL) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Jet2.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Jet2) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/JetAirways.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_JetAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/JetTime.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_JetTime) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Kenya.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Kenya) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/KLM.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_KLM) 
@@ -177,20 +243,62 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Luxair)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Malaysia.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Malaysia) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Malev.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Malev) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Mauritania.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Mauritania) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Meridiana.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Meridiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/MyWings.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_MyWings) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Neos.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Neos) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Nordstar.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Nordstar) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Nordwind.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Nordwind) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Norwegian.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Norwegian) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/OmanAir.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_OmanAir) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/PegasFly.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_PegasFly) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Pegasus.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Pegasus) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Pobeda.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Pobeda) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Primera.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Primera) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Qantas.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Qantas) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Rossiya.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Rossiya) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/RoyalAirMaroc.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_RoyalAirMaroc) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/RoyalAirMarocOld.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_RoyalAirMarocOld) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/RoyalFlight.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_RoyalFlight) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Rwandair.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Rwandair) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Ryanair.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Ryanair) 
@@ -198,17 +306,29 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Ryanair)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/S7.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_S7) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/S7Old.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_S7Old) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Samoa.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Samoa) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/SAS.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_SAS) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Shandong.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Shandong) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Skymark.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Skymark) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/SkyUp.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_SkyUp) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/SmartWings.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_SmartWings) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/SomonAir.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_SomonAir) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/SouthAfrican.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_SouthAfrican) 
@@ -219,8 +339,14 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Southwest)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Sunexpress.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Sunexpress) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Sunwing.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Sunwing) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/TAROM.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_TAROM) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Tassili.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Tassili) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Thomson.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Thomson) 
@@ -231,11 +357,20 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Transaero)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Transavia.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Transavia) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/TransaviaOld.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_TransaviaOld) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/TravelService.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_TravelService) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/TUI.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_TUI) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/TurkishAirlines.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_TurkishAirlines) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Turkmenistan.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Turkmenistan) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Ukraine.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_Ukraine) 
@@ -251,6 +386,9 @@ Boeing_737_800_sprite_layout_template(Boeing_737_800_Xiamen)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/XLAirways.png"
 Boeing_737_800_sprite_layout_template(Boeing_737_800_XLAirways) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/Yakutia.png"
+Boeing_737_800_sprite_layout_template(Boeing_737_800_Yakutia) 
 #undef IMAGEFILE
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Greyscale, flight_state())
@@ -325,6 +463,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AirTransat, flight_state())
       Boeing_737_800_AirTransat_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Airzena, flight_state())
+{
+  15: Boeing_737_800_Airzena_Climbing;
+  18: Boeing_737_800_Airzena_Flight;
+  21: Boeing_737_800_Airzena_Landing;
+  22: Boeing_737_800_Airzena_Touchdown;
+      Boeing_737_800_Airzena_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Alaska, flight_state())
 {
   15: Boeing_737_800_Alaska_Climbing;
@@ -332,6 +479,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Alaska, flight_state())
   21: Boeing_737_800_Alaska_Landing;
   22: Boeing_737_800_Alaska_Touchdown;
       Boeing_737_800_Alaska_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AlbaStar, flight_state())
+{
+  15: Boeing_737_800_AlbaStar_Climbing;
+  18: Boeing_737_800_AlbaStar_Flight;
+  21: Boeing_737_800_AlbaStar_Landing;
+  22: Boeing_737_800_AlbaStar_Touchdown;
+      Boeing_737_800_AlbaStar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Alrosa, flight_state())
+{
+  15: Boeing_737_800_Alrosa_Climbing;
+  18: Boeing_737_800_Alrosa_Flight;
+  21: Boeing_737_800_Alrosa_Landing;
+  22: Boeing_737_800_Alrosa_Touchdown;
+      Boeing_737_800_Alrosa_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AMC, flight_state())
+{
+  15: Boeing_737_800_AMC_Climbing;
+  18: Boeing_737_800_AMC_Flight;
+  21: Boeing_737_800_AMC_Landing;
+  22: Boeing_737_800_AMC_Touchdown;
+      Boeing_737_800_AMC_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AmericanAirlines, flight_state())
@@ -352,6 +526,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_ANA, flight_state())
       Boeing_737_800_ANA_Grounded;
 }
 	  
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Anadolujet, flight_state())
+{
+  15: Boeing_737_800_Anadolujet_Climbing;
+  18: Boeing_737_800_Anadolujet_Flight;
+  21: Boeing_737_800_Anadolujet_Landing;
+  22: Boeing_737_800_Anadolujet_Touchdown;
+      Boeing_737_800_Anadolujet_Grounded;
+}
+	  
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_ArikAir, flight_state())
+{
+  15: Boeing_737_800_ArikAir_Climbing;
+  18: Boeing_737_800_ArikAir_Flight;
+  21: Boeing_737_800_ArikAir_Landing;
+  22: Boeing_737_800_ArikAir_Touchdown;
+      Boeing_737_800_ArikAir_Grounded;
+}
+	  
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_ArkeFly, flight_state())
 {
   15: Boeing_737_800_ArkeFly_Climbing;
@@ -368,6 +560,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Austrian, flight_state())
   21: Boeing_737_800_Austrian_Landing;
   22: Boeing_737_800_Austrian_Touchdown;
       Boeing_737_800_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AzurAir, flight_state())
+{
+  15: Boeing_737_800_AzurAir_Climbing;
+  18: Boeing_737_800_AzurAir_Flight;
+  21: Boeing_737_800_AzurAir_Landing;
+  22: Boeing_737_800_AzurAir_Touchdown;
+      Boeing_737_800_AzurAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_AzurAirUkraine, flight_state())
+{
+  15: Boeing_737_800_AzurAirUkraine_Climbing;
+  18: Boeing_737_800_AzurAirUkraine_Flight;
+  21: Boeing_737_800_AzurAirUkraine_Landing;
+  22: Boeing_737_800_AzurAirUkraine_Touchdown;
+      Boeing_737_800_AzurAirUkraine_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Badr, flight_state())
+{
+  15: Boeing_737_800_Badr_Climbing;
+  18: Boeing_737_800_Badr_Flight;
+  21: Boeing_737_800_Badr_Landing;
+  22: Boeing_737_800_Badr_Touchdown;
+      Boeing_737_800_Badr_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Belavia, flight_state())
@@ -397,6 +616,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Biman, flight_state())
       Boeing_737_800_Biman_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_BlueAir, flight_state())
+{
+  15: Boeing_737_800_BlueAir_Climbing;
+  18: Boeing_737_800_BlueAir_Flight;
+  21: Boeing_737_800_BlueAir_Landing;
+  22: Boeing_737_800_BlueAir_Touchdown;
+      Boeing_737_800_BlueAir_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Bluebird, flight_state())
+{
+  15: Boeing_737_800_Bluebird_Climbing;
+  18: Boeing_737_800_Bluebird_Flight;
+  21: Boeing_737_800_Bluebird_Landing;
+  22: Boeing_737_800_Bluebird_Touchdown;
+      Boeing_737_800_Bluebird_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Continental, flight_state())
 {
   15: Boeing_737_800_Continental_Climbing;
@@ -404,6 +641,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Continental, flight_state())
   21: Boeing_737_800_Continental_Landing;
   22: Boeing_737_800_Continental_Touchdown;
       Boeing_737_800_Continental_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Corendon, flight_state())
+{
+  15: Boeing_737_800_Corendon_Climbing;
+  18: Boeing_737_800_Corendon_Flight;
+  21: Boeing_737_800_Corendon_Landing;
+  22: Boeing_737_800_Corendon_Touchdown;
+      Boeing_737_800_Corendon_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Delta, flight_state())
@@ -451,6 +697,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_EnterAir, flight_state())
       Boeing_737_800_EnterAir_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_ETF, flight_state())
+{
+  15: Boeing_737_800_ETF_Climbing;
+  18: Boeing_737_800_ETF_Flight;
+  21: Boeing_737_800_ETF_Landing;
+  22: Boeing_737_800_ETF_Touchdown;
+      Boeing_737_800_ETF_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Ethiopian, flight_state())
 {
   15: Boeing_737_800_Ethiopian_Climbing;
@@ -460,6 +715,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Ethiopian, flight_state())
       Boeing_737_800_Ethiopian_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_EuroAtlantic, flight_state())
+{
+  15: Boeing_737_800_EuroAtlantic_Climbing;
+  18: Boeing_737_800_EuroAtlantic_Flight;
+  21: Boeing_737_800_EuroAtlantic_Landing;
+  22: Boeing_737_800_EuroAtlantic_Touchdown;
+      Boeing_737_800_EuroAtlantic_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Fiji, flight_state())
 {
   15: Boeing_737_800_Fiji_Climbing;
@@ -467,6 +731,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Fiji, flight_state())
   21: Boeing_737_800_Fiji_Landing;
   22: Boeing_737_800_Fiji_Touchdown;
       Boeing_737_800_Fiji_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_FlyBaghdad, flight_state())
+{
+  15: Boeing_737_800_FlyBaghdad_Climbing;
+  18: Boeing_737_800_FlyBaghdad_Flight;
+  21: Boeing_737_800_FlyBaghdad_Landing;
+  22: Boeing_737_800_FlyBaghdad_Touchdown;
+      Boeing_737_800_FlyBaghdad_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_FlyDubai, flight_state())
@@ -496,6 +769,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_FlyGlobespan, flight_state())
       Boeing_737_800_FlyGlobespan_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Flyr, flight_state())
+{
+  15: Boeing_737_800_Flyr_Climbing;
+  18: Boeing_737_800_Flyr_Flight;
+  21: Boeing_737_800_Flyr_Landing;
+  22: Boeing_737_800_Flyr_Touchdown;
+      Boeing_737_800_Flyr_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Futura, flight_state())
 {
   15: Boeing_737_800_Futura_Climbing;
@@ -523,6 +805,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_GOL, flight_state())
       Boeing_737_800_GOL_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_HapagLloyd, flight_state())
+{
+  15: Boeing_737_800_HapagLloyd_Climbing;
+  18: Boeing_737_800_HapagLloyd_Flight;
+  21: Boeing_737_800_HapagLloyd_Landing;
+  22: Boeing_737_800_HapagLloyd_Touchdown;
+      Boeing_737_800_HapagLloyd_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Iraqi, flight_state())
+{
+  15: Boeing_737_800_Iraqi_Climbing;
+  18: Boeing_737_800_Iraqi_Flight;
+  21: Boeing_737_800_Iraqi_Landing;
+  22: Boeing_737_800_Iraqi_Touchdown;
+      Boeing_737_800_Iraqi_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_JAL, flight_state())
 {
   15: Boeing_737_800_JAL_Climbing;
@@ -530,6 +830,42 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_JAL, flight_state())
   21: Boeing_737_800_JAL_Landing;
   22: Boeing_737_800_JAL_Touchdown;
       Boeing_737_800_JAL_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Jet2, flight_state())
+{
+  15: Boeing_737_800_Jet2_Climbing;
+  18: Boeing_737_800_Jet2_Flight;
+  21: Boeing_737_800_Jet2_Landing;
+  22: Boeing_737_800_Jet2_Touchdown;
+      Boeing_737_800_Jet2_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_JetAirways, flight_state())
+{
+  15: Boeing_737_800_JetAirways_Climbing;
+  18: Boeing_737_800_JetAirways_Flight;
+  21: Boeing_737_800_JetAirways_Landing;
+  22: Boeing_737_800_JetAirways_Touchdown;
+      Boeing_737_800_JetAirways_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_JetTime, flight_state())
+{
+  15: Boeing_737_800_JetTime_Climbing;
+  18: Boeing_737_800_JetTime_Flight;
+  21: Boeing_737_800_JetTime_Landing;
+  22: Boeing_737_800_JetTime_Touchdown;
+      Boeing_737_800_JetTime_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Kenya, flight_state())
+{
+  15: Boeing_737_800_Kenya_Climbing;
+  18: Boeing_737_800_Kenya_Flight;
+  21: Boeing_737_800_Kenya_Landing;
+  22: Boeing_737_800_Kenya_Touchdown;
+      Boeing_737_800_Kenya_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_KLM, flight_state())
@@ -605,6 +941,69 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Malaysia, flight_state())
       Boeing_737_800_Malaysia_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Malev, flight_state())
+{
+  15: Boeing_737_800_Malev_Climbing;
+  18: Boeing_737_800_Malev_Flight;
+  21: Boeing_737_800_Malev_Landing;
+  22: Boeing_737_800_Malev_Touchdown;
+      Boeing_737_800_Malev_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Mauritania, flight_state())
+{
+  15: Boeing_737_800_Mauritania_Climbing;
+  18: Boeing_737_800_Mauritania_Flight;
+  21: Boeing_737_800_Mauritania_Landing;
+  22: Boeing_737_800_Mauritania_Touchdown;
+      Boeing_737_800_Mauritania_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Meridiana, flight_state())
+{
+  15: Boeing_737_800_Meridiana_Climbing;
+  18: Boeing_737_800_Meridiana_Flight;
+  21: Boeing_737_800_Meridiana_Landing;
+  22: Boeing_737_800_Meridiana_Touchdown;
+      Boeing_737_800_Meridiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_MyWings, flight_state())
+{
+  15: Boeing_737_800_MyWings_Climbing;
+  18: Boeing_737_800_MyWings_Flight;
+  21: Boeing_737_800_MyWings_Landing;
+  22: Boeing_737_800_MyWings_Touchdown;
+      Boeing_737_800_MyWings_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Neos, flight_state())
+{
+  15: Boeing_737_800_Neos_Climbing;
+  18: Boeing_737_800_Neos_Flight;
+  21: Boeing_737_800_Neos_Landing;
+  22: Boeing_737_800_Neos_Touchdown;
+      Boeing_737_800_Neos_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Nordstar, flight_state())
+{
+  15: Boeing_737_800_Nordstar_Climbing;
+  18: Boeing_737_800_Nordstar_Flight;
+  21: Boeing_737_800_Nordstar_Landing;
+  22: Boeing_737_800_Nordstar_Touchdown;
+      Boeing_737_800_Nordstar_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Nordwind, flight_state())
+{
+  15: Boeing_737_800_Nordwind_Climbing;
+  18: Boeing_737_800_Nordwind_Flight;
+  21: Boeing_737_800_Nordwind_Landing;
+  22: Boeing_737_800_Nordwind_Touchdown;
+      Boeing_737_800_Nordwind_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Norwegian, flight_state())
 {
   15: Boeing_737_800_Norwegian_Climbing;
@@ -623,6 +1022,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_OmanAir, flight_state())
       Boeing_737_800_OmanAir_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_PegasFly, flight_state())
+{
+  15: Boeing_737_800_PegasFly_Climbing;
+  18: Boeing_737_800_PegasFly_Flight;
+  21: Boeing_737_800_PegasFly_Landing;
+  22: Boeing_737_800_PegasFly_Touchdown;
+      Boeing_737_800_PegasFly_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Pegasus, flight_state())
 {
   15: Boeing_737_800_Pegasus_Climbing;
@@ -630,6 +1038,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Pegasus, flight_state())
   21: Boeing_737_800_Pegasus_Landing;
   22: Boeing_737_800_Pegasus_Touchdown;
       Boeing_737_800_Pegasus_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Pobeda, flight_state())
+{
+  15: Boeing_737_800_Pobeda_Climbing;
+  18: Boeing_737_800_Pobeda_Flight;
+  21: Boeing_737_800_Pobeda_Landing;
+  22: Boeing_737_800_Pobeda_Touchdown;
+      Boeing_737_800_Pobeda_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Primera, flight_state())
+{
+  15: Boeing_737_800_Primera_Climbing;
+  18: Boeing_737_800_Primera_Flight;
+  21: Boeing_737_800_Primera_Landing;
+  22: Boeing_737_800_Primera_Touchdown;
+      Boeing_737_800_Primera_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Qantas, flight_state())
@@ -641,6 +1067,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Qantas, flight_state())
       Boeing_737_800_Qantas_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Rossiya, flight_state())
+{
+  15: Boeing_737_800_Rossiya_Climbing;
+  18: Boeing_737_800_Rossiya_Flight;
+  21: Boeing_737_800_Rossiya_Landing;
+  22: Boeing_737_800_Rossiya_Touchdown;
+      Boeing_737_800_Rossiya_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_RoyalAirMaroc, flight_state())
 {
   15: Boeing_737_800_RoyalAirMaroc_Climbing;
@@ -648,6 +1083,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_RoyalAirMaroc, flight_state())
   21: Boeing_737_800_RoyalAirMaroc_Landing;
   22: Boeing_737_800_RoyalAirMaroc_Touchdown;
       Boeing_737_800_RoyalAirMaroc_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_RoyalAirMarocOld, flight_state())
+{
+  15: Boeing_737_800_RoyalAirMarocOld_Climbing;
+  18: Boeing_737_800_RoyalAirMarocOld_Flight;
+  21: Boeing_737_800_RoyalAirMarocOld_Landing;
+  22: Boeing_737_800_RoyalAirMarocOld_Touchdown;
+      Boeing_737_800_RoyalAirMarocOld_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_RoyalFlight, flight_state())
+{
+  15: Boeing_737_800_RoyalFlight_Climbing;
+  18: Boeing_737_800_RoyalFlight_Flight;
+  21: Boeing_737_800_RoyalFlight_Landing;
+  22: Boeing_737_800_RoyalFlight_Touchdown;
+      Boeing_737_800_RoyalFlight_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Rwandair, flight_state())
+{
+  15: Boeing_737_800_Rwandair_Climbing;
+  18: Boeing_737_800_Rwandair_Flight;
+  21: Boeing_737_800_Rwandair_Landing;
+  22: Boeing_737_800_Rwandair_Touchdown;
+      Boeing_737_800_Rwandair_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Ryanair, flight_state())
@@ -668,6 +1130,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_S7, flight_state())
       Boeing_737_800_S7_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_S7Old, flight_state())
+{
+  15: Boeing_737_800_S7Old_Climbing;
+  18: Boeing_737_800_S7Old_Flight;
+  21: Boeing_737_800_S7Old_Landing;
+  22: Boeing_737_800_S7Old_Touchdown;
+      Boeing_737_800_S7Old_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Samoa, flight_state())
 {
   15: Boeing_737_800_Samoa_Climbing;
@@ -686,6 +1157,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SAS, flight_state())
       Boeing_737_800_SAS_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Shandong, flight_state())
+{
+  15: Boeing_737_800_Shandong_Climbing;
+  18: Boeing_737_800_Shandong_Flight;
+  21: Boeing_737_800_Shandong_Landing;
+  22: Boeing_737_800_Shandong_Touchdown;
+      Boeing_737_800_Shandong_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Skymark, flight_state())
 {
   15: Boeing_737_800_Skymark_Climbing;
@@ -695,6 +1175,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Skymark, flight_state())
       Boeing_737_800_Skymark_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SkyUp, flight_state())
+{
+  15: Boeing_737_800_SkyUp_Climbing;
+  18: Boeing_737_800_SkyUp_Flight;
+  21: Boeing_737_800_SkyUp_Landing;
+  22: Boeing_737_800_SkyUp_Touchdown;
+      Boeing_737_800_SkyUp_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SmartWings, flight_state())
 {
   15: Boeing_737_800_SmartWings_Climbing;
@@ -702,6 +1191,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SmartWings, flight_state())
   21: Boeing_737_800_SmartWings_Landing;
   22: Boeing_737_800_SmartWings_Touchdown;
       Boeing_737_800_SmartWings_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SomonAir, flight_state())
+{
+  15: Boeing_737_800_SomonAir_Climbing;
+  18: Boeing_737_800_SomonAir_Flight;
+  21: Boeing_737_800_SomonAir_Landing;
+  22: Boeing_737_800_SomonAir_Touchdown;
+      Boeing_737_800_SomonAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_SouthAfrican, flight_state())
@@ -731,6 +1229,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Sunexpress, flight_state())
       Boeing_737_800_Sunexpress_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Sunwing, flight_state())
+{
+  15: Boeing_737_800_Sunwing_Climbing;
+  18: Boeing_737_800_Sunwing_Flight;
+  21: Boeing_737_800_Sunwing_Landing;
+  22: Boeing_737_800_Sunwing_Touchdown;
+      Boeing_737_800_Sunwing_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TAROM, flight_state())
 {
   15: Boeing_737_800_TAROM_Climbing;
@@ -738,6 +1245,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TAROM, flight_state())
   21: Boeing_737_800_TAROM_Landing;
   22: Boeing_737_800_TAROM_Touchdown;
       Boeing_737_800_TAROM_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Tassili, flight_state())
+{
+  15: Boeing_737_800_Tassili_Climbing;
+  18: Boeing_737_800_Tassili_Flight;
+  21: Boeing_737_800_Tassili_Landing;
+  22: Boeing_737_800_Tassili_Touchdown;
+      Boeing_737_800_Tassili_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Thomson, flight_state())
@@ -767,6 +1283,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Transavia, flight_state())
       Boeing_737_800_Transavia_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TransaviaOld, flight_state())
+{
+  15: Boeing_737_800_TransaviaOld_Climbing;
+  18: Boeing_737_800_TransaviaOld_Flight;
+  21: Boeing_737_800_TransaviaOld_Landing;
+  22: Boeing_737_800_TransaviaOld_Touchdown;
+      Boeing_737_800_TransaviaOld_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TravelService, flight_state())
 {
   15: Boeing_737_800_TravelService_Climbing;
@@ -776,6 +1301,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TravelService, flight_state())
       Boeing_737_800_TravelService_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TUI, flight_state())
+{
+  15: Boeing_737_800_TUI_Climbing;
+  18: Boeing_737_800_TUI_Flight;
+  21: Boeing_737_800_TUI_Landing;
+  22: Boeing_737_800_TUI_Touchdown;
+      Boeing_737_800_TUI_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TurkishAirlines, flight_state())
 {
   15: Boeing_737_800_TurkishAirlines_Climbing;
@@ -783,6 +1317,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_TurkishAirlines, flight_state())
   21: Boeing_737_800_TurkishAirlines_Landing;
   22: Boeing_737_800_TurkishAirlines_Touchdown;
       Boeing_737_800_TurkishAirlines_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Turkmenistan, flight_state())
+{
+  15: Boeing_737_800_Turkmenistan_Climbing;
+  18: Boeing_737_800_Turkmenistan_Flight;
+  21: Boeing_737_800_Turkmenistan_Landing;
+  22: Boeing_737_800_Turkmenistan_Touchdown;
+      Boeing_737_800_Turkmenistan_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Ukraine, flight_state())
@@ -830,6 +1373,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_XLAirways, flight_state())
       Boeing_737_800_XLAirways_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_Yakutia, flight_state())
+{
+  15: Boeing_737_800_Yakutia_Climbing;
+  18: Boeing_737_800_Yakutia_Flight;
+  21: Boeing_737_800_Yakutia_Landing;
+  22: Boeing_737_800_Yakutia_Touchdown;
+      Boeing_737_800_Yakutia_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_sprites, cargo_subtype)
 {
   1: Boeing_737_800_Aeromexico;
@@ -839,62 +1391,108 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_sprites, cargo_subtype)
   5: Boeing_737_800_AirEuropa;
   6: Boeing_737_800_AirEuropaOld;
   7: Boeing_737_800_AirTransat;
-  8: Boeing_737_800_Alaska;
-  9: Boeing_737_800_AmericanAirlines;
- 10: Boeing_737_800_ANA;
- 11: Boeing_737_800_ArkeFly;
- 12: Boeing_737_800_Austrian;
- 13: Boeing_737_800_Belavia;
- 14: Boeing_737_800_BelaviaOld;
- 15: Boeing_737_800_Biman;
- 16: Boeing_737_800_Continental;
- 17: Boeing_737_800_Delta;
- 18: Boeing_737_800_Eastern;
- 19: Boeing_737_800_EgyptAir;
- 20: Boeing_737_800_ElAl;
- 21: Boeing_737_800_EnterAir;
- 22: Boeing_737_800_Ethiopian;
- 23: Boeing_737_800_Fiji;
- 24: Boeing_737_800_FlyDubai;
- 25: Boeing_737_800_FlyEgypt;
- 26: Boeing_737_800_FlyGlobespan;
- 27: Boeing_737_800_Futura;
- 28: Boeing_737_800_Garuda;
- 29: Boeing_737_800_GOL;
- 30: Boeing_737_800_JAL;
- 31: Boeing_737_800_KLM;
- 32: Boeing_737_800_KLMRetro;
- 33: Boeing_737_800_Korean;
- 34: Boeing_737_800_Kulula;
- 35: Boeing_737_800_Lion;
- 36: Boeing_737_800_LOT;
- 37: Boeing_737_800_Luxair;
- 38: Boeing_737_800_Malaysia;
- 39: Boeing_737_800_Norwegian;
- 40: Boeing_737_800_OmanAir;
- 41: Boeing_737_800_Pegasus;
- 42: Boeing_737_800_Qantas;
- 43: Boeing_737_800_RoyalAirMaroc;
- 44: Boeing_737_800_Ryanair;
- 45: Boeing_737_800_S7;
- 46: Boeing_737_800_Samoa;
- 47: Boeing_737_800_SAS;
- 48: Boeing_737_800_Skymark;
- 49: Boeing_737_800_SmartWings;
- 50: Boeing_737_800_SouthAfrican;
- 51: Boeing_737_800_Southwest;
- 52: Boeing_737_800_Sunexpress;
- 53: Boeing_737_800_TAROM;
- 54: Boeing_737_800_Thomson;
- 55: Boeing_737_800_Transaero;
- 56: Boeing_737_800_Transavia;
- 57: Boeing_737_800_TravelService;
- 58: Boeing_737_800_TurkishAirlines;
- 59: Boeing_737_800_Ukraine;
- 60: Boeing_737_800_United;
- 61: Boeing_737_800_Westjet;
- 62: Boeing_737_800_Xiamen;
- 63: Boeing_737_800_XLAirways;
+  8: Boeing_737_800_Airzena;
+  9: Boeing_737_800_Alaska;
+ 10: Boeing_737_800_AlbaStar;
+ 11: Boeing_737_800_Alrosa;
+ 12: Boeing_737_800_AMC;
+ 13: Boeing_737_800_AmericanAirlines;
+ 14: Boeing_737_800_ANA;
+ 15: Boeing_737_800_Anadolujet;
+ 16: Boeing_737_800_ArikAir;
+ 17: Boeing_737_800_ArkeFly;
+ 18: Boeing_737_800_Austrian;
+ 19: Boeing_737_800_AzurAir;
+ 20: Boeing_737_800_AzurAirUkraine;
+ 21: Boeing_737_800_Badr;
+ 22: Boeing_737_800_Belavia;
+ 23: Boeing_737_800_BelaviaOld;
+ 24: Boeing_737_800_Biman;
+ 25: Boeing_737_800_BlueAir;
+ 26: Boeing_737_800_Bluebird;
+ 27: Boeing_737_800_Continental;
+ 28: Boeing_737_800_Corendon;
+ 29: Boeing_737_800_Delta;
+ 30: Boeing_737_800_Eastern;
+ 31: Boeing_737_800_EgyptAir;
+ 32: Boeing_737_800_ElAl;
+ 33: Boeing_737_800_EnterAir;
+ 34: Boeing_737_800_ETF;
+ 35: Boeing_737_800_Ethiopian;
+ 36: Boeing_737_800_EuroAtlantic;
+ 37: Boeing_737_800_Fiji;
+ 38: Boeing_737_800_FlyBaghdad;
+ 39: Boeing_737_800_FlyDubai;
+ 40: Boeing_737_800_FlyEgypt;
+ 41: Boeing_737_800_FlyGlobespan;
+ 42: Boeing_737_800_Flyr;
+ 43: Boeing_737_800_Futura;
+ 44: Boeing_737_800_Garuda;
+ 45: Boeing_737_800_GOL;
+ 46: Boeing_737_800_HapagLloyd;
+ 47: Boeing_737_800_Iraqi;
+ 48: Boeing_737_800_JAL;
+ 49: Boeing_737_800_Jet2;
+ 50: Boeing_737_800_JetAirways;
+ 51: Boeing_737_800_JetTime;
+ 52: Boeing_737_800_Kenya;
+ 53: Boeing_737_800_KLM;
+ 54: Boeing_737_800_KLMRetro;
+ 55: Boeing_737_800_Korean;
+ 56: Boeing_737_800_Kulula;
+ 57: Boeing_737_800_Lion;
+ 58: Boeing_737_800_LOT;
+ 59: Boeing_737_800_Luxair;
+ 60: Boeing_737_800_Malaysia;
+ 61: Boeing_737_800_Malev;
+ 62: Boeing_737_800_Mauritania;
+ 63: Boeing_737_800_Meridiana;
+ 64: Boeing_737_800_MyWings;
+ 65: Boeing_737_800_Neos;
+ 66: Boeing_737_800_Nordstar;
+ 67: Boeing_737_800_Nordwind;
+ 68: Boeing_737_800_Norwegian;
+ 69: Boeing_737_800_OmanAir;
+ 70: Boeing_737_800_PegasFly;
+ 71: Boeing_737_800_Pegasus;
+ 72: Boeing_737_800_Pobeda;
+ 73: Boeing_737_800_Primera;
+ 74: Boeing_737_800_Qantas;
+ 75: Boeing_737_800_Rossiya;
+ 76: Boeing_737_800_RoyalAirMaroc;
+ 77: Boeing_737_800_RoyalAirMarocOld;
+ 78: Boeing_737_800_RoyalFlight;
+ 79: Boeing_737_800_Rwandair;
+ 80: Boeing_737_800_Ryanair;
+ 81: Boeing_737_800_S7;
+ 82: Boeing_737_800_S7Old;
+ 83: Boeing_737_800_Samoa;
+ 84: Boeing_737_800_SAS;
+ 85: Boeing_737_800_Shandong;
+ 86: Boeing_737_800_Skymark;
+ 87: Boeing_737_800_SkyUp;
+ 88: Boeing_737_800_SmartWings;
+ 89: Boeing_737_800_SomonAir;
+ 90: Boeing_737_800_SouthAfrican;
+ 91: Boeing_737_800_Southwest;
+ 92: Boeing_737_800_Sunexpress;
+ 93: Boeing_737_800_Sunwing;
+ 94: Boeing_737_800_TAROM;
+ 95: Boeing_737_800_Tassili;
+ 96: Boeing_737_800_Thomson;
+ 97: Boeing_737_800_Transaero;
+ 98: Boeing_737_800_Transavia;
+ 99: Boeing_737_800_TransaviaOld;
+100: Boeing_737_800_TravelService;
+101: Boeing_737_800_TUI;
+102: Boeing_737_800_TurkishAirlines;
+103: Boeing_737_800_Turkmenistan;
+104: Boeing_737_800_Ukraine;
+105: Boeing_737_800_United;
+106: Boeing_737_800_Westjet;
+107: Boeing_737_800_Xiamen;
+108: Boeing_737_800_XLAirways;
+109: Boeing_737_800_Yakutia;
 	 Boeing_737_800_Greyscale;
 }  
                              
@@ -930,62 +1528,108 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_cargo_subtype_text, cargo_subtype)
   5: string(STR_VLIV_AIR_EUROPA);
   6: string(STR_VLIV_AIR_EUROPA_OLD);
   7: string(STR_VLIV_AIR_TRANSAT);
-  8: string(STR_VLIV_ALASKA_AIRLINES);
-  9: string(STR_VLIV_AMERICAN_AIRLINES);
- 10: string(STR_VLIV_ANA);
- 11: string(STR_VLIV_ARKE_FLY);
- 12: string(STR_VLIV_AUSTRIAN_AIRLINES);
- 13: string(STR_VLIV_BELAVIA); 
- 14: string(STR_VLIV_BELAVIA_OLD); 
- 15: string(STR_VLIV_BIMAN_BANGLADESH_AIRLINES); 
- 16: string(STR_VLIV_CONTINENTAL);
- 17: string(STR_VLIV_DELTA_AIR_LINES);
- 18: string(STR_VLIV_EASTERN_AIR_LINES);
- 19: string(STR_VLIV_EGYPT_AIR);
- 20: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
- 21: string(STR_VLIV_ENTER_AIR);
- 22: string(STR_VLIV_ETHIOPIAN_AIRLINES);
- 23: string(STR_VLIV_FIJI_AIRWAYS);
- 24: string(STR_VLIV_FLYDUBAI);
- 25: string(STR_VLIV_FLYEGYPT);
- 26: string(STR_VLIV_FLYGLOBESPAN); 
- 27: string(STR_VLIV_FUTURA);
- 28: string(STR_VLIV_GARUDA_INDONESIA);
- 29: string(STR_VLIV_GOL);
- 30: string(STR_VLIV_JAL);
- 31: string(STR_VLIV_KLM);
- 32: string(STR_VLIV_KLM_RETRO_LIVERY);
- 33: string(STR_VLIV_KOREAN_AIR);
- 34: string(STR_VLIV_KULULA);
- 35: string(STR_VLIV_LION_AIR);
- 36: string(STR_VLIV_LOT);
- 37: string(STR_VLIV_LUXAIR);
- 38: string(STR_VLIV_MALAYSIA_AIRLINES);
- 39: string(STR_VLIV_NORWEGIAN_AIR);
- 40: string(STR_VLIV_OMAN_AIR);
- 41: string(STR_VLIV_PEGASUS);
- 42: string(STR_VLIV_QANTAS);
- 43: string(STR_VLIV_ROYAL_AIR_MAROC);
- 44: string(STR_VLIV_RYANAIR);
- 45: string(STR_VLIV_S7_AIRLINES);
- 46: string(STR_VLIV_SAMOA_AIRWAYS);
- 47: string(STR_VLIV_SAS);
- 48: string(STR_VLIV_SKYMARK_AIRLINES); 
- 49: string(STR_VLIV_SMART_WINGS);
- 50: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
- 51: string(STR_VLIV_SOUTHWEST_AIRLINES);
- 52: string(STR_VLIV_SUNEXPRESS);
- 53: string(STR_VLIV_TAROM);
- 54: string(STR_VLIV_THOMSON_AIRWAYS);
- 55: string(STR_VLIV_TRANSAERO);
- 56: string(STR_VLIV_TRANSAVIA);
- 57: string(STR_VLIV_TRAVEL_SERVICE);
- 58: string(STR_VLIV_TURKISH_AIRLINES);
- 59: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
- 60: string(STR_VLIV_UNITED_AIRLINES);
- 61: string(STR_VLIV_WESTJET);
- 62: string(STR_VLIV_XIAMEN_AIR);
- 63: string(STR_VLIV_XL_AIRWAYS);
+  8: string(STR_VLIV_AIRZENA_GEORGIAN_AIRLINES);
+  9: string(STR_VLIV_ALASKA_AIRLINES);
+ 10: string(STR_VLIV_ALBASTAR);
+ 11: string(STR_VLIV_ALROSA);
+ 12: string(STR_VLIV_AMC_AVIATION);
+ 13: string(STR_VLIV_AMERICAN_AIRLINES);
+ 14: string(STR_VLIV_ANA);
+ 15: string(STR_VLIV_ANADOLUJET);
+ 16: string(STR_VLIV_ARIK_AIR);
+ 17: string(STR_VLIV_ARKE_FLY);
+ 18: string(STR_VLIV_AUSTRIAN_AIRLINES);
+ 19: string(STR_VLIV_AZUR_AIR);
+ 20: string(STR_VLIV_AZUR_AIR_UKRAINE);
+ 21: string(STR_VLIV_BADR_AIRLINES);
+ 22: string(STR_VLIV_BELAVIA); 
+ 23: string(STR_VLIV_BELAVIA_OLD); 
+ 24: string(STR_VLIV_BIMAN_BANGLADESH_AIRLINES); 
+ 25: string(STR_VLIV_BLUE_AIR); 
+ 26: string(STR_VLIV_BLUEBIRD_AIRWAYS); 
+ 27: string(STR_VLIV_CONTINENTAL);
+ 28: string(STR_VLIV_CORENDON_AIRLINES);
+ 29: string(STR_VLIV_DELTA_AIR_LINES);
+ 30: string(STR_VLIV_EASTERN_AIR_LINES);
+ 31: string(STR_VLIV_EGYPT_AIR);
+ 32: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+ 33: string(STR_VLIV_ENTER_AIR);
+ 34: string(STR_VLIV_ETF_AIRLINES);
+ 35: string(STR_VLIV_ETHIOPIAN_AIRLINES);
+ 36: string(STR_VLIV_EUROATLANTIC_AIRWAYS);
+ 37: string(STR_VLIV_FIJI_AIRWAYS);
+ 38: string(STR_VLIV_FLY_BAGHDAD);
+ 39: string(STR_VLIV_FLYDUBAI);
+ 40: string(STR_VLIV_FLYEGYPT);
+ 41: string(STR_VLIV_FLYGLOBESPAN); 
+ 42: string(STR_VLIV_FLYR); 
+ 43: string(STR_VLIV_FUTURA);
+ 44: string(STR_VLIV_GARUDA_INDONESIA);
+ 45: string(STR_VLIV_GOL);
+ 46: string(STR_VLIV_HAPAG_LLOYD);
+ 47: string(STR_VLIV_IRAQI_AIRWAYS);
+ 48: string(STR_VLIV_JAL);
+ 49: string(STR_VLIV_JET2);
+ 50: string(STR_VLIV_JET_AIRWAYS);
+ 51: string(STR_VLIV_JET_TIME);
+ 52: string(STR_VLIV_KENYA_AIRWAYS);
+ 53: string(STR_VLIV_KLM);
+ 54: string(STR_VLIV_KLM_RETRO_LIVERY);
+ 55: string(STR_VLIV_KOREAN_AIR);
+ 56: string(STR_VLIV_KULULA);
+ 57: string(STR_VLIV_LION_AIR);
+ 58: string(STR_VLIV_LOT);
+ 59: string(STR_VLIV_LUXAIR);
+ 60: string(STR_VLIV_MALAYSIA_AIRLINES);
+ 61: string(STR_VLIV_MALEV);
+ 62: string(STR_VLIV_MAURITANIA_AIRLINES);
+ 63: string(STR_VLIV_MERIDIANA);
+ 64: string(STR_VLIV_MYWINGS);
+ 65: string(STR_VLIV_NEOS);
+ 66: string(STR_VLIV_NORDSTAR_AIRLINES);
+ 67: string(STR_VLIV_NORDWIND_AIRLINES);
+ 68: string(STR_VLIV_NORWEGIAN_AIR);
+ 69: string(STR_VLIV_OMAN_AIR);
+ 70: string(STR_VLIV_PEGAS_FLY);
+ 71: string(STR_VLIV_PEGASUS);
+ 72: string(STR_VLIV_POBEDA);
+ 73: string(STR_VLIV_PRIMERA_AIR);
+ 74: string(STR_VLIV_QANTAS);
+ 75: string(STR_VLIV_ROSSIYA_AIRLINES);
+ 76: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 77: string(STR_VLIV_ROYAL_AIR_MAROC_OLD);
+ 78: string(STR_VLIV_ROYAL_FLIGHT);
+ 79: string(STR_VLIV_RWANDAIR);
+ 80: string(STR_VLIV_RYANAIR);
+ 81: string(STR_VLIV_S7_AIRLINES);
+ 82: string(STR_VLIV_S7_AIRLINES_OLD);
+ 83: string(STR_VLIV_SAMOA_AIRWAYS);
+ 84: string(STR_VLIV_SAS);
+ 85: string(STR_VLIV_SHADONG_AIRLINES);
+ 86: string(STR_VLIV_SKYMARK_AIRLINES); 
+ 87: string(STR_VLIV_SKYUP); 
+ 88: string(STR_VLIV_SMART_WINGS);
+ 89: string(STR_VLIV_SOMON_AIR);
+ 90: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 91: string(STR_VLIV_SOUTHWEST_AIRLINES);
+ 92: string(STR_VLIV_SUNEXPRESS);
+ 93: string(STR_VLIV_SUNWING);
+ 94: string(STR_VLIV_TAROM);
+ 95: string(STR_VLIV_TASSILI_AIRLINES);
+ 96: string(STR_VLIV_THOMSON_AIRWAYS);
+ 97: string(STR_VLIV_TRANSAERO);
+ 98: string(STR_VLIV_TRANSAVIA);
+ 99: string(STR_VLIV_TRANSAVIA_OLD);
+100: string(STR_VLIV_TRAVEL_SERVICE);
+101: string(STR_VLIV_TUI);
+102: string(STR_VLIV_TURKISH_AIRLINES);
+103: string(STR_VLIV_TURKMENISTAN_AIRLINES);
+104: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+105: string(STR_VLIV_UNITED_AIRLINES);
+106: string(STR_VLIV_WESTJET);
+107: string(STR_VLIV_XIAMEN_AIR);
+108: string(STR_VLIV_XL_AIRWAYS);
+109: string(STR_VLIV_YAKUTIA_AIRLINES);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -998,62 +1642,108 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_800_cargo_subtype_capacity, cargo_subtyp
   5: return 180; // Air Europa
   6: return 180; // Air Europa Old
   7: return 189; // Air Transat
-  8: return 160; // Alaska
-  9: return 154; // AmericanAirlines
- 10: return 166; // ANA
- 11: return 189; // ArkeFly
- 12: return 184; // Austrian
- 13: return 189; // Belavia
- 14: return 189; // BelaviaOld
- 15: return 162; // Biman
- 16: return 160; // Continental
- 17: return 160; // Delta
- 18: return 162; // Eastern Airlines
- 19: return 144; // Egpyt Air
- 20: return 154; // El Al  
- 21: return 189; // Enter Air
- 22: return 154; // Ethiopian
- 23: return 160; // Fiji Airways
- 24: return 154; // Flydubai
- 25: return 160; // Fly Egpyt
- 26: return 189; // Flygblobespan
- 27: return 189; // Futura
- 28: return 155; // Garuda
- 29: return 170; // GOL
- 30: return 165; // JAL
- 31: return 170; // KLM
- 32: return 170; // KLM (retro)
- 33: return 147; // Korean
- 34: return 186; // Kulula
- 35: return 189; // Lion Air
- 36: return 186; // LOT
- 37: return 186; // Luxair
- 38: return 160; // Malaysian
- 39: return 186; // Norwegian
- 40: return 162; // Oman Air
- 41: return 189; // Pegasus
- 42: return 168; // Qantas
- 43: return 177; // RoyalAirMaroc
- 44: return 189; // Ryanair
- 45: return 160; // S7
- 46: return 186; // Samoa
- 47: return 180; // SAS
- 48: return 177; // Skymark
- 49: return 189; // Smart Wings
- 50: return 157; // South African
- 51: return 175; // Southwest
- 52: return 189; // SunExpress
- 53: return 160; // TAROM
- 54: return 189; // Thomson Airways
- 55: return 164; // Transaero
- 56: return 189; // Transavia
- 57: return 189; // Travel Service
- 58: return 165; // Turkish Airlines
- 59: return 186; // Ukraine
- 60: return 160; // United
- 61: return 174; // Westjet
- 62: return 162; // Xiamen
- 63: return 189; // XL Airways
+  //Airzena no config
+  9: return 160; // Alaska
+ 10: return 189; // AlbaStar
+ 11: return 182; // Alrosa
+ 12: return 189; // AMC
+ 13: return 154; // AmericanAirlines
+ 14: return 166; // ANA
+ 15: return 189; // Anadolujet
+ 16: return 146; // Arik Air
+ 17: return 189; // ArkeFly
+ 18: return 184; // Austrian
+ 19: return 189; // Azur Air
+ 20: return 189; // Azur Air Ukraine
+ 21: return 170; // Badr
+ 22: return 189; // Belavia
+ 23: return 189; // BelaviaOld
+ 24: return 162; // Biman
+ 25: return 189; // Blue Air
+ 26: return 189; // Bluebird
+ 27: return 160; // Continental
+ 28: return 189; // Corendon
+ 29: return 160; // Delta
+ 30: return 162; // Eastern Airlines
+ 31: return 144; // Egpyt Air
+ 32: return 154; // El Al  
+ 33: return 189; // Enter Air
+ 34: return 189; // ETF
+ 35: return 154; // Ethiopian
+ 36: return 186; // EuroAtlantic
+ 37: return 160; // Fiji Airways
+ 38: return 162; // Fly Baghdad
+ 39: return 154; // Flydubai
+ 40: return 160; // Fly Egpyt
+ 41: return 189; // Flygblobespan
+ 42: return 189; // Flyr
+ 43: return 189; // Futura
+ 44: return 155; // Garuda
+ 45: return 170; // GOL
+ 46: return 189; // HapagLloyd
+ 47: return 162; // Iraqi
+ 48: return 165; // JAL
+ 49: return 189; // Jet2
+ 50: return 168; // JetAirways
+ 51: return 189; // JetTime
+ 52: return 145; // Kenya
+ 53: return 170; // KLM
+ 54: return 170; // KLM (retro)
+ 55: return 147; // Korean
+ 56: return 186; // Kulula
+ 57: return 189; // Lion Air
+ 58: return 186; // LOT
+ 59: return 186; // Luxair
+ 60: return 160; // Malaysian
+ 61: return 180; // Malev
+ // Mauritania
+ 63: return 189; // Meridiana
+ 64: return 189; // MyWings
+ 65: return 186; // Neos
+ 66: return 180; // Nordstar
+ 67: return 189; // Nordwind
+ 68: return 186; // Norwegian
+ 69: return 162; // Oman Air
+ 70: return 189; // PegasFly
+ 71: return 189; // Pegasus
+ 72: return 189; // Pobeda
+ 73: return 189; // Primera
+ 74: return 168; // Qantas
+ 75: return 189; // Rossiya
+ 76: return 177; // RoyalAirMaroc
+ 77: return 177; // RoyalAirMarocOld
+ 78: return 189; // RoyalFlight
+ 79: return 154; // Rwandair
+ 80: return 189; // Ryanair
+ 81: return 160; // S7
+ 82: return 160; // S7 Old
+ 83: return 186; // Samoa
+ 84: return 180; // SAS
+ 85: return 176; // Shandong
+ 86: return 189; // Skymark
+ 87: return 177; // SkyUp
+ 88: return 189; // Smart Wings
+ 89: return 189; // SomonAir
+ 90: return 157; // South African
+ 91: return 175; // Southwest
+ 92: return 189; // SunExpress
+ 93: return 189; // Sunwing
+ 94: return 160; // TAROM
+ 95: return 155; // Tassili
+ 96: return 189; // Thomson Airways
+ 97: return 164; // Transaero
+ 98: return 189; // Transavia
+ 99: return 189; // Transavia Old
+100: return 189; // Travel Service
+101: return 189; // TUI
+102: return 165; // Turkish Airlines
+103: return 160; // Turkmenistan
+104: return 186; // Ukraine
+105: return 160; // United
+106: return 174; // Westjet
+107: return 162; // Xiamen
+108: return 189; // XL Airways
+109: return 148; // Yakutia
      return 160;
 }
 
