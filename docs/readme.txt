@@ -133,9 +133,11 @@ Coders:
 - Beardie
 - DJNekkid
 - Frank
-- yorick
+- Yorick
 - Faddypainter
 - RvP93
+- Aras
+- Audigex
 Graphics artists:
 - Beardie
 - EXTSpotter
@@ -143,7 +145,7 @@ Graphics artists:
 - Frank
 - RvP93
 - Dimme
-- simozzz
+- Simozzz
 - Trainboy2004
 - Firzafp
 Graphics Contributions:
@@ -156,6 +158,7 @@ Graphics Contributions:
 - Buckethead
 - Giles
 - Giovanne
+- Toni_SI
 
 (If there is anybody we missed we are sorry, please contact us and we will add you)
 
