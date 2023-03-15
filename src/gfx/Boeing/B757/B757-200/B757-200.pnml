@@ -81,6 +81,9 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_AirGreenland)
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/AirItaly.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_AirItaly) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Allegiant.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_Allegiant) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/American.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_American) 
 #undef IMAGEFILE
@@ -92,6 +95,9 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_Continental)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Delta.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Delta) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/ECAir.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_ECAir) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/ElAl.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_ElAl) 
@@ -105,6 +111,12 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_Iberia)
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Icelandair.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Icelandair) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Jet2.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_Jet2) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/LaCompanie.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_LaCompanie) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Monarch.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Monarch) 
 #undef IMAGEFILE
@@ -117,14 +129,23 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_Privilege)
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/RoyalAirMaroc.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_RoyalAirMaroc) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/RoyalFLight.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_RoyalFLight) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Singapore.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Singapore) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/ThomasCook.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_ThomasCook) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Transaero.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Transaero) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Transavia.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Transavia) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/TUI.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_TUI) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/TWA.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_TWA) 
@@ -208,6 +229,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_AirItaly, flight_state())
       Boeing_757_200_AirItaly_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Allegiant, flight_state())
+{
+  15: Boeing_757_200_Allegiant_Climbing;
+  18: Boeing_757_200_Allegiant_Flight;
+  21: Boeing_757_200_Allegiant_Landing;
+  22: Boeing_757_200_Allegiant_Touchdown;
+      Boeing_757_200_Allegiant_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_American, flight_state())
 {
   15: Boeing_757_200_American_Climbing;
@@ -215,6 +245,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_American, flight_state())
   21: Boeing_757_200_American_Landing;
   22: Boeing_757_200_American_Touchdown;
       Boeing_757_200_American_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_AzurAir, flight_state())
+{
+  15: Boeing_757_200_AzurAir_Climbing;
+  18: Boeing_757_200_AzurAir_Flight;
+  21: Boeing_757_200_AzurAir_Landing;
+  22: Boeing_757_200_AzurAir_Touchdown;
+      Boeing_757_200_AzurAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Condor, flight_state())
@@ -242,6 +281,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Delta, flight_state())
   21: Boeing_757_200_Delta_Landing;
   22: Boeing_757_200_Delta_Touchdown;
       Boeing_757_200_Delta_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_ECAir, flight_state())
+{
+  15: Boeing_757_200_ECAir_Climbing;
+  18: Boeing_757_200_ECAir_Flight;
+  21: Boeing_757_200_ECAir_Landing;
+  22: Boeing_757_200_ECAir_Touchdown;
+      Boeing_757_200_ECAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_ElAl, flight_state())
@@ -280,6 +328,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Icelandair, flight_state())
       Boeing_757_200_Icelandair_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Jet2, flight_state())
+{
+  15: Boeing_757_200_Jet2_Climbing;
+  18: Boeing_757_200_Jet2_Flight;
+  21: Boeing_757_200_Jet2_Landing;
+  22: Boeing_757_200_Jet2_Touchdown;
+      Boeing_757_200_Jet2_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_LaCompanie, flight_state())
+{
+  15: Boeing_757_200_LaCompanie_Climbing;
+  18: Boeing_757_200_LaCompanie_Flight;
+  21: Boeing_757_200_LaCompanie_Landing;
+  22: Boeing_757_200_LaCompanie_Touchdown;
+      Boeing_757_200_LaCompanie_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Monarch, flight_state())
 {
   15: Boeing_757_200_Monarch_Climbing;
@@ -316,6 +382,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_RoyalAirMaroc, flight_state())
       Boeing_757_200_RoyalAirMaroc_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_RoyalFLight, flight_state())
+{
+  15: Boeing_757_200_RoyalFLight_Climbing;
+  18: Boeing_757_200_RoyalFLight_Flight;
+  21: Boeing_757_200_RoyalFLight_Landing;
+  22: Boeing_757_200_RoyalFLight_Touchdown;
+      Boeing_757_200_RoyalFLight_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Singapore, flight_state())
 {
   15: Boeing_757_200_Singapore_Climbing;
@@ -323,6 +398,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Singapore, flight_state())
   21: Boeing_757_200_Singapore_Landing;
   22: Boeing_757_200_Singapore_Touchdown;
       Boeing_757_200_Singapore_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_ThomasCook, flight_state())
+{
+  15: Boeing_757_200_ThomasCook_Climbing;
+  18: Boeing_757_200_ThomasCook_Flight;
+  21: Boeing_757_200_ThomasCook_Landing;
+  22: Boeing_757_200_ThomasCook_Touchdown;
+      Boeing_757_200_ThomasCook_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Transaero, flight_state())
@@ -341,6 +425,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_Transavia, flight_state())
   21: Boeing_757_200_Transavia_Landing;
   22: Boeing_757_200_Transavia_Touchdown;
       Boeing_757_200_Transavia_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_TUI, flight_state())
+{
+  15: Boeing_757_200_TUI_Climbing;
+  18: Boeing_757_200_TUI_Flight;
+  21: Boeing_757_200_TUI_Landing;
+  22: Boeing_757_200_TUI_Touchdown;
+      Boeing_757_200_TUI_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_TWA, flight_state())
@@ -405,27 +498,35 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_sprites, cargo_subtype)
   4: Boeing_757_200_AirEuropa;
   5: Boeing_757_200_AirGreenland;
   6: Boeing_757_200_AirItaly;
-  7: Boeing_757_200_American;
-  8: Boeing_757_200_Condor;  
-  9: Boeing_757_200_Continental;
- 10: Boeing_757_200_Delta;
- 11: Boeing_757_200_ElAl;
- 12: Boeing_757_200_Girjet;
- 13: Boeing_757_200_Iberia;
- 14: Boeing_757_200_Icelandair;
- 15: Boeing_757_200_Monarch;
- 16: Boeing_757_200_Northwest;
- 17: Boeing_757_200_Privilege;
- 18: Boeing_757_200_RoyalAirMaroc;
- 19: Boeing_757_200_Singapore;
- 20: Boeing_757_200_Transaero;
- 21: Boeing_757_200_Transavia;
- 22: Boeing_757_200_TWA;
- 23: Boeing_757_200_United;
- 24: Boeing_757_200_USAirways;
- 25: Boeing_757_200_Uzbekistan;
- 26: Boeing_757_200_VIMAirlines;
- 27: Boeing_757_200_VIMAirlines1;
+  7: Boeing_757_200_Allegiant;
+  8: Boeing_757_200_American;
+  9: Boeing_757_200_AzurAir;
+ 10: Boeing_757_200_Condor;  
+ 11: Boeing_757_200_Continental;
+ 12: Boeing_757_200_Delta;
+ 13: Boeing_757_200_ECAir;
+ 14: Boeing_757_200_ElAl;
+ 15: Boeing_757_200_Girjet;
+ 16: Boeing_757_200_Iberia;
+ 17: Boeing_757_200_Icelandair;
+ 18: Boeing_757_200_Jet2;
+ 19: Boeing_757_200_LaCompanie;
+ 20: Boeing_757_200_Monarch;
+ 21: Boeing_757_200_Northwest;
+ 22: Boeing_757_200_Privilege;
+ 23: Boeing_757_200_RoyalAirMaroc;
+ 24: Boeing_757_200_RoyalFLight;
+ 25: Boeing_757_200_Singapore;
+ 26: Boeing_757_200_ThomasCook;
+ 27: Boeing_757_200_Transaero;
+ 28: Boeing_757_200_Transavia;
+ 29: Boeing_757_200_TUI;
+ 30: Boeing_757_200_TWA;
+ 31: Boeing_757_200_United;
+ 32: Boeing_757_200_USAirways;
+ 33: Boeing_757_200_Uzbekistan;
+ 34: Boeing_757_200_VIMAirlines;
+ 35: Boeing_757_200_VIMAirlines1;
   	 Boeing_757_200_Greyscale;
 }  
                              
@@ -460,53 +561,75 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_cargo_subtype_text, cargo_subtype)
   4: string(STR_VLIV_AIR_EUROPA);
   5: string(STR_VLIV_AIR_GREENLAND);
   6: string(STR_VLIV_AIR_ITALY);
-  7: string(STR_VLIV_AMERICAN_AIRLINES);
-  8: string(STR_VLIV_CONDOR);
-  9: string(STR_VLIV_CONTINENTAL);
- 10: string(STR_VLIV_DELTA_AIR_LINES);
- 11: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
- 12: string(STR_VLIV_GIRJET);
- 13: string(STR_VLIV_IBERIA);
- 14: string(STR_VLIV_ICELANDAIR);
- 15: string(STR_VLIV_MONARCH_AIRLINES); 
- 16: string(STR_VLIV_NORTHWEST_AIRLINES);
- 17: string(STR_VLIV_PRIVILEGE_STYLE); 
- 18: string(STR_VLIV_ROYAL_AIR_MAROC);
- 19: string(STR_VLIV_SINGAPORE_AIRLINES);
- 20: string(STR_VLIV_TRANSAERO);
- 21: string(STR_VLIV_TRANSAVIA);
- 22: string(STR_VLIV_TWA);
- 23: string(STR_VLIV_UNITED_AIRLINES);
- 24: string(STR_VLIV_US_AIRWAYS);
- 25: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
- 26: string(STR_VLIV_VIM_AIRLINES_OLD);
- 27: string(STR_VLIV_VIM_AIRLINES);
+  7: string(STR_VLIV_ALLEGIANT_AIR);
+  8: string(STR_VLIV_AMERICAN_AIRLINES);
+  9: string(STR_VLIV_AZUR_AIR);
+ 10: string(STR_VLIV_CONDOR);
+ 11: string(STR_VLIV_CONTINENTAL);
+ 12: string(STR_VLIV_DELTA_AIR_LINES);
+ 13: string(STR_VLIV_ECAIR);
+ 14: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+ 15: string(STR_VLIV_GIRJET);
+ 16: string(STR_VLIV_IBERIA);
+ 17: string(STR_VLIV_ICELANDAIR);
+ 18: string(STR_VLIV_JET2);
+ 19: string(STR_VLIV_LA_COMPAGNIE);
+ 20: string(STR_VLIV_MONARCH_AIRLINES); 
+ 21: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 22: string(STR_VLIV_PRIVILEGE_STYLE); 
+ 23: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 24: string(STR_VLIV_ROYAL_FLIGHT);
+ 25: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 26: string(STR_VLIV_THOMAS_COOK);
+ 27: string(STR_VLIV_TRANSAERO);
+ 28: string(STR_VLIV_TRANSAVIA);
+ 29: string(STR_VLIV_TUI);
+ 30: string(STR_VLIV_TWA);
+ 31: string(STR_VLIV_UNITED_AIRLINES);
+ 32: string(STR_VLIV_US_AIRWAYS);
+ 33: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
+ 34: string(STR_VLIV_VIM_AIRLINES_OLD);
+ 35: string(STR_VLIV_VIM_AIRLINES);
        return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_757_200_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 177;
-  2: return 200;
-  3: return 209;
-  5: return 200;
-  6: return 220;
-  7: return 190;
-  9: return 175;
- 10: return 199;
- 11: return 178;
- 13: return 200;
- 14: return 183;
- 15: return 235;
- 16: return 182;
- 17: return 200; 
- 18: return 179;
- 22: return 180;
- 23: return 182;
- 24: return 190;
- 25: return 190;
- 26: return 220;
- 27: return 220;
+  1: return 177; // AerLingus
+  2: return 200; // Air Baltic
+  3: return 209; // Air Berlin
+  4: return 228; // Air Europa
+  5: return 200; // Air Greenland
+  6: return 220; // Air Italy
+  7: return 217; // Allegiant
+  8: return 190; // American
+  9: return 238; // AzurAir
+  // Condor
+ 11: return 175; // Continental
+ 12: return 199; // Delta
+ 13: return 148; // ECAir
+ 14: return 178; // ElAl
+ // Girjet
+ 16: return 200;  // Iberia
+ 17: return 183; // Icelandair
+ 18: return 235; // Jet2
+ 19: return 74; // La Companie
+ 20: return 235; // Monarch
+ 21: return 182; // Northwest
+ 22: return 200;  // Privilege
+ 23: return 179; // RoyalAirMaroc
+ 24: return 235; // Royal FLight
+ // Singapore
+ 26: return 235; // Thomas Cook
+ 27: return 185; // Transaero
+ // Transavia
+ 29: return 221; // TUI
+ 30: return 180; // TWA
+ 31: return 182; // United
+ 32: return 190; // US Airways
+ 33: return 190; // Uzbekistan
+ 34: return 220; // VIM Old
+ 35: return 220; // VIM
      return 200;
 }
 

@@ -75,6 +75,9 @@ Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirCanadaRouge)
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AirEuropa.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirEuropa) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AirFrance.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirFrance) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AirNewZealand.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirNewZealand) 
 #undef IMAGEFILE
@@ -87,6 +90,9 @@ Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirPacific)
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AirSeychelles.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AirSeychelles) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/Alitalia.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_Alitalia) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AmericanAirlines.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AmericanAirlines) 
 #undef IMAGEFILE
@@ -95,6 +101,9 @@ Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_ANA)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/Austrian.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_Austrian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/AzurAir.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_AzurAir) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/British.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_British) 
@@ -135,8 +144,23 @@ Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_LAN)
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/LOT.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_LOT) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/Meridiana.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_Meridiana) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/NEOS.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_NEOS) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/Qantas.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_Qantas) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/RoyalAirMaroc.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_RoyalAirMaroc) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/RoyalFlight.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_RoyalFlight) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/TUI.png"
+Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_TUI) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300ER/Ukraine.png"
 Boeing_767_300ER_sprite_layout_template(Boeing_767_300ER_Ukraine) 
@@ -193,6 +217,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AirEuropa, flight_state())
       Boeing_767_300ER_AirEuropa_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AirFrance, flight_state())
+{
+  15: Boeing_767_300ER_AirFrance_Climbing;
+  18: Boeing_767_300ER_AirFrance_Flight;
+  21: Boeing_767_300ER_AirFrance_Landing;
+  22: Boeing_767_300ER_AirFrance_Touchdown;
+      Boeing_767_300ER_AirFrance_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AirNewZealand, flight_state())
 {
   15: Boeing_767_300ER_AirNewZealand_Climbing;
@@ -229,6 +262,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AirSeychelles, flight_state())
       Boeing_767_300ER_AirSeychelles_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Alitalia, flight_state())
+{
+  15: Boeing_767_300ER_Alitalia_Climbing;
+  18: Boeing_767_300ER_Alitalia_Flight;
+  21: Boeing_767_300ER_Alitalia_Landing;
+  22: Boeing_767_300ER_Alitalia_Touchdown;
+      Boeing_767_300ER_Alitalia_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AmericanAirlines, flight_state())
 {
   15: Boeing_767_300ER_AmericanAirlines_Climbing;
@@ -254,6 +296,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Austrian, flight_state())
   21: Boeing_767_300ER_Austrian_Landing;
   22: Boeing_767_300ER_Austrian_Touchdown;
       Boeing_767_300ER_Austrian_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_AzurAir, flight_state())
+{
+  15: Boeing_767_300ER_AzurAir_Climbing;
+  18: Boeing_767_300ER_AzurAir_Flight;
+  21: Boeing_767_300ER_AzurAir_Landing;
+  22: Boeing_767_300ER_AzurAir_Touchdown;
+      Boeing_767_300ER_AzurAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_British, flight_state())
@@ -373,6 +424,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_LOT, flight_state())
       Boeing_767_300ER_LOT_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Meridiana, flight_state())
+{
+  15: Boeing_767_300ER_Meridiana_Climbing;
+  18: Boeing_767_300ER_Meridiana_Flight;
+  21: Boeing_767_300ER_Meridiana_Landing;
+  22: Boeing_767_300ER_Meridiana_Touchdown;
+      Boeing_767_300ER_Meridiana_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_NEOS, flight_state())
+{
+  15: Boeing_767_300ER_NEOS_Climbing;
+  18: Boeing_767_300ER_NEOS_Flight;
+  21: Boeing_767_300ER_NEOS_Landing;
+  22: Boeing_767_300ER_NEOS_Touchdown;
+      Boeing_767_300ER_NEOS_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Qantas, flight_state())
 {
   15: Boeing_767_300ER_Qantas_Climbing;
@@ -380,6 +449,33 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Qantas, flight_state())
   21: Boeing_767_300ER_Qantas_Landing;
   22: Boeing_767_300ER_Qantas_Touchdown;
       Boeing_767_300ER_Qantas_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_RoyalAirMaroc, flight_state())
+{
+  15: Boeing_767_300ER_RoyalAirMaroc_Climbing;
+  18: Boeing_767_300ER_RoyalAirMaroc_Flight;
+  21: Boeing_767_300ER_RoyalAirMaroc_Landing;
+  22: Boeing_767_300ER_RoyalAirMaroc_Touchdown;
+      Boeing_767_300ER_RoyalAirMaroc_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_RoyalFlight, flight_state())
+{
+  15: Boeing_767_300ER_RoyalFlight_Climbing;
+  18: Boeing_767_300ER_RoyalFlight_Flight;
+  21: Boeing_767_300ER_RoyalFlight_Landing;
+  22: Boeing_767_300ER_RoyalFlight_Touchdown;
+      Boeing_767_300ER_RoyalFlight_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_TUI, flight_state())
+{
+  15: Boeing_767_300ER_TUI_Climbing;
+  18: Boeing_767_300ER_TUI_Flight;
+  21: Boeing_767_300ER_TUI_Landing;
+  22: Boeing_767_300ER_TUI_Touchdown;
+      Boeing_767_300ER_TUI_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_Ukraine, flight_state())
@@ -414,30 +510,38 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_sprites, cargo_subtype)
    2: Boeing_767_300ER_AirAstana;
    3: Boeing_767_300ER_AirCanadaRouge;
    4: Boeing_767_300ER_AirEuropa;
-   5: Boeing_767_300ER_AirNewZealand;
-   6: Boeing_767_300ER_AirNiugini;
-   7: Boeing_767_300ER_AirPacific;
-   8: Boeing_767_300ER_AirSeychelles;
-   9: Boeing_767_300ER_AmericanAirlines;
-  10: Boeing_767_300ER_ANA;
-  11: Boeing_767_300ER_Austrian;
-  12: Boeing_767_300ER_British;
-  13: Boeing_767_300ER_Condor;
-  14: Boeing_767_300ER_Delta;
-  15: Boeing_767_300ER_ElAl;
-  16: Boeing_767_300ER_Ethiopian;
-  17: Boeing_767_300ER_Hawaiian;
-  18: Boeing_767_300ER_Iberia;
-  19: Boeing_767_300ER_Icelandair;
-  20: Boeing_767_300ER_JAL;
-  21: Boeing_767_300ER_JetAirFly;
-  22: Boeing_767_300ER_KLM;
-  23: Boeing_767_300ER_LAN;
-  24: Boeing_767_300ER_LOT;
-  25: Boeing_767_300ER_Qantas;
-  26: Boeing_767_300ER_Ukraine;
-  27: Boeing_767_300ER_United;
-  28: Boeing_767_300ER_Uzbekistan;
+   5: Boeing_767_300ER_AirFrance;
+   6: Boeing_767_300ER_AirNewZealand;
+   7: Boeing_767_300ER_AirNiugini;
+   8: Boeing_767_300ER_AirPacific;
+   9: Boeing_767_300ER_AirSeychelles;
+  10: Boeing_767_300ER_Alitalia;
+  11: Boeing_767_300ER_AmericanAirlines;
+  12: Boeing_767_300ER_ANA;
+  13: Boeing_767_300ER_Austrian;
+  14: Boeing_767_300ER_AzurAir;
+  15: Boeing_767_300ER_British;
+  16: Boeing_767_300ER_Condor;
+  17: Boeing_767_300ER_Delta;
+  18: Boeing_767_300ER_ElAl;
+  19: Boeing_767_300ER_Ethiopian;
+  20: Boeing_767_300ER_Hawaiian;
+  21: Boeing_767_300ER_Iberia;
+  22: Boeing_767_300ER_Icelandair;
+  23: Boeing_767_300ER_JAL;
+  24: Boeing_767_300ER_JetAirFly;
+  25: Boeing_767_300ER_KLM;
+  26: Boeing_767_300ER_LAN;
+  27: Boeing_767_300ER_LOT;
+  28: Boeing_767_300ER_Meridiana;
+  29: Boeing_767_300ER_NEOS;
+  30: Boeing_767_300ER_Qantas;
+  31: Boeing_767_300ER_RoyalAirMaroc;
+  32: Boeing_767_300ER_RoyalFlight;
+  33: Boeing_767_300ER_TUI;
+  34: Boeing_767_300ER_Ukraine;
+  35: Boeing_767_300ER_United;
+  36: Boeing_767_300ER_Uzbekistan;
      Boeing_767_300ER_Greyscale;
 }
                              
@@ -470,30 +574,38 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_cargo_subtype_text, cargo_subtype)
    2: string(STR_VLIV_AIR_ASTANA);
    3: string(STR_VLIV_AIR_CANADA_ROUGE);
    4 :string(STR_VLIV_AIR_EUROPA);
-   5: string(STR_VLIV_AIR_NEW_ZEALAND);
-   6: string(STR_VLIV_AIR_NIUGINI);
-   7: string(STR_VLIV_AIR_PACIFIC);
-   8: string(STR_VLIV_AIR_SEYCHELLES);
-   9: string(STR_VLIV_AMERICAN_AIRLINES);
-  10: string(STR_VLIV_ANA);
-  11: string(STR_VLIV_AUSTRIAN_AIRLINES);
-  12: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
-  13: string(STR_VLIV_CONDOR);
-  14: string(STR_VLIV_DELTA_AIR_LINES);
-  15: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
-  16: string(STR_VLIV_ETHIOPIAN_AIRLINES);
-  17: string(STR_VLIV_HAWAIIAN_AIRLINES);
-  18: string(STR_VLIV_IBERIA); 
-  19: string(STR_VLIV_ICELANDAIR); 
-  20: string(STR_VLIV_JAL);
-  21: string(STR_VLIV_JETAIRFLY);
-  22: string(STR_VLIV_KLM);
-  23: string(STR_VLIV_LAN_AIRLINES);
-  24: string(STR_VLIV_LOT);
-  25: string(STR_VLIV_QANTAS);
-  26: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
-  27: string(STR_VLIV_UNITED_AIRLINES);
-  28: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
+   5 :string(STR_VLIV_AIR_FRANCE);
+   6: string(STR_VLIV_AIR_NEW_ZEALAND);
+   7: string(STR_VLIV_AIR_NIUGINI);
+   8: string(STR_VLIV_AIR_PACIFIC);
+   9: string(STR_VLIV_AIR_SEYCHELLES);
+  10: string(STR_VLIV_ALITALIA);
+  11: string(STR_VLIV_AMERICAN_AIRLINES);
+  12: string(STR_VLIV_ANA);
+  13: string(STR_VLIV_AUSTRIAN_AIRLINES);
+  14: string(STR_VLIV_AER_AZUR_AIR);
+  15: string(STR_VLIV_BRITISH_AIRWAYS_UNION_FLAG);
+  16: string(STR_VLIV_CONDOR);
+  17: string(STR_VLIV_DELTA_AIR_LINES);
+  18: string(STR_VLIV_EL_AL_ISRAEL_AIRLINES);
+  19: string(STR_VLIV_ETHIOPIAN_AIRLINES);
+  20: string(STR_VLIV_HAWAIIAN_AIRLINES);
+  21: string(STR_VLIV_IBERIA); 
+  22: string(STR_VLIV_ICELANDAIR); 
+  23: string(STR_VLIV_JAL);
+  24: string(STR_VLIV_JETAIRFLY);
+  25: string(STR_VLIV_KLM);
+  26: string(STR_VLIV_LAN_AIRLINES);
+  27: string(STR_VLIV_LOT);
+  28: string(STR_VLIV_MERIDIANA);
+  29: string(STR_VLIV_NEOS);
+  30: string(STR_VLIV_QANTAS);
+  31: string(STR_VLIV_ROYAL_AIR_MAROC);
+  32: string(STR_VLIV_ROYAL_FLIGHT);
+  33: string(STR_VLIV_TUI);
+  34: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+  35: string(STR_VLIV_UNITED_AIRLINES);
+  36: string(STR_VLIV_UZBEKISTAN_AIRWAYS);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -503,30 +615,38 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300ER_cargo_subtype_capacity, cargo_subt
   2: return 223;	// Air Astana
   3: return 280;	// Air Canada Rouge
   4: return 263;	// Air Europa
-  5: return 230;	// Air New Zealand
-  6: return 188;	// Air Niugnini
-  7: return 247;	// Air Pacific
-  8: return 212;	// Air Seychelles
-  9: return 225;	// American Airlines
- 10: return 202;	// ANA
- 11: return 225;	// Austrian Airlines
- 12: return 192;	// British Airways
- 13: return 245;	// Condor
- 14: return 211;	// Delta
- 15: return 228;	// El Al
- 16: return 237;	// Ethiopian
- 17: return 252;	// Hawaiian
- 18: return 218;	// Iberia
- 19: return 262;	// Icelandair
- 20: return 199;	// JAL
- 21: return 283;	// JetAirFly
- 22: return 220;	// KLM
- 23: return 221;	// LAN
- 24: return 243;	// LOT
- 25: return 229;	// Qantas
- 26: return 261;	// Ukraine
- 27: return 214; 	// United
- 28: return 247; 	// Uzebkistan
+  5: return 210;	// Air France
+  6: return 230;	// Air New Zealand
+  7: return 188;	// Air Niugnini
+  8: return 247;	// Air Pacific
+  9: return 212;	// Air Seychelles
+ 10: return 214;	// Alitalia
+ 11: return 225;	// American Airlines
+ 12: return 202;	// ANA
+ 13: return 225;	// Austrian Airlines
+ 14: return 336;	// Azur Air
+ 15: return 192;	// British Airways
+ 16: return 245;	// Condor
+ 17: return 211;	// Delta
+ 18: return 228;	// El Al
+ 19: return 237;	// Ethiopian
+ 20: return 252;	// Hawaiian
+ 21: return 218;	// Iberia
+ 22: return 262;	// Icelandair
+ 23: return 199;	// JAL
+ 24: return 283;	// JetAirFly
+ 25: return 220;	// KLM
+ 26: return 221;	// LAN
+ 27: return 243;	// LOT
+ // Meridiana
+ 29: return 284;	// NEOS
+ 30: return 229;	// Qantas
+ 31: return 236;	// Royal Air Maroc
+ 32: return 325;	// Royal Flight
+ 33: return 328;	// TUI
+ 34: return 261;	// Ukraine
+ 35: return 214; 	// United
+ 36: return 247; 	// Uzebkistan
      return 218;
 }
 

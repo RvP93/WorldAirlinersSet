@@ -66,6 +66,9 @@ Boeing_767_300_sprite_layout_template(Boeing_767_300_Greyscale)
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300/ANA.png"
 Boeing_767_300_sprite_layout_template(Boeing_767_300_ANA) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B767/B767-300/AirAlgerie.png"
+Boeing_767_300_sprite_layout_template(Boeing_767_300_AirAlgerie) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B767/B767-300/Delta.png"
 Boeing_767_300_sprite_layout_template(Boeing_767_300_Delta) 
 #undef IMAGEFILE
@@ -92,6 +95,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_ANA, flight_state())
   21: Boeing_767_300_ANA_Landing;
   22: Boeing_767_300_ANA_Touchdown;
       Boeing_767_300_ANA_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_AirAlgerie, flight_state())
+{
+  15: Boeing_767_300_AirAlgerie_Climbing;
+  18: Boeing_767_300_AirAlgerie_Flight;
+  21: Boeing_767_300_AirAlgerie_Landing;
+  22: Boeing_767_300_AirAlgerie_Touchdown;
+      Boeing_767_300_AirAlgerie_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_Delta, flight_state())
@@ -124,6 +136,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_JAL, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_sprites, cargo_subtype)
 {
   1: Boeing_767_300_ANA;
+  1: Boeing_767_300_AirAlgerie;
   2: Boeing_767_300_Delta;
   3: Boeing_767_300_Hawaiian;
   4: Boeing_767_300_JAL;
@@ -156,6 +169,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BOEING);
   1: string(STR_VLIV_ANA);
+  1: string(STR_VLIV_AIR_ALGERIE);
   2: string(STR_VLIV_DELTA_AIR_LINES);
   3: string(STR_VLIV_HAWAIIAN_AIRLINES);
   4: string(STR_VLIV_JAL);
@@ -164,10 +178,11 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_cargo_subtype_text, cargo_subtype)
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_cargo_subtype_capacity, cargo_subtype)
 {
-  1: return 270;
-  2: return 261;
-  3: return 259;
-  4: return 263;
+  1: return 270; // ANA
+  1: return 270; // Air Algerie
+  2: return 261; // Delta
+  3: return 259; // Hawaiian
+  4: return 263; // JAL
      return 269;
 }
 
