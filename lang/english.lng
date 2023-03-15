@@ -494,7 +494,6 @@ STR_VLIV_MAT_MACEDONIAN                                         : MAT Macedonian
 STR_VLIV_MAURITANIA_AIRLINES                                    : Mauritania Airlines
 STR_VLIV_MERIDIANA                                              : Meridiana
 STR_VLIV_METROJET                                               : Mertrojet
-STR_VLIV_MAURITANIA_AIRLINES                                    : Mauritania Airlines
 STR_VLIV_MEXICANA                                               : Mexicana
 STR_VLIV_MIDDLE_EAST_AIRLINES                                   : Middle East Airlines
 STR_VLIV_MIDDLE_EAST_AIRLINES_OLD                               : Middle East Airlines (Old)
@@ -577,7 +576,7 @@ STR_VLIV_SPANTAX                                                : Spantax
 STR_VLIV_SRILANKAN_AIRLINES                                     : SriLankan Airlines
 STR_VLIV_SUDAN_AIRWAYS                                          : Sudan Airways
 STR_VLIV_SUNEXPRESS                                             : SunExpress
-STR_VLIV_SUNWING                                                : Sunwing
+STR_VLIV_SUNWING                                                : Sunwing Airlines
 STR_VLIV_SURINAM_AIRWAYS                                        : Surinam Airways
 STR_VLIV_SWIFTAIR                                               : Swiftair
 STR_VLIV_SWISSAIR                                               : Swissair

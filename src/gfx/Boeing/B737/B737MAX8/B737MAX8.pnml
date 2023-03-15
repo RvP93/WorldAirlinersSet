@@ -72,8 +72,17 @@ Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_AirEuropa)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/American.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_American) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Belavia.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Belavia) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/ChinaEastern.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_ChinaEastern) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Corendon.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Corendon) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/EnterAir.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_EnterAir) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Ethiopian.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Ethiopian) 
@@ -81,20 +90,41 @@ Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Ethiopian)
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Fiji.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Fiji) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Flydubai.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Flydubai) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Flyr.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Flyr) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Icelandair.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Icelandair) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/LOT.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_LOT) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Mauritania.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Mauritania) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Norwegian.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Norwegian) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/RoyalAirMaroc.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_RoyalAirMaroc) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Ryanair.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Ryanair) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/SmartWings.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_SmartWings) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Sunwing.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Sunwing) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/Turkish.png"
 Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_Turkish) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/TUI.png"
+Boeing_737_MAX8_sprite_layout_template(Boeing_737_MAX8_TUI) 
 #undef IMAGEFILE
 
 
@@ -134,6 +164,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_American, flight_state())
       Boeing_737_MAX8_American_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Belavia, flight_state())
+{
+  15: Boeing_737_MAX8_Belavia_Climbing;
+  18: Boeing_737_MAX8_Belavia_Flight;
+  21: Boeing_737_MAX8_Belavia_Landing;
+  22: Boeing_737_MAX8_Belavia_Touchdown;
+      Boeing_737_MAX8_Belavia_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_ChinaEastern, flight_state())
 {
   15: Boeing_737_MAX8_ChinaEastern_Climbing;
@@ -141,6 +180,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_ChinaEastern, flight_state())
   21: Boeing_737_MAX8_ChinaEastern_Landing;
   22: Boeing_737_MAX8_ChinaEastern_Touchdown;
       Boeing_737_MAX8_ChinaEastern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Corendon, flight_state())
+{
+  15: Boeing_737_MAX8_Corendon_Climbing;
+  18: Boeing_737_MAX8_Corendon_Flight;
+  21: Boeing_737_MAX8_Corendon_Landing;
+  22: Boeing_737_MAX8_Corendon_Touchdown;
+      Boeing_737_MAX8_Corendon_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_EnterAir, flight_state())
+{
+  15: Boeing_737_MAX8_EnterAir_Climbing;
+  18: Boeing_737_MAX8_EnterAir_Flight;
+  21: Boeing_737_MAX8_EnterAir_Landing;
+  22: Boeing_737_MAX8_EnterAir_Touchdown;
+      Boeing_737_MAX8_EnterAir_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Ethiopian, flight_state())
@@ -161,6 +218,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Fiji, flight_state())
       Boeing_737_MAX8_Fiji_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Flydubai, flight_state())
+{
+  15: Boeing_737_MAX8_Flydubai_Climbing;
+  18: Boeing_737_MAX8_Flydubai_Flight;
+  21: Boeing_737_MAX8_Flydubai_Landing;
+  22: Boeing_737_MAX8_Flydubai_Touchdown;
+      Boeing_737_MAX8_Flydubai_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Flyr, flight_state())
+{
+  15: Boeing_737_MAX8_Flyr_Climbing;
+  18: Boeing_737_MAX8_Flyr_Flight;
+  21: Boeing_737_MAX8_Flyr_Landing;
+  22: Boeing_737_MAX8_Flyr_Touchdown;
+      Boeing_737_MAX8_Flyr_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Icelandair, flight_state())
 {
   15: Boeing_737_MAX8_Icelandair_Climbing;
@@ -179,6 +254,15 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_LOT, flight_state())
       Boeing_737_MAX8_LOT_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Mauritania, flight_state())
+{
+  15: Boeing_737_MAX8_Mauritania_Climbing;
+  18: Boeing_737_MAX8_Mauritania_Flight;
+  21: Boeing_737_MAX8_Mauritania_Landing;
+  22: Boeing_737_MAX8_Mauritania_Touchdown;
+      Boeing_737_MAX8_Mauritania_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Norwegian, flight_state())
 {
   15: Boeing_737_MAX8_Norwegian_Climbing;
@@ -188,6 +272,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Norwegian, flight_state())
       Boeing_737_MAX8_Norwegian_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_RoyalAirMaroc, flight_state())
+{
+  15: Boeing_737_MAX8_RoyalAirMaroc_Climbing;
+  18: Boeing_737_MAX8_RoyalAirMaroc_Flight;
+  21: Boeing_737_MAX8_RoyalAirMaroc_Landing;
+  22: Boeing_737_MAX8_RoyalAirMaroc_Touchdown;
+      Boeing_737_MAX8_RoyalAirMaroc_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Ryanair, flight_state())
+{
+  15: Boeing_737_MAX8_Ryanair_Climbing;
+  18: Boeing_737_MAX8_Ryanair_Flight;
+  21: Boeing_737_MAX8_Ryanair_Landing;
+  22: Boeing_737_MAX8_Ryanair_Touchdown;
+      Boeing_737_MAX8_Ryanair_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_SmartWings, flight_state())
 {
   15: Boeing_737_MAX8_SmartWings_Climbing;
@@ -195,6 +297,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_SmartWings, flight_state())
   21: Boeing_737_MAX8_SmartWings_Landing;
   22: Boeing_737_MAX8_SmartWings_Touchdown;
       Boeing_737_MAX8_SmartWings_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Sunwing, flight_state())
+{
+  15: Boeing_737_MAX8_Sunwing_Climbing;
+  18: Boeing_737_MAX8_Sunwing_Flight;
+  21: Boeing_737_MAX8_Sunwing_Landing;
+  22: Boeing_737_MAX8_Sunwing_Touchdown;
+      Boeing_737_MAX8_Sunwing_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_TUI, flight_state())
+{
+  15: Boeing_737_MAX8_TUI_Climbing;
+  18: Boeing_737_MAX8_TUI_Flight;
+  21: Boeing_737_MAX8_TUI_Landing;
+  22: Boeing_737_MAX8_TUI_Touchdown;
+      Boeing_737_MAX8_TUI_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_Turkish, flight_state())
@@ -211,14 +331,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_sprites, cargo_subtype)
   1: Boeing_737_MAX8_AirChina;
   2: Boeing_737_MAX8_AirEuropa;
   3: Boeing_737_MAX8_American;
-  4: Boeing_737_MAX8_ChinaEastern;
-  5: Boeing_737_MAX8_Ethiopian;
-  6: Boeing_737_MAX8_Fiji;
-  7: Boeing_737_MAX8_Icelandair;
-  8: Boeing_737_MAX8_LOT;
-  9: Boeing_737_MAX8_Norwegian;
- 10: Boeing_737_MAX8_SmartWings;
- 11: Boeing_737_MAX8_Turkish;
+  4: Boeing_737_MAX8_Belavia;
+  5: Boeing_737_MAX8_ChinaEastern;
+  6: Boeing_737_MAX8_Corendon;
+  7: Boeing_737_MAX8_EnterAir;
+  8: Boeing_737_MAX8_Ethiopian;
+  9: Boeing_737_MAX8_Fiji;
+ 10: Boeing_737_MAX8_Flydubai;
+ 11: Boeing_737_MAX8_Flyr;
+ 12: Boeing_737_MAX8_Icelandair;
+ 13: Boeing_737_MAX8_LOT;
+ 14: Boeing_737_MAX8_Mauritania;
+ 15: Boeing_737_MAX8_Norwegian;
+ 16: Boeing_737_MAX8_RoyalAirMaroc;
+ 17: Boeing_737_MAX8_Ryanair;
+ 18: Boeing_737_MAX8_SmartWings;
+ 19: Boeing_737_MAX8_Sunwing;
+ 20: Boeing_737_MAX8_TUI;
+ 21: Boeing_737_MAX8_Turkish;
 	 Boeing_737_MAX8_Greyscale;
 }  
                              
@@ -243,14 +373,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_text, cargo_subtype)
   1: string(STR_VLIV_AIR_CHINA);
   2: string(STR_VLIV_AIR_EUROPA);
   3: string(STR_VLIV_AMERICAN_AIRLINES);
-  4: string(STR_VLIV_CHINA_EASTERN);
-  5: string(STR_VLIV_ETHIOPIAN_AIRLINES);
-  6: string(STR_VLIV_FIJI_AIRWAYS);
-  7: string(STR_VLIV_ICELANDAIR);
-  8: string(STR_VLIV_LOT);
-  9: string(STR_VLIV_NORWEGIAN_AIR);
- 10: string(STR_VLIV_SMART_WINGS);
- 11: string(STR_VLIV_TURKISH_AIRLINES);
+  4: string(STR_VLIV_BELAVIA);
+  5: string(STR_VLIV_CHINA_EASTERN);
+  6: string(STR_VLIV_CORENDON_AIRLINES);
+  7: string(STR_VLIV_ENTER_AIR);
+  8: string(STR_VLIV_ETHIOPIAN_AIRLINES);
+  9: string(STR_VLIV_FIJI_AIRWAYS);
+ 10: string(STR_VLIV_FLYDUBAI);
+ 11: string(STR_VLIV_FLYR);
+ 12: string(STR_VLIV_ICELANDAIR);
+ 13: string(STR_VLIV_LOT);
+ 14: string(STR_VLIV_MAURITANIA_AIRLINES);
+ 15: string(STR_VLIV_NORWEGIAN_AIR);
+ 16: string(STR_VLIV_ROYAL_AIR_MAROC);
+ 17: string(STR_VLIV_RYANAIR);
+ 18: string(STR_VLIV_SMART_WINGS);
+ 19: string(STR_VLIV_SUNWING);
+ 20: string(STR_VLIV_TUI);
+ 21: string(STR_VLIV_TURKISH_AIRLINES);
 	 return CB_RESULT_NO_TEXT;
 }
 
@@ -259,14 +399,24 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_capacity, cargo_subty
   1: return 176; // Air China
   2: return 162; // Air Europa
   3: return 172; // American Airlines
-  4: return 176; // China Eastern
-  5: return 160; // Etiopian
-  6: return 186; // Fiji
-  7: return 160; // Icelandair
-  8: return 186; // LOT
-  9: return 189; // Norwegian
- 10: return 189; // Smart Wings
- 11: return 151; // Turkish
+  4: return 174; // Belavia
+  5  return 176; // China Eastern
+  6: return 189; // Corendon
+  7: return 189; // Enter Air
+  8: return 160; // Etiopian
+  9: return 186; // Fiji
+ 10: return 166; // Flydubai
+ 11: return 189; // Flyr
+ 12: return 160; // Icelandair
+ 13: return 186; // LOT
+ 14: return 166; // Mauritania
+ 15: return 189; // Norwegian
+ 16: return 189; // RoyalAirMaroc
+ 17: return 189; // Ryanair
+ 18: return 189; // Smart Wings
+ 19: return 189; // Sunwing
+ 20: return 189; // TUI
+ 21: return 151; // Turkish
      return 162;
 }
 
