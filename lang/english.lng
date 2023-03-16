@@ -442,6 +442,7 @@ STR_VLIV_INDIGO                                                 : IndiGo
 STR_VLIV_INSEL_AIR                                              : Insel Air
 STR_VLIV_INTERFLUG                                              : Interflug
 STR_VLIV_IRAN_AIR                                               : Iran Air
+STR_VLIV_IRAN_ASEMAN_AIRLINES                                   : Iran Aseman Airlines
 STR_VLIV_IRAQI_AIRWAYS                                          : Iraqi Airways
 STR_VLIV_JAL                                                    : Japan Airlines
 STR_VLIV_JAL_GREEN                                              : JAL Green
@@ -512,6 +513,7 @@ STR_VLIV_NORTHWEST_AIRLINK                                      : Northwest Airl
 STR_VLIV_NORWEGIAN_AIR                                          : Norwegian Air
 STR_VLIV_NORWEGIAN_LONG_HAUL                                    : Norwegian Long Haul
 STR_VLIV_OLYMPIC_AIR                                            : Olympic Air
+STR_VLIV_OLYMPIC_AIRLINES                                       : Olympic Airlines
 STR_VLIV_OMAN_AIR                                               : Oman Air
 STR_VLIV_OMNI_AIR_INTERNATIONAL                                 : Omni Air International
 STR_VLIV_ONUR_AIR                                               : Onur Air
@@ -523,6 +525,7 @@ STR_VLIV_PEOPLEXPRESS                                           : PEOPLExpress
 STR_VLIV_PERUVIAN                                               : Peruvian Airlines
 STR_VLIV_PHILIPPINES_AIRLINES                                   : Philippines Airlines
 STR_VLIV_PIA                                                    : Pakistan International Airlines
+STR_VLIV_PLUS_ULTRA                                             : Plus Ultra
 STR_VLIV_POBEDA                                                 : Pobeda
 STR_VLIV_PORTUGALIA                                             : Portugalia
 STR_VLIV_PRECISION_AIR_SERVICES                                 : Precision Air
@@ -584,6 +587,7 @@ STR_VLIV_SWISSAIR                                               : Swissair
 STR_VLIV_SWISS_AIR                                              : Swissair
 STR_VLIV_SWISS                                                  : Swiss
 STR_VLIV_SWISS_INTERNATIONAL_AIRLINES                           : Swiss
+STR_VLIV_SYRIAN_ARAB_AIRLINES                                   : Syrian Arab Airlines
 STR_VLIV_TAAG_ANGOLA_AIRLINES                                   : TAAG Angola Airlines
 STR_VLIV_TAE                                                    : TAE - Trabajos Aéreos y Enlaces
 STR_VLIV_TAM_AIRLINES                                           : TAM Linhas Aereas
