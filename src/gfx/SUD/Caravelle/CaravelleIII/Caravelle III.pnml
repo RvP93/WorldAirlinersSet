@@ -90,8 +90,14 @@ SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Hispania)
 #define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Iberia.png"
 SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Iberia) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/JAT.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_JAT) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/MiddleEast.png"
 SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_MiddleEast) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Sabena.png"
+SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Sabena) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/SUD/Caravelle/CaravelleIII/Swissair.png"
 SUD_CARAVELLE_III_sprite_layout_template(SUD_CARAVELLE_III_Swissair) 
@@ -193,6 +199,15 @@ switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Iberia, flight_state())
       SUD_CARAVELLE_III_Iberia_Grounded;
 }
 
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_JAT, flight_state())
+{
+  15: SUD_CARAVELLE_III_JAT_Climbing;
+  18: SUD_CARAVELLE_III_JAT_Flight;
+  21: SUD_CARAVELLE_III_JAT_Landing;
+  22: SUD_CARAVELLE_III_JAT_Touchdown;
+      SUD_CARAVELLE_III_JAT_Grounded;
+}
+
 switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_MiddleEast, flight_state())
 {
   15: SUD_CARAVELLE_III_MiddleEast_Climbing;
@@ -200,6 +215,15 @@ switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_MiddleEast, flight_state())
   21: SUD_CARAVELLE_III_MiddleEast_Landing;
   22: SUD_CARAVELLE_III_MiddleEast_Touchdown;
       SUD_CARAVELLE_III_MiddleEast_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Sabena, flight_state())
+{
+  15: SUD_CARAVELLE_III_Sabena_Climbing;
+  18: SUD_CARAVELLE_III_Sabena_Flight;
+  21: SUD_CARAVELLE_III_Sabena_Landing;
+  22: SUD_CARAVELLE_III_Sabena_Touchdown;
+      SUD_CARAVELLE_III_Sabena_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_Swissair, flight_state())
@@ -240,10 +264,12 @@ switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_sprites, cargo_subtype)
   7: SUD_CARAVELLE_III_Finnair;
   8: SUD_CARAVELLE_III_Hispania;
   9: SUD_CARAVELLE_III_Iberia;
- 10: SUD_CARAVELLE_III_MiddleEast;
- 11: SUD_CARAVELLE_III_Swissair;
- 12: SUD_CARAVELLE_III_Transavia;
- 13: SUD_CARAVELLE_III_United; 
+ 10: SUD_CARAVELLE_III_JAT;
+ 11: SUD_CARAVELLE_III_MiddleEast;
+ 12: SUD_CARAVELLE_III_Sabena;
+ 13: SUD_CARAVELLE_III_Swissair;
+ 14: SUD_CARAVELLE_III_Transavia;
+ 15: SUD_CARAVELLE_III_United; 
      SUD_CARAVELLE_III_Greyscale;
 }
                              
@@ -281,10 +307,12 @@ switch (FEAT_AIRCRAFT, SELF, SUD_CARAVELLE_III_cargo_subtype_text, cargo_subtype
   7: string(STR_VLIV_FINNAIR); 
   8: string(STR_VLIV_HISPANIA);
   9: string(STR_VLIV_IBERIA);
- 10: string(STR_VLIV_MIDDLE_EAST_AIRLINES); 
- 11: string(STR_VLIV_SWISS_AIR); 
- 12: string(STR_VLIV_TRANSAVIA);
- 13: string(STR_VLIV_UNITED_AIRLINES); 
+ 10: string(STR_VLIV_JAT_AIRWAYS);
+ 11: string(STR_VLIV_MIDDLE_EAST_AIRLINES); 
+ 12: string(STR_VLIV_SABENA); 
+ 13: string(STR_VLIV_SWISS_AIR); 
+ 14: string(STR_VLIV_TRANSAVIA);
+ 15: string(STR_VLIV_UNITED_AIRLINES); 
      return CB_RESULT_NO_TEXT;
 }
 
