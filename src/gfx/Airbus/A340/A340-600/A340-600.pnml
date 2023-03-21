@@ -66,6 +66,9 @@ Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Greyscale)
 #define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/ChinaEastern.png"
 Airbus_A340_600_sprite_layout_template(Airbus_A340_600_ChinaEastern) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Conviasa.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Conviasa) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Etihad.png"
 Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Etihad) 
 #undef IMAGEFILE
@@ -83,6 +86,9 @@ Airbus_A340_600_sprite_layout_template(Airbus_A340_600_IberiaNew)
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Lufthansa.png"
 Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Lufthansa) 
+#undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/PlusUltra.png"
+Airbus_A340_600_sprite_layout_template(Airbus_A340_600_PlusUltra) 
 #undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Airbus/A340/A340-600/Qatar.png"
 Airbus_A340_600_sprite_layout_template(Airbus_A340_600_Qatar) 
@@ -114,6 +120,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_ChinaEastern, flight_state())
   21: Airbus_A340_600_ChinaEastern_Landing;
   22: Airbus_A340_600_ChinaEastern_Touchdown;
       Airbus_A340_600_ChinaEastern_Grounded;
+}
+
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Conviasa, flight_state())
+{
+  15: Airbus_A340_600_Conviasa_Climbing;
+  18: Airbus_A340_600_Conviasa_Flight;
+  21: Airbus_A340_600_Conviasa_Landing;
+  22: Airbus_A340_600_Conviasa_Touchdown;
+      Airbus_A340_600_Conviasa_Grounded;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Etihad, flight_state())
@@ -170,6 +185,15 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Lufthansa, flight_state())
       Airbus_A340_600_Lufthansa_Grounded;
 }	  
 	  
+switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_PlusUltra, flight_state())
+{
+  15: Airbus_A340_600_PlusUltra_Climbing;
+  18: Airbus_A340_600_PlusUltra_Flight;
+  21: Airbus_A340_600_PlusUltra_Landing;
+  22: Airbus_A340_600_PlusUltra_Touchdown;
+      Airbus_A340_600_PlusUltra_Grounded;
+}	  
+	  
 switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Qatar, flight_state())
 {
   15: Airbus_A340_600_Qatar_Climbing;
@@ -209,16 +233,18 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_Virgin, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_sprites, cargo_subtype)
 {
   1: Airbus_A340_600_ChinaEastern;
-  2: Airbus_A340_600_Etihad;
-  3: Airbus_A340_600_EtihadF1;
-  4: Airbus_A340_600_Hainan;
-  5: Airbus_A340_600_Iberia;
-  6: Airbus_A340_600_IberiaNew;
-  7: Airbus_A340_600_Lufthansa;
-  8: Airbus_A340_600_Qatar;
-  9: Airbus_A340_600_SouthAfrican;
- 10: Airbus_A340_600_Thai;
- 11: Airbus_A340_600_Virgin;
+  2: Airbus_A340_600_Conviasa;
+  3: Airbus_A340_600_Etihad;
+  4: Airbus_A340_600_EtihadF1;
+  5: Airbus_A340_600_Hainan;
+  6: Airbus_A340_600_Iberia;
+  7: Airbus_A340_600_IberiaNew;
+  8: Airbus_A340_600_Lufthansa;
+  9: Airbus_A340_600_PlusUltra;
+ 10: Airbus_A340_600_Qatar;
+ 11: Airbus_A340_600_SouthAfrican;
+ 12: Airbus_A340_600_Thai;
+ 13: Airbus_A340_600_Virgin;
  Airbus_A340_600_Greyscale;
 }
                              
@@ -248,32 +274,36 @@ switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_AIRBUS);
   1: string(STR_VLIV_CHINA_EASTERN);
-  2: string(STR_VLIV_ETIHAD_AIRWAYS);
-  3: string(STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1);
-  4: string(STR_VLIV_HAINAN_AIRLINES);
-  5: string(STR_VLIV_IBERIA_OLD);
-  6: string(STR_VLIV_IBERIA);
-  7: string(STR_VLIV_LUFTHANSA);
-  8: string(STR_VLIV_QATAR_AIRWAYS);
-  9: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
- 10: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
- 11: string(STR_VLIV_VIRGIN_ATLANTIC);
+  2: string(STR_VLIV_CONVIASA);
+  3: string(STR_VLIV_ETIHAD_AIRWAYS);
+  4: string(STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1);
+  5: string(STR_VLIV_HAINAN_AIRLINES);
+  6: string(STR_VLIV_IBERIA_OLD);
+  7: string(STR_VLIV_IBERIA);
+  8: string(STR_VLIV_LUFTHANSA);
+  9: string(STR_VLIV_PLUS_ULTRA);
+ 10: string(STR_VLIV_QATAR_AIRWAYS);
+ 11: string(STR_VLIV_SOUTH_AFRICAN_AIRWAYS);
+ 12: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 13: string(STR_VLIV_VIRGIN_ATLANTIC);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Airbus_A340_600_cargo_subtype_capacity, cargo_subtype)
 {
-   1: return 320;
-   2: return 292;
-   3: return 292;
-   4: return 288;
-   5: return 342;
-   6: return 342;
-   7: return 306;
-   8: return 305;
-   9: return 346;
-  10: return 267;
-  11: return 316; 
+   1: return 320; // China Eastern
+   2: return 308; // Conviasa
+   3: return 292; // Etihad
+   4: return 292; // Etihad F1
+   5: return 288; // Hainan
+   6: return 342; // Iberia Old
+   7: return 342; // Iberia
+   8: return 306; // Lufthansa
+   9: return 368; // Plus Ultra
+  10: return 305; // Qatar
+  11: return 346; // South African
+  12: return 267; // Thai
+  13: return 316; // Virgin
   return 380;
 }
 
