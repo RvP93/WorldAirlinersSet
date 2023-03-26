@@ -177,7 +177,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ700ER)
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
     range: 500;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Bombardier_CRJ700ER_sprites;

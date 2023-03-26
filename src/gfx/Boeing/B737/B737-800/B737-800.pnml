@@ -1768,7 +1768,7 @@ item (FEAT_AIRCRAFT, Boeing_737_800)
     mail_capacity: 19;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1020;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_800_sprites;
@@ -1813,4 +1813,3 @@ if (Ranges == 2)
     { range: 1530; }
   }
 }
-

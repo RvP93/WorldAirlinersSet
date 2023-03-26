@@ -163,7 +163,7 @@ item (FEAT_AIRCRAFT, Boeing_747_8I)
     mail_capacity: 54;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2665;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_747_8I_sprites;

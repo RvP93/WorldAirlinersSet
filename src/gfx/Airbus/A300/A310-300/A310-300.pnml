@@ -668,7 +668,7 @@ item (FEAT_AIRCRAFT, Airbus_A310_300)
     mail_capacity: 28;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1965;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Airbus_A310_300_sprites;

@@ -335,7 +335,7 @@ item (FEAT_AIRCRAFT, Tupolev_Tu154M)
     mail_capacity: 15;
     acceleration: 27;                  // in 27,75 mph/day
     range: 735;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Tupolev_Tu154M_sprites;

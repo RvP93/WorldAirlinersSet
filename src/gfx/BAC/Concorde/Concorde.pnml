@@ -183,7 +183,7 @@ item (FEAT_AIRCRAFT, BAC_CONCORDE)
     mail_capacity: 10;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1230;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_FAST;
   }
   graphics {
     default: BAC_CONCORDE_sprites;

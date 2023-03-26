@@ -155,7 +155,7 @@ item (FEAT_AIRCRAFT, Embraer_E175LR)
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
     range: 700;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Embraer_E175LR_sprites;

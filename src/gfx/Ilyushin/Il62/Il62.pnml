@@ -229,7 +229,7 @@ item (FEAT_AIRCRAFT, Ilyushin_62)
     mail_capacity: 17;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1800;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Ilyushin_62_sprites;

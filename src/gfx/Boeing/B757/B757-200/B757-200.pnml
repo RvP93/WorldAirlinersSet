@@ -654,7 +654,7 @@ item (FEAT_AIRCRAFT, Boeing_757_200)
     mail_capacity: 20;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1365;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_757_200_sprites;

@@ -163,7 +163,7 @@ item (FEAT_AIRCRAFT, Bombardier_CRJ900LR)
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
     range: 505;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Bombardier_CRJ900LR_sprites;
@@ -208,4 +208,3 @@ if (Ranges == 2)
     { range: 760; }
   }
 }
-
