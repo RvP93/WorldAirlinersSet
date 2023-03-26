@@ -415,7 +415,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_capacity, cargo_subty
   3: return 162; // Air Europa
   4: return 172; // American Airlines
   5: return 174; // Belavia
-  6  return 176; // China Eastern
+  6: return 176; // China Eastern
   7: return 189; // Corendon
   8: return 189; // Enter Air
   9: return 160; // Etiopian
