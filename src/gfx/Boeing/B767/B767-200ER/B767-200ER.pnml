@@ -1,8 +1,8 @@
 
 // Boeing-767-200ER
 
-// Template: 
-#define Boeing_767_200ER_sprite_layout_template(name)                          \
+// Template:
+#define Boeing_767_200ER_sprite_layout_template(name)                        \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 58, 24, -29, -12, ANIM]                                           \

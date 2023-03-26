@@ -2,7 +2,7 @@
 // Boeing-737MAX8
 
 // Template:
-#define Boeing_737_MAX8_sprite_layout_template(name)                          \
+#define Boeing_737_MAX8_sprite_layout_template(name)                         \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 2, 43, 23, -22, -12, ANIM]                                           \
@@ -57,7 +57,7 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
   [244, 187, 41, 26, -21, -13, ANIM]                                         \
   [291, 187, 49, 27, -25, -14, ANIM]                                         \
   [343, 187, 40, 24, -20, -12, ANIM]                                         \
-}		                                                                     \
+}		                                                                         \
 
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/(0)Greyscale.png"
 purchase_sprite(Boeing_737_MAX8, 291, 2, 46, 25, -23, -13)

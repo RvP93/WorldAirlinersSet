@@ -1,8 +1,8 @@
 
 // Embraer-E170STD
 
-// Template: 
-#define Embraer_E170STD_sprite_layout_template(name)                          \
+// Template:
+#define Embraer_E170STD_sprite_layout_template(name)                         \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 35, 19, -18, -10, ANIM]                                           \

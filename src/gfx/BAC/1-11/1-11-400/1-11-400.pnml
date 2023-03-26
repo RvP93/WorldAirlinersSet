@@ -1,8 +1,8 @@
 
 // BAC-1-11-400
 
-// Template: 
-#define BAC_1_11_400_sprite_layout_template(name)                             \
+// Template:
+#define BAC_1_11_400_sprite_layout_template(name)                            \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 40, 18, -20, -9 , ANIM]                                           \

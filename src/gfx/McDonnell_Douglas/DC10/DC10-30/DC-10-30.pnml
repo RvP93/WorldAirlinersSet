@@ -1,8 +1,8 @@
 
 // Douglas_DC10-30
 
-// Template: 
-#define Douglas_DC10_30_sprite_layout_template(name)                          \
+// Template:
+#define Douglas_DC10_30_sprite_layout_template(name)                         \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 54, 29, -27, -15, ANIM]                                           \

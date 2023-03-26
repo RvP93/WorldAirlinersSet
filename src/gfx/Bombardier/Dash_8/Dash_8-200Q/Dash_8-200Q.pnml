@@ -1,8 +1,8 @@
 
 // Bombardier-Dash8-200Q
 
-// Template: 
-#define Bombardier_Dash_8_200Q_sprite_layout_template(name)                   \
+// Template:
+#define Bombardier_Dash_8_200Q_sprite_layout_template(name)                  \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 44, 19, -22, -10, ANIM]                                           \
