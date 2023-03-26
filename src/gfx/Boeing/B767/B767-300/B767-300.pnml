@@ -136,10 +136,10 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_JAL, flight_state())
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_sprites, cargo_subtype)
 {
   1: Boeing_767_300_ANA;
-  1: Boeing_767_300_AirAlgerie;
-  2: Boeing_767_300_Delta;
-  3: Boeing_767_300_Hawaiian;
-  4: Boeing_767_300_JAL;
+  2: Boeing_767_300_AirAlgerie;
+  3: Boeing_767_300_Delta;
+  4: Boeing_767_300_Hawaiian;
+  5: Boeing_767_300_JAL;
      Boeing_767_300_Greyscale;
 }
                              
@@ -169,20 +169,20 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_cargo_subtype_text, cargo_subtype)
 {
   0: string(STR_VLIV_BOEING);
   1: string(STR_VLIV_ANA);
-  1: string(STR_VLIV_AIR_ALGERIE);
-  2: string(STR_VLIV_DELTA_AIR_LINES);
-  3: string(STR_VLIV_HAWAIIAN_AIRLINES);
-  4: string(STR_VLIV_JAL);
+  2: string(STR_VLIV_AIR_ALGERIE);
+  3: string(STR_VLIV_DELTA_AIR_LINES);
+  4: string(STR_VLIV_HAWAIIAN_AIRLINES);
+  5: string(STR_VLIV_JAL);
      return CB_RESULT_NO_TEXT;
 }
 
 switch (FEAT_AIRCRAFT, SELF, Boeing_767_300_cargo_subtype_capacity, cargo_subtype)
 {
   1: return 270; // ANA
-  1: return 270; // Air Algerie
-  2: return 261; // Delta
-  3: return 259; // Hawaiian
-  4: return 263; // JAL
+  2: return 270; // Air Algerie
+  3: return 261; // Delta
+  4: return 259; // Hawaiian
+  5: return 263; // JAL
      return 269;
 }
 

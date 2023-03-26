@@ -388,19 +388,19 @@ switch (FEAT_AIRCRAFT, SELF, Douglas_DC10_30_sprites, cargo_subtype)
  10: Douglas_DC10_30_Iberia;
  11: Douglas_DC10_30_JAT; 
  12: Douglas_DC10_30_KLM; 
- 12: Douglas_DC10_30_Korean; 
- 13: Douglas_DC10_30_Laker;
- 14: Douglas_DC10_30_Lufthansa; 
- 15: Douglas_DC10_30_Monarch;
- 16: Douglas_DC10_30_Northwest;
- 17: Douglas_DC10_30_Omni;
- 18: Douglas_DC10_30_PanAm;
- 19: Douglas_DC10_30_SAS;
- 20: Douglas_DC10_30_Singapore;
- 21: Douglas_DC10_30_Spantax;
- 22: Douglas_DC10_30_Swissair;
- 23: Douglas_DC10_30_Thai;
- 24: Douglas_DC10_30_United;
+ 13: Douglas_DC10_30_Korean; 
+ 14: Douglas_DC10_30_Laker;
+ 15: Douglas_DC10_30_Lufthansa; 
+ 16: Douglas_DC10_30_Monarch;
+ 17: Douglas_DC10_30_Northwest;
+ 18: Douglas_DC10_30_Omni;
+ 19: Douglas_DC10_30_PanAm;
+ 20: Douglas_DC10_30_SAS;
+ 21: Douglas_DC10_30_Singapore;
+ 22: Douglas_DC10_30_Spantax;
+ 23: Douglas_DC10_30_Swissair;
+ 24: Douglas_DC10_30_Thai;
+ 25: Douglas_DC10_30_United;
 	 Douglas_DC10_30_Greyscale;
 }
                              
@@ -441,19 +441,19 @@ switch (FEAT_AIRCRAFT, SELF, Douglas_DC10_30_cargo_subtype_text, cargo_subtype)
  10: string(STR_VLIV_IBERIA);
  11: string(STR_VLIV_JAT_AIRWAYS);
  12: string(STR_VLIV_KLM); 
- 12: string(STR_VLIV_KOREAN_AIR); 
- 13: string(STR_VLIV_LAKER_AIRWAYS);
- 14: string(STR_VLIV_LUFTHANSA); 
- 15: string(STR_VLIV_MONARCH_AIRLINES);
- 16: string(STR_VLIV_NORTHWEST_AIRLINES);
- 17: string(STR_VLIV_OMNI_AIR_INTERNATIONAL);
- 18: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
- 19: string(STR_VLIV_SAS);
- 20: string(STR_VLIV_SINGAPORE_AIRLINES);
- 21: string(STR_VLIV_SPANTAX);
- 22: string(STR_VLIV_SWISS_AIR);
- 23: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
- 24: string(STR_VLIV_UNITED_AIRLINES);
+ 13: string(STR_VLIV_KOREAN_AIR); 
+ 14: string(STR_VLIV_LAKER_AIRWAYS);
+ 15: string(STR_VLIV_LUFTHANSA); 
+ 16: string(STR_VLIV_MONARCH_AIRLINES);
+ 17: string(STR_VLIV_NORTHWEST_AIRLINES);
+ 18: string(STR_VLIV_OMNI_AIR_INTERNATIONAL);
+ 19: string(STR_VLIV_PAN_AMERICAN_WORLD_AIRWAYS);
+ 20: string(STR_VLIV_SAS);
+ 21: string(STR_VLIV_SINGAPORE_AIRLINES);
+ 22: string(STR_VLIV_SPANTAX);
+ 23: string(STR_VLIV_SWISS_AIR);
+ 24: string(STR_VLIV_THAI_AIRWAYS_INTERNATIONAL);
+ 25: string(STR_VLIV_UNITED_AIRLINES);
      return CB_RESULT_NO_TEXT;
 }
 
@@ -461,9 +461,9 @@ switch (FEAT_AIRCRAFT, SELF, Douglas_DC10_30_cargo_subtype_capacity, cargo_subty
 {
    4: return 227; //American Airlines
    5: return 314; //Biman
-  16: return 271; //Northwest
-  22: return 221; //Thai
-  24: return 298; //United
+  17: return 271; //Northwest
+  24: return 221; //Thai
+  25: return 298; //United
       return 255;
 }
 
