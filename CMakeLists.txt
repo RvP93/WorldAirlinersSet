@@ -1,0 +1,150 @@
+cmake_minimum_required(VERSION 3.24)
+project(WorldAirlinersSet VERSION 1.0 HOMEPAGE_URL https://github.com/RvP93/WorldAirlinersSet)
+#Project variables
+set(PROJECT_SHORT_NAME "WAS")
+set(PROJECT_SCRIPT_DIR ${PROJECT_SOURCE_DIR}/scripts)
+set(PROJECT_BINARY_DIR ${PROJECT_SOURCE_DIR}/bin)
+set(PROJECT_DOCS_DIR   ${PROJECT_SOURCE_DIR}/docs)
+set(PROJECT_BUILD_DIR  ${CMAKE_CURRENT_BINARY_DIR})
+
+#File names
+set(GRF_FILE_NAME  ${PROJECT_NAME}.grf)
+set(NML_FILE_NAME  ${PROJECT_NAME}.nml)
+set(SRC_FILE_NAME  ${PROJECT_SHORT_NAME}.pnml)
+set(DOC_FILE_NAMES readme.txt license.txt changelog.txt)
+
+set(GRF_FILE ${PROJECT_BINARY_DIR}/${GRF_FILE_NAME})
+set(NML_FILE ${PROJECT_BINARY_DIR}/${NML_FILE_NAME})
+set(SRC_FILE ${PROJECT_SOURCE_DIR}/${SRC_FILE_NAME})
+set(CUSTOM_TAGS_FILE ${PROJECT_SOURCE_DIR}/custom_tags.txt)
+list(TRANSFORM DOC_FILE_NAMES PREPEND ${PROJECT_BINARY_DIR}/ OUTPUT_VARIABLE DOC_FILES)
+
+#Bundle files
+set(BUNDLE_EXTENSIONS ".tar" ".tar.bz2" ".tar.gz" ".tar.xz")
+list(TRANSFORM BUNDLE_EXTENSIONS PREPEND ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-${PROJECT_VERSION} OUTPUT_VARIABLE BUNDLE_FILES)
+list(GET BUNDLE_FILES 0 BUNDLE_TAR)
+list(GET BUNDLE_FILES 1 BUNDLE_BZ2)
+list(GET BUNDLE_FILES 2 BUNDLE_GZ)
+list(GET BUNDLE_FILES 3 BUNDLE_XZ)
+
+#CMake output directory variables
+message(STATUS "Outputting files to ${PROJECT_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
+
+#Get number of days since 2000
+string(TIMESTAMP UNIX_EPOCH "%s" UTC)
+math(EXPR DAYS_SINCE_2K "(${UNIX_EPOCH} - 946684800) / 86400")
+
+#Determine compiler and set compiler options accordingly
+if(MSVC)
+	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}"
+		/DREPO_REVISION=${DAYS_SINCE_2K}
+		/DNEWGRF_VERSION=${PROJECT_VERSION}
+		/c /C /P /EP
+		/Fi${NML_FILE}
+	) 
+else()
+	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}"
+		-D REPO_REVISION=${DAYS_SINCE_2K}
+		-D NEWGRF_VERSION=${PROJECT_VERSION} 
+		-C -E -nostdinc -x c-header
+		-o ${NML_FILE}
+	)
+endif()
+
+#Process .pnml to .nml using c preprocessor
+#(must be a target so it runs everytime)
+add_custom_target("NML"
+	BYPRODUCTS ${NML_FILE}
+	COMMAND ${CMAKE_C_COMPILER} ${CMAKE_C_FLAGS} ${SRC_FILE}
+	DEPENDS ${SRC_FILE}
+	SOURCES ${SRC_FILE}
+    COMMENT "Processing ${SRC_FILE_NAME} to ${NML_FILE_NAME}"
+	VERBATIM 
+)
+
+#Generate custom_tags.txt
+add_custom_command(
+	OUTPUT ${CUSTOM_TAGS_FILE}
+	COMMAND ${CMAKE_COMMAND}
+		-DPROJECT_VERSION=${PROJECT_VERSION}
+		-DPROJECT_NAME=${PROJECT_NAME}
+		-DGRF_FILE_NAME=${GRF_FILE_NAME}
+		-DCUSTOM_TAGS_FILE=${CUSTOM_TAGS_FILE}
+		-P ${PROJECT_SCRIPT_DIR}/GenerateCustomTags.cmake
+    COMMENT "Generating custom_tags.txt file"
+	VERBATIM 
+)
+
+#Compile .nml file by running nmlc on it
+add_custom_command(
+	OUTPUT ${GRF_FILE}
+	COMMAND ${CMAKE_COMMAND}
+		-DPROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}
+		-DPROJECT_BINARY_DIR=${PROJECT_BINARY_DIR}
+		-DGRF_FILE=${GRF_FILE}
+		-DNML_FILE=${NML_FILE}
+		-P ${PROJECT_SCRIPT_DIR}/Compile.cmake
+	MAIN_DEPENDENCY ${NML_FILE}
+	DEPENDS
+		${CUSTOM_TAGS_FILE}
+		"NML"
+    COMMENT "Compiling ${NML_FILE_NAME} to ${GRF_FILE_NAME} using nmlc"
+	VERBATIM
+)
+
+#Define GRF generate target
+add_custom_target("GRF"
+	DEPENDS 
+		${GRF_FILE}
+	COMMENT "Generating .grf from .pnml source file"
+	VERBATIM
+)
+
+#Process bundle documentation
+add_custom_command(
+	OUTPUT ${DOC_FILES}
+	COMMAND ${CMAKE_COMMAND}
+		"-DDOC_FILE_NAMES=${DOC_FILE_NAMES}"
+		-DPROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}
+		-DPROJECT_BINARY_DIR=${PROJECT_BINARY_DIR}
+		-DPROJECT_DOCS_DIR=${PROJECT_DOCS_DIR}
+		-DGRF_FILE=${GRF_FILE}
+		-DGRF_TITLE=${PROJECT_NAME}
+		-DGRF_ID=${PROJECT_SHORT_NAME}
+		-DREPO_REVISION=${PROJECT_VERSION}
+		-DFILENAME=${GRF_FILE_NAME}
+		-P ${PROJECT_SCRIPT_DIR}/ProcessDocs.cmake
+	COMMENT "Processing bundle documentation (${DOC_FILE_NAMES})"
+)
+
+#Determine tar bundling verbosity
+if(DEFINED $ENV{VERBOSE} AND $ENV{VERBOSE} EQUAL ON)
+	set(${VERBOSE_TAR_FLAG} t)
+else()
+	set(${VERBOSE_TAR_FLAG} f)
+endif()
+
+#Create bundles
+add_custom_command(
+	OUTPUT ${BUNDLE_FILES}
+	WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
+	COMMAND ${CMAKE_COMMAND} -E tar "cf${VERBOSE_TAR_FLAG}" ${BUNDLE_TAR} ${GRF_FILE} ${DOC_FILES}
+	COMMAND ${CMAKE_COMMAND} -E tar "cf${VERBOSE_TAR_FLAG}j" ${BUNDLE_BZ2} ${GRF_FILE} ${DOC_FILES}
+	COMMAND ${CMAKE_COMMAND} -E tar "cf${VERBOSE_TAR_FLAG}z" ${BUNDLE_GZ} ${GRF_FILE} ${DOC_FILES}
+	COMMAND ${CMAKE_COMMAND} -E tar "cf${VERBOSE_TAR_FLAG}J" ${BUNDLE_XZ} ${GRF_FILE} ${DOC_FILES}
+	DEPENDS
+		${DOC_FILES}
+		${GRF_FILE}
+	COMMENT "Bundling files into ${BUNDLE_TAR} and similarly named compressed tarballs"
+)
+
+#Define bundle target
+add_custom_target("Bundles" ALL
+	DEPENDS 
+		${BUNDLE_FILES}
+	COMMENT "Bundling files"
+	VERBATIM
+)

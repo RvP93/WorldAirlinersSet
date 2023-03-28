@@ -1,0 +1,84 @@
+{
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 23,
+    "patch": 0
+  },
+  "version": 4,
+  "configurePresets": [
+    {
+      "name": "ninja",
+      "displayName": "Ninja",
+      "description": "Use Ninja as the generator",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/ninja"
+    },
+    {
+      "name": "make",
+      "displayName": "Make",
+      "generator": "Unix Makefiles",
+      "description": "Use make as the generator",
+      "binaryDir": "${sourceDir}/build/make"
+    },
+    {
+      "name": "vs",
+      "displayName": "Visual Studio 2022",
+      "generator": "Visual Studio 17 2022",
+      "description": "Use Visual Studio 17 (2022) as the generator",
+      "binaryDir": "${sourceDir}/build/vs2022"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "ninja-default",
+      "displayName": "Not Verbose",
+      "description": "Compile WAS with default settings",
+      "configurePreset": "ninja"
+    },
+    {
+      "name": "ninja-verbose",
+      "displayName": "Verbose",
+      "description": "Compile WAS with verbosity",
+      "configurePreset": "ninja",
+      "verbose": true,
+      "environment": {
+        "CMAKE_VERBOSE_MAKEFILE": "on",
+        "VERBOSE": "on"
+      }
+    },
+    {
+      "name": "make-default",
+      "displayName": "Not Verbose",
+      "description": "Compile WAS with default settings",
+      "configurePreset": "make"
+    },
+    {
+      "name": "make-verbose",
+      "displayName": "Verbose",
+      "description": "Compile WAS with verbosity",
+      "configurePreset": "make",
+      "verbose": true,
+      "environment": {
+        "CMAKE_VERBOSE_MAKEFILE": "on",
+        "VERBOSE": "on"
+      }
+    },
+    {
+      "name": "vs-default",
+      "displayName": "Not Verbose",
+      "description": "Compile WAS with default settings",
+      "configurePreset": "vs"
+    },
+    {
+      "name": "vs-verbose",
+      "displayName": "Verbose",
+      "description": "Compile WAS with verbosity",
+      "configurePreset": "vs",
+      "verbose": true,
+      "environment": {
+        "CMAKE_VERBOSE_MAKEFILE": "on",
+        "VERBOSE": "on"
+      }
+    }
+  ]
+}

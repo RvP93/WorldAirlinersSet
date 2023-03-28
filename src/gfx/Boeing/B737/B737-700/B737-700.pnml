@@ -577,8 +577,8 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_cargo_subtype_capacity, cargo_subtyp
  19: return 141; // Luxair
  20: return 121; // Malev
  22: return 114; // Oman Air
- 23: return 114  // RAM
- 24: return 120  // Rwandair
+ 23: return 114; // RAM
+ 24: return 120; // Rwandair
  25: return 140; // Sas
  26: return 143; // Southwest
  27: return 120; // Taag

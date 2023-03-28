@@ -254,6 +254,7 @@ STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL                            : Air Nostrum (I
 STR_VLIV_AIR_NOSTRUM_IBERIA_REGIONAL_OLD                        : Air Nostrum (Old) (Iberia Regional)
 STR_VLIV_AIR_ONE                                                : Air One
 STR_VLIV_AIR_PACIFIC                                            : Air Pacific
+STR_VLIV_AIR_PEACE                                              : Air Peace
 STR_VLIV_AIR_PLUS_COMET                                         : Air Plus Comet
 STR_VLIV_AIR_SERBIA                                             : Air Serbia
 STR_VLIV_AIR_SEYCHELLES                                         : Air Seychelles
@@ -379,6 +380,7 @@ STR_VLIV_EASYJET                                                : EasyJet
 STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
 STR_VLIV_ECAIR                                                  : ECAir
 STR_VLIV_EGYPT_AIR                                              : Egypt Air
+STR_VLIV_EGYPT_AIR_OLD                                          : Egypt Air (Old)
 STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : El Al Israel Airlines
 STR_VLIV_ELLINAIR                                               : Ellinair
 STR_VLIV_EMIRATES                                               : Emirates
@@ -391,6 +393,7 @@ STR_VLIV_ETIHAD_AIRWAYS                                         : Etihad Airways
 STR_VLIV_ETIHAD_AIRWAYS_ABU_DHABI_FORMULA_1                     : Etihad Airways (Abu Dhabi Formula 1)
 STR_VLIV_EUROATLANTIC_AIRWAYS                                   : EuroAtlantic Airways
 STR_VLIV_EUROLOT                                                : Eurolot
+STR_VLIV_EUROATLANTIC                                           : EuroAtlantic Airways
 STR_VLIV_EUROPEAN_AIRCHARTER                                    : European AirCharter
 STR_VLIV_EUROWINGS                                              : Eurowings
 STR_VLIV_EVA_AIR                                                : EVA Air
