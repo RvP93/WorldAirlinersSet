@@ -606,6 +606,7 @@ STR_VLIV_THOMSON_AIRWAYS                                        : Thomson Airway
 STR_VLIV_TNT                                                    : TNT Airways
 STR_VLIV_TRANSAERO                                              : Transaero
 STR_VLIV_TRANSAVIA                                              : Transavia
+STR_VLIV_TRANSAVIA_OLD                                          : Transavia (Old)
 STR_VLIV_TRAVEL_SERVICE                                         : Travel Service 
 STR_VLIV_TUI                                                    : TUI
 STR_VLIV_TUNISAIR                                               : Tunisair

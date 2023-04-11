@@ -87,6 +87,9 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_Allegiant)
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/American.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_American) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/AzurAir.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_AzurAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Condor.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Condor) 
 #undef IMAGEFILE
