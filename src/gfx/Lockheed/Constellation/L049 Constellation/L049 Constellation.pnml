@@ -202,7 +202,7 @@ item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1330;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Lockheed_L049_Constellation_sprites;

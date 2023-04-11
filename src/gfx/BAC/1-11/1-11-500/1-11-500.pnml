@@ -345,7 +345,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
     range: 635;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: BAC_1_11_500_sprites;
@@ -353,6 +353,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
     colour_mapping: PALETTE_CC_FIRST;
 
     cargo_subtype_text: BAC_1_11_500_cargo_subtype_text;
+    passenger_capacity: BAC_1_11_500_cargo_subtype_capacity;
     speed: BAC_1_11_500_speed;
     running_cost_factor: BAC_1_11_500_running_cost_factor;
     sound_effect: BAC_1_11_500_sound_effect;

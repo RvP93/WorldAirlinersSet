@@ -221,7 +221,7 @@ item (FEAT_AIRCRAFT, Boeing_737_600)
     mail_capacity: 13;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1015;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_600_sprites;

@@ -155,7 +155,7 @@ item (FEAT_AIRCRAFT, Embraer_ERJ145)
     mail_capacity: 5;
     acceleration: 27;                  // in 27,75 mph/day
     range: 515;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Embraer_ERJ145_sprites;
@@ -199,4 +199,3 @@ if (Ranges == 2)
     { range: 775; }
   }
 }
-

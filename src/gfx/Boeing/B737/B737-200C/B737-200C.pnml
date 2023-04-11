@@ -141,7 +141,7 @@ item (FEAT_AIRCRAFT, Boeing_737_200C)
     mail_capacity: 127;
     acceleration: 27;                  // in 27,75 mph/day
     range: 845;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_200C_sprites;

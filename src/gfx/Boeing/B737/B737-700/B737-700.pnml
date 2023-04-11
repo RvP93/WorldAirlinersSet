@@ -548,7 +548,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_700_cargo_subtype_text, cargo_subtype)
  27: string(STR_VLIV_TAAG_ANGOLA_AIRLINES);
  28: string(STR_VLIV_TAROM);
  29: string(STR_VLIV_TRANSAVIA);
- 20: string(STR_VLIV_TUI);
+ 30: string(STR_VLIV_TUI);
  31: string(STR_VLIV_UNITED_AIRLINES);
  32: string(STR_VLIV_WESTJET);
        return CB_RESULT_NO_TEXT;
@@ -611,7 +611,7 @@ item (FEAT_AIRCRAFT, Boeing_737_700)
     mail_capacity: 15;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1120;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_700_sprites;

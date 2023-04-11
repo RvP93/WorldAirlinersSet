@@ -231,7 +231,7 @@ item (FEAT_AIRCRAFT, Boeing_707_420)
     mail_capacity: 22;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2210;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_707_420_sprites;

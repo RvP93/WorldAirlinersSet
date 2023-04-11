@@ -402,7 +402,7 @@ item (FEAT_AIRCRAFT, Boeing_787_8)
     mail_capacity: 31;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2735;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_787_8_sprites;

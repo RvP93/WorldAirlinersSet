@@ -183,7 +183,7 @@ item (FEAT_AIRCRAFT, ATR_42_300F)
     mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
     range: 165;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: ATR_42_300F_sprites;

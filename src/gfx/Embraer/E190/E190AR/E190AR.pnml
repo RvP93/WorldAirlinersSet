@@ -244,7 +244,7 @@ item (FEAT_AIRCRAFT, Embraer_E190AR)
     mail_capacity: 11;
     acceleration: 27;                  // in 27,75 mph/day
     range: 800;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Embraer_E190AR_sprites;
@@ -288,4 +288,3 @@ if (Ranges == 2)
     { range: 1200; }
   }
 }
-
