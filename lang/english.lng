@@ -300,6 +300,7 @@ STR_VLIV_ARKE_FLY                                               : Arke Fly
 STR_VLIV_ASIANA_AIRLINES                                        : Asiana Airlines
 STR_VLIV_ASTRA_AIRWAYS                                          : Astra Airways
 STR_VLIV_ASTRAEUS                                               : Astraeus Airlines
+STR_VLIV_ATLANTIC_AIRWAYS                                       : Atlantic Airways
 STR_VLIV_AURIGNY_AIR_SERVICES                                   : Aurigny Air Services
 STR_VLIV_AUSTRAL_LINEAS_AEREAS                                  : Austral Lineas Aereas
 STR_VLIV_AUSTRIAN_AIRLINES                                      : Austrian Airlines
@@ -379,8 +380,8 @@ STR_VLIV_EASTERN_AIR_LINES                                      : Eastern Air Li
 STR_VLIV_EASYJET                                                : EasyJet
 STR_VLIV_EASYJET_OLD                                            : EasyJet (Old)
 STR_VLIV_ECAIR                                                  : ECAir
-STR_VLIV_EGYPT_AIR                                              : Egypt Air
-STR_VLIV_EGYPT_AIR_OLD                                          : Egypt Air (Old)
+STR_VLIV_EGYPT_AIR                                              : EgyptAir
+STR_VLIV_EGYPT_AIR_OLD                                          : EgyptAir (Old)
 STR_VLIV_EL_AL_ISRAEL_AIRLINES                                  : El Al Israel Airlines
 STR_VLIV_ELLINAIR                                               : Ellinair
 STR_VLIV_EMIRATES                                               : Emirates
