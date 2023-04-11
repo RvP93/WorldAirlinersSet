@@ -1,8 +1,8 @@
 
 // Embraer-E190STD
 
-// Template: 
-#define Embraer_E190STD_sprite_layout_template(name)                          \
+// Template:
+#define Embraer_E190STD_sprite_layout_template(name)                         \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 37, 22, -19, -11, ANIM]                                           \

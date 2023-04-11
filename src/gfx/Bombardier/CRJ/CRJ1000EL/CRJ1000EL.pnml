@@ -1,8 +1,8 @@
 
 // Bombardier-CRJ1000EL
 
-// Template: 
-#define Bombardier_CRJ1000EL_sprite_layout_template(name)                      \
+// Template:
+#define Bombardier_CRJ1000EL_sprite_layout_template(name)                    \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 30, 25, -15, -13, ANIM]                                           \

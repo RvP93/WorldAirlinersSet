@@ -1,8 +1,8 @@
 
 // Boeing-737-900ER
 
-// Template: 
-#define Boeing_737_900ER_sprite_layout_template(name)                          \
+// Template:
+#define Boeing_737_900ER_sprite_layout_template(name)                        \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 2, 43, 25, -21, -11, ANIM]                                           \

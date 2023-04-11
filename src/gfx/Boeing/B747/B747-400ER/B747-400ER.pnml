@@ -1,8 +1,8 @@
 
 // Boeing-747-400ER
 
-// Template: 
-#define Boeing_747_400ER_sprite_layout_template(name)                          \
+// Template:
+#define Boeing_747_400ER_sprite_layout_template(name)                        \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  2, 2, 66, 32, -33, -16, ANIM]                                           \

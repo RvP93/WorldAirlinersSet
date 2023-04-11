@@ -1,8 +1,8 @@
 
 // BAe-146-300QT
 
-// Template: 
-#define BAe_146_300QT_sprite_layout_template(name)                             \
+// Template:
+#define BAe_146_300QT_sprite_layout_template(name)                           \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  2, 2, 40, 18, -20, -9 , ANIM]                                           \

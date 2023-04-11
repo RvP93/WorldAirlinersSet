@@ -1,8 +1,8 @@
 
 // BAC-Concorde
 
-// Template: 
-#define BAC_CONCORDE_sprite_layout_template(name)                             \
+// Template:
+#define BAC_CONCORDE_sprite_layout_template(name)                            \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  0, 0, 36, 34, -18, -17, ANIM]                                           \

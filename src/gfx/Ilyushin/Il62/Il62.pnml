@@ -1,8 +1,8 @@
 
 // Ilyushin-62
 
-// Template: 
-#define Ilyushin_62_sprite_layout_template(name)                              \
+// Template:
+#define Ilyushin_62_sprite_layout_template(name)                             \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 54, 29, -27, -15, ANIM]                                           \
@@ -12,7 +12,7 @@ spriteset (name##_Flight, IMAGEFILE)                                         \
   [250, 1, 54, 42, -27, -21, ANIM]                                           \
   [310, 1, 51, 37, -26, -19, ANIM]                                           \
   [370, 1, 61, 28, -31, -14, ANIM]                                           \
-  [440, 1, 51, 27, -26, -14 , ANIM]                                           \
+  [440, 1, 51, 27, -26, -14 , ANIM]                                          \
 }                                                                            \
 spriteset (name##_Grounded, IMAGEFILE)                                       \
 {                                                                            \
