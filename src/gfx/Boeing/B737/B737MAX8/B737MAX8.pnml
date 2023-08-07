@@ -2,7 +2,7 @@
 // Boeing-737MAX8
 
 // Template:
-#define Boeing_737_MAX8_sprite_layout_template(name)                          \
+#define Boeing_737_MAX8_sprite_layout_template(name)                         \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 2, 43, 23, -22, -12, ANIM]                                           \
@@ -57,7 +57,7 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
   [244, 187, 41, 26, -21, -13, ANIM]                                         \
   [291, 187, 49, 27, -25, -14, ANIM]                                         \
   [343, 187, 40, 24, -20, -12, ANIM]                                         \
-}		                                                                     \
+}		                                                                         \
 
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737MAX8/(0)Greyscale.png"
 purchase_sprite(Boeing_737_MAX8, 291, 2, 46, 25, -23, -13)
@@ -415,7 +415,7 @@ switch (FEAT_AIRCRAFT, SELF, Boeing_737_MAX8_cargo_subtype_capacity, cargo_subty
   3: return 162; // Air Europa
   4: return 172; // American Airlines
   5: return 174; // Belavia
-  6  return 176; // China Eastern
+  6: return 176; // China Eastern
   7: return 189; // Corendon
   8: return 189; // Enter Air
   9: return 160; // Etiopian
@@ -456,7 +456,7 @@ item (FEAT_AIRCRAFT, Boeing_737_MAX8)
     mail_capacity: 16;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1205;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_MAX8_sprites;
@@ -500,4 +500,3 @@ if (Ranges == 2)
     { range: 1805; }
   }
 }
-

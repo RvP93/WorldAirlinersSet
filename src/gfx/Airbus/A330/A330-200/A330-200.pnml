@@ -845,7 +845,7 @@ item (FEAT_AIRCRAFT, Airbus_A330_200)
     mail_capacity: 29;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2415;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Airbus_A330_200_sprites;

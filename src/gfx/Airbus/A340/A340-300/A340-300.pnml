@@ -448,7 +448,7 @@ item (FEAT_AIRCRAFT, Airbus_A340_300)
     mail_capacity: 38;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2465;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Airbus_A340_300_sprites;

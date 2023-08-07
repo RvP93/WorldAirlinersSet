@@ -337,7 +337,7 @@ item (FEAT_AIRCRAFT, SUD_CARAVELLE_III)
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
     range: 655;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: SUD_CARAVELLE_III_sprites;

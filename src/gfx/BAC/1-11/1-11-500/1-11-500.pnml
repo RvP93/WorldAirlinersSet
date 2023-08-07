@@ -1,8 +1,8 @@
 
 // BAC-1-11-500
 
-// Template: 
-#define BAC_1_11_500_sprite_layout_template(name)                             \
+// Template:
+#define BAC_1_11_500_sprite_layout_template(name)                            \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 40, 19, -20, -9 , ANIM]                                           \
@@ -45,7 +45,7 @@ spriteset (name##_Touchdown, IMAGEFILE)                                      \
   [175, 100, 40, 30, -20, -15, ANIM]                                         \
   [220, 100, 35, 26, -18, -13, ANIM]                                         \
   [260, 100, 44, 20, -22, -10, ANIM]                                         \
-  [310, 100, 36, 19, -18, -9 , ANIM]          								 \
+  [310, 100, 36, 19, -18, -9 , ANIM]          			              					 \
 }                                                                            \
 spriteset (name##_Landing, IMAGEFILE)                                        \
 {                                                                            \
@@ -345,7 +345,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
     mail_capacity: 9;
     acceleration: 27;                  // in 27,75 mph/day
     range: 635;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: BAC_1_11_500_sprites;
@@ -353,6 +353,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_500)
     colour_mapping: PALETTE_CC_FIRST;
 
     cargo_subtype_text: BAC_1_11_500_cargo_subtype_text;
+    passenger_capacity: BAC_1_11_500_cargo_subtype_capacity;
     speed: BAC_1_11_500_speed;
     running_cost_factor: BAC_1_11_500_running_cost_factor;
     sound_effect: BAC_1_11_500_sound_effect;

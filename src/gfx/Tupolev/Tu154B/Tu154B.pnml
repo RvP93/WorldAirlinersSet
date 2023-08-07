@@ -1,8 +1,8 @@
 
 // Tupolev-Tu154B
 
-// Template: 
-#define Tupolev_Tu154B_sprite_layout_template(name)                           \
+// Template:
+#define Tupolev_Tu154B_sprite_layout_template(name)                          \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  2, 2, 38, 23, -19, -11, ANIM]                                           \
@@ -293,7 +293,7 @@ item (FEAT_AIRCRAFT, Tupolev_Tu154B)
     mail_capacity: 15;
     acceleration: 27;                  // in 27,75 mph/day
     range: 735;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Tupolev_Tu154B_sprites;

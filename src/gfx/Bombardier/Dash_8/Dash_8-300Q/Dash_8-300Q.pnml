@@ -207,7 +207,7 @@ item (FEAT_AIRCRAFT, Bombardier_Dash_8_300Q)
     mail_capacity: 5;
     acceleration: 27;                  // in 27,75 mph/day
     range: 280;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Bombardier_Dash_8_300Q_sprites;

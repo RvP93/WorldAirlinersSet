@@ -87,6 +87,9 @@ Boeing_757_200_sprite_layout_template(Boeing_757_200_Allegiant)
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/American.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_American) 
 #undef IMAGEFILE
+#define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/AzurAir.png"
+Boeing_757_200_sprite_layout_template(Boeing_757_200_AzurAir) 
+#undef IMAGEFILE
 #define IMAGEFILE  "src/gfx/Boeing/B757/B757-200/Condor.png"
 Boeing_757_200_sprite_layout_template(Boeing_757_200_Condor) 
 #undef IMAGEFILE
@@ -654,7 +657,7 @@ item (FEAT_AIRCRAFT, Boeing_757_200)
     mail_capacity: 20;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1365;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_757_200_sprites;

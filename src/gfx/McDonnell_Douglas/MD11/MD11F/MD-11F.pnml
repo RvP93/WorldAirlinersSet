@@ -183,7 +183,7 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD11F)
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1315;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: McDonnell_Douglas_MD11F_sprites;
@@ -228,4 +228,3 @@ if (Ranges == 2)
     { range: 1975; }
   }
 }
-

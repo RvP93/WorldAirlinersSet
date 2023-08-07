@@ -226,7 +226,7 @@ item (FEAT_AIRCRAFT, Boeing_777_200F)
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1635;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_777_200F_sprites;

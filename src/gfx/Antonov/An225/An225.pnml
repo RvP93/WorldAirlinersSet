@@ -133,7 +133,7 @@ item (FEAT_AIRCRAFT, Antonov_225)
     mail_capacity: 0;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2770;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Antonov_225_sprites;

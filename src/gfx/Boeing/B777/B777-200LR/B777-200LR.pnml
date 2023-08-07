@@ -1,8 +1,8 @@
 
 // Boeing-777-200LR
 
-// Template: 
-#define Boeing_777_200LR_sprite_layout_template(name)                          \
+// Template:
+#define Boeing_777_200LR_sprite_layout_template(name)                        \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 58, 29, -29, -15, ANIM]                                           \
@@ -27,7 +27,7 @@ spriteset (name##_Grounded, IMAGEFILE)                                       \
 }                                                                            \
 spriteset (name##_Climbing, IMAGEFILE)                                       \
 {                                                                            \
-  [  1, 90, 58, 45, -29, -23, ANIM]                                         \
+  [  1, 90, 58, 45, -29, -23, ANIM]                                          \
   [ 65, 90, 50, 41, -25, -21, ANIM]                                          \
   [120, 90, 63, 30, -32, -15, ANIM]                                          \
   [190, 90, 48, 27, -24, -14, ANIM]                                          \
@@ -237,7 +237,7 @@ item (FEAT_AIRCRAFT, Boeing_777_200LR)
     mail_capacity: 40;
     acceleration: 27;                  // in 27,75 mph/day
     range: 3125;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_777_200LR_sprites;

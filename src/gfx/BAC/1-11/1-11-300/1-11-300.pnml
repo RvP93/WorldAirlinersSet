@@ -1,8 +1,8 @@
 
 // BAC-1-11-300
 
-// Template: 
-#define BAC_1_11_300_sprite_layout_template(name)                             \
+// Template:
+#define BAC_1_11_300_sprite_layout_template(name)                            \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 40, 18, -20, -9 , ANIM]                                           \
@@ -142,7 +142,7 @@ item (FEAT_AIRCRAFT, BAC_1_11_300)
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
     range: 235;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: BAC_1_11_300_sprites;

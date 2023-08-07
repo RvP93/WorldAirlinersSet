@@ -1,4 +1,4 @@
-s
+
 // Boeing-737-800
 
 // Template:
@@ -57,7 +57,7 @@ spriteset (name##_Landing, IMAGEFILE)                                        \
   [244, 187, 41, 26, -21, -13, ANIM]                                         \
   [291, 187, 49, 25, -25, -13, ANIM]                                         \
   [343, 187, 40, 24, -20, -12, ANIM]                                         \
-}		                                                                     \
+}		                                                                         \
 
 #define IMAGEFILE  "src/gfx/Boeing/B737/B737-800/(0)Greyscale.png"
 purchase_sprite(Boeing_737_800, 291, 2, 46, 25, -23, -13)
@@ -1768,7 +1768,7 @@ item (FEAT_AIRCRAFT, Boeing_737_800)
     mail_capacity: 19;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1020;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Boeing_737_800_sprites;
@@ -1813,4 +1813,3 @@ if (Ranges == 2)
     { range: 1530; }
   }
 }
-

@@ -398,7 +398,7 @@ item (FEAT_AIRCRAFT, McDonnell_Douglas_MD83)
     mail_capacity: 32;
     acceleration: 27;                  // in 27,75 mph/day
     range: 835;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: McDonnell_Douglas_MD83_sprites;

@@ -262,7 +262,7 @@ item (FEAT_AIRCRAFT, BAe_146_200)
     mail_capacity: 11;
     acceleration: 27;                  // in 27,75 mph/day
     range: 525;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: BAe_146_200_sprites;

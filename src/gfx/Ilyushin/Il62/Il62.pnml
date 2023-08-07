@@ -1,8 +1,8 @@
 
 // Ilyushin-62
 
-// Template: 
-#define Ilyushin_62_sprite_layout_template(name)                              \
+// Template:
+#define Ilyushin_62_sprite_layout_template(name)                             \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 54, 29, -27, -15, ANIM]                                           \
@@ -12,7 +12,7 @@ spriteset (name##_Flight, IMAGEFILE)                                         \
   [250, 1, 54, 42, -27, -21, ANIM]                                           \
   [310, 1, 51, 37, -26, -19, ANIM]                                           \
   [370, 1, 61, 28, -31, -14, ANIM]                                           \
-  [440, 1, 51, 27, -26, -14 , ANIM]                                           \
+  [440, 1, 51, 27, -26, -14 , ANIM]                                          \
 }                                                                            \
 spriteset (name##_Grounded, IMAGEFILE)                                       \
 {                                                                            \
@@ -229,7 +229,7 @@ item (FEAT_AIRCRAFT, Ilyushin_62)
     mail_capacity: 17;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1800;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Ilyushin_62_sprites;

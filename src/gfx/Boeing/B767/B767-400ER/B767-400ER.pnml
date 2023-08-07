@@ -1,8 +1,8 @@
 
 // Boeing-767-400ER
 
-// Template: 
-#define Boeing_767_400ER_sprite_layout_template(name)                          \
+// Template:
+#define Boeing_767_400ER_sprite_layout_template(name)                        \
 spriteset (name##_Flight, IMAGEFILE)                                         \
 {                                                                            \
   [  1, 1, 58, 30, -29, -15, ANIM]                                           \
@@ -177,7 +177,7 @@ item (FEAT_AIRCRAFT, Boeing_767_400ER)
     mail_capacity: 30;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1875;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_767_400ER_sprites;

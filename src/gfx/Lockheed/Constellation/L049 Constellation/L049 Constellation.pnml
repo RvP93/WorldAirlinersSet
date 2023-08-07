@@ -33,8 +33,8 @@ spriteset (name##_Climbing, IMAGEFILE)                                       \
   [165, 70, 41, 18, -22, -9 , ANIM]                                          \
   [215, 70, 46, 11, -23, -6 , ANIM]                                          \
   [270, 70, 41, 18, -22, -9 , ANIM]                                          \
-  [320, 70, 44, 25, -22, -13, ANIM]                                         \
-  [375, 70, 41, 30, -21, -15, ANIM]                                         \
+  [320, 70, 44, 25, -22, -13, ANIM]                                          \
+  [375, 70, 41, 30, -21, -15, ANIM]                                          \
 }                                                                            \
 spriteset (name##_Touchdown, IMAGEFILE)                                      \
 {                                                                            \
@@ -202,7 +202,7 @@ item (FEAT_AIRCRAFT, Lockheed_L049_Constellation)
     mail_capacity: 8;
     acceleration: 27;                  // in 27,75 mph/day
     range: 1330;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Lockheed_L049_Constellation_sprites;

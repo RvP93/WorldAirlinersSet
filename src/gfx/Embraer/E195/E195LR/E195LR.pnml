@@ -282,7 +282,7 @@ item (FEAT_AIRCRAFT, Embraer_E195LR)
     mail_capacity: 12;
     acceleration: 27;                  // in 27,75 mph/day
     range: 600;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET;
   }
   graphics {
     default: Embraer_E195LR_sprites;
@@ -327,4 +327,3 @@ if (Ranges == 2)
     { range: 900; }
   }
 }
-

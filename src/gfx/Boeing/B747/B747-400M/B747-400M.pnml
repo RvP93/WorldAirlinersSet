@@ -208,7 +208,7 @@ item (FEAT_AIRCRAFT, Boeing_747_400M)
     mail_capacity: 255;
     acceleration: 27;                  // in 27,75 mph/day
     range: 2400;
-    sound_effect: SOUND_JET;
+    sound_effect: SOUND_TAKEOFF_JET_BIG;
   }
   graphics {
     default: Boeing_747_400M_sprites;
@@ -216,6 +216,7 @@ item (FEAT_AIRCRAFT, Boeing_747_400M)
     colour_mapping: PALETTE_CC_FIRST;
 
     cargo_subtype_text: Boeing_747_400M_cargo_subtype_text;
+    passenger_capacity: Boeing_747_400M_cargo_subtype_capacity;
     speed: Boeing_747_400M_speed;
     running_cost_factor: Boeing_747_400M_running_cost_factor;
     sound_effect: Boeing_747_400M_sound_effect;
