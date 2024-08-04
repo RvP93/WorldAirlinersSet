@@ -205,8 +205,9 @@ switch (FEAT_AIRCRAFT, SELF, Embraer_E190AR_cargo_subtype_text, cargo_subtype)
   3: string(STR_VLIV_COPA_AIRLINES);
   4: string(STR_VLIV_JETBLUE);
   5: string(STR_VLIV_PEGAS_FLY);
-  6: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
-  7: string(STR_VLIV_VIRGIN_BLUE);
+  6: string(STR_VLIV_PEGAS_FLY);
+  7: string(STR_VLIV_UKRAINE_INTERNATIONAL_AIRLINES);
+  8: string(STR_VLIV_VIRGIN_BLUE);
        return CB_RESULT_NO_TEXT;
 }
 
